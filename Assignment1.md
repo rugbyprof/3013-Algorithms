@@ -75,7 +75,7 @@ a means to push your files to a central repository. So if your using a lab or pe
 - When you create a Github account, you must choose a `username`. 
 - This is very important to remember, because you will update the class roster with this username so I know where to find all your assignments.
 - Create a repository named:
-    - `1063-DS-yourlastname`
+    - `3013-Algorithms-yourlastname`
     - replace the `yourlastname` with your last name to make it unique.
 - Check the box that says: "Add a README.md file"
 
@@ -91,7 +91,6 @@ a means to push your files to a central repository. So if your using a lab or pe
 #### Make me a contributer:
 
 - Go to your repo settings and add `rugbyprof` as a collaborater.
-- Go to your repo settings and add `Cdbot100` (Scott Gordon) as a collaborater.
 - You can do this in the settings of your repository. 
 - This is vital as I need access to your files with edit permissions.
 
@@ -120,7 +119,7 @@ Add:
 Every email must have a minimum of two items included:
 
 - The course number and title in the subject:
-    - `1063 DS`
+    - `3013`
 - Your name
 
 I can't promise an answer if you don't provide those two pieces of information.
