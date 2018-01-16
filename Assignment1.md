@@ -1,5 +1,5 @@
 ## Assignment 1 - Getting Started
-#### Due: Friday January 20th by 5:00pm
+#### Due: Thursday January 18th by 12:30pm
 
 ## Getting Setup
 
