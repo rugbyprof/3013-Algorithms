@@ -97,10 +97,10 @@ a means to push your files to a central repository. So if your using a lab or pe
 
 ### Step 6: Class Roster
 ---
-![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1nw7IszG82-yBjgojeC6F2NuT_r2QU1z0M1-XlFA7vhg/edit?usp=sharing)
+![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1Mrqriq92avl-XFZLZFQSKFehMcc54SzGY9CHB7jI-s4/edit?usp=sharing)
 #### Update the Class Roster:
 
-- Here is a link to our class roster on google docs: ![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1nw7IszG82-yBjgojeC6F2NuT_r2QU1z0M1-XlFA7vhg/edit?usp=sharing)
+- Here is a link to our class roster on google docs: ![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1Mrqriq92avl-XFZLZFQSKFehMcc54SzGY9CHB7jI-s4/edit?usp=sharing)
 
 - Update the roster by adding your information to it. 
 
