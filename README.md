@@ -4,16 +4,14 @@
 ![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1Mrqriq92avl-XFZLZFQSKFehMcc54SzGY9CHB7jI-s4/edit?usp=sharing)
 
 ### General Course Info
-- Days: TTh 12:30 p.m. - 1:50 p.m. 
-- Location: BO 320
-
-- Semester Start: January 13 -  Ends: May 4
-- Holidays:
-    - Spring Break begins 5:00 p.m March 10 (March 12-17)
-    - Classes resume:  March 19
-- Last Day for “W”, 4:00 p.m. – Drops after this date will receive grades of “F.” -  March 26
-- Holiday Break begins 10:00 p.m March 28 - Classes resume April 2
-- Final Exam: Thursday May 10<sup>th</sup>, 10:30 p.m. - 12:30 p.m.
+- ___Days:___ TTh 12:30 p.m. - 1:50 p.m. 
+- ___Location:___ BO 320
+- ___Semester:___ Mon January 15<sup>th</sup> - Fri May 4<sup>th</sup>
+- ___Holidays:___
+    - ___Spring Break:___ Sat March 10<sup>th</sup> - Sun March 18<sup>th</sup>
+    - ___Holiday Break:___ Fri March 30<sup>th</sup> - Sun April 1<sup>st</sup>
+- ___Last Day for “W”:___ Mon March 26<sup>th</sup>
+- ___Final Exam:___ Wednesday May 10<sup>th</sup>, 10:30 p.m. - 12:30 p.m.
 
 
 ### Topics (Maybe more, maybe less .... we'll see):
