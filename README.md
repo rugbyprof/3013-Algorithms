@@ -38,15 +38,6 @@
 - http://opendatastructures.org/ods-cpp/
 - https://github.com/ippeb/ACM-ICPC
 
-### Learning Outcomes:
-1. Discuss the appropriate use of built-in data structures. 
-2. Describe common applications for each of the following data structures: stack, queue, priority queue, set, and map. 
-3. Write programs that use each of the following data structures: arrays, records/structs, strings, linked lists, stacks, queues, sets, and maps. 
-4. Compare alternative implementations of data structures with respect to performance. 
-5. Describe how references allow for objects to be accessed in multiple ways. 
-6. Compare and contrast the costs and benefits of dynamic and static data structure implementations.
-7. Choose the appropriate data structure for modeling a given problem. 
-
 
 ## Grading:	
 
