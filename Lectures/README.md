@@ -1,1 +1,4 @@
-# Lectures
+## Lectures
+
+| Lecture | Description |
+|----------|-------------|
