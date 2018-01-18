@@ -61,7 +61,7 @@ class intLinkedList{
     return NULL;
   }
   
-  node* Remove(int key){
+  void Remove(int key){
     node* result = Find(key);
     if(result){
       node* temp = Head;
@@ -110,7 +110,7 @@ int main() {
   //print the list again
   mylist.print();
 
-  
+  system("pause");
 }
 ```
 
