@@ -1,4 +1,4 @@
 ## Lectures
 
-| Lecture | Description |
-|----------|-------------|
+| Lecture | Description | Due |
+|----------|-------------|-------------|
