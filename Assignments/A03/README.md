@@ -1,3 +1,13 @@
+## Assignment 3 - Priority Queue Warm Up
+#### Due: Thursday January 25th by 12:30pm
+
+## Overview
+
+Using the code we wrote together in class (see below), add a method called `orderedSert` that would add an integer to list while maintaining ascending order. Handle equal values as you see fit. 
+
+
+```cpp
+
 #include <iostream>
 #include <ctime>
 
@@ -14,7 +24,7 @@ struct node{
 * Purpose:
 *     Implements a singly linked list that holds integers. 
 * Methods:
-*     void  insert(int x)
+*     void  frontSert(int x)
 *     node* find(int key)
 *     node* remove(int key)
 *     void  print()
@@ -26,7 +36,7 @@ class intLinkedList{
   intLinkedList(){
     Head = NULL;
   }
-  void insert(int x){
+  void frontSert(int x){
     //empty list case
     if(!Head){
       Head = new node;
@@ -61,7 +71,6 @@ class intLinkedList{
       temp->next = result->next;
       delete result;
     }
-    return NULL;
   }
   
   void print(){
@@ -86,7 +95,7 @@ int main() {
   
   //Load 10 random ints into our list
   for(int i=0;i<10;i++){
-    mylist.insert(rand()%100);
+    mylist.frontSert(rand()%100);
   }
   
   //print the list
@@ -101,5 +110,24 @@ int main() {
   //print the list again
   mylist.print();
 
-  return 0;
+  
 }
+```
+
+### Deliverables
+
+- Create a folder in your repository called `assignments`
+- Create a folder in your `assignments` called `program_1`
+- Add a `README.md` file to your `program_1` folder with something similar to the following:
+
+```
+Name: your name
+Date: the date
+Assignment: Program 1
+Description:
+    describe program here
+
+Files:
+    main.cpp
+```
+- Write all of your code in `main.cpp`.
