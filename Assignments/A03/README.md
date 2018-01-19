@@ -1,4 +1,4 @@
-## Assignment 3 - Priority Queue Warm Up
+## Assignment 3 - Priority Queue (Warm Up)
 #### Due: Thursday January 25th by 12:30pm
 
 ## Overview
