@@ -1,7 +1,8 @@
 ## Lectures
 | Folder | Lecture | Description|
  | ------------|------------|------------|
- | [L01](./L02) | [ Day 1 ](./L02) | [ General overview of a linked list class](./L02) |
- | [L02](./L02) | [ Day 2 ](./L02) | [ Trees and Intro to Heaps](./L02) |
+ | [L01](./L03) | [ Day 1 ](./L03) | [ General overview of a linked list class](./L03) |
+ | [L02](./L03) | [ Day 2 ](./L03) | [ Trees and Intro to Heaps](./L03) |
+ |  |
 
-<sup>Last Updated: 2018-01-22 (Mon @ 11:28)</sup>
+<sup>Last Updated: 2018-01-23 (Tue @ 09:56)</sup>
