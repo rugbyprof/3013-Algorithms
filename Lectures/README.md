@@ -5,4 +5,4 @@
  | [L02](./L03) | [ Day 2 ](./L03) | [ Trees and Intro to Heaps](./L03) |
  | [L03](./L03) | [ Heaps ](./L03) | [ General Overview](./L03) |
 
-<sup>Last Updated: 2018-01-24 (Wed @ 09:38)</sup>
+<sup>Last Updated: 2018-01-24 (Wed @ 09:43)</sup>
