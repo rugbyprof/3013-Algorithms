@@ -6,4 +6,4 @@
  | [L03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L04) | [ Heaps ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L04) | [ General Overview](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L04) |
  | [L04](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L04) | [ Intro to Binary Trees ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L04) | [ real basic stuff](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L04) |
 
-<sup>Last Updated: 2018-01-26 (Fri @ 13:15)</sup>
+<sup>Last Updated: 2018-01-26 (Fri @ 13:18)</sup>
