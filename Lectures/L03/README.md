@@ -1,4 +1,4 @@
-## Heaps - General Overview
+## Array Based Binary Heaps - General Overview
 
 
 - https://www.cs.usfca.edu/~galles/visualization/Heap.html
