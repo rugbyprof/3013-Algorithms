@@ -78,11 +78,10 @@ class BSTree
         }
         else
         {
-            
             if (key == root->data)
             {
                 cout<<"doing it!"<<endl;
-                print_node(root);
+                print_node(root,"root");
                 return do_removal(root);
             }
             else if (key < root->data)
@@ -103,6 +102,7 @@ class BSTree
         if(!root->left && !root->right){
             print_node(root,"root");
             delete root;
+            print_node(root,"root");
             return true;
         }
         return false;
@@ -136,7 +136,7 @@ class BSTree
             return;
         if (level == 1)
         {
-            cout << root->data << " ";
+            print_node(root);
         }
         else if (level > 1)
         {
@@ -195,21 +195,25 @@ class BSTree
 
 int main()
 {
+    srand(2342);
     vector <int> used;
 
-    B.insert(5);
-    B.insert(3);
+    BSTree B;
+
+    B.insert(38);
     B.insert(10);
-    B.insert(1);
-    B.insert(4);
-    B.insert(7);
-    B.insert(12);
-    for(int i=0;i<8;i++){
-        B.insert((rand()%30)+15);
-    }
+    B.insert(29);
+    B.insert(27);
+    B.insert(5);
+    B.insert(43);
+    B.insert(38);
+    B.insert(43);
+    B.insert(3);
+
+
     B.printLevelOrder();
 
-    B.remove(23);
+    B.remove(27);
     cout << endl << endl;
     B.printLevelOrder();   
     return 0;
