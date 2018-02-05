@@ -59,53 +59,97 @@ class BSTree
         }
     }
 
-    void print_node(node* n,string label=""){
-        if(label != ""){
-            cout<<"["<<label<<"]";
-        }
-        cout<<"[["<<n<<"]["<<n->data<<"]]\n";
-        if(n->left)
-            cout<<"\t|-->[["<<n->left<<"]["<<n->left->data<<"]]\n";
-        if(n->right)
-            cout<<"\t\\-->[["<<n->right<<"]["<<n->right->data<<"]]\n";
-    }
-
-    bool remove(node *&root, int key)
+    void print_node(node *n, string label = "")
     {
-        if (!root)
+        if (label != "")
         {
-            return false;
+            cout << "[" << label << "]";
+        }
+        cout << "[[" << n << "][" << n->data << "]]\n";
+        if (n->left)
+        {
+            cout << "\t|-->[L][[" << n->left << "][" << n->left->data << "]]\n";
         }
         else
         {
-            if (key == root->data)
-            {
-                cout<<"doing it!"<<endl;
-                print_node(root,"root");
-                return do_removal(root);
-            }
-            else if (key < root->data)
-            {
-                cout<<"going left"<<endl;
-                return remove(root->left, key);
-            }
-            else
-            {
-                cout<<"going left"<<endl;
-                return remove(root->right, key);
-            }
+            cout << "\t\\-->[L][null]\n";
+        }
+        if (n->right)
+        {
+            cout << "\t\\-->[R][[" << n->right << "][" << n->right->data << "]]\n";
+        }
+        else
+        {
+            cout << "\t\\-->[R][null]\n";
         }
     }
 
-    bool do_removal(node *&root)
+    /**
+     * type = ['predecessor','successor']
+     */
+    node *minValueNode(node *root)
     {
-        if(!root->left && !root->right){
-            print_node(root,"root");
-            delete root;
-            print_node(root,"root");
-            return true;
+        node *current = root;
+
+        if(root->right){
+            current = root->right;
+            while (current->left != NULL){
+                current = current->left;
+            }
+        }else if(root->left){
+            current = root->left;
+            while (current->right != NULL){
+                current = current->right;
+            }
         }
-        return false;
+
+        return current;
+    }
+
+    node *deleteNode(node *&root, int key)
+    {
+        if (!root)
+        {
+            return NULL;
+        }
+        if (key < root->data)
+        {
+            cout << "going left" << endl;
+            root->left = deleteNode(root->left, key);
+        }
+        else if (key > root->data)
+        {
+            cout << "going right" << endl;
+            root->right = deleteNode(root->right, key);
+        }
+        else
+        {
+            if (root->left == NULL)
+            {
+                node *temp = root->right;
+                delete root;
+                return temp;
+            }
+            else if (root->right == NULL)
+            {
+                node *temp = root->left;
+                delete root;
+                return temp;
+            }
+
+            // node with two children: Get the inorder successor (smallest
+            // in the right subtree)
+            node *temp = minValueNode(root);
+
+            print_node(temp,"minvaluenode");
+
+            // Copy the inorder successor's content to this node
+            root->data = temp->data;
+
+            // Delete the inorder successor
+            root->right = deleteNode(root->right, temp->data);
+        }
+        return root;
     }
 
     int height(node *root)
@@ -158,14 +202,20 @@ class BSTree
     {
         return count(root);
     }
+
     void insert(int x)
     {
         node *temp = new node(x);
         insert(root, temp);
     }
-    void remove(int key)
+
+    void deleteNode(int key)
     {
-        remove(root, key);
+        deleteNode(root, key);
+    }
+
+    void minValue(){
+        print_node(minValueNode(root),"minVal");
     }
 
     int height(int key = -1)
@@ -180,9 +230,18 @@ class BSTree
         }
         return 0;
     }
+
+    int top(){
+        if(root)
+            return root->data;
+        else
+            return 0;
+    }
+
     /* Function to line by line print level order traversal a tree*/
     void printLevelOrder()
     {
+        cout << "Begin Level Order===================\n";
         int h = height(root);
         int i;
         for (i = 1; i <= h; i++)
@@ -190,13 +249,14 @@ class BSTree
             printGivenLevel(root, i);
             cout << "\n";
         }
+        cout << "End Level Order===================\n";
     }
 };
+
 
 int main()
 {
     srand(2342);
-    vector <int> used;
 
     BSTree B;
 
@@ -206,15 +266,16 @@ int main()
     B.insert(27);
     B.insert(5);
     B.insert(43);
-    B.insert(38);
-    B.insert(43);
+    B.insert(36);
     B.insert(3);
-
-
+    B.printLevelOrder();
+    cout<<endl<<endl;
+    B.deleteNode(29);
     B.printLevelOrder();
 
-    B.remove(27);
-    cout << endl << endl;
-    B.printLevelOrder();   
+    cout<<endl<<endl;
+    B.deleteNode(36);
+    B.printLevelOrder();
+
     return 0;
 }
