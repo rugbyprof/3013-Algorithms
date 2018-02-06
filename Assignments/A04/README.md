@@ -4,7 +4,7 @@ Due: February 13<sup>th</sup> by Classtime.
 
 ### Overview
 
-Given the code available [here](../Lectures/bstree2.cpp) fix the delete method so that it can handle deleting the root node when it doesn't have a left or a right child. Your code should work with the following snippet and terminate cleanly.
+Given the code available [here](https://github.com/rugbyprof/3013-Algorithms/blob/master/Lectures/L04/bstree2.cpp) fix the delete method so that it can handle deleting the root node when it doesn't have a left or a right child. Your code should work with the following snippet and terminate cleanly.
 
 ```cpp
     // Continously delete root node, until tree is empty.
