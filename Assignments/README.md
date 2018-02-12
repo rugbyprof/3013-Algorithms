@@ -6,4 +6,4 @@
  | [A03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [ Assignment 3 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [ Priority Queue (Warm Up)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [Thursday January 25th by 12:30pm](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) |
  | [A04](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A04) | [ Assignment 4 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A04) | [ Fix delete method](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A04) | [February 13<sup>th</sup> by Classtime.](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A04) |
 
-<sup>Last Updated: 2018-02-06 (Tue @ 12:19)</sup>
+<sup>Last Updated: 2018-02-12 (Mon @ 15:55)</sup>
