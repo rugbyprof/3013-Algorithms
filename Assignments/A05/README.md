@@ -44,6 +44,15 @@ Because there are a lot of words and we need data to load into both of our data 
     - You don't have to have every group in every crazy word, but try to randomly cycle through all the groups. 
     - How you do this is up to you, however you need to generate at least ***10000*** crazy words that are made up with 3-5 word parts. 
     - Just for your information, animals make words funnier. Totally my opinion, but I'm grading your programs so ...
+    - Your 10000 words will be stored in a file, one crazy word per line, with spaces between each word component. 
+
+`crazywords.txt`
+```
+rowdy worthwhile bird
+bug free succotash
+peppery sunny maggot
+cautious waffle
+```
     
 - Part 2
     - Assuming you have loaded all of your words into an AVL tree and a Binary Search Tree (BST).
@@ -59,6 +68,13 @@ Because there are a lot of words and we need data to load into both of our data 
     
 ### Deliverables
 
+- Create a folder called `crazy_words` in your `assignments` folder.
+- You will have an `AVLtree.h` and a `BSTree.h` in this folder as well (which I will provide and you will alter).
+- Have a copy of the word files in here as well.
+- Place part one of your solution in `generate_words.cpp`. 
+- Place part ones output in a file called `tenthousandwords.txt` one crazy word per line with one space between words (like the above example).
+- Place part two of your solution in `analyze_trees.cpp`. And a compiled version in `analyze_trees.exe`. If I run `analyze_trees.exe` from the command line I should be able to run it like: `analyze_trees.exe myinput.txt` and have it analyze my crazy words input file. 
+- You should have the output for the analysis of your crazy words file in `analysis.out`
 
 
 
