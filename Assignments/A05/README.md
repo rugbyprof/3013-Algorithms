@@ -35,8 +35,15 @@ Because there are a lot of words and we need data to load into both of our data 
 ### Requirements
 
 - Part 1
-    - 
-- Compare the performance of a Binary Search Tree and an AVL tree by adding up the number of comparisons necessary to find each portion of a crazy word. 
+    - Come up with some heuristic that will create a crazy name using your word lists. If we look at some of the examples from above: 
+        - ***RowdyWorthwhileBird*** = ***adjective adjective noun*** 
+        - ***bug-free-succotash*** = ***noun adjective noun***
+        - ***PepperySunnyMaggot*** = ***adjective adjective noun***
+        - ***cautious-waffle*** = ***adjective noun*** 
+    - There are no verbs or adverbs! I want you to find a way to incorporate all the word groups into your crazy word generator. How you do this is up to you, however you need to generate at least 10000 crazy words that are made up with 3-5 word parts. Just for your information, animals make words funnier. Totally my opinion, but I'm grading your programs so ...
+- Part 2
+    - Compare the performance of a Binary Search Tree and an AVL tree by adding up the number of comparisons necessary to lookup each word component of a crazy word. 
+    
 
 
 
