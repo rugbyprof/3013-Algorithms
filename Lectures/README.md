@@ -7,4 +7,4 @@
  | [L04](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L04) | [ Intro to Binary Trees ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L04) | [ real basic stuff](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L04) |
  | [L05](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L05) | [ Avl Trees ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L05) | [ Overview](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L05) |
 
-<sup>Last Updated: 2018-02-13 (Tue @ 09:57)</sup>
+<sup>Last Updated: 2018-02-13 (Tue @ 10:14)</sup>
