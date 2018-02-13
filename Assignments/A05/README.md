@@ -58,13 +58,13 @@ cautious waffle
     - Assuming you have loaded all of your words into an AVL tree and a Binary Search Tree (BST).
     - Read in all of your 10000 crazy words and lookup each portion of the word in the AVL and BST data structures.
     - Compare the performance of the BST and AVL trees by adding up the number of comparisons necessary to lookup each word component. 
-    - Output will be: 
-        - BST Comparisons
-        - AVL Comparisons
-        - Number of Adjectives
-        - Number of Adverbs
-        - Number of Nouns
-        - Number of Verbs
+    - Output will look like: 
+        - BST Comparisons       = xxx
+        - AVL Comparisons       = xxx
+        - Number of Adjectives  = xxx 
+        - Number of Adverbs     = xxx 
+        - Number of Nouns       = xxx 
+        - Number of Verbs       = xxx 
     
 ### Deliverables
 
