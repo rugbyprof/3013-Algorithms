@@ -40,10 +40,25 @@ Because there are a lot of words and we need data to load into both of our data 
         - ***bug-free-succotash*** = ***noun adjective noun***
         - ***PepperySunnyMaggot*** = ***adjective adjective noun***
         - ***cautious-waffle*** = ***adjective noun*** 
-    - There are no verbs or adverbs! I want you to find a way to incorporate all the word groups into your crazy word generator. How you do this is up to you, however you need to generate at least 10000 crazy words that are made up with 3-5 word parts. Just for your information, animals make words funnier. Totally my opinion, but I'm grading your programs so ...
-- Part 2
-    - Compare the performance of a Binary Search Tree and an AVL tree by adding up the number of comparisons necessary to lookup each word component of a crazy word. 
+    - There are no verbs or adverbs! I want you to find a way to incorporate all the word groups into your crazy word generator. 
+    - You don't have to have every group in every crazy word, but try to randomly cycle through all the groups. 
+    - How you do this is up to you, however you need to generate at least ***10000*** crazy words that are made up with 3-5 word parts. 
+    - Just for your information, animals make words funnier. Totally my opinion, but I'm grading your programs so ...
     
+- Part 2
+    - Assuming you have loaded all of your words into an AVL tree and a Binary Search Tree (BST).
+    - Read in all of your 10000 crazy words and lookup each portion of the word in the AVL and BST data structures.
+    - Compare the performance of the BST and AVL trees by adding up the number of comparisons necessary to lookup each word component. 
+    - Output will be: 
+        - BST Comparisons
+        - AVL Comparisons
+        - Number of Adjectives
+        - Number of Adverbs
+        - Number of Nouns
+        - Number of Verbs
+    
+### Deliverables
+
 
 
 
