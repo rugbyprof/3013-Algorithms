@@ -45,6 +45,7 @@ Because there are a lot of words and we need data to load into both of our data 
     - How you do this is up to you, however you need to generate at least ***10000*** crazy words that are made up with 3-5 word parts. 
     - Just for your information, animals make words funnier. Totally my opinion, but I'm grading your programs so ...
     - Your 10000 words will be stored in a file, one crazy word per line, with spaces between each word component. 
+    - No repeat words!
 
 `crazywords.txt`
 ```
