@@ -1,25 +1,25 @@
 ### Assignment 4:
-|    #    | Item                                     |   Value | Earned |                |
-|:-------:|------------------------------------------|--------:|-------:|:--------------:|
-| ***1*** | ***General***                            |      30 |        | ![Alt text][1] |
-|   1.0   | Each item exists & named correctly       |         |        | ![Alt text][1] |
-|    _    | & in proper location                     |         |        | ![Alt text][1] |
-|   1.1   | `repository`                             |         |        | ![Alt text][1] |
-|   1.2   | `assignments`                            |         |        | ![Alt text][1] |
-|   1.3   | `assignment_4` in  `assignments`         |         |        | ![Alt text][1] |
-|   1.4   | `main.cpp` in `assignment_4`             |         |        | ![Alt text][1] |
-|   1.4   | `BSTree.cpp`  in `assignment_4`          |         |        | ![Alt text][1] |
-|   1.4   | `BSTree.h` in `assignment_4`             |         |        | ![Alt text][1] |
-| ***2*** | ***Comments***                           |      20 |        | ![Alt text][1] |
-|   2.1   | Program has a comment block at the top . |         |        | ![Alt text][1] |
-|   2.2   | Each function has a comment block.       |         |        | ![Alt text][1] |
-|   2.3   | Program is generally commented           |         |        | ![Alt text][1] |
-| ***3*** | ***Output***                             |       0 |        | ![Alt text][1] |
-|   3.1   | None really                              |         |        | ![Alt text][1] |
-| ***4*** | ***Correctness***                        |      50 |        | ![Alt text][1] |
-|   4.1   | Program runs without error               |         |        | ![Alt text][1] |
-|   4.2   | Program deletes every node from tree.    |         |        | ![Alt text][1] |
-| Totals: | **100**                                  | **100** |        | ![Alt text][1] |
+|    #    | Item                                     |   Value | Earned |       |
+|:-------:|------------------------------------------|--------:|-------:|:-----:|
+| ***1*** | ***General***                            |      30 |        |       |
+|   1.0   | Each item exists & named correctly       |         |        |       |
+|    _    | & in proper location                     |         |        |       |
+|   1.1   | `repository`                             |         |        |       |
+|   1.2   | `assignments`                            |         |        |       |
+|   1.3   | `assignment_4` in  `assignments`         |         |        |       |
+|   1.4   | `main.cpp` in `assignment_4`             |         |        |       |
+|   1.4   | `BSTree.cpp`  in `assignment_4`          |         |        |       |
+|   1.4   | `BSTree.h` in `assignment_4`             |         |        |       |
+| ***2*** | ***Comments***                           |      20 |        |       |
+|   2.1   | Program has a comment block at the top . |         |        |       |
+|   2.2   | Each function has a comment block.       |         |        |       |
+|   2.3   | Program is generally commented           |         |        |       |
+| ***3*** | ***Output***                             |       0 |        |       |
+|   3.1   | None really                              |         |        |       |
+| ***4*** | ***Correctness***                        |      50 |        |       |
+|   4.1   | Program runs without error               |         |        |       |
+|   4.2   | Program deletes every node from tree.    |         |        |       |
+| Totals: | **100**                                  | **100** |        |       |
 
 ### Comments:
 ```
