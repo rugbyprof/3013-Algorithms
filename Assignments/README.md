@@ -7,4 +7,4 @@
  | [A04](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A04) | [ Assignment 4 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A04) | [ Fix delete method](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A04) | [February 13<sup>th</sup> by Classtime.](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A04) |
  | [A05](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A05) | [ Assignment 5 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A05) | [ Crazy Word Creator](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A05) | [Mar 1st by Classtime](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A05) |
 
-<sup>Last Updated: 2018-02-16 (Fri @ 11:29)</sup>
+<sup>Last Updated: 2018-02-16 (Fri @ 11:36)</sup>
