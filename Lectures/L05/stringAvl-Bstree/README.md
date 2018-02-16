@@ -1,7 +1,6 @@
 ## Avl Program Overvew
 
 - [word_files](./word_files) Folder with another copy of all our word files.
-- 
 - [avlTree_main.cpp](./avlTree_main.cpp) driver program for the avl tree.
 - [avlTree_viz.txt](./avlTree_viz.txt) graphviz output for avl tree.
 - [avlTree.cpp](./avlTree.cpp) avl tree implementation.
