@@ -38,6 +38,7 @@
 
 ---
 <img src="http://cs.mwsu.edu/~griffin/images/seven.png" width=25px>
+
 - Given a sequence of numbers: **11, 6, 8, 19, 4, 10, 5, 17, 43, 49, 31**
     - Insert them into a Binary Search Tree
     - Insert them into a Max Heap
