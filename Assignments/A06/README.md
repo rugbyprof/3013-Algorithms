@@ -26,7 +26,7 @@
 
 ---
 
-- Write a recursive functions to perform:
+- Write a recursive function to perform:
     - PreOrder traversal
     - InOrder traversal
     - PostOrder traversal
@@ -34,6 +34,7 @@
 ---
 
 - Write a recursive function to calculate the height of a BST node.
+- Write a recursive function to find a key value in a BST.
 
 ---
 
@@ -47,5 +48,11 @@
 
 Label the balance factor for each node for the tree at the top of the page.
 
+---
 
+Describe:
+
+- The differences between a BST and AVL tree. Know the differences in implementation and performance (costs for insertion, searching, and deletion). Do we implement one or both using arrays or pointers?
+
+- What are MIN and MAX Heaps used for? What are the costs for insertion and removal. Why does heapify have a better performance then inserting one value at a time? Implement a heap using pointers or arrays?
     
