@@ -1,6 +1,6 @@
 ## Test 1 - Study Guide
 
-![](https://cl.ly/pe8N/Image%202018-02-20%20at%2011.33.55%20AM.png)
+![](https://cl.ly/pf4H/Image%202018-02-20%20at%2012.00.05%20PM.png)
 
 ---
 
@@ -45,9 +45,7 @@
 
 ---
 
-![](https://cl.ly/pf4H/Image%202018-02-20%20at%2012.00.05%20PM.png)
-
-Label the balance factor for each node.
+Label the balance factor for each node for the tree at the top of the page.
 
 
     
