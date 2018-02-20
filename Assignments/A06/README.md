@@ -3,7 +3,7 @@
 ![](https://cl.ly/pf4H/Image%202018-02-20%20at%2012.00.05%20PM.png)
 
 ---
-
+![](http://cs.mwsu.edu/~griffin/images/one.png)
 - Place the values from figure one, into an array based implementation of a Binary Tree.
 
 ---
