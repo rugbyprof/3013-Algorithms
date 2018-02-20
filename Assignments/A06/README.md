@@ -26,12 +26,14 @@
 
 ---
 
-- Write a recursive function to calculate the height of a BST node.
-
 - Write a recursive functions to perform:
     - PreOrder traversal
     - InOrder traversal
     - PostOrder traversal
+
+---
+
+- Write a recursive function to calculate the height of a BST node.
 
 ---
 
