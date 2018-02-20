@@ -43,7 +43,11 @@
     - Insert them into a Min Heap
     - Insert them into an Avl Tree
 
+---
 
+![](https://cl.ly/pf4H/Image%202018-02-20%20at%2012.00.05%20PM.png)
+
+Label the balance factor for each node.
 
 
     
