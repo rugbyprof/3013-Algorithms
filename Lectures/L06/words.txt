@@ -1,0 +1,7 @@
+cat
+dog
+cow
+sheep
+bull
+pig
+duck
