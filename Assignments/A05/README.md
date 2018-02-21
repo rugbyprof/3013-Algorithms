@@ -70,13 +70,32 @@ cautious waffle
     
 ### Deliverables
 
-- Create a folder called `crazy_words` in your `assignments` folder.
+- Create a folder called `program_3` in your `assignments` folder.
 - You will have an `AVLtree.h` and a `BSTree.h` in this folder as well (which I will provide and you will alter).
 - Have a copy of the word files in here as well.
 - Place part one of your solution in `generate_words.cpp`. 
 - Place part ones output in a file called `tenthousandwords.txt` one crazy word per line with one space between words (like the above example).
 - Place part two of your solution in `analyze_trees.cpp`. And a compiled version in `analyze_trees.exe`. If I run `analyze_trees.exe` from the command line I should be able to run it like: `analyze_trees.exe myinput.txt` and have it analyze my crazy words input file. 
 - You should have the output for the analysis of your crazy words file in `analysis.out`
+- The directory structure of this project should mimic the following;
 
+```
+.
+|__program_3
+| |__generate_words.cpp
+| |__BSTree.h
+| |__tenthousandwords.txt
+| |__word_files
+| | |__nouns.txt
+| | |__adverbs.txt
+| | |__animals.txt
+| | |__adjectives.txt
+| | |__verbs.txt
+| |__README.md
+| |__analysis.out
+| |__analyze_trees.exe
+| |__analyze_trees.cpp
+| |__AVLtree.h
+```
 
 
