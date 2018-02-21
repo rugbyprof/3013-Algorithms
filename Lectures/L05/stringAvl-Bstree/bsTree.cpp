@@ -9,18 +9,18 @@ using namespace std;
 
 struct node
 {
-    int data;
+    string data;
     node *left;
     node *right;
     node()
     {
-        data = -1;
+        data = "";
         left = NULL;
         right = NULL;
     }
-    node(int x)
+    node(string w)
     {
-        data = x;
+        data = w;
         left = NULL;
         right = NULL;
     }
@@ -114,7 +114,7 @@ class BSTree
         return current;
     }
 
-    node *deleteNode(node *&root, int key)
+    node *deleteNode(node *&root, string key)
     {
         if (!root)
         {
@@ -280,13 +280,13 @@ class BSTree
         return count(root);
     }
 
-    void insert(int x)
+    void insert(string x)
     {
         node *temp = new node(x);
         insert(root, temp);
     }
 
-    void deleteNode(int key)
+    void deleteNode(string key)
     {
         deleteNode(root, key);
     }
@@ -296,9 +296,9 @@ class BSTree
         print_node(minValueNode(root), "minVal");
     }
 
-    int height(int key = -1)
+    int height(string key = "")
     {
-        if (key > 0)
+        if (key != "")
         {
             //find node
         }
@@ -309,7 +309,7 @@ class BSTree
         return 0;
     }
 
-    int top()
+    string top()
     {
         if (root)
             return root->data;
@@ -347,35 +347,3 @@ class BSTree
         VizOut.close();
     }
 };
-
-int main()
-{
-    srand(2342);
-
-    BSTree B;
-
-    B.insert(38);
-    B.insert(10);
-    B.insert(29);
-    B.insert(27);
-    B.insert(5);
-    B.insert(43);
-    B.insert(36);
-    B.insert(3);
-    B.printLevelOrder();
-    B.GraphVizOut("before.txt");
-
-    // while(B.top()){
-    //     cout<<"removing: "<<B.top()<<endl;
-    //     B.deleteNode(B.top());
-    // }
-
-    B.deleteNode(3);
-    B.deleteNode(29);
-    B.deleteNode(27);
-    B.deleteNode(10);
-    B.printLevelOrder();
-
-    B.GraphVizOut("after.txt");
-    return 0;
-}
