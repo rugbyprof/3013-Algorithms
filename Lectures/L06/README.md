@@ -2,13 +2,6 @@
 
 ### Runit
 
-
-
 ```
-
-```
-
-### Code
-```cpp
-
+./load_dict words.txt
 ```
