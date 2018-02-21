@@ -3,4 +3,4 @@
  | ------------|------------|------------|
  | [R01](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/R01) | [ Word Files ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/R01) | [ Adjectives, Adverbs, Nouns, Verbs](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/R01) |
 
-<sup>Last Updated: 2018-02-20 (Tue @ 20:54)</sup>
+<sup>Last Updated: 2018-02-20 (Tue @ 21:05)</sup>
