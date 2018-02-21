@@ -1,5 +1,5 @@
 ## Assignment 5 - Crazy Word Creator
-Due: Mar 1st by Classtime
+Due: Mar 1<sup>st</sup> by Classtime
 
 ### Overview
 
@@ -78,6 +78,8 @@ cautious waffle
     - animals
     - nouns
     - animals
+4. Make sure you don't load duplicates into either of your trees!!
+4. The `adjectives` file should start with an `M` word. 
 4. Open your `tenthousandwords.txt` and as you read in each crazy word:
     - look up each word component in the `BSTree` and `AVLtree` to count comparisons.
 5. Output your results to screen and file.
