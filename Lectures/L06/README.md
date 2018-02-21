@@ -1,4 +1,4 @@
-## STL Example : Map example as help for program 3.
+## STL Example - Map example as help for program 3
 
 #### Runit
 
