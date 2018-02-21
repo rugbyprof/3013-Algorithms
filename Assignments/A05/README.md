@@ -67,7 +67,21 @@ cautious waffle
         - Number of Adverbs     = xxx 
         - Number of Nouns       = xxx 
         - Number of Verbs       = xxx 
-    
+
+### Big Picture
+
+1. Read each of the word files into some structure (possibly an array).
+2. Build your crazy random words (with no repeats) and save them into `tenthousandwords.txt`
+3. Load all of the word files into your `BSTree` and `AVLtree` in this order:
+    - adjectives
+    - adverbs
+    - animals
+    - nouns
+    - animals
+4. Open your `tenthousandwords.txt` and as you read in each crazy word:
+    - look up each word component in the `BSTree` and `AVLtree` to count comparisons.
+5. Output your results to screen and file.
+
 ### Deliverables
 
 - Create a folder called `program_3` in your `assignments` folder.
@@ -77,7 +91,7 @@ cautious waffle
 - Place part ones output in a file called `tenthousandwords.txt` one crazy word per line with one space between words (like the above example).
 - Place part two of your solution in `analyze_trees.cpp`. And a compiled version in `analyze_trees.exe`. If I run `analyze_trees.exe` from the command line I should be able to run it like: `analyze_trees.exe myinput.txt` and have it analyze my crazy words input file. 
 - You should have the output for the analysis of your crazy words file in `analysis.out`
-- The directory structure of this project should mimic the following;
+- The directory structure (not the order) of this project should mimic the following;
 
 ```
 .
