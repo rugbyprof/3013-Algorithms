@@ -86,6 +86,7 @@ cautious waffle
 
 ### Deliverables
 
+- If your code is not on github, **it doesn't exist**. You don't need to upload before due date, but same day.
 - Create a folder called `program_3` in your `assignments` folder.
 - You will have an `AVLtree.h` and a `BSTree.h` in this folder as well (which I will provide and you will alter).
 - Have a copy of the word files in here as well.
