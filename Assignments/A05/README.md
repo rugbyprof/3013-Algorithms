@@ -78,6 +78,7 @@ cautious waffle
     - animals
     - nouns
     - animals
+    - verbs
 4. Make sure you don't load duplicates into either of your trees!!
 4. The `adjectives` file should start with an `M` word. 
 4. Open your `tenthousandwords.txt` and as you read in each crazy word:
