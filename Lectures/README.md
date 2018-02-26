@@ -8,5 +8,4 @@
  | [L05](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L05) | [ Avl Trees ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L05) | [ Overview](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L05) |
  | [L06](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L06) | [ STL Example ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L06) | [ Map example as help for program 3](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L06) | [L06](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L06) | [ Runit](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L06) |
 
-<sup>Last Updated: 2018-02-26 (Mon @ 14:58)</sup>
-
+<sup>Last Updated: 2018-02-26 (Mon @ 15:08)</sup>
