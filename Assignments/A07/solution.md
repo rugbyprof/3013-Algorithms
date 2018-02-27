@@ -24,7 +24,7 @@ Name: _________________________
 
 Draw the binary search tree that is created if the following numbers are inserted in the tree in the given order. 
 
-<center>**12 15 3 35 21 42 14**</center>
+<center> **12 15 3 35 21 42 14** </center>
 
 #### Solution:
 
