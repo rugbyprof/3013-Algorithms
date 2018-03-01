@@ -140,7 +140,7 @@ int height(Node* root){
 
 #### Question 8 <sup>(15 points)</sup>
 
-<img src="https://cl.ly/ppyI/delete_root_example.png" width="400">
+<img src="https://cl.ly/pohK/binary_tree_example.png" width="400">
 
 Using the tree above, show the output of a:
 
