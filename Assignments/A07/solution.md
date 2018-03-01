@@ -147,20 +147,20 @@ Using the tree above, show the output of a:
 - Pre Order Traversal
 
 ```
-25 13 10 18 21 35 28 27 45
+25 13 10 18 15 35 28 27 45
 
 ```
 
 - In Order Traversal
 
 ```
-10 13 18 21 25 27 28 35 45
+10 13 15 18 25 27 28 35 45
 
 ```
 
 - Post Order Traversal
 
 ```
-10 21 18 13 27 28 45 35 25
+10 15 18 13 27 28 45 35 25
 
 ```
