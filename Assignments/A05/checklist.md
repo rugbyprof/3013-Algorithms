@@ -5,7 +5,7 @@
 |   1.1   | `repository`  exists                                                                |         |        | ![Alt text][1] |
 |   1.2   | `assignments` folder exists                                                         |         |        | ![Alt text][1] |
 |   1.3   | `program_3` folder exists in assignments                                            |         |        | ![Alt text][1] |
-|   1.4   | All appropriate files in `program_3`                                                |         |        | ![Alt text][1] |
+|   1.4   | All appropriate files in `program_3` and directory structure closely matches example                               |         |        | ![Alt text][1] |
 | ***2*** | ***Comments***                                                                      |      10 |        | ![Alt text][1] |
 |   2.1   | Program has a comment block at the top of the the file, and one for every function. |         |        | ![Alt text][1] |
 | ***3*** | ***Part 1***                                                                        |      30 |        | ![Alt text][1] |
