@@ -1,9 +1,9 @@
 ## Hashing - Not the cryptographic kind
 
-#### Capacity
+### Capacity
 The **`capacity`** is the number of buckets in the hash table, and the initial capacity is simply the capacity at the time the hash table is created. 
 
-#### Load Factor
+### Load Factor
 
 - The load factor `α` of a hash table with *`n`* elements is given by the following formula:
     - *`α` = `n` / array_size*
@@ -13,6 +13,38 @@ The **`capacity`** is the number of buckets in the hash table, and the initial c
 ### Avalanche
 
 A hash function is said to achieve `avalanche` if the resulting hash value is wildly different if even a single bit is different in the key. (Remember the example of the one way hash we did in class using **`MD5`**. By changing a letter **`L`** to **`l`**, the entire hash changed.) This effect aids distribution because similar keys will not have similar hash values. A hash function that distributes the hash values in a uniform manner will minimize collisions and fill the array more evenly. `Avalanche` is a concept derived from `cryptographic hashing`, and it offers a way to ensure that a hash function is good when used for table lookup.
+
+## Open Addressing
+
+### Linear Probing
+
+Linear probing looks at contiguous memory locations, until one is open.
+
+**Example:**
+- Want to insert key (element) j 
+- Compute h(j) = k
+- If `H[k]` is empty store in `H[k]`, otherwise try `H[k+1]`, `H[k+2]`, etc.
+
+**Advantages**:
+ - Easy to implement
+
+**DisAdvantages**:
+- Can cause clustering
+
+
+### Quadratic Probing
+
+Quadratic probing operates by taking the original hash value and adding successive values of an arbitrary quadratic polynomial to the starting value. 
+>**Example:** If ***h(k,i) = h(k) + i + i<sup>2</sup>(mod m)*** , then the probe sequence will be ***h(k),h(k) + 2,h(k) + 6,...***
+
+**Advantages**:
+ - Reduced primary clustering
+ 
+**DisAdvantages**:
+ - Can cause secondary clustering
+
+
+## Chaining
 
 ### Additive Hash
 
@@ -187,3 +219,5 @@ Therefore, to minimize collisions, it is important to reduce the number of commo
 - Sources:
     - <sub>Eternally Confuzzled: http://www.eternallyconfuzzled.com/tuts/algorithms/jsw_tut_hashing.aspx</sub>
     - <sub>Mario Cervera: https://cs.stackexchange.com/users/57681/mario-cervera</sub>
+    - <sub>https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function</sub>
+    - <sub>https://www.cs.cmu.edu/~tcortina/15-121sp10/Unit08B.pdf</sub>
