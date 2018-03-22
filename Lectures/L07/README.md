@@ -6,9 +6,7 @@ The **`capacity`** is the number of buckets in the hash table, and the initial c
 #### Load Factor
 
 - The load factor `α` of a hash table with *`n`* elements is given by the following formula:
-
->*`α` = `n` / array_size*
-
+    - *`α` = `n` / array_size*
 - Thus, *`0 < α < 1`* for linear probing. (`α` can be greater than 1 for other collision resolution methods)
 - For linear probing, as *`α`* approaches 1, the number of collisions increases.
 
