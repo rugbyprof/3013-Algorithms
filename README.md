@@ -11,7 +11,7 @@
     - ___Spring Break:___ Sat March 10<sup>th</sup> - Sun March 18<sup>th</sup>
     - ___Holiday Break:___ Fri March 30<sup>th</sup> - Sun April 1<sup>st</sup>
 - ___Last Day for “W”:___ Mon March 26<sup>th</sup>
-- ___Final Exam:___ Wednesday May 10<sup>th</sup>, 10:30 p.m. - 12:30 p.m.
+- ___Final Exam:___ Thursday May 10<sup>th</sup>, 10:30 p.m. - 12:30 p.m.
 
 
 ### Topics (Maybe more, maybe less .... we'll see):
