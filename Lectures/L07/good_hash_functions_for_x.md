@@ -24,10 +24,10 @@ Assume a hash function that is ideal for chaining (any key is equally likely to 
 
 The *average* running time for chaining:
 - ***Insert:*** *O(1)* (same as worst case).
-- ***Unsuccessful Search:*** *O(1 + &lambda;)*. 
+- ***Unsuccessful Search:*** *O(1 + &lambda;)*. 
 	- $O(1)$ time to compute $h(k)$; 
     - ${\lambda}$ items, on average, in the linked list are checked until discovering that $k$ is not present.
-- ***Successful Search:*** ${O(1+\lambda)}$. 
+- ***Successful Search:*** ${O(1+\lambda;)}$. 
 	- ${O(1)}$. time to compute $h(k)$ 
     - ${\lambda}$.on average, key being sought is in middle of linked list, so ${\frac{\lambda}{2}}$. comparisons needed to find $k$.  
 - ***Delete:*** Essentially the same as search.
