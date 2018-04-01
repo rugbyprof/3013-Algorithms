@@ -2,5 +2,6 @@
 | Folder | Resource | Description|
  | ------------|------------|------------|
  | [R01](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/R01) | [ Word Files ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/R01) | [ Adjectives, Adverbs, Nouns, Verbs](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/R01) |
+ | [R02](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/R02) | [ Powerpoints ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/R02) | [ Lectures and such](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/R02) |
 
-<sup>Last Updated: 2018-02-21 (Wed @ 00:02)</sup>
+<sup>Last Updated: 2018-03-27 (Tue @ 12:25)</sup>
