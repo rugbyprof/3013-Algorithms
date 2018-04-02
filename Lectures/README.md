@@ -11,4 +11,4 @@
  | [L08](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L08) | [ Prims & Kruskels ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L08) | [ Minimum Spanning Trees](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L08) |
  | [L09](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L09) | [ Dijkstra ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L09) | [ Shortest Path Algorithm](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L09) |
 
-<sup>Last Updated: 2018-03-27 (Tue @ 12:25)</sup>
+<sup>Last Updated: 2018-04-01 (Sun @ 22:01)</sup>
