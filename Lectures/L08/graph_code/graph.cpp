@@ -391,7 +391,7 @@ graph loadGraphCSV(string filename,int max=0)
 
     graph G;
 
-    ifstream file("zip_codes_states.csv");
+    ifstream file(filename);
 
     for (CSVIterator loop(file); loop != CSVIterator(); ++loop)
     {
@@ -418,6 +418,8 @@ graph loadGraphCSV(string filename,int max=0)
         state = (*loop)[4];
         county = (*loop)[5];
 
+        cout<<city<<endl;
+
         if(state != "PR"){
             G.addVertex(city, state, lat, lon);
         }
@@ -438,12 +440,14 @@ int main(int argc, char **argv)
 
     if(argc > 1){
         edges = stoi(argv[1]);
+    }else{
+        edges = 1024;
     }
     graph G = loadGraphCSV("cities.csv",edges);
     int maxid = G.maxID();
     int num_edges = maxid/2;
     randomEdges(G,num_edges);
-    //G.printGraph();
+    G.printGraph();
     cout<<G.graphViz(false);
     return 0;
 }
