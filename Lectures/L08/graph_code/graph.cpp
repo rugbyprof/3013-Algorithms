@@ -128,7 +128,7 @@ struct vertex
      */
     friend ostream &operator<<(ostream &output, const vertex &v)
     {
-        output << "(ID:" << v.ID << " C: " << v.city << " S: " << v.state << " L: " << v.loc << ")";
+        output << "(ID:" << v.ID << " C: " << v.city << " S: " << v.state << " L: " << v.loc << " Edges:"<<v.E.size()<< ")";
         return output;
     }
 };
@@ -145,6 +145,7 @@ class graph
 {
   public:
     int id;                      // id counter for new vertices
+    int num_edges;               // edge count
     vector<vertex *> vertexList; // vector to hold vertices
     strMapInt cityLookup;
 
@@ -165,11 +166,13 @@ class graph
     graph()
     {
         id = 0;
+        num_edges = 0;
     }
 
     graph(const graph &G)
     {
         id = G.id;
+        num_edges = 0;
         vertexList = G.vertexList;
         cityLookup = G.cityLookup;
     }
@@ -218,10 +221,18 @@ class graph
     {
         edge e1(toID, weight);
         vertexList[fromID]->E.push_back(e1);
+        num_edges++;
+
+        //cout<<"adding "<<fromID<<" to "<<toID<<endl;
+
         if (!directed)
         {
             edge e2(fromID, weight);
             vertexList[toID]->E.push_back(e2);
+
+            //cout<<"adding "<<toID<<" to "<<fromID<<endl;
+            
+            num_edges++;
         }
     }
 
@@ -264,6 +275,16 @@ class graph
         }
     }
 
+    void printVids(){
+        vector<vertex *>::iterator vit;
+        vector<edge>::iterator eit;
+
+        for (vit = vertexList.begin(); vit != vertexList.end(); vit++)
+        {
+            cout << (*vit)->ID << endl;
+        }
+    }
+
     string graphViz(bool directed = true){
         vector<vertex *>::iterator vit;
         vector<edge>::iterator eit;
@@ -275,8 +296,6 @@ class graph
         string conns = "";
         int weight = 0;
         string arrow = "";
-
-        intint cityList;
 
         if(directed){
             viz = "digraph G {\n";
@@ -291,21 +310,13 @@ class graph
         {
             if ((*vit)->E.size() > 0)
             {
-                if (cityList.find((*vit)->ID) == cityList.end())
-                {   
-                    // Add the city as a key to the map.
-                    cityList[(*vit)->ID] = 0;
-                    labels += "\t" + to_string((*vit)->ID) + " [label=\"" + (*vit)->city + ", " + (*vit)->state +  "\"]\n";
-                }
+                labels += "\t" + to_string((*vit)->ID) + " [label=\"" + (*vit)->city + ", " + (*vit)->state +  "\"]\n";
+
                 for (eit = (*vit)->E.begin(); eit != (*vit)->E.end(); eit++)
                 {
 
-                    if (cityList.find(eit->toID) == cityList.end())
-                    {   
-                        // Add the city as a key to the map.
-                        cityList[eit->toID] = 0;
-                        labels += "\t" + to_string(eit->toID) + " [label=\"" +  vertexList[eit->toID]->city + ", " + vertexList[eit->toID]->state +  "\"]\n";
-                    }
+
+                    labels += "\t" + to_string(eit->toID) + " [label=\"" +  vertexList[eit->toID]->city + ", " + vertexList[eit->toID]->state +  "\"]\n";
 
                     weight = eit->weight;
                     conns += "\t" + to_string((*vit)->ID) + arrow 
@@ -333,8 +344,18 @@ class graph
         return id;
     }
 
-    int graphSize(){
-        return vertexList.size();
+    /**
+     * graphSize - returns the number of vertices and edges
+     * Params:
+     *     void
+     * Returns:
+     *     int
+     */
+    int* graphSize(){
+        int* vals = new int[2];
+        vals[0] = vertexList.size();
+        vals[1] = num_edges;
+        return vals;
     }
 
     /**
@@ -356,17 +377,17 @@ class graph
 };
 
 void randomEdges(graph &g,int numEdges){
-    int r;
+    int r1,r2;
     latlon from;
     latlon to;
     double d;
     for(int i=0;i<numEdges;i++){
-        r = rand() % g.maxID();
-        r = rand() % g.vertexList.size();
-        from = g.vertexList[i]->loc;
-        to = g.vertexList[r]->loc;
+        r1 = rand() % g.vertexList.size();
+        r2 = rand() % g.vertexList.size();
+        from = g.vertexList[r1]->loc;
+        to = g.vertexList[r2]->loc;
         d = distanceEarth(from.lat,from.lon,to.lat,to.lon);
-        g.addEdge(i,r,(int)d,true);
+        g.addEdge(r1,r2,(int)d,true);
     }
 }
 
@@ -387,11 +408,13 @@ graph loadGraphCSV(string filename,int max=0)
     string state;
     string county;
 
+    strMapInt cityCheck;
+
     int i=0;
 
     graph G;
 
-    ifstream file("zip_codes_states.csv");
+    ifstream file(filename);
 
     for (CSVIterator loop(file); loop != CSVIterator(); ++loop)
     {
@@ -418,14 +441,22 @@ graph loadGraphCSV(string filename,int max=0)
         state = (*loop)[4];
         county = (*loop)[5];
 
-        if(state != "PR"){
-            G.addVertex(city, state, lat, lon);
-        }
         
+        if (cityCheck.find(city) == cityCheck.end())
+        {   
+            // Add the city as a key to the map.
+            cityCheck[city] = 0;
+
+            if(state != "PR"){
+                G.addVertex(city, state, lat, lon);
+                i++;
+            }
+        }
+
         if(i > max && max != 0){
             return G;
         }
-        i++;
+        
     }
 
     return G;
@@ -434,16 +465,33 @@ graph loadGraphCSV(string filename,int max=0)
 // Test Driver
 int main(int argc, char **argv)
 {
-    int edges = 0;
+    int max_vertices = 0;
+    int max_edges = 0;
 
-    if(argc > 1){
-        edges = stoi(argv[1]);
+    if(argc > 2){
+        max_vertices = stoi(argv[1]);
+        max_edges = stoi(argv[2]);
+    }else{
+        cout<<"Usage: ./graph max_vertices max_edges"<<endl;
+        exit(0);
     }
-    graph G = loadGraphCSV("cities.csv",edges);
-    int maxid = G.maxID();
-    int num_edges = maxid/2;
-    randomEdges(G,num_edges);
+
+    graph G = loadGraphCSV("cities.csv",max_vertices);
+    
+    randomEdges(G,max_edges);
+
     //G.printGraph();
+
     cout<<G.graphViz(false);
+
+    //G.printVids();
+
+    int *size = G.graphSize();
+
+    cout<<"V= "<<size[0]<<" E= "<<size[1]<<endl;
+
+    // for(int i=0;i<G.vertexList.size();i++){
+    //     cout<<(*G.vertexList[i])<<endl;
+    // }
     return 0;
 }
