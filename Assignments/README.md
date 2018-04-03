@@ -9,4 +9,4 @@
  | [A06](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A06) | [ Easy Grade ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A06) | [ Assignments Folder Refactor](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A06) | [February 27<sup>th</sup> by classtime.](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A06) |
  | [A07](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A07) | [ Test 1 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A07) | [ Study Guide & Solution](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A07) |
 
-<sup>Last Updated: 2018-04-02 (Mon @ 23:33)</sup>
+<sup>Last Updated: 2018-04-03 (Tue @ 16:32)</sup>
