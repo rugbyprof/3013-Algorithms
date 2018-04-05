@@ -6,4 +6,4 @@
  | [R02](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/R02) | [ Powerpoints ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/R02) | [ Lectures and such](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/R02) |
  | [sol](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/sol) | [ Resources sol ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/sol) | [ No Description](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/sol) |
 
-<sup>Last Updated: 2018-04-03 (Tue @ 16:32)</sup>
+<sup>Last Updated: 2018-04-05 (Thu @ 12:15)</sup>
