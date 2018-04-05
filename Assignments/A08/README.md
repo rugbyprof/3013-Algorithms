@@ -33,7 +33,8 @@ Start your connecting process using `Lebanon, Kansas` as it is the center most c
     XXXX miles XXXX edges
 - San Juan, Puerto Rico (and staying in Puerto Rico)
     XXXX miles XXXX edges
-    
+```
+
 - The above file will also be present in your repo.
 - You will also turn in a graphviz picture of your Puerto Rico graph including edges and weights. http://www.webgraphviz.com/ should be able to handle it.
 - All code will go in a folder on github as per previous assignments. This is `program_3`!
