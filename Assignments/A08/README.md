@@ -17,6 +17,7 @@ Start your connecting process using `Lebanon, Kansas` as it is the center most c
 - Dallas, Texas
 - Boston, Massachusetts
 - San Juan, Puerto Rico (and staying in Puerto Rico)
+- Portland, Oregon
 
 ### Deliverables
 
