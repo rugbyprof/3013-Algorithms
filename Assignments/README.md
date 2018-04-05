@@ -10,4 +10,4 @@
  | [A07](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A07) | [ Test 1 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A07) | [ Study Guide & Solution](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A07) |
  | [A08](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A08) | [ Assignment 6 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A08) | [ Spanning Trees](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A08) | [Tuesday April 17th by Classtime.](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A08) |
 
-<sup>Last Updated: 2018-04-05 (Thu @ 12:15)</sup>
+<sup>Last Updated: 2018-04-05 (Thu @ 12:22)</sup>
