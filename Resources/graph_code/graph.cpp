@@ -72,6 +72,7 @@ struct edge
     bool used;     // was edge used in some traversal
     edge(int id, double w)
     {
+
         toID = id;
         weight = w;
         used = false;
@@ -172,7 +173,7 @@ class graph
     graph(const graph &G)
     {
         id = G.id;
-        num_edges = 0;
+        num_edges = G.num_edges;
         vertexList = G.vertexList;
         cityLookup = G.cityLookup;
     }
@@ -360,6 +361,7 @@ class graph
 
     /**
      * operator= - overload assignment for Graph
+     * NOT DONE
      * Params:
      *     const latlon ll     - lat lon to assign
      * Returns 
