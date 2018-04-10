@@ -7,9 +7,9 @@ The  variable-length codes that are assigned to the input characters are prefix 
 
 For example, let us consider four characters **a**, **b**, **c** and **d**. Let their binary codes be **00**, **0**, **1** and **01**. We can observe that the binary code of character **b** is a prefix to binary code of characters **a** and **d**. So, if the encoded code is 00001 then the decoded code could be **"aac"**, **"abc"**, **"bbbbc"**, and so on.
 
-##Problem Definition##
+### Problem Definition
 
-### Input:
+***Input:***
 
 A Set of characters usually an array with each character and the frequency of its repetition in it.
 
@@ -18,7 +18,7 @@ Let the set of characters be **A**= {a1, a2, a3, ..., an}  and
 Set of their frequencies be **F**= {*f*1, *f*2, *f*3, ..., *f*n}.
 
 
-### Output
+***Output:***
 
 Generating binary code for each character, finding the length of each character.
 The length of each character is variable.
