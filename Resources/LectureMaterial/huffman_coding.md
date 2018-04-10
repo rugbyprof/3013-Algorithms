@@ -32,7 +32,7 @@ Huffman coding can be achieved by following steps:
 2. To assign the binary codes to the input characters.
 3. And to decode the binary code of the strings.
 
-###Constructing a tree from the given input characters:###
+***Constructing a tree from the given input characters:***
 
 To construct a tree we need an input of characters along with their frequencies.
 
