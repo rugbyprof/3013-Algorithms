@@ -42,7 +42,7 @@ Start your connecting process using `Lebanon, Kansas` as it is the center most c
 
 - The above file will also be present in your repo.
 - You will also turn in a graphviz picture of your Puerto Rico graph including edges and weights. http://www.webgraphviz.com/ should be able to handle it.
-- All code will go in a folder on github as per previous assignments. This is `program_3`!
+- All code will go in a folder on github as per previous assignments. This is `program_4`!
 - Place the graph code I give you into a header file. 
 - A README.md describing your project will also be present linking to each file.
 
