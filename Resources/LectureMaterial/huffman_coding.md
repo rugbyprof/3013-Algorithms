@@ -1,5 +1,6 @@
-# Huffman Coding #
-##Introduction##
+## Huffman Coding
+
+### Introduction
 Huffman coding algorithm is a lossless data compression algorithm. It is a method of storing strings of data as binary code in an efficient manner. Huffman coding uses variable length codes to input characters, which means that characters in the data are converted to a binary symbols based on how often that character is used. The most frequently used character gets the smallest binary code and the least frequently used character gets the longest binary code.
 
 The  variable-length codes that are assigned to the input characters are prefix codes. A binary code is called a **prefix code** if no code is a prefix of any other binary code. This is how Huffman coding avoids ambiguity while decoding.
@@ -8,7 +9,8 @@ For example, let us consider four characters **a**, **b**, **c** and **d**. Let 
 
 ##Problem Definition##
 
-###Input:###
+### Input:
+
 A Set of characters usually an array with each character and the frequency of its repetition in it.
 
 Let the set of characters be **A**= {a1, a2, a3, ..., an}  and
@@ -16,13 +18,14 @@ Let the set of characters be **A**= {a1, a2, a3, ..., an}  and
 Set of their frequencies be **F**= {*f*1, *f*2, *f*3, ..., *f*n}.
 
 
-###Output###
+### Output
+
 Generating binary code for each character, finding the length of each character.
 The length of each character is variable.
 
 Let **BC**(**A**,**F**)= { c1, c2, c3, ..., cn} where c1, c2, c3, ..., cn are the binary codes.
 
-##Structure and Algorithm##
+### Structure and Algorithm
 Huffman coding can be achieved by following steps:
 
 1. To construct a tree from the input characters.
@@ -41,69 +44,61 @@ To construct a tree we need an input of characters along with their frequencies.
 **Pseudo code for constructing a tree:**
 
 ```
+Input: An array I[] of frequencies
 
-	Input: An array I[] of frequencies
+Output: Binary tree with binary codes with n leaves
 
-	Output: Binary tree with binary codes with n leaves
+Huffman(I[1 to n])
 
-	Huffman(I[1 to n])
-	
-	(1) T= Empty binary tree
-	(2) Q= Priority Queues with pairs(i,I[i])
-	(3) foreach k= 1 to n-1
-	(4) i= extractMin(Q)
-	(5) j= extractMin(Q)
-	(6) I[n+k]= I[i] + I[j]
-	(7) insertNode(T, n+k) child i, j
-	(8) insertRear(Q,(n+k, I[n+k]))
-	(9) return T
+(1) T= Empty binary tree
+(2) Q= Priority Queues with pairs(i,I[i])
+(3) foreach k= 1 to n-1
+(4) i= extractMin(Q)
+(5) j= extractMin(Q)
+(6) I[n+k]= I[i] + I[j]
+(7) insertNode(T, n+k) child i, j
+(8) insertRear(Q,(n+k, I[n+k]))
+(9) return T
 
 ```
 
 Code in C++
-	
-	//Node comparision
-	if(b -> frequency < a-> frequency)
-	return 1;
-	if(a -> frequency < b-> frequency)
-	return 0;
 
-	// Node comparision if two symbols have same frequency
-	if(!a -> leftChild && a -> leftChild)
-	return 1;
-	if(a ->leftChild && !b -> LeftChild)
+```cpp
+//Node comparision
+if (b->frequency < a->frequency)
+    return 1;
+if (a->frequency < b->frequency)
+    return 0;
 
-````
+// Node comparision if two symbols have same frequency
+if (!a->leftChild && a->leftChild)
+    return 1;
+if (a->leftChild && !b->LeftChild)
 
-	//Inserting Leaf nodes into priority queue
-	while(start!=end)
-	Node* dNode= new Node(start -> second, startnode -> firstnode);
-	pqueue.push(dNode);
-	++start;
+    //Inserting Leaf nodes into priority queue
+    while (start != end)
+        Node *dNode = new Node(start->second, startnode->firstnode);
+pqueue.push(dNode);
+++start;
 
+//Constructing the tree
+while (!pqueue.empty())
+{
+    Node *top = pqueue.top();
+    pqueue.pop();
+    if (pqueue.empty())
+    {
+        tree = top;
+    }
+    else
+    {
+        Node *topnew = pqueue.top();
+        pqueue.pop();
+        pqueue.push(new Node(top, topnew));
+    }
+}
 ```
-```
-	
-	//Constructing the tree
-	while(!pqueue.empty())
-	{
-	Node* top= pqueue.top();
-	pqueue.pop();
-	if(pqueue.empty())
-	{
-	tree=top;
-	}
-	else
-	{
-	Node* topnew= pqueue.top();
-	pqueue.pop();
-	pqueue.push(new Node(top, topnew));
-	}
-	}
-```
-
-
-
 
 Let us consider an example:
 
@@ -131,7 +126,7 @@ Combine the last two nodes to form the final node or the root node. Combining no
 
 As we have only one node left the algorithm stops here.
 
-###Assigning binary codes to the input characters:###
+### Assigning binary codes to the input characters
 
 There is way to decide what binary code to give each character using trees.
 
@@ -151,19 +146,17 @@ Now the string "**abcde**" has the encoded value "**000011000111**"
 
 ```
 	
-	//Assigning binary code to symbols
-	if(leftChild)
-	{
-	prefix.push_back(0);
-	leftChild -> CodeFill(encoding, prefix);
-	prefix.push()=1;
-	rightChild->codeFill(encoding,prefix);
-	prefix.pop_back();
-	}
-	else
-	encoding[*data]= prefix;
-
-
+//Assigning binary code to symbols
+if (leftChild)
+{
+    prefix.push_back(0);
+    leftChild->CodeFill(encoding, prefix);
+    prefix.push() = 1;
+    rightChild->codeFill(encoding, prefix);
+    prefix.pop_back();
+}
+else
+    encoding[*data] = prefix;
 
 ```
 
@@ -201,24 +194,24 @@ The decoded string is "**cedabeb**".
 
 ```
 
-	//Decoding
-	void Decode(const& v, OutputIterator itr)
-	{
-	Node* node= tree;
-	for(const i=v.begin();i!=v.end();i++)
-	{
-	node=*i ? node -> rightChild: node-> leftChild;
-	if(!node -> leftChild)
-	{
-	*itr++= *(node->data);
-	node=tree;
-	}
-	}
-	}
+//Decoding
+void Decode(const &v, OutputIterator itr)
+{
+    Node *node = tree;
+    for (const i = v.begin(); i != v.end(); i++)
+    {
+        node = *i ? node->rightChild : node->leftChild;
+        if (!node->leftChild)
+        {
+            *itr++ = *(node->data);
+            node = tree;
+        }
+    }
+}
 
 ```
 
-###Average Length of code word:###
+**Average Length of code word**
 
 Average code word length is given by a mathematical representation
 
@@ -241,20 +234,20 @@ Average length of the example considered above:
 
 =2.125 digits long (Average length in the code is encoded to 2.125 binary digits)
 
-##Time Complexity##
+**Time Complexity**
 
 The time complexity of huffman coding takes O(nlogn), where n is the number of characters. The extractMin and the insertRear require O(logn) time as if there are n characters then extractMin will be called 2^(n-1) times. This is exactly same as when extractMin calls the Heap.
 
-##Advantages##
+**Advantages**
 
 1. The algorithm is easy to implement.
 2. Produces lossless compression of data.
 
-##Disadvantages##
+**Disadvantages**
 
 1. If the frequencies and probabilities change, optimal coding changes.
 2. It does not consider blocks of symbols.
 
-##References##
+**References**
 
 [http://en.wikipedia.org/wiki/Huffman_coding](http://en.wikipedia.org/wiki/Huffman_coding)
