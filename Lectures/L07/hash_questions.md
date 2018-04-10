@@ -45,6 +45,7 @@ Consider the following Keys in the given order:
 	***36    85   53   113   123   23   62   134   142   47***
 
 What is the result of inserting the given values into an open hash table with arbitrarily large buckets? 
+```
    [0]   [1]   [2]   [3]   [4]   [5]   [6]   [7]   [8]   [9]  [10]
  +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
  |     |     |     |     |     |     |     |     |     |     |     |
@@ -52,8 +53,9 @@ What is the result of inserting the given values into an open hash table with ar
  |     |     |     |     |     |     |     |     |     |     |     |
  |     |     |     |     |     |     |     |     |     |     |     |
  +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-
+```
 What is the result of inserting the given values into a closed hash table with linear probing? 
+```
    [0]   [1]   [2]   [3]   [4]   [5]   [6]   [7]   [8]   [9]  [10]
  +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
  |     |     |     |     |     |     |     |     |     |     |     |
@@ -61,7 +63,7 @@ What is the result of inserting the given values into a closed hash table with l
  |     |     |     |     |     |     |     |     |     |     |     |
  |     |     |     |     |     |     |     |     |     |     |     |
  +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-
+```
 
 
 - How does a hash table allow for O(1) searching? What is the worst case efficiency of a look up in a hash table using separate chaining?
