@@ -6,4 +6,4 @@
  | [Graph_Code](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/Graph_Code) | [ Graph Code](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/Graph_Code) |
  | [LectureMaterial](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/LectureMaterial) | [ Powerpoints ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/LectureMaterial) | [ Lectures and such](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/LectureMaterial) |
 
-<sup>Last Updated: 2018-04-10 (Tue @ 10:46)</sup>
+<sup>Last Updated: 2018-04-10 (Tue @ 11:55)</sup>
