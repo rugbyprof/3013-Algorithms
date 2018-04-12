@@ -9,10 +9,51 @@
 // Description:
 //       describe program here thoroughly
 /////////////////////////////////////////////////////////////////////////////////
+#pragma once
 
-#include <iostream>
+#include "graph.h"
 
 using namespace std;
+
+/**
+ * edge - represents the edge of a graph.
+ */
+struct edge
+{
+    int fromID;
+    int toID;      // id of vertex edge is going to
+    double weight; // weight of edge if any
+    bool used;     // was edge used in some traversal
+    edge(int id, double w)
+    {
+        fromID = -1;
+        toID = id;
+        weight = w;
+        used = false;
+    }
+    edge(int fid,int tid, double w)
+    {
+        fromID = fid;
+        toID = tid;
+        weight = w;
+        used = false;
+    }
+    /**
+     * operator<< - overload cout for edge
+     * Params:
+     *     const edge e     - edge to print
+     * Returns 
+     *     formatted output for an edge
+     */
+    friend ostream &operator<<(ostream &output, const edge &e)
+    {
+        if(e.fromID < 0)
+          output << "(To: " << e.toID << " W: " << e.weight << " U: " << e.used << ")";
+        else
+          output << "(From: "<<e.fromID<<" To: " << e.toID << " W: " << e.weight << " U: " << e.used << ")";
+        return output;
+    }
+};
 
 /**
  * Class Heap:
@@ -26,13 +67,10 @@ using namespace std;
  *    bool Empty()
  *    void Heapify(int*,int)
  */
-class Heap
+class edgeHeap
 {
   private:
-    int *H;       // Pointer to allocate dynamic array
-    int Next;     // Next available location
-    int MaxSize;  // Max size since were using array
-    int HeapSize; // Actual number of items in the array.
+    vector<edge *> H;
 
     /**
      * Function IncreaseKey:
@@ -46,7 +84,7 @@ class Heap
     void BubbleUp(int i)
     {
       int p = Parent(i);
-      while(p > 0 && H[i] > H[p]){
+      while(p > 0 && H[i]->weight < H[p]->weight){
         Swap(i,p);
         i = p;
         p = Parent(i);
@@ -67,7 +105,7 @@ class Heap
       int c = PickChild(i);
       
       while(c > 0){
-        if(H[i] < H[c]){
+        if(H[i]->weight > H[c]->weight){
           Swap(i,c);
           i = c;
           c = PickChild(i);
@@ -89,7 +127,7 @@ class Heap
      */
     void Swap(int p, int i)
     {
-        int temp = H[p];
+        edge *temp = H[p];
         H[p] = H[i];
         H[i] = temp;
     }
@@ -146,8 +184,8 @@ class Heap
      *      [int] index - index to swap with or -1 to not swap
      */
     int PickChild(int i){
-      if(RightChild(i) >= Next){//No right child
-        if(LeftChild(i) >= Next){//No left child
+      if(RightChild(i) >= H.size()){//No right child
+        if(LeftChild(i) >= H.size()){//No left child
           return -1;
         }else{//you have a left no right
           return LeftChild(i);
@@ -173,12 +211,9 @@ class Heap
      * Returns
      *      void
      */
-    Heap(int size)
+    edgeHeap()
     {
-      H = new int[size];
-      Next = 1;
-      MaxSize = size;
-      HeapSize = 0;
+
     }
 
     /**
@@ -190,12 +225,10 @@ class Heap
      * Returns
      *      void
      */
-    void Insert(int x)
+    void Insert(edge* x)
     {
-      H[Next] = x;
-      BubbleUp(Next);
-      Next++;
-      HeapSize++;
+      H.push_back(x);
+      BubbleUp(H.size()-1);
     }
 
     /**
@@ -207,18 +240,19 @@ class Heap
      * Returns
      *      [int] top_value - top value in the heap (min or max)
      */
-    int Extract()
+    edge* Extract()
     {
 
       if(Empty()){
-        return -1;
+        return NULL;
       }
       
-      int retval = H[1];
-      H[1] = H[--Next];
-      HeapSize--;
+      edge* retval = H[1];
+      H[1] = H.back();
+      H.pop_back();
+
       
-      if(HeapSize > 1){
+      if(H.size() > 1){
         BubbleDown(1);
       }
       
@@ -237,9 +271,9 @@ class Heap
      */
     void PrintHeap()
     {
-        for (int i = 1; i < Next; i++)
+        for (int i = 1; i < H.size(); i++)
         {
-            cout << H[i] << " ";
+            cout << *H[i] << endl;
         }
         cout << endl;
     }
@@ -255,7 +289,7 @@ class Heap
      */
     int Size()
     {
-        return Next - 1;
+        return H.size();
     }
 
     /**
@@ -269,7 +303,7 @@ class Heap
      */
     bool Empty()
     {
-        return Next == 1;
+        return H.size() == 0;
     }
 
     /**
@@ -282,14 +316,10 @@ class Heap
      * Returns
      *      void
      */
-    void Heapify(int *A, int size)
+    void Heapify(vector<edge *>A, int size)
     {
-      int i = size /2 ;
       H = A;
-      Next = size;
-      HeapSize = size-1;
-      
-      for(int j=i;j>=1;j--){
+      for(int j=H.size()/2;j>=1;j--){
         BubbleDown(j);
       }
     }
