@@ -280,36 +280,7 @@ class graph
     void createSpanningTree(string filter="")
     {
 
-        vector<vertex *>::iterator i;
-        vector<vertex *>::iterator j;
-        vector<edge>::iterator eit;
-        edgeHeap E; 
 
-        double distance = 0;
-        double minDistance = pow(2.0,30.0);
-        int closestID;
-
-        // loop through vertices
-        for (i = vertexList.begin(); i != vertexList.end(); i++)
-        {
-            //if((*i)->state == filter){
-                for (j = vertexList.begin(); j != vertexList.end(); j++)
-                {
-                    distance = distanceEarth((*i)->loc.lat, (*i)->loc.lon, (*j)->loc.lat, (*j)->loc.lon);
-                    // if(distance > 0 && distance < minDistance){
-                    //     closestID = (*j)->ID;
-                    //     minDistance = distance;
-                    // }
-                    edge *e = new edge((*i)->ID,(*j)->ID,distance);
-                    E.Insert(e);
-                }
-                //E.PrintHeap();
-                cout<<*E.Extract()<<endl;
-                cout<<*E.Extract()<<endl;
-                cout<<*E.Extract()<<endl;
-                exit(0);
-           // }
-        }
         
     }
 
