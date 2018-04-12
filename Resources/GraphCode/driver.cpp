@@ -179,7 +179,7 @@ int main(int argc, char **argv)
     //G.printGraph();
     cout<<G.searchGraph("truro")<<endl;
 
-    G.createSpanningTree();
+    G.createSpanningTree("PR");
 
     //cout<<G.graphViz(false);
 
