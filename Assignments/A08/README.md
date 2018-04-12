@@ -11,6 +11,8 @@ Create a graph structure with cities as __Vertices__ and no __Edges__ initially.
 
 You should make sure that you can adjust the max degree using a parameter and not hard coding that solution. Next program we will use Dijkstras shortest path on the graphs created by this program.
 
+I also included an adjacency list of US states. If you build your graphs by only looking at adjacent states, you will reduce the number of comparisons down by quite a lot. 
+
 The input file of cities has the following format.
 
 - zip, lat, lon , city , state , county
