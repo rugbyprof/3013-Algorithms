@@ -11,4 +11,4 @@
  | [A08](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A08) | [ Assignment 6 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A08) | [ Spanning Trees](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A08) | [Tuesday April 17th by Classtime.](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A08) |
  | [A09](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) | [ Test 2 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) | [ Hashing](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) | [A09](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) | [ Read](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) | [A09](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) | [ Browse](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) |
 
-<sup>Last Updated: 2018-04-12 (Thu @ 11:34)</sup>
+<sup>Last Updated: 2018-04-12 (Thu @ 12:06)</sup>
