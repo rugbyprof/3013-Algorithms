@@ -1,4 +1,5 @@
 // A simple representation of graph using STL
+#include <algorithm>
 #include <vector>
 #include <map>
 #include <iostream>
@@ -276,6 +277,57 @@ class graph
         }
     }
 
+    string mylower(string s){
+        for(int i=0;i<s.length();i++){
+            if(s[i]>='A' && s[i]<='Z'){
+                s[i]+= 32;
+            }
+        }
+        return s;
+    }
+
+    string searchGraph(string c)
+    {
+
+        vector<vertex *>::iterator i;
+        vector<edge>::iterator eit;
+
+        for (i = vertexList.begin(); i != vertexList.end(); i++)
+        {
+            if(mylower((*i)->city) == mylower(c)){
+                cout << *(*i) << endl;
+                return (*i)->city;
+            }
+        }
+        return "";
+    }
+
+    // find the three closest vertices and create edges between them.
+    void createSpanningTree()
+    {
+
+        vector<vertex *>::iterator i;
+        vector<vertex *>::iterator j;
+        vector<edge>::iterator eit;
+
+        double distance = 999999;
+        int closestID;
+
+        // loop through vertices
+        for (i = vertexList.begin(); i != vertexList.end(); i++)
+        {
+            cout<<(*i)->ID<<endl;
+            for (j = vertexList.begin(); j != vertexList.end(); j++)
+            {
+                cout<<(*j)->ID<<endl;
+                // calculate distance between the two
+                // be careful some lat lon pairs are the same 
+                // and don't add an edge to yourself.
+            }
+            // addEdge(int fromID, int toID, double weight = 0, bool directed = false);
+        }
+    }
+
     void printVids(){
         vector<vertex *>::iterator vit;
         vector<edge>::iterator eit;
@@ -548,7 +600,8 @@ int main(int argc, char **argv)
     
     randomEdges(G,max_edges);
 
-    G.printGraph();
+    //G.printGraph();
+    cout<<G.searchGraph("truro")<<endl;
 
     //cout<<G.graphViz(false);
 
