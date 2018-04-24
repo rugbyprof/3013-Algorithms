@@ -164,11 +164,13 @@ int main(int argc, char **argv)
     srand(984325);
     int max_vertices = 0;
     int max_edges = 0;
+    string state;
 
     if (argc > 2)
     {
         max_vertices = stoi(argv[1]);
         max_edges = stoi(argv[2]);
+        state = argv[3];
     }
     else
     {
@@ -177,30 +179,15 @@ int main(int argc, char **argv)
     }
 
     cout<<"Creating graph...\n";
-    graph G = loadGraphCSV("filtered_cities.csv", max_vertices, "TX");
-
-    //filterDups("cities.csv","filtered_cities.csv");
-    //randomEdges(G, max_edges);
-    //G.printGraph();
-
-    // cout << G.searchGraph("wichita falls") << endl;
-    // cout << G.searchGraph("dallas") << endl;
+    graph G = loadGraphCSV("filtered_cities.csv", max_vertices, state);
   
     cout<<"Adding edges ... \n";
-    G.createSpanningTree3();
+    G.createForest();
+    G.connectForest();
     cout<<"Done...\n";
-    
-    //cout<<G.graphViz(false);
 
     cout<<"Visualizing graph ... \n";
-    G.magickGraph(10000,6000,"magick2.png");
-
-    //G.printVids();
-    //int *size = G.graphSize();
-    //cout<<"V= "<<size[0]<<" E= "<<size[1]<<endl;
-    // for(int i=0;i<G.vertexList.size();i++){
-    //     cout<<(*G.vertexList[i])<<endl;
-    // }
+    G.magickGraph(10000,6000,"magick1.png");
 
     return 0;
 }

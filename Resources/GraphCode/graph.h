@@ -32,6 +32,7 @@ struct vertex
     point p;        // xy point type
     vector<edge> E; // vector of outedges
     bool visited;   // flag used for traversals
+    vector<int> network;
 
     /**
      * Constructor: vertex
@@ -96,6 +97,28 @@ struct vertex
         return false;
     }
 
+    bool buildNetwork(int id)
+    {
+        if (find(network.begin(), network.end(), id) != network.end())
+        {
+        }
+        if (E.size() == 0)
+        {
+            return false;
+        }
+        else
+        {
+            for (int e = 0; e < E.size(); e++)
+            {
+                if (E[e].toID == id)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
     /**
      * operator<< - overload cout for vertex
      * Params:
@@ -126,6 +149,8 @@ class graph
     vector<vertex *> vertexList; // vector to hold vertices
     strMapInt cityLookup;        // dictionary of unique cities
     llBox box;                   // bounding box of coords
+    edgePriorityList *E;
+    string *colors;
 
     /**
      * private: createVertex - returns a new vertex with unique id.
@@ -145,6 +170,16 @@ class graph
     {
         id = 0;
         num_edges = 0;
+        colors = new string[9];
+        colors[0] = "Black";
+        colors[1] = "Blue";
+        colors[2] = "Green";
+        colors[3] = "Red";
+        colors[4] = "Purple";
+        colors[5] = "Orange";
+        colors[6] = "Yellow";
+        colors[7] = "Brown";
+        colors[8] = "Pink";
     }
 
     /**
@@ -327,10 +362,6 @@ class graph
         int cx = ((box.c_p.x - box.minx) / (box.maxx - box.minx)) * w;
         int cy = h - (((box.c_p.y - box.miny) / (box.maxy - box.miny)) * h);
 
-        //[LL(41.6306,-110.782),(20.9862,-85.5431)]
-        //[XY(41.6306,249.218),(20.9862,274.457)]
-        //[Center(31.3084,-98.1627),(31.3084,261.837)]
-
         for (vit = vertexList.begin(); vit != vertexList.end(); vit++)
         {
 
@@ -339,40 +370,28 @@ class graph
 
             cout << (*(*vit)).city << endl;
 
-            if ((*(*vit)).city == "Wichita Falls")
-            {
-                cout << "*******************" << endl;
-                dg.setFillColor("Red");
-                dg.setStrokeColor("Red");
-                dg.drawCircleNode(x1, y1, 30, 30);
-                rx = x1;
-                ry = y1;
-            }
-            else
-            {
-                dg.setFontSize(20);
-                dg.setFillColor("White");
-                dg.setStrokeColor("Black");
-                dg.drawRectangleNode(x1, y1, 150, 60, (*(*vit)).city);
-            }
+            dg.setFontSize(20);
+            dg.setFillColor("White");
+            dg.setStrokeColor("Black");
+            dg.drawRectangleNode(x1, y1, 150, 60, (*(*vit)).city);
 
             if ((*vit)->E.size() > 0)
             {
                 cout << (*vit)->E.size() << endl;
                 for (eit = (*vit)->E.begin(); eit != (*vit)->E.end(); eit++)
                 {
-                    // cout<<(*vertexList[(*eit).toID]).p.x<<","<<(*vertexList[(*eit).toID]).p.y<<endl;
-                    // cout<<(*vertexList[(*eit).toID]).p<<endl;
                     x2 = (((*vertexList[(*eit).toID]).p.x - box.minx) / (box.maxx - box.minx)) * w;
                     y2 = h - ((((*vertexList[(*eit).toID]).p.y - box.miny) / (box.maxy - box.miny)) * h);
                     if (x1 > 0 && y1 > 0 && x2 > 0 && y2 > 0)
                     {
-                        //dg.setStrokeColor((*eit).color);
-                        dg.drawLine(x1, y1, x2, y2, "Blue");
+                        cout << "stupid color: " << (*eit).color << endl;
+                        if ((*eit).color == "")
+                        {
+                            (*eit).color = colors[rand() % 9];
+                        }
+                        dg.drawLine(x1, y1, x2, y2, (*eit).color);
                         cout << x1 << "," << y1 << "," << x2 << "," << y2 << endl;
                     }
-
-                    //cout<<"Adding line ...\n";
                 }
             }
 
@@ -385,16 +404,7 @@ class graph
             }
         }
 
-        //dg.drawLine(0,0,w,h);
-        dg.setFillColor("Red");
-        dg.setStrokeColor("Red");
-        dg.drawCircleNode(rx, ry, 30, 30);
-        //cout << rx << "," << ry << endl;
-        //dg.drawLine(cx, cy, rx, ry);
         dg.writeImage(imageName);
-        //cout << cx << "," << cy << endl;
-
-        //cout << box << endl;
     }
 
     void expandGraph(int distance)
@@ -447,78 +457,7 @@ class graph
         return "";
     }
 
-    // find the three closest vertices and create edges between them.
     void createSpanningTree(string filter = "")
-    {
-        vector<vertex *>::iterator i;
-        vector<vertex *>::iterator j;
-        vector<edge>::iterator eit;
-        edgeHeap E;
-        edge *e;
-
-        string colors[] = {"Black", "Blue", "Green", "Red", "Purple", "Orange", "Yellow", "Brown", "Pink"};
-
-        double distance = 0;
-        double d = 0;
-        double minDistance = pow(2.0, 30.0);
-        int closestID;
-        int count = 0;
-        int ecount = 0;
-        string minCity;
-
-        while (!Connected())
-        {
-
-            // Outer loop through vertices
-            for (i = vertexList.begin(); i != vertexList.end(); i++)
-            {
-                cout << "Connecting: " << (*i)->city << endl;
-                // Inner loop through vertices finds closes neighbors
-                for (j = vertexList.begin(); j != vertexList.end(); j++)
-                {
-                    if (!(*i)->Neighbors((*j)->ID))
-                    {
-                        distance = distanceEarth((*i)->loc.lat, (*i)->loc.lon, (*j)->loc.lat, (*j)->loc.lon);
-
-                        if (distance > 0)
-                        {
-                            E.Insert(new edge((*i)->ID, (*j)->ID, distance, colors[rand() % 9]));
-                            ecount++;
-                            if (ecount % 1000 == 0)
-                            {
-                                cout << "Edges: " << ecount << endl;
-                            }
-                        }
-                    }
-                }
-
-                e = E.Extract();
-                cout << *e << endl;
-
-                addEdge(e->fromID, e->toID, e->weight, false, colors[count % 9]);
-
-                for (j = vertexList.begin(); j != vertexList.end(); j++)
-                {
-
-                    d = distanceEarth((*i)->loc.lat, (*i)->loc.lon, (*j)->loc.lat, (*j)->loc.lon);
-                    if (d > 0 && d < minDistance)
-                    {
-                        minCity = (*j)->city;
-                        minDistance = d;
-                    }
-                }
-                cout << "\t" << minCity << "d: " << d << endl;
-                minDistance = pow(2.0, 20.0);
-            }
-
-            E.ClearHeap();
-
-            count++;
-        }
-    }
-
-
-    void createSpanningTree2(string filter = "")
     {
         vector<vertex *>::iterator i;
         vector<vertex *>::iterator j;
@@ -529,8 +468,6 @@ class graph
         vertex *ttemp;
         vertex *current;
 
-        string colors[] = {"Black", "Blue", "Green", "Red", "Purple", "Orange", "Yellow", "Brown", "Pink"};
-
         double distance = 0;
         double d = 0;
         double minDistance = MAXFLOAT;
@@ -539,12 +476,11 @@ class graph
         int ecount = 0;
         string minCity;
         int c;
-        
+
         c = 0;
 
         while (!Connected())
         {
-            
             cout << "Connecting: " << vertexList[c]->city << endl;
             // Inner loop through vertices finds closes neighbors
             for (j = vertexList.begin(); j != vertexList.end(); j++)
@@ -568,64 +504,117 @@ class graph
 
             E.ClearHeap();
             c++;
-            if(c == vertexList.size()){
+            if (c == vertexList.size())
+            {
                 c = 0;
-                cout<<"looping around\n";
+                cout << "looping around\n";
             }
         }
     }
 
-   void createSpanningTree3(string filter = "")
+    void createForest()
     {
-        vector<vertex *>::iterator i;
-        vector<vertex *>::iterator j;
-        vector<edge>::iterator eit;
-        edgePriorityList* E = new edgePriorityList[vertexList.size()];
+        E = new edgePriorityList[vertexList.size()];
         edge *e;
-        vertex *ftemp;
-        vertex *ttemp;
-        vertex *current;
-
-        string colors[] = {"Black", "Blue", "Green", "Red", "Purple", "Orange", "Yellow", "Brown", "Pink"};
 
         double distance = 0;
-        double d = 0;
         double minDistance = MAXFLOAT;
-        int closestID;
-        int count = 0;
-        int ecount = 0;
-        string minCity;
 
-        for(int c=0;c<vertexList.size();c++)
+        // for every vertex, find its closest neighbors and push on its list
+        for (int v1 = 0; v1 < vertexList.size(); v1++)
         {
-            
-            cout << "Connecting: " << vertexList[c]->city << endl;
-            
+            cout << "Connecting: " << vertexList[v1]->city << endl;
+
             // Inner loop through vertices finds closes neighbors
-            for (j = vertexList.begin(); j != vertexList.end(); j++)
+            for (int v2 = 0; v2 < vertexList.size(); v2++)
             {
-                if ((*j)->visited == false)
+                if (vertexList[v2]->visited == false)
                 {
-                    distance = distanceEarth(vertexList[c]->loc.lat, vertexList[c]->loc.lon, (*j)->loc.lat, (*j)->loc.lon);
+                    distance = distanceEarth(vertexList[v1]->loc.lat, vertexList[v1]->loc.lon, vertexList[v2]->loc.lat, vertexList[v2]->loc.lon);
 
                     if (distance > 0)
                     {
-                        E[c].Insert(new edge(vertexList[c]->ID, (*j)->ID, distance, colors[rand() % 9]));
+                        // add edge to vertex: c's priority queue
+                        // closest edge to "c" in front of list
+                        E[v1].Insert(new edge(vertexList[v1]->ID, vertexList[v2]->ID, distance, "Pink"));
                     }
                 }
             }
         }
 
-        for(int c=0;c<vertexList.size();c++)
+        // Connect close neighbors and create a disconnected forest
+        // using the priority queue's for each vertex
+        for (int v = 0; v < vertexList.size(); v++)
         {
-            e = E[c].Pop();
+            e = E[v].Pop();
 
-            cout<<"edge weight: "<<e->weight<<endl;
+            e->color = "Green";
 
-            addEdge(e->fromID, e->toID, e->weight, false, colors[count % 9]);
+            cout << "edge weight: " << e->weight << endl;
+
+            addEdge(e->fromID, e->toID, e->weight, false, "Green");
         }
-        //exit(0);
-        //E.ClearList();
+
+        for (int v = 0; v < vertexList.size(); v++)
+        {
+            E[v].ClearList();
+        }
+        delete E;
+    }
+
+    void connectForest()
+    {
+        bool neighbor;
+        double distance;
+        edge *e;
+
+        E = new edgePriorityList[vertexList.size()];
+
+        // for every vertex, find its non neighbor
+        for (int v1 = 0; v1 < vertexList.size(); v1++)
+        {
+            // Inner loop through vertices finds closes non neighbors
+            for (int v2 = 0; v2 < vertexList.size(); v2++)
+            {
+                neighbor = vertexList[v1]->Neighbors(vertexList[v2]->ID);
+                cout << "neighbor: " << neighbor << endl;
+                if (!neighbor)
+                {
+                    distance = distanceEarth(vertexList[v1]->loc.lat, vertexList[v1]->loc.lon, vertexList[v2]->loc.lat, vertexList[v2]->loc.lon);
+
+                    if (distance > 0)
+                    {
+                        // add edge to vertex: c's priority queue
+                        // closest edge to "v1" that is a non-neighbor
+                        E[v1].Insert(new edge(vertexList[v1]->ID, vertexList[v2]->ID, distance, "Purple"));
+                    }
+                }
+            }
+        }
+
+        // Connect close neighbors and create a disconnected forest
+        // using the priority queue's for each vertex
+        for (int v = 0; v < vertexList.size(); v++)
+        {
+            e = E[v].Pop();
+            e->color = "Orange";
+
+            cout << "edge weight: " << e->weight << endl;
+            cout << "edge color:  " << e->color << endl;
+
+            addEdge(e->fromID, e->toID, e->weight, false, "Orange");
+        }
+    }
+
+    vector<vector<int>> BuildNetwork()
+    {
+        vector<vector<int>> network;
+
+        for (int v = 0; v < vertexList.size(); v++)
+        {
+            network[0][0] = 0;
+        }
+        return network;
     }
 
     void printVids()

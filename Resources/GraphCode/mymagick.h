@@ -73,7 +73,8 @@ struct drawGraph
     }
 
     void drawCircleNode(int ox, int oy, int rx = 20, int ry = 20)
-    {
+    {   
+        cout<<ox<<" "<<oy<<" "<<rx<<" "<<ry<<endl;
         image->draw(DrawableEllipse(ox, oy, rx, ry, 0, 360));
         image->fillColor(Color()); // Clear out fill color
     }
