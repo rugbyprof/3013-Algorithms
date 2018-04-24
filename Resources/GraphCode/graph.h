@@ -279,7 +279,30 @@ class graph
     // find the three closest vertices and create edges between them.
     void createSpanningTree(string filter="")
     {
+        vector<vertex *>::iterator i;
+        vector<vertex *>::iterator j;
+        double d = 0.0;
+        double minDistance = pow(2.0,20.0);
+        string minCity;
 
+
+        for (i = vertexList.begin(); i != vertexList.end(); i++)
+        {
+            cout << (*i)->city << endl;
+
+            for (j = vertexList.begin(); j != vertexList.end(); j++)
+            {
+
+                d = distanceEarth((*i)->loc.lat, (*i)->loc.lon, (*j)->loc.lat, (*j)->loc.lon);
+                if(d > 0 && d < minDistance){
+                    minCity = (*j)->city;
+                    minDistance = d;
+                }
+                
+            }
+            cout <<"\t"<< minCity << "d: "<<d<<endl;
+            minDistance = pow(2.0,20.0);
+        }
 
         
     }

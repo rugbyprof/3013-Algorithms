@@ -172,6 +172,7 @@ int main(int argc, char **argv)
     graph G = loadGraphCSV("filtered_cities.csv",max_vertices);
 
 
+
     //filterDups("cities.csv","filtered_cities.csv");
     
     randomEdges(G,max_edges);
@@ -179,7 +180,7 @@ int main(int argc, char **argv)
     //G.printGraph();
     cout<<G.searchGraph("truro")<<endl;
 
-    G.createSpanningTree("PR");
+    G.createSpanningTree();
 
     //cout<<G.graphViz(false);
 
