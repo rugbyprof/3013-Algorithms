@@ -187,7 +187,7 @@ int main(int argc, char **argv)
     // cout << G.searchGraph("dallas") << endl;
   
     cout<<"Adding edges ... \n";
-    G.createSpanningTree2();
+    G.createSpanningTree3();
     cout<<"Done...\n";
     
     //cout<<G.graphViz(false);

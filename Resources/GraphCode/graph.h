@@ -517,7 +517,7 @@ class graph
         }
     }
 
-    // find the three closest vertices and create edges between them.
+
     void createSpanningTree2(string filter = "")
     {
         vector<vertex *>::iterator i;
@@ -538,23 +538,24 @@ class graph
         int count = 0;
         int ecount = 0;
         string minCity;
+        int c;
         
-        i = vertexList.begin();
+        c = 0;
 
         while (!Connected())
         {
             
-            cout << "Connecting: " << (*i)->city << endl;
+            cout << "Connecting: " << vertexList[c]->city << endl;
             // Inner loop through vertices finds closes neighbors
             for (j = vertexList.begin(); j != vertexList.end(); j++)
             {
-                if (!(*i)->Neighbors((*j)->ID))
+                if ((*j)->visited == false)
                 {
-                    distance = distanceEarth((*i)->loc.lat, (*i)->loc.lon, (*j)->loc.lat, (*j)->loc.lon);
+                    distance = distanceEarth(vertexList[c]->loc.lat, vertexList[c]->loc.lon, (*j)->loc.lat, (*j)->loc.lon);
 
-                    if (distance > 0 && (*j)->visited == false)
+                    if (distance > 0)
                     {
-                        E.Insert(new edge((*i)->ID, (*j)->ID, distance, colors[rand() % 9]));
+                        E.Insert(new edge(vertexList[c]->ID, (*j)->ID, distance, colors[rand() % 9]));
                     }
                 }
             }
@@ -562,17 +563,69 @@ class graph
             e = E.Extract();
 
             addEdge(e->fromID, e->toID, e->weight, false, colors[count % 9]);
-            ftemp = getVertex(e->fromID);
-            ttemp = getVertex(e->toID);
-            ftemp->visited = true;
-            ttemp->visited = true;
+            vertexList[e->fromID]->visited = true;
+            vertexList[e->toID]->visited = true;
 
             E.ClearHeap();
-            next(i,1);
-            if(i == vertexList.end()){
-                i = vertexList.begin();
+            c++;
+            if(c == vertexList.size()){
+                c = 0;
+                cout<<"looping around\n";
             }
         }
+    }
+
+   void createSpanningTree3(string filter = "")
+    {
+        vector<vertex *>::iterator i;
+        vector<vertex *>::iterator j;
+        vector<edge>::iterator eit;
+        edgePriorityList* E = new edgePriorityList[vertexList.size()];
+        edge *e;
+        vertex *ftemp;
+        vertex *ttemp;
+        vertex *current;
+
+        string colors[] = {"Black", "Blue", "Green", "Red", "Purple", "Orange", "Yellow", "Brown", "Pink"};
+
+        double distance = 0;
+        double d = 0;
+        double minDistance = MAXFLOAT;
+        int closestID;
+        int count = 0;
+        int ecount = 0;
+        string minCity;
+
+        for(int c=0;c<vertexList.size();c++)
+        {
+            
+            cout << "Connecting: " << vertexList[c]->city << endl;
+            
+            // Inner loop through vertices finds closes neighbors
+            for (j = vertexList.begin(); j != vertexList.end(); j++)
+            {
+                if ((*j)->visited == false)
+                {
+                    distance = distanceEarth(vertexList[c]->loc.lat, vertexList[c]->loc.lon, (*j)->loc.lat, (*j)->loc.lon);
+
+                    if (distance > 0)
+                    {
+                        E[c].Insert(new edge(vertexList[c]->ID, (*j)->ID, distance, colors[rand() % 9]));
+                    }
+                }
+            }
+        }
+
+        for(int c=0;c<vertexList.size();c++)
+        {
+            e = E[c].Pop();
+
+            cout<<"edge weight: "<<e->weight<<endl;
+
+            addEdge(e->fromID, e->toID, e->weight, false, colors[count % 9]);
+        }
+        //exit(0);
+        //E.ClearList();
     }
 
     void printVids()

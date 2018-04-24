@@ -25,6 +25,7 @@ struct edge
     double weight; // weight of edge if any
     bool used;     // was edge used in some traversal
     string color;
+
     edge(int id, double w,string color="Black")
     {
         fromID = -1;
@@ -330,4 +331,75 @@ class edgeHeap
         BubbleDown(j);
       }
     }
+};
+
+struct edgeNode{
+  edge* e;
+  edgeNode* next;
+  edgeNode(edge * in_edge){
+    e = in_edge;
+    next = NULL;
+  }
+};
+
+
+struct edgePriorityList{
+  edgeNode* Head;
+  edgeNode* Tail;
+  int length;
+
+  edgePriorityList(){
+    Head = NULL;
+    Tail = NULL;
+    length=0;
+  }
+  void Insert(edge* e){
+    length++;
+    edgeNode* Temp = new edgeNode(e);
+    if(!Head){
+      Head = Temp;
+      Tail = Temp;
+    }else{
+      if(Temp->e->weight < Head->e->weight){
+        Temp->next = Head;
+        Head = Temp;
+      }else if(Temp->e->weight >= Tail->e->weight){
+        Tail->next = Temp;
+        Tail = Temp;
+      }else{
+        edgeNode* Prev = Head;
+        edgeNode* tHead = Head;
+
+        while(Temp->e->weight >= tHead->e->weight){
+          Prev = tHead;
+          tHead = tHead->next;
+        }
+        //link it in
+        Temp->next = tHead;
+        Prev->next = Temp;
+      }
+    }
+  }
+
+  edge* Pop(){
+    length--;
+    edgeNode* Temp = Head;
+    edge* e = Head->e;
+
+    Head = Head->next;
+    delete Temp;
+    return e;
+  }
+
+  void ClearList(){
+    edgeNode* tHead = Head;
+    length = 0;
+
+    while(Head){
+      
+      tHead = Head;
+      Head = Head->next;
+      delete tHead;
+    }
+  }
 };
