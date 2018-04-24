@@ -43,9 +43,9 @@ You must pick a pattern that you will use to probe the table.
 The simplest pattern is to start at h(k) and then check
 *h(k)+1, h(k)+2, h(k)+3, ...,* wrapping around to check 0, 1, 2, etc. if necessary, until finding an empty slot. This is called **linear probing**.
 
-|  0 | 1   | 2 | 3  |  4  | 5 | 6   | 7 | 8  |
-|--|--|--|--|--|--|--|--|--|--|--|--|
-| F | F | F |  | F | F |  | F | F |  |
+|  0 | 1  | 2 | 3  |  4 | 5  | 6 | 7 | 8  |
+|----|----|---|----|----|----|---|---|----|
+| F  | F  | F |    | F  | F  |   | F | F  | 
 
 
 If h(k)=7, the probe sequence will be 7, 8, 0, 1, 2, 3 (F means full.)
@@ -57,7 +57,7 @@ If h(k)=7, the probe sequence will be 7, 8, 0, 1, 2, 3 (F means full.)
 - There are various schemes for how to choose the increments; in fact, the increment to use can be a function of how many probes you have already done.
 
 |  0 | 1   | 2 | 3  |  4  | 5 | 6   | 7 | 8  |
-|--|--|--|--|--|--|--|--|--|--|--|--|
+|---|---|---|---|---|---|---|---|---|
 | F | F | F |  | F | F |  | F | F |  |
 
 If the probe sequence starts at 7 and the probe increment is 4, then the probe sequence will be 7, 2, 6.
@@ -87,7 +87,7 @@ Let *h1(k) = k mod 13* and *h2(k)=1+(k mod 11)*.
 
 
 |0 |1 |2 |3 |4 |5 |6 |7 |8 |9 |10 |11 |12 |
-|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|--|--|--|--|--|--|--|--|--|--|---|---|---|
 |  | 79 |  |  |69  |98  |  |72  |  | 15 |   | 50  |  |
 
 - To insert 14: 
