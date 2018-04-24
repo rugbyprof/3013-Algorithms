@@ -24,19 +24,22 @@ struct edge
     int toID;      // id of vertex edge is going to
     double weight; // weight of edge if any
     bool used;     // was edge used in some traversal
-    edge(int id, double w)
+    string color;
+    edge(int id, double w,string color="Black")
     {
         fromID = -1;
         toID = id;
         weight = w;
         used = false;
+        color = color;
     }
-    edge(int fid,int tid, double w)
+    edge(int fid,int tid, double w,string color="Black")
     {
         fromID = fid;
         toID = tid;
         weight = w;
         used = false;
+        color = color;
     }
     /**
      * operator<< - overload cout for edge
@@ -214,6 +217,10 @@ class edgeHeap
     edgeHeap()
     {
 
+    }
+
+    void ClearHeap(){
+      H.clear();
     }
 
     /**

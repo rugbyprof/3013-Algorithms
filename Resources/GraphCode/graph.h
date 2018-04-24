@@ -7,8 +7,9 @@
 #include <fstream>
 #include <string>
 #include "edge_heap.h"
-#include "distance.h"
+#include "geo.h"
 #include "csv.h"
+#include "mymagick.h"
 
 using namespace std;
 
@@ -16,56 +17,66 @@ using namespace std;
 // And to filter duplicate cities.
 typedef map<string, int> strMapInt;
 
-typedef map<int,int> intint;
+typedef map<int, int> intint;
 
-struct latlon
+struct myMinMax
 {
-    double lat;
-    double lon;
-    latlon()
+    double xMin;
+    double xMax;
+    double yMin;
+    double yMax;
+    myMinMax()
     {
-        lat = 0.0;
-        lon = 0.0;
+        double minX = pow(2.0, 20.0);
+        double maxX = 0;
+        double minY = pow(2.0, 20.0);
+        double maxY = 0;
     }
 
-    latlon(double y, double x)
+    void minX(double x)
     {
-        lat = y;
-        lon = x;
+        if (x < xMin)
+        {
+            xMin = x;
+        }
     }
-
-    /**
-     * operator= - overload assignment for latlon
-     * Params:
-     *     const latlon ll     - lat lon to assign
-     * Returns 
-     *     reference to assignment for chaining (e.g. a = b = c )
-     */
-    latlon &operator=(const latlon &ll)
+    void maxX(double x)
     {
-        // do the copy
-        lat = ll.lat;
-        lon = ll.lon;
-
-        // return the existing object so we can chain this operator
-        return *this;
+        if (x > xMax)
+        {
+            xMax = x;
+        }
     }
-
-    /**
-     * operator<< - overload cout for latlon
-     * Params:
-     *     const latlon ll     - lat lon to print
-     * Returns 
-     *     formatted output for a latlon
-     */
-    friend ostream &operator<<(ostream &output, const latlon &ll)
+    void minY(double y)
     {
-        output << "(" << ll.lat << "," << ll.lon << ")";
+        if (y < yMin)
+        {
+            yMin = y;
+        }
+    }
+    void maxY(double y)
+    {
+        if (y > yMax)
+        {
+            yMax = y;
+        }
+    }
+    void checkX(double x)
+    {
+        maxX(x);
+        minX(x);
+    }
+    void checkY(double y)
+    {
+        maxY(y);
+        minY(y);
+    }
+    friend ostream &operator<<(ostream &output, const myMinMax &mm)
+    {
+        output << "[min:(" << mm.xMin << "," << mm.yMin << "),max:(" << mm.xMax << "," << mm.yMax << ")]";
         return output;
     }
 };
-
-
 
 /**
  * vertex - represents a vertex in a graph.
@@ -76,8 +87,11 @@ struct vertex
     string city;
     string state;
     latlon loc;
+    point p;
     vector<edge> E;
     bool visited;
+
+    point t;
 
     /**
      * vertex<< - overload cout for vertex
@@ -92,7 +106,32 @@ struct vertex
         city = c;
         state = s;
         loc = ll;
+        p.setXY(lon2x(ll.lon), lat2y(ll.lat));
         visited = false;
+    }
+
+    void update(latlon ll)
+    {
+        loc = ll;
+        p.setXY(lon2x(ll.lon), lat2y(ll.lat));
+    }
+
+    bool Neighbors(int id)
+    {
+        vector<edge>::iterator eit;
+        if (E.size() ==  0)
+        {
+            return false;
+
+        }else{
+            for (eit = E.begin(); eit != E.end(); eit++)
+            {
+                if((*eit).toID == id){
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     /**
@@ -104,7 +143,7 @@ struct vertex
      */
     friend ostream &operator<<(ostream &output, const vertex &v)
     {
-        output << "(ID:" << v.ID << " C: " << v.city << " S: " << v.state << " L: " << v.loc << " Edges:"<<v.E.size()<< ")";
+        output << "(ID:" << v.ID << ", " << v.city << ", " << v.state << ", LatLon: " << v.loc << " Point: " << v.p << ", Edges:" << v.E.size() << ")";
         return output;
     }
 };
@@ -124,6 +163,7 @@ class graph
     int num_edges;               // edge count
     vector<vertex *> vertexList; // vector to hold vertices
     strMapInt cityLookup;
+    llBox box; // bounding box of coords
 
     /**
      * private: createVertex - returns a new vertex with unique id.
@@ -166,7 +206,7 @@ class graph
     int addVertex(string city, string state, double lat = 0.0, double lon = 0.0)
     {
         if (cityLookup.find(city) == cityLookup.end())
-        {   
+        {
             // Add the city as a key to the map.
             cityLookup[city] = 0;
         }
@@ -175,12 +215,44 @@ class graph
             return -1;
         }
 
+        //create a bounding box of values to help with scaling for drawing.
+        box.addLatLon(latlon(lat, lon));
+
         vertex *temp = createVertex(city, state, latlon(lat, lon));
         vertexList.push_back(temp);
 
         //update the value that city points to.
         cityLookup[city] = temp->ID;
         return temp->ID;
+    }
+
+    // void updateVLocation(int vid,latlon ll){
+    //     box.addLatLon(latlon(ll.lat,ll.lon));
+    //     vertexList[vid]->loc = ll;
+    //     vertexList[vid]->p.setXY(lon2x(ll.lon),lat2y(ll.lat));
+    // }
+
+    vertex *getVertex(int id)
+    {
+        if (id >= 0 && id < vertexList.size())
+        {
+            return vertexList[id];
+        }
+        return NULL;
+    }
+
+    bool Connected()
+    {
+        vector<vertex *>::iterator i;
+
+        for (i = vertexList.begin(); i != vertexList.end(); i++)
+        {
+            if ((*i)->E.size() == 0)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     /**
@@ -193,9 +265,9 @@ class graph
      * Returns 
      *     void
      */
-    void addEdge(int fromID, int toID, double weight = 0, bool directed = false)
+    void addEdge(int fromID, int toID, double weight = 0, bool directed = false, string color = "Black")
     {
-        edge e1(toID, weight);
+        edge e1(fromID, toID, weight, color);
         vertexList[fromID]->E.push_back(e1);
         num_edges++;
 
@@ -203,11 +275,11 @@ class graph
 
         if (!directed)
         {
-            edge e2(fromID, weight);
+            edge e2(toID, fromID, weight, color);
             vertexList[toID]->E.push_back(e2);
 
             //cout<<"adding "<<toID<<" to "<<fromID<<endl;
-            
+
             num_edges++;
         }
     }
@@ -222,7 +294,7 @@ class graph
      * Returns:
      *     void
      */
-    void addEdge(string fromCity, string toCity, double weight = 0, bool directed = false)
+    void addEdge(string fromCity, string toCity, double weight = 0, bool directed = false, string color = "Black")
     {
     }
 
@@ -239,7 +311,11 @@ class graph
 
         for (vit = vertexList.begin(); vit != vertexList.end(); vit++)
         {
-            cout << *(*vit) << endl;
+
+            double brng = bearing((*(*vit)).loc, box.center);
+
+            (*(*vit)).update(geo_destination((*(*vit)).loc, 100, brng));
+            cout << (*(*vit)) << endl;
 
             if ((*vit)->E.size() > 0)
             {
@@ -251,10 +327,129 @@ class graph
         }
     }
 
-    string mylower(string s){
-        for(int i=0;i<s.length();i++){
-            if(s[i]>='A' && s[i]<='Z'){
-                s[i]+= 32;
+    void magickGraph(int w, int h, string imageName)
+    {
+        drawGraph dg(w, h, "white");
+        vector<vertex *>::iterator vit;
+        vector<edge>::iterator eit;
+
+        // For calculating new coords to stretch
+
+        int x1;
+        int y1;
+        int x2;
+        int y2;
+
+        // For counting how much more
+        int vsize = vertexList.size();
+        int i = 0;
+        double op = -10.0;
+        double np = 0.0;
+
+        int rx;
+        int ry;
+
+        int cx = ((box.c_p.x - box.minx) / (box.maxx - box.minx)) * w;
+        int cy = h - (((box.c_p.y - box.miny) / (box.maxy - box.miny)) * h);
+
+        //[LL(41.6306,-110.782),(20.9862,-85.5431)]
+        //[XY(41.6306,249.218),(20.9862,274.457)]
+        //[Center(31.3084,-98.1627),(31.3084,261.837)]
+
+        for (vit = vertexList.begin(); vit != vertexList.end(); vit++)
+        {
+
+            x1 = (((*(*vit)).p.x - box.minx) / (box.maxx - box.minx)) * w;
+            y1 = h - ((((*(*vit)).p.y - box.miny) / (box.maxy - box.miny)) * h);
+
+            cout << (*(*vit)).city << endl;
+
+            if ((*(*vit)).city == "Wichita Falls")
+            {
+                cout << "*******************" << endl;
+                dg.setFillColor("Red");
+                dg.setStrokeColor("Red");
+                dg.drawCircleNode(x1, y1, 30, 30);
+                rx = x1;
+                ry = y1;
+            }
+            else
+            {
+                dg.setFontSize(20);
+                dg.setFillColor("White");
+                dg.setStrokeColor("Black");
+                dg.drawRectangleNode(x1, y1, 150, 60, (*(*vit)).city);
+            }
+
+            if ((*vit)->E.size() > 0)
+            {
+                cout << (*vit)->E.size() << endl;
+                for (eit = (*vit)->E.begin(); eit != (*vit)->E.end(); eit++)
+                {
+                    // cout<<(*vertexList[(*eit).toID]).p.x<<","<<(*vertexList[(*eit).toID]).p.y<<endl;
+                    // cout<<(*vertexList[(*eit).toID]).p<<endl;
+                    x2 = (((*vertexList[(*eit).toID]).p.x - box.minx) / (box.maxx - box.minx)) * w;
+                    y2 = h - ((((*vertexList[(*eit).toID]).p.y - box.miny) / (box.maxy - box.miny)) * h);
+                    if (x1 > 0 && y1 > 0 && x2 > 0 && y2 > 0)
+                    {
+                        //dg.setStrokeColor((*eit).color);
+                        dg.drawLine(x1, y1, x2, y2,(*eit).color);
+                        cout << x1 << "," << y1 << "," << x2 << "," << y2 << endl;
+                    }
+
+                    //cout<<"Adding line ...\n";
+                }
+            }
+
+            i = i + 1;
+            np = (double(i) / double(vsize)) * 100;
+            if ((abs(np) - abs(op)) >= 10)
+            {
+                op = np;
+                cout << np << " complete" << endl;
+            }
+        }
+
+        //dg.drawLine(0,0,w,h);
+        dg.setFillColor("Red");
+        dg.setStrokeColor("Red");
+        dg.drawCircleNode(rx, ry, 30, 30);
+        //cout << rx << "," << ry << endl;
+        //dg.drawLine(cx, cy, rx, ry);
+        dg.writeImage(imageName);
+        //cout << cx << "," << cy << endl;
+
+        //cout << box << endl;
+    }
+
+    void expandGraph(int distance)
+    {
+        vector<vertex *>::iterator vit;
+
+        latlon ll;
+        latlon destination;
+        latlon center = box.center;
+
+        box.reset();
+        for (vit = vertexList.begin(); vit != vertexList.end(); vit++)
+        {
+            ll = (*(*vit)).loc;
+
+            double brng = bearing(center, ll);
+
+            destination = geo_destination(ll, distance, brng);
+            (*(*vit)).update(destination);
+            box.addLatLon(destination);
+        }
+    }
+
+    string mylower(string s)
+    {
+        for (int i = 0; i < s.length(); i++)
+        {
+            if (s[i] >= 'A' && s[i] <= 'Z')
+            {
+                s[i] += 32;
             }
         }
         return s;
@@ -268,7 +463,8 @@ class graph
 
         for (i = vertexList.begin(); i != vertexList.end(); i++)
         {
-            if(mylower((*i)->city) == mylower(c)){
+            if (mylower((*i)->city) == mylower(c))
+            {
                 cout << *(*i) << endl;
                 return (*i)->city;
             }
@@ -277,14 +473,62 @@ class graph
     }
 
     // find the three closest vertices and create edges between them.
-    void createSpanningTree(string filter="")
+    void createSpanningTree(string filter = "")
     {
+        vector<vertex *>::iterator i;
+        vector<vertex *>::iterator j;
+        vector<edge>::iterator eit;
+        edgeHeap E;
+        edge *e;
+
+        string colors[] = {"Black", "Blue", "Green", "Red", "Purple", "Orange", "Yellow", "Brown", "Pink"};
+
+        double distance = 0;
+        double minDistance = pow(2.0, 30.0);
+        int closestID;
+        int count = 0;
+        int ecount = 0;
+
+        while (!Connected())
+        {
+
+            // Outer loop through vertices
+            for (i = vertexList.begin(); i != vertexList.end(); i++)
+            {
+                cout << "Connecting: " << (*i)->city << endl;
+                // Inner loop through vertices finds closes neighbors
+                for (j = vertexList.begin(); j != vertexList.end(); j++)
+                {
+                    if (!(*i)->Neighbors((*j)->ID))
+                    {
+                        distance = distanceEarth((*i)->loc.lat, (*i)->loc.lon, (*j)->loc.lat, (*j)->loc.lon);
+
+                        if (distance > 0)
+                        {
+                            E.Insert(new edge((*i)->ID, (*j)->ID, distance));
+                            ecount++;
+                            if (ecount % 1000 == 0)
+                            {
+                                cout << "Edges: " << ecount << endl;
+                            }
+                        }
+                    }
+                }
+
+                e = E.Extract();
+                cout << *e << endl;
+
+                addEdge(e->fromID, e->toID, e->weight, false, colors[count%9]);
 
 
-        
+                E.ClearHeap();
+            }
+            count++;
+        }
     }
 
-    void printVids(){
+    void printVids()
+    {
         vector<vertex *>::iterator vit;
         vector<edge>::iterator eit;
 
@@ -294,7 +538,8 @@ class graph
         }
     }
 
-    string graphViz(bool directed = true){
+    string graphViz(bool directed = true, int scale = 0)
+    {
         vector<vertex *>::iterator vit;
         vector<edge>::iterator eit;
 
@@ -305,12 +550,16 @@ class graph
         string conns = "";
         int weight = 0;
         string arrow = "";
+        int x;
+        int y;
 
-        if(directed){
+        if (directed)
+        {
             viz = "digraph G {\n";
             arrow = "->";
-
-        }else{
+        }
+        else
+        {
             viz = "graph G {\n";
             arrow = "--";
         }
@@ -319,18 +568,26 @@ class graph
         {
             if ((*vit)->E.size() > 0)
             {
-                labels += "\t" + to_string((*vit)->ID) + " [label=\"" + (*vit)->city + ", " + (*vit)->state +  "\"]\n";
+                x = (*vit)->p.x;
+                y = (*vit)->p.y;
+
+                labels += "\t" + to_string((*vit)->ID) + " [\n\t\tlabel=\"" + (*vit)->city + ", " + (*vit)->state + "\" \n\t\tpos = \"" + to_string(x) + "," + to_string(y) + "!\"\n\t]\n";
 
                 for (eit = (*vit)->E.begin(); eit != (*vit)->E.end(); eit++)
                 {
-
-
-                    labels += "\t" + to_string(eit->toID) + " [label=\"" +  vertexList[eit->toID]->city + ", " + vertexList[eit->toID]->state +  "\"]\n";
-
+                    x = vertexList[eit->toID]->p.x;
+                    y = vertexList[eit->toID]->p.y;
+                    labels += "\t" + to_string(eit->toID) + " [\n\t\tlabel=\"" + vertexList[eit->toID]->city + ", " + vertexList[eit->toID]->state + "\"]\n\t\tpos = \"" + to_string(x) + "," + to_string(y) + "!\"\n\t]\n";
                     weight = eit->weight;
-                    conns += "\t" + to_string((*vit)->ID) + arrow 
-                        + to_string(eit->toID) + " [weight="+ to_string(weight) + ", label="+ to_string(weight) +"]\n";
+                    conns += "\t" + to_string((*vit)->ID) + arrow + to_string(eit->toID) + " [weight=" + to_string(weight) + ", label=" + to_string(weight) + "]\n";
                 }
+            }
+            else
+            {
+                x = (*vit)->p.x;
+                y = (*vit)->p.y;
+
+                labels += "\t" + to_string((*vit)->ID) + " [\n\t\tlabel=\"" + (*vit)->city + ", " + (*vit)->state + "\" \n\t\tpos = \"" + to_string(x) + "," + to_string(y) + "!\"\n\t]\n";
             }
         }
 
@@ -360,8 +617,9 @@ class graph
      * Returns:
      *     int
      */
-    int* graphSize(){
-        int* vals = new int[2];
+    int *graphSize()
+    {
+        int *vals = new int[2];
         vals[0] = vertexList.size();
         vals[1] = num_edges;
         return vals;
