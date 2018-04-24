@@ -1,21 +1,24 @@
 // A simple representation of graph using STL
 #include "graph.h"
 
-
 using namespace std;
 
-void randomEdges(graph &g,int numEdges){
-    int r1,r2;
+
+
+void randomEdges(graph &g, int numEdges)
+{
+    int r1, r2;
     latlon from;
     latlon to;
     double d;
-    for(int i=0;i<numEdges;i++){
+    for (int i = 0; i < numEdges; i++)
+    {
         r1 = rand() % g.vertexList.size();
         r2 = rand() % g.vertexList.size();
         from = g.vertexList[r1]->loc;
         to = g.vertexList[r2]->loc;
-        d = distanceEarth(from.lat,from.lon,to.lat,to.lon);
-        g.addEdge(r1,r2,(int)d,true);
+        d = distanceEarth(from.lat, from.lon, to.lat, to.lon);
+        g.addEdge(r1, r2, (int)d, true);
     }
 }
 
@@ -26,7 +29,7 @@ void randomEdges(graph &g,int numEdges){
  * Returns 
  *     graph
  */
-graph loadGraphCSV(string filename,int max=0)
+graph loadGraphCSV(string filename, int max = 0, string fstate = "")
 {
     int zip;
     double lat;
@@ -35,12 +38,13 @@ graph loadGraphCSV(string filename,int max=0)
     string state;
     string county;
 
-
     strMapInt cityCheck;
 
-    int i=0;
+    int i = 0;
 
     graph G;
+    int vid;
+    vertex* temp;
 
     ifstream file(filename);
 
@@ -69,22 +73,28 @@ graph loadGraphCSV(string filename,int max=0)
         state = (*loop)[4];
         county = (*loop)[5];
 
-        
+
         if (cityCheck.find(city) == cityCheck.end())
-        {   
+        {
             // Add the city as a key to the map.
             cityCheck[city] = 0;
 
-            if(state != "PR"){
-                G.addVertex(city, state, lat, lon);
-                i++;
+            if (fstate == "" || fstate == state)
+            {   
+                if((int)lat == 0 || (int) lon == 0){
+                    cout<<"oops: "<<city<<", "<<state<<", "<<lat<<", "<<lon<<endl;
+                }
+
+                vid = G.addVertex(city, state, lat, lon);
+            
             }
+            i++;
         }
 
-        if(i > max && max != 0){
+        if (i > max && max != 0)
+        {
             return G;
         }
-        
     }
 
     return G;
@@ -98,7 +108,7 @@ graph loadGraphCSV(string filename,int max=0)
  * Returns 
  *     graph
  */
-void filterDups(string filename,string outfile)
+void filterDups(string filename, string outfile)
 {
     int zip;
     double lat;
@@ -109,8 +119,7 @@ void filterDups(string filename,string outfile)
 
     strMapInt cityCheck;
 
-    int i=0;
-
+    int i = 0;
 
     ifstream file(filename);
     ofstream out(outfile);
@@ -140,18 +149,13 @@ void filterDups(string filename,string outfile)
         state = (*loop)[4];
         county = (*loop)[5];
 
-        
-        if (cityCheck.find(city) == cityCheck.end())
-        {   
+        if (cityCheck.find(city) == cityCheck.end() && abs(lat) > 0 && abs(lon) > 0)
+        {
             // Add the city as a key to the map.
             cityCheck[city] = 0;
-            out<<zip<<","<<lat<<","<<lon<<","<<city<<","<<state<<","<<county<<"\n";
-
+            out << zip << "," << lat << "," << lon << "," << city << "," << state << "," << county << "\n";
         }
-
-        
     }
-
 }
 
 // Test Driver
@@ -161,37 +165,42 @@ int main(int argc, char **argv)
     int max_vertices = 0;
     int max_edges = 0;
 
-    if(argc > 2){
+    if (argc > 2)
+    {
         max_vertices = stoi(argv[1]);
         max_edges = stoi(argv[2]);
-    }else{
-        cout<<"Usage: ./graph max_vertices max_edges"<<endl;
+    }
+    else
+    {
+        cout << "Usage: ./graph max_vertices max_edges" << endl;
         exit(0);
     }
 
-    graph G = loadGraphCSV("filtered_cities.csv",max_vertices);
-
-
+    cout<<"Creating graph...\n";
+    graph G = loadGraphCSV("filtered_cities.csv", max_vertices, "TX");
 
     //filterDups("cities.csv","filtered_cities.csv");
-    
-    randomEdges(G,max_edges);
-
+    //randomEdges(G, max_edges);
     //G.printGraph();
-    cout<<G.searchGraph("truro")<<endl;
 
-    G.createSpanningTree();
-
+    // cout << G.searchGraph("wichita falls") << endl;
+    // cout << G.searchGraph("dallas") << endl;
+  
+    cout<<"Adding edges ... \n";
+    G.createSpanningTree2();
+    cout<<"Done...\n";
+    
     //cout<<G.graphViz(false);
 
+    cout<<"Visualizing graph ... \n";
+    G.magickGraph(10000,6000,"magick2.png");
+
     //G.printVids();
-
     //int *size = G.graphSize();
-
     //cout<<"V= "<<size[0]<<" E= "<<size[1]<<endl;
-
     // for(int i=0;i<G.vertexList.size();i++){
     //     cout<<(*G.vertexList[i])<<endl;
     // }
+
     return 0;
 }

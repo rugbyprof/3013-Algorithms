@@ -5,6 +5,10 @@
 #include <vector>
 #include <string>
 
+/**
+ * A csv helper class to read csv files a little easier.
+ */
+
 class CSVRow
 {
     public:

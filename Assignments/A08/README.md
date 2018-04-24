@@ -1,4 +1,4 @@
-## Assignment 6 - Spanning Trees 
+## Assignment 6 - Spanning Trees (not really)
 ### Due: Tuesday April 17th by Classtime.
 
 #### Part 1
