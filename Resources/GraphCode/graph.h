@@ -9,7 +9,6 @@
 #include "edge_heap.h"
 #include "geo.h"
 #include "csv.h"
-#include "mymagick.h"
 #include <limits.h>
 
 using namespace std;
@@ -336,7 +335,15 @@ class graph
             }
         }
     }
-
+    /**
+     * magickGraph - instance of drawGraph included from mymagick.h
+     * Params:
+     *    int             w: width of image
+     *    int             h: height of image
+     *    string imageName : name of saved image
+     */
+    /*
+    //NEEDS Magick++
     void magickGraph(int w, int h, string imageName)
     {
         drawGraph dg(w, h, "white");
@@ -356,9 +363,7 @@ class graph
         double op = -10.0;
         double np = 0.0;
 
-        int rx;
-        int ry;
-
+        // center point of bounding box
         int cx = ((box.c_p.x - box.minx) / (box.maxx - box.minx)) * w;
         int cy = h - (((box.c_p.y - box.miny) / (box.maxy - box.miny)) * h);
 
@@ -406,7 +411,13 @@ class graph
 
         dg.writeImage(imageName);
     }
-
+    */
+    /**
+     * expandGraph - calculates a center and moves points away from the center
+     *               to "grow" the graph if necessary for visualization.
+     * Params:
+     *    int distance: distance in miles to expand the graph.
+     */
     void expandGraph(int distance)
     {
         vector<vertex *>::iterator vit;
@@ -420,10 +431,19 @@ class graph
         {
             ll = (*(*vit)).loc;
 
+            // get a bearing from the center
+            // function in geo.h
             double brng = bearing(center, ll);
 
+            // Calculate destination from center of graph through "this" point
+            // moving away a specified distance at a specified bearing.
             destination = geo_destination(ll, distance, brng);
+
+            //update the vertex's location
             (*(*vit)).update(destination);
+
+            //update the bounding box I keep track of
+            //encompassing the points in the graph
             box.addLatLon(destination);
         }
     }
@@ -606,16 +626,16 @@ class graph
         }
     }
 
-    vector<vector<int>> BuildNetwork()
-    {
-        vector<vector<int>> network;
+    // vector<vector<int>> BuildNetwork()
+    // {
+    //     vector<vector<int>> network;
 
-        for (int v = 0; v < vertexList.size(); v++)
-        {
-            network[0][0] = 0;
-        }
-        return network;
-    }
+    //     for (int v = 0; v < vertexList.size(); v++)
+    //     {
+    //         network[0][0] = 0;
+    //     }
+    //     return network;
+    // }
 
     void printVids()
     {

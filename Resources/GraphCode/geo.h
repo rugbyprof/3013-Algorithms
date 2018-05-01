@@ -63,7 +63,7 @@ double lat2y(double lat)
 
   if (lat > 180)
     return lat - 180;
-  return lat;
+  return abs(lat);
 }
 
 /**
@@ -79,7 +79,7 @@ double lon2x(double lon)
 
   if (lon > 360)
     return lon - 360;
-  return lon;
+  return abs(lon);
 }
 
 // This function converts decimal degrees to radians
