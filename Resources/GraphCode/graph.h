@@ -25,10 +25,13 @@ typedef map<int, int> intint;
  */
 struct vertex
 {
-    int ID;         // integer id
-    string city;    // city name
-    string state;   // state abbr (TX)
-    latlon loc;     // latlon point type
+    int ID;       // integer id
+    string city;  // city name
+    string state; // state abbr (TX)
+    latlon loc;   // latlon point type
+    int rank;
+    double growth;
+    int pop;
     point p;        // xy point type
     vector<edge> E; // vector of outedges
     bool visited;   // flag used for traversals
@@ -44,13 +47,16 @@ struct vertex
      * Returns 
      *     void
      */
-    vertex(int id, string c, string s, latlon ll = latlon())
+    vertex(int id, string c, string s, latlon ll = latlon(), double g = 0.0, int pp = 0, int r = 0)
     {
         ID = id;
         city = c;
         state = s;
         loc = ll;
-        p.setXY(lon2x(ll.lon), lat2y(ll.lat));
+        growth = g;
+        pop = pp;
+        rank = r;
+        p.setXY((double)lon2x(ll.lon), (double)lat2y(ll.lat));
         visited = false;
     }
 
@@ -158,9 +164,9 @@ class graph
      *     string city
      *     string state
      */
-    vertex *createVertex(string city, string state, latlon ll)
+    vertex *createVertex(string city, string state, latlon ll, int growth, int pop, int rank)
     {
-        return new vertex(id++, city, state, ll);
+        return new vertex(id++, city, state, ll, growth, pop, rank);
     }
 
     /**
@@ -205,22 +211,13 @@ class graph
      * Returns 
      *     void
      */
-    int addVertex(string city, string state, double lat = 0.0, double lon = 0.0)
+    int addVertex(string city, string state, double lat = 0.0, double lon = 0.0, int growth = 0.0, int pop = 0, int rank = 0)
     {
-        if (cityLookup.find(city) == cityLookup.end())
-        {
-            // Add the city as a key to the map.
-            cityLookup[city] = 0;
-        }
-        else
-        {
-            return -1;
-        }
 
         //create a bounding box of values to help with scaling for drawing.
         box.addLatLon(latlon(lat, lon));
 
-        vertex *temp = createVertex(city, state, latlon(lat, lon));
+        vertex *temp = createVertex(city, state, latlon(lat, lon), growth, pop, rank);
         vertexList.push_back(temp);
 
         //update the value that city points to.
@@ -337,61 +334,119 @@ class graph
         }
     }
 
+    vector<latlon> loadUSA(string filename)
+    {
+
+        double lat;
+        double lon;
+        vector<latlon> border;
+
+        ifstream file(filename);
+
+        for (CSVIterator loop(file); loop != CSVIterator(); ++loop)
+        {
+            lat = stod((*loop)[1]);
+            lon = stod((*loop)[0]);
+
+            border.push_back(latlon(lat, lon));
+        }
+
+        return border;
+    }
+
+    point scaleIt(point p,int w,int h)
+    {
+        double x = ((p.x - box.minx) / (box.maxx - box.minx)) * w;
+        double y = h - (((p.y - box.miny) / (box.maxy - box.miny)) * h);
+        return point(x,y);
+    }
+
+    point shiftIt(point p, point cxy, int buff)
+    {
+        if (p.x < cxy.x)
+        {
+            p.x = p.x + buff;
+        }
+        else
+        {
+            p.x = p.x - buff;
+        }
+
+        if (p.y < cxy.y)
+        {
+            p.y = p.y + buff;
+        }
+        else
+        {
+            p.y = p.y - buff;
+        }
+        return p;
+    }
+
     void magickGraph(int w, int h, string imageName)
     {
         drawGraph dg(w, h, "white");
         vector<vertex *>::iterator vit;
         vector<edge>::iterator eit;
+        vector<latlon>::iterator bit;
 
-        // For calculating new coords to stretch
+        vector<latlon> us_border = loadUSA("random_data_files/border.csv");
+        point p1;
+        point p2;
 
-        int x1;
-        int y1;
-        int x2;
-        int y2;
+        
+        point cxy;
+        point xy1;
+        point xy2;
+
+        int buff = 500;
 
         // For counting how much more
         int vsize = vertexList.size();
         int i = 0;
+
+        //percentages to print completion amounts
         double op = -10.0;
         double np = 0.0;
 
-        int rx;
-        int ry;
-
-        int cx = ((box.c_p.x - box.minx) / (box.maxx - box.minx)) * w;
-        int cy = h - (((box.c_p.y - box.miny) / (box.maxy - box.miny)) * h);
+        cxy = scaleIt(box.c_p,w,h);
 
         for (vit = vertexList.begin(); vit != vertexList.end(); vit++)
         {
 
-            x1 = (((*(*vit)).p.x - box.minx) / (box.maxx - box.minx)) * w;
-            y1 = h - ((((*(*vit)).p.y - box.miny) / (box.maxy - box.miny)) * h);
+            xy1 = scaleIt((*(*vit)).p,w,h);
+            xy1 = shiftIt(xy1,cxy,buff);
 
             cout << (*(*vit)).city << endl;
 
             dg.setFontSize(20);
             dg.setFillColor("White");
-            dg.setStrokeColor("Black");
-            dg.drawRectangleNode(x1, y1, 150, 60, (*(*vit)).city);
+            dg.setStrokeColor("Blue");
+            dg.drawRectangleNode(xy1.x, xy1.y, 150, 60, (*(*vit)).city);
+
+            // dg.setStrokeColor("Black");
+            // dg.drawRectangleNode(x1, y1, 150, 60, (*(*vit)).city);
 
             if ((*vit)->E.size() > 0)
             {
                 cout << (*vit)->E.size() << endl;
                 for (eit = (*vit)->E.begin(); eit != (*vit)->E.end(); eit++)
                 {
-                    x2 = (((*vertexList[(*eit).toID]).p.x - box.minx) / (box.maxx - box.minx)) * w;
-                    y2 = h - ((((*vertexList[(*eit).toID]).p.y - box.miny) / (box.maxy - box.miny)) * h);
-                    if (x1 > 0 && y1 > 0 && x2 > 0 && y2 > 0)
-                    {
-                        cout << "stupid color: " << (*eit).color << endl;
-                        if ((*eit).color == "")
-                        {
-                            (*eit).color = colors[rand() % 9];
-                        }
-                        dg.drawLine(x1, y1, x2, y2, (*eit).color);
-                        cout << x1 << "," << y1 << "," << x2 << "," << y2 << endl;
-                    }
+
+                    xy2 = scaleIt((*vertexList[(*eit).toID]).p,w,h);
+                    xy2 = shiftIt(xy2,cxy,buff);
+
+                    // if (rx > 0 && ry > 0 && x2 > 0 && y2 > 0)
+                    // {
+                    //     cout << "stupid color: " << (*eit).color << endl;
+                    //     if ((*eit).color == "")
+                    //     {
+                    (*eit).color = colors[rand() % 9];
+                    //     }
+
+                    dg.drawLine(xy1.x, xy1.y, xy2.x, xy2.y, (*eit).color);
+                    //     cout << rx << "," << ry << "," << x2 << "," << y2 << endl;
+                    // }
                 }
             }
 
@@ -402,6 +457,21 @@ class graph
                 op = np;
                 cout << np << " complete" << endl;
             }
+        }
+
+        dg.setStrokeColor("Blue");
+        for (int b = 0; b < us_border.size() - 1; b++)
+        {
+            p1.setXY((double)lon2x(us_border[b].lon), (double)lat2y(us_border[b].lat));
+            p2.setXY((double)lon2x(us_border[b + 1].lon), (double)lat2y(us_border[b + 1].lat));
+
+            p1 = scaleIt(p1,w,h);
+            p2 = scaleIt(p2,w,h);
+
+            p1 = shiftIt(p1,cxy,buff);
+            p2 = shiftIt(p2,cxy,buff);
+
+            dg.drawLine(p1.x, p1.y, p2.x, p2.y, "Blue");
         }
 
         dg.writeImage(imageName);
@@ -606,16 +676,16 @@ class graph
         }
     }
 
-    vector<vector<int>> BuildNetwork()
-    {
-        vector<vector<int>> network;
+    // vector< vector<int> > BuildNetwork()
+    // {
+    //     vector< vector<int> > network;
 
-        for (int v = 0; v < vertexList.size(); v++)
-        {
-            network[0][0] = 0;
-        }
-        return network;
-    }
+    //     for (int v = 0; v < vertexList.size(); v++)
+    //     {
+    //         network[0][0] = 0;
+    //     }
+    //     return network;
+    // }
 
     void printVids()
     {

@@ -48,6 +48,7 @@ struct drawGraph
         strokeWidth = 1;
         int fontSize = 16;
         Geometry size = to_string(w)+"x"+to_string(h);
+        int buffer = 50;
 
         image = new Image(size, fillColor);
     }

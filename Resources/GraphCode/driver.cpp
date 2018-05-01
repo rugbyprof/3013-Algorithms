@@ -4,7 +4,6 @@
 using namespace std;
 
 
-
 void randomEdges(graph &g, int numEdges)
 {
     int r1, r2;
@@ -164,30 +163,31 @@ int main(int argc, char **argv)
     srand(984325);
     int max_vertices = 0;
     int max_edges = 0;
-    string state;
+    string state = "NY";
 
-    if (argc > 2)
-    {
-        max_vertices = stoi(argv[1]);
-        max_edges = stoi(argv[2]);
-        state = argv[3];
-    }
-    else
-    {
-        cout << "Usage: ./graph max_vertices max_edges" << endl;
-        exit(0);
-    }
+    // if (argc > 2)
+    // {
+    //     max_vertices = stoi(argv[1]);
+    //     max_edges = stoi(argv[2]);
+    //     state = argv[3];
+    // }
+    // else
+    // {
+    //     cout << "Usage: ./graph max_vertices max_edges" << endl;
+    //     exit(0);
+    // }
 
-    cout<<"Creating graph...\n";
-    graph G = loadGraphCSV("filtered_cities.csv", max_vertices, state);
+    //cout<<"Creating graph...\n";
+    graph G = loadGraphCSV("random_data_files/filtered_cities.csv", max_vertices, state);
   
-    cout<<"Adding edges ... \n";
+    //cout<<"Adding edges ... \n";
+    //G.createSpanningTree();
     G.createForest();
-    G.connectForest();
-    cout<<"Done...\n";
+    //G.connectForest();
+    //cout<<"Done...\n";
 
-    cout<<"Visualizing graph ... \n";
-    G.magickGraph(10000,6000,"magick1.png");
+    //cout<<"Visualizing graph ... \n";
+    G.magickGraph(10000,6000,"magick.png");
 
     return 0;
 }
