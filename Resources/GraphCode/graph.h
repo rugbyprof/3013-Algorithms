@@ -9,7 +9,6 @@
 #include "edge_heap.h"
 #include "geo.h"
 #include "csv.h"
-#include "mymagick.h"
 #include <limits.h>
 
 using namespace std;
@@ -262,6 +261,29 @@ class graph
         return true;
     }
 
+    void Reset()
+    {
+        vector<vertex *>::iterator i;
+
+        for (i = vertexList.begin(); i != vertexList.end(); i++)
+        {
+            (*i)->visited = false;
+        }
+    }
+
+    bool AllVisited()
+    {
+        vector<vertex *>::iterator i;
+
+        for (i = vertexList.begin(); i != vertexList.end(); i++)
+        {
+            if((*i)->visited == false){
+                return false;
+            }
+        }
+        return true;
+    }
+
     /**
      * addEdge - adds a relationship between two vertices to the graph
      * Params:
@@ -333,56 +355,15 @@ class graph
             }
         }
     }
-
-    vector<latlon> loadUSA(string filename)
-    {
-
-        double lat;
-        double lon;
-        vector<latlon> border;
-
-        ifstream file(filename);
-
-        for (CSVIterator loop(file); loop != CSVIterator(); ++loop)
-        {
-            lat = stod((*loop)[1]);
-            lon = stod((*loop)[0]);
-
-            border.push_back(latlon(lat, lon));
-        }
-
-        return border;
-    }
-
-    point scaleIt(point p,int w,int h)
-    {
-        double x = ((p.x - box.minx) / (box.maxx - box.minx)) * w;
-        double y = h - (((p.y - box.miny) / (box.maxy - box.miny)) * h);
-        return point(x,y);
-    }
-
-    point shiftIt(point p, point cxy, int buff)
-    {
-        if (p.x < cxy.x)
-        {
-            p.x = p.x + buff;
-        }
-        else
-        {
-            p.x = p.x - buff;
-        }
-
-        if (p.y < cxy.y)
-        {
-            p.y = p.y + buff;
-        }
-        else
-        {
-            p.y = p.y - buff;
-        }
-        return p;
-    }
-
+    /**
+     * magickGraph - instance of drawGraph included from mymagick.h
+     * Params:
+     *    int             w: width of image
+     *    int             h: height of image
+     *    string imageName : name of saved image
+     */
+    /*
+    //NEEDS Magick++
     void magickGraph(int w, int h, string imageName)
     {
         drawGraph dg(w, h, "white");
@@ -409,7 +390,9 @@ class graph
         double op = -10.0;
         double np = 0.0;
 
-        cxy = scaleIt(box.c_p,w,h);
+        // center point of bounding box
+        int cx = ((box.c_p.x - box.minx) / (box.maxx - box.minx)) * w;
+        int cy = h - (((box.c_p.y - box.miny) / (box.maxy - box.miny)) * h);
 
         for (vit = vertexList.begin(); vit != vertexList.end(); vit++)
         {
@@ -476,7 +459,13 @@ class graph
 
         dg.writeImage(imageName);
     }
-
+    */
+    /**
+     * expandGraph - calculates a center and moves points away from the center
+     *               to "grow" the graph if necessary for visualization.
+     * Params:
+     *    int distance: distance in miles to expand the graph.
+     */
     void expandGraph(int distance)
     {
         vector<vertex *>::iterator vit;
@@ -490,10 +479,19 @@ class graph
         {
             ll = (*(*vit)).loc;
 
+            // get a bearing from the center
+            // function in geo.h
             double brng = bearing(center, ll);
 
+            // Calculate destination from center of graph through "this" point
+            // moving away a specified distance at a specified bearing.
             destination = geo_destination(ll, distance, brng);
+
+            //update the vertex's location
             (*(*vit)).update(destination);
+
+            //update the bounding box I keep track of
+            //encompassing the points in the graph
             box.addLatLon(destination);
         }
     }
@@ -676,9 +674,9 @@ class graph
         }
     }
 
-    // vector< vector<int> > BuildNetwork()
+    // vector<vector<int>> BuildNetwork()
     // {
-    //     vector< vector<int> > network;
+    //     vector<vector<int>> network;
 
     //     for (int v = 0; v < vertexList.size(); v++)
     //     {

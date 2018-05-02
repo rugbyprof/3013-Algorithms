@@ -1,7 +1,0 @@
-pip install psycopg2
-pip install matplotlib
-pip install pyparsing
-pip install requests
-pip install future
-pip install jinja2
-pip install pygments
