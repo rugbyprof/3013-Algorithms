@@ -7,4 +7,4 @@
  | [NewGraphCode](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/NewGraphCode) | [ Resources GraphCode ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/NewGraphCode) | [ No Description](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/NewGraphCode) | [N/A](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/NewGraphCode) |
  | [crazy_words](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/crazy_words) | [ Resources sol ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/crazy_words) | [ No Description](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/crazy_words) | [N/A](https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/crazy_words) |
 
-<sup>Last Updated: 2018-10-03 (Wed @ 14:26)</sup>
+<sup>Last Updated: 2018-10-03 (Wed @ 14:30)</sup>
