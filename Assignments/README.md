@@ -12,4 +12,4 @@
  | [A09](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) | [ Test 2 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) | [ Hashing](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) | [Tuesday April 17<sup>th</sup> @ 1230](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) |
  | [A10](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A10) | [ Test 3 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A10) | [ Grade Booster](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A10) | [Friday, May 4<sup>th</sup> by Midnight.](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A10) |
 
-<sup>Last Updated: 2018-09-24 (Mon @ 10:20)</sup>
+<sup>Last Updated: 2018-10-03 (Wed @ 14:26)</sup>
