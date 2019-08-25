@@ -11,7 +11,6 @@ If you have had me before, and this seems **TL;DR** make sure you:
 - Create your repo for this class.
 - Add yourself to the class roster.
 
-
 ### Team Chat
 
 ---
