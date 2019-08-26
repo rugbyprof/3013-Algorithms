@@ -6,26 +6,59 @@
 ### General Course Info
 - ___Days:___ TTh 11:00 a.m. - 12:20 p.m. 
 - ___Location:___ BO 320
-- [___Semester:___](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal1920.pdf)Mon August 26<sup>th</sup> - Wed Dec 5<sup>th</sup>
+- [___Semester:___](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal1920.pdf)Mon August 26<sup>th</sup> - Wed Dec 4<sup>th</sup>
 - [___Holidays:___](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal1920.pdf)
   - ___Thanksgiving:___ Nov 27<sup>th</sup> - Sun Dec 1<sup>st</sup>
 - [___Last Day for “W”:___](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal1920.pdf) Mon Oct 28<sup>th</sup>
 - [___Final Exam:___](https://msutexas.edu/registrar/_assets/files/pdfs/fall19finals.pdf) Monday Dec 9<sup>th</sup>, 5:45 p.m. - 7:45 p.m.
 
+### Resources
+
+Here are some open source books for the course. I hope you guys appreciate the amount of effort it takes to put material together and then put it on the internet for free.
+
+- [Discrete Structures for Computer Science: Counting, Recursion, and Probability](http://cglab.ca/~michiel/DiscreteStructures/)
+  - Thanks To: [Michiel Smid](http://people.scs.carleton.ca/~michiel/)
+- [Open Data Structures](https://opendatastructures.org/ods-cpp.pdf)
+  - Code available [HERE](https://github.com/patmorin/ods)
+  - Thanks To: [Pat Morin](http://cglab.ca/~morin/)
+- [Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/)
+  - Thanks To: [Jeff Erickson](http://jeffe.cs.illinois.edu/)
+- [Wikipedia Collection of Data Structures](https://en.wikipedia.org/wiki/Book:Data_structures)
+
+### Assumed
+
+- This course assumes know what `array based data structures` and `list based data structures` are.
+- For example you should be able to write (from scratch) an `array based stack` and `queue` along with a `list based stack` and `queue`. If you cannot, go study.
+- You should have a general understanding of recursive functions.
+- You should have a general understanding on graph structures more specifically be able to write and traverse a basic Binary Search Tree (BST).
+- Basic OOP programming skills are also assumed. 
+  
 ### Topics
 
-- Array Based Structures vs List Based Structures (overview)
-- Array Implementations:
+We will be extending your knowledge of basic data structures by learning, implementing, and analyzing some classic data structures and algorithms.
+
+
+- Recursion 
+- Greedy Algorithms
+
+- [Array Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html):
+  - Stack
+  - Queue
+  - Deque
   - Heap (Priority-Queue)
-  - Heap Sort
-  - Hash Tables
+- Linked Lists
+  - [Singly Linked List](https://opendatastructures.org/ods-cpp/3_1_Singly_Linked_List.html)
+  - [Doubly Linked List](https://opendatastructures.org/ods-cpp/3_2_Doubly_Linked_List.html)
+  - Stack
+  - Queue
 - Recursion
 - Balanced Trees
   - Avl
   - Red Black Trees
-- Graphs:
-  - DFS (Depth-First Search)
-  - BFS (Breadth-First Search)
+- [Hash Tables](https://opendatastructures.org/ods-cpp/5_Hash_Tables.html)
+- [Graphs](https://opendatastructures.org/ods-cpp/12_Graphs.html):
+  - [DFS (Depth-First Search)](https://opendatastructures.org/ods-cpp/12_3_Graph_Traversal.html)
+  - [BFS (Breadth-First Search)](https://opendatastructures.org/ods-cpp/12_3_Graph_Traversal.html)
   - Dijkstra's Algorithm (One Way Shortest Path)
   - Prim's Algorithm (Minimum Spanning Tree)
   - Kruskal's Algorithm (Minimum Spanning Tree)
