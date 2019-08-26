@@ -66,32 +66,36 @@ bool isSafe(int** A, int row, int col, int n)
  *     int n   : nxn size of array
  * 
  */
-void PlaceQueens(int**A,int r, int n){
-    if(r == (n + 1)){
-        Print2DArray(A,n,n);
-        return;
+bool PlaceQueens(int**A,int col,int n){
+    if(col >= n){
+        return true;
     }
     for(int i=0;i<n;i++){
-        for(int j=0;j<r-1;j++){
-            if(isSafe(A,i,j,n)){
-                A[i][j] = 1;
+        
+        if(isSafe(A,i,col,n)){
+            A[i][col] = 1;
+    
+            if(PlaceQueens(A,col+1,n)){
+                return true;
             }
+            A[i][col] = 0;
         }
-        PlaceQueens(A,r+1,n);
     }
+    return false;
 }
 
 int main(int argc, char** argv){
-    int rows = 4;
-    int cols = 4;
+    int n = 4;
 
 
-    int** A = Make2DArray(rows,cols,0);
+    int** A = Make2DArray(n,n,0);
 
-    Print2DArray(A,rows,cols);
+    Print2DArray(A,n,n);
     
 
-    PlaceQueens(A,0,4);
+    if(PlaceQueens(A,0,n)){
+        Print2DArray(A,n,n);
+    }
 
 
     return 0;
