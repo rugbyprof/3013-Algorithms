@@ -129,13 +129,13 @@ private:
         // point at start of list
         Node *Temp = Head;
 
-        if (Temp->x == key)
+        if (Temp->key == key)
         {
             return Temp;
         }
 
         // while temp != null && Temp isn't the value
-        while (Temp->next && Temp->next->x != key)
+        while (Temp->next && Temp->next->key != key)
         {
             Temp = Temp->next;
         }
