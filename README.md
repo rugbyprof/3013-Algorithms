@@ -38,9 +38,14 @@ Here are some open source books for the course. I hope you guys appreciate the a
 
 We will be extending your knowledge of basic data structures by learning, implementing, and analyzing some classic data structures and algorithms.
 
+#### Algorithm Categories (small subset)
 
-- Recursion 
+- Recursion
 - Greedy Algorithms
+- Backtracking
+- Dynamic Programming
+
+#### Algorithms + Datastructures
 
 - [Array Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html):
   - Stack
@@ -52,17 +57,21 @@ We will be extending your knowledge of basic data structures by learning, implem
   - [Doubly Linked List](https://opendatastructures.org/ods-cpp/3_2_Doubly_Linked_List.html)
   - Stack
   - Queue
-- Recursion
 - Balanced Trees
   - Avl
   - Red Black Trees
 - [Hash Tables](https://opendatastructures.org/ods-cpp/5_Hash_Tables.html)
-- [Graphs](https://opendatastructures.org/ods-cpp/12_Graphs.html):
-  - [DFS (Depth-First Search)](https://opendatastructures.org/ods-cpp/12_3_Graph_Traversal.html)
+- [Basic Graph Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/book/05-graphs.pdf):
+  - [DFS (Depth-First Search)](http://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf)
   - [BFS (Breadth-First Search)](https://opendatastructures.org/ods-cpp/12_3_Graph_Traversal.html)
-  - Dijkstra's Algorithm (One Way Shortest Path)
+- [Minimum Spanning Trees](http://jeffe.cs.illinois.edu/teaching/algorithms/book/07-mst.pdf  
   - Prim's Algorithm (Minimum Spanning Tree)
   - Kruskal's Algorithm (Minimum Spanning Tree)
+- [Shortest Paths](http://jeffe.cs.illinois.edu/teaching/algorithms/book/08-sssp.pdf)
+  - Dijkstra's Algorithm (One Way Shortest Path)
+
+
+
 - Sorting:
   - Merge Sort
   - Quick Sort
