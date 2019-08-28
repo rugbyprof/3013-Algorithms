@@ -22,6 +22,8 @@ struct Node
         key = val;
         next = NULL;
     }
+
+
 };
 
 /**
@@ -34,10 +36,13 @@ struct Node
 class List
 {
     Node *Head; // Everylist needs a head node to access it
+    Node *Tail;
+    int size;
 public:
     List()
     {
-        Head = NULL; // Null means list is empty
+        Head = Tail = NULL; // Null means list is empty
+        size = 0;
     }
 
     /**
@@ -57,6 +62,7 @@ public:
         if (!Head)
         {
             Head = temp;
+            Tail = temp;
         }
         else
         {
@@ -64,7 +70,7 @@ public:
             temp->next = Head;
             Head = temp;
         }
-        
+        size++;
     }
 
     /**
@@ -76,8 +82,18 @@ public:
      */
     void endSert(int key)
     {
+        Node* Temp = new Node(key);
 
-        
+        if(Empty()){
+            Head = Temp;
+            Tail = Temp;
+        }else{
+            Tail->next = Temp; 
+
+            Tail = Temp;   
+        }
+
+        size++;
     }
 
     /**
@@ -91,7 +107,6 @@ public:
     void orderedSert(int key)
     {
 
-        
     }
 
     /**
@@ -102,9 +117,18 @@ public:
      *     void
      */
     void randSert(int key){
-        for(int i=0;i<rand();i++){
-            //do somethiing
+
+        Node* Temp = new Node(key);
+
+        Node* Randy = Head;
+
+        for(int i=0;i<rand()%size;i++){
+            Randy = Randy->next;
         }
+
+        Temp->next = Randy->next;
+        Randy->next = Temp;
+        size++;
     }
 
     /**
@@ -118,7 +142,7 @@ public:
     void remove(int key)
     {
 
-        if(!Head){
+        if(Empty()){
             return;
         }
 
@@ -127,6 +151,11 @@ public:
             Node* Temp = Head;
             Head = Head->next;
             delete Temp;
+            size--;
+        }
+
+        if(Empty()){
+            return;
         }
 
         Node *prev = delSearch(key);
@@ -135,11 +164,14 @@ public:
             Node *target = prev->next;
             prev->next = target->next;
             delete target;
-        }else{
-            // delete last node
+            size--;
         }
 
         return;
+    }
+
+    int Size(){
+        return size;
     }
 
     /**
@@ -154,6 +186,10 @@ public:
         // start at head of list
         // always make a copy, never alter head
         Node *Temp = Head;
+
+        if(!Temp){
+            cout<<"Empty!"<<endl;
+        }
 
          // While not at end of list
         // Same as: while(Temp != NULL)
@@ -182,6 +218,7 @@ private:
      */
     Node *delSearch(int key)
     {
+
         // point at start of list
         Node *Temp = Head;
 
@@ -199,6 +236,10 @@ private:
         // if Temp == NULL then the key was not in the list
         return Temp;
     }
+
+    bool Empty(){
+        return Head == NULL;
+    }
 };
 
 /**
@@ -210,21 +251,23 @@ int main(int argc, char** argv)
     srand(time(0));    // seed random number generator
     List L;         // declare instance of a list
 
-    // loop i times: 0 <= i < 10000
+    //loop i times: 0 <= i < 10000
     for (int i = 0; i < rand() % 100; i++)
     {
         // load list with random # of nodes between 0 and 10000
-        L.frontSert(rand() % 1000);
+        L.frontSert(i);
     }
 
-    L.frontSert(33);
+    //L.frontSert(33);
 
-    L.randSert(55);
+    L.randSert(88);
+
+    //L.remove(33);
 
     // Print the list
-    //L.print();
+    L.print();
 
-    // find node with value 216 and remove it
+    //find node with value 216 and remove it
     //L.remove(216);
 
     // find node with value 967 and remove it

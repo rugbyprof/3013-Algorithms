@@ -20,6 +20,7 @@ struct Node
     Node(int val)
     {
         key = val;
+        next = NULL;
     }
 };
 
@@ -152,9 +153,9 @@ private:
 int main()
 {
     srand(1234);    // seed random number generator
-    List L;         // declare instance of a list
+   List L;         // declare instance of a list
 
-    // loop i times: 0 <= i < 10000
+    // // loop i times: 0 <= i < 10000
     for (int i = 0; i < rand() % 10000; i++)
     {
         // load list with random # of nodes between 0 and 10000
@@ -164,12 +165,12 @@ int main()
     // Print the list
     L.print();
 
-    // find node with value 216 and remove it
-    L.remove(216);
+    // // find node with value 216 and remove it
+    // L.remove(216);
 
-    // find node with value 967 and remove it
-    L.remove(967);
+    // // find node with value 967 and remove it
+    // L.remove(967);
 
-    // print the list again
-    L.print();
+    // // print the list again
+    // L.print();
 }
