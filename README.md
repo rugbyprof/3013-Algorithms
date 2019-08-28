@@ -38,7 +38,7 @@ Here are some open source books for the course. I hope you guys appreciate the a
 
 We will be extending your knowledge of basic data structures by learning, implementing, and analyzing some classic data structures and algorithms.
 
-#### Algorithm Categories (small subset)
+#### Algorithm Categories
 
 - Recursion
 - Greedy Algorithms
