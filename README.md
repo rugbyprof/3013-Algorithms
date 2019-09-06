@@ -1,47 +1,87 @@
 # 3013-Algorithms
 
-making a change
-
 ### Roster
-![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1Mrqriq92avl-XFZLZFQSKFehMcc54SzGY9CHB7jI-s4/edit?usp=sharing)
+![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1SQl_DHJKxLCG9suGlVTX7CN8vZftHPZv3s3OqcwC0xs/edit?usp=sharing)
 
 ### General Course Info
-- ___Days:___ TTh 12:30 p.m. - 1:50 p.m. 
-- ___Location:___ BO 320
-- ___Semester:___ Mon January 15<sup>th</sup> - Fri May 4<sup>th</sup>
-- ___Holidays:___
-    - ___Spring Break:___ Sat March 10<sup>th</sup> - Sun March 18<sup>th</sup>
-    - ___Holiday Break:___ Fri March 30<sup>th</sup> - Sun April 1<sup>st</sup>
-- ___Last Day for “W”:___ Mon March 26<sup>th</sup>
-- ___Final Exam:___ Thursday May 10<sup>th</sup>, 10:30 a.m. - 12:30 p.m.
+- __Days:__ TTh 11:00 a.m. - 12:20 p.m. 
+- __Location:__ BO 320
+- [__Semester:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal1920.pdf)Mon August 26<sup>th</sup> - Wed Dec 4<sup>th</sup>
+- [__Holidays:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal1920.pdf)
+  - __Labor Day:__ Mon Sep 2<sup>nd</sup>
+  - __Thanksgiving:__ Wed Nov 27<sup>th</sup> - Sun Dec 1<sup>st</sup>
+- [__Last Day for “W”:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal1920.pdf) Mon Oct 28<sup>th</sup>
+- [__Final Exam:__](https://msutexas.edu/registrar/_assets/files/pdfs/fall19finals.pdf) Monday Dec 9<sup>th</sup>, 5:45 p.m. - 7:45 p.m.
 
+### Resources
 
-### Topics (Maybe more, maybe less .... we'll see):
-- Array Based Structures vs List Based Structures (overview)
-- Array Implementations:
-  - Heap (Priority-Queue)
-  - Heap Sort
-  - Hash Tables
+Here are some open source books for the course. I hope you guys appreciate the amount of effort it takes to put material together and then put it on the internet for free.
+
+- [Discrete Structures for Computer Science: Counting, Recursion, and Probability](http://cglab.ca/~michiel/DiscreteStructures/)
+  - Thanks To: [Michiel Smid](http://people.scs.carleton.ca/~michiel/)
+- [Open Data Structures](https://opendatastructures.org/ods-cpp.pdf)
+  - Code available [HERE](https://github.com/patmorin/ods)
+  - Thanks To: [Pat Morin](http://cglab.ca/~morin/)
+- [Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/)
+  - Thanks To: [Jeff Erickson](http://jeffe.cs.illinois.edu/)
+- [Wikipedia Collection of Data Structures](https://en.wikipedia.org/wiki/Book:Data_structures)
+
+### Assumed
+
+- This course assumes know what `array based data structures` and `list based data structures` are.
+- For example you should be able to write (from scratch) an `array based stack` and `queue` along with a `list based stack` and `queue`. If you cannot, go study.
+- You should have a general understanding of recursive functions.
+- You should have a general understanding on graph structures more specifically be able to write and traverse a basic Binary Search Tree (BST).
+- Basic OOP programming skills are also assumed. 
+  
+### Topics
+
+We will be extending your knowledge of basic data structures by learning, implementing, and analyzing some classic data structures and algorithms.
+
+#### Algorithm Categories
+
 - Recursion
+- Greedy Algorithms
+- Backtracking
+- Dynamic Programming
+
+#### Algorithms + Datastructures
+
+- [Array Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html):
+  - Stack
+  - Queue
+  - Deque
+  - Heap (Priority-Queue)
+- Linked Lists
+  - [Singly Linked List](https://opendatastructures.org/ods-cpp/3_1_Singly_Linked_List.html)
+  - [Doubly Linked List](https://opendatastructures.org/ods-cpp/3_2_Doubly_Linked_List.html)
+  - Stack
+  - Queue
 - Balanced Trees
   - Avl
   - Red Black Trees
-- Graphs:
-  - DFS (Depth-First Search)
-  - BFS (Breadth-First Search)
-  - Dijkstra's Algorithm (One Way Shortest Path)
+- [Hash Tables](https://opendatastructures.org/ods-cpp/5_Hash_Tables.html)
+- [Basic Graph Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/book/05-graphs.pdf):
+  - [DFS (Depth-First Search)](http://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf)
+  - [BFS (Breadth-First Search)](https://opendatastructures.org/ods-cpp/12_3_Graph_Traversal.html)
+- [Minimum Spanning Trees](http://jeffe.cs.illinois.edu/teaching/algorithms/book/07-mst.pdf  
   - Prim's Algorithm (Minimum Spanning Tree)
   - Kruskal's Algorithm (Minimum Spanning Tree)
+- [Shortest Paths](http://jeffe.cs.illinois.edu/teaching/algorithms/book/08-sssp.pdf)
+  - Dijkstra's Algorithm (One Way Shortest Path)
+
+
+
 - Sorting:
   - Merge Sort
   - Quick Sort
 
 ### Resources
+
 - http://opendatastructures.org/ods-cpp/
 - https://github.com/ippeb/ACM-ICPC
 
-
-## Grading:	
+## Grading
 
 | Categories                     |     |  Grade   |          | 
 |:------------------------------ |:---:|:--------:|:--------:|
@@ -59,19 +99,17 @@ making a change
 >
 >**4**. Plane ticket prices, events like weddings, or trips out of the country are not valid excuses for missing the final exam at its scheduled time. I will not make accommodations for anything other than an issue vetted by the dean of students. 
 
-## Misc:
+## Misc
 
 - https://repl.it
 - https://code.visualstudio.com/download
 
 - Attending class is one of the primary keys to doing well in this class. Students may be dropped for excessive absences. There is no distinction made between excused and unexcused. 
 
-- Make-up exams are not given. If I see fit, then I will replace a missed exam with your final exam test grade. If you do miss an exam without prior approval, a letter from the dean of students will be needed as an excuse. 
+- Make-up exams are not given. If I see fit, then I will replace a missed exam with your final exam test grade. If you do miss an exam without prior approval, a letter from the dean of students will be needed as an excuse.
 
-- A number of programming assignments will be made to code and execute. Microsoft Visual Studio 2015 / 2017 is recommended or just Visual Studio Code. 
+- A number of programming assignments will be made to code and execute. Microsoft Visual Studio 2015 / 2017 is recommended or just Visual Studio Code.
 
-- Programs containing syntax errors are unacceptable and will be returned without grading (your programs must work). All submitted programs need to be submitted via Github. 
+- Programs containing syntax errors are unacceptable and will be returned without grading (your programs must work). All submitted programs need to be submitted via Github.
 
 - Periodically homework assignments will be taken up and graded. It is the student's responsibility to keep up with assignments and to ask questions over the assigned work, even if absent. All homework assignments are due at the specified time that may or may not be in conjunction with a class day. All assignments / homeworks will be uploaded via Github.
-
-change change change
