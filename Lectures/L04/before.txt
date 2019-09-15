@@ -1,0 +1,19 @@
+Digraph G {
+node10[label="10\n"]
+nnode1[label="X",shape=point,width=.15]
+nnode2[label="X",shape=point,width=.15]
+node38[label="38\n"]
+node45[label="45\n"]
+nnode3[label="X",shape=point,width=.15]
+node55[label="55\n"]
+nnode4[label="X",shape=point,width=.15]
+nnode5[label="X",shape=point,width=.15]
+node10->nnode1
+node10->nnode2
+node38->node10
+node38->node45
+node45->nnode3
+node45->node55
+node55->nnode4
+node55->nnode5
+}
