@@ -36,6 +36,7 @@ private:
 //////////////////////////////////////////////////////////////////////////
     TreeNode* Root;
     int counter;
+    TreeNode* Parent;
 
     /**
      * private _Insert
@@ -46,22 +47,22 @@ private:
      *      inserting the new node there.
      * 
      * Params:
-     *      TreeNode* &root     : A reference pointer so we can update actuall tree
+     *      TreeNode* &nptr     : A reference pointer so we can update actuall tree
      *      TreeNode* temp      : The new node to be linked in
      * 
      * Returns:
      *      void 
      */
-    void _Insert(TreeNode* &root,TreeNode* temp){
-        if(!root){
-            root = temp;
+    void _Insert(TreeNode* &nptr,TreeNode* temp){
+        if(!nptr){
+            nptr = temp;
             return;
         }
 
-        if(temp->word < root->word){
-            _Insert(root->left,temp);
+        if(temp->word < nptr->word){
+            _Insert(nptr->left,temp);
         }else{
-            _Insert(root->right,temp);
+            _Insert(nptr->right,temp);
         }
     }
 
@@ -73,24 +74,24 @@ private:
      *      values at each node.
      * 
      * Params:
-     *      TreeNode* root     : A copy of the root pointer to get started
+     *      TreeNode* nptr     : A copy of the root pointer to get started
      * 
      * Returns:
      *      void 
      */
-    void _Print(TreeNode* root){
+    void _Print(TreeNode* nptr){
         counter++;
-        if(!root){
+        if(!nptr){
             return;
         }
 
         //preorder
-        _Print(root->left);
-        cout<<root->word<<" "; //inorder
+        _Print(nptr->left);
+        cout<<nptr->word<<" "; //inorder
         if(counter % 10 == 0){
             cout<<endl;
         }
-        _Print(root->right);
+        _Print(nptr->right);
         //postorder
     }
 
@@ -122,39 +123,39 @@ private:
      * 
      * Params:
      * 
-     *      TreeNode *root   : pointer to a TreeNode
+     *      TreeNode *nptr   : pointer to a TreeNode
      *      string   key     : value to find and delete
      * 
      * Returns:
      * 
      *      a pointer to a node
      */
-    TreeNode* _Delete(TreeNode *root, string key)
+    TreeNode* _Delete(TreeNode *nptr, string key)
     {
         TreeNode* temp;
-        if (root == NULL)
+        if (nptr == NULL)
             return NULL;
-        else if (key < root->word)
-            root->left = _Delete(root->left,key);
-        else if (key > root->word)
-            root->right = _Delete(root->right,key);
-        else if (root->left && root->right)
+        else if (key < nptr->word)
+            nptr->left = _Delete(nptr->left,key);
+        else if (key > nptr->word)
+            nptr->right = _Delete(nptr->right,key);
+        else if (nptr->left && nptr->right)
         {
-            temp = _FindPredecessor(root);
-            root->word = temp->word;
-            root->right = _Delete(root->right,root->word);
+            temp = _FindPredecessor(nptr);
+            nptr->word = temp->word;
+            nptr->right = _Delete(nptr->right,nptr->word);
         }
         else
         {
-            temp = root;
-            if (root->left == NULL)
-                root = root->right;
-            else if (root->right == NULL)
-                root = root->left;
+            temp = nptr;
+            if (nptr->left == NULL)
+                nptr = nptr->right;
+            else if (nptr->right == NULL)
+                nptr = nptr->left;
             delete temp;
         }
 
-        return root;
+        return nptr;
     }
 
     /**
@@ -162,22 +163,22 @@ private:
      * 
      * Params:
      * 
-     *      TreeNode *root   : pointer to a TreeNode
+     *      TreeNode *nptr   : pointer to a TreeNode
      * 
      * Returns:
      * 
      *      The height of the tree
      */
-    int _Height(TreeNode* root)
+    int _Height(TreeNode* nptr)
     {
-        if (!root)
+        if (!nptr)
         {
             return 0;
         }
         else
         {
-            int left = _Height(root->left);
-            int right = _Height(root->right);
+            int left = _Height(nptr->left);
+            int right = _Height(nptr->right);
             if (left > right)
             {
                 return left + 1;
@@ -194,37 +195,37 @@ private:
      * 
      * Params:
      * 
-     *      TreeNode *root   : pointer to a TreeNode
+     *      TreeNode *nptr   : pointer to a TreeNode
      * 
      * Returns:
      * 
      *      Pointer to min value 
      */
-    TreeNode* _FindMin(TreeNode* root)
+    TreeNode* _FindMin(TreeNode* nptr)
     {
-        if (root == NULL)
+        if (nptr == NULL)
             return NULL;
-        else if (root->left == NULL)
-            return root;
+        else if (nptr->left == NULL)
+            return nptr;
         else
-            return _FindMin(root->left);
+            return _FindMin(nptr->left);
     }
 
-    TreeNode* _FindPredecessor(TreeNode* root,bool beenLeft=false)
+    TreeNode* _FindPredecessor(TreeNode* nptr,bool beenLeft=false)
     {
-        if (root == NULL){
+        if (nptr == NULL){
             return NULL;
         }
         if(beenLeft == false){
-            if (root->left == NULL)
-                return root;
+            if (nptr->left == NULL)
+                return nptr;
             else
-                return _FindPredecessor(root->left,true);
+                return _FindPredecessor(nptr->left,true);
         }else{
-            if (root->right == NULL)
-                return root;
+            if (nptr->right == NULL)
+                return nptr;
             else
-                return _FindPredecessor(root->right,true);
+                return _FindPredecessor(nptr->right,true);
         }
 
     }
@@ -234,25 +235,25 @@ private:
      * 
      * Params:
      * 
-     *      TreeNode *root   : pointer to a TreeNode
+     *      TreeNode *nptr   : pointer to a TreeNode
      *      string   key     : key to be found
      * 
      * Returns:
      * 
      *      Pointer to a TreeNode
      */
-    TreeNode* _Find(TreeNode *&root, string key){
-        if(!root){
+    TreeNode* _Find(TreeNode *&nptr, string key){
+        if(!nptr){
             return NULL;
         }
 
-        if(key == root->word){
-            return root;
+        if(key == nptr->word){
+            return nptr;
         }else{
-            if(key<root->word){
-                return _Find(root->left,key);
+            if(key<nptr->word){
+                return _Find(nptr->left,key);
             }else{
-                return _Find(root->right,key);
+                return _Find(nptr->right,key);
             }
         }
     }
@@ -270,31 +271,31 @@ private:
     }
 
         /* Print nodes at a given level */
-    void _printGivenLevel(TreeNode* root, int level)
+    void _printGivenLevel(TreeNode* nptr, int level)
     {
-        if (root == NULL)
+        if (nptr == NULL)
             return;
         if (level == 1)
         {
-            _printNode(root);
+            _printNode(nptr);
         }
         else if (level > 1)
         {
-            _printGivenLevel(root->left, level - 1);
-            _printGivenLevel(root->right, level - 1);
+            _printGivenLevel(nptr->left, level - 1);
+            _printGivenLevel(nptr->right, level - 1);
         }
     }
     
    /* Function to line by line print level order traversal a tree*/
-    void _printLevelOrder(TreeNode* root)
+    void _printLevelOrder(TreeNode* nptr)
     {
         cout << "Begin Level Order===================\n";
-        int h = _Height(root);
+        int h = _Height(nptr);
         int i;
         for (i = 1; i <= h; i++)
         {
             cout << "Begin Level "<<i<<"<<===================\n";
-            _printGivenLevel(root, i);
+            _printGivenLevel(nptr, i);
             cout << "End Level "<<i<<"<<===================\n";
         }
         cout << "End Level Order===================\n";
@@ -373,9 +374,9 @@ public:
      * public Print
      * 
      * Description:
-     *      Calls private print with the root of the tree.
+     *      Calls private print with the nptr of the tree.
      *      We need to private method because caller does not now about 
-     *      the "root" of our tree.
+     *      the "nptr" of our tree.
      * 
      * Params:
      *      void
