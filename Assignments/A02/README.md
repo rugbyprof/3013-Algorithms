@@ -47,7 +47,7 @@ When a tree is unbalanced, its search times start to degrade. For example, the m
 - In `A02` place your code in a file called `bst_builder.cpp`
 - Include any input files you used to test your code as well.
 - Comment your code. My touched up lecture code should be a good enough example.
-- Here is a binary tree (without delete `uhggg!`) but with graphviz output to "see your tree".
+- Here is a binary tree but with graphviz output to "see your tree".
 - Turn in a printed copy of your source code (NOT from github). 
   - There is a way to print source code from github, ask me in class to show you.
 - Staple your pages together at the top left (very close to the corner).

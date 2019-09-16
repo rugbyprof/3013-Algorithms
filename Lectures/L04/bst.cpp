@@ -36,7 +36,6 @@ private:
 //////////////////////////////////////////////////////////////////////////
     TreeNode* Root;
     int counter;
-    TreeNode* Parent;
 
     /**
      * private _Insert
@@ -65,6 +64,7 @@ private:
             _Insert(nptr->right,temp);
         }
     }
+
 
     /**
      * private _Print
@@ -130,7 +130,7 @@ private:
      * 
      *      a pointer to a node
      */
-    TreeNode* _Delete(TreeNode *nptr, string key)
+    TreeNode* _Delete(TreeNode *&nptr, string key)
     {
         TreeNode* temp;
         if (nptr == NULL)
@@ -211,6 +211,13 @@ private:
             return _FindMin(nptr->left);
     }
 
+
+    /**
+     * _FindPredecessor
+     * 
+     * 
+     * 
+     */
     TreeNode* _FindPredecessor(TreeNode* nptr,bool beenLeft=false)
     {
         if (nptr == NULL){
@@ -326,7 +333,6 @@ private:
         }
     }
 
-
 //////////////////////////////////////////////////////////////////////////
 public:
 //////////////////////////////////////////////////////////////////////////
@@ -374,9 +380,9 @@ public:
      * public Print
      * 
      * Description:
-     *      Calls private print with the nptr of the tree.
+     *      Calls private print with the root of the tree.
      *      We need to private method because caller does not now about 
-     *      the "nptr" of our tree.
+     *      the "root" of our tree.
      * 
      * Params:
      *      void
@@ -388,20 +394,66 @@ public:
         _Print(Root);
     }
 
-
+    /**
+     * public PrintTree
+     * 
+     * Description:
+     *      Prints a "level order" output of the tree with pointers to children
+     * 
+     * Params:
+     *      void
+     * 
+     * Returns:
+     *      void 
+     */
     void PrintTree(){
         _printLevelOrder(Root);
     }
 
-
+    /**
+     * public Find
+     * 
+     * Description:
+     *      Checks if a node exists with a specific key. Should probably return a pointer.
+     * 
+     * Params:
+     *      void
+     * 
+     * Returns:
+     *      void 
+     */
     bool Find(string key){
         return _Find(Root,key);
     }
 
+    /**
+     * public Height
+     * 
+     * Description:
+     *      Returns longest path from root to some leaf node
+     * 
+     * Params:
+     *      void
+     * 
+     * Returns:
+     *      void 
+     */
     int Height(){
         return _Height(Root);
     }
 
+    /**
+     * public Delete
+     * 
+     * Description:
+     *      Deletes a node from the tree.
+     * 
+     * Params:
+     *      void
+     * 
+     * Returns:
+     *      TreeNode* to the deleted  
+     */
     TreeNode* Delete(string key){
         return _Delete(Root,key);
     }
@@ -409,6 +461,8 @@ public:
     int maxDepth(){
         return _maxDepth(Root);
     }
+
+
 
     //************************************************************************
     // Method to help create GraphViz code so the expression tree can
@@ -518,15 +572,18 @@ int main(int argc, char** argv){
         tree.Insert(word);
     }
 
+    tree.PrintTree();
+
     cout<<tree.Delete("bungler")<<endl;
 
-    tree.Delete("ancestry");
+    cout<<tree.Delete("ancestry")<<endl;
 
     cout<<tree.maxDepth()<<endl;
 
     tree.PrintTree();
 
     tree.GraphVizOut("graph.out");
+    
 
     return 1;
 }
