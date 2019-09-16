@@ -173,32 +173,51 @@ private:
 
     void deleteNode(node *&root, int key)
     {
-
-        if (countChildren(root) == 0)
-        {
-            delete root;
+        if(!root){
+            return;
         }
-        else if (countChildren(root) == 1)
-        {
-            if (root->left)
-            {
-                node *temp = root;
-                root = root->left;
-                delete temp;
+        if(root->data != key){
+            if(key < root->data){
+                cout<<"going left"<<endl;
+                deleteNode(root->left,key);
+            }else{
+                cout<<"going right"<<endl;
+                deleteNode(root->right,key);
             }
-            else if (root->right)
+        }else{
+            cout<<"root->data == "<<key<<endl;
+            if (countChildren(root) == 0)
             {
+                cout<<"zero children"<<endl;
+                root->data = 54;
+                delete root;
+            }
+            else if (countChildren(root) == 1)
+            {
+                if (root->left)
+                {
+                    cout<<"left child"<<endl;
+                    node *temp = root;
+                    root = root->left;
+                    delete temp;
+                }
+                else if (root->right)
+                {
+                    cout<<"right child"<<endl;
+                    node *temp = root;
+                    root = root->right;
+                    delete temp;
+                }
+            }
+            else
+            {
+                cout<<"two children"<<endl;
+                node *min = findMin(root);
                 node *temp = root;
                 root = root->right;
                 delete temp;
             }
-        }
-        else
-        {
-            node *min = findMin(root);
-            node *temp = root;
-            root = root->right;
-            delete temp;
+
         }
     }
 
@@ -478,6 +497,10 @@ int main(int argc, char **argv)
 
     //B.deleteNode(80);
     B.deleteNode(55);
+
+    B.printLevelOrder();
+
+    B.insert(54);
 
     B.printLevelOrder();
 

@@ -50,7 +50,7 @@ private:
      * Returns:
      *      void 
      */
-    void _Insert(TreeNode* &root,TreeNode* temp){
+    void _Insert(TreeNode* root,TreeNode* temp){
         
         if(!root){
             root = temp;
