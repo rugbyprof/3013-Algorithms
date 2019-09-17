@@ -45,6 +45,7 @@ When a tree is unbalanced, its search times start to degrade. For example, the m
 - Create a folder called `assignments`
 - In `assignments` create a folder called `A02`
 - In `A02` place your code in a file called `bst_builder.cpp`
+- Name your input file `input.dat` and one number per line.
 - Include any input files you used to test your code as well.
 - Comment your code. My touched up lecture code should be a good enough example.
 - Here is a binary tree but with graphviz output to "see your tree".
