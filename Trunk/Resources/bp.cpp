@@ -228,6 +228,19 @@ public:
         VizOut << "}\n";
         VizOut.close();
     }
+
+    void loadPerfect(int arr[], int start, int end){
+        if(start>end){
+            return;
+        }
+        int mid = (start + end)/2;
+
+        insert(arr[mid]);
+        
+        loadPerfect(arr, start, mid-1);
+        loadPerfect(arr, mid+1, end);
+        return;
+    }
 };
 
 // int main() {
@@ -287,34 +300,14 @@ int main() {
     fout.close();
     int size = 1023;
     int *arr = new int[size];
-    int *bstorder = new int[size];
-    int j = 0;
 
     for (int i = 0; i < size; i++) {
-        arr[i] = i+1;
+        arr[i] = i*10+1;
     }
-
-	for(int i=0;i<size;i++){
-		cout<<arr[i]<<",";
-	}
-	cout<<endl;
-
-    //   int arr_size = sizeof(arr) / sizeof(int);
-    //   cout<<arr_size<<endl;
-    convert(arr, 0, size - 1);
-
-    cout << endl;
-
-    ifstream fin("nums.txt");
 
     BSTree B;
 
-    int x;
-
-    while (!fin.eof()) {
-        fin >> x;
-        B.insert(x);
-    }
+    B.loadPerfect(arr,0,size-1);
 
     B.GraphVizOut("graphvizout.txt");
 
