@@ -145,7 +145,7 @@ private:
             nptr->word = temp->word;
             nptr->right = _Delete(nptr->right,nptr->word);
         }
-        else
+        else // single child
         {
             temp = nptr;
             if (nptr->left == NULL)
