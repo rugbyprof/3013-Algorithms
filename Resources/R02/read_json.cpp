@@ -12,14 +12,14 @@ int main(int argc,char **argv){
 
     json data;
 
-    std::ifstream i("all_words.json");
+    std::ifstream i("cities.json");
     
     i >> data;
 
-    std::cout << data.dump(4) << std::endl;
+    //std::cout << data.dump(4) << std::endl;
 
     for (json::iterator it = data.begin(); it != data.end(); ++it) {
-        std::cout << it.key() << " : \n";
+        //std::cout << it.key() << " : \n";
         for (auto& element : it.value()) {
             std::cout << element << '\n';
         }
