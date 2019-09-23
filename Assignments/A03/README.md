@@ -36,6 +36,7 @@ if `V` is `true`: invert `Priority`
 
 #### Output
 
+- Run your file with a command line parameter which will dictate how many buckets you will create.
 - Perform a `remove_max` on each heap in succession: from heap 0 => N and print the Animals Name + Priority to an output file.
 - Remove the top 5 animals from each heap.
 
