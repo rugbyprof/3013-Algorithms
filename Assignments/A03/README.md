@@ -1,5 +1,5 @@
 ## Program 2 - Priority Queues
-#### Due: September 25<sup>th</sup> by classtime.
+#### Due: September 30<sup>th</sup> by classtime.
 
 ### Overview
 
@@ -12,4 +12,12 @@ Using a binary heap as your data structure | read the [data file](./input_data.c
 | Chipmunk least        | 39.3988465  | 51.1373971  | -135949885  | 0.3.6   | true      | 0.68     |
 | Common grenadier      | -8.5944594  | 40.557917   | -370927360  | 9.1.7   | true      | 0.75     |
 
-The ***priority*** will be calculated ...
+The ***priority*** will be calculated by doing the following:
+
+1. `L` = length of the `animal_name` 
+2. `D` = distance (`latitude`,`longitude`) is from (`33.9137`,`-98.4934`)
+3. `A` = adjustor
+
+`Priority` = `D*A/L`
+
+Still not done....
