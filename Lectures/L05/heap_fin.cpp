@@ -10,9 +10,12 @@
 //       describe program here thoroughly
 /////////////////////////////////////////////////////////////////////////////////
 
+#include <chrono>
 #include <iostream>
+#include <math.h>
 
 using namespace std;
+using namespace std::chrono;
 
 /**
  * Class Heap:
@@ -26,9 +29,8 @@ using namespace std;
  *    bool Empty()
  *    void Heapify(int*,int)
  */
-class Heap
-{
-  private:
+class Heap {
+private:
     int *H;       // Pointer to allocate dynamic array
     int Next;     // Next available location
     int MaxSize;  // Max size since were using array
@@ -43,14 +45,13 @@ class Heap
      * Returns
      *      void
      */
-    void BubbleUp(int i)
-    {
-      int p = Parent(i);
-      while(p > 0 && H[i] > H[p]){
-        Swap(i,p);
-        i = p;
-        p = Parent(i);
-      }
+    void BubbleUp(int i) {
+        int p = Parent(i);
+        while (p > 0 && H[i] > H[p]) {
+            Swap(i, p);
+            i = p;
+            p = Parent(i);
+        }
     }
 
     /**
@@ -62,19 +63,18 @@ class Heap
      * Returns
      *      void
      */
-    void BubbleDown(int i)
-    {
-      int c = PickChild(i);
-      
-      while(c > 0){
-        if(H[i] < H[c]){
-          Swap(i,c);
-          i = c;
-          c = PickChild(i);
-        }else{
-          c = -1;
+    void BubbleDown(int i) {
+        int c = PickChild(i);
+
+        while (c > 0) {
+            if (H[i] < H[c]) {
+                Swap(i, c);
+                i = c;
+                c = PickChild(i);
+            } else {
+                c = -1;
+            }
         }
-      }
     }
 
     /**
@@ -87,8 +87,7 @@ class Heap
      * Returns
      *      void
      */
-    void Swap(int p, int i)
-    {
+    void Swap(int p, int i) {
         int temp = H[p];
         H[p] = H[i];
         H[i] = temp;
@@ -103,8 +102,7 @@ class Heap
      * Returns
      *      index [int]
      */
-    int Parent(int i)
-    {
+    int Parent(int i) {
         return int(i / 2);
     }
 
@@ -117,8 +115,7 @@ class Heap
      * Returns
      *      [int] index - left child index
      */
-    int LeftChild(int i)
-    {
+    int LeftChild(int i) {
         return i * 2;
     }
 
@@ -131,8 +128,7 @@ class Heap
      * Returns
      *      [int] index - right child index
      */
-    int RightChild(int i)
-    {
+    int RightChild(int i) {
         return i * 2 + 1;
     }
 
@@ -145,24 +141,24 @@ class Heap
      * Returns
      *      [int] index - index to swap with or -1 to not swap
      */
-    int PickChild(int i){
-      if(RightChild(i) >= Next){//No right child
-        if(LeftChild(i) >= Next){//No left child
-          return -1;
-        }else{//you have a left no right
-          return LeftChild(i);
+    int PickChild(int i) {
+        if (RightChild(i) >= Next) {    //No right child
+            if (LeftChild(i) >= Next) { //No left child
+                return -1;
+            } else { //you have a left no right
+                return LeftChild(i);
+            }
+        } else {
+            //right child exists
+            if (H[RightChild(i)] > H[LeftChild(i)]) {
+                return RightChild(i);
+            } else {
+                return LeftChild(i);
+            }
         }
-      }else{
-        //right child exists
-        if(H[RightChild(i)] > H[LeftChild(i)]){
-          return RightChild(i);
-        }else{
-          return LeftChild(i);
-        }
-      }
     }
 
-  public:
+public:
     /**
      * Function Heap:
      *      Constructor that allocates memory for array and
@@ -173,12 +169,11 @@ class Heap
      * Returns
      *      void
      */
-    Heap(int size)
-    {
-      H = new int[size];
-      Next = 1;
-      MaxSize = size;
-      HeapSize = 0;
+    Heap(int size) {
+        H = new int[size];
+        Next = 1;
+        MaxSize = size;
+        HeapSize = 0;
     }
 
     /**
@@ -190,12 +185,11 @@ class Heap
      * Returns
      *      void
      */
-    void Insert(int x)
-    {
-      H[Next] = x;
-      BubbleUp(Next);
-      Next++;
-      HeapSize++;
+    void Insert(int x) {
+        H[Next] = x;
+        BubbleUp(Next);
+        Next++;
+        HeapSize++;
     }
 
     /**
@@ -207,22 +201,21 @@ class Heap
      * Returns
      *      [int] top_value - top value in the heap (min or max)
      */
-    int Extract()
-    {
+    int Extract() {
 
-      if(Empty()){
-        return -1;
-      }
-      
-      int retval = H[1];
-      H[1] = H[--Next];
-      HeapSize--;
-      
-      if(HeapSize > 1){
-        BubbleDown(1);
-      }
-      
-      return retval;
+        if (Empty()) {
+            return -1;
+        }
+
+        int retval = H[1];
+        H[1] = H[--Next];
+        HeapSize--;
+
+        if (HeapSize > 1) {
+            BubbleDown(1);
+        }
+
+        return retval;
     }
 
     /**
@@ -235,10 +228,8 @@ class Heap
      * Returns
      *      void
      */
-    void PrintHeap()
-    {
-        for (int i = 1; i < Next; i++)
-        {
+    void PrintHeap() {
+        for (int i = 1; i < Next; i++) {
             cout << H[i] << " ";
         }
         cout << endl;
@@ -253,8 +244,7 @@ class Heap
      * Returns
      *      [int] heapSize - size of heap
      */
-    int Size()
-    {
+    int Size() {
         return Next - 1;
     }
 
@@ -267,8 +257,7 @@ class Heap
      * Returns
      *      [bool] empty - is array empty
      */
-    bool Empty()
-    {
+    bool Empty() {
         return Next == 1;
     }
 
@@ -282,35 +271,56 @@ class Heap
      * Returns
      *      void
      */
-    void Heapify(int *A, int size)
-    {
-      int i = size /2 ;
-      H = A;
-      Next = size;
-      HeapSize = size-1;
-      
-      for(int j=i;j>=1;j--){
-        BubbleDown(j);
-      }
+    void Heapify(int *A, int size) {
+        int i = size / 2;
+        // H = A;
+        // Next = size;
+        // HeapSize = size - 1;
+
+        for (int j = i; j >= 1; j--) {
+            BubbleDown(j);
+        }
     }
 };
 
-int main(){
-  srand(3424);
-  Heap myheap(10000);
-  
-  int *A = new int[1000];
-  
-  for(int i = 1;i<1000;i++){
-    A[i] = rand()%1000;
-  }
-  myheap.Heapify(A,1000);
-  
-  while(!myheap.Empty()){
-    cout<<myheap.Extract()<<endl;
-  }
-  
-  myheap.PrintHeap();
-  
-  return 0;
+int main() {
+    srand(34824);
+
+    int size = 10000;
+    int r = 0;
+
+    // get starting clock
+    auto start = high_resolution_clock::now();
+
+    Heap myheap(size);
+
+    int *A = new int[size];
+
+    for (int i = 1; i < size; i++) {
+        r = rand();
+        cout<<r<<endl;
+        A[i] = r;
+    }
+
+    myheap.Heapify(A, size);
+
+    while (!myheap.Empty()) {
+        cout << myheap.Extract() << endl;
+    }
+
+    //myheap.PrintHeap();
+
+    // get ending clock
+    auto stop = high_resolution_clock::now();
+
+    // Get duration. Substart timepoints to
+    // get durarion. To cast it to proper unit
+    // use duration cast method
+    auto duration = duration_cast<microseconds>(stop - start);
+
+    cout << "Time taken by function: "
+         << duration.count() << " microseconds"
+         << " or " << duration.count() / 1000000.0 << " seconds" << endl;
+
+    return 0;
 }
