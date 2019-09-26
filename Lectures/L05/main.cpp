@@ -50,6 +50,13 @@ public:
 
     }
 
+    int extractMin(){
+        int retVal = heap[1];
+        heap[1] = heap[last--];
+    
+
+    }
+
     void Print(){
         for(int i=1;i<=last;i++){
             cout<<heap[i]<<" ";
