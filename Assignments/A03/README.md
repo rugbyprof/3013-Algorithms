@@ -50,7 +50,7 @@ for(int i=0;i<NumberOfBuckets;i++){
 
 // somewhere in your program
 
-Buckets[j].Insert(value);
+Buckets[j]->Insert(value);
 
 ```
 
