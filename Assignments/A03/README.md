@@ -28,7 +28,34 @@ The ***priority*** will be calculated by doing the following:
 
 if `V` is `true`: invert `Priority`
 
-#### Heap
+#### Bucket
+
+What is a bucket?? Its just an array of *Heap pointers! Thats it. 
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/buckets_and_heaps.png" width="400">
+
+To create `Buckets` number of max heaps, you can do something similar to:
+
+```cpp
+// Pull the number of buckets from the command line
+int NumberOfBuckets = argv[1];
+
+Heap** Buckets = new Heap*[NumberOfBuckets];
+
+for(int i=0;i<NumberOfBuckets;i++){
+    Buckets[i] = new Heap;
+}
+
+// lots a code 
+
+// somewhere in your program
+
+Buckets[j].Insert(value);
+
+```
+
+
+#### Heaps
 
 - You will create `buckets` number of max heaps where order is based on the calculated priority as discussed above. 
 - Assume a random number of `buckets` somewhere between `3-11` (inclusive) to place your animals in. 
