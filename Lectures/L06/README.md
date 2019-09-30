@@ -63,7 +63,7 @@ situation:
 | <img src=https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/avl.1.5.png width="200"> |
 | Figure 1-5 |
 
-Perfect. It's balanced. Let's insert 'B'.
+Perfect. It's balanced. Let's insert **B**.
 
 |        |
 |:-----:|
@@ -119,7 +119,7 @@ Voila. Problem solved.
 
 **Right-Left Rotiation (RL) or "Double right"**
 
-A double right rotation, or right-left rotation, or simply RL, is a rotation that must be performed
+A `double right rotation`, or `right-left rotation`, or simply `RL`, is a rotation that must be performed
 when attempting to balance a tree which has a left subtree, that is right heavy. This is a mirror
 operation of what was illustrated in the section on Left-Right Rotations, or double left rotations.
 Let's look at an example of a situation where we need to perform a Right-Left rotation.
@@ -130,7 +130,7 @@ Let's look at an example of a situation where we need to perform a Right-Left ro
 | Figure 1-12 |
 
 In this situation, we have a tree that is unbalanced. The left subtree has a height of 2, and the
-right subtree has a height of 0. This makes the balance factor of our root node, c, equal to -2.
+right subtree has a height of 0. This makes the balance factor of our root node, **C**, equal to -2.
 What do we do? Some kind of right rotation is clearly necessary, but a single right rotation will not
 solve our problem. Let's try it:
 
@@ -148,7 +148,7 @@ before we did our pointless right rotation:
 | <img src=https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/avl.1.14.png width="200"> |
 | Figure 1-14 |
 
-The reason our right rotation did not work, is because the left subtree, or 'a', has a positive
+The reason our right rotation did not work, is because the left subtree, or **A**, has a positive
 balance factor, and is thus right heavy. Performing a right rotation on a tree that has a left
 subtree that is right heavy will result in the problem we just witnessed. What do we do? The
 answer is to make our left subtree left-heavy. We do this by performing a left rotation our left
@@ -160,7 +160,7 @@ subtree. Doing so leaves us with this situation:
 | Figure 1-15 |
 
 This is a tree which can now be balanced using a single right rotation. We can now perform our
-right rotation rooted at C. The result:
+right rotation rooted at **C**. The result:
 
 |        |
 |:-----:|
