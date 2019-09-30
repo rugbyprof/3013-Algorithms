@@ -85,7 +85,7 @@ answer is to perform a right rotation on the right subtree. Read that again. We 
 rotation on the right subtree. We are not rotating on our current root. We are rotating on our right
 child. Think of our right subtree, isolated from our main tree, and perform a right rotation on it:
 
-**Before: **
+**Before:**
 
 |        |
 |:-----:|
