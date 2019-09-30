@@ -125,7 +125,9 @@ public:
 
 int main(int argc, char **argv) {
 
+
     AnimalHelper AH("animals.json");
+    char ch;
 
     AH.PrintAnimals();
 

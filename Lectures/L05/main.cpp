@@ -29,6 +29,7 @@ public:
     }
 
     void Insert(int val){
+        // need to check for end of array!!!
         heap[++last] = val; 
         bubbleUp();
     }
@@ -46,15 +47,67 @@ public:
         }
     }
 
+    int getSmallestChild(int i){
+        int smallest = 0;
+        
+        // no children
+        if(2*i > last){
+            return -1;  
+        }
+
+        // checking both children
+        if(heap[2*i] < heap[2*i+1]){
+            if(heap[i] > heap[2*i]){
+                return 2*i;
+            }else{
+                return -1;
+            }
+        }else{
+            if(heap[i] > heap[2*i+1]){
+                return 2*i+1;
+            }else{
+                return -1;
+            }
+        }
+    }
+
+    void swap(int i,int j){
+        int temp = heap[i];
+        heap[i] = heap[j];
+        heap[j] = temp;
+    }
+
+    void bubbleDown(int i){
+
+        int j = getSmallestChild(i);
+
+        if(j < 0){
+            return;
+        }
+
+        if(j != -1){
+            swap(i,j);
+            bubbleDown(j);
+        }
+
+
+    }
+
     void Heapify(){
 
+    }
+
+    bool Empty(){
+        return last == 0;
     }
 
     int extractMin(){
         int retVal = heap[1];
         heap[1] = heap[last--];
     
+        // bubble down
 
+        return retVal;
     }
 
     void Print(){
@@ -79,6 +132,13 @@ int main(int argc, char** argv){
     H.Insert(9);
     H.Insert(1);
     H.Insert(5);
+
+    H.Print();
+
+    while(!H.Empty()){
+        cout<<H.extractMin()<<endl;
+        H.bubbleDown(1);
+    }
 
     H.Print();
 
