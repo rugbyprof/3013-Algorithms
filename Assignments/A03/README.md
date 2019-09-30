@@ -5,7 +5,7 @@
 
 Using a binary heap as your data structure | read a [data file](./animals.json) and print out the order in which they would be processed. The order is based on the priority value. The larger the number | the higher the priority.
 
-| animal_name           | longitude   | latitude    | date        | version | validated | adjustor |
+| animal_name           | longitude   | latitude    | date        | version | validated | priority |
 | :-------------------- | :---------- | :---------- | :---------- | :------ | :-------- | :------- |
 | Alligator mississippi | -8.5178319  | 40.927135   | 142118596   | 9.4     | false     | 0.74     |
 | Crowned hawk-eagle    | -69.4887886 | -11.4077673 | -1968297180 | 8.5     | true      | 0.23     |
