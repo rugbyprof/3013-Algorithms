@@ -1,5 +1,5 @@
 ## Program 2 - Priority Queues
-#### Due: September 30<sup>th</sup> by classtime.
+#### Due: October 4<sup>th</sup> by 3 p.m.
 
 ### Overview
 
@@ -102,6 +102,7 @@ Blue peacock 334.102
 - Name your input file `animals.json` and place that in the `A03` folder.
 - A copy of your generated output.
 - Name printed digitally on all items turned in.
+- Stapled at top left corner with output behind code.
 - Comments:
 
 ```
