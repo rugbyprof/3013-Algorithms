@@ -52,28 +52,31 @@ struct Animal {
     long date;
     double latitude;
     double longitude;
-    float priority;
+    float adjuster;
     bool validated;
     string version;
+    float priority;
 
     Animal() {
         animal_name = "";
         date = 0;
         latitude = 0.0;
         longitude = 0.0;
-        priority = 0.0;
+        adjuster = 0.0;
         validated = 0;
         version = "";
+        priority = 0.0;
     }
 
-    Animal(string name, long _date, double lat, double lon, float pri, bool val, string ver) {
+    Animal(string name, long _date, double lat, double lon, float adj, bool val, string ver) {
         animal_name = name;
         date = _date;
         latitude = lat;
         longitude = lon;
-        priority = pri;
+        adjuster = adj;
         validated = val;
         version = ver;
+        priority = 0.0;
     }
 
     Animal(json j) {
@@ -81,9 +84,10 @@ struct Animal {
         date = j["date"];
         latitude = j["latitude"];
         longitude = j["longitude"];
-        priority = j["priority"];
+        adjuster = j["adjuster"];
         validated = j["validated"];
         version = j["version"];
+        priority = 0.0;
     }
 };
 
@@ -105,6 +109,8 @@ public:
         }
     }
 
+
+
     void PrintAnimals() {
 
         for (int i = 0; i < size; i++) {
@@ -113,9 +119,10 @@ public:
             << Animals[i]->latitude << " " 
             << Animals[i]->longitude << " " 
             << Animals[i]->date << " " 
-            << Animals[i]->priority << " " 
+            << Animals[i]->adjuster << " " 
             << Animals[i]->validated << " " 
-            << Animals[i]->version << endl;
+            << Animals[i]->version << " "
+            << Animals[i]->priority << endl;
 
         }
     }
