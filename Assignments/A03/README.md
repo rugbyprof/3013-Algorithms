@@ -1,11 +1,11 @@
 ## Program 2 - Priority Queues
-#### Due: September 30<sup>th</sup> by classtime.
+#### Due: October 4<sup>th</sup> by 3 p.m.
 
 ### Overview
 
 Using a binary heap as your data structure | read a [data file](./animals.json) and print out the order in which they would be processed. The order is based on the priority value. The larger the number | the higher the priority.
 
-| animal_name           | longitude   | latitude    | date        | version | validated | adjustor |
+| animal_name           | longitude   | latitude    | date        | version | validated | adjuster |
 | :-------------------- | :---------- | :---------- | :---------- | :------ | :-------- | :------- |
 | Alligator mississippi | -8.5178319  | 40.927135   | 142118596   | 9.4     | false     | 0.74     |
 | Crowned hawk-eagle    | -69.4887886 | -11.4077673 | -1968297180 | 8.5     | true      | 0.23     |
@@ -28,7 +28,34 @@ The ***priority*** will be calculated by doing the following:
 
 if `V` is `true`: invert `Priority`
 
-#### Heap
+#### Bucket
+
+What is a bucket?? Its just an array of *Heap pointers! Thats it. 
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/buckets_and_heaps.png" width="400">
+
+To create `Buckets` number of max heaps, you can do something similar to:
+
+```cpp
+// Pull the number of buckets from the command line
+int NumberOfBuckets = argv[1];
+
+Heap** Buckets = new Heap*[NumberOfBuckets];
+
+for(int i=0;i<NumberOfBuckets;i++){
+    Buckets[i] = new Heap;
+}
+
+// lots a code 
+
+// somewhere in your program
+
+Buckets[j]->Insert(value);
+
+```
+
+
+#### Heaps
 
 - You will create `buckets` number of max heaps where order is based on the calculated priority as discussed above. 
 - Assume a random number of `buckets` somewhere between `3-11` (inclusive) to place your animals in. 
@@ -75,6 +102,7 @@ Blue peacock 334.102
 - Name your input file `animals.json` and place that in the `A03` folder.
 - A copy of your generated output.
 - Name printed digitally on all items turned in.
+- Stapled at top left corner with output behind code.
 - Comments:
 
 ```

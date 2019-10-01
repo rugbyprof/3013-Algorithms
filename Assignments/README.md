@@ -3,6 +3,6 @@
  | ------------|------------|------------|------------|
  | [A01](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A01) | [ Assignment 1 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A01) | [ Getting Started](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A01) | [Thursday August 29th by 5:00pm](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A01) |
  | [A02](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A02) | [ Program 1 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A02) | [ Balanced tree's](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A02) | [September 18<sup>th</sup> by classtime.](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A02) |
- | [A03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [ Program 2 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [ Priority Queues](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [September 30<sup>th</sup> by classtime.](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) |
+ | [A03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [ Program 2 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [ Priority Queues](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [October 4<sup>th</sup> by 3 p.m.](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) |
 
-<sup>Last Updated: 2019-09-23 (Mon @ 14:56)</sup>
+<sup>Last Updated: 2019-09-30 (Mon @ 14:55)</sup>
