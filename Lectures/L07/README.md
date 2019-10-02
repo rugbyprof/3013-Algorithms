@@ -86,16 +86,12 @@ These are all **undirected** graphs and edges are **unordered**.
 
 #### Number of Edges
 
-|       | 
-|:----:|
-|Let `G` be an undirected graph (or multigraph) with `V` vertices and `N` edges. Then:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.10.png" width="150">|
-|  Handshaking Theorem  | 
+- Let `G` be an undirected graph (or multigraph) with `V` vertices and `N` edges. Then:
 
-| Example      | 
-|:----:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.9.png" width="200">|
-|     | 
+|      |     |
+|:----:|:----:|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.10.png" width="150">|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.9.png" width="200">|
+
 
 #### Directed Graphs
 
@@ -105,7 +101,7 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |       | 
 |:----:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.11.png" width="200">|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.11.png" width="300">|
 |  Directed Graph| 
 
 #### Number of Edges
@@ -120,18 +116,14 @@ These are all **undirected** graphs and edges are **unordered**.
 
 - A graph in which every vertex has the **same degree** is called a regular graph.
 
-|       | 
-|:----:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.13.png" width="300">|
-|  Regular Graph| 
+|       |  | |
+|:----:|:----:|:----:|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.13.png" width="300">|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.14.png" width="300">|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.15.png" width="300">|
+|  |  |
 
 - The **complete graph** on n vertices, denoted K<sub>n</sub>, is a simple graph in which there is an edge between every pair of distinct vertices.
 - How many edges in K<sub>n</sub>?
 
-|       | 
-|:----:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.15.png" width="300">|
-| K<sup>4</sup> and K<sup>5</sup>| 
 
 #### Connectivity
 
@@ -151,11 +143,31 @@ These are all **undirected** graphs and edges are **unordered**.
 - If you can determine that your graph will be **dense** (number of edges is close to `V * log V`) then you can use a matrix to represent your graph.
 - Otherwise if your edges will be less than `V * log V`, its considered **sparse**, and you would want to use a list representation.
 
-|                                                                                            |                                                                                            |
-| :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
-| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.18.png" width="300"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.19.png" width="200"> |
-|                                   Adjacency List                                    |                                    Adjacency Matrix                                     |
+|             |    |
+| :------------------: | :---------------------: |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.18.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.19.png" width="150"> |
+|   Directed Graph         |     Adjacency List    |
 
+
+|             |    |
+| :------------------: | :---------------------: |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.24.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.25.png" width="200"> |
+|   Undirected Weighted Graph         |     Adjacency List    |
+
+|             |    |
+| :------------------: | :---------------------: |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.18.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.21.png" width="150"> |
+|    Directed  Graph         |     Adjacency Matrix    |
+
+|             |    |
+| :------------------: | :---------------------: |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.18a.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.20.png" width="150"> |
+|    Undirected Graph         |     Adjacency Matrix    |
+
+|             |    |
+| :------------------: | :---------------------: |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.22.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.23.png" width="150"> |
+|    Undirected Weighted Graph         |     Adjacency Matrix    |
 
 ### Trees 
 
@@ -168,14 +180,16 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |       | 
 |:----:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.23.png" width="300">|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.28.png" width="300">|
 | Tree| 
 
 - A **spanning tree** of a graph is a subgraph, which is a tree and contains all vertices of the graph. 
 - In the figure below, the right picture represents a spanning tree for the graph on the left. 
 - A spanning tree is not unique.
 
-|                                                                                            |                                                                                            |
-| :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
-| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.25.png" width="200"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.26.png" width="200"> |
-|                                   Graph                                    |                                    Spanning Tree                                     |
+|    |     |    |    |
+| :------------------------------------: | :---------------: |:---------------: |:---------------: |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.26.png" width="150"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.27.png" width="150"> |<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.29.png" width="150"> |<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.30.png" width="150"> |
+|Graph|Spanning Tree 1 |Spanning Tree 2|Spanning Tree 3 |
+
+- Can you find another one?
