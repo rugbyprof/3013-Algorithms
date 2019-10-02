@@ -58,7 +58,7 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |       | 
 |:----:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.6.png" width="600">|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.6.png" width="400">|
 |  Directed Graphs   | 
 
 #### Weighted Graph
@@ -105,7 +105,7 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |       | 
 |:----:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.11.png" width="200">|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.11.png" width="500">|
 |  Directed Graph| 
 
 #### Number of Edges
