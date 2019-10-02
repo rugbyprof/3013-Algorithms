@@ -14,7 +14,7 @@ The problem was whether it was possible to take a walk through the town in such 
 
 |                                                                                            |                                                                                            |
 | :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
-| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.1.png" width="300"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.2.png" width="200"> |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.1.png" width="300"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.2.png" width="200"> |
 |                                   Bridges of Königsberg                                    |                                    Graph of Königsberg                                     |
 
 A **graph** is a set of points (we call them **vertices** or **nodes**) connected by lines (**edges** or
@@ -45,7 +45,7 @@ Some Examples of what Graphs can represent (a tiny example):
 
 |                                                                                            |                                                                                            |                                                                                            |
 | :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
-| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.3.png" width="150"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.4.png" width="150"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.5.png" width="150"> |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.3.png" width="150"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.4.png" width="150"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.5.png" width="150"> |
 |                                        Simple Graph                                        |                                        Multi Graph                                         |                                        Pseudo Graph                                        |
 
 These are all **undirected** graphs and edges are **unordered**.
@@ -58,7 +58,7 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |       | 
 |:----:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.6.png" width="400">|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.6.png" width="400">|
 |  Directed Graphs   | 
 
 #### Weighted Graph
@@ -69,7 +69,7 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |                                                                                            | 
 | :----------------------------------------------------------------------------------------: | 
-| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.7.png" width="200"> |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.7.png" width="200"> |
 |                                       Weighted Graph                                       |
 
 #### Adjacency and Degree
@@ -81,7 +81,7 @@ These are all **undirected** graphs and edges are **unordered**.
 |  |
 |:----:|
 |The degree of vertex **a** is 2, and the degree of vertex **c** is 4.|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.8.png" width="200">|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.8.png" width="200">|
 | Weighted Graph   | 
 
 #### Number of Edges
@@ -90,7 +90,7 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |      |     |
 |:----:|:----:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.10.png" width="150">|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.9.png" width="200">|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.10.png" width="150">|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.9.png" width="200">|
 
 
 #### Directed Graphs
@@ -101,7 +101,7 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |       | 
 |:----:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.11.png" width="300">|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.11.png" width="300">|
 |  Directed Graph| 
 
 #### Number of Edges
@@ -109,7 +109,7 @@ These are all **undirected** graphs and edges are **unordered**.
 |       | 
 |:----:|
 | Let `G` be a directed graph (or multigraph) with `V` vertices and `N` edges. Then: |
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.12.png" width="300">|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.12.png" width="300">|
 |  Theorem| 
 
 ### Regular Graph
@@ -118,7 +118,7 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |       |  | |
 |:----:|:----:|:----:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.13.png" width="300">|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.14.png" width="300">|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.15.png" width="300">|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.13.png" width="300">|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.14.png" width="300">|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.15.png" width="300">|
 |  |  |
 
 - The **complete graph** on n vertices, denoted K<sub>n</sub>, is a simple graph in which there is an edge between every pair of distinct vertices.
@@ -135,7 +135,7 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |       | 
 |:----:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.16.png" width="300">|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.16.png" width="300">|
 | Connectivity| 
 
 #### Representing Graphs
@@ -145,28 +145,28 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |             |    |
 | :------------------: | :---------------------: |
-| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.18.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.19.png" width="150"> |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.18.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.19.png" width="150"> |
 |   Directed Graph         |     Adjacency List    |
 
 
 |             |    |
 | :------------------: | :---------------------: |
-| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.24.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.25.png" width="200"> |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.24.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.25.png" width="200"> |
 |   Undirected Weighted Graph         |     Adjacency List    |
 
 |             |    |
 | :------------------: | :---------------------: |
-| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.18.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.21.png" width="150"> |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.18.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.21.png" width="150"> |
 |    Directed  Graph         |     Adjacency Matrix    |
 
 |             |    |
 | :------------------: | :---------------------: |
-| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.18a.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.20.png" width="150"> |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.18a.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.20.png" width="150"> |
 |    Undirected Graph         |     Adjacency Matrix    |
 
 |             |    |
 | :------------------: | :---------------------: |
-| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.22.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.23.png" width="150"> |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.22.png" width="250"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.23.png" width="150"> |
 |    Undirected Weighted Graph         |     Adjacency Matrix    |
 
 ### Trees 
@@ -180,7 +180,7 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |       | 
 |:----:|
-|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.28.png" width="300">|
+|<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.28.png" width="300">|
 | Tree| 
 
 - A **spanning tree** of a graph is a subgraph, which is a tree and contains all vertices of the graph. 
@@ -189,7 +189,7 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |    |     |    |    |
 | :------------------------------------: | :---------------: |:---------------: |:---------------: |
-| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.26.png" width="150"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.27.png" width="150"> |<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.29.png" width="150"> |<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.1.30.png" width="150"> |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.26.png" width="150"> | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.27.png" width="150"> |<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.29.png" width="150"> |<img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.30.png" width="150"> |
 |Graph|Spanning Tree 1 |Spanning Tree 2|Spanning Tree 3 |
 
 - Can you find another one??
