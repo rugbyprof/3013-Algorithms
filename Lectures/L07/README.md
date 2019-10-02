@@ -64,8 +64,8 @@ These are all **undirected** graphs and edges are **unordered**.
 #### Weighted Graph
 
 - An edge may also have a **weight** or **cost** associated with it.
-- If `a, b` is an edge we might denote the cost by `c(a,b)` 
-- In the example below: `c(a,b) = c(b,a) = 7`.
+- If `a, b` is an edge we might denote the cost by `c(a,b)`
+- In the example below: `c(a,b) = c(b,a) = 7`.
 
 |                                                                                            | 
 | :----------------------------------------------------------------------------------------: | 
