@@ -26,7 +26,7 @@ The ***priority*** will be calculated by doing the following:
 
 `Priority = (6372.8 - D) * A / L`
 
-if `V` is `true`: invert `Priority`
+if `V` is `true`: invert `Priority` (multiply by -1)
 
 #### Bucket
 
