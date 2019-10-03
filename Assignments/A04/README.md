@@ -33,7 +33,7 @@ You may need to alter the header a tiny bit to make your changes take effect.
 - What is the maximum height of a Binary Tree (not search tree) with **N** nodes?
 - What is the height of a complete Binary Tree  with **N** nodes?
 
-
+## Question
 
 Write some `c++` code to allocate the memory and link these items together so that it represents the little tree above. Do not assume there are any class methods (like `insert`) to help you. Write all your code as if you were in main. No functions necessary.
 
