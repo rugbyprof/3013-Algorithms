@@ -21,7 +21,7 @@ You may need to alter the header a tiny bit to make your changes take effect.
 - What is the height of this tree?
 - What is the root of this tree?
 - How many leaves does this tree have? List them.
-- How descendants does **D** have?
+- How many descendants does **D** have?
 - How many siblings does  **A** have?
 - Assuming this tree is ordered: 
 	- Who is the predecessor of **E**?
