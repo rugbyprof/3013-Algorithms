@@ -6,4 +6,4 @@
  | [A03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [ Program 2 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [ Priority Queues](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [October 4<sup>th</sup> by 3 p.m.](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) |
  | [A04](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A04) | [ Test 1 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A04) | [ Study Guide](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A04) | [14<sup>th</sup> of October](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A04) |
 
-<sup>Last Updated: 2019-10-07 (Mon @ 11:55)</sup>
+<sup>Last Updated: 2019-10-07 (Mon @ 14:55)</sup>
