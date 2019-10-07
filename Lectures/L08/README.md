@@ -1,4 +1,6 @@
-## Kruskal's Algorithm ##
+## Minimum Spanning Trees - Prims & Kruskels
+
+## Kruskal's Algorithm 
 
 **Kruskal's algorithm** is a [greedy algorithm](http://en.wikipedia.org/wiki/Greedy_algorithm) used for finding a minimum spanning tree for a **connected**, **weighted**, and **undirected** graph. Meaning that the algorithm finds the set of edges that forms a tree including ***every vertex*** and has the ***lowest weight*** possible, without any [cycles](http://en.wikipedia.org/wiki/Cycle_(graph_theory)).
 
