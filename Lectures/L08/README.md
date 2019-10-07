@@ -6,39 +6,39 @@
 
 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.1.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.01.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.2.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.02.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.3.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.03.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.4.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.04.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.5.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.05.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.6.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.06.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.7.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.07.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.8.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.08.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.9.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.1.09.png" width="500">
 
 ----- 
 
