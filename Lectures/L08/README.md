@@ -398,6 +398,37 @@
 		return 0;
 ```
 
+----- 
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.1.png" width="500">
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.2.png" width="500">
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.3.png" width="500">
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.4.png" width="500">
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.5.png" width="500">
+
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.6.png" width="500">
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.7.png" width="500">
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.8.png" width="500">
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.9.png" width="500">
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.10.png" width="500">
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.11.png" width="500">
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.12.png" width="500">
+
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.13.png" width="500">
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.14.png" width="500">
 
 #### Works Cited
 
