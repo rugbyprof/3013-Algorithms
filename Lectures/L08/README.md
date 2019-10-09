@@ -6,83 +6,83 @@
 
 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.01.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.01.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.02.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.02.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.03.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.03.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.04.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.04.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.05.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.05.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.06.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.06.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.07.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.07.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.08.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.08.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.09.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.09.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.10.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.10.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.11.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.11.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.12.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.12.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.13.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.13.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.14.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.14.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.15.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.15.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.16.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.16.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.17.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.17.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.18.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.18.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.19.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.19.png" width="500">
 
 ----- 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.2.20.png" width="500">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.20.png" width="500">
 
 
 ----- 
