@@ -4,91 +4,131 @@
 
 **Kruskal's algorithm** is a [greedy algorithm](http://en.wikipedia.org/wiki/Greedy_algorithm) used for finding a minimum spanning tree for a **connected**, **weighted**, and **undirected** graph. Meaning that the algorithm finds the set of edges that forms a tree including ***every vertex*** and has the ***lowest weight*** possible, without any [cycles](http://en.wikipedia.org/wiki/Cycle_(graph_theory)).
 
-
+Starting off we have a priority queue with least cost on top of the heap.
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.01.png" width="500">
 
 ----- 
 
+We choose the "least cost" edge, in this case `A → D` with a cost of 5.
+
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.02.png" width="500">
 
 ----- 
+
+It doesn't create a cycle, so we add it to our MST. 
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.03.png" width="500">
 
 ----- 
 
+We choose the next "least cost" edge  `C → E` also with a cost of 5. This could just as easily have been the first edge selected instead of `A → D`.
+
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.04.png" width="500">
 
 ----- 
+
+It also doesn't create a cycle, so we add it to our MST.
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.05.png" width="500">
 
 ----- 
 
+Next we choose `D → F` with a cost of 6.
+
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.06.png" width="500">
 
 ----- 
+
+It doesn't cause a cycle, so we add it to our MST.
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.07.png" width="500">
 
 ----- 
 
+Next we choose `A → B` with a cost of 7.
+
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.08.png" width="500">
 
 ----- 
+
+It doesn't cause a cycle, so we add it to our MST.
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.09.png" width="500">
 
 ----- 
 
+Next we choose `B → E` also with a cost of 7.
+
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.10.png" width="500">
 
 ----- 
+
+It doesn't cause a cycle, so we add it to our MST.
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.11.png" width="500">
 
 ----- 
 
+Next we choose `E → F` also with a cost of 8.
+
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.12.png" width="500">
 
 ----- 
 
+This edge **does** cause a cycle, so we do not add it. We go get the next edge from the priority queue.
+
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.13.png" width="500">
 
 ----- 
+`E → F`  is no longer a candidate. 
+
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.14.png" width="500">
 
 ----- 
+Continuing on, we get the next available edge: `B → D` with a cost of 9.
+
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.15.png" width="500">
 
 ----- 
 
+This edge **does** cause a cycle as well!, so we go get the next edge from the priority queue.
+
+
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.16.png" width="500">
 
 ----- 
+
+`B → D`  is no longer a candidate. 
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.17.png" width="500">
 
 ----- 
 
+Next available edge is `E → G` with a cost of 9.
+
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.18.png" width="500">
 
 ----- 
 
+No cycles! We add it.
+
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.19.png" width="500">
 
 ----- 
+
+Behold our minumum spanning tree...
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/kruskels.3.20.png" width="500">
 
 
 ----- 
 
+### Kruskels Code
 
-### Pseudo Code
+#### Pseudo Code
 
 ```
 	KruskalMST
@@ -100,7 +140,7 @@
              T := T union {e}
 ```
 
-### C++
+#### C++
 
 ```cpp
 	#include <cstdio>
@@ -179,8 +219,114 @@
 ```
 
 
-## Prim's Algorithm ##
+## Prim's Algorithm
 
+----- 
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.1.png" width="500">
+
+----- 
+
+- Choose a starting point (it could be any of the vertices).  
+- Add this vertex to your set if vertices belonging to your MST.
+- Cut the graph so that vertices belonging to the MST are on one side of the cut, and all others are on the other side.
+- This cut crosses: `A → D` cost 5 and `A → B` cost 7.
+- We want to choose the "edge" with the least cost that cross the cut. 
+- In this case edge `A → D` has least cost of 5.
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.2c.png" width="500">
+
+----- 
+
+- We have our first "edge" added to the MST and our set of vertices now contains `A` and `D`
+
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.3.png" width="500">
+
+----- 
+
+- We again cut the graph seperating the vertices in the MST vs those not.
+- This cut crosses 4 edges: 
+  - `A → B` (7) , `B → D`(9), `D → E`(15), and `D → F`(6)
+- The least cost is `D → F`
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.4.png" width="500">
+
+----- 
+
+- We add `D → F` to our MST.
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.5.png" width="500">
+
+----- 
+
+- We continue cutting the graph seperating the vertices in the MST vs those not.
+- This cut crosses 5 edges.
+  - `A → B` (7) , `B → D`(9), `D → E`(15), `E → F`(8), and `F → G`(11)
+- The least cost is `A → B` 
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.7.png" width="500">
+
+----- 
+
+- `A → B` is now in our MST adding `B` to our set of MST vertices.
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.15.png" width="500">
+
+
+----- 
+
+- We continue cutting the graph seperating the vertices in the MST vs those not.
+- This cut crosses 5 edges.
+  - `B → C` (8) , `B → E`(7), `D → E`(15), `E → F`(8), and `F → G`(11)
+- - The least cost is `B → E` 
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.9.png" width="500">
+
+----- 
+- Now we have `B → E` added to the MST with `E` getting added to our vertex set in the MST.
+  
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.16.png" width="500">
+
+----- 
+
+- We continue cutting the graph seperating the vertices in the MST vs those not.
+- This cut crosses 4 edges.
+  - `B → C` (8) , `C → E`(5), `E → G`(9), and `F → G`(11)
+- - The least cost is `C → E` 
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.10.png" width="500">
+
+----- 
+- `C → E` added to our MST also adding `C` to our MST's vertex set.
+  
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.11.png" width="500">
+
+----- 
+
+- We continue cutting the graph seperating the vertices in the MST vs those not.
+- This cut crosses 2 edges.
+  - `E → G` (9) and `F → G`(11)
+- `E → G` is the cheapest.
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.12.png" width="500">
+
+
+----- 
+
+- We add `E → G` to  the MST
+- The vertex set of vertices NOT in the MST is empty.
+- We stop.
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.13.png" width="500">
+
+----- 
+
+- Here is your MST
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.14.png" width="500">
+
+### Prims Code
 
 **Prim's algorithm** is very similar to **Kruskal's Algorithm**. Both are very greedy and are used to find minimum spanning trees in weighted, connected, undirected graphs. The only real differences between the two is that Prim's algorithm can only add nodes adjacent to the current tree and any node can be added as the starting node.
 
@@ -227,7 +373,7 @@
 	end while
 ```
 
-### C++
+#### C++
 
 ```cpp
 
@@ -397,38 +543,6 @@
 		cin >> end;
 		return 0;
 ```
-
------ 
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.1.png" width="500">
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.2.png" width="500">
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.3.png" width="500">
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.4.png" width="500">
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.5.png" width="500">
-
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.6.png" width="500">
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.7.png" width="500">
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.8.png" width="500">
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.9.png" width="500">
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.10.png" width="500">
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.11.png" width="500">
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.12.png" width="500">
-
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.13.png" width="500">
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/prims.1.14.png" width="500">
 
 #### Works Cited
 
