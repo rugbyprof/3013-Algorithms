@@ -62,7 +62,7 @@ Using the values above, put them into this balanced tree in an order that will k
 
 Perform a 1) **Pre-Order** 2) **In-Order** and 3) **Post-Order** traversal on the following tree:
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/3013.test.1.3.png">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/3013.test.1.3a.png">
 
 |        |      |
 |:----|:---|
