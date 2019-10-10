@@ -7,7 +7,7 @@
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/3013.test.1.7.png">
 
-Write a function to remove and item from a list. Here's a header to start with.  
+Write a function to remove an item from a list. Here's a header to start with.  
 
 `int remove(Node* head,int key)`
 
