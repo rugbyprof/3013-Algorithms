@@ -81,7 +81,7 @@ Write a recursive function to:
 
 ## Question
 
-Given two binary trees, return true if they are structurally identical -- they are made of nodes with the same values arranged in the same way. Your function header would look like: `bool sameTree(struct node* a, struct node* b) `
+Given two binary trees, return true if they are structurally identical -- they are made of nodes with the same values arranged in the same way. Your function header would look like: `bool sameTree(Node* a, Node* b) `
 
 ## Question
 
