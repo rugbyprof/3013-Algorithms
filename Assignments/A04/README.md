@@ -117,4 +117,6 @@ Write an insert Method for a Binary Search Tree.
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/3013.test.1.3a.png">
 
 Delete the 23 and 25 from this tree with the least amount of tree alteration as possible.
+Describe what order you would do this in and whether your replacing nodes with a predecessor
+or successor.
 
