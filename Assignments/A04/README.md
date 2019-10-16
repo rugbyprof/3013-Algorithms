@@ -51,6 +51,7 @@ void Remove(Node*& Head, int key){
  <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/test.1.1b.png">
 
 **Answer:**
+
 |  Question          |   Answer          |
 |:-------|:-----------:|
 | What is the height of this tree? | **5 or 6** acceptable | 
@@ -93,7 +94,7 @@ Draw the binary search tree that is created if the following numbers are inserte
 Values: **2, 5, 7, 12, 15, 3, 35, 21, 42, 14** (insert 2  then 5 etc.)
 
 **Answer:**
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/test.1.ans.4.png">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/test.1.sol.tree.png">
 
 ------  
 
