@@ -51,6 +51,7 @@ void Remove(Node*& Head, int key){
  <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/test.1.1b.png">
 
 **Answer:**
+
 |  Question          |   Answer          |
 |:-------|:-----------:|
 | What is the height of this tree? | **5 or 6** acceptable | 
