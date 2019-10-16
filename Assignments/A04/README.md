@@ -193,6 +193,7 @@ bool sameTree(Node* a, Node* b){
 We discussed searching for items when dealing with certain structures. How long would it take a `search` method to find an item in:
 
 **Choices:**
+
 | | | | | | | | |
 |:----|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | *O(1)* | *O(log n)* | *O(n)* | *O(n log n)* | *O(n*<sup>*2*</sup>)| *O(n*<sup>*3*</sup>*)* | *O(2*<sup>*n*</sup>)|
