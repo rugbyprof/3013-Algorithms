@@ -94,7 +94,7 @@ Draw the binary search tree that is created if the following numbers are inserte
 Values: **2, 5, 7, 12, 15, 3, 35, 21, 42, 14** (insert 2  then 5 etc.)
 
 **Answer:**
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/test.1.sol.tree.png">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/test.1.ans.4.png">
 
 ------  
 
@@ -193,7 +193,6 @@ bool sameTree(Node* a, Node* b){
 We discussed searching for items when dealing with certain structures. How long would it take a `search` method to find an item in:
 
 **Choices:**
-
 | | | | | | | | |
 |:----|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | *O(1)* | *O(log n)* | *O(n)* | *O(n log n)* | *O(n*<sup>*2*</sup>)| *O(n*<sup>*3*</sup>*)* | *O(2*<sup>*n*</sup>)|
