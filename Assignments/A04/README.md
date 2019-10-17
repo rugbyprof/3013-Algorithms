@@ -1,7 +1,6 @@
 ## Test 1 - Study Guide
 ### Due: 14<sup>th</sup> of October
 
-## I will add a little more
 
 ## Question
 
