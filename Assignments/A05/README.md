@@ -3,11 +3,11 @@
 
 ### Overview
 
-Create a graph structure with cities as __Vertices__ and no __Edges__ initially. Fully connect your cities by adding edges between cities that are close together. Basically create a connected graph of all the cities so that every city is reachable by ensuring that each vertex has a  degree of ***D*** (*in/out degree*), where each edge represents one of ***D*** closest cities to that vertex.
+Create a graph structure with cities as __Vertices__ roads as __Edges__. We are creating a connected graph of cities so that every city is reachable. We will make it so that every city will have a degree of ***D*** (*in/out degree*), where each edge represents one of ***D*** closest cities to that vertex.
 
 You should make sure that you can adjust the degree using a command line parameter and not hard coding it. 
 
-Included in the folder is a [cities.json](./cities.json) file with 1000 cities along with some data about each city. You `Vertex` data type should hold all the information below.
+Included in the folder is a [cities.json](./cities.json) file with 1000 cities along with some data about each city. Your `Vertex` data type should hold all the information below.
 
 ```json
 {
@@ -21,11 +21,13 @@ Included in the folder is a [cities.json](./cities.json) file with 1000 cities a
 }
 ```
 
-Also included is the [json_helper.cpp](./json_helper.cpp) and [json.hpp](json.hpp) files. Using the json helper, you can read in the [cities.json](./cities.json) file just like our last project. 
+Also included are the [JsonFacade.hpp](./JsonFacade.hpp) and [json.hpp](json.hpp) files. Using the json helper, you can read in the [cities.json](./cities.json) file just like our last project. 
 
-Starting with the first city in the array, find the ***D*** closest cities and create edges between them. The edges are not directed. Your edge type should store the `distance` (as well as the `from` and `to`). Continue processing the rest of the cities adding edges until each city as ***D*** edges. Look out for pitfalls, like just because a city is close to another, you may not be able to connect them if it already has its max edges. 
+Starting with the first city in the array, find the ***D*** closest cities and create edges between them. The edges are not directed. Your edge type should store the `distance` (as well as the `from` and `to`). Continue processing the rest of the cities adding edges until each city as ***D*** edges. Look out for pitfalls, like just because a city is close to another, you may not be able to connect them if it already has ***D*** edges. 
 
-In the helper code I added a templated Heap implementation that can be a min or a max heap. If you add a "priority" to your city struct, you could load the heap with cities where the "priority" is the distance from city X. You could then use Heap.extract() to get the 3 closest cites (or furthest depending on min or max heap).
+#### Finding Closest
+
+In the helper code I added a templated Heap implementation that can be a min or a max heap. If you add a "priority" to your city struct, you could load the heap with cities where the "priority" is the distance from city X. You could then use Heap.extract() to get the 3 closest cites (or furthest depending on whether it's a min or max heap).
 
 ### Deliverables
 
@@ -34,8 +36,8 @@ In the helper code I added a templated Heap implementation that can be a min or 
 ```
 0001 : New York 
     1) City A (distance)
-	2) City B (distance)
-	3) City C (distance)
+	1) City B (distance)
+	2) City C (distance)
 0002 : Los Angeles
     1) City A (distance)
 	2) City B (distance)
@@ -107,7 +109,7 @@ void swap(int *a, int *b) {
 - Include any input files you used to test your code as well.
 - Comment your code. 
 - Turn in a printed copy of your source code (DO NOT PRINT FROM GITHUB!!). 
-  - There is a way to print source code from github, ask me in class to show you.
+  - There IS a way to print source code from github, its a pain, but ask me in class to show you if your desperate.
 - Staple your pages together at the top left (very close to the corner).
 - No hand writing on your pages at all! 
 - Top page should be your first source code page with a BIG comment block that explains the program and tells me who you are with date etc.
