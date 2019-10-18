@@ -3,6 +3,8 @@
 
 ### Overview
 
+Remember: https://repl.it/@rugbyprof/graphroads2019 (Almost complete solution).
+
 Create a graph structure with cities as __Vertices__ and roads as __Edges__. We are creating a connected graph of cities so that every city is reachable. We are not following an existing road network, we are magically flying between cities. Make it so that every city will have a degree of ***D*** (*in/out degree*), where each edge connects one of ***D*** closest cities to that vertex.
 
 You should make sure that you can adjust the degree using a command line parameter and not hard coding it. 
@@ -27,7 +29,7 @@ Starting with the first city in the array, find the ***D*** closest cities and c
 
 #### Finding Closest
 
-In the helper code I added a templated Heap implementation that can be a min or a max heap. If you add a "priority" to your city struct, you could load the heap with cities where the "priority" is the distance from city X. You could then use Heap.extract() to get the 3 closest cites (or furthest depending on whether it's a min or max heap).
+You must use a Heap to find the closest cities. I've included a heap implementation thats templated and only requires you to push on a `struct*` that includes a `Priority` data member. 
 
 ### Deliverables
 
@@ -106,7 +108,7 @@ void swap(int *a, int *b) {
 - In `assignments` create a folder called `A05`
 - In `A05` place your code in a file called `graph_builder.cpp`
 - Any and ALL files used to run your code MUST be in your repo.
-- Include any input files you used to test your code as well.
+- Include any files that you wrote code in.
 - Comment your code. 
 - Turn in a printed copy of your source code (DO NOT PRINT FROM GITHUB!!). 
   - There IS a way to print source code from github, its a pain, but ask me in class to show you if your desperate.
