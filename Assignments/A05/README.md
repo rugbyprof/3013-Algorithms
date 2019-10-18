@@ -3,7 +3,7 @@
 
 ### Overview
 
-Remember: https://repl.it/@rugbyprof/graphroads2019 (Almost complete solution).
+Remember: https://repl.it/@rugbyprof/graphroads2019 (Almost a complete solution to this program).
 
 Create a graph structure with cities as __Vertices__ and roads as __Edges__. We are creating a connected graph of cities so that every city is reachable. We are not following an existing road network, we are magically flying between cities. Make it so that every city will have a degree of ***D*** (*in/out degree*), where each edge connects one of ***D*** closest cities to that vertex.
 
