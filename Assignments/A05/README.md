@@ -29,11 +29,11 @@ Starting with the first city in the array, find the ***D*** closest cities and c
 
 #### Finding Closest
 
-You must use a Heap to find the closest cities. I've included a heap implementation thats templated and only requires you to push on a `struct*` that includes a `Priority` data member. 
+You must use a Heap to find the closest cities. I've included a heap implementation thats templated and only requires you to push on a `struct*` that includes a `Priority` data member. You can calculate the distance using the `Haversine` formula in [Geo.hpp](Geo.hpp). 
 
 ### Deliverables
 
-- Turn in a printed file with the first 25 cities and who they are connected to:
+- Turn in a printed file with the first 10 and last 10 cities and who they are connected to. The order is based on where they are in the input file. 
 
 ```
 0001 : New York 
@@ -48,12 +48,15 @@ You must use a Heap to find the closest cities. I've included a heap implementat
     1) City A (distance)
 	2) City B (distance)
 	3) City C (distance)
-0004 : Houston
+
+	...
+
+0997 : Beloit
     1) City A (distance)
 	2) City B (distance)
 	3) City C (distance)
-	...
-0025 : Nashville-Davidson
+
+0998 : Panama City
     1) City A (distance)
 	2) City B (distance)
 	3) City C (distance)
