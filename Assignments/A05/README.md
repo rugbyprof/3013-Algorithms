@@ -1,8 +1,6 @@
 ## Program 3 - Graphs
 ### Due: 28<sup>th</sup> of October
 
-# not done
-
 ### Overview
 
 Create a graph structure with cities as __Vertices__ and no __Edges__ initially. Fully connect your cities by adding edges between cities that are close together. Basically create a connected graph of all the cities so that every city is reachable by ensuring that each vertex has a  degree of ***D*** (*in/out degree*), where each edge represents one of ***D*** closest cities to that vertex.
@@ -27,7 +25,7 @@ Also included is the [json_helper.cpp](./json_helper.cpp) and [json.hpp](json.hp
 
 Starting with the first city in the array, find the ***D*** closest cities and create edges between them. The edges are not directed. Your edge type should store the `distance` (as well as the `from` and `to`). Continue processing the rest of the cities adding edges until each city as ***D*** edges. Look out for pitfalls, like just because a city is close to another, you may not be able to connect them if it already has its max edges. 
 
-
+In the helper code I added a templated Heap implementation that can be a min or a max heap. If you add a "priority" to your city struct, you could load the heap with cities where the "priority" is the distance from city X. You could then use Heap.extract() to get the 3 closest cites (or furthest depending on min or max heap).
 
 ### Deliverables
 
