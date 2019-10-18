@@ -25,7 +25,9 @@ Included in the folder is a [cities.json](./cities.json) file with 1000 cities a
 
 Also included are the [JsonFacade.hpp](./JsonFacade.hpp) and [json.hpp](json.hpp) files. Using the json helper, you can read in the [cities.json](./cities.json) file just like our last project. 
 
-Starting with the first city in the array, find the ***D*** closest cities and create edges between them. The edges are not directed. Your edge type should store the `distance` (as well as the `from` and `to`). Continue processing the rest of the cities adding edges until each city as ***D*** edges. Look out for pitfalls, like just because a city is close to another, you may not be able to connect them if it already has ***D*** edges. 
+Starting with the first city in the file ***C***<sub>*0*</sub>, find the ***D*** closest cities to ***C***<sub>*0*</sub> and create undirected edges between them: ***C***<sub>*0*</sub> => ***C***<sub>*i*</sub> and ***C***<sub>*i*</sub> => ***C***<sub>*0*</sub>.  Your edge type should store the `distance` (as well as  other pertinent information). Continue processing the rest of the cities ***C***<sub>*1*</sub> , ***C***<sub>*2*</sub>, ... ,***C***<sub>*n*</sub> adding edges until each city as ***D*** edges. 
+
+Look out for pitfalls, like just because a city is close to another, you may not be able to connect them if it already has ***D*** edges. 
 
 #### Finding Closest
 
