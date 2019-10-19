@@ -1,15 +1,22 @@
 /**
  * Heap.hpp
  * Author: Terry Griffin
- * Date:   Fall 2019
+ * Date: October 2019
  * 
- * Implements a min heap 
+ * Templated implementation of a heap. Requires that whatever "data type" being
+ * placed in the heap has a "priority" data member.
+ * 
  */
 
+#pragma once
 #include <iostream>
-#include <math.h>
+#include <string.h>
+#include "json.hpp"
 
 using namespace std;
+using json = nlohmann::json;
+
+
 
 /**
  * Class Heap:
@@ -23,12 +30,14 @@ using namespace std;
  *    bool Empty()
  *    void Heapify(int*,int)
  */
+template <typename T> 
 class Heap {
 private:
-    int *H;       // Pointer to allocate dynamic array
-    int Next;     // Next available location
-    int MaxSize;  // Max size since were using array
-    int HeapSize; // Actual number of items in the array.
+    T **Array;      // Pointer to allocate dynamic array
+    int Next;       // Next available location
+    int MaxSize;    // Max size since were using array
+    int HeapSize;   // Actual number of items in the array.
+    bool Max;       // Max heap? false = Min Heap
 
     /**
      * Function IncreaseKey:
@@ -41,10 +50,21 @@ private:
      */
     void BubbleUp(int i) {
         int p = Parent(i);
-        while (p > 0 && H[i] > H[p]) {
-            Swap(i, p);
-            i = p;
-            p = Parent(i);
+        // Max Heap
+        if(Max){
+            while (p > 0 && Array[i]->priority > Array[p]->priority) {
+                Swap(i, p);
+                i = p;
+                p = Parent(i);
+            }
+        // Min Heap
+        }else{
+            while (p > 0 && Array[i]->priority < Array[p]->priority) {
+                Swap(i, p);
+                i = p;
+                p = Parent(i);
+            }
+
         }
     }
 
@@ -61,13 +81,26 @@ private:
         int c = PickChild(i);
 
         while (c > 0) {
-            if (H[i] < H[c]) {
-                Swap(i, c);
-                i = c;
-                c = PickChild(i);
-            } else {
-                c = -1;
+            // Max Heap
+            if(Max){
+                if (Array[i]->priority < Array[c]->priority) {
+                    Swap(i, c);
+                    i = c;
+                    c = PickChild(i);
+                } else {
+                    c = -1;
+                }
+            // Min Heap
+            }else{
+                if (Array[i]->priority > Array[c]->priority) {
+                    Swap(i, c);
+                    i = c;
+                    c = PickChild(i);
+                } else {
+                    c = -1;
+                }
             }
+
         }
     }
 
@@ -82,9 +115,9 @@ private:
      *      void
      */
     void Swap(int p, int i) {
-        int temp = H[p];
-        H[p] = H[i];
-        H[i] = temp;
+        T* temp = Array[p];
+        Array[p] = Array[i];
+        Array[i] = temp;
     }
 
     /**
@@ -144,11 +177,22 @@ private:
             }
         } else {
             //right child exists
-            if (H[RightChild(i)] > H[LeftChild(i)]) {
-                return RightChild(i);
-            } else {
-                return LeftChild(i);
+            // Max Heap
+            if(Max){
+                if (Array[RightChild(i)]->priority > Array[LeftChild(i)]->priority) {
+                    return RightChild(i);
+                } else {
+                    return LeftChild(i);
+                }
+            // Min Heap
+            }else{
+                if (Array[RightChild(i)]->priority < Array[LeftChild(i)]->priority) {
+                    return RightChild(i);
+                } else {
+                    return LeftChild(i);
+                }
             }
+
         }
     }
 
@@ -163,11 +207,12 @@ public:
      * Returns
      *      void
      */
-    Heap(int size) {
-        H = new int[size];
+    Heap(int size,bool max=true) {
+        Array = new T*[size];
         Next = 1;
         MaxSize = size;
         HeapSize = 0;
+        Max = max;
     }
 
     /**
@@ -179,8 +224,8 @@ public:
      * Returns
      *      void
      */
-    void Insert(int x) {
-        H[Next] = x;
+    void Insert(T* x) {
+        Array[Next] = x;
         BubbleUp(Next);
         Next++;
         HeapSize++;
@@ -193,16 +238,16 @@ public:
      * Params:
      *      void
      * Returns
-     *      [int] top_value - top value in the heap (min or max)
+     *      [T] top_value - top value in the heap (min or max)
      */
-    int Extract() {
+    T* Extract() {
 
         if (Empty()) {
-            return -1;
+            return NULL;
         }
 
-        int retval = H[1];
-        H[1] = H[--Next];
+        T* retval = Array[1];
+        Array[1] = Array[--Next];
         HeapSize--;
 
         if (HeapSize > 1) {
@@ -224,7 +269,7 @@ public:
      */
     void PrintHeap() {
         for (int i = 1; i < Next; i++) {
-            cout << H[i] << " ";
+            cout << Array[i] << " ";
         }
         cout << endl;
     }
@@ -265,14 +310,15 @@ public:
      * Returns
      *      void
      */
-    void Heapify(int *A, int size) {
+    void Heapify(T **&A, int size) {
         int i = size / 2;
-        // H = A;
-        // Next = size;
-        // HeapSize = size - 1;
+        Array = A;
+        Next = size;
+        HeapSize = size - 1;
 
         for (int j = i; j >= 1; j--) {
             BubbleDown(j);
         }
     }
 };
+
