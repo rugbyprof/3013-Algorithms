@@ -1,15 +1,15 @@
 ## Program 3 - Graphs
 ### Due: 28<sup>th</sup> of October
 
-# not done
-
 ### Overview
 
-Create a graph structure with cities as __Vertices__ and no __Edges__ initially. Fully connect your cities by adding edges between cities that are close together. Basically create a connected graph of all the cities so that every city is reachable by ensuring that each vertex has a  degree of ***D*** (*in/out degree*), where each edge represents one of ***D*** closest cities to that vertex.
+Remember: https://repl.it/@rugbyprof/graphroads2019 (Almost a complete solution to this program).
+
+Create a graph structure with cities as __Vertices__ and roads as __Edges__. We are creating a connected graph of cities so that every city is reachable. We are not following an existing road network, we are magically flying between cities. Make it so that every city will have a degree of ***D*** (*in/out degree*), where each edge connects one of ***D*** closest cities to that vertex.
 
 You should make sure that you can adjust the degree using a command line parameter and not hard coding it. 
 
-Included in the folder is a [cities.json](./cities.json) file with 1000 cities along with some data about each city. You `Vertex` data type should hold all the information below.
+Included in the folder is a [cities.json](./cities.json) file with 1000 cities along with some data about each city. Your `Vertex` data type should hold all the information below.
 
 ```json
 {
@@ -23,21 +23,25 @@ Included in the folder is a [cities.json](./cities.json) file with 1000 cities a
 }
 ```
 
-Also included is the [json_helper.cpp](./json_helper.cpp) and [json.hpp](json.hpp) files. Using the json helper, you can read in the [cities.json](./cities.json) file just like our last project. 
+Also included are the [JsonFacade.hpp](./JsonFacade.hpp) and [json.hpp](json.hpp) files. Using the json helper, you can read in the [cities.json](./cities.json) file just like our last project. 
 
-Starting with the first city in the array, find the ***D*** closest cities and create edges between them. The edges are not directed. Your edge type should store the `distance` (as well as the `from` and `to`). Continue processing the rest of the cities adding edges until each city as ***D*** edges. Look out for pitfalls, like just because a city is close to another, you may not be able to connect them if it already has its max edges. 
+Starting with the first city in the file ***C***<sub>*0*</sub>, find the ***D*** closest cities to ***C***<sub>*0*</sub> and create undirected edges between them: ***C***<sub>*0*</sub> => ***C***<sub>*i*</sub> and ***C***<sub>*i*</sub> => ***C***<sub>*0*</sub>.  Your edge type should store the `distance` (as well as  other pertinent information). Continue processing the rest of the cities ***C***<sub>*1*</sub> , ***C***<sub>*2*</sub>, ... ,***C***<sub>*n*</sub> adding edges until each city as ***D*** edges. 
 
+Look out for pitfalls, like just because a city is close to another, you may not be able to connect them if it already has ***D*** edges. 
 
+#### Finding Closest
+
+You must use a Heap to find the closest cities. I've included a heap implementation thats templated and only requires you to push on a `struct*` that includes a `Priority` data member. You can calculate the distance using the `Haversine` formula in [Geo.hpp](Geo.hpp). 
 
 ### Deliverables
 
-- Turn in a printed file with the first 25 cities and who they are connected to:
+- Turn in a printed file with the first 10 and last 10 cities and who they are connected to. The order is based on where they are in the input file. 
 
 ```
 0001 : New York 
     1) City A (distance)
-	2) City B (distance)
-	3) City C (distance)
+	1) City B (distance)
+	2) City C (distance)
 0002 : Los Angeles
     1) City A (distance)
 	2) City B (distance)
@@ -46,12 +50,15 @@ Starting with the first city in the array, find the ***D*** closest cities and c
     1) City A (distance)
 	2) City B (distance)
 	3) City C (distance)
-0004 : Houston
+
+	...
+
+0997 : Beloit
     1) City A (distance)
 	2) City B (distance)
 	3) City C (distance)
-	...
-0025 : Nashville-Davidson
+
+0998 : Panama City
     1) City A (distance)
 	2) City B (distance)
 	3) City C (distance)
@@ -106,10 +113,10 @@ void swap(int *a, int *b) {
 - In `assignments` create a folder called `A05`
 - In `A05` place your code in a file called `graph_builder.cpp`
 - Any and ALL files used to run your code MUST be in your repo.
-- Include any input files you used to test your code as well.
+- Include any files that you wrote code in.
 - Comment your code. 
 - Turn in a printed copy of your source code (DO NOT PRINT FROM GITHUB!!). 
-  - There is a way to print source code from github, ask me in class to show you.
+  - There IS a way to print source code from github, its a pain, but ask me in class to show you if your desperate.
 - Staple your pages together at the top left (very close to the corner).
 - No hand writing on your pages at all! 
 - Top page should be your first source code page with a BIG comment block that explains the program and tells me who you are with date etc.

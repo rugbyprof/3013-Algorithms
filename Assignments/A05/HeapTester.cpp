@@ -1,24 +1,50 @@
 #include <iostream>
-#include <string>
-#include "Graph.hpp"
+#include <fstream>
+#include <string.h>
 #include "Heap.hpp"
 #include "JsonFacade.hpp"
+#include "json.hpp"
 
 using namespace std;
+
 using json = nlohmann::json;
 
+struct City{
+    int Priority;
+    string Name;
+    City(){
+        Priority = 0;
+        Name = "";
+    }
+    City(json obj){
+        Name = obj["city"];
+        Priority = obj["population"];
+    }
+};
 
-int main(int argc, char** argv){
-    JsonFacade JF("cities.json");        // Instance of our json animal helper
-    Heap<Edge*> H(1000,true);
-    json j;
-    Edge* E;
+int main(){
+    json obj;
+    City** Cities;
+    City* temp;
+    string filename = "cities.json";
+    JsonFacade J(filename);
 
-    for(int i=0;i<JF.getSize();i++){
-        j = JF.getIth(i);
-        E = new Edge(j);
-        H.Insert(E);
+    Heap <City> H(1000,false);
+
+    int size = J.getSize();
+    Cities = new City *[size];
+    for (int i = 0; i < size; i++) {
+        obj = J.getNext();
+        Cities[i] = new City(obj);
     }
 
-    return 0;
+    H.Heapify(Cities,size);
+
+    int i = 0;
+    while(!H.Empty()){
+        temp = H.Extract();
+        cout<<i<<" "<<temp->Name<< " " <<temp->Priority << endl;
+        i++;
+    }
 }
+

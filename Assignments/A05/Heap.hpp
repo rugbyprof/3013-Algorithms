@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Heap.hpp
  * Author: Terry Griffin
@@ -8,6 +9,18 @@
  * 
  */
 
+=======
+///////////////////////////////////////////////////////////////////////////////
+// Title:            Heap.hpp
+// Semester:         Fall 2019
+// Course:           CMPS 3013
+//
+// Author:           Terry Griffin
+// Email:            terry.griffin@msutexas.edu
+// Description:
+//       Min or Max Heap implementation
+/////////////////////////////////////////////////////////////////////////////////
+>>>>>>> d9b4d75be8329dd88eaf0b423546c932a219da8c
 #pragma once
 #include <iostream>
 #include <string.h>
@@ -15,6 +28,7 @@
 
 using namespace std;
 using json = nlohmann::json;
+
 
 
 
@@ -33,11 +47,19 @@ using json = nlohmann::json;
 template <typename T> 
 class Heap {
 private:
+<<<<<<< HEAD
     T **Array;      // Pointer to allocate dynamic array
     int Next;       // Next available location
     int MaxSize;    // Max size since were using array
     int HeapSize;   // Actual number of items in the array.
     bool Max;       // Max heap? false = Min Heap
+=======
+    T **Array;       // Pointer to allocate dynamic array
+    int Next;     // Next available location
+    int MaxSize;  // Max size since were using array
+    int HeapSize; // Actual number of items in the array.
+    bool isMax;     // true = max heap false = min
+>>>>>>> d9b4d75be8329dd88eaf0b423546c932a219da8c
 
     /**
      * Function IncreaseKey:
@@ -50,22 +72,36 @@ private:
      */
     void BubbleUp(int i) {
         int p = Parent(i);
+<<<<<<< HEAD
         // Max Heap
         if(Max){
             while (p > 0 && Array[i]->priority > Array[p]->priority) {
+=======
+        if(isMax){
+            while (p > 0 && Array[i]->Priority > Array[p]->Priority) {
+>>>>>>> d9b4d75be8329dd88eaf0b423546c932a219da8c
                 Swap(i, p);
                 i = p;
                 p = Parent(i);
             }
+<<<<<<< HEAD
         // Min Heap
         }else{
             while (p > 0 && Array[i]->priority < Array[p]->priority) {
+=======
+        }else{
+            while (p > 0 && Array[i]->Priority < Array[p]->Priority) {
+>>>>>>> d9b4d75be8329dd88eaf0b423546c932a219da8c
                 Swap(i, p);
                 i = p;
                 p = Parent(i);
             }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d9b4d75be8329dd88eaf0b423546c932a219da8c
         }
+
     }
 
     /**
@@ -81,18 +117,28 @@ private:
         int c = PickChild(i);
 
         while (c > 0) {
+<<<<<<< HEAD
             // Max Heap
             if(Max){
                 if (Array[i]->priority < Array[c]->priority) {
+=======
+            if(isMax){
+                if (Array[i]->Priority < Array[c]->Priority) {
+>>>>>>> d9b4d75be8329dd88eaf0b423546c932a219da8c
                     Swap(i, c);
                     i = c;
                     c = PickChild(i);
                 } else {
                     c = -1;
                 }
+<<<<<<< HEAD
             // Min Heap
             }else{
                 if (Array[i]->priority > Array[c]->priority) {
+=======
+            }else{
+                if (Array[i]->Priority > Array[c]->Priority) {
+>>>>>>> d9b4d75be8329dd88eaf0b423546c932a219da8c
                     Swap(i, c);
                     i = c;
                     c = PickChild(i);
@@ -177,13 +223,19 @@ private:
             }
         } else {
             //right child exists
+<<<<<<< HEAD
             // Max Heap
             if(Max){
                 if (Array[RightChild(i)]->priority > Array[LeftChild(i)]->priority) {
+=======
+            if(isMax){
+                if (Array[RightChild(i)]->Priority > Array[LeftChild(i)]->Priority) {
+>>>>>>> d9b4d75be8329dd88eaf0b423546c932a219da8c
                     return RightChild(i);
                 } else {
                     return LeftChild(i);
                 }
+<<<<<<< HEAD
             // Min Heap
             }else{
                 if (Array[RightChild(i)]->priority < Array[LeftChild(i)]->priority) {
@@ -191,6 +243,14 @@ private:
                 } else {
                     return LeftChild(i);
                 }
+=======
+            }else{
+                if (Array[RightChild(i)]->Priority < Array[LeftChild(i)]->Priority) {
+                    return RightChild(i);
+                } else {
+                    return LeftChild(i);
+                }   
+>>>>>>> d9b4d75be8329dd88eaf0b423546c932a219da8c
             }
 
         }
@@ -207,12 +267,20 @@ public:
      * Returns
      *      void
      */
+<<<<<<< HEAD
     Heap(int size,bool max=true) {
+=======
+    Heap(int size,bool max = true) {
+>>>>>>> d9b4d75be8329dd88eaf0b423546c932a219da8c
         Array = new T*[size];
         Next = 1;
         MaxSize = size;
         HeapSize = 0;
+<<<<<<< HEAD
         Max = max;
+=======
+        isMax = max;
+>>>>>>> d9b4d75be8329dd88eaf0b423546c932a219da8c
     }
 
     /**
