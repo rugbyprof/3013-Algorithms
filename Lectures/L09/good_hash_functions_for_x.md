@@ -25,13 +25,13 @@ Assume a hash function that is ideal for chaining (any key is equally likely to 
 The *average* running time for chaining:
 - ***Insert:*** *O(1)* (same as worst case).
 - ***Unsuccessful Search:*** *O(1 + &lambda;)*. 
-	- $O(1)$ time to compute $h(k)$; 
-    - ${\lambda}$ items, on average, in the linked list are checked until discovering that $k$ is not present.
-- ***Successful Search:*** ${O(1+\lambda;)}$. 
-	- ${O(1)}$. time to compute $h(k)$ 
-    - ${\lambda}$.on average, key being sought is in middle of linked list, so ${\frac{\lambda}{2}}$. comparisons needed to find $k$.  
+    - *O(1)* time to compute *h(k)*; 
+    - &lambda; items, on average, in the linked list are checked until discovering that *k* is not present.
+- ***Successful Search:*** *O(1 + &lambda;)*. 
+    - *O(1)*. time to compute *h(k)* 
+    - &lambda; on average, key being sought is in middle of linked list, so *&lambda; / 2*. comparisons needed to find *k*.
 - ***Delete:*** Essentially the same as search.
-- For these times to be ${O(1)}$,  ${\lambda}$ must be ${O(1)}$, so $n$ cannot be too much larger than $M$.
+    - For these times to be*O(1)*, &lambda; must be *O(1)*, so *n* cannot be too much larger than *M*.
 
 ## Open Addressing Overview
 With this scheme, there are no linked lists. Instead, all elements are stored in the table proper.
@@ -66,12 +66,11 @@ If *h(k)=7*, the probe sequence will be ***7, 8, 0, 1, 2, 3*** where 3 is the fi
 
 ### Double Hashing
 
-Even when “non-linear” probing is used, it is still true that two keys that hash to the same location will follow the same probe sequence.
-To get around this problem, use double hashing:
+Even when “non-linear” probing is used, it is still true that two keys that hash to the same location will follow the same probe sequence. To get around this problem, use double hashing:
 
-1. One hash function, h1, is used to determine where
+1. One hash function, ***h1***, is used to determine where
 to start probing.
-2. A second hash function, h2, is used to determine the
+2. A second hash function, ***h2***, is used to determine the
 probe sequence.
 
 If the hash functions are chosen properly, different keys
@@ -108,11 +107,11 @@ Open addressing has another complication:
 - to search: probe until finding the key being sought or an empty slot (which means not there)
 
 Suppose we use linear probing. Consider this sequence:
-- Insert $k_1$, where $h(k_1)=3$, at location 3.
-- Insert $k_2$, where $h(k_2)=3$, at location 4.
-- Insert $k_3$, where $h(k_3)=3$, at location 5.
-- Delete $k_2$ from location 4 by setting location 4 to empty.
-- Search for $k_3$. *Incorrectly* stops searching at location 4 and declares $k_3$ not in the table!
+- Insert *k<sub>1</sub>*, where *h(k<sub>1</sub>*)=3*, at location 3.
+- Insert *k<sub>2</sub>*, where *h(k<sub>2</sub>*)=3*, at location 4.
+- Insert *k<sub>3</sub>*, where *h(k<sub>3</sub>*)=3*, at location 5.
+- Delete *k<sub>2</sub>* from location 4 by setting location 4 to empty.
+- Search for *k<sub>3</sub>*. *Incorrectly* stops searching at location 4 and declares *k<sub>3</sub>* not in the table!
 
 *Solution:* when an element is deleted, instead of marking the slot as empty, it should be marked in a special way to indicate that an element used to be there but was deleted. Then the search algorithm needs to continue searching if it finds one of those slots.
 
@@ -125,23 +124,24 @@ An ideal hash function for open addressing would satisfy an even stronger proper
 
 This is even harder to achieve in practice than the ideal property for chaining.
 A good approximation is double hashing with this scheme:
-- Let M be prime, then let $h_1(k) = k\ mod\ M$ and 
-- let $h_2(k)=1+ k\ mod\ (M - 2)$.
+- Let *M* be prime, then let *h<sub>1</sub>(k) = k mod M* and 
+- let *h<sub>2</sub>(k) = 1 + k mod (M - 2)*.
+
 
 Generalizes the earlier example
 
 ## Average Case Analysis of Open Addressing
 
-In this situation, the load factor  $\lambda=\frac{n}{M}$ is always less than 1: there cannot be more keys in the table than there are table entries, since keys are stored directly in the table.
+In this situation, the load factor *&lamda; = n / M* is always less than 1: there cannot be more keys in the table than there are table entries, since keys are stored directly in the table.
 
 Assume that there is always at least one empty slot.
 
-Assume that the hash function ensures that each key is equally likely to have each permutation of {$0,1,...,M - 1$} as its probe sequence.
+Assume that the hash function ensures that each key is equally likely to have each permutation of *0,1,...,M - 1* as its probe sequence.
 
 Average case running times:
-- **Unsuccessful Search:** $O(\frac{1}{1-\lambda})$.  
+- **Unsuccessful Search:** *O(1/(1-&lambda;))*.
 - **Insert:** Essentially same as unsuccessful search.
-- **Successful Search:** $O(\frac{1}{\lambda}\cdot ln\frac{1}{1-\lambda})$, where $ln$ is the natural $log (base\ e = 2.7...)$
+- **Successful Search:** *O(1/&lambda; &dot; ln(1/(1-&lambda;)))*, where *ln* is the natural *log (base <sub>e</sub> = 2.7... )*
 - **Delete:** Essentially same as search.
 
 The reasoning behind these formulas requires more sophisticated probability than for chaining.
