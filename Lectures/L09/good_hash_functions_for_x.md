@@ -41,14 +41,19 @@ If there is a collision, you have to probe the table (check whether a slot (tabl
 You must pick a pattern that you will use to probe the table.
 
 The simplest pattern is to start at h(k) and then check
-*h(k)+1, h(k)+2, h(k)+3, ...,* wrapping around to check 0, 1, 2, etc. if necessary, until finding an empty slot. This is called **linear probing**.
+- *`h(k)+1 % M`*, 
+- *`h(k)+2 % M`*, 
+- *`h(k)+3 % M, ..., h(k)+i % M`* 
+- If the value of *`h(k)+i`* gets larger than the table, `% M` will wrap around to the `0`<sup>th</sup> element if necessary. 
+- It will continue this until an empty slot is found, or it discovers the table is full. 
+- This is called **linear probing**.
 
 |  Hash Table Size = 9   |
 |:----:|
 | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/hash.linear_probe.png"> |
 | F means full.| 
 
-If *h(k)=7*, the probe sequence will be ***7, 8, 0, 1, 2, 3*** where 3 is the first empty slot. 
+If *`h(k)=7`*, the probe sequence will be ***`7, 8, 0, 1, 2, 3`*** where `3` is the first empty slot. 
 
 ### Clustering
 
