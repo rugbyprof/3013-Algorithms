@@ -25,13 +25,13 @@ Assume a hash function that is ideal for chaining (any key is equally likely to 
 The *average* running time for chaining:
 - ***Insert:*** *O(1)* (same as worst case).
 - ***Unsuccessful Search:*** *O(1 + &lambda;)*. 
-	- $O(1)$ time to compute $h(k)$; 
-    - ${\lambda}$ items, on average, in the linked list are checked until discovering that $k$ is not present.
-- ***Successful Search:*** ${O(1+\lambda;)}$. 
-	- ${O(1)}$. time to compute $h(k)$ 
-    - ${\lambda}$.on average, key being sought is in middle of linked list, so ${\frac{\lambda}{2}}$. comparisons needed to find $k$.  
+    - *O(1)* time to compute *h(k)*; 
+    - &lambda; items, on average, in the linked list are checked until discovering that *k* is not present.
+- ***Successful Search:*** *O(1 + &lambda;)*. 
+    - *O(1)*. time to compute *h(k)* 
+    - &lambda; on average, key being sought is in middle of linked list, so *&lambda; / 2*. comparisons needed to find *k*.
 - ***Delete:*** Essentially the same as search.
-- For these times to be ${O(1)}$,  ${\lambda}$ must be ${O(1)}$, so $n$ cannot be too much larger than $M$.
+    - For these times to be*O(1)*, &lambda; must be *O(1)*, so $n$ cannot be too much larger than *M*.
 
 ## Open Addressing Overview
 With this scheme, there are no linked lists. Instead, all elements are stored in the table proper.
