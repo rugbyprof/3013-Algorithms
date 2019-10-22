@@ -112,9 +112,9 @@ Open addressing has another complication:
 - to search: probe until finding the key being sought or an empty slot (which means not there)
 
 Suppose we use linear probing. Consider this sequence:
-- Insert *k<sub>1</sub>*, where *h(k<sub>1</sub>*)=3*, at location 3.
-- Insert *k<sub>2</sub>*, where *h(k<sub>2</sub>*)=3*, at location 4.
-- Insert *k<sub>3</sub>*, where *h(k<sub>3</sub>*)=3*, at location 5.
+- Insert *k<sub>1</sub>*, where *h(k<sub>1</sub>)=3*, at location 3.
+- Insert *k<sub>2</sub>*, where *h(k<sub>2</sub>)=3*, at location 4.
+- Insert *k<sub>3</sub>*, where *h(k<sub>3</sub>)=3*, at location 5.
 - Delete *k<sub>2</sub>* from location 4 by setting location 4 to empty.
 - Search for *k<sub>3</sub>*. *Incorrectly* stops searching at location 4 and declares *k<sub>3</sub>* not in the table!
 
