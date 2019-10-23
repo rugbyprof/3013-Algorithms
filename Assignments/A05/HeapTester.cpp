@@ -33,11 +33,14 @@ int main(){
 
     int size = J.getSize();
     Cities = new City *[size];
+    // loads an array of cities with the json data
     for (int i = 0; i < size; i++) {
         obj = J.getNext();
         Cities[i] = new City(obj);
     }
 
+
+    // calling heapify 
     H.Heapify(Cities,size);
 
     int i = 0;

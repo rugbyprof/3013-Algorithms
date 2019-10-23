@@ -40,8 +40,8 @@ You must use a Heap to find the closest cities. I've included a heap implementat
 ```
 0001 : New York 
     1) City A (distance)
-	1) City B (distance)
-	2) City C (distance)
+	2) City B (distance)
+	3) City C (distance)
 0002 : Los Angeles
     1) City A (distance)
 	2) City B (distance)
