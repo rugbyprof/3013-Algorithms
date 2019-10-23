@@ -3,27 +3,23 @@
  * 
  */
 
-#include <iostream>     // write to stdout read from stdin
-#include <ctime>        // to use system clock
+#include <ctime>    // to use system clock
+#include <iostream> // write to stdout read from stdin
 
 using namespace std;
 
 /**
  * Node: A structure that represents a node in a linked list.
  */
-struct Node
-{
-    int key;      // simple data element
+struct Node {
+    int key;    // simple data element
     Node *next; // single link to next node
 
     // Constructor to add x when a new Node is created
-    Node(int val)
-    {
+    Node(int val) {
         key = val;
         next = NULL;
     }
-
-
 };
 
 /**
@@ -33,14 +29,13 @@ struct Node
  * Methods:
  *     list methods here
  */
-class List
-{
+class List {
     Node *Head; // Everylist needs a head node to access it
     Node *Tail;
     int size;
+
 public:
-    List()
-    {
+    List() {
         Head = Tail = NULL; // Null means list is empty
         size = 0;
     }
@@ -52,20 +47,16 @@ public:
      * Returns:
      *     void
      */
-    void frontSert(int key)
-    {
+    void frontSert(int key) {
         // Allocate new memory to hold our new value
         Node *temp = new Node(key);
 
         // if list is empty just point head to new Node
         // if(Head == NULL) // Same as line below
-        if (!Head)
-        {
+        if (!Head) {
             Head = temp;
             Tail = temp;
-        }
-        else
-        {
+        } else {
             // push onto front of list
             temp->next = Head;
             Head = temp;
@@ -80,17 +71,16 @@ public:
      * Returns:
      *     void
      */
-    void endSert(int key)
-    {
-        Node* Temp = new Node(key);
+    void endSert(int key) {
+        Node *Temp = new Node(key);
 
-        if(Empty()){
+        if (Empty()) {
             Head = Temp;
             Tail = Temp;
-        }else{
-            Tail->next = Temp; 
+        } else {
+            Tail->next = Temp;
 
-            Tail = Temp;   
+            Tail = Temp;
         }
 
         size++;
@@ -104,9 +94,7 @@ public:
      * Returns:
      *     void
      */
-    void orderedSert(int key)
-    {
-
+    void orderedSert(int key) {
     }
 
     /**
@@ -116,13 +104,13 @@ public:
      * Returns:
      *     void
      */
-    void randSert(int key){
+    void randSert(int key) {
 
-        Node* Temp = new Node(key);
+        Node *Temp = new Node(key);
 
-        Node* Randy = Head;
+        Node *Randy = Head;
 
-        for(int i=0;i<rand()%size;i++){
+        for (int i = 0; i < rand() % size; i++) {
             Randy = Randy->next;
         }
 
@@ -139,28 +127,27 @@ public:
      * Returns:
      *     void
      */
-    void remove(int key)
-    {
+    void remove(int key) {
 
-        if(Empty()){
+        if (Empty()) {
             return;
         }
 
         // Handle deleting first node
-        if(Head->key == key){
-            Node* Temp = Head;
+        if (Head->key == key) {
+            Node *Temp = Head;
             Head = Head->next;
             delete Temp;
             size--;
         }
 
-        if(Empty()){
+        if (Empty()) {
             return;
         }
 
         Node *prev = delSearch(key);
 
-        if(prev->next){
+        if (prev->next) {
             Node *target = prev->next;
             prev->next = target->next;
             delete target;
@@ -170,7 +157,7 @@ public:
         return;
     }
 
-    int Size(){
+    int Size() {
         return size;
     }
 
@@ -181,25 +168,23 @@ public:
      * Returns:
      *     void
      */
-    void print()
-    {
+    void print() {
         // start at head of list
         // always make a copy, never alter head
         Node *Temp = Head;
 
-        if(!Temp){
-            cout<<"Empty!"<<endl;
+        if (!Temp) {
+            cout << "Empty!" << endl;
         }
 
-         // While not at end of list
+        // While not at end of list
         // Same as: while(Temp != NULL)
-        while (Temp)
-        {
+        while (Temp) {
             cout << Temp->key;
 
             // only print if not at end of list
-            if(Temp->next){
-                cout<< "->";
+            if (Temp->next) {
+                cout << "->";
             }
             Temp = Temp->next;
         }
@@ -216,20 +201,17 @@ private:
      * Returns:
      *     Node*
      */
-    Node *delSearch(int key)
-    {
+    Node *delSearch(int key) {
 
         // point at start of list
         Node *Temp = Head;
 
-        if (Temp->key == key)
-        {
+        if (Temp->key == key) {
             return Temp;
         }
 
         // while temp != null && Temp isn't the value
-        while (Temp->next && Temp->next->key != key)
-        {
+        while (Temp->next && Temp->next->key != key) {
             Temp = Temp->next;
         }
 
@@ -237,7 +219,7 @@ private:
         return Temp;
     }
 
-    bool Empty(){
+    bool Empty() {
         return Head == NULL;
     }
 };
@@ -246,14 +228,12 @@ private:
  * main driver
  * 
  */
-int main(int argc, char** argv)
-{
-    srand(time(0));    // seed random number generator
+int main(int argc, char **argv) {
+    srand(time(0)); // seed random number generator
     List L;         // declare instance of a list
 
     //loop i times: 0 <= i < 10000
-    for (int i = 0; i < rand() % 100; i++)
-    {
+    for (int i = 0; i < rand() % 100; i++) {
         // load list with random # of nodes between 0 and 10000
         L.frontSert(i);
     }
