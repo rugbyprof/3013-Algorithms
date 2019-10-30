@@ -1,6 +1,7 @@
 #include "json.hpp"
 #include <cmath>
 #include <iostream>
+#include <fstream>
 #include <queue>
 #include <vector>
 
@@ -81,22 +82,30 @@ struct Node {
     City *C;
     vector<Edge *> Edges;
     bool visited;
+    int lastVisitor;
+    int id;
 
     Node() {
         C = new City;
         visited = false;
+        lastVisitor = -1;
+        id = -1;
     }
     Node(City *c) {
         C = c;
+        id = c->id;
         visited = false;
+        lastVisitor = -1;
     }
 
-    Node(json j, int id) {
-        C = new City(j, id);
+    Node(json j, int _id) {
+        C = new City(j, _id);
+        id = _id;
         visited = false;
+        lastVisitor = -1;
     }
 
-    int NumEdges(){
+    int NumEdges() {
         return Edges.size();
     }
 };
@@ -115,7 +124,7 @@ struct Edge {
     }
 
     friend ostream &operator<<(ostream &os, const Edge &e) {
-        os << "From:"<< e.from << " To:" << e.to << " Distance: " << e.distance;
+        os << "[From:" << e.from << " To:" << e.to << " Distance: " << e.distance<<"]";
         return os;
     }
 };
@@ -123,14 +132,16 @@ struct Edge {
 class Graph {
 private:
     vector<Node *> Nodes;
+    vector<Edge *> Edges;   // Just to keep track of existing edges
 
 public:
     Graph() {
     }
 
-    void ResetGraph(){
-        for (auto it = Nodes.begin(); it != Nodes.end(); ++it) {
-            (*it)->C->visited = false;
+    void ResetGraph() {
+        for (int i=0; i < Nodes.size(); i++) {
+            Nodes[i]->lastVisitor = -1;
+            Nodes[i]->visited = false;
         }
     }
 
@@ -139,16 +150,30 @@ public:
         Nodes.push_back(N);
     }
 
-    void AddEdge(int from, int to, double d = 0.0) {
-        Edge *E = new Edge(from,to, d);
-        Nodes[from]->Edges.push_back(E);
+    bool EdgeExists(int from, int to){
+        for(int i=0;i<Edges.size();i++){
+            if(Edges[i]->from == from && Edges[i]->to == to){
+                return true;
+            }
+        }
+        return false;
     }
 
-    int NumVertices(){
+    bool AddEdge(int from, int to, double d = 0.0) {
+        if(!EdgeExists(from,to)){
+            Edge *E = new Edge(from, to, d);    // make the edge
+            Edges.push_back(E);                 // add it to big list of edges
+            Nodes[from]->Edges.push_back(E);    // add it to particular node
+            return true;
+        }
+        return false;
+    }
+
+    int NumVertices() {
         return Nodes.size();
     }
 
-    int NumEdges(){
+    int NumEdges() {
         int edgeCount = 0;
 
         for (auto it = Nodes.begin(); it != Nodes.end(); ++it) {
@@ -158,87 +183,122 @@ public:
         return edgeCount;
     }
 
-    Node* FindVertexByName(string _name){
+    Node *FindVertexByName(string _name) {
         for (auto it = Nodes.begin(); it != Nodes.end(); ++it) {
-            if((*it)->C->name == _name){
+            if ((*it)->C->name == _name) {
                 return (*it);
             }
         }
         return NULL;
     }
 
-    Node* GetVertex(int i){
+    int FindUnvisited() {
+        for (int i = 0; i < Nodes.size(); i++) {
+            if (Nodes[i]->visited == false) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    Node *GetVertex(int i) {
         return Nodes[i];
     }
 
-    void Traverse(int start_id=-1,string type="Depth"){
-        if(start_id < 0){
-            start_id = 0;
-        }
-        if(type=="Depth"){
-            DepthFirst(start_id);
-        }else{
-            BreadthFirst(start_id);
-        }
+    void Traverse(int start_id = 0) {
+        vector<int> path;
+        int current;
+
+        path.push_back(start_id);
+
     }
 
-    void DepthFirst(int start_id){
-        Node* Current;
+    queue<City*> DepthFirst(int start_id = 0) {
+        int Current;
         int Visited = 0;
-        vector<Node*> S;
+        vector<int> S;
+        queue<City*> path;
+        int to;
 
-        S.push_back(Nodes[start_id]);
+        S.push_back(start_id);
 
-        while(S.size() > 0){
-            Current=S.back();
+        while (S.size() > 0) {
+            Current = S.back();
             S.pop_back();
-            
-            if(!Current->visited){
-                Current->visited = 1;
+
+            if (!Nodes[Current]->visited) {
+                Nodes[Current]->visited = 1;
+                cout<<Nodes[Current]->C->name<<"->";
+                path.push(Nodes[Current]->C);
                 Visited++;
             }
 
-            cout<<Current->C->name<<" -> ";
-            
-            for (auto et = Current->Edges.begin(); et != Current->Edges.end(); ++et) {
-                if(!Nodes[(*et)->to]->visited){
-                    S.push_back(Nodes[(*et)->to]);
+           
+            for (int i=0; i < Nodes[Current]->Edges.size(); i++) {
+                to = Nodes[Current]->Edges[i]->to;
+                if (!Nodes[to]->visited) {
+                    S.push_back(to);
+                }
+            }
+
+            if (S.size() == 0) {
+                Current = FindUnvisited();
+                if (Current >= 0) {
+                    cout << endl << "disconnected" << endl;
+                    S.push_back(Current);
                 }
             }
         }
-        cout<<"Visited: "<<Visited<<endl;
+        cout <<endl<< "Visited: " << Visited << endl;
+        return path;
     }
 
-    void BreadthFirst(int start_id){
-        Node* Current;
+ 
+    queue<City*> BreadthFirst(int start_id = 0) {
+        int Current;
         int Visited = 0;
-        queue<Node*> Q;
+        queue<int> Q;
+        queue<City*> path;
+        int to;
 
-        Q.push(Nodes[start_id]);
+        Q.push(start_id);
 
-        while(Q.size() > 0){
+        while (Q.size() > 0) {
             Current = Q.front();
             Q.pop();
-            
-            if(!Current->visited){
-                Current->visited = 1;
+
+            if (!Nodes[Current]->visited) {
+                Nodes[Current]->visited = 1;
+                cout <<Nodes[Current]->C->name << "->";
+                path.push(Nodes[Current]->C);
                 Visited++;
             }
 
-            cout<<Current->C->name<<endl;
             
-            for (auto et = Current->Edges.begin(); et != Current->Edges.end(); ++et) {
-                if(!Nodes[(*et)->to]->visited){
-                    Q.push(Nodes[(*et)->to]);
+
+            for (int i=0; i < Nodes[Current]->Edges.size(); i++) {
+                to = Nodes[Current]->Edges[i]->to;
+                if (!Nodes[to]->visited) {
+                    Nodes[to]->lastVisitor = Nodes[Current]->id;
+                    Q.push(to);
+                }
+            }
+            
+            if (Q.size() == 0) {
+                Current = FindUnvisited();
+                if (Current >= 0) {
+                    cout << endl << "disconnected" << endl;
+                    Q.push(Current);
                 }
             }
         }
-        cout<<"Visited: "<<Visited<<endl;
+        cout <<endl<< "Visited: " << Visited << endl;
+        return path;
     }
 
     void PrintNodes() {
         for (auto it = Nodes.begin(); it != Nodes.end(); ++it) {
-            cout << (*it)->C->name << endl;
+            cout << (*it)->C->name << " " << (*it)->C->visited << endl;
         }
     }
 
@@ -246,54 +306,89 @@ public:
         for (auto it = Nodes.begin(); it != Nodes.end(); ++it) {
             cout << (*it)->C->name << endl;
             for (auto et = (*it)->Edges.begin(); et != (*it)->Edges.end(); ++et) {
-                cout <<"\t"<< Nodes[(*et)->to]->C->name <<" : " <<(*et)->distance<<endl;
+                cout << "\t" << Nodes[(*et)->to]->C->name << " : " << (*et)->distance << endl;
             }
         }
     }
 
-    void PrintJson() {
-        Node* startNode = FindVertexByName("Miami");
-        int start_id = startNode->C->id;
-        Node* Current;
-        vector<Node*> S;
-        vector<double> lats;
-        vector<double> lons;
+    void buildGeoJson(queue<City*> path){
+        json j;
+        City* from;
+        City* to; 
 
-        S.push_back(Nodes[start_id]);
-        lats.push_back(Nodes[start_id]->C->lat);
-        lons.push_back(Nodes[start_id]->C->lon);
+        j["coordinates"] = json::array();
 
-        while(S.size() > 0){
-            Current=S.back();
-            S.pop_back();
-            
-            if(!Current->visited){
-                Current->visited = 1;
-            }
+        from = path.front();
+        path.pop();
+        while(!path.empty()){
+            to = path.front();
+            path.pop();
 
-            lats.push_back(Current->C->lat);
-            lons.push_back(Current->C->lon);
-            
-            for (auto et = Current->Edges.begin(); et != Current->Edges.end(); ++et) {
-                if(!Nodes[(*et)->to]->visited){
-                    S.push_back(Nodes[(*et)->to]);
-                }
-            }
+            json coord1;
+            json coord2;
+            json line;
+
+            coord1.push_back(from->lat);
+            coord1.push_back(from->lon);
+            coord2.push_back(to->lat);
+            coord2.push_back(to->lon);
+
+            line.push_back(coord1);
+            line.push_back(coord2);
+
+            j["coordinates"].push_back(line);
+
+            from = to;
         }
-        printJson(lats,lons);
+
+        ofstream fout("pretty.json");
+        fout << std::setw(4) << j << std::endl;
+        cout << std::setw(4) << j << std::endl;
     }
 
-    void printJson(vector<double>lats,vector<double>lons){
-        cout<<"{\"lats\":[";
-        for (auto it = lats.begin(); it != lats.end(); ++it) {
-            cout<<*it<<",\n";
-        }
-        cout<<"],";
-        cout<<"{\"lons\":[";
-        for (auto it = lons.begin(); it != lons.end(); ++it) {
-            cout<<*it<<",\n";
-        }
-        cout<<"]\n}";
+    // void PrintJson() {
+    //     Node* startNode = FindVertexByName("Miami");
+    //     int start_id = startNode->C->id;
+    //     Node* Current;
+    //     vector<Node*> S;
+    //     vector<double> lats;
+    //     vector<double> lons;
 
-    }
+    //     S.push_back(Nodes[start_id]);
+    //     lats.push_back(Nodes[start_id]->C->lat);
+    //     lons.push_back(Nodes[start_id]->C->lon);
+
+    //     while(S.size() > 0){
+    //         Current=S.back();
+    //         S.pop_back();
+
+    //         if(!Current->visited){
+    //             Current->visited = 1;
+    //         }
+
+    //         lats.push_back(Current->C->lat);
+    //         lons.push_back(Current->C->lon);
+
+    //         for (auto et = Current->Edges.begin(); et != Current->Edges.end(); ++et) {
+    //             if(!Nodes[(*et)->to]->visited){
+    //                 S.push_back(Nodes[(*et)->to]);
+    //             }
+    //         }
+    //     }
+    //     printJson(lats,lons);
+    // }
+
+    // void printJson(vector<double>lats,vector<double>lons){
+    //     cout<<"{\"lats\":[";
+    //     for (auto it = lats.begin(); it != lats.end(); ++it) {
+    //         cout<<*it<<",\n";
+    //     }
+    //     cout<<"],";
+    //     cout<<"{\"lons\":[";
+    //     for (auto it = lons.begin(); it != lons.end(); ++it) {
+    //         cout<<*it<<",\n";
+    //     }
+    //     cout<<"]\n}";
+
+    // }
 };
