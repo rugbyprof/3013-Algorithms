@@ -113,7 +113,6 @@ void swap(int *a, int *b) {
 - In `assignments` create a folder called `A05`
 - In `A05` place your code in a file called `graph_builder.cpp`
 - Any and ALL files used to run your code MUST be in your repo.
-- Include any files that you wrote code in.
 - Comment your code. 
 - Turn in a printed copy of your source code (DO NOT PRINT FROM GITHUB!!). 
   - There IS a way to print source code from github, its a pain, but ask me in class to show you if your desperate.
