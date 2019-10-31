@@ -477,15 +477,6 @@
         "state": "Florida"
     },
     {
-        "city": "Honolulu",
-        "growth": -6.2,
-        "latitude": 21.3069444,
-        "longitude": -157.8583333,
-        "population": 347884,
-        "rank": 54,
-        "state": "Hawaii"
-    },
-    {
         "city": "Aurora",
         "growth": 24.4,
         "latitude": 39.7294319,
@@ -556,15 +547,6 @@
         "population": 305841,
         "rank": 62,
         "state": "Pennsylvania"
-    },
-    {
-        "city": "Anchorage",
-        "growth": 15.4,
-        "latitude": 61.2180556,
-        "longitude": -149.9002778,
-        "population": 300950,
-        "rank": 63,
-        "state": "Alaska"
     },
     {
         "city": "Stockton",

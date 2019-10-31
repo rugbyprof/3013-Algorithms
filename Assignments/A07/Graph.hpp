@@ -311,12 +311,25 @@ public:
         }
     }
 
+
     void buildGeoJson(queue<City*> path){
         json j;
         City* from;
         City* to; 
 
-        j["coordinates"] = json::array();
+        json featureCollection;
+
+        featureCollection["type"]="FeatureCollection";
+        featureCollection["features"] = json::array();
+        
+
+        json feature;
+
+        feature["type"] = "Feature";
+        feature["properties"] = {};
+        feature["geometry"] = {};
+        feature["geometry"]["type"] = "LineString";
+        feature["geometry"]["coordinates"] = json::array();
 
         from = path.front();
         path.pop();
@@ -328,24 +341,29 @@ public:
             json coord2;
             json line;
 
-            coord1.push_back(from->lat);
             coord1.push_back(from->lon);
-            coord2.push_back(to->lat);
+            coord1.push_back(from->lat);
             coord2.push_back(to->lon);
+            coord2.push_back(to->lat);
 
             line.push_back(coord1);
             line.push_back(coord2);
 
-            j["coordinates"].push_back(line);
+            feature["geometry"]["coordinates"].push_back(coord1);
+            feature["geometry"]["coordinates"].push_back(coord2);
 
             from = to;
         }
 
+        featureCollection["features"].push_back(feature);
+
         ofstream fout("pretty.json");
-        fout << std::setw(4) << j << std::endl;
-        cout << std::setw(4) << j << std::endl;
+        fout << std::setw(4) << featureCollection << std::endl;
+        cout << std::setw(4) << featureCollection << std::endl;
     }
 
+
+    
     // void PrintJson() {
     //     Node* startNode = FindVertexByName("Miami");
     //     int start_id = startNode->C->id;
@@ -391,4 +409,76 @@ public:
     //     cout<<"]\n}";
 
     // }
+};
+
+class GeoJson{
+private:
+    json Collection;
+    int FeatureId;
+
+    json AddFeature(string feature_type){
+
+        json Feature;
+
+        Feature["type"] = "Feature";
+        Feature["properties"] = {};
+        Feature["geometry"] = {};
+        Feature["geometry"]["type"] = feature_type;
+        Feature["geometry"]["coordinates"] = json::array();
+
+        return Feature;
+    }
+
+public:
+
+    GeoJson(){
+        Collection = {};
+        Collection["type"]="FeatureCollection";
+        Collection["features"]= json::array();
+        Collection["properties"] = {};
+        FeatureId = 0;
+    }
+
+    int AddLineString(json line){
+        return 0;
+    }
+
+    int AddLineString(std::vector<std::pair<double, double>> vline){
+        json feature = AddFeature("LineString");
+  
+        for (auto ptr = vline.begin(); ptr != vline.end(); ++ptr){
+            feature["geometry"]["coordinates"].push_back({ptr->first,ptr->second});
+        }
+
+        Collection["FeatureCollection"]["features"].push_back(feature);
+
+        return 0;
+    }            
+
+    void AddGeoPoint(double lat,double lon,json properties={}){
+        json feature = AddFeature("Point");
+
+        feature["properties"] = properties;
+
+        feature["geometry"]["coordinates"].push_back(lon);
+        feature["geometry"]["coordinates"].push_back(lat);
+
+        Collection["features"].push_back(feature);
+    }
+
+    void AddPolygon(){
+        
+    }
+
+    void AddProperties(int id,string key,string val){
+        Collection["features"][id]["properties"][key]=val;
+    }
+
+    void PrintJson(string filename){
+        ofstream fout(filename);
+        fout << std::setw(4) << Collection << std::endl;
+        cout << std::setw(4) << Collection << std::endl;
+    }
+
+
 };

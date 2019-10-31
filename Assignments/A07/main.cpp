@@ -44,6 +44,8 @@ int main(int argc, char **argv) {
 
     Graph G;
 
+    GeoJson geoJsonCities;
+
     if (argc > 1) {
         numEdges = stoi(argv[1]);
     }
@@ -53,7 +55,10 @@ int main(int argc, char **argv) {
     // load all vertices (cities) into graph
     for (int i = 0; i < NumCities; i++) {
         G.AddVertex(Cities[i]);
+        geoJsonCities.AddGeoPoint(Cities[i]->lat,Cities[i]->lon,{{"name",Cities[i]->name}});
     }
+
+    geoJsonCities.PrintJson("pretty2.json");
 
     // Generate edges
     for (int i = 0; i < NumCities; i++) {
@@ -74,9 +79,32 @@ int main(int argc, char **argv) {
         H.Clear();
     }
     //G.PrintGraph();
+
+    std::vector<std::pair<double, double>> path2;
+
     G.DepthFirst();
     cout<<endl<<endl<<endl;
     G.ResetGraph();
     queue<City*> path = G.BreadthFirst();
     G.buildGeoJson(path);
+
+    int cutoff = 0;
+    while(path.size() > 0){
+        City* temp = path.front();
+        path.pop();
+        path2.push_back(pair<double,double>(temp->lat,temp->lon));
+        cutoff++;
+        if(cutoff > 10){
+            break;
+        }
+    }
+
+    GeoJson GJ;
+    GJ.AddLineString(path2);
+    GJ.AddProperties(0,"stroke","#555555");
+    GJ.AddProperties(0,"stroke-width","2");
+    GJ.AddProperties(0,"stroke-opacity","0.6");
+
+    GJ.PrintJson("pretty3.json");
+
 }
