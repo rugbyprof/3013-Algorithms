@@ -248,57 +248,6 @@ public:
         }
     }
 
-
-    void buildGeoJson(queue<City*> path){
-        json j;
-        City* from;
-        City* to; 
-
-        json featureCollection;
-
-        featureCollection["type"]="FeatureCollection";
-        featureCollection["features"] = json::array();
-        
-
-        json feature;
-
-        feature["type"] = "Feature";
-        feature["properties"] = {};
-        feature["geometry"] = {};
-        feature["geometry"]["type"] = "LineString";
-        feature["geometry"]["coordinates"] = json::array();
-
-        from = path.front();
-        path.pop();
-        while(!path.empty()){
-            to = path.front();
-            path.pop();
-
-            json coord1;
-            json coord2;
-            json line;
-
-            coord1.push_back(from->lon);
-            coord1.push_back(from->lat);
-            coord2.push_back(to->lon);
-            coord2.push_back(to->lat);
-
-            line.push_back(coord1);
-            line.push_back(coord2);
-
-            feature["geometry"]["coordinates"].push_back(coord1);
-            feature["geometry"]["coordinates"].push_back(coord2);
-
-            from = to;
-        }
-
-        featureCollection["features"].push_back(feature);
-
-        ofstream fout("pretty.json");
-        fout << std::setw(4) << featureCollection << std::endl;
-        cout << std::setw(4) << featureCollection << std::endl;
-    }
-
 };
 
 

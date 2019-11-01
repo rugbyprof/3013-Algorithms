@@ -37,7 +37,7 @@ struct City {
     string state;
     int id;
     double priority;
-    bool visited;
+    int visited;
 
     City() {
         id = 0;
@@ -49,7 +49,7 @@ struct City {
         rank = 0;
         state = "";
         priority = 0.0;
-        visited = false;
+        visited = 0;
     }
 
     City(json obj, int _id) {
@@ -62,7 +62,7 @@ struct City {
         state = obj["state"];
         id = _id;
         priority = 0.0;
-        visited = false;
+        visited = 0;
     }
 
     double Distance(double toLat, double toLon) {
