@@ -37,29 +37,29 @@ You must use a Heap to find the closest cities. I've included a heap implementat
 
 - Turn in a printed file with the first 10 and last 10 cities and who they are connected to. The order is based on where they are in the input file. 
 
-```
+```txt
 0001 : New York 
-    1) City A (distance)
+	1) City A (distance)
 	2) City B (distance)
 	3) City C (distance)
 0002 : Los Angeles
-    1) City A (distance)
+	1) City A (distance)
 	2) City B (distance)
 	3) City C (distance)
 0003 : Chicago
-    1) City A (distance)
+	1) City A (distance)
 	2) City B (distance)
 	3) City C (distance)
 
 	...
 
 0997 : Beloit
-    1) City A (distance)
+	1) City A (distance)
 	2) City B (distance)
 	3) City C (distance)
 
 0998 : Panama City
-    1) City A (distance)
+	1) City A (distance)
 	2) City B (distance)
 	3) City C (distance)
 ```
@@ -113,7 +113,6 @@ void swap(int *a, int *b) {
 - In `assignments` create a folder called `A05`
 - In `A05` place your code in a file called `graph_builder.cpp`
 - Any and ALL files used to run your code MUST be in your repo.
-- Include any files that you wrote code in.
 - Comment your code. 
 - Turn in a printed copy of your source code (DO NOT PRINT FROM GITHUB!!). 
   - There IS a way to print source code from github, its a pain, but ask me in class to show you if your desperate.
