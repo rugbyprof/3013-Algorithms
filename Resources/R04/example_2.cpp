@@ -1,4 +1,5 @@
 /**
+ * Example 2
  * This is an example of how to add lines to a "GeoJson" json object. 
  * It creates 3 points and colors adds colors (properties) to them. 
  * 

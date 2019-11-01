@@ -1,4 +1,5 @@
 /**
+ * Example 3
  * This is an example of how to add a polygon to a geojson object 
  * It uses the previous two examples.
  * 

@@ -1,3 +1,10 @@
+/**
+* Example 4
+ * This example loads a bunch of geoPoints representing all the 
+ * cities in Texas. It then prints a geoJson file including all
+ * of those geoJson features.
+ * 
+ */
 #include <fstream>
 #include <iostream>
 #include <string.h>
@@ -57,8 +64,15 @@ int main(int argc, char **argv) {
 
     // Loop through the vector and create "geoPoints" adding property information including descriptions and colors.
     for(int i=0;i<TexasCities.size();i++){
+
+        // Add the point using the city's lat and lon getting back the feature id from GeoJson
         int id = GJ.AddGeoPoint(TexasCities[i]->lon,TexasCities[i]->lat);
+
+        // Create a string description to place inside the marker for mouse clicks and such
         string description = "Pop: " + to_string(TexasCities[i]->population) + " Growth: " + to_string(TexasCities[i]->growth);
+
+        // Using the "id" we got back from GJ, we can add properties for this geoPoint
+        // An overloaded method to add a point along with its properties would be handy, so you write it :) 
         GJ.AddProperties(id,{
             {"title",TexasCities[i]->name},
             {"description",description},

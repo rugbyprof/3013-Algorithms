@@ -1,0 +1,3221 @@
+{
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.3698028,
+                    29.7604267
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 2195914 Growth: 11.000000",
+                "marker-color": "#1974d2",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Houston"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.49362819999999,
+                    29.4241219
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 1409019 Growth: 21.000000",
+                "marker-color": "#cca01d",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "San Antonio"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.79698789999999,
+                    32.7766642
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 1257676 Growth: 5.600000",
+                "marker-color": "#6e4b26",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Dallas"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.7430608,
+                    30.267153
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 885400 Growth: 31.700000",
+                "marker-color": "#72a0c1",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Austin"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.3307658,
+                    32.7554883
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 792727 Growth: 45.100000",
+                "marker-color": "#585562",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Fort Worth"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -106.4424559,
+                    31.7775757
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 674433 Growth: 19.400000",
+                "marker-color": "#2e5894",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "El Paso"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.10806559999999,
+                    32.735687
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 379577 Growth: 13.300000",
+                "marker-color": "#37290e",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Arlington"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.39638099999999,
+                    27.8005828
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 316381 Growth: 14.100000",
+                "marker-color": "#faf3f0",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Corpus Christi"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.6988856,
+                    33.0198431
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 274409 Growth: 22.400000",
+                "marker-color": "#996515",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Plano"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -99.48032409999999,
+                    27.5305671
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 248142 Growth: 38.200000",
+                "marker-color": "#831923",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Laredo"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -101.8551665,
+                    33.5778631
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 239538 Growth: 19.600000",
+                "marker-color": "#ff8c00",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Lubbock"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.63888329999999,
+                    32.912624
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 234566 Growth: 8.500000",
+                "marker-color": "#f400a1",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Garland"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.9488945,
+                    32.8140177
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 228653 Growth: 19.100000",
+                "marker-color": "#eaf6ff",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Irving"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -101.8312969,
+                    35.2219971
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 196429 Growth: 12.800000",
+                "marker-color": "#161928",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Amarillo"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.99778459999999,
+                    32.7459645
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 183372 Growth: 43.100000",
+                "marker-color": "#b5651d",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Grand Prairie"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.4974838,
+                    25.9017472
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 181860 Growth: 26.800000",
+                "marker-color": "#56a0d3",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Brownsville"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.2091006,
+                    29.6910625
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 152735 Growth: 7.500000",
+                "marker-color": "#a2aeab",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Pasadena"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.6397822,
+                    33.1972465
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 148559 Growth: 165.300000",
+                "marker-color": "#36747d",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "McKinney"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.5991593,
+                    32.76679550000001
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 143484 Growth: 14.700000",
+                "marker-color": "#009000",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Mesquite"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.72779589999999,
+                    31.1171194
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 137147 Growth: 52.100000",
+                "marker-color": "#6d9bc3",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Killeen"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.82361159999999,
+                    33.1506744
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 136791 Growth: 287.700000",
+                "marker-color": "#674846",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Frisco"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.23001239999999,
+                    26.2034071
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 136639 Growth: 27.600000",
+                "marker-color": "#873260",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "McAllen"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.1466695,
+                    31.549333
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 129030 Growth: 12.500000",
+                "marker-color": "#ab3472",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Waco"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.8899636,
+                    32.9756415
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 126700 Growth: 14.900000",
+                "marker-color": "#002387",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Carrollton"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -102.0779146,
+                    31.9973456
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 123933 Growth: 30.400000",
+                "marker-color": "#2c1632",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Midland"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.13306829999999,
+                    33.2148412
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 123099 Growth: 47.100000",
+                "marker-color": "#af4d43",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Denton"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -99.73314390000002,
+                    32.4487364
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 120099 Growth: 3.600000",
+                "marker-color": "#507672",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Abilene"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.1265562,
+                    30.080174
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 117796 Growth: 3.700000",
+                "marker-color": "#363534",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Beaumont"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -102.3676431,
+                    31.8456816
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 110720 Growth: 22.300000",
+                "marker-color": "#f3d69d",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Odessa"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.678896,
+                    30.5082551
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 109821 Growth: 81.000000",
+                "marker-color": "#c04737",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Round Rock"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.4933873,
+                    33.9137085
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 104898 Growth: 0.700000",
+                "marker-color": "#e8f5f2",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Wichita Falls"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.7298519,
+                    32.9483335
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 104475 Growth: 13.200000",
+                "marker-color": "#1c7c7d",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Richardson"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.994174,
+                    33.046233
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 101074 Growth: 28.900000",
+                "marker-color": "#cc99ff",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Lewisville"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.30106239999999,
+                    32.3512601
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 100223 Growth: 18.600000",
+                "marker-color": "#a1c50a",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Tyler"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.2860474,
+                    29.5635666
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 100065 Growth: 117.200000",
+                "marker-color": "#004b49",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Pearland"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.3344068,
+                    30.627977
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 100050 Growth: 45.200000",
+                "marker-color": "#cebaba",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "College Station"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -100.4370375,
+                    31.4637723
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 97492 Growth: 10.200000",
+                "marker-color": "#7da98d",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "San Angelo"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.67055030000002,
+                    33.1031744
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 92020 Growth: 104.000000",
+                "marker-color": "#56b4be",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Allen"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.0949303,
+                    29.5074538
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 90983 Growth: 98.300000",
+                "marker-color": "#1a1a68",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "League City"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.6349463,
+                    29.6196787
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 83860 Growth: 29.100000",
+                "marker-color": "#b03060",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Sugar Land"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.74048909999999,
+                    32.5007037
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 81443 Growth: 11.600000",
+                "marker-color": "#654321",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Longview"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.32529319999999,
+                    26.2159066
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 81050 Growth: 74.500000",
+                "marker-color": "#964b00",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Mission"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.1633432,
+                    26.3017374
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 80836 Growth: 65.100000",
+                "marker-color": "#ff9966",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Edinburg"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.3699632,
+                    30.6743643
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 78709 Growth: 19.300000",
+                "marker-color": "#e68fac",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Bryan"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.97742740000001,
+                    29.7355047
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 75418 Growth: 13.100000",
+                "marker-color": "#4166f5",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Baytown"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.1836216,
+                    26.1947962
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 73790 Growth: 55.700000",
+                "marker-color": "#f3e9e5",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Pharr"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.342782,
+                    31.0982344
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 70190 Growth: 27.100000",
+                "marker-color": "#e30b5d",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Temple"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.5377215,
+                    29.6185669
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 70185 Growth: 31.100000",
+                "marker-color": "#2ebfd4",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Missouri City"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.0969552,
+                    33.0145673
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 68609 Growth: 32.500000",
+                "marker-color": "#f2552a",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Flower Mound"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.2289029,
+                    32.8342952
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 67317 Growth: 20.200000",
+                "marker-color": "#daecd6",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "North Richland Hills"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.69610259999999,
+                    26.1906306
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 65665 Growth: 11.600000",
+                "marker-color": "#517c66",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Harlingen"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.0035982,
+                    28.8052674
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 65098 Growth: 7.500000",
+                "marker-color": "#d4c4a8",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Victoria"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.1244531,
+                    29.7030024
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 63279 Growth: 64.000000",
+                "marker-color": "#bbd009",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "New Braunfels"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.45605119999999,
+                    30.3118769
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 63032 Growth: 61.900000",
+                "marker-color": "#0093af",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Conroe"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.8202888,
+                    30.505198
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 61238 Growth: 134.300000",
+                "marker-color": "#bdc8b3",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Cedar Park"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.1416768,
+                    32.5631924
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 60872 Growth: 114.200000",
+                "marker-color": "#f8b853",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Mansfield"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.56388,
+                    32.9029017
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 58043 Growth: 28.600000",
+                "marker-color": "#446ccf",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Rowlett"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.6779842,
+                    30.6332618
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 54898 Growth: 91.900000",
+                "marker-color": "#242a1d",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Georgetown"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.93994699999999,
+                    29.8849504
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 54135 Growth: -6.000000",
+                "marker-color": "#ffcd8c",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Port Arthur"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.9413941,
+                    29.8832749
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 54076 Growth: 48.500000",
+                "marker-color": "#f400a1",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "San Marcos"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.62000429999999,
+                    30.4393696
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 53752 Growth: 123.400000",
+                "marker-color": "#5a6e9c",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Pflugerville"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.08195409999999,
+                    32.8370727
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 53224 Growth: 15.100000",
+                "marker-color": "#059033",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Euless"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.8570738,
+                    32.5896998
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 51483 Growth: 36.000000",
+                "marker-color": "#fe28a2",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "DeSoto"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.0780654,
+                    32.9342919
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 50195 Growth: 17.600000",
+                "marker-color": "#fff5f3",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Grapevine"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.7976958,
+                    29.3013479
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 48733 Growth: -15.200000",
+                "marker-color": "#e0b646",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Galveston"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.1430671,
+                    32.844017
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 48592 Growth: 2.900000",
+                "marker-color": "#8da8cc",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Bedford"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.9561152,
+                    32.5884689
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 46663 Growth: 42.400000",
+                "marker-color": "#2e2d88",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Cedar Hill"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.9027002,
+                    29.383845
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 46081 Growth: 10.300000",
+                "marker-color": "#bd978e",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Texas City"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.5388789,
+                    33.0151201
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 44575 Growth: 185.200000",
+                "marker-color": "#8581d9",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Wylie"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.26918169999999,
+                    32.7995738
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 43580 Growth: 11.400000",
+                "marker-color": "#9ab973",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Haltom City"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.229298,
+                    32.9341893
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 42907 Growth: 53.300000",
+                "marker-color": "#431560",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Keller"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.4597089,
+                    32.93123360000001
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 40922 Growth: 117.200000",
+                "marker-color": "#8a7f80",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Rockwall"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.3208492,
+                    32.5420821
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 40714 Growth: 85.300000",
+                "marker-color": "#3399ff",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Burleson"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.01500779999999,
+                    32.9545687
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 40342 Growth: 10.300000",
+                "marker-color": "#e16865",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Coppell"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.55077709999999,
+                    30.7235263
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 39795 Growth: 13.200000",
+                "marker-color": "#4d1e01",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Huntsville"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.9083366,
+                    32.6518004
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 39605 Growth: 9.700000",
+                "marker-color": "#fcf4dc",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Duncanville"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.89283089999999,
+                    33.0806083
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 39458 Growth: 45.700000",
+                "marker-color": "#796d62",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "The Colony"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.6088805,
+                    33.6356618
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 39296 Growth: 11.600000",
+                "marker-color": "#e89928",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Sherman"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.1705678,
+                    32.8234621
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 38448 Growth: 5.800000",
+                "marker-color": "#9a6e61",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Hurst"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.7561082,
+                    32.5920798
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 38071 Growth: 46.400000",
+                "marker-color": "#856088",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Lancaster"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.2010447,
+                    29.5293998
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 37587 Growth: 28.600000",
+                "marker-color": "#aa381e",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Friendswood"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.04768820000001,
+                    33.425125
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 37442 Growth: 7.400000",
+                "marker-color": "#de6fa1",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Texarkana"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.9908366,
+                    26.1595194
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 37093 Growth: 28.800000",
+                "marker-color": "#894367",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Weslaco"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.1416768,
+                        32.5631924
+                    ],
+                    [
+                        -97.3208492,
+                        32.5420821
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Mansfield to Burleson",
+                "name": "line",
+                "stroke": "#b81104",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.3208492,
+                        32.5420821
+                    ],
+                    [
+                        -97.3307658,
+                        32.7554883
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Burleson to Fort Worth",
+                "name": "line",
+                "stroke": "#724a2f",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.3307658,
+                        32.7554883
+                    ],
+                    [
+                        -97.26918169999999,
+                        32.7995738
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Fort Worth to Haltom City",
+                "name": "line",
+                "stroke": "#2c2133",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.26918169999999,
+                        32.7995738
+                    ],
+                    [
+                        -97.2289029,
+                        32.8342952
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Haltom City to North Richland Hills",
+                "name": "line",
+                "stroke": "#e7f8ff",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.2289029,
+                        32.8342952
+                    ],
+                    [
+                        -97.1705678,
+                        32.8234621
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "North Richland Hills to Hurst",
+                "name": "line",
+                "stroke": "#433120",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.1705678,
+                        32.8234621
+                    ],
+                    [
+                        -97.1430671,
+                        32.844017
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Hurst to Bedford",
+                "name": "line",
+                "stroke": "#664c28",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.1430671,
+                        32.844017
+                    ],
+                    [
+                        -97.08195409999999,
+                        32.8370727
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Bedford to Euless",
+                "name": "line",
+                "stroke": "#e7ece6",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.08195409999999,
+                        32.8370727
+                    ],
+                    [
+                        -97.0780654,
+                        32.9342919
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Euless to Grapevine",
+                "name": "line",
+                "stroke": "#cca01d",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.0780654,
+                        32.9342919
+                    ],
+                    [
+                        -97.01500779999999,
+                        32.9545687
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Grapevine to Coppell",
+                "name": "line",
+                "stroke": "#ae4560",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.01500779999999,
+                        32.9545687
+                    ],
+                    [
+                        -97.0969552,
+                        33.0145673
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Coppell to Flower Mound",
+                "name": "line",
+                "stroke": "#5946b2",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.0969552,
+                        33.0145673
+                    ],
+                    [
+                        -96.994174,
+                        33.046233
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Flower Mound to Lewisville",
+                "name": "line",
+                "stroke": "#86560a",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.994174,
+                        33.046233
+                    ],
+                    [
+                        -96.89283089999999,
+                        33.0806083
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Lewisville to The Colony",
+                "name": "line",
+                "stroke": "#055989",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.89283089999999,
+                        33.0806083
+                    ],
+                    [
+                        -96.82361159999999,
+                        33.1506744
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "The Colony to Frisco",
+                "name": "line",
+                "stroke": "#fafad2",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.82361159999999,
+                        33.1506744
+                    ],
+                    [
+                        -96.67055030000002,
+                        33.1031744
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Frisco to Allen",
+                "name": "line",
+                "stroke": "#49796b",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.67055030000002,
+                        33.1031744
+                    ],
+                    [
+                        -96.6988856,
+                        33.0198431
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Allen to Plano",
+                "name": "line",
+                "stroke": "#4f666a",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.6988856,
+                        33.0198431
+                    ],
+                    [
+                        -96.7298519,
+                        32.9483335
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Plano to Richardson",
+                "name": "line",
+                "stroke": "#ffefc1",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.7298519,
+                        32.9483335
+                    ],
+                    [
+                        -96.63888329999999,
+                        32.912624
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Richardson to Garland",
+                "name": "line",
+                "stroke": "#009000",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.63888329999999,
+                        32.912624
+                    ],
+                    [
+                        -96.56388,
+                        32.9029017
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Garland to Rowlett",
+                "name": "line",
+                "stroke": "#eadab8",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.56388,
+                        32.9029017
+                    ],
+                    [
+                        -96.4597089,
+                        32.93123360000001
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Rowlett to Rockwall",
+                "name": "line",
+                "stroke": "#ab4b52",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.4597089,
+                        32.93123360000001
+                    ],
+                    [
+                        -96.5388789,
+                        33.0151201
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Rockwall to Wylie",
+                "name": "line",
+                "stroke": "#fbe96c",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.5388789,
+                        33.0151201
+                    ],
+                    [
+                        -96.6397822,
+                        33.1972465
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Wylie to McKinney",
+                "name": "line",
+                "stroke": "#009966",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.6397822,
+                        33.1972465
+                    ],
+                    [
+                        -96.8899636,
+                        32.9756415
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "McKinney to Carrollton",
+                "name": "line",
+                "stroke": "#ffa500",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.8899636,
+                        32.9756415
+                    ],
+                    [
+                        -96.9488945,
+                        32.8140177
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Carrollton to Irving",
+                "name": "line",
+                "stroke": "#0892d0",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.9488945,
+                        32.8140177
+                    ],
+                    [
+                        -96.99778459999999,
+                        32.7459645
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Irving to Grand Prairie",
+                "name": "line",
+                "stroke": "#ca1f7b",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.99778459999999,
+                        32.7459645
+                    ],
+                    [
+                        -97.10806559999999,
+                        32.735687
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Grand Prairie to Arlington",
+                "name": "line",
+                "stroke": "#d3cdc5",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.10806559999999,
+                        32.735687
+                    ],
+                    [
+                        -96.9083366,
+                        32.6518004
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Arlington to Duncanville",
+                "name": "line",
+                "stroke": "#0d2e1c",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.9083366,
+                        32.6518004
+                    ],
+                    [
+                        -96.9561152,
+                        32.5884689
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Duncanville to Cedar Hill",
+                "name": "line",
+                "stroke": "#6d0101",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.9561152,
+                        32.5884689
+                    ],
+                    [
+                        -96.8570738,
+                        32.5896998
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Cedar Hill to DeSoto",
+                "name": "line",
+                "stroke": "#fefe33",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.8570738,
+                        32.5896998
+                    ],
+                    [
+                        -96.7561082,
+                        32.5920798
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "DeSoto to Lancaster",
+                "name": "line",
+                "stroke": "#433e37",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.7561082,
+                        32.5920798
+                    ],
+                    [
+                        -96.79698789999999,
+                        32.7766642
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Lancaster to Dallas",
+                "name": "line",
+                "stroke": "#002fa7",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.79698789999999,
+                        32.7766642
+                    ],
+                    [
+                        -96.5991593,
+                        32.76679550000001
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Dallas to Mesquite",
+                "name": "line",
+                "stroke": "#ae809e",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.5991593,
+                        32.76679550000001
+                    ],
+                    [
+                        -97.229298,
+                        32.9341893
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Mesquite to Keller",
+                "name": "line",
+                "stroke": "#f8f99c",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.229298,
+                        32.9341893
+                    ],
+                    [
+                        -97.13306829999999,
+                        33.2148412
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Keller to Denton",
+                "name": "line",
+                "stroke": "#c9ffa2",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.13306829999999,
+                        33.2148412
+                    ],
+                    [
+                        -96.6088805,
+                        33.6356618
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Denton to Sherman",
+                "name": "line",
+                "stroke": "#ad781b",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.6088805,
+                        33.6356618
+                    ],
+                    [
+                        -98.4933873,
+                        33.9137085
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Sherman to Wichita Falls",
+                "name": "line",
+                "stroke": "#00ffff",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.4933873,
+                        33.9137085
+                    ],
+                    [
+                        -99.73314390000002,
+                        32.4487364
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Wichita Falls to Abilene",
+                "name": "line",
+                "stroke": "#26619c",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -99.73314390000002,
+                        32.4487364
+                    ],
+                    [
+                        -100.4370375,
+                        31.4637723
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Abilene to San Angelo",
+                "name": "line",
+                "stroke": "#779ecb",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -100.4370375,
+                        31.4637723
+                    ],
+                    [
+                        -102.0779146,
+                        31.9973456
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "San Angelo to Midland",
+                "name": "line",
+                "stroke": "#ffddaf",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -102.0779146,
+                        31.9973456
+                    ],
+                    [
+                        -102.3676431,
+                        31.8456816
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Midland to Odessa",
+                "name": "line",
+                "stroke": "#fafde4",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -102.3676431,
+                        31.8456816
+                    ],
+                    [
+                        -101.8551665,
+                        33.5778631
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Odessa to Lubbock",
+                "name": "line",
+                "stroke": "#e2725b",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -101.8551665,
+                        33.5778631
+                    ],
+                    [
+                        -101.8312969,
+                        35.2219971
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Lubbock to Amarillo",
+                "name": "line",
+                "stroke": "#deb887",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -101.8312969,
+                        35.2219971
+                    ],
+                    [
+                        -106.4424559,
+                        31.7775757
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Amarillo to El Paso",
+                "name": "line",
+                "stroke": "#323232",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -106.4424559,
+                        31.7775757
+                    ],
+                    [
+                        -98.49362819999999,
+                        29.4241219
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "El Paso to San Antonio",
+                "name": "line",
+                "stroke": "#434c59",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.49362819999999,
+                        29.4241219
+                    ],
+                    [
+                        -98.1244531,
+                        29.7030024
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "San Antonio to New Braunfels",
+                "name": "line",
+                "stroke": "#4166f5",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.1244531,
+                        29.7030024
+                    ],
+                    [
+                        -97.9413941,
+                        29.8832749
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "New Braunfels to San Marcos",
+                "name": "line",
+                "stroke": "#7f1734",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.9413941,
+                        29.8832749
+                    ],
+                    [
+                        -97.7430608,
+                        30.267153
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "San Marcos to Austin",
+                "name": "line",
+                "stroke": "#8b9c90",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.7430608,
+                        30.267153
+                    ],
+                    [
+                        -97.62000429999999,
+                        30.4393696
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Austin to Pflugerville",
+                "name": "line",
+                "stroke": "#7fff00",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.62000429999999,
+                        30.4393696
+                    ],
+                    [
+                        -97.678896,
+                        30.5082551
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Pflugerville to Round Rock",
+                "name": "line",
+                "stroke": "#b86d29",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.678896,
+                        30.5082551
+                    ],
+                    [
+                        -97.8202888,
+                        30.505198
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Round Rock to Cedar Park",
+                "name": "line",
+                "stroke": "#d9dcc1",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.8202888,
+                        30.505198
+                    ],
+                    [
+                        -97.6779842,
+                        30.6332618
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Cedar Park to Georgetown",
+                "name": "line",
+                "stroke": "#b7c3d0",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.6779842,
+                        30.6332618
+                    ],
+                    [
+                        -97.72779589999999,
+                        31.1171194
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Georgetown to Killeen",
+                "name": "line",
+                "stroke": "#b6d3bf",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.72779589999999,
+                        31.1171194
+                    ],
+                    [
+                        -97.342782,
+                        31.0982344
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Killeen to Temple",
+                "name": "line",
+                "stroke": "#368716",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.342782,
+                        31.0982344
+                    ],
+                    [
+                        -97.1466695,
+                        31.549333
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Temple to Waco",
+                "name": "line",
+                "stroke": "#bfafb2",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.1466695,
+                        31.549333
+                    ],
+                    [
+                        -96.3699632,
+                        30.6743643
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Waco to Bryan",
+                "name": "line",
+                "stroke": "#480404",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.3699632,
+                        30.6743643
+                    ],
+                    [
+                        -96.3344068,
+                        30.627977
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Bryan to College Station",
+                "name": "line",
+                "stroke": "#859faf",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.3344068,
+                        30.627977
+                    ],
+                    [
+                        -95.55077709999999,
+                        30.7235263
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "College Station to Huntsville",
+                "name": "line",
+                "stroke": "#b7a458",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.55077709999999,
+                        30.7235263
+                    ],
+                    [
+                        -95.45605119999999,
+                        30.3118769
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Huntsville to Conroe",
+                "name": "line",
+                "stroke": "#987654",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.45605119999999,
+                        30.3118769
+                    ],
+                    [
+                        -95.3698028,
+                        29.7604267
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Conroe to Houston",
+                "name": "line",
+                "stroke": "#fbffba",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.3698028,
+                        29.7604267
+                    ],
+                    [
+                        -95.2091006,
+                        29.6910625
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Houston to Pasadena",
+                "name": "line",
+                "stroke": "#4d0135",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.2091006,
+                        29.6910625
+                    ],
+                    [
+                        -95.2860474,
+                        29.5635666
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Pasadena to Pearland",
+                "name": "line",
+                "stroke": "#9d2933",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.2860474,
+                        29.5635666
+                    ],
+                    [
+                        -95.2010447,
+                        29.5293998
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Pearland to Friendswood",
+                "name": "line",
+                "stroke": "#ffdb00",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.2010447,
+                        29.5293998
+                    ],
+                    [
+                        -95.0949303,
+                        29.5074538
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Friendswood to League City",
+                "name": "line",
+                "stroke": "#cca01d",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.0949303,
+                        29.5074538
+                    ],
+                    [
+                        -94.9027002,
+                        29.383845
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "League City to Texas City",
+                "name": "line",
+                "stroke": "#ff7800",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -94.9027002,
+                        29.383845
+                    ],
+                    [
+                        -94.7976958,
+                        29.3013479
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Texas City to Galveston",
+                "name": "line",
+                "stroke": "#401801",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -94.7976958,
+                        29.3013479
+                    ],
+                    [
+                        -94.97742740000001,
+                        29.7355047
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Galveston to Baytown",
+                "name": "line",
+                "stroke": "#4d3833",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -94.97742740000001,
+                        29.7355047
+                    ],
+                    [
+                        -95.5377215,
+                        29.6185669
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Baytown to Missouri City",
+                "name": "line",
+                "stroke": "#8f3e33",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.5377215,
+                        29.6185669
+                    ],
+                    [
+                        -95.6349463,
+                        29.6196787
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Missouri City to Sugar Land",
+                "name": "line",
+                "stroke": "#18587a",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.6349463,
+                        29.6196787
+                    ],
+                    [
+                        -94.1265562,
+                        30.080174
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Sugar Land to Beaumont",
+                "name": "line",
+                "stroke": "#817377",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -94.1265562,
+                        30.080174
+                    ],
+                    [
+                        -93.93994699999999,
+                        29.8849504
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Beaumont to Port Arthur",
+                "name": "line",
+                "stroke": "#32174d",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -93.93994699999999,
+                        29.8849504
+                    ],
+                    [
+                        -94.74048909999999,
+                        32.5007037
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Port Arthur to Longview",
+                "name": "line",
+                "stroke": "#ff9966",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -94.74048909999999,
+                        32.5007037
+                    ],
+                    [
+                        -95.30106239999999,
+                        32.3512601
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Longview to Tyler",
+                "name": "line",
+                "stroke": "#77b5fe",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.30106239999999,
+                        32.3512601
+                    ],
+                    [
+                        -94.04768820000001,
+                        33.425125
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Tyler to Texarkana",
+                "name": "line",
+                "stroke": "#afbdd9",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -94.04768820000001,
+                        33.425125
+                    ],
+                    [
+                        -97.0035982,
+                        28.8052674
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Texarkana to Victoria",
+                "name": "line",
+                "stroke": "#dbe9f4",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.0035982,
+                        28.8052674
+                    ],
+                    [
+                        -97.39638099999999,
+                        27.8005828
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Victoria to Corpus Christi",
+                "name": "line",
+                "stroke": "#6e4826",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.39638099999999,
+                        27.8005828
+                    ],
+                    [
+                        -97.69610259999999,
+                        26.1906306
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Corpus Christi to Harlingen",
+                "name": "line",
+                "stroke": "#ba55d3",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.69610259999999,
+                        26.1906306
+                    ],
+                    [
+                        -97.9908366,
+                        26.1595194
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Harlingen to Weslaco",
+                "name": "line",
+                "stroke": "#db9690",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.9908366,
+                        26.1595194
+                    ],
+                    [
+                        -98.1836216,
+                        26.1947962
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Weslaco to Pharr",
+                "name": "line",
+                "stroke": "#fff4dd",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.1836216,
+                        26.1947962
+                    ],
+                    [
+                        -98.23001239999999,
+                        26.2034071
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Pharr to McAllen",
+                "name": "line",
+                "stroke": "#c71585",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.23001239999999,
+                        26.2034071
+                    ],
+                    [
+                        -98.32529319999999,
+                        26.2159066
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "McAllen to Mission",
+                "name": "line",
+                "stroke": "#dbdbdb",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.32529319999999,
+                        26.2159066
+                    ],
+                    [
+                        -98.1633432,
+                        26.3017374
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Mission to Edinburg",
+                "name": "line",
+                "stroke": "#5a4fcf",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.1633432,
+                        26.3017374
+                    ],
+                    [
+                        -97.4974838,
+                        25.9017472
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Edinburg to Brownsville",
+                "name": "line",
+                "stroke": "#d2f6de",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.4974838,
+                        25.9017472
+                    ],
+                    [
+                        -99.48032409999999,
+                        27.5305671
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Brownsville to Laredo",
+                "name": "line",
+                "stroke": "#872657",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        }
+    ],
+    "properties": null,
+    "type": "FeatureCollection"
+}

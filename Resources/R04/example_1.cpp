@@ -1,4 +1,5 @@
 /**
+ * Example 1
  * This is an example of how to add points to a "GeoJson" json object. 
  * It creates 3 points and colors adds colors (properties) to them. 
  * Then it writes out the resulting geojson to a file.
