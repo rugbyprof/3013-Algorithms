@@ -1,10 +1,4 @@
 {
-    "crs": {
-        "properties": {
-            "name": "EPSG:3857"
-        },
-        "type": "name"
-    },
     "features": [
         {
             "geometry": {
@@ -29,7 +23,7 @@
                 "type": "Point"
             },
             "properties": {
-                "marker-color": "#d39bcb",
+                "marker-color": "#b6baa4",
                 "name": "Dallas"
             },
             "type": "Feature"
@@ -43,7 +37,7 @@
                 "type": "Point"
             },
             "properties": {
-                "marker-color": "#036a6e",
+                "marker-color": "#ffb97b",
                 "name": "Dallas"
             },
             "type": "Feature"
@@ -64,7 +58,7 @@
             },
             "properties": {
                 "name": "Wichita Falls to Dallas",
-                "stroke": "#ff3800"
+                "stroke": "#544333"
             },
             "type": "Feature"
         },
@@ -106,7 +100,7 @@
             },
             "properties": {
                 "name": "Dallas to Norman",
-                "stroke": "#2f6168",
+                "stroke": "#460b41",
                 "stroke-opacity": "0.8",
                 "stroke-width": "4"
             },

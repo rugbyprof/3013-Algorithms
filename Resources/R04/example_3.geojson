@@ -1,10 +1,4 @@
 {
-    "crs": {
-        "properties": {
-            "name": "EPSG:3857"
-        },
-        "type": "name"
-    },
     "features": [
         {
             "geometry": {
@@ -29,7 +23,7 @@
                 "type": "Point"
             },
             "properties": {
-                "marker-color": "#006a4e",
+                "marker-color": "#8f9779",
                 "name": "Dallas"
             },
             "type": "Feature"
@@ -43,7 +37,7 @@
                 "type": "Point"
             },
             "properties": {
-                "marker-color": "#e8ccd7",
+                "marker-color": "#b03060",
                 "name": "Dallas"
             },
             "type": "Feature"
@@ -64,7 +58,7 @@
             },
             "properties": {
                 "name": "Wichita Falls to Dallas",
-                "stroke": "#aec6cf"
+                "stroke": "#e79f8c"
             },
             "type": "Feature"
         },
@@ -106,7 +100,7 @@
             },
             "properties": {
                 "name": "Dallas to Norman",
-                "stroke": "#e9d75a",
+                "stroke": "#a6e7ff",
                 "stroke-opacity": "0.8",
                 "stroke-width": "4"
             },
@@ -137,10 +131,10 @@
                 "type": "Polygon"
             },
             "properties": {
-                "fill": "#657220",
+                "fill": "#f3edcf",
                 "fill-opacity": "0.5",
                 "name": "Home Town Area",
-                "stroke": "#88654e",
+                "stroke": "#4e82b4",
                 "stroke-opacity": "0.8",
                 "stroke-width": "2"
             },

@@ -1,10 +1,4 @@
 {
-    "crs": {
-        "properties": {
-            "name": "EPSG:3857"
-        },
-        "type": "name"
-    },
     "features": [
         {
             "geometry": {
@@ -29,7 +23,7 @@
                 "type": "Point"
             },
             "properties": {
-                "marker-color": "#8f9779",
+                "marker-color": "#b32d29",
                 "name": "Dallas"
             },
             "type": "Feature"
@@ -43,7 +37,7 @@
                 "type": "Point"
             },
             "properties": {
-                "marker-color": "#40826d",
+                "marker-color": "#bea6c3",
                 "name": "Dallas"
             },
             "type": "Feature"

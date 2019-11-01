@@ -158,7 +158,7 @@ public:
 
         Collection = {};
         Collection["type"]="FeatureCollection";
-        Collection["crs"]= {{"type", "name"},{"properties",{{"name","EPSG:3857"}}}};
+        //Collection["crs"]= {{"type", "name"},{"properties",{{"name","EPSG:3857"}}}};
         Collection["features"]= json::array();
         Collection["properties"] = {};
         FeatureId = 0;
