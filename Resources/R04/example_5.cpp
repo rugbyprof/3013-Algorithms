@@ -62,7 +62,7 @@ int main(int argc, char **argv) {
         GJ.AddProperties(id,{
             {"title",TexasCities[i]->name},
             {"description",description},
-            {"marker-symbol","city"},
+            {"marker-name","city"},
             {"marker-color",Colors.GetRandomColor()},
             {"marker-size","small"},
         });

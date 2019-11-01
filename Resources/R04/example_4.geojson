@@ -10,9 +10,9 @@
             },
             "properties": {
                 "description": "Pop: 2195914 Growth: 11.000000",
-                "marker-color": "#25311c",
-                "marker-name": "city",
+                "marker-color": "#801818",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Houston"
             },
             "type": "Feature"
@@ -27,9 +27,9 @@
             },
             "properties": {
                 "description": "Pop: 1409019 Growth: 21.000000",
-                "marker-color": "#a75502",
-                "marker-name": "city",
+                "marker-color": "#d4d7d9",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "San Antonio"
             },
             "type": "Feature"
@@ -44,9 +44,9 @@
             },
             "properties": {
                 "description": "Pop: 1257676 Growth: 5.600000",
-                "marker-color": "#843f5b",
-                "marker-name": "city",
+                "marker-color": "#93ccea",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Dallas"
             },
             "type": "Feature"
@@ -61,9 +61,9 @@
             },
             "properties": {
                 "description": "Pop: 885400 Growth: 31.700000",
-                "marker-color": "#00581a",
-                "marker-name": "city",
+                "marker-color": "#d7c498",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Austin"
             },
             "type": "Feature"
@@ -78,9 +78,9 @@
             },
             "properties": {
                 "description": "Pop: 792727 Growth: 45.100000",
-                "marker-color": "#800000",
-                "marker-name": "city",
+                "marker-color": "#d68a59",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Fort Worth"
             },
             "type": "Feature"
@@ -95,9 +95,9 @@
             },
             "properties": {
                 "description": "Pop: 674433 Growth: 19.400000",
-                "marker-color": "#00563b",
-                "marker-name": "city",
+                "marker-color": "#373021",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "El Paso"
             },
             "type": "Feature"
@@ -112,9 +112,9 @@
             },
             "properties": {
                 "description": "Pop: 379577 Growth: 13.300000",
-                "marker-color": "#b09a95",
-                "marker-name": "city",
+                "marker-color": "#2d2510",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Arlington"
             },
             "type": "Feature"
@@ -129,9 +129,9 @@
             },
             "properties": {
                 "description": "Pop: 316381 Growth: 14.100000",
-                "marker-color": "#fd7b33",
-                "marker-name": "city",
+                "marker-color": "#fcf8f7",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Corpus Christi"
             },
             "type": "Feature"
@@ -146,9 +146,9 @@
             },
             "properties": {
                 "description": "Pop: 274409 Growth: 22.400000",
-                "marker-color": "#e5e5e5",
-                "marker-name": "city",
+                "marker-color": "#6b4e31",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Plano"
             },
             "type": "Feature"
@@ -163,9 +163,9 @@
             },
             "properties": {
                 "description": "Pop: 248142 Growth: 38.200000",
-                "marker-color": "#13264d",
-                "marker-name": "city",
+                "marker-color": "#fffcea",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Laredo"
             },
             "type": "Feature"
@@ -180,9 +180,9 @@
             },
             "properties": {
                 "description": "Pop: 239538 Growth: 19.600000",
-                "marker-color": "#8f3e33",
-                "marker-name": "city",
+                "marker-color": "#fef4db",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Lubbock"
             },
             "type": "Feature"
@@ -197,9 +197,9 @@
             },
             "properties": {
                 "description": "Pop: 234566 Growth: 8.500000",
-                "marker-color": "#fee5ac",
-                "marker-name": "city",
+                "marker-color": "#826644",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Garland"
             },
             "type": "Feature"
@@ -214,9 +214,9 @@
             },
             "properties": {
                 "description": "Pop: 228653 Growth: 19.100000",
-                "marker-color": "#396413",
-                "marker-name": "city",
+                "marker-color": "#182d09",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Irving"
             },
             "type": "Feature"
@@ -231,9 +231,9 @@
             },
             "properties": {
                 "description": "Pop: 196429 Growth: 12.800000",
-                "marker-color": "#4682b4",
-                "marker-name": "city",
+                "marker-color": "#e79fc4",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Amarillo"
             },
             "type": "Feature"
@@ -248,9 +248,9 @@
             },
             "properties": {
                 "description": "Pop: 183372 Growth: 43.100000",
-                "marker-color": "#6c3082",
-                "marker-name": "city",
+                "marker-color": "#b35213",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Grand Prairie"
             },
             "type": "Feature"
@@ -265,9 +265,9 @@
             },
             "properties": {
                 "description": "Pop: 181860 Growth: 26.800000",
-                "marker-color": "#dcedb4",
-                "marker-name": "city",
+                "marker-color": "#ff4f00",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Brownsville"
             },
             "type": "Feature"
@@ -282,9 +282,9 @@
             },
             "properties": {
                 "description": "Pop: 152735 Growth: 7.500000",
-                "marker-color": "#d7c498",
-                "marker-name": "city",
+                "marker-color": "#1c352d",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Pasadena"
             },
             "type": "Feature"
@@ -299,9 +299,9 @@
             },
             "properties": {
                 "description": "Pop: 148559 Growth: 165.300000",
-                "marker-color": "#f77703",
-                "marker-name": "city",
+                "marker-color": "#b1610b",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "McKinney"
             },
             "type": "Feature"
@@ -316,9 +316,9 @@
             },
             "properties": {
                 "description": "Pop: 143484 Growth: 14.700000",
-                "marker-color": "#cf1020",
-                "marker-name": "city",
+                "marker-color": "#863c3c",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Mesquite"
             },
             "type": "Feature"
@@ -333,9 +333,9 @@
             },
             "properties": {
                 "description": "Pop: 137147 Growth: 52.100000",
-                "marker-color": "#ffa089",
-                "marker-name": "city",
+                "marker-color": "#87a96b",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Killeen"
             },
             "type": "Feature"
@@ -350,9 +350,9 @@
             },
             "properties": {
                 "description": "Pop: 136791 Growth: 287.700000",
-                "marker-color": "#54626f",
-                "marker-name": "city",
+                "marker-color": "#563c5c",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Frisco"
             },
             "type": "Feature"
@@ -367,9 +367,9 @@
             },
             "properties": {
                 "description": "Pop: 136639 Growth: 27.600000",
-                "marker-color": "#006a4e",
-                "marker-name": "city",
+                "marker-color": "#715d47",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "McAllen"
             },
             "type": "Feature"
@@ -384,9 +384,9 @@
             },
             "properties": {
                 "description": "Pop: 129030 Growth: 12.500000",
-                "marker-color": "#ffe135",
-                "marker-name": "city",
+                "marker-color": "#ed0a3f",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Waco"
             },
             "type": "Feature"
@@ -401,9 +401,9 @@
             },
             "properties": {
                 "description": "Pop: 126700 Growth: 14.900000",
-                "marker-color": "#8ab9f1",
-                "marker-name": "city",
+                "marker-color": "#9678b6",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Carrollton"
             },
             "type": "Feature"
@@ -418,9 +418,9 @@
             },
             "properties": {
                 "description": "Pop: 123933 Growth: 30.400000",
-                "marker-color": "#2f3cb3",
-                "marker-name": "city",
+                "marker-color": "#c9a0dc",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Midland"
             },
             "type": "Feature"
@@ -435,9 +435,9 @@
             },
             "properties": {
                 "description": "Pop: 123099 Growth: 47.100000",
-                "marker-color": "#fef2c7",
-                "marker-name": "city",
+                "marker-color": "#e7cd8c",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Denton"
             },
             "type": "Feature"
@@ -452,9 +452,9 @@
             },
             "properties": {
                 "description": "Pop: 120099 Growth: 3.600000",
-                "marker-color": "#5fa778",
-                "marker-name": "city",
+                "marker-color": "#66023c",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Abilene"
             },
             "type": "Feature"
@@ -469,9 +469,9 @@
             },
             "properties": {
                 "description": "Pop: 117796 Growth: 3.700000",
-                "marker-color": "#1b1035",
-                "marker-name": "city",
+                "marker-color": "#7f1734",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Beaumont"
             },
             "type": "Feature"
@@ -486,9 +486,9 @@
             },
             "properties": {
                 "description": "Pop: 110720 Growth: 22.300000",
-                "marker-color": "#e2725b",
-                "marker-name": "city",
+                "marker-color": "#ffedbc",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Odessa"
             },
             "type": "Feature"
@@ -503,9 +503,9 @@
             },
             "properties": {
                 "description": "Pop: 109821 Growth: 81.000000",
-                "marker-color": "#859faf",
-                "marker-name": "city",
+                "marker-color": "#c30b4e",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Round Rock"
             },
             "type": "Feature"
@@ -520,9 +520,9 @@
             },
             "properties": {
                 "description": "Pop: 104898 Growth: 0.700000",
-                "marker-color": "#33cc99",
-                "marker-name": "city",
+                "marker-color": "#00308f",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Wichita Falls"
             },
             "type": "Feature"
@@ -537,9 +537,9 @@
             },
             "properties": {
                 "description": "Pop: 104475 Growth: 13.200000",
-                "marker-color": "#341515",
-                "marker-name": "city",
+                "marker-color": "#f56991",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Richardson"
             },
             "type": "Feature"
@@ -554,9 +554,9 @@
             },
             "properties": {
                 "description": "Pop: 101074 Growth: 28.900000",
-                "marker-color": "#ffb077",
-                "marker-name": "city",
+                "marker-color": "#de6360",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Lewisville"
             },
             "type": "Feature"
@@ -571,9 +571,9 @@
             },
             "properties": {
                 "description": "Pop: 100223 Growth: 18.600000",
-                "marker-color": "#fafad2",
-                "marker-name": "city",
+                "marker-color": "#98811b",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Tyler"
             },
             "type": "Feature"
@@ -588,9 +588,9 @@
             },
             "properties": {
                 "description": "Pop: 100065 Growth: 117.200000",
-                "marker-color": "#f984ef",
-                "marker-name": "city",
+                "marker-color": "#695f62",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Pearland"
             },
             "type": "Feature"
@@ -605,9 +605,9 @@
             },
             "properties": {
                 "description": "Pop: 100050 Growth: 45.200000",
-                "marker-color": "#c1b7a4",
-                "marker-name": "city",
+                "marker-color": "#81422c",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "College Station"
             },
             "type": "Feature"
@@ -622,9 +622,9 @@
             },
             "properties": {
                 "description": "Pop: 97492 Growth: 10.200000",
-                "marker-color": "#c46210",
-                "marker-name": "city",
+                "marker-color": "#fcffe7",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "San Angelo"
             },
             "type": "Feature"
@@ -639,9 +639,9 @@
             },
             "properties": {
                 "description": "Pop: 92020 Growth: 104.000000",
-                "marker-color": "#ab92b3",
-                "marker-name": "city",
+                "marker-color": "#1b1b1b",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Allen"
             },
             "type": "Feature"
@@ -656,9 +656,9 @@
             },
             "properties": {
                 "description": "Pop: 90983 Growth: 98.300000",
-                "marker-color": "#b57edc",
-                "marker-name": "city",
+                "marker-color": "#979aaa",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "League City"
             },
             "type": "Feature"
@@ -673,9 +673,9 @@
             },
             "properties": {
                 "description": "Pop: 83860 Growth: 29.100000",
-                "marker-color": "#123524",
-                "marker-name": "city",
+                "marker-color": "#cc8899",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Sugar Land"
             },
             "type": "Feature"
@@ -690,9 +690,9 @@
             },
             "properties": {
                 "description": "Pop: 81443 Growth: 11.600000",
-                "marker-color": "#4d282e",
-                "marker-name": "city",
+                "marker-color": "#5c5d75",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Longview"
             },
             "type": "Feature"
@@ -707,9 +707,9 @@
             },
             "properties": {
                 "description": "Pop: 81050 Growth: 74.500000",
-                "marker-color": "#c04737",
-                "marker-name": "city",
+                "marker-color": "#1b1b1b",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Mission"
             },
             "type": "Feature"
@@ -724,9 +724,9 @@
             },
             "properties": {
                 "description": "Pop: 80836 Growth: 65.100000",
-                "marker-color": "#eca927",
-                "marker-name": "city",
+                "marker-color": "#319177",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Edinburg"
             },
             "type": "Feature"
@@ -741,9 +741,9 @@
             },
             "properties": {
                 "description": "Pop: 78709 Growth: 19.300000",
-                "marker-color": "#063537",
-                "marker-name": "city",
+                "marker-color": "#c0d3b9",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Bryan"
             },
             "type": "Feature"
@@ -758,9 +758,9 @@
             },
             "properties": {
                 "description": "Pop: 75418 Growth: 13.100000",
-                "marker-color": "#8878c3",
-                "marker-name": "city",
+                "marker-color": "#f28500",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Baytown"
             },
             "type": "Feature"
@@ -775,9 +775,9 @@
             },
             "properties": {
                 "description": "Pop: 73790 Growth: 55.700000",
-                "marker-color": "#c9b35b",
-                "marker-name": "city",
+                "marker-color": "#56b4be",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Pharr"
             },
             "type": "Feature"
@@ -792,9 +792,9 @@
             },
             "properties": {
                 "description": "Pop: 70190 Growth: 27.100000",
-                "marker-color": "#00581a",
-                "marker-name": "city",
+                "marker-color": "#692d54",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Temple"
             },
             "type": "Feature"
@@ -809,9 +809,9 @@
             },
             "properties": {
                 "description": "Pop: 70185 Growth: 31.100000",
-                "marker-color": "#1e385b",
-                "marker-name": "city",
+                "marker-color": "#004225",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Missouri City"
             },
             "type": "Feature"
@@ -826,9 +826,9 @@
             },
             "properties": {
                 "description": "Pop: 68609 Growth: 32.500000",
-                "marker-color": "#e3256b",
-                "marker-name": "city",
+                "marker-color": "#fe2e2e",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Flower Mound"
             },
             "type": "Feature"
@@ -843,9 +843,9 @@
             },
             "properties": {
                 "description": "Pop: 67317 Growth: 20.200000",
-                "marker-color": "#714693",
-                "marker-name": "city",
+                "marker-color": "#0e7c61",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "North Richland Hills"
             },
             "type": "Feature"
@@ -860,9 +860,9 @@
             },
             "properties": {
                 "description": "Pop: 65665 Growth: 11.600000",
-                "marker-color": "#cb6d51",
-                "marker-name": "city",
+                "marker-color": "#092256",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Harlingen"
             },
             "type": "Feature"
@@ -877,9 +877,9 @@
             },
             "properties": {
                 "description": "Pop: 65098 Growth: 7.500000",
-                "marker-color": "#ffe772",
-                "marker-name": "city",
+                "marker-color": "#967bb6",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Victoria"
             },
             "type": "Feature"
@@ -894,9 +894,9 @@
             },
             "properties": {
                 "description": "Pop: 63279 Growth: 64.000000",
-                "marker-color": "#0077be",
-                "marker-name": "city",
+                "marker-color": "#4aff00",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "New Braunfels"
             },
             "type": "Feature"
@@ -911,9 +911,9 @@
             },
             "properties": {
                 "description": "Pop: 63032 Growth: 61.900000",
-                "marker-color": "#1f262a",
-                "marker-name": "city",
+                "marker-color": "#71291d",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Conroe"
             },
             "type": "Feature"
@@ -928,9 +928,9 @@
             },
             "properties": {
                 "description": "Pop: 61238 Growth: 134.300000",
-                "marker-color": "#0066ff",
-                "marker-name": "city",
+                "marker-color": "#6b2a14",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Cedar Park"
             },
             "type": "Feature"
@@ -945,9 +945,9 @@
             },
             "properties": {
                 "description": "Pop: 60872 Growth: 114.200000",
-                "marker-color": "#4aff00",
-                "marker-name": "city",
+                "marker-color": "#5590d9",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Mansfield"
             },
             "type": "Feature"
@@ -962,9 +962,9 @@
             },
             "properties": {
                 "description": "Pop: 58043 Growth: 28.600000",
-                "marker-color": "#960018",
-                "marker-name": "city",
+                "marker-color": "#0073cf",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Rowlett"
             },
             "type": "Feature"
@@ -979,9 +979,9 @@
             },
             "properties": {
                 "description": "Pop: 54898 Growth: 91.900000",
-                "marker-color": "#0bda51",
-                "marker-name": "city",
+                "marker-color": "#08e8de",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Georgetown"
             },
             "type": "Feature"
@@ -996,9 +996,9 @@
             },
             "properties": {
                 "description": "Pop: 54135 Growth: -6.000000",
-                "marker-color": "#123447",
-                "marker-name": "city",
+                "marker-color": "#a4a49d",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Port Arthur"
             },
             "type": "Feature"
@@ -1013,9 +1013,9 @@
             },
             "properties": {
                 "description": "Pop: 54076 Growth: 48.500000",
-                "marker-color": "#363534",
-                "marker-name": "city",
+                "marker-color": "#ffffb4",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "San Marcos"
             },
             "type": "Feature"
@@ -1030,9 +1030,9 @@
             },
             "properties": {
                 "description": "Pop: 53752 Growth: 123.400000",
-                "marker-color": "#af8751",
-                "marker-name": "city",
+                "marker-color": "#6e0902",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Pflugerville"
             },
             "type": "Feature"
@@ -1047,9 +1047,9 @@
             },
             "properties": {
                 "description": "Pop: 53224 Growth: 15.100000",
-                "marker-color": "#3c493a",
-                "marker-name": "city",
+                "marker-color": "#6e7783",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Euless"
             },
             "type": "Feature"
@@ -1064,9 +1064,9 @@
             },
             "properties": {
                 "description": "Pop: 51483 Growth: 36.000000",
-                "marker-color": "#d2f6de",
-                "marker-name": "city",
+                "marker-color": "#cd5b45",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "DeSoto"
             },
             "type": "Feature"
@@ -1081,9 +1081,9 @@
             },
             "properties": {
                 "description": "Pop: 50195 Growth: 17.600000",
-                "marker-color": "#9932cc",
-                "marker-name": "city",
+                "marker-color": "#e4cfde",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Grapevine"
             },
             "type": "Feature"
@@ -1098,9 +1098,9 @@
             },
             "properties": {
                 "description": "Pop: 48733 Growth: -15.200000",
-                "marker-color": "#c6a84b",
-                "marker-name": "city",
+                "marker-color": "#414c7d",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Galveston"
             },
             "type": "Feature"
@@ -1115,9 +1115,9 @@
             },
             "properties": {
                 "description": "Pop: 48592 Growth: 2.900000",
-                "marker-color": "#64ccdb",
-                "marker-name": "city",
+                "marker-color": "#a67b5b",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Bedford"
             },
             "type": "Feature"
@@ -1132,9 +1132,9 @@
             },
             "properties": {
                 "description": "Pop: 46663 Growth: 42.400000",
-                "marker-color": "#73c2fb",
-                "marker-name": "city",
+                "marker-color": "#efdecd",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Cedar Hill"
             },
             "type": "Feature"
@@ -1149,9 +1149,9 @@
             },
             "properties": {
                 "description": "Pop: 46081 Growth: 10.300000",
-                "marker-color": "#110c6c",
-                "marker-name": "city",
+                "marker-color": "#ff0038",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Texas City"
             },
             "type": "Feature"
@@ -1166,9 +1166,9 @@
             },
             "properties": {
                 "description": "Pop: 44575 Growth: 185.200000",
-                "marker-color": "#6ca0dc",
-                "marker-name": "city",
+                "marker-color": "#7b9f80",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Wylie"
             },
             "type": "Feature"
@@ -1183,9 +1183,9 @@
             },
             "properties": {
                 "description": "Pop: 43580 Growth: 11.400000",
-                "marker-color": "#8a496b",
-                "marker-name": "city",
+                "marker-color": "#e97451",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Haltom City"
             },
             "type": "Feature"
@@ -1200,9 +1200,9 @@
             },
             "properties": {
                 "description": "Pop: 42907 Growth: 53.300000",
-                "marker-color": "#022d15",
-                "marker-name": "city",
+                "marker-color": "#ff85cf",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Keller"
             },
             "type": "Feature"
@@ -1217,9 +1217,9 @@
             },
             "properties": {
                 "description": "Pop: 40922 Growth: 117.200000",
-                "marker-color": "#462425",
-                "marker-name": "city",
+                "marker-color": "#002e63",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Rockwall"
             },
             "type": "Feature"
@@ -1234,9 +1234,9 @@
             },
             "properties": {
                 "description": "Pop: 40714 Growth: 85.300000",
-                "marker-color": "#af4035",
-                "marker-name": "city",
+                "marker-color": "#fffc99",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Burleson"
             },
             "type": "Feature"
@@ -1251,9 +1251,9 @@
             },
             "properties": {
                 "description": "Pop: 40342 Growth: 10.300000",
-                "marker-color": "#626649",
-                "marker-name": "city",
+                "marker-color": "#3e2c1c",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Coppell"
             },
             "type": "Feature"
@@ -1268,9 +1268,9 @@
             },
             "properties": {
                 "description": "Pop: 39795 Growth: 13.200000",
-                "marker-color": "#9eb1cd",
-                "marker-name": "city",
+                "marker-color": "#b7f0be",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Huntsville"
             },
             "type": "Feature"
@@ -1285,9 +1285,9 @@
             },
             "properties": {
                 "description": "Pop: 39605 Growth: 9.700000",
-                "marker-color": "#fff9e2",
-                "marker-name": "city",
+                "marker-color": "#ff9999",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Duncanville"
             },
             "type": "Feature"
@@ -1302,9 +1302,9 @@
             },
             "properties": {
                 "description": "Pop: 39458 Growth: 45.700000",
-                "marker-color": "#0076a3",
-                "marker-name": "city",
+                "marker-color": "#b16d52",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "The Colony"
             },
             "type": "Feature"
@@ -1319,9 +1319,9 @@
             },
             "properties": {
                 "description": "Pop: 39296 Growth: 11.600000",
-                "marker-color": "#7b7c94",
-                "marker-name": "city",
+                "marker-color": "#f70d1a",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Sherman"
             },
             "type": "Feature"
@@ -1336,9 +1336,9 @@
             },
             "properties": {
                 "description": "Pop: 38448 Growth: 5.800000",
-                "marker-color": "#fd9fa2",
-                "marker-name": "city",
+                "marker-color": "#965a3e",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Hurst"
             },
             "type": "Feature"
@@ -1353,9 +1353,9 @@
             },
             "properties": {
                 "description": "Pop: 38071 Growth: 46.400000",
-                "marker-color": "#9370db",
-                "marker-name": "city",
+                "marker-color": "#262335",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Lancaster"
             },
             "type": "Feature"
@@ -1370,9 +1370,9 @@
             },
             "properties": {
                 "description": "Pop: 37587 Growth: 28.600000",
-                "marker-color": "#c1b7a4",
-                "marker-name": "city",
+                "marker-color": "#f77fbe",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Friendswood"
             },
             "type": "Feature"
@@ -1387,9 +1387,9 @@
             },
             "properties": {
                 "description": "Pop: 37442 Growth: 7.400000",
-                "marker-color": "#fffee1",
-                "marker-name": "city",
+                "marker-color": "#6b4e31",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Texarkana"
             },
             "type": "Feature"
@@ -1404,9 +1404,9 @@
             },
             "properties": {
                 "description": "Pop: 37093 Growth: 28.800000",
-                "marker-color": "#31728d",
-                "marker-name": "city",
+                "marker-color": "#8b8680",
                 "marker-size": "small",
+                "marker-symbol": "city",
                 "title": "Weslaco"
             },
             "type": "Feature"
