@@ -1,0 +1,152 @@
+{
+    "crs": {
+        "properties": {
+            "name": "EPSG:3857"
+        },
+        "type": "name"
+    },
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.4933873,
+                    33.9137085
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "marker-color": "#00FF00",
+                "name": "Wichita Falls"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.7969878999,
+                    32.7766642
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "marker-color": "#006a4e",
+                "name": "Dallas"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.4394777,
+                    35.2225668
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "marker-color": "#e8ccd7",
+                "name": "Dallas"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.4933873,
+                        33.9137085
+                    ],
+                    [
+                        -96.7969878999,
+                        32.7766642
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "name": "Wichita Falls to Dallas",
+                "stroke": "#aec6cf"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.7969878999,
+                        32.7766642
+                    ],
+                    [
+                        -97.4394777,
+                        35.2225668
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "name": "Dallas to Norman",
+                "stroke": "#FF0000",
+                "stroke-opacity": "0.8",
+                "stroke-width": "3"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.4394777,
+                        35.2225668
+                    ],
+                    [
+                        -98.4933873,
+                        33.9137085
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "name": "Dallas to Norman",
+                "stroke": "#e9d75a",
+                "stroke-opacity": "0.8",
+                "stroke-width": "4"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            -98.4933873,
+                            33.9137085
+                        ],
+                        [
+                            -96.7969878999,
+                            32.7766642
+                        ],
+                        [
+                            -97.4394777,
+                            35.2225668
+                        ],
+                        [
+                            -98.4933873,
+                            33.9137085
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "properties": {
+                "fill": "#657220",
+                "fill-opacity": "0.5",
+                "name": "Home Town Area",
+                "stroke": "#88654e",
+                "stroke-opacity": "0.8",
+                "stroke-width": "2"
+            },
+            "type": "Feature"
+        }
+    ],
+    "properties": null,
+    "type": "FeatureCollection"
+}

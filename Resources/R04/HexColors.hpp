@@ -4,6 +4,7 @@
 #include <string.h>
 #include <iostream>
 #include <fstream>
+#include <time.h>
 
 using namespace std;
 
@@ -31,6 +32,7 @@ private:
 public:
     HexColors(){
         LoadColors("color_names.json");
+        srand (time(NULL));
     }
 
     void LoadColors(string filename) {

@@ -1,0 +1,1423 @@
+{
+    "crs": {
+        "properties": {
+            "name": "EPSG:3857"
+        },
+        "type": "name"
+    },
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.3698028,
+                    29.7604267
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 2195914 Growth: 11.000000",
+                "marker-color": "#e9cecd",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Houston"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.49362819999999,
+                    29.4241219
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 1409019 Growth: 21.000000",
+                "marker-color": "#32127a",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "San Antonio"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.79698789999999,
+                    32.7766642
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 1257676 Growth: 5.600000",
+                "marker-color": "#7666c6",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Dallas"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.7430608,
+                    30.267153
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 885400 Growth: 31.700000",
+                "marker-color": "#edc9af",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Austin"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.3307658,
+                    32.7554883
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 792727 Growth: 45.100000",
+                "marker-color": "#cd7f32",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Fort Worth"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -106.4424559,
+                    31.7775757
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 674433 Growth: 19.400000",
+                "marker-color": "#fdf5e6",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "El Paso"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.10806559999999,
+                    32.735687
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 379577 Growth: 13.300000",
+                "marker-color": "#737829",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Arlington"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.39638099999999,
+                    27.8005828
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 316381 Growth: 14.100000",
+                "marker-color": "#140600",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Corpus Christi"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.6988856,
+                    33.0198431
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 274409 Growth: 22.400000",
+                "marker-color": "#76395d",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Plano"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -99.48032409999999,
+                    27.5305671
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 248142 Growth: 38.200000",
+                "marker-color": "#1974d2",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Laredo"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -101.8551665,
+                    33.5778631
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 239538 Growth: 19.600000",
+                "marker-color": "#02402c",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Lubbock"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.63888329999999,
+                    32.912624
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 234566 Growth: 8.500000",
+                "marker-color": "#a5cb0c",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Garland"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.9488945,
+                    32.8140177
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 228653 Growth: 19.100000",
+                "marker-color": "#7c881a",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Irving"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -101.8312969,
+                    35.2219971
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 196429 Growth: 12.800000",
+                "marker-color": "#b7c3d0",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Amarillo"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.99778459999999,
+                    32.7459645
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 183372 Growth: 43.100000",
+                "marker-color": "#d1d2dd",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Grand Prairie"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.4974838,
+                    25.9017472
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 181860 Growth: 26.800000",
+                "marker-color": "#a6d608",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Brownsville"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.2091006,
+                    29.6910625
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 152735 Growth: 7.500000",
+                "marker-color": "#4d5d53",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Pasadena"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.6397822,
+                    33.1972465
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 148559 Growth: 165.300000",
+                "marker-color": "#ab4b52",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "McKinney"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.5991593,
+                    32.76679550000001
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 143484 Growth: 14.700000",
+                "marker-color": "#9370db",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Mesquite"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.72779589999999,
+                    31.1171194
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 137147 Growth: 52.100000",
+                "marker-color": "#ed0a3f",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Killeen"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.82361159999999,
+                    33.1506744
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 136791 Growth: 287.700000",
+                "marker-color": "#ba7f03",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Frisco"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.23001239999999,
+                    26.2034071
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 136639 Growth: 27.600000",
+                "marker-color": "#9efd38",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "McAllen"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.1466695,
+                    31.549333
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 129030 Growth: 12.500000",
+                "marker-color": "#718080",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Waco"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.8899636,
+                    32.9756415
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 126700 Growth: 14.900000",
+                "marker-color": "#922724",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Carrollton"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -102.0779146,
+                    31.9973456
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 123933 Growth: 30.400000",
+                "marker-color": "#d2691e",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Midland"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.13306829999999,
+                    33.2148412
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 123099 Growth: 47.100000",
+                "marker-color": "#9a3820",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Denton"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -99.73314390000002,
+                    32.4487364
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 120099 Growth: 3.600000",
+                "marker-color": "#3eb489",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Abilene"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.1265562,
+                    30.080174
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 117796 Growth: 3.700000",
+                "marker-color": "#c72c48",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Beaumont"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -102.3676431,
+                    31.8456816
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 110720 Growth: 22.300000",
+                "marker-color": "#1e1609",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Odessa"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.678896,
+                    30.5082551
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 109821 Growth: 81.000000",
+                "marker-color": "#c4c3d0",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Round Rock"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.4933873,
+                    33.9137085
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 104898 Growth: 0.700000",
+                "marker-color": "#c9b35b",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Wichita Falls"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.7298519,
+                    32.9483335
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 104475 Growth: 13.200000",
+                "marker-color": "#cebaba",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Richardson"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.994174,
+                    33.046233
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 101074 Growth: 28.900000",
+                "marker-color": "#00827f",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Lewisville"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.30106239999999,
+                    32.3512601
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 100223 Growth: 18.600000",
+                "marker-color": "#c8e3d7",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Tyler"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.2860474,
+                    29.5635666
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 100065 Growth: 117.200000",
+                "marker-color": "#6b8ba2",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Pearland"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.3344068,
+                    30.627977
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 100050 Growth: 45.200000",
+                "marker-color": "#ff3800",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "College Station"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -100.4370375,
+                    31.4637723
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 97492 Growth: 10.200000",
+                "marker-color": "#b0bf1a",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "San Angelo"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.67055030000002,
+                    33.1031744
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 92020 Growth: 104.000000",
+                "marker-color": "#6a442e",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Allen"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.0949303,
+                    29.5074538
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 90983 Growth: 98.300000",
+                "marker-color": "#e8f5f2",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "League City"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.6349463,
+                    29.6196787
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 83860 Growth: 29.100000",
+                "marker-color": "#182d09",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Sugar Land"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.74048909999999,
+                    32.5007037
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 81443 Growth: 11.600000",
+                "marker-color": "#779e86",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Longview"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.32529319999999,
+                    26.2159066
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 81050 Growth: 74.500000",
+                "marker-color": "#858470",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Mission"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.1633432,
+                    26.3017374
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 80836 Growth: 65.100000",
+                "marker-color": "#ff6d3a",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Edinburg"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.3699632,
+                    30.6743643
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 78709 Growth: 19.300000",
+                "marker-color": "#e1a95f",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Bryan"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.97742740000001,
+                    29.7355047
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 75418 Growth: 13.100000",
+                "marker-color": "#391285",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Baytown"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.1836216,
+                    26.1947962
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 73790 Growth: 55.700000",
+                "marker-color": "#fef7de",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Pharr"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.342782,
+                    31.0982344
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 70190 Growth: 27.100000",
+                "marker-color": "#ffddcd",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Temple"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.5377215,
+                    29.6185669
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 70185 Growth: 31.100000",
+                "marker-color": "#009f6b",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Missouri City"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.0969552,
+                    33.0145673
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 68609 Growth: 32.500000",
+                "marker-color": "#f5edef",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Flower Mound"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.2289029,
+                    32.8342952
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 67317 Growth: 20.200000",
+                "marker-color": "#ce4676",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "North Richland Hills"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.69610259999999,
+                    26.1906306
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 65665 Growth: 11.600000",
+                "marker-color": "#738276",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Harlingen"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.0035982,
+                    28.8052674
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 65098 Growth: 7.500000",
+                "marker-color": "#ffeac8",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Victoria"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.1244531,
+                    29.7030024
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 63279 Growth: 64.000000",
+                "marker-color": "#decbc6",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "New Braunfels"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.45605119999999,
+                    30.3118769
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 63032 Growth: 61.900000",
+                "marker-color": "#4d3d14",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Conroe"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.8202888,
+                    30.505198
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 61238 Growth: 134.300000",
+                "marker-color": "#b69d98",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Cedar Park"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.1416768,
+                    32.5631924
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 60872 Growth: 114.200000",
+                "marker-color": "#00563b",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Mansfield"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.56388,
+                    32.9029017
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 58043 Growth: 28.600000",
+                "marker-color": "#b1610b",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Rowlett"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.6779842,
+                    30.6332618
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 54898 Growth: 91.900000",
+                "marker-color": "#03163c",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Georgetown"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.93994699999999,
+                    29.8849504
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 54135 Growth: -6.000000",
+                "marker-color": "#67032d",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Port Arthur"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.9413941,
+                    29.8832749
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 54076 Growth: 48.500000",
+                "marker-color": "#024e46",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "San Marcos"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.62000429999999,
+                    30.4393696
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 53752 Growth: 123.400000",
+                "marker-color": "#e8f2eb",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Pflugerville"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.08195409999999,
+                    32.8370727
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 53224 Growth: 15.100000",
+                "marker-color": "#c0362c",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Euless"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.8570738,
+                    32.5896998
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 51483 Growth: 36.000000",
+                "marker-color": "#646463",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "DeSoto"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.0780654,
+                    32.9342919
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 50195 Growth: 17.600000",
+                "marker-color": "#1b4d3e",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Grapevine"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.7976958,
+                    29.3013479
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 48733 Growth: -15.200000",
+                "marker-color": "#fd3f92",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Galveston"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.1430671,
+                    32.844017
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 48592 Growth: 2.900000",
+                "marker-color": "#062a78",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Bedford"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.9561152,
+                    32.5884689
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 46663 Growth: 42.400000",
+                "marker-color": "#1fc2c2",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Cedar Hill"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.9027002,
+                    29.383845
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 46081 Growth: 10.300000",
+                "marker-color": "#ffab81",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Texas City"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.5388789,
+                    33.0151201
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 44575 Growth: 185.200000",
+                "marker-color": "#191970",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Wylie"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.26918169999999,
+                    32.7995738
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 43580 Growth: 11.400000",
+                "marker-color": "#f4bbff",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Haltom City"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.229298,
+                    32.9341893
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 42907 Growth: 53.300000",
+                "marker-color": "#a1adb5",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Keller"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.4597089,
+                    32.93123360000001
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 40922 Growth: 117.200000",
+                "marker-color": "#d3cbba",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Rockwall"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.3208492,
+                    32.5420821
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 40714 Growth: 85.300000",
+                "marker-color": "#26283b",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Burleson"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.01500779999999,
+                    32.9545687
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 40342 Growth: 10.300000",
+                "marker-color": "#f08080",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Coppell"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.55077709999999,
+                    30.7235263
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 39795 Growth: 13.200000",
+                "marker-color": "#cc9900",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Huntsville"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.9083366,
+                    32.6518004
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 39605 Growth: 9.700000",
+                "marker-color": "#3a686c",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Duncanville"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.89283089999999,
+                    33.0806083
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 39458 Growth: 45.700000",
+                "marker-color": "#ac9e22",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "The Colony"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.6088805,
+                    33.6356618
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 39296 Growth: 11.600000",
+                "marker-color": "#dc4333",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Sherman"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.1705678,
+                    32.8234621
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 38448 Growth: 5.800000",
+                "marker-color": "#716e10",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Hurst"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.7561082,
+                    32.5920798
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 38071 Growth: 46.400000",
+                "marker-color": "#fff1ee",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Lancaster"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.2010447,
+                    29.5293998
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 37587 Growth: 28.600000",
+                "marker-color": "#b7a214",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Friendswood"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.04768820000001,
+                    33.425125
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 37442 Growth: 7.400000",
+                "marker-color": "#fafad2",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Texarkana"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.9908366,
+                    26.1595194
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "Pop: 37093 Growth: 28.800000",
+                "marker-color": "#964b00",
+                "marker-name": "city",
+                "marker-size": "small",
+                "title": "Weslaco"
+            },
+            "type": "Feature"
+        }
+    ],
+    "properties": null,
+    "type": "FeatureCollection"
+}

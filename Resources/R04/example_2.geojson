@@ -1,0 +1,118 @@
+{
+    "crs": {
+        "properties": {
+            "name": "EPSG:3857"
+        },
+        "type": "name"
+    },
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -98.4933873,
+                    33.9137085
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "marker-color": "#00FF00",
+                "name": "Wichita Falls"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.7969878999,
+                    32.7766642
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "marker-color": "#d39bcb",
+                "name": "Dallas"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.4394777,
+                    35.2225668
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "marker-color": "#036a6e",
+                "name": "Dallas"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.4933873,
+                        33.9137085
+                    ],
+                    [
+                        -96.7969878999,
+                        32.7766642
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "name": "Wichita Falls to Dallas",
+                "stroke": "#ff3800"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.7969878999,
+                        32.7766642
+                    ],
+                    [
+                        -97.4394777,
+                        35.2225668
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "name": "Dallas to Norman",
+                "stroke": "#FF0000",
+                "stroke-opacity": "0.8",
+                "stroke-width": "3"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.4394777,
+                        35.2225668
+                    ],
+                    [
+                        -98.4933873,
+                        33.9137085
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "name": "Dallas to Norman",
+                "stroke": "#2f6168",
+                "stroke-opacity": "0.8",
+                "stroke-width": "4"
+            },
+            "type": "Feature"
+        }
+    ],
+    "properties": null,
+    "type": "FeatureCollection"
+}

@@ -4,6 +4,81 @@
 #include<iomanip>
 #include"json.hpp"
 
+/**
+"properties": {
+        // OPTIONAL: default ""
+        // A title to show when this item is clicked or
+        // hovered over
+        "title": "A title",
+
+        // OPTIONAL: default ""
+        // A description to show when this item is clicked or
+        // hovered over
+        "description": "A description",
+
+        // OPTIONAL: default "medium"
+        // specify the size of the marker. sizes
+        // can be different pixel sizes in different
+        // implementations
+        // Value must be one of
+        // "small"
+        // "medium"
+        // "large"
+        "marker-size": "medium",
+
+        // OPTIONAL: default ""
+        // a symbol to position in the center of this icon
+        // if not provided or "", no symbol is overlaid
+        // and only the marker is shown
+        // Allowed values include
+        // - Icon ID from the Maki project at http://mapbox.com/maki/
+        // - An integer 0 through 9
+        // - A lowercase character "a" through "z"
+        "marker-symbol": "bus",
+
+        // OPTIONAL: default "7e7e7e"
+        // the marker's color
+        //
+        // value must follow COLOR RULES
+        "marker-color": "#fff",
+
+        // OPTIONAL: default "555555"
+        // the color of a line as part of a polygon, polyline, or
+        // multigeometry
+        //
+        // value must follow COLOR RULES
+        "stroke": "#555555",
+
+        // OPTIONAL: default 1.0
+        // the opacity of the line component of a polygon, polyline, or
+        // multigeometry
+        //
+        // value must be a floating point number greater than or equal to
+        // zero and less or equal to than one
+        "stroke-opacity": 1.0,
+
+        // OPTIONAL: default 2
+        // the width of the line component of a polygon, polyline, or
+        // multigeometry
+        //
+        // value must be a floating point number greater than or equal to 0
+        "stroke-width": 2,
+
+        // OPTIONAL: default "555555"
+        // the color of the interior of a polygon
+        //
+        // value must follow COLOR RULES
+        "fill": "#555555",
+
+        // OPTIONAL: default 0.6
+        // the opacity of the interior of a polygon. implementations
+        // may choose to set this to 0 for line features.
+        //
+        // value must be a floating point number greater than or equal to
+        // zero and less or equal to than one
+        "fill-opacity": 0.5
+    }
+*/
 
 using namespace std;
 
@@ -46,6 +121,27 @@ private:
 
         // push our new feature onto our geojson features array
         Collection["features"].push_back(feature);
+    }
+
+    void __AddPolygon(json polygon){
+        // create a new feature linestring
+        json feature = AddFeature("Polygon");
+
+        // temp property to add 
+        feature["properties"] = {{"name","polygon"}};
+
+        feature["geometry"]["coordinates"] = json::array();
+
+        feature["geometry"]["coordinates"].push_back(polygon);
+
+        // push our new feature onto our geojson features array
+        Collection["features"].push_back(feature);
+    }
+
+    void __AddPolygon(int id, json polygon){
+
+        // add to a feature 
+        Collection["features"][id].push_back(polygon);
     }
 
 public:
@@ -149,8 +245,13 @@ public:
         return Collection["features"].size()-1;
     }
 
-    void AddPolygon(){
-        
+    int AddPolygon(json polygon,int id=-1){
+        if(id > 0){
+            __AddPolygon(id, polygon);
+        }else{
+            __AddPolygon(polygon);
+        }
+        return Collection["features"].size()-1; 
     }
 
     /**

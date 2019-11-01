@@ -58,8 +58,8 @@ int main(int argc, char **argv) {
     // load all vertices (cities) into graph
     for (int i = 0; i < NumCities; i++) {
         G.AddVertex(Cities[i]);
-        int markerID = geoJsonCities.AddGeoPoint(Cities[i]->lat,Cities[i]->lon);
-        geoJsonCities.AddProperties(markerID,{{"name",Cities[i]->name},{"marker-color","#ff00ff"}});
+        int markerID = geoJsonCities.AddGeoPoint(Cities[i]->lon,Cities[i]->lat);
+        geoJsonCities.AddProperties(markerID,{{"name",Cities[i]->name},{"marker-color",Colors.GetRandomColor()}});
     }
 
     geoJsonCities.PrintJson("pretty99.json");
@@ -69,7 +69,6 @@ int main(int argc, char **argv) {
         for (int j = 0; j < NumCities; j++) {
             if(i != j){
                 distance = Cities[i]->Distance(Cities[j]->lat, Cities[j]->lon);
-                edge = new Edge(Cities[i]->id, Cities[j]->id, distance);
                 edge = new Edge(Cities[j]->id, Cities[i]->id, distance);
                 H.Insert(edge);
             }
@@ -94,57 +93,80 @@ int main(int argc, char **argv) {
 
     json linearray = json::array();
 
+    GeoJson GJ4;
     int cutoff = 0;
+
+    City* temp1 = path.front();
+    path.pop();
+
+    string color = Colors.GetRandomColor();
+
     while(path.size() > 0){
-        City* temp = path.front();
+        City* temp2 = path.front();
         path.pop();
-        path2.push_back(pair<double,double>(temp->lon,temp->lat));
-        cutoff++;
-        if(cutoff > 10){
-            break;
+
+        if(temp2->lat == 0 && temp2->lon == 0){
+            color = Colors.GetRandomColor();
+            temp1 = path.front();
+            path.pop();
+            temp2 = path.front();
+            path.pop();
         }
+
+        int id = GJ4.AddLineString(json {{temp1->lon,temp1->lat},{temp2->lon,temp2->lat}});
+        GJ4.AddProperty(id,"stroke",color);
+        GJ4.AddProperty(id,"stroke-width","3");
+
+        temp1 = temp2;
+
+        // cutoff++;
+        // if(cutoff > 100){
+        //     break;
+        // }
     }
 
-    
-    for(int j=0;j<300;j++){
-        path.pop();
-    }
-    GeoJson GJ;
+    GJ4.PrintJson("pretty55.json");
 
-    cutoff = 0;
-    while(path.size() > 0){
-        City* temp = path.front();
-        path.pop();
-        //linearray.push_back({});
-        int cid = GJ.AddGeoPoint(temp->lon,temp->lat);
-        GJ.AddProperty(cid,"marker-color",Colors.GetRandomColor());
+    // for(int j=0;j<300;j++){
+    //     path.pop();
+    // }
+
+    // GeoJson GJ;
+
+    // cutoff = 0;
+    // while(path.size() > 0){
+    //     City* temp = path.front();
+    //     path.pop();
+    //     //linearray.push_back({});
+    //     int cid = GJ.AddGeoPoint(temp->lon,temp->lat);
+    //     GJ.AddProperty(cid,"marker-color",Colors.GetRandomColor());
         
-        cutoff++;
-        if(cutoff > 10){
-            break;
-        }
-    }
+    //     cutoff++;
+    //     if(cutoff > 10){
+    //         break;
+    //     }
+    // }
     
 
     
-    int line1 = GJ.AddLineString(path2);
-    int line2 = GJ.AddLineString(linearray);
+    // int line1 = GJ.AddLineString(path2);
+    // int line2 = GJ.AddLineString(linearray);
 
-    json obj2 = json::object();
+    // json obj2 = json::object();
 
-    obj2["stroke"] = Colors.GetRandomColor();
-    obj2["stroke-width"] = "2";
-    obj2["stroke-opacity"] = "0.8";
+    // obj2["stroke"] = Colors.GetRandomColor();
+    // obj2["stroke-width"] = "2";
+    // obj2["stroke-opacity"] = "0.8";
 
-    GJ.AddProperty(line1,"stroke","#0000FF");
-    GJ.AddProperty(line1,"stroke-width","2");
-    GJ.AddProperty(line1,"stroke-opacity","0.8");
+    // GJ.AddProperty(line1,"stroke","#0000FF");
+    // GJ.AddProperty(line1,"stroke-width","2");
+    // GJ.AddProperty(line1,"stroke-opacity","0.8");
 
-    obj2["stroke"] = "#00FFFF";
+    // obj2["stroke"] = "#00FFFF";
 
-    GJ.AddProperties(line2,obj2);
+    // GJ.AddProperties(line2,obj2);
 
 
-    GJ.PrintJson("pretty5.json");
+    // GJ.PrintJson("pretty5.json");
 
 }
