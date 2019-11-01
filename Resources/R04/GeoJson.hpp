@@ -1,0 +1,214 @@
+#pragma once
+#include<iostream>
+#include<fstream>
+#include<iomanip>
+#include"json.hpp"
+
+
+using namespace std;
+
+using json = nlohmann::json;
+
+class GeoJson{
+private:
+    json Collection;    // represents a geojson collection
+    int FeatureId;      // unique id for each feature added (point , line , polygon)
+
+    /**
+     * AddFeature
+     * 
+     * Every "shape" in a geojson object is a "feature". A feature has "properties"
+     * that deal with naming items and styling them. It also has "geometry" which is
+     * the coordinates that are plotted on a map.
+     * 
+     */
+    json AddFeature(string feature_type){
+
+        json Feature;   // json object represents a "feature"
+
+        Feature["type"] = "Feature";                        
+        Feature["properties"] = {};
+        Feature["geometry"] = {};
+        Feature["geometry"]["type"] = feature_type;
+        Feature["geometry"]["coordinates"] = json::array();
+
+        return Feature;
+    }
+
+    void __AddLineString(json line){
+        // create a new feature linestring
+        json feature = AddFeature("LineString");
+
+        // temp property to add 
+        feature["properties"] = {{"name","line"}};
+
+        feature["geometry"]["coordinates"] = line;
+
+        // push our new feature onto our geojson features array
+        Collection["features"].push_back(feature);
+    }
+
+public:
+
+    /**
+     * GeoJson constructor
+     * 
+     * Creates a geojson object using this standard:
+     * https://tools.ietf.org/html/rfc7946
+     * 
+     * 
+     */
+    GeoJson(){
+
+        Collection = {};
+        Collection["type"]="FeatureCollection";
+        Collection["crs"]= {{"type", "name"},{"properties",{{"name","EPSG:3857"}}}};
+        Collection["features"]= json::array();
+        Collection["properties"] = {};
+        FeatureId = 0;
+    }
+
+    /**
+     * AddLineString
+     * 
+     * Description:
+     * 
+     *      linestring = [ [lon1,lat1], [lon2,lat2], ... ,[lonN,latN] ]
+     *      In this case our linestring is a json array of [lon,lats]
+     * 
+     * Params:
+     *      json::array()   : pair of doubles
+     * 
+     * Returns:
+     * 
+     *      return [int] : The index of this feature in the array of features (like an ID)
+     */
+    int AddLineString(json line){
+
+        // Call the private AddLineString method right away 
+        // since this overloaded method receives a json array already
+        __AddLineString(line);
+        
+        // return the array index for this feature
+        return Collection["features"].size()-1; 
+    }
+
+    /**
+     * AddLineString
+     * 
+     * Description:
+     * 
+     *      linestring = [ [lon1,lat1], [lon2,lat2], ... ,[lonN,latN] ]
+     *      In this case our linestring is an stl vector of pairs of doubles
+     * 
+     * Params:
+     *      std::vector<std::pair<double, double>>  : vector of pairs of doubles
+     * 
+     * Returns:
+     * 
+     *      return [int] : The index of this feature in the array of features (like an ID)
+     */
+    int AddLineString(std::vector<std::pair<double, double>> vline){
+  
+        json line = json::array();
+
+        // loop through our array of pairs of doubles
+        // in this case ptr->first = longitude 
+        // and ptr->second = latitude
+        // turning this vector into a json::array()
+        for (auto ptr = vline.begin(); ptr != vline.end(); ++ptr){
+            line.push_back({ptr->first,ptr->second});
+        }
+
+        // Call private method with our new json array of lon lats
+        __AddLineString(line);
+        
+        // return the array index for this feature
+        return Collection["features"].size()-1; 
+    }            
+
+    /**
+     * AddGeoPoint
+     * 
+     * Params:
+     * 
+     *      double lon   : longitude
+     *      double lat   : latitude
+     * 
+     * Returns:
+     *      int : feature ID. FeatureID needed to add properties later where
+     *            properties are things like color etc.
+     */
+    int AddGeoPoint(double lon,double lat){
+        json feature = AddFeature("Point");
+
+        feature["geometry"]["coordinates"].push_back(lon);
+        feature["geometry"]["coordinates"].push_back(lat);
+
+        Collection["features"].push_back(feature);
+        return Collection["features"].size()-1;
+    }
+
+    void AddPolygon(){
+        
+    }
+
+    /**
+     * AddProperty
+     * 
+     * Params:
+     * 
+     *      int    id    : the int ID of the feature you want to add properties to
+     *      string key   : the key portion
+     *      string value : the value portion 
+     * Example:
+     *      --------------------------------------------------------------------------
+     *             AddProperty(featureID,"name","New York");
+     *             AddProperty(featureID,"marker-color","#ff00ff");
+     * 
+     *      will add two key values: name=>New York and marker-color=>#ff00ff
+     * 
+     * Returns:
+     *      void
+     */
+    void AddProperty(int id,string key,string val){
+        Collection["features"][id]["properties"][key]=val;
+    }
+
+    /**
+     * AddProperties
+     * 
+     * Params:
+     * 
+     *      int  id  : the int ID of the feature you want to add properties to
+     *      json obj : a json object holding the properties key:value pairs
+     * Example:
+     *      --------------------------------------------------------------------------
+     *      AddProperties(featureID,{{"name","New York"},{"marker-color","#ff00ff"}});
+     * 
+     *              will add two key values: name=>New York and marker-color=>#ff00ff
+     * 
+     *      --------------------------------------------------------------------------
+     *      json obj = json::object();
+     *      obj["name"] = "New York";
+     *      obj["marker-color"] = "#ff00ff";
+     *      AddProperties(featureID,obj);
+     *      --------------------------------------------------------------------------
+     * 
+     * Returns:
+     *      void
+     */
+    void AddProperties(int id,json obj){
+        for (json::iterator it = obj.begin(); it != obj.end(); ++it) {
+            Collection["features"][id]["properties"][it.key()] = it.value();
+        }
+    }
+
+    void PrintJson(string filename){
+        ofstream fout(filename);
+        fout << std::setw(4) << Collection << std::endl;
+        cout << std::setw(4) << Collection << std::endl;
+    }
+
+
+};

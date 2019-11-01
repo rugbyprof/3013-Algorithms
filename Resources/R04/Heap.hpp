@@ -8,6 +8,7 @@
 // Description:
 //       Min or Max Heap implementation
 /////////////////////////////////////////////////////////////////////////////////
+#pragma once
 #include <iostream>
 #include <math.h>
 

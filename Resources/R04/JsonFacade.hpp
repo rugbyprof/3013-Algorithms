@@ -10,6 +10,7 @@
  * For our purposes it assumes an array of objects. I might expand on it later but doubt
  * it. If you are interested, learn how to use the original in many much more powerful ways.
  */
+#pragma once
 #include <iomanip>
 #include <fstream>
 #include <iostream>
@@ -28,11 +29,14 @@ private:
     int Index;
     string FileName;
 
+
 public:
     JsonFacade(string filename) {
+        
         FileName = filename;
 
         ifstream input(FileName);
+
         input >> Data;
         input.close();
 

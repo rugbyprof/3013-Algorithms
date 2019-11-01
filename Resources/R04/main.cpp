@@ -1,5 +1,6 @@
 #include "Graph.hpp"
 #include "Heap.hpp"
+#include "GeoJson.hpp"
 #include "JsonFacade.hpp"
 #include "json.hpp"
 #include <fstream>
@@ -7,6 +8,7 @@
 #include <map>
 #include <queue>
 #include <string.h>
+#include "HexColors.hpp"
 
 using namespace std;
 
@@ -24,8 +26,7 @@ int LoadCities(City **&Cities, string filename) {
         obj = J.getNext();
         //cout << obj["city"] << endl;
         Cities[i] = new City(obj, i);
-        if (Cities[i]->name == "Dallas")
-            cout << i << " " << Cities[i]->name << endl;
+
     }
     return size;
 }
@@ -36,9 +37,11 @@ int main(int argc, char **argv) {
     json obj;                        // json object
     City **Cities;                   // Array of city pointers
     Edge *edge;                      // edge pointer to push onto heap
-    string filename = "cities.json"; // our json city file
+    string filename = "cities_all.json"; // our json city file
     double distance = 0.0;           // distance var
     int NumCities = 0;               // city count
+
+    HexColors Colors;
 
     Heap<Edge> H(1000, false);
 
@@ -55,10 +58,11 @@ int main(int argc, char **argv) {
     // load all vertices (cities) into graph
     for (int i = 0; i < NumCities; i++) {
         G.AddVertex(Cities[i]);
-        geoJsonCities.AddGeoPoint(Cities[i]->lat,Cities[i]->lon,{{"name",Cities[i]->name}});
+        int markerID = geoJsonCities.AddGeoPoint(Cities[i]->lat,Cities[i]->lon);
+        geoJsonCities.AddProperties(markerID,{{"name",Cities[i]->name},{"marker-color","#ff00ff"}});
     }
 
-    geoJsonCities.PrintJson("pretty2.json");
+    geoJsonCities.PrintJson("pretty99.json");
 
     // Generate edges
     for (int i = 0; i < NumCities; i++) {
@@ -88,23 +92,59 @@ int main(int argc, char **argv) {
     queue<City*> path = G.BreadthFirst();
     G.buildGeoJson(path);
 
+    json linearray = json::array();
+
     int cutoff = 0;
     while(path.size() > 0){
         City* temp = path.front();
         path.pop();
-        path2.push_back(pair<double,double>(temp->lat,temp->lon));
+        path2.push_back(pair<double,double>(temp->lon,temp->lat));
         cutoff++;
         if(cutoff > 10){
             break;
         }
     }
 
+    
+    for(int j=0;j<300;j++){
+        path.pop();
+    }
     GeoJson GJ;
-    GJ.AddLineString(path2);
-    GJ.AddProperties(0,"stroke","#555555");
-    GJ.AddProperties(0,"stroke-width","2");
-    GJ.AddProperties(0,"stroke-opacity","0.6");
 
-    GJ.PrintJson("pretty3.json");
+    cutoff = 0;
+    while(path.size() > 0){
+        City* temp = path.front();
+        path.pop();
+        //linearray.push_back({});
+        int cid = GJ.AddGeoPoint(temp->lon,temp->lat);
+        GJ.AddProperty(cid,"marker-color",Colors.GetRandomColor());
+        
+        cutoff++;
+        if(cutoff > 10){
+            break;
+        }
+    }
+    
+
+    
+    int line1 = GJ.AddLineString(path2);
+    int line2 = GJ.AddLineString(linearray);
+
+    json obj2 = json::object();
+
+    obj2["stroke"] = Colors.GetRandomColor();
+    obj2["stroke-width"] = "2";
+    obj2["stroke-opacity"] = "0.8";
+
+    GJ.AddProperty(line1,"stroke","#0000FF");
+    GJ.AddProperty(line1,"stroke-width","2");
+    GJ.AddProperty(line1,"stroke-opacity","0.8");
+
+    obj2["stroke"] = "#00FFFF";
+
+    GJ.AddProperties(line2,obj2);
+
+
+    GJ.PrintJson("pretty5.json");
 
 }
