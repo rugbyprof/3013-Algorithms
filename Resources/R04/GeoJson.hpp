@@ -5,6 +5,7 @@
 #include"json.hpp"
 
 /**
+ * Thes are properties that geojson recognizes to "style" its elements
 "properties": {
         // OPTIONAL: default ""
         // A title to show when this item is clicked or
@@ -187,41 +188,7 @@ public:
         
         // return the array index for this feature
         return Collection["features"].size()-1; 
-    }
-
-    /**
-     * AddLineString
-     * 
-     * Description:
-     * 
-     *      linestring = [ [lon1,lat1], [lon2,lat2], ... ,[lonN,latN] ]
-     *      In this case our linestring is an stl vector of pairs of doubles
-     * 
-     * Params:
-     *      std::vector<std::pair<double, double>>  : vector of pairs of doubles
-     * 
-     * Returns:
-     * 
-     *      return [int] : The index of this feature in the array of features (like an ID)
-     */
-    int AddLineString(std::vector<std::pair<double, double>> vline){
-  
-        json line = json::array();
-
-        // loop through our array of pairs of doubles
-        // in this case ptr->first = longitude 
-        // and ptr->second = latitude
-        // turning this vector into a json::array()
-        for (auto ptr = vline.begin(); ptr != vline.end(); ++ptr){
-            line.push_back({ptr->first,ptr->second});
-        }
-
-        // Call private method with our new json array of lon lats
-        __AddLineString(line);
-        
-        // return the array index for this feature
-        return Collection["features"].size()-1; 
-    }            
+    }           
 
     /**
      * AddGeoPoint

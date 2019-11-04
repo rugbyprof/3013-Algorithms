@@ -10,7 +10,7 @@
             },
             "properties": {
                 "description": "Pop: 2195914 Growth: 11.000000",
-                "marker-color": "#bfc1c2",
+                "marker-color": "#ff5f00",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Houston"
@@ -27,7 +27,7 @@
             },
             "properties": {
                 "description": "Pop: 1409019 Growth: 21.000000",
-                "marker-color": "#314459",
+                "marker-color": "#fff6df",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "San Antonio"
@@ -44,7 +44,7 @@
             },
             "properties": {
                 "description": "Pop: 1257676 Growth: 5.600000",
-                "marker-color": "#7f00ff",
+                "marker-color": "#f2f2f2",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Dallas"
@@ -61,7 +61,7 @@
             },
             "properties": {
                 "description": "Pop: 885400 Growth: 31.700000",
-                "marker-color": "#90ee90",
+                "marker-color": "#bfff00",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Austin"
@@ -78,7 +78,7 @@
             },
             "properties": {
                 "description": "Pop: 792727 Growth: 45.100000",
-                "marker-color": "#314459",
+                "marker-color": "#a9c6c2",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Fort Worth"
@@ -95,7 +95,7 @@
             },
             "properties": {
                 "description": "Pop: 674433 Growth: 19.400000",
-                "marker-color": "#ba160c",
+                "marker-color": "#e5e5e5",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "El Paso"
@@ -112,7 +112,7 @@
             },
             "properties": {
                 "description": "Pop: 379577 Growth: 13.300000",
-                "marker-color": "#431560",
+                "marker-color": "#1f75fe",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Arlington"
@@ -129,7 +129,7 @@
             },
             "properties": {
                 "description": "Pop: 316381 Growth: 14.100000",
-                "marker-color": "#e6d7b9",
+                "marker-color": "#c0d3b9",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Corpus Christi"
@@ -146,7 +146,7 @@
             },
             "properties": {
                 "description": "Pop: 274409 Growth: 22.400000",
-                "marker-color": "#220878",
+                "marker-color": "#c45655",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Plano"
@@ -163,7 +163,7 @@
             },
             "properties": {
                 "description": "Pop: 248142 Growth: 38.200000",
-                "marker-color": "#301934",
+                "marker-color": "#ff33cc",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Laredo"
@@ -180,7 +180,7 @@
             },
             "properties": {
                 "description": "Pop: 239538 Growth: 19.600000",
-                "marker-color": "#ffdb00",
+                "marker-color": "#ffa500",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Lubbock"
@@ -197,7 +197,7 @@
             },
             "properties": {
                 "description": "Pop: 234566 Growth: 8.500000",
-                "marker-color": "#fdee00",
+                "marker-color": "#c74375",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Garland"
@@ -214,7 +214,7 @@
             },
             "properties": {
                 "description": "Pop: 228653 Growth: 19.100000",
-                "marker-color": "#a81c07",
+                "marker-color": "#ba93d8",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Irving"
@@ -231,7 +231,7 @@
             },
             "properties": {
                 "description": "Pop: 196429 Growth: 12.800000",
-                "marker-color": "#de5d83",
+                "marker-color": "#044022",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Amarillo"
@@ -248,7 +248,7 @@
             },
             "properties": {
                 "description": "Pop: 183372 Growth: 43.100000",
-                "marker-color": "#0067a5",
+                "marker-color": "#eeffe2",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Grand Prairie"
@@ -265,7 +265,7 @@
             },
             "properties": {
                 "description": "Pop: 181860 Growth: 26.800000",
-                "marker-color": "#105852",
+                "marker-color": "#007aa5",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Brownsville"
@@ -282,7 +282,7 @@
             },
             "properties": {
                 "description": "Pop: 152735 Growth: 7.500000",
-                "marker-color": "#0c0d0f",
+                "marker-color": "#ffbd88",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Pasadena"
@@ -299,7 +299,7 @@
             },
             "properties": {
                 "description": "Pop: 148559 Growth: 165.300000",
-                "marker-color": "#e51a4c",
+                "marker-color": "#faeab9",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "McKinney"
@@ -316,7 +316,7 @@
             },
             "properties": {
                 "description": "Pop: 143484 Growth: 14.700000",
-                "marker-color": "#ffddaf",
+                "marker-color": "#a4c639",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Mesquite"
@@ -333,7 +333,7 @@
             },
             "properties": {
                 "description": "Pop: 137147 Growth: 52.100000",
-                "marker-color": "#fffbf9",
+                "marker-color": "#fff44f",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Killeen"
@@ -350,7 +350,7 @@
             },
             "properties": {
                 "description": "Pop: 136791 Growth: 287.700000",
-                "marker-color": "#c0d8b6",
+                "marker-color": "#3b1f1f",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Frisco"
@@ -367,7 +367,7 @@
             },
             "properties": {
                 "description": "Pop: 136639 Growth: 27.600000",
-                "marker-color": "#ff9e2c",
+                "marker-color": "#ff007f",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "McAllen"
@@ -384,7 +384,7 @@
             },
             "properties": {
                 "description": "Pop: 129030 Growth: 12.500000",
-                "marker-color": "#c2cac4",
+                "marker-color": "#ffdcd6",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Waco"
@@ -401,7 +401,7 @@
             },
             "properties": {
                 "description": "Pop: 126700 Growth: 14.900000",
-                "marker-color": "#6d0101",
+                "marker-color": "#f28500",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Carrollton"
@@ -418,7 +418,7 @@
             },
             "properties": {
                 "description": "Pop: 123933 Growth: 30.400000",
-                "marker-color": "#9f4576",
+                "marker-color": "#fbcce7",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Midland"
@@ -435,7 +435,7 @@
             },
             "properties": {
                 "description": "Pop: 123099 Growth: 47.100000",
-                "marker-color": "#0070ff",
+                "marker-color": "#ffab81",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Denton"
@@ -452,7 +452,7 @@
             },
             "properties": {
                 "description": "Pop: 120099 Growth: 3.600000",
-                "marker-color": "#bede0d",
+                "marker-color": "#e6e4d4",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Abilene"
@@ -469,7 +469,7 @@
             },
             "properties": {
                 "description": "Pop: 117796 Growth: 3.700000",
-                "marker-color": "#9370db",
+                "marker-color": "#ace1af",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Beaumont"
@@ -486,7 +486,7 @@
             },
             "properties": {
                 "description": "Pop: 110720 Growth: 22.300000",
-                "marker-color": "#3cd070",
+                "marker-color": "#002900",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Odessa"
@@ -503,7 +503,7 @@
             },
             "properties": {
                 "description": "Pop: 109821 Growth: 81.000000",
-                "marker-color": "#757575",
+                "marker-color": "#800080",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Round Rock"
@@ -520,7 +520,7 @@
             },
             "properties": {
                 "description": "Pop: 104898 Growth: 0.700000",
-                "marker-color": "#efefef",
+                "marker-color": "#e5841b",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Wichita Falls"
@@ -537,7 +537,7 @@
             },
             "properties": {
                 "description": "Pop: 104475 Growth: 13.200000",
-                "marker-color": "#4e5180",
+                "marker-color": "#fbe96c",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Richardson"
@@ -554,7 +554,7 @@
             },
             "properties": {
                 "description": "Pop: 101074 Growth: 28.900000",
-                "marker-color": "#fffbdc",
+                "marker-color": "#4d282e",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Lewisville"
@@ -571,7 +571,7 @@
             },
             "properties": {
                 "description": "Pop: 100223 Growth: 18.600000",
-                "marker-color": "#cd607e",
+                "marker-color": "#f7e98e",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Tyler"
@@ -588,7 +588,7 @@
             },
             "properties": {
                 "description": "Pop: 100065 Growth: 117.200000",
-                "marker-color": "#08457e",
+                "marker-color": "#7f3a02",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Pearland"
@@ -605,7 +605,7 @@
             },
             "properties": {
                 "description": "Pop: 100050 Growth: 45.200000",
-                "marker-color": "#de6fa1",
+                "marker-color": "#195905",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "College Station"
@@ -622,7 +622,7 @@
             },
             "properties": {
                 "description": "Pop: 97492 Growth: 10.200000",
-                "marker-color": "#1b659d",
+                "marker-color": "#78a39c",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "San Angelo"
@@ -639,7 +639,7 @@
             },
             "properties": {
                 "description": "Pop: 92020 Growth: 104.000000",
-                "marker-color": "#7b68ee",
+                "marker-color": "#accbb1",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Allen"
@@ -656,7 +656,7 @@
             },
             "properties": {
                 "description": "Pop: 90983 Growth: 98.300000",
-                "marker-color": "#f5fb3d",
+                "marker-color": "#ff0090",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "League City"
@@ -673,7 +673,7 @@
             },
             "properties": {
                 "description": "Pop: 83860 Growth: 29.100000",
-                "marker-color": "#ff8c00",
+                "marker-color": "#625119",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Sugar Land"
@@ -690,7 +690,7 @@
             },
             "properties": {
                 "description": "Pop: 81443 Growth: 11.600000",
-                "marker-color": "#fad3a2",
+                "marker-color": "#3399ff",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Longview"
@@ -707,7 +707,7 @@
             },
             "properties": {
                 "description": "Pop: 81050 Growth: 74.500000",
-                "marker-color": "#ffffbf",
+                "marker-color": "#009150",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Mission"
@@ -724,7 +724,7 @@
             },
             "properties": {
                 "description": "Pop: 80836 Growth: 65.100000",
-                "marker-color": "#fffee1",
+                "marker-color": "#e1c0c8",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Edinburg"
@@ -741,7 +741,7 @@
             },
             "properties": {
                 "description": "Pop: 78709 Growth: 19.300000",
-                "marker-color": "#bebebe",
+                "marker-color": "#4682bf",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Bryan"
@@ -758,7 +758,7 @@
             },
             "properties": {
                 "description": "Pop: 75418 Growth: 13.100000",
-                "marker-color": "#fadfad",
+                "marker-color": "#fdff00",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Baytown"
@@ -775,7 +775,7 @@
             },
             "properties": {
                 "description": "Pop: 73790 Growth: 55.700000",
-                "marker-color": "#ffddcd",
+                "marker-color": "#e7cd8c",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Pharr"
@@ -792,7 +792,7 @@
             },
             "properties": {
                 "description": "Pop: 70190 Growth: 27.100000",
-                "marker-color": "#fff4ce",
+                "marker-color": "#ff9f00",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Temple"
@@ -809,7 +809,7 @@
             },
             "properties": {
                 "description": "Pop: 70185 Growth: 31.100000",
-                "marker-color": "#6b8e23",
+                "marker-color": "#fcfeda",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Missouri City"
@@ -826,7 +826,7 @@
             },
             "properties": {
                 "description": "Pop: 68609 Growth: 32.500000",
-                "marker-color": "#fba0e3",
+                "marker-color": "#873260",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Flower Mound"
@@ -843,7 +843,7 @@
             },
             "properties": {
                 "description": "Pop: 67317 Growth: 20.200000",
-                "marker-color": "#7fff00",
+                "marker-color": "#2596d1",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "North Richland Hills"
@@ -860,7 +860,7 @@
             },
             "properties": {
                 "description": "Pop: 65665 Growth: 11.600000",
-                "marker-color": "#fcfeda",
+                "marker-color": "#009b7d",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Harlingen"
@@ -877,7 +877,7 @@
             },
             "properties": {
                 "description": "Pop: 65098 Growth: 7.500000",
-                "marker-color": "#fffaf4",
+                "marker-color": "#ff7d07",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Victoria"
@@ -894,7 +894,7 @@
             },
             "properties": {
                 "description": "Pop: 63279 Growth: 64.000000",
-                "marker-color": "#ccff00",
+                "marker-color": "#4d0135",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "New Braunfels"
@@ -911,7 +911,7 @@
             },
             "properties": {
                 "description": "Pop: 63032 Growth: 61.900000",
-                "marker-color": "#fde1dc",
+                "marker-color": "#ff9933",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Conroe"
@@ -928,7 +928,7 @@
             },
             "properties": {
                 "description": "Pop: 61238 Growth: 134.300000",
-                "marker-color": "#bdbdc6",
+                "marker-color": "#f5deb3",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Cedar Park"
@@ -945,7 +945,7 @@
             },
             "properties": {
                 "description": "Pop: 60872 Growth: 114.200000",
-                "marker-color": "#f1ffc8",
+                "marker-color": "#4a3004",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Mansfield"
@@ -962,7 +962,7 @@
             },
             "properties": {
                 "description": "Pop: 58043 Growth: 28.600000",
-                "marker-color": "#26619c",
+                "marker-color": "#87a96b",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Rowlett"
@@ -979,7 +979,7 @@
             },
             "properties": {
                 "description": "Pop: 54898 Growth: 91.900000",
-                "marker-color": "#ff7518",
+                "marker-color": "#49796b",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Georgetown"
@@ -996,7 +996,7 @@
             },
             "properties": {
                 "description": "Pop: 54135 Growth: -6.000000",
-                "marker-color": "#a50b5e",
+                "marker-color": "#d3cbba",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Port Arthur"
@@ -1013,7 +1013,7 @@
             },
             "properties": {
                 "description": "Pop: 54076 Growth: 48.500000",
-                "marker-color": "#ffc3c0",
+                "marker-color": "#ffe4c4",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "San Marcos"
@@ -1030,7 +1030,7 @@
             },
             "properties": {
                 "description": "Pop: 53752 Growth: 123.400000",
-                "marker-color": "#907874",
+                "marker-color": "#fcfeda",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Pflugerville"
@@ -1047,7 +1047,7 @@
             },
             "properties": {
                 "description": "Pop: 53224 Growth: 15.100000",
-                "marker-color": "#dc143c",
+                "marker-color": "#8e775e",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Euless"
@@ -1064,7 +1064,7 @@
             },
             "properties": {
                 "description": "Pop: 51483 Growth: 36.000000",
-                "marker-color": "#412010",
+                "marker-color": "#880085",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "DeSoto"
@@ -1081,7 +1081,7 @@
             },
             "properties": {
                 "description": "Pop: 50195 Growth: 17.600000",
-                "marker-color": "#f0e130",
+                "marker-color": "#8c472f",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Grapevine"
@@ -1098,7 +1098,7 @@
             },
             "properties": {
                 "description": "Pop: 48733 Growth: -15.200000",
-                "marker-color": "#ff00ff",
+                "marker-color": "#682860",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Galveston"
@@ -1115,7 +1115,7 @@
             },
             "properties": {
                 "description": "Pop: 48592 Growth: 2.900000",
-                "marker-color": "#2c0e8c",
+                "marker-color": "#fffefd",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Bedford"
@@ -1132,7 +1132,7 @@
             },
             "properties": {
                 "description": "Pop: 46663 Growth: 42.400000",
-                "marker-color": "#556b2f",
+                "marker-color": "#ae4560",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Cedar Hill"
@@ -1149,7 +1149,7 @@
             },
             "properties": {
                 "description": "Pop: 46081 Growth: 10.300000",
-                "marker-color": "#a6d608",
+                "marker-color": "#fffaf0",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Texas City"
@@ -1166,7 +1166,7 @@
             },
             "properties": {
                 "description": "Pop: 44575 Growth: 185.200000",
-                "marker-color": "#967117",
+                "marker-color": "#c1becd",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Wylie"
@@ -1183,7 +1183,7 @@
             },
             "properties": {
                 "description": "Pop: 43580 Growth: 11.400000",
-                "marker-color": "#893f45",
+                "marker-color": "#00aae4",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Haltom City"
@@ -1200,7 +1200,7 @@
             },
             "properties": {
                 "description": "Pop: 42907 Growth: 53.300000",
-                "marker-color": "#6d6c6c",
+                "marker-color": "#b284be",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Keller"
@@ -1217,7 +1217,7 @@
             },
             "properties": {
                 "description": "Pop: 40922 Growth: 117.200000",
-                "marker-color": "#d5f6e3",
+                "marker-color": "#da5b38",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Rockwall"
@@ -1234,7 +1234,7 @@
             },
             "properties": {
                 "description": "Pop: 40714 Growth: 85.300000",
-                "marker-color": "#a7f432",
+                "marker-color": "#e9967a",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Burleson"
@@ -1251,7 +1251,7 @@
             },
             "properties": {
                 "description": "Pop: 40342 Growth: 10.300000",
-                "marker-color": "#ff5800",
+                "marker-color": "#88d8c0",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Coppell"
@@ -1268,7 +1268,7 @@
             },
             "properties": {
                 "description": "Pop: 39795 Growth: 13.200000",
-                "marker-color": "#aba196",
+                "marker-color": "#a7fc00",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Huntsville"
@@ -1285,7 +1285,7 @@
             },
             "properties": {
                 "description": "Pop: 39605 Growth: 9.700000",
-                "marker-color": "#ff878d",
+                "marker-color": "#e30b5d",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Duncanville"
@@ -1302,7 +1302,7 @@
             },
             "properties": {
                 "description": "Pop: 39458 Growth: 45.700000",
-                "marker-color": "#4d1e01",
+                "marker-color": "#232b2b",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "The Colony"
@@ -1319,7 +1319,7 @@
             },
             "properties": {
                 "description": "Pop: 39296 Growth: 11.600000",
-                "marker-color": "#905d5d",
+                "marker-color": "#ed0a3f",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Sherman"
@@ -1336,7 +1336,7 @@
             },
             "properties": {
                 "description": "Pop: 38448 Growth: 5.800000",
-                "marker-color": "#3f4c3a",
+                "marker-color": "#fef3d8",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Hurst"
@@ -1353,7 +1353,7 @@
             },
             "properties": {
                 "description": "Pop: 38071 Growth: 46.400000",
-                "marker-color": "#2c1608",
+                "marker-color": "#44d7a8",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Lancaster"
@@ -1370,7 +1370,7 @@
             },
             "properties": {
                 "description": "Pop: 37587 Growth: 28.600000",
-                "marker-color": "#ffa343",
+                "marker-color": "#6b4e31",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Friendswood"
@@ -1387,7 +1387,7 @@
             },
             "properties": {
                 "description": "Pop: 37442 Growth: 7.400000",
-                "marker-color": "#635147",
+                "marker-color": "#306030",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Texarkana"
@@ -1404,7 +1404,7 @@
             },
             "properties": {
                 "description": "Pop: 37093 Growth: 28.800000",
-                "marker-color": "#ff007f",
+                "marker-color": "#4c2882",
                 "marker-name": "city",
                 "marker-size": "small",
                 "title": "Weslaco"
@@ -1415,52 +1415,8 @@
             "geometry": {
                 "coordinates": [
                     [
-                        -101.8312969,
-                        35.2219971
-                    ],
-                    [
-                        -101.8551665,
-                        33.5778631
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "Amarillo to Lubbock",
-                "name": "line",
-                "stroke": "#0a7e8c",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -101.8551665,
-                        33.5778631
-                    ],
-                    [
-                        -102.0779146,
-                        31.9973456
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "Lubbock to Midland",
-                "name": "line",
-                "stroke": "#ff7a00",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -102.0779146,
-                        31.9973456
+                        -106.4424559,
+                        31.7775757
                     ],
                     [
                         -102.3676431,
@@ -1470,9 +1426,9 @@
                 "type": "LineString"
             },
             "properties": {
-                "description": "Midland to Odessa",
+                "description": "El Paso to Odessa",
                 "name": "line",
-                "stroke": "#db5079",
+                "stroke": "#ff404c",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1483,6 +1439,28 @@
                     [
                         -102.3676431,
                         31.8456816
+                    ],
+                    [
+                        -102.0779146,
+                        31.9973456
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Odessa to Midland",
+                "name": "line",
+                "stroke": "#80b3c4",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -102.0779146,
+                        31.9973456
                     ],
                     [
                         -100.4370375,
@@ -1492,9 +1470,9 @@
                 "type": "LineString"
             },
             "properties": {
-                "description": "Odessa to San Angelo",
+                "description": "Midland to San Angelo",
                 "name": "line",
-                "stroke": "#93c572",
+                "stroke": "#043927",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1516,7 +1494,7 @@
             "properties": {
                 "description": "San Angelo to Abilene",
                 "name": "line",
-                "stroke": "#39a78e",
+                "stroke": "#0a6906",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1538,7 +1516,7 @@
             "properties": {
                 "description": "Abilene to Wichita Falls",
                 "name": "line",
-                "stroke": "#483d8b",
+                "stroke": "#188bc2",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1560,7 +1538,7 @@
             "properties": {
                 "description": "Wichita Falls to Denton",
                 "name": "line",
-                "stroke": "#ffe4b5",
+                "stroke": "#c0d3b9",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1582,7 +1560,7 @@
             "properties": {
                 "description": "Denton to Flower Mound",
                 "name": "line",
-                "stroke": "#8d8974",
+                "stroke": "#3c341f",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1604,7 +1582,7 @@
             "properties": {
                 "description": "Flower Mound to Grapevine",
                 "name": "line",
-                "stroke": "#6eaea1",
+                "stroke": "#8d3f3f",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1626,7 +1604,7 @@
             "properties": {
                 "description": "Grapevine to Coppell",
                 "name": "line",
-                "stroke": "#b6b095",
+                "stroke": "#e97c07",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1648,7 +1626,7 @@
             "properties": {
                 "description": "Coppell to Lewisville",
                 "name": "line",
-                "stroke": "#fff1f9",
+                "stroke": "#ff9966",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1670,7 +1648,7 @@
             "properties": {
                 "description": "Lewisville to The Colony",
                 "name": "line",
-                "stroke": "#e60026",
+                "stroke": "#ff3855",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1692,7 +1670,7 @@
             "properties": {
                 "description": "The Colony to Frisco",
                 "name": "line",
-                "stroke": "#98811b",
+                "stroke": "#377475",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1714,7 +1692,7 @@
             "properties": {
                 "description": "Frisco to Allen",
                 "name": "line",
-                "stroke": "#98817b",
+                "stroke": "#e8f1d4",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1736,7 +1714,7 @@
             "properties": {
                 "description": "Allen to Plano",
                 "name": "line",
-                "stroke": "#cd8429",
+                "stroke": "#bdb3c7",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1758,7 +1736,7 @@
             "properties": {
                 "description": "Plano to Richardson",
                 "name": "line",
-                "stroke": "#c9d9d2",
+                "stroke": "#306030",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1780,7 +1758,7 @@
             "properties": {
                 "description": "Richardson to Garland",
                 "name": "line",
-                "stroke": "#004f98",
+                "stroke": "#0048ba",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1802,7 +1780,7 @@
             "properties": {
                 "description": "Garland to Rowlett",
                 "name": "line",
-                "stroke": "#74640d",
+                "stroke": "#ecd540",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1824,7 +1802,7 @@
             "properties": {
                 "description": "Rowlett to Rockwall",
                 "name": "line",
-                "stroke": "#d591a4",
+                "stroke": "#98817b",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1846,7 +1824,7 @@
             "properties": {
                 "description": "Rockwall to Wylie",
                 "name": "line",
-                "stroke": "#f57584",
+                "stroke": "#966fd6",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1868,7 +1846,7 @@
             "properties": {
                 "description": "Wylie to McKinney",
                 "name": "line",
-                "stroke": "#541012",
+                "stroke": "#c7dde5",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1890,7 +1868,7 @@
             "properties": {
                 "description": "McKinney to Carrollton",
                 "name": "line",
-                "stroke": "#016162",
+                "stroke": "#967bb6",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1912,7 +1890,7 @@
             "properties": {
                 "description": "Carrollton to Irving",
                 "name": "line",
-                "stroke": "#2d569b",
+                "stroke": "#00cc99",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1934,7 +1912,7 @@
             "properties": {
                 "description": "Irving to Grand Prairie",
                 "name": "line",
-                "stroke": "#024e46",
+                "stroke": "#545aa7",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1956,7 +1934,7 @@
             "properties": {
                 "description": "Grand Prairie to Arlington",
                 "name": "line",
-                "stroke": "#ffe1f2",
+                "stroke": "#ac91ce",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1978,7 +1956,7 @@
             "properties": {
                 "description": "Arlington to Hurst",
                 "name": "line",
-                "stroke": "#b69d98",
+                "stroke": "#e6d7b9",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2000,7 +1978,7 @@
             "properties": {
                 "description": "Hurst to Bedford",
                 "name": "line",
-                "stroke": "#81422c",
+                "stroke": "#b80ce3",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2022,7 +2000,7 @@
             "properties": {
                 "description": "Bedford to Euless",
                 "name": "line",
-                "stroke": "#b2a1ea",
+                "stroke": "#bb3385",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2044,7 +2022,7 @@
             "properties": {
                 "description": "Euless to North Richland Hills",
                 "name": "line",
-                "stroke": "#a99a86",
+                "stroke": "#ff7f00",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2066,7 +2044,7 @@
             "properties": {
                 "description": "North Richland Hills to Haltom City",
                 "name": "line",
-                "stroke": "#003e40",
+                "stroke": "#47abcc",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2088,7 +2066,7 @@
             "properties": {
                 "description": "Haltom City to Fort Worth",
                 "name": "line",
-                "stroke": "#ab3472",
+                "stroke": "#f4a460",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2110,7 +2088,7 @@
             "properties": {
                 "description": "Fort Worth to Keller",
                 "name": "line",
-                "stroke": "#faf0e6",
+                "stroke": "#e7ece6",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2132,7 +2110,7 @@
             "properties": {
                 "description": "Keller to Mansfield",
                 "name": "line",
-                "stroke": "#ffdab9",
+                "stroke": "#bfc1c2",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2154,7 +2132,7 @@
             "properties": {
                 "description": "Mansfield to Burleson",
                 "name": "line",
-                "stroke": "#d10047",
+                "stroke": "#0033aa",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2176,7 +2154,7 @@
             "properties": {
                 "description": "Burleson to Cedar Hill",
                 "name": "line",
-                "stroke": "#c7c9d5",
+                "stroke": "#d99058",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2198,7 +2176,7 @@
             "properties": {
                 "description": "Cedar Hill to Duncanville",
                 "name": "line",
-                "stroke": "#140600",
+                "stroke": "#6e7783",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2220,7 +2198,7 @@
             "properties": {
                 "description": "Duncanville to DeSoto",
                 "name": "line",
-                "stroke": "#abcdef",
+                "stroke": "#7b68ee",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2242,7 +2220,7 @@
             "properties": {
                 "description": "DeSoto to Lancaster",
                 "name": "line",
-                "stroke": "#800000",
+                "stroke": "#7563a8",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2264,7 +2242,7 @@
             "properties": {
                 "description": "Lancaster to Dallas",
                 "name": "line",
-                "stroke": "#faffa4",
+                "stroke": "#f5fb3d",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2286,7 +2264,7 @@
             "properties": {
                 "description": "Dallas to Mesquite",
                 "name": "line",
-                "stroke": "#cfdccf",
+                "stroke": "#8a8360",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2308,7 +2286,7 @@
             "properties": {
                 "description": "Mesquite to Sherman",
                 "name": "line",
-                "stroke": "#727472",
+                "stroke": "#af9f1c",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2330,7 +2308,7 @@
             "properties": {
                 "description": "Sherman to Tyler",
                 "name": "line",
-                "stroke": "#cc8899",
+                "stroke": "#534b4f",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2352,7 +2330,7 @@
             "properties": {
                 "description": "Tyler to Longview",
                 "name": "line",
-                "stroke": "#f9bf58",
+                "stroke": "#885818",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2374,7 +2352,7 @@
             "properties": {
                 "description": "Longview to Texarkana",
                 "name": "line",
-                "stroke": "#ba8759",
+                "stroke": "#697e9a",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2396,7 +2374,7 @@
             "properties": {
                 "description": "Texarkana to Huntsville",
                 "name": "line",
-                "stroke": "#d591a4",
+                "stroke": "#3b444b",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2418,7 +2396,7 @@
             "properties": {
                 "description": "Huntsville to Conroe",
                 "name": "line",
-                "stroke": "#e4d69b",
+                "stroke": "#536872",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2440,7 +2418,7 @@
             "properties": {
                 "description": "Conroe to Houston",
                 "name": "line",
-                "stroke": "#516e3d",
+                "stroke": "#c80815",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2462,7 +2440,7 @@
             "properties": {
                 "description": "Houston to Pasadena",
                 "name": "line",
-                "stroke": "#eed202",
+                "stroke": "#bfc921",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2484,7 +2462,7 @@
             "properties": {
                 "description": "Pasadena to Pearland",
                 "name": "line",
-                "stroke": "#48bf91",
+                "stroke": "#e6e200",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2506,7 +2484,7 @@
             "properties": {
                 "description": "Pearland to Friendswood",
                 "name": "line",
-                "stroke": "#2e8b57",
+                "stroke": "#cfb53b",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2528,7 +2506,7 @@
             "properties": {
                 "description": "Friendswood to League City",
                 "name": "line",
-                "stroke": "#ff006c",
+                "stroke": "#fbaed2",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2550,7 +2528,7 @@
             "properties": {
                 "description": "League City to Texas City",
                 "name": "line",
-                "stroke": "#18453b",
+                "stroke": "#24500f",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2572,7 +2550,7 @@
             "properties": {
                 "description": "Texas City to Galveston",
                 "name": "line",
-                "stroke": "#ffa6c9",
+                "stroke": "#ffd700",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2594,7 +2572,7 @@
             "properties": {
                 "description": "Galveston to Baytown",
                 "name": "line",
-                "stroke": "#b10000",
+                "stroke": "#f8facd",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2616,7 +2594,7 @@
             "properties": {
                 "description": "Baytown to Missouri City",
                 "name": "line",
-                "stroke": "#1c352d",
+                "stroke": "#ff6fff",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2638,7 +2616,7 @@
             "properties": {
                 "description": "Missouri City to Sugar Land",
                 "name": "line",
-                "stroke": "#b86d29",
+                "stroke": "#08e8de",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2660,7 +2638,7 @@
             "properties": {
                 "description": "Sugar Land to College Station",
                 "name": "line",
-                "stroke": "#80b3c4",
+                "stroke": "#e68fac",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2682,7 +2660,7 @@
             "properties": {
                 "description": "College Station to Bryan",
                 "name": "line",
-                "stroke": "#b0c4de",
+                "stroke": "#5f8a8b",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2704,7 +2682,7 @@
             "properties": {
                 "description": "Bryan to Temple",
                 "name": "line",
-                "stroke": "#bfbed8",
+                "stroke": "#66b58f",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2726,7 +2704,7 @@
             "properties": {
                 "description": "Temple to Killeen",
                 "name": "line",
-                "stroke": "#087830",
+                "stroke": "#788a25",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2748,7 +2726,7 @@
             "properties": {
                 "description": "Killeen to Georgetown",
                 "name": "line",
-                "stroke": "#446ccf",
+                "stroke": "#ffe302",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2770,7 +2748,7 @@
             "properties": {
                 "description": "Georgetown to Round Rock",
                 "name": "line",
-                "stroke": "#50c878",
+                "stroke": "#ffae42",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2792,7 +2770,7 @@
             "properties": {
                 "description": "Round Rock to Pflugerville",
                 "name": "line",
-                "stroke": "#e8f5f2",
+                "stroke": "#fba129",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2814,7 +2792,7 @@
             "properties": {
                 "description": "Pflugerville to Cedar Park",
                 "name": "line",
-                "stroke": "#7ac488",
+                "stroke": "#b35213",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2836,7 +2814,7 @@
             "properties": {
                 "description": "Cedar Park to Austin",
                 "name": "line",
-                "stroke": "#fffef0",
+                "stroke": "#363050",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2858,7 +2836,7 @@
             "properties": {
                 "description": "Austin to San Marcos",
                 "name": "line",
-                "stroke": "#d29eaa",
+                "stroke": "#ff00fd",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2880,7 +2858,7 @@
             "properties": {
                 "description": "San Marcos to New Braunfels",
                 "name": "line",
-                "stroke": "#98811b",
+                "stroke": "#cf6ba9",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2902,7 +2880,7 @@
             "properties": {
                 "description": "New Braunfels to San Antonio",
                 "name": "line",
-                "stroke": "#fd7b33",
+                "stroke": "#a4dded",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2924,7 +2902,7 @@
             "properties": {
                 "description": "San Antonio to Victoria",
                 "name": "line",
-                "stroke": "#fada5e",
+                "stroke": "#00ffff",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2946,7 +2924,7 @@
             "properties": {
                 "description": "Victoria to Corpus Christi",
                 "name": "line",
-                "stroke": "#714ab2",
+                "stroke": "#1e9ab0",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2968,7 +2946,7 @@
             "properties": {
                 "description": "Corpus Christi to Harlingen",
                 "name": "line",
-                "stroke": "#738276",
+                "stroke": "#7cfc00",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -2990,7 +2968,7 @@
             "properties": {
                 "description": "Harlingen to Weslaco",
                 "name": "line",
-                "stroke": "#3c4443",
+                "stroke": "#fe28a2",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -3012,7 +2990,7 @@
             "properties": {
                 "description": "Weslaco to Pharr",
                 "name": "line",
-                "stroke": "#e4007c",
+                "stroke": "#545aa7",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -3034,7 +3012,7 @@
             "properties": {
                 "description": "Pharr to McAllen",
                 "name": "line",
-                "stroke": "#09230f",
+                "stroke": "#d2f8b0",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -3056,7 +3034,7 @@
             "properties": {
                 "description": "McAllen to Mission",
                 "name": "line",
-                "stroke": "#6c2e1f",
+                "stroke": "#e25465",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -3078,7 +3056,7 @@
             "properties": {
                 "description": "Mission to Edinburg",
                 "name": "line",
-                "stroke": "#bea6c3",
+                "stroke": "#d5d195",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -3100,7 +3078,7 @@
             "properties": {
                 "description": "Edinburg to Brownsville",
                 "name": "line",
-                "stroke": "#002e20",
+                "stroke": "#c4d8e2",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -3122,7 +3100,7 @@
             "properties": {
                 "description": "Brownsville to Laredo",
                 "name": "line",
-                "stroke": "#df6124",
+                "stroke": "#f19cbb",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -3144,7 +3122,7 @@
             "properties": {
                 "description": "Laredo to Waco",
                 "name": "line",
-                "stroke": "#c1d7b0",
+                "stroke": "#65000b",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -3166,7 +3144,7 @@
             "properties": {
                 "description": "Waco to Beaumont",
                 "name": "line",
-                "stroke": "#e1bc64",
+                "stroke": "#fffde6",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -3188,7 +3166,7 @@
             "properties": {
                 "description": "Beaumont to Port Arthur",
                 "name": "line",
-                "stroke": "#bfdbe2",
+                "stroke": "#c9c0bb",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -3201,16 +3179,38 @@
                         29.8849504
                     ],
                     [
-                        -106.4424559,
-                        31.7775757
+                        -101.8551665,
+                        33.5778631
                     ]
                 ],
                 "type": "LineString"
             },
             "properties": {
-                "description": "Port Arthur to El Paso",
+                "description": "Port Arthur to Lubbock",
                 "name": "line",
-                "stroke": "#4a4244",
+                "stroke": "#f8b878",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -101.8551665,
+                        33.5778631
+                    ],
+                    [
+                        -101.8312969,
+                        35.2219971
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "Lubbock to Amarillo",
+                "name": "line",
+                "stroke": "#ff0800",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"

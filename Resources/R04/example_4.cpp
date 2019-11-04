@@ -7,7 +7,7 @@
  */
 #include <fstream>
 #include <iostream>
-#include <string.h>
+#include <string>
 #include "GeoJson.hpp"
 #include "JsonFacade.hpp"
 #include "json.hpp"

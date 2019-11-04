@@ -7,7 +7,7 @@
 
 #include <fstream>
 #include <iostream>
-#include <string.h>
+#include <string>
 #include "json.hpp"            
 #include "GeoJson.hpp"
 #include "HexColors.hpp"

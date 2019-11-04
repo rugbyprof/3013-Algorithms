@@ -80,5 +80,6 @@
         "thread": "cpp",
         "*.tcc": "cpp",
         "memory_resource": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }

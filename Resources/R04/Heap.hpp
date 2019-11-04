@@ -31,6 +31,7 @@ template <typename T>
 class Heap {
 private:
     T **Array;       // Pointer to allocate dynamic array
+    T **SwapSpace;   // 
     int Next;     // Next available location
     int MaxSize;  // Max size since were using array
     int HeapSize; // Actual number of items in the array.
@@ -187,6 +188,33 @@ private:
         }
     }
 
+    /**
+     * ResizeHeap
+     * 
+     * Description:
+     *     If heap gets full, we need to resize and not throw memory error
+     * Params:
+     *     bool grow: if true we grow the heap, else we shrink the heap 
+     * 
+     * Note:
+     * 
+     *     Shrink is not implemented!
+     */
+    void ResizeHeap(bool grow = true){
+        if(grow){
+            int newSize = MaxSize * 2;
+            SwapSpace = new T*[newSize];
+            for(int i=1;i<=Next;i++){
+                SwapSpace[i] = Array[i]; 
+            }
+            MaxSize = newSize;
+            delete [] Array;
+            Array = SwapSpace;
+        }else{
+            // not implemented!
+        }
+    }
+
 public:
     /**
      * Function Heap:
@@ -206,6 +234,16 @@ public:
         isMax = max;
     }
 
+    Heap(bool max = true){
+        Array = new T*[10];
+        Next = 1;
+        MaxSize = 10;
+        HeapSize = 0;
+        isMax = max;
+    }
+
+
+
     /**
      * Function Insert:
      *      Insert value into heap.
@@ -216,6 +254,9 @@ public:
      *      void
      */
     void Insert(T* x) {
+        if(Next + 1 == MaxSize){
+            ResizeHeap();
+        }
         Array[Next] = x;
         BubbleUp(Next);
         Next++;

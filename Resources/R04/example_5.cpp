@@ -10,7 +10,7 @@
  */
 #include <fstream>
 #include <iostream>
-#include <string.h>
+#include <string>
 #include "GeoJson.hpp"
 #include "JsonFacade.hpp"
 #include "json.hpp"
@@ -152,7 +152,6 @@ int main(int argc, char **argv) {
         current_id = min_id;
     }
 
-    
     // Generate our geojson output.
     GJ.PrintJson("example_5.geojson");
 

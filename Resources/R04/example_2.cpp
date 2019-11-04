@@ -11,7 +11,7 @@
 
 #include <fstream>
 #include <iostream>
-#include <string.h>
+#include <string>
 #include "json.hpp"             // Added for example 2
 #include "GeoJson.hpp"
 #include "HexColors.hpp"
