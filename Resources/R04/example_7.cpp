@@ -1,9 +1,8 @@
 /**
  * Example 7
- * This example places all edges on a heap with the highest priority
- * going to the shortest edges. It adds edges to a "spanning tree"
- * based on whethor or not both "from" and "to" are NOT in the tree
- * already. Not a good method as you can see by the geojson.
+ * This example places cites on the heap, by distance, then choose N
+ * number of cities to connect to. (Program 3). It shows output in a 
+ * geojson file. 
  * 
  */
 #include "City.hpp"
