@@ -17,7 +17,7 @@
             "properties": {
                 "description": "From: \"Hurst\" To: \"Bedford\"",
                 "name": "line",
-                "stroke": "#553522",
+                "stroke": "#435237",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -39,7 +39,7 @@
             "properties": {
                 "description": "From: \"Pharr\" To: \"McAllen\"",
                 "name": "line",
-                "stroke": "#663445",
+                "stroke": "#227161",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -61,7 +61,7 @@
             "properties": {
                 "description": "From: \"North Richland Hills\" To: \"Haltom City\"",
                 "name": "line",
-                "stroke": "#155542",
+                "stroke": "#416261",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -83,7 +83,7 @@
             "properties": {
                 "description": "From: \"Euless\" To: \"Bedford\"",
                 "name": "line",
-                "stroke": "#614642",
+                "stroke": "#416176",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -105,7 +105,7 @@
             "properties": {
                 "description": "From: \"Bryan\" To: \"College Station\"",
                 "name": "line",
-                "stroke": "#357256",
+                "stroke": "#736723",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -127,7 +127,7 @@
             "properties": {
                 "description": "From: \"Coppell\" To: \"Grapevine\"",
                 "name": "line",
-                "stroke": "#345553",
+                "stroke": "#523176",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -149,7 +149,7 @@
             "properties": {
                 "description": "From: \"Garland\" To: \"Rowlett\"",
                 "name": "line",
-                "stroke": "#523243",
+                "stroke": "#257667",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -171,7 +171,7 @@
             "properties": {
                 "description": "From: \"Fort Worth\" To: \"Haltom City\"",
                 "name": "line",
-                "stroke": "#575176",
+                "stroke": "#765625",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -193,7 +193,7 @@
             "properties": {
                 "description": "From: \"Duncanville\" To: \"Cedar Hill\"",
                 "name": "line",
-                "stroke": "#435655",
+                "stroke": "#565746",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -215,7 +215,7 @@
             "properties": {
                 "description": "From: \"Duncanville\" To: \"DeSoto\"",
                 "name": "line",
-                "stroke": "#472666",
+                "stroke": "#735231",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -237,7 +237,7 @@
             "properties": {
                 "description": "From: \"Plano\" To: \"Richardson\"",
                 "name": "line",
-                "stroke": "#727122",
+                "stroke": "#171437",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -259,7 +259,7 @@
             "properties": {
                 "description": "From: \"Irving\" To: \"Grand Prairie\"",
                 "name": "line",
-                "stroke": "#413135",
+                "stroke": "#451763",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -281,7 +281,7 @@
             "properties": {
                 "description": "From: \"Friendswood\" To: \"Pearland\"",
                 "name": "line",
-                "stroke": "#351151",
+                "stroke": "#244775",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -303,7 +303,7 @@
             "properties": {
                 "description": "From: \"Flower Mound\" To: \"Grapevine\"",
                 "name": "line",
-                "stroke": "#176566",
+                "stroke": "#132145",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -325,7 +325,7 @@
             "properties": {
                 "description": "From: \"Missouri City\" To: \"Sugar Land\"",
                 "name": "line",
-                "stroke": "#173743",
+                "stroke": "#374752",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -347,7 +347,7 @@
             "properties": {
                 "description": "From: \"Lancaster\" To: \"DeSoto\"",
                 "name": "line",
-                "stroke": "#136424",
+                "stroke": "#361243",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -369,7 +369,7 @@
             "properties": {
                 "description": "From: \"Round Rock\" To: \"Pflugerville\"",
                 "name": "line",
-                "stroke": "#457565",
+                "stroke": "#126571",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -391,7 +391,7 @@
             "properties": {
                 "description": "From: \"Mission\" To: \"McAllen\"",
                 "name": "line",
-                "stroke": "#453714",
+                "stroke": "#147663",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -413,7 +413,7 @@
             "properties": {
                 "description": "From: \"Allen\" To: \"Plano\"",
                 "name": "line",
-                "stroke": "#634374",
+                "stroke": "#267371",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -435,7 +435,7 @@
             "properties": {
                 "description": "From: \"Frisco\" To: \"The Colony\"",
                 "name": "line",
-                "stroke": "#663144",
+                "stroke": "#245346",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -457,7 +457,7 @@
             "properties": {
                 "description": "From: \"The Colony\" To: \"Lewisville\"",
                 "name": "line",
-                "stroke": "#713363",
+                "stroke": "#433341",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -479,7 +479,7 @@
             "properties": {
                 "description": "From: \"Rockwall\" To: \"Rowlett\"",
                 "name": "line",
-                "stroke": "#457662",
+                "stroke": "#341721",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -501,7 +501,7 @@
             "properties": {
                 "description": "From: \"Arlington\" To: \"Grand Prairie\"",
                 "name": "line",
-                "stroke": "#771475",
+                "stroke": "#333644",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -523,7 +523,7 @@
             "properties": {
                 "description": "From: \"Friendswood\" To: \"League City\"",
                 "name": "line",
-                "stroke": "#263321",
+                "stroke": "#733412",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -545,7 +545,7 @@
             "properties": {
                 "description": "From: \"Allen\" To: \"McKinney\"",
                 "name": "line",
-                "stroke": "#611122",
+                "stroke": "#634567",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -567,7 +567,7 @@
             "properties": {
                 "description": "From: \"North Richland Hills\" To: \"Keller\"",
                 "name": "line",
-                "stroke": "#246632",
+                "stroke": "#672164",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -589,7 +589,7 @@
             "properties": {
                 "description": "From: \"Carrollton\" To: \"The Colony\"",
                 "name": "line",
-                "stroke": "#374156",
+                "stroke": "#313767",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -611,7 +611,7 @@
             "properties": {
                 "description": "From: \"Rockwall\" To: \"Wylie\"",
                 "name": "line",
-                "stroke": "#273227",
+                "stroke": "#453156",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -633,7 +633,7 @@
             "properties": {
                 "description": "From: \"Pharr\" To: \"Edinburg\"",
                 "name": "line",
-                "stroke": "#657233",
+                "stroke": "#237572",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -655,7 +655,7 @@
             "properties": {
                 "description": "From: \"Round Rock\" To: \"Cedar Park\"",
                 "name": "line",
-                "stroke": "#234614",
+                "stroke": "#424677",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -677,7 +677,7 @@
             "properties": {
                 "description": "From: \"Texas City\" To: \"Galveston\"",
                 "name": "line",
-                "stroke": "#426151",
+                "stroke": "#375754",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -699,7 +699,7 @@
             "properties": {
                 "description": "From: \"Round Rock\" To: \"Georgetown\"",
                 "name": "line",
-                "stroke": "#157626",
+                "stroke": "#552565",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -721,7 +721,7 @@
             "properties": {
                 "description": "From: \"Irving\" To: \"Dallas\"",
                 "name": "line",
-                "stroke": "#513534",
+                "stroke": "#667523",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -743,7 +743,7 @@
             "properties": {
                 "description": "From: \"Mesquite\" To: \"Rowlett\"",
                 "name": "line",
-                "stroke": "#416666",
+                "stroke": "#737232",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -765,7 +765,7 @@
             "properties": {
                 "description": "From: \"Pearland\" To: \"Pasadena\"",
                 "name": "line",
-                "stroke": "#612264",
+                "stroke": "#371521",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -787,7 +787,7 @@
             "properties": {
                 "description": "From: \"Burleson\" To: \"Mansfield\"",
                 "name": "line",
-                "stroke": "#611565",
+                "stroke": "#722147",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -809,7 +809,7 @@
             "properties": {
                 "description": "From: \"Houston\" To: \"Pasadena\"",
                 "name": "line",
-                "stroke": "#367124",
+                "stroke": "#442775",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -831,7 +831,7 @@
             "properties": {
                 "description": "From: \"Pharr\" To: \"Weslaco\"",
                 "name": "line",
-                "stroke": "#244672",
+                "stroke": "#153725",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -853,7 +853,7 @@
             "properties": {
                 "description": "From: \"Pflugerville\" To: \"Austin\"",
                 "name": "line",
-                "stroke": "#757257",
+                "stroke": "#126726",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -875,7 +875,7 @@
             "properties": {
                 "description": "From: \"Flower Mound\" To: \"Denton\"",
                 "name": "line",
-                "stroke": "#676764",
+                "stroke": "#652774",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -897,7 +897,7 @@
             "properties": {
                 "description": "From: \"Baytown\" To: \"Pasadena\"",
                 "name": "line",
-                "stroke": "#333565",
+                "stroke": "#614742",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -919,7 +919,7 @@
             "properties": {
                 "description": "From: \"San Marcos\" To: \"New Braunfels\"",
                 "name": "line",
-                "stroke": "#132427",
+                "stroke": "#541457",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -941,7 +941,7 @@
             "properties": {
                 "description": "From: \"Port Arthur\" To: \"Beaumont\"",
                 "name": "line",
-                "stroke": "#242516",
+                "stroke": "#265435",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -963,7 +963,7 @@
             "properties": {
                 "description": "From: \"Harlingen\" To: \"Weslaco\"",
                 "name": "line",
-                "stroke": "#667245",
+                "stroke": "#331455",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -985,7 +985,7 @@
             "properties": {
                 "description": "From: \"Midland\" To: \"Odessa\"",
                 "name": "line",
-                "stroke": "#634466",
+                "stroke": "#552527",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1007,7 +1007,7 @@
             "properties": {
                 "description": "From: \"Temple\" To: \"Killeen\"",
                 "name": "line",
-                "stroke": "#311652",
+                "stroke": "#527525",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1029,7 +1029,7 @@
             "properties": {
                 "description": "From: \"Brownsville\" To: \"Harlingen\"",
                 "name": "line",
-                "stroke": "#632477",
+                "stroke": "#345422",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1051,7 +1051,7 @@
             "properties": {
                 "description": "From: \"Huntsville\" To: \"Conroe\"",
                 "name": "line",
-                "stroke": "#317222",
+                "stroke": "#146557",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1073,7 +1073,7 @@
             "properties": {
                 "description": "From: \"San Antonio\" To: \"New Braunfels\"",
                 "name": "line",
-                "stroke": "#771763",
+                "stroke": "#645476",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1095,7 +1095,7 @@
             "properties": {
                 "description": "From: \"Sherman\" To: \"McKinney\"",
                 "name": "line",
-                "stroke": "#331647",
+                "stroke": "#124224",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1117,7 +1117,7 @@
             "properties": {
                 "description": "From: \"Temple\" To: \"Waco\"",
                 "name": "line",
-                "stroke": "#354156",
+                "stroke": "#522424",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1139,7 +1139,7 @@
             "properties": {
                 "description": "From: \"Longview\" To: \"Tyler\"",
                 "name": "line",
-                "stroke": "#151142",
+                "stroke": "#616744",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1161,7 +1161,7 @@
             "properties": {
                 "description": "From: \"Corpus Christi\" To: \"Victoria\"",
                 "name": "line",
-                "stroke": "#215314",
+                "stroke": "#223442",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1183,7 +1183,7 @@
             "properties": {
                 "description": "From: \"Longview\" To: \"Texarkana\"",
                 "name": "line",
-                "stroke": "#513553",
+                "stroke": "#366617",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1205,7 +1205,7 @@
             "properties": {
                 "description": "From: \"San Angelo\" To: \"Abilene\"",
                 "name": "line",
-                "stroke": "#551712",
+                "stroke": "#145252",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1227,7 +1227,7 @@
             "properties": {
                 "description": "From: \"Wichita Falls\" To: \"Denton\"",
                 "name": "line",
-                "stroke": "#355261",
+                "stroke": "#672737",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1249,7 +1249,7 @@
             "properties": {
                 "description": "From: \"Midland\" To: \"Lubbock\"",
                 "name": "line",
-                "stroke": "#316755",
+                "stroke": "#372312",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1271,7 +1271,7 @@
             "properties": {
                 "description": "From: \"Lubbock\" To: \"Amarillo\"",
                 "name": "line",
-                "stroke": "#215334",
+                "stroke": "#633227",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1293,7 +1293,7 @@
             "properties": {
                 "description": "From: \"Mission\" To: \"Laredo\"",
                 "name": "line",
-                "stroke": "#477666",
+                "stroke": "#746334",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1315,7 +1315,7 @@
             "properties": {
                 "description": "From: \"El Paso\" To: \"Odessa\"",
                 "name": "line",
-                "stroke": "#646236",
+                "stroke": "#437777",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"

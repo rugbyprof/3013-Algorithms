@@ -1,14 +1,13 @@
 /**
- * Example 6
+ * Example 7
  * This example will use a heap to push "edges" onto allowing us to find
  * edges based on a "priority" (whatever we determine the priority to be).
  * In this case each edge will have a distance between "from" and "to" and
  * we will use that as a priority to find short or long edges. If we load 
  * the Heap with edges, then pick off only the shortest edges, we can create
- * a minimum spanning tree! This will be a weak MST implementation, because we
- * are creating edges solely based on distance, and not any other pre-existing 
- * criteria. Almost as if we are creating edges out of convenience. But by picking
- * all the shortest distances won't necessarily create an optimal MST.
+ * a minimum spanning tree! This will be a cheat MST implementation, because we
+ * are creating edges solely based on distance and also creating a fully connected
+ * graph (convenient), and not any other pre-existing criteria. 
  * 
  */
 #include "City.hpp"
@@ -112,11 +111,7 @@ int main(int argc, char **argv) {
         }
     }
 
-    while(true){
-        cout<<edgeHeap.Size()<<endl;
-        if(edgeHeap.Size() == 0){
-            break;
-        }
+    while(SpanTree.size() < TexasCities.size()){
 
         edge = edgeHeap.Extract();
 
@@ -148,15 +143,3 @@ int main(int argc, char **argv) {
     cout<<TexasCities.size()<<endl;
 }
 
-// // Loop through the vector and create "geoPoints" adding property information including descriptions and colors.
-// for(int i=0;i<TexasCities.size();i++){
-//     int id = GJ.AddGeoPoint(TexasCities[i]->lon,TexasCities[i]->lat);
-//     string description = "Pop: " + to_string(TexasCities[i]->population) + " Growth: " + to_string(TexasCities[i]->growth);
-//     GJ.AddProperties(id,{
-//         {"title",TexasCities[i]->name},
-//         {"description",description},
-//         {"marker-name","city"},
-//         {"marker-color",Colors.GetRandomColor()},
-//         {"marker-size","small"},
-//     });
-// }
