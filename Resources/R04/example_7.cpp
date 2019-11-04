@@ -1,13 +1,9 @@
 /**
  * Example 7
- * This example will use a heap to push "edges" onto allowing us to find
- * edges based on a "priority" (whatever we determine the priority to be).
- * In this case each edge will have a distance between "from" and "to" and
- * we will use that as a priority to find short or long edges. If we load 
- * the Heap with edges, then pick off only the shortest edges, we can create
- * a minimum spanning tree! This will be a cheat MST implementation, because we
- * are creating edges solely based on distance and also creating a fully connected
- * graph (convenient), and not any other pre-existing criteria. 
+ * This example places all edges on a heap with the highest priority
+ * going to the shortest edges. It adds edges to a "spanning tree"
+ * based on whethor or not both "from" and "to" are NOT in the tree
+ * already. Not a good method as you can see by the geojson.
  * 
  */
 #include "City.hpp"
@@ -39,7 +35,7 @@ using json = nlohmann::json;
  * Returns:
  *     vector of city pointers. 
  */
-vector<City *> LoadCities(string filename, string state) {
+vector<City *> LoadCities(string filename, string state="") {
     json obj;
     JsonFacade J(filename);
     vector<City *> Cities;
@@ -48,7 +44,7 @@ vector<City *> LoadCities(string filename, string state) {
     for (int i = 0, id = 0; i < J.getSize(); i++) {
         obj = J.getNext();
 
-        if (obj["state"] == state) {
+        if (obj["state"] == state || state == "") {
             Cities.push_back(new City(obj, id));
             id++;
         }
@@ -56,90 +52,102 @@ vector<City *> LoadCities(string filename, string state) {
     return Cities;
 }
 
-json EdgeToLine(vector<City *> TexasCities,Edge* e){
+json EdgeToLine(vector<City *> Cities,Edge* e){
     json temp = json::object();
     temp["line"] = {
-            {TexasCities[e->from]->lon,TexasCities[e->from]->lat},
-            {TexasCities[e->to]->lon,TexasCities[e->to]->lat}
+            {Cities[e->from]->lon,Cities[e->from]->lat},
+            {Cities[e->to]->lon,Cities[e->to]->lat}
     };
-    temp["from"] = TexasCities[e->from]->name;
-    temp["to"] = TexasCities[e->to]->name;
+    temp["from"] = Cities[e->from]->name;
+    temp["to"] = Cities[e->to]->name;
     return temp;
 }
 
-bool inSpanTree(vector<int> st,int key){
-    for(int i=0;i<st.size();i++){
-        if(st[i] == key){
-            return true;
-        }
-    }
-    return false;
-}
 
 int main(int argc, char **argv) {
 
+    int numEdges = 3;
+    if(argc >= 2){
+        numEdges = stoi(argv[1]);
+    }
+
     string filename = "cities_all.json"; // our json city file
     string state = "Texas";              // Filter cities for Texas only
-    vector<City *> TexasCities;          // Array of city pointers
+    vector<City *> Cities;          // Array of city pointers
     HexColors Colors;                    // Random colors
-    GeoJson *GJ = new GeoJson();         // geojson object
-    Heap<Edge> edgeHeap(false);          // A heap that holds edges to find shortest edges.
+    GeoJson GJ;
+    Heap<City> cityHeap(false);          // A heap that holds cities to find closest city.
+    Graph G;
 
     double lat;                          // used to help with distance calculations
     double lon;                          // and for code readability
     double distance;
-    Edge* edge;
-    vector<int> SpanTree;
+    City* city;
+
 
     // Get all the cities loaded into our vector
-    TexasCities = LoadCities(filename, state);
+    Cities = LoadCities(filename);
 
+    for (int i = 0; i < Cities.size(); i++) {
+        G.AddVertex(Cities[i]);
+        int markerID = GJ.AddGeoPoint(Cities[i]->lon,Cities[i]->lat);
+        GJ.AddProperties(markerID,{{"name",Cities[i]->name},{"marker-color",Colors.GetRandomColor()}});
+    }
 
     // Build a heap with ALL the edges (fully connected)
     // between every city in Texas.
-    for (int i = 0; i < TexasCities.size(); i++) {
-        lat = TexasCities[i]->lat;
-        lon = TexasCities[i]->lon;
-        for (int j = 0; j < TexasCities.size(); j++) {
+    for (int i = 0; i < Cities.size(); i++) {
+        lat = Cities[i]->lat;
+        lon = Cities[i]->lon;
+        for (int j = 0; j < Cities.size(); j++) {
             if(i != j){
-                distance = TexasCities[j]->Distance(lat,lon);
-
-                edge = new Edge(i,j,distance);
-
-                edgeHeap.Insert(edge);
+                Cities[j]->priority = Cities[j]->Distance(lat,lon);
+                cityHeap.Insert(Cities[j]);
             }
         }
+
+        for(int e=0;e<numEdges;e++){
+            city = cityHeap.Extract();
+            G.AddEdge(Cities[i]->id,city->id,city->priority);
+        }
+        cityHeap.Clear();
     }
 
-    while(SpanTree.size() < TexasCities.size()){
 
-        edge = edgeHeap.Extract();
+    //G.PrintGraph();
+    queue<City*> Path = G.BreadthFirst();
+    City* temp;
+    json line = json::array();
+    int lineNumber = 0;
 
-        while(!inSpanTree(SpanTree,edge->from) || !inSpanTree(SpanTree,edge->to)){
-            edge = edgeHeap.Extract();
-            json temp = EdgeToLine(TexasCities,edge);
+
+    while(Path.size()){
+        temp = Path.front();
+        Path.pop();
+        if(temp->name != ""){
+            line.push_back({temp->lon,temp->lat});
+            cout<<"adding connection->";
+        }else{
+            if(line.size() > 1){
+                GJ.AddLineString(line);
+            }else{
+
+                //GJ.AddGeoPoint(line);
+            }
             
-            string description = "From: " + to_string(temp["from"]) + " To: " + to_string(temp["to"]);
-
-            if(!inSpanTree(SpanTree,edge->from)){
-                SpanTree.push_back(edge->from);
-            }
-
-            if(!inSpanTree(SpanTree,edge->to)){
-                SpanTree.push_back(edge->to);
-            }
-
-            int id = GJ->AddLineString(temp["line"]);
-            GJ->AddProperties(id,{
-                {"description",description},
-                {"stroke",Colors.GetRandomDarkColor()},
-                {"stroke-opacity","0.7"},
-            });
+            line = json::array();
+            cout<<"adding line\n";
         }
+        
+        
     }
+
+   
+
     // Generate our geojson output.
-    GJ->PrintJson("example_7.geojson");
-    cout<<edgeHeap.Size()<<endl;
-    cout<<TexasCities.size()<<endl;
+    GJ.PrintJson("example_7.geojson");
+
+    
+ 
 }
 

@@ -4,6 +4,25 @@
             "geometry": {
                 "coordinates": [
                     [
+                        -97.1430671,
+                        32.844017
+                    ],
+                    [
+                        -97.1705678,
+                        32.8234621
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "name": "line"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
                         -97.1705678,
                         32.8234621
                     ],
@@ -17,29 +36,7 @@
             "properties": {
                 "description": "From: \"Hurst\" To: \"Bedford\"",
                 "name": "line",
-                "stroke": "#444617",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -98.1836216,
-                        26.1947962
-                    ],
-                    [
-                        -98.23001239999999,
-                        26.2034071
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Pharr\" To: \"McAllen\"",
-                "name": "line",
-                "stroke": "#653114",
+                "stroke": "#454721",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -52,16 +49,38 @@
                         32.8342952
                     ],
                     [
-                        -97.26918169999999,
-                        32.7995738
+                        -97.1705678,
+                        32.8234621
                     ]
                 ],
                 "type": "LineString"
             },
             "properties": {
-                "description": "From: \"North Richland Hills\" To: \"Haltom City\"",
+                "description": "From: \"North Richland Hills\" To: \"Hurst\"",
                 "name": "line",
-                "stroke": "#776442",
+                "stroke": "#331731",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.26918169999999,
+                        32.7995738
+                    ],
+                    [
+                        -97.2289029,
+                        32.8342952
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Haltom City\" To: \"North Richland Hills\"",
+                "name": "line",
+                "stroke": "#513464",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -83,73 +102,7 @@
             "properties": {
                 "description": "From: \"Euless\" To: \"Bedford\"",
                 "name": "line",
-                "stroke": "#315523",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -96.3699632,
-                        30.6743643
-                    ],
-                    [
-                        -96.3344068,
-                        30.627977
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Bryan\" To: \"College Station\"",
-                "name": "line",
-                "stroke": "#515572",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -97.01500779999999,
-                        32.9545687
-                    ],
-                    [
-                        -97.0780654,
-                        32.9342919
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Coppell\" To: \"Grapevine\"",
-                "name": "line",
-                "stroke": "#336635",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -96.63888329999999,
-                        32.912624
-                    ],
-                    [
-                        -96.56388,
-                        32.9029017
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Garland\" To: \"Rowlett\"",
-                "name": "line",
-                "stroke": "#225475",
+                "stroke": "#355561",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -171,7 +124,7 @@
             "properties": {
                 "description": "From: \"Fort Worth\" To: \"Haltom City\"",
                 "name": "line",
-                "stroke": "#112333",
+                "stroke": "#227766",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -180,20 +133,20 @@
             "geometry": {
                 "coordinates": [
                     [
-                        -96.9083366,
-                        32.6518004
+                        -97.0780654,
+                        32.9342919
                     ],
                     [
-                        -96.9561152,
-                        32.5884689
+                        -97.08195409999999,
+                        32.8370727
                     ]
                 ],
                 "type": "LineString"
             },
             "properties": {
-                "description": "From: \"Duncanville\" To: \"Cedar Hill\"",
+                "description": "From: \"Grapevine\" To: \"Euless\"",
                 "name": "line",
-                "stroke": "#714275",
+                "stroke": "#722427",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -202,86 +155,20 @@
             "geometry": {
                 "coordinates": [
                     [
-                        -96.9083366,
-                        32.6518004
+                        -97.01500779999999,
+                        32.9545687
                     ],
                     [
-                        -96.8570738,
-                        32.5896998
+                        -97.0780654,
+                        32.9342919
                     ]
                 ],
                 "type": "LineString"
             },
             "properties": {
-                "description": "From: \"Duncanville\" To: \"DeSoto\"",
+                "description": "From: \"Coppell\" To: \"Grapevine\"",
                 "name": "line",
-                "stroke": "#447652",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -96.6988856,
-                        33.0198431
-                    ],
-                    [
-                        -96.7298519,
-                        32.9483335
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Plano\" To: \"Richardson\"",
-                "name": "line",
-                "stroke": "#163731",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -96.9488945,
-                        32.8140177
-                    ],
-                    [
-                        -96.99778459999999,
-                        32.7459645
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Irving\" To: \"Grand Prairie\"",
-                "name": "line",
-                "stroke": "#763655",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -95.2010447,
-                        29.5293998
-                    ],
-                    [
-                        -95.2860474,
-                        29.5635666
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Friendswood\" To: \"Pearland\"",
-                "name": "line",
-                "stroke": "#264751",
+                "stroke": "#752651",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -303,7 +190,7 @@
             "properties": {
                 "description": "From: \"Flower Mound\" To: \"Grapevine\"",
                 "name": "line",
-                "stroke": "#113146",
+                "stroke": "#726447",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -312,130 +199,20 @@
             "geometry": {
                 "coordinates": [
                     [
-                        -95.5377215,
-                        29.6185669
+                        -96.994174,
+                        33.046233
                     ],
                     [
-                        -95.6349463,
-                        29.6196787
+                        -97.0969552,
+                        33.0145673
                     ]
                 ],
                 "type": "LineString"
             },
             "properties": {
-                "description": "From: \"Missouri City\" To: \"Sugar Land\"",
+                "description": "From: \"Lewisville\" To: \"Flower Mound\"",
                 "name": "line",
-                "stroke": "#167125",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -96.7561082,
-                        32.5920798
-                    ],
-                    [
-                        -96.8570738,
-                        32.5896998
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Lancaster\" To: \"DeSoto\"",
-                "name": "line",
-                "stroke": "#756574",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -97.678896,
-                        30.5082551
-                    ],
-                    [
-                        -97.62000429999999,
-                        30.4393696
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Round Rock\" To: \"Pflugerville\"",
-                "name": "line",
-                "stroke": "#413237",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -98.32529319999999,
-                        26.2159066
-                    ],
-                    [
-                        -98.23001239999999,
-                        26.2034071
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Mission\" To: \"McAllen\"",
-                "name": "line",
-                "stroke": "#557632",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -96.67055030000002,
-                        33.1031744
-                    ],
-                    [
-                        -96.6988856,
-                        33.0198431
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Allen\" To: \"Plano\"",
-                "name": "line",
-                "stroke": "#532266",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -96.82361159999999,
-                        33.1506744
-                    ],
-                    [
-                        -96.89283089999999,
-                        33.0806083
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Frisco\" To: \"The Colony\"",
-                "name": "line",
-                "stroke": "#254531",
+                "stroke": "#352431",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -457,7 +234,7 @@
             "properties": {
                 "description": "From: \"The Colony\" To: \"Lewisville\"",
                 "name": "line",
-                "stroke": "#376613",
+                "stroke": "#214547",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -466,20 +243,42 @@
             "geometry": {
                 "coordinates": [
                     [
-                        -96.4597089,
-                        32.93123360000001
+                        -96.82361159999999,
+                        33.1506744
                     ],
                     [
-                        -96.56388,
-                        32.9029017
+                        -96.89283089999999,
+                        33.0806083
                     ]
                 ],
                 "type": "LineString"
             },
             "properties": {
-                "description": "From: \"Rockwall\" To: \"Rowlett\"",
+                "description": "From: \"Frisco\" To: \"The Colony\"",
                 "name": "line",
-                "stroke": "#513621",
+                "stroke": "#671171",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.229298,
+                        32.9341893
+                    ],
+                    [
+                        -97.2289029,
+                        32.8342952
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Keller\" To: \"North Richland Hills\"",
+                "name": "line",
+                "stroke": "#762536",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -492,6 +291,50 @@
                         32.735687
                     ],
                     [
+                        -97.1705678,
+                        32.8234621
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Arlington\" To: \"Hurst\"",
+                "name": "line",
+                "stroke": "#515417",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.99778459999999,
+                        32.7459645
+                    ],
+                    [
+                        -97.10806559999999,
+                        32.735687
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Grand Prairie\" To: \"Arlington\"",
+                "name": "line",
+                "stroke": "#511546",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.9488945,
+                        32.8140177
+                    ],
+                    [
                         -96.99778459999999,
                         32.7459645
                     ]
@@ -499,75 +342,9 @@
                 "type": "LineString"
             },
             "properties": {
-                "description": "From: \"Arlington\" To: \"Grand Prairie\"",
+                "description": "From: \"Irving\" To: \"Grand Prairie\"",
                 "name": "line",
-                "stroke": "#463757",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -95.2010447,
-                        29.5293998
-                    ],
-                    [
-                        -95.0949303,
-                        29.5074538
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Friendswood\" To: \"League City\"",
-                "name": "line",
-                "stroke": "#531527",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -96.67055030000002,
-                        33.1031744
-                    ],
-                    [
-                        -96.6397822,
-                        33.1972465
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Allen\" To: \"McKinney\"",
-                "name": "line",
-                "stroke": "#337652",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -97.2289029,
-                        32.8342952
-                    ],
-                    [
-                        -97.229298,
-                        32.9341893
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"North Richland Hills\" To: \"Keller\"",
-                "name": "line",
-                "stroke": "#642325",
+                "stroke": "#153342",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -589,7 +366,227 @@
             "properties": {
                 "description": "From: \"Carrollton\" To: \"The Colony\"",
                 "name": "line",
-                "stroke": "#763475",
+                "stroke": "#126747",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.9083366,
+                        32.6518004
+                    ],
+                    [
+                        -96.99778459999999,
+                        32.7459645
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Duncanville\" To: \"Grand Prairie\"",
+                "name": "line",
+                "stroke": "#242734",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.9561152,
+                        32.5884689
+                    ],
+                    [
+                        -96.9083366,
+                        32.6518004
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Cedar Hill\" To: \"Duncanville\"",
+                "name": "line",
+                "stroke": "#376677",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.8570738,
+                        32.5896998
+                    ],
+                    [
+                        -96.9083366,
+                        32.6518004
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"DeSoto\" To: \"Duncanville\"",
+                "name": "line",
+                "stroke": "#752155",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.7561082,
+                        32.5920798
+                    ],
+                    [
+                        -96.8570738,
+                        32.5896998
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Lancaster\" To: \"DeSoto\"",
+                "name": "line",
+                "stroke": "#443533",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.79698789999999,
+                        32.7766642
+                    ],
+                    [
+                        -96.9488945,
+                        32.8140177
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Dallas\" To: \"Irving\"",
+                "name": "line",
+                "stroke": "#613271",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.67055030000002,
+                        33.1031744
+                    ],
+                    [
+                        -96.82361159999999,
+                        33.1506744
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Allen\" To: \"Frisco\"",
+                "name": "line",
+                "stroke": "#164311",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.6988856,
+                        33.0198431
+                    ],
+                    [
+                        -96.67055030000002,
+                        33.1031744
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Plano\" To: \"Allen\"",
+                "name": "line",
+                "stroke": "#123716",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.7298519,
+                        32.9483335
+                    ],
+                    [
+                        -96.6988856,
+                        33.0198431
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Richardson\" To: \"Plano\"",
+                "name": "line",
+                "stroke": "#343567",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.63888329999999,
+                        32.912624
+                    ],
+                    [
+                        -96.7298519,
+                        32.9483335
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Garland\" To: \"Richardson\"",
+                "name": "line",
+                "stroke": "#451722",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.56388,
+                        32.9029017
+                    ],
+                    [
+                        -96.63888329999999,
+                        32.912624
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Rowlett\" To: \"Garland\"",
+                "name": "line",
+                "stroke": "#456731",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -602,126 +599,60 @@
                         32.93123360000001
                     ],
                     [
+                        -96.56388,
+                        32.9029017
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Rockwall\" To: \"Rowlett\"",
+                "name": "line",
+                "stroke": "#261742",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.6397822,
+                        33.1972465
+                    ],
+                    [
+                        -96.67055030000002,
+                        33.1031744
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"McKinney\" To: \"Allen\"",
+                "name": "line",
+                "stroke": "#121767",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
                         -96.5388789,
                         33.0151201
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Rockwall\" To: \"Wylie\"",
-                "name": "line",
-                "stroke": "#444551",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -98.1836216,
-                        26.1947962
                     ],
                     [
-                        -98.1633432,
-                        26.3017374
+                        -96.4597089,
+                        32.93123360000001
                     ]
                 ],
                 "type": "LineString"
             },
             "properties": {
-                "description": "From: \"Pharr\" To: \"Edinburg\"",
+                "description": "From: \"Wylie\" To: \"Rockwall\"",
                 "name": "line",
-                "stroke": "#236327",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -97.678896,
-                        30.5082551
-                    ],
-                    [
-                        -97.8202888,
-                        30.505198
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Round Rock\" To: \"Cedar Park\"",
-                "name": "line",
-                "stroke": "#655752",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -94.9027002,
-                        29.383845
-                    ],
-                    [
-                        -94.7976958,
-                        29.3013479
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Texas City\" To: \"Galveston\"",
-                "name": "line",
-                "stroke": "#542215",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -97.678896,
-                        30.5082551
-                    ],
-                    [
-                        -97.6779842,
-                        30.6332618
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Round Rock\" To: \"Georgetown\"",
-                "name": "line",
-                "stroke": "#311265",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -96.9488945,
-                        32.8140177
-                    ],
-                    [
-                        -96.79698789999999,
-                        32.7766642
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Irving\" To: \"Dallas\"",
-                "name": "line",
-                "stroke": "#334132",
+                "stroke": "#434232",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -743,7 +674,7 @@
             "properties": {
                 "description": "From: \"Mesquite\" To: \"Rowlett\"",
                 "name": "line",
-                "stroke": "#432137",
+                "stroke": "#435312",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -752,20 +683,20 @@
             "geometry": {
                 "coordinates": [
                     [
-                        -95.2860474,
-                        29.5635666
+                        -97.1416768,
+                        32.5631924
                     ],
                     [
-                        -95.2091006,
-                        29.6910625
+                        -96.9561152,
+                        32.5884689
                     ]
                 ],
                 "type": "LineString"
             },
             "properties": {
-                "description": "From: \"Pearland\" To: \"Pasadena\"",
+                "description": "From: \"Mansfield\" To: \"Cedar Hill\"",
                 "name": "line",
-                "stroke": "#756112",
+                "stroke": "#733313",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -787,7 +718,7 @@
             "properties": {
                 "description": "From: \"Burleson\" To: \"Mansfield\"",
                 "name": "line",
-                "stroke": "#757472",
+                "stroke": "#525657",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -795,285 +726,21 @@
         {
             "geometry": {
                 "coordinates": [
-                    [
-                        -95.3698028,
-                        29.7604267
-                    ],
-                    [
-                        -95.2091006,
-                        29.6910625
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Houston\" To: \"Pasadena\"",
-                "name": "line",
-                "stroke": "#467211",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -98.1836216,
-                        26.1947962
-                    ],
-                    [
-                        -97.9908366,
-                        26.1595194
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Pharr\" To: \"Weslaco\"",
-                "name": "line",
-                "stroke": "#175156",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -97.62000429999999,
-                        30.4393696
-                    ],
-                    [
-                        -97.7430608,
-                        30.267153
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Pflugerville\" To: \"Austin\"",
-                "name": "line",
-                "stroke": "#267647",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -97.0969552,
-                        33.0145673
-                    ],
                     [
                         -97.13306829999999,
                         33.2148412
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Flower Mound\" To: \"Denton\"",
-                "name": "line",
-                "stroke": "#316663",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -94.97742740000001,
-                        29.7355047
                     ],
                     [
-                        -95.2091006,
-                        29.6910625
+                        -97.0969552,
+                        33.0145673
                     ]
                 ],
                 "type": "LineString"
             },
             "properties": {
-                "description": "From: \"Baytown\" To: \"Pasadena\"",
+                "description": "From: \"Denton\" To: \"Flower Mound\"",
                 "name": "line",
-                "stroke": "#277461",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -97.9413941,
-                        29.8832749
-                    ],
-                    [
-                        -98.1244531,
-                        29.7030024
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"San Marcos\" To: \"New Braunfels\"",
-                "name": "line",
-                "stroke": "#716171",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -93.93994699999999,
-                        29.8849504
-                    ],
-                    [
-                        -94.1265562,
-                        30.080174
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Port Arthur\" To: \"Beaumont\"",
-                "name": "line",
-                "stroke": "#455565",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -97.69610259999999,
-                        26.1906306
-                    ],
-                    [
-                        -97.9908366,
-                        26.1595194
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Harlingen\" To: \"Weslaco\"",
-                "name": "line",
-                "stroke": "#537736",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -102.0779146,
-                        31.9973456
-                    ],
-                    [
-                        -102.3676431,
-                        31.8456816
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Midland\" To: \"Odessa\"",
-                "name": "line",
-                "stroke": "#614173",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -97.342782,
-                        31.0982344
-                    ],
-                    [
-                        -97.72779589999999,
-                        31.1171194
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Temple\" To: \"Killeen\"",
-                "name": "line",
-                "stroke": "#375164",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -97.4974838,
-                        25.9017472
-                    ],
-                    [
-                        -97.69610259999999,
-                        26.1906306
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Brownsville\" To: \"Harlingen\"",
-                "name": "line",
-                "stroke": "#744356",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -95.55077709999999,
-                        30.7235263
-                    ],
-                    [
-                        -95.45605119999999,
-                        30.3118769
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Huntsville\" To: \"Conroe\"",
-                "name": "line",
-                "stroke": "#125343",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -98.49362819999999,
-                        29.4241219
-                    ],
-                    [
-                        -98.1244531,
-                        29.7030024
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"San Antonio\" To: \"New Braunfels\"",
-                "name": "line",
-                "stroke": "#167142",
+                "stroke": "#117463",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1095,7 +762,29 @@
             "properties": {
                 "description": "From: \"Sherman\" To: \"McKinney\"",
                 "name": "line",
-                "stroke": "#556766",
+                "stroke": "#711776",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.1466695,
+                        31.549333
+                    ],
+                    [
+                        -97.3208492,
+                        32.5420821
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Waco\" To: \"Burleson\"",
+                "name": "line",
+                "stroke": "#535612",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1117,7 +806,579 @@
             "properties": {
                 "description": "From: \"Temple\" To: \"Waco\"",
                 "name": "line",
-                "stroke": "#437555",
+                "stroke": "#354617",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.72779589999999,
+                        31.1171194
+                    ],
+                    [
+                        -97.342782,
+                        31.0982344
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Killeen\" To: \"Temple\"",
+                "name": "line",
+                "stroke": "#473435",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.6779842,
+                        30.6332618
+                    ],
+                    [
+                        -97.72779589999999,
+                        31.1171194
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Georgetown\" To: \"Killeen\"",
+                "name": "line",
+                "stroke": "#437655",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.678896,
+                        30.5082551
+                    ],
+                    [
+                        -97.6779842,
+                        30.6332618
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Round Rock\" To: \"Georgetown\"",
+                "name": "line",
+                "stroke": "#635142",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.62000429999999,
+                        30.4393696
+                    ],
+                    [
+                        -97.678896,
+                        30.5082551
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Pflugerville\" To: \"Round Rock\"",
+                "name": "line",
+                "stroke": "#421223",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.8202888,
+                        30.505198
+                    ],
+                    [
+                        -97.678896,
+                        30.5082551
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Cedar Park\" To: \"Round Rock\"",
+                "name": "line",
+                "stroke": "#525466",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.7430608,
+                        30.267153
+                    ],
+                    [
+                        -97.62000429999999,
+                        30.4393696
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Austin\" To: \"Pflugerville\"",
+                "name": "line",
+                "stroke": "#417733",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.9413941,
+                        29.8832749
+                    ],
+                    [
+                        -97.7430608,
+                        30.267153
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"San Marcos\" To: \"Austin\"",
+                "name": "line",
+                "stroke": "#211213",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.1244531,
+                        29.7030024
+                    ],
+                    [
+                        -97.9413941,
+                        29.8832749
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"New Braunfels\" To: \"San Marcos\"",
+                "name": "line",
+                "stroke": "#757117",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.49362819999999,
+                        29.4241219
+                    ],
+                    [
+                        -98.1244531,
+                        29.7030024
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"San Antonio\" To: \"New Braunfels\"",
+                "name": "line",
+                "stroke": "#113532",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.3699632,
+                        30.6743643
+                    ],
+                    [
+                        -97.342782,
+                        31.0982344
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Bryan\" To: \"Temple\"",
+                "name": "line",
+                "stroke": "#655526",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -96.3344068,
+                        30.627977
+                    ],
+                    [
+                        -96.3699632,
+                        30.6743643
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"College Station\" To: \"Bryan\"",
+                "name": "line",
+                "stroke": "#744255",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.55077709999999,
+                        30.7235263
+                    ],
+                    [
+                        -96.3344068,
+                        30.627977
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Huntsville\" To: \"College Station\"",
+                "name": "line",
+                "stroke": "#313141",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.45605119999999,
+                        30.3118769
+                    ],
+                    [
+                        -95.55077709999999,
+                        30.7235263
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Conroe\" To: \"Huntsville\"",
+                "name": "line",
+                "stroke": "#236512",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.3698028,
+                        29.7604267
+                    ],
+                    [
+                        -95.45605119999999,
+                        30.3118769
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Houston\" To: \"Conroe\"",
+                "name": "line",
+                "stroke": "#673431",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.2091006,
+                        29.6910625
+                    ],
+                    [
+                        -95.3698028,
+                        29.7604267
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Pasadena\" To: \"Houston\"",
+                "name": "line",
+                "stroke": "#133537",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.2860474,
+                        29.5635666
+                    ],
+                    [
+                        -95.2091006,
+                        29.6910625
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Pearland\" To: \"Pasadena\"",
+                "name": "line",
+                "stroke": "#127257",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.2010447,
+                        29.5293998
+                    ],
+                    [
+                        -95.2860474,
+                        29.5635666
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Friendswood\" To: \"Pearland\"",
+                "name": "line",
+                "stroke": "#516334",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.0949303,
+                        29.5074538
+                    ],
+                    [
+                        -95.2010447,
+                        29.5293998
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"League City\" To: \"Friendswood\"",
+                "name": "line",
+                "stroke": "#764115",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.5377215,
+                        29.6185669
+                    ],
+                    [
+                        -95.3698028,
+                        29.7604267
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Missouri City\" To: \"Houston\"",
+                "name": "line",
+                "stroke": "#546316",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.6349463,
+                        29.6196787
+                    ],
+                    [
+                        -95.5377215,
+                        29.6185669
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Sugar Land\" To: \"Missouri City\"",
+                "name": "line",
+                "stroke": "#333354",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -94.97742740000001,
+                        29.7355047
+                    ],
+                    [
+                        -95.2091006,
+                        29.6910625
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Baytown\" To: \"Pasadena\"",
+                "name": "line",
+                "stroke": "#222765",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -94.9027002,
+                        29.383845
+                    ],
+                    [
+                        -95.0949303,
+                        29.5074538
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Texas City\" To: \"League City\"",
+                "name": "line",
+                "stroke": "#257352",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -94.7976958,
+                        29.3013479
+                    ],
+                    [
+                        -94.9027002,
+                        29.383845
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Galveston\" To: \"Texas City\"",
+                "name": "line",
+                "stroke": "#166343",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -94.1265562,
+                        30.080174
+                    ],
+                    [
+                        -94.97742740000001,
+                        29.7355047
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Beaumont\" To: \"Baytown\"",
+                "name": "line",
+                "stroke": "#212773",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -93.93994699999999,
+                        29.8849504
+                    ],
+                    [
+                        -94.1265562,
+                        30.080174
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Port Arthur\" To: \"Beaumont\"",
+                "name": "line",
+                "stroke": "#566576",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -95.30106239999999,
+                        32.3512601
+                    ],
+                    [
+                        -96.4597089,
+                        32.93123360000001
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Tyler\" To: \"Rockwall\"",
+                "name": "line",
+                "stroke": "#542111",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1139,7 +1400,51 @@
             "properties": {
                 "description": "From: \"Longview\" To: \"Tyler\"",
                 "name": "line",
-                "stroke": "#554516",
+                "stroke": "#656267",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -94.04768820000001,
+                        33.425125
+                    ],
+                    [
+                        -94.74048909999999,
+                        32.5007037
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Texarkana\" To: \"Longview\"",
+                "name": "line",
+                "stroke": "#254154",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.0035982,
+                        28.8052674
+                    ],
+                    [
+                        -98.1244531,
+                        29.7030024
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Victoria\" To: \"New Braunfels\"",
+                "name": "line",
+                "stroke": "#152721",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1161,51 +1466,7 @@
             "properties": {
                 "description": "From: \"Corpus Christi\" To: \"Victoria\"",
                 "name": "line",
-                "stroke": "#744715",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -94.74048909999999,
-                        32.5007037
-                    ],
-                    [
-                        -94.04768820000001,
-                        33.425125
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"Longview\" To: \"Texarkana\"",
-                "name": "line",
-                "stroke": "#715457",
-                "stroke-opacity": "0.7"
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    [
-                        -100.4370375,
-                        31.4637723
-                    ],
-                    [
-                        -99.73314390000002,
-                        32.4487364
-                    ]
-                ],
-                "type": "LineString"
-            },
-            "properties": {
-                "description": "From: \"San Angelo\" To: \"Abilene\"",
-                "name": "line",
-                "stroke": "#762252",
+                "stroke": "#751436",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1227,7 +1488,7 @@
             "properties": {
                 "description": "From: \"Wichita Falls\" To: \"Denton\"",
                 "name": "line",
-                "stroke": "#351444",
+                "stroke": "#742553",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1236,20 +1497,20 @@
             "geometry": {
                 "coordinates": [
                     [
-                        -102.0779146,
-                        31.9973456
+                        -97.69610259999999,
+                        26.1906306
                     ],
                     [
-                        -101.8551665,
-                        33.5778631
+                        -97.39638099999999,
+                        27.8005828
                     ]
                 ],
                 "type": "LineString"
             },
             "properties": {
-                "description": "From: \"Midland\" To: \"Lubbock\"",
+                "description": "From: \"Harlingen\" To: \"Corpus Christi\"",
                 "name": "line",
-                "stroke": "#472415",
+                "stroke": "#175566",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1258,20 +1519,64 @@
             "geometry": {
                 "coordinates": [
                     [
-                        -101.8551665,
-                        33.5778631
+                        -97.9908366,
+                        26.1595194
                     ],
                     [
-                        -101.8312969,
-                        35.2219971
+                        -97.69610259999999,
+                        26.1906306
                     ]
                 ],
                 "type": "LineString"
             },
             "properties": {
-                "description": "From: \"Lubbock\" To: \"Amarillo\"",
+                "description": "From: \"Weslaco\" To: \"Harlingen\"",
                 "name": "line",
-                "stroke": "#477735",
+                "stroke": "#525115",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.1836216,
+                        26.1947962
+                    ],
+                    [
+                        -97.9908366,
+                        26.1595194
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Pharr\" To: \"Weslaco\"",
+                "name": "line",
+                "stroke": "#336237",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.23001239999999,
+                        26.2034071
+                    ],
+                    [
+                        -98.1836216,
+                        26.1947962
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"McAllen\" To: \"Pharr\"",
+                "name": "line",
+                "stroke": "#376254",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1284,16 +1589,214 @@
                         26.2159066
                     ],
                     [
-                        -99.48032409999999,
-                        27.5305671
+                        -98.23001239999999,
+                        26.2034071
                     ]
                 ],
                 "type": "LineString"
             },
             "properties": {
-                "description": "From: \"Mission\" To: \"Laredo\"",
+                "description": "From: \"Mission\" To: \"McAllen\"",
                 "name": "line",
-                "stroke": "#726332",
+                "stroke": "#357575",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -98.1633432,
+                        26.3017374
+                    ],
+                    [
+                        -98.1836216,
+                        26.1947962
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Edinburg\" To: \"Pharr\"",
+                "name": "line",
+                "stroke": "#315474",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -97.4974838,
+                        25.9017472
+                    ],
+                    [
+                        -97.69610259999999,
+                        26.1906306
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Brownsville\" To: \"Harlingen\"",
+                "name": "line",
+                "stroke": "#235132",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -99.48032409999999,
+                        27.5305671
+                    ],
+                    [
+                        -98.32529319999999,
+                        26.2159066
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Laredo\" To: \"Mission\"",
+                "name": "line",
+                "stroke": "#221335",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -99.73314390000002,
+                        32.4487364
+                    ],
+                    [
+                        -98.4933873,
+                        33.9137085
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Abilene\" To: \"Wichita Falls\"",
+                "name": "line",
+                "stroke": "#161332",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -100.4370375,
+                        31.4637723
+                    ],
+                    [
+                        -99.73314390000002,
+                        32.4487364
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"San Angelo\" To: \"Abilene\"",
+                "name": "line",
+                "stroke": "#322312",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -102.0779146,
+                        31.9973456
+                    ],
+                    [
+                        -100.4370375,
+                        31.4637723
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Midland\" To: \"San Angelo\"",
+                "name": "line",
+                "stroke": "#115662",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -102.3676431,
+                        31.8456816
+                    ],
+                    [
+                        -102.0779146,
+                        31.9973456
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Odessa\" To: \"Midland\"",
+                "name": "line",
+                "stroke": "#236657",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -101.8551665,
+                        33.5778631
+                    ],
+                    [
+                        -102.0779146,
+                        31.9973456
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Lubbock\" To: \"Midland\"",
+                "name": "line",
+                "stroke": "#716726",
+                "stroke-opacity": "0.7"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        -101.8312969,
+                        35.2219971
+                    ],
+                    [
+                        -101.8551665,
+                        33.5778631
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "description": "From: \"Amarillo\" To: \"Lubbock\"",
+                "name": "line",
+                "stroke": "#616552",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
@@ -1315,7 +1818,7 @@
             "properties": {
                 "description": "From: \"El Paso\" To: \"Odessa\"",
                 "name": "line",
-                "stroke": "#241615",
+                "stroke": "#113422",
                 "stroke-opacity": "0.7"
             },
             "type": "Feature"
