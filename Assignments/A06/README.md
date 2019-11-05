@@ -75,7 +75,7 @@ Draw 3 separate hash tables that results from using a given hash function (below
 
 |                                       Hash Function                                       | Description                                              |
 | :---------------------------------------------------------------------------------------: | :------------------------------------------------------- |
-| <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/test.2.4.png" width="250"> | The sum of the ascii value of each letter mod table size |
+| <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/test.2.7.png" width="250"> | The sum of the ascii value of each letter mod table size |
 | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/test.2.5.png" width="250"> | Where `i` is the `i`<sup>th</sup> collision `+ 1`        |
 
 Strings to hash:
