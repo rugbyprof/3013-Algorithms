@@ -18,9 +18,13 @@ Some issues to consider in choosing a hash function:
 
 Define ***load factor*** of hash table with ***M*** entries and ***n*** keys to be ***&lambda; = n/M*** (How full the table is).
 
+>e.g. `M=100` `n=80` &lambda;=.8
+
 Assume a hash function that is ideal for chaining (any key is equally likely to hash to any of the ***M*** locations).
 
-***Fact:*** Average length of each linked list is ***n/M = &lambda;*** .
+***Fact:*** Average length of each linked list is ***n/M = &lambda;***.
+> Good news is that a hash table using chainging can store more keys than `M`. 
+> So if `n = 200` and `M=100` then the average chain length would be &lambda;=`2.0`
 
 The *average* running time for chaining:
 - ***Insert:*** *O(1)* (same as worst case).
@@ -31,7 +35,10 @@ The *average* running time for chaining:
     - *O(1)*. time to compute *h(k)* 
     - &lambda; on average, key being sought is in middle of linked list, so *&lambda; / 2*. comparisons needed to find *k*.
 - ***Delete:*** Essentially the same as search.
-    - For these times to be*O(1)*, &lambda; must be *O(1)*, so *n* cannot be too much larger than *M*.
+
+- **Note:** Even though chaining allows for the size of `n` to become larger than `M` we should be careful.
+    - For these times to stay close *O(1)*, *n* shouldn't get a lot larger than *M*.
+    - Asymptotically adding a bounded constant to *O(1)* is trivial, however over many insertions and deletions the cost it adds will accumulate.
 
 ## Open Addressing Overview
 With this scheme, there are no linked lists. Instead, all elements are stored in the table proper.
@@ -51,7 +58,7 @@ The simplest pattern is to start at h(k) and then check
 |  Hash Table Size = 9   |
 |:----:|
 | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/hash.linear_probe.png"> |
-| F means full.| 
+| F means full (or occupied).| 
 
 If *`h(k)=7`*, the probe sequence will be ***`7, 8, 0, 1, 2, 3`*** where `3` is the first empty slot. 
 
@@ -137,11 +144,11 @@ Generalizes the earlier example
 
 ## Average Case Analysis of Open Addressing
 
-In this situation, the load factor *&lamda; = n / M* is always less than 1: there cannot be more keys in the table than there are table entries, since keys are stored directly in the table.
+In this situation, the load factor *&lambda;` = n / M`* is always `<= 1`: there cannot be more keys in the table than there are table entries, since keys are stored directly in the table. In actuality, we never want *&lambda;`=1`*, since it could hinder performance.
 
-Assume that there is always at least one empty slot.
-
-Assume that the hash function ensures that each key is equally likely to have each permutation of *0,1,...,M - 1* as its probe sequence.
+- Assumptions:
+    - Assume that there is always at least one empty slot.
+    - Assume that the hash function ensures that each key is equally likely to have each permutation of *0,1,...,M - 1* as its probe sequence.
 
 Average case running times:
 - **Unsuccessful Search:** *O(1/(1-&lambda;))*.
