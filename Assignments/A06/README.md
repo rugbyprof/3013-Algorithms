@@ -88,7 +88,6 @@ Strings to hash:
 
 - **Given:** A hash table that uses linear probing to handle collisions.
 - **Problem:** Describe a situation in which searching for a value in this hash table you might not find the value, even though it is in the table.
-- **Solution:** Describe a solution for this problem.
 
 -----
 
@@ -120,6 +119,7 @@ Strings to hash:
 
 - **Problem:** Given an example hash function, place it in 1 or more categories
 - **Function Names:** Shift, Additive, Rotating ,XOR , or combination
+- **Solution**: Look at the different types of [Hash Functions](../../Lectures/L09/hash_functions.md) and be able to categorize them. 
 
 -----
 
