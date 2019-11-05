@@ -5,10 +5,10 @@
  * In this case each edge will have a distance between "from" and "to" and
  * we will use that as a priority to find short or long edges. If we load 
  * the Heap with edges, then pick off only the shortest edges, we can create
- * a minimum spanning tree! This will be a weak MST implementation, because we
- * are creating edges solely based on distance, and not any other pre-existing 
- * criteria. Almost as if we are creating edges out of convenience. But by picking
- * all the shortest distances won't necessarily create an optimal MST.
+ * a minimum spanning tree! Problem is we need to check for cycles which I
+ * will let you implement in a Graph implementation which I'm not including 
+ * in this example (well edges are defined in Graph.hpp so I'm techincally
+ * "including" Graph.hpp, but only for the edge definition).
  * 
  */
 #include "City.hpp"
@@ -90,14 +90,14 @@ int main(int argc, char **argv) {
     double lon;                          // and for code readability
     double distance;
     Edge* edge;
-    vector<int> SpanTree;
+    vector<int> st;
 
     // Get all the cities loaded into our vector
     TexasCities = LoadCities(filename, state);
 
 
-    // Build a heap with ALL the edges (fully connected)
-    // between every city in Texas.
+    // Loop through and get the smallest edge to
+    // get our minimum spanning tree started
     for (int i = 0; i < TexasCities.size(); i++) {
         lat = TexasCities[i]->lat;
         lon = TexasCities[i]->lon;
@@ -112,47 +112,56 @@ int main(int argc, char **argv) {
         }
     }
 
-    while(SpanTree.size() < TexasCities.size()){
+    // pull smallest edge from the edge heap
+    edge = edgeHeap.Extract();
+    json temp = EdgeToLine(TexasCities,edge);
+    
+    string description = "From: " + to_string(temp["from"]) + " To: " + to_string(temp["to"]);
 
-        edge = edgeHeap.Extract();
+    st.push_back(edge->from);
+    //st.push_back(edge->to);
 
-        while(!inSpanTree(SpanTree,edge->from) || !inSpanTree(SpanTree,edge->to)){
-            edge = edgeHeap.Extract();
-            json temp = EdgeToLine(TexasCities,edge);
-            
-            string description = "From: " + to_string(temp["from"]) + " To: " + to_string(temp["to"]);
+    int id = GJ->AddLineString(temp["line"]);
 
-            if(!inSpanTree(SpanTree,edge->from)){
-                SpanTree.push_back(edge->from);
+    while(st.size() < TexasCities.size()){
+        edgeHeap.Clear();
+        for (int i = 0; i < TexasCities.size(); i++) {
+            lat = TexasCities[i]->lat;
+            lon = TexasCities[i]->lon;
+            for (int j = 0; j < TexasCities.size(); j++) {
+                if(i != j && !inSpanTree(st,i)){
+                    distance = TexasCities[j]->Distance(lat,lon);
+
+                    edge = new Edge(i,j,distance);
+
+                    edgeHeap.Insert(edge);
+                }
             }
-
-            if(!inSpanTree(SpanTree,edge->to)){
-                SpanTree.push_back(edge->to);
-            }
-
-            int id = GJ->AddLineString(temp["line"]);
-            GJ->AddProperties(id,{
-                {"description",description},
-                {"stroke",Colors.GetRandomDarkColor()},
-                {"stroke-opacity","0.7"},
-            });
         }
+
+        
+        edge = edgeHeap.Extract();
+        while(!inSpanTree(st,edge->to)){
+            edge = edgeHeap.Extract();
+            
+        }
+
+        json temp = EdgeToLine(TexasCities,edge);
+        
+        string description = "From: " + to_string(temp["from"]) + " To: " + to_string(temp["to"]);
+
+        st.push_back(edge->from);
+        //st.push_back(edge->to);
+
+        int id = GJ->AddLineString(temp["line"]);
+        GJ->AddProperties(id,{
+            {"description",description},
+            {"stroke",Colors.GetRandomDarkColor()},
+            {"stroke-opacity","0.7"},
+        });
+        
     }
     // Generate our geojson output.
     GJ->PrintJson("example_6.geojson");
-    cout<<edgeHeap.Size()<<endl;
-    cout<<TexasCities.size()<<endl;
 }
 
-// // Loop through the vector and create "geoPoints" adding property information including descriptions and colors.
-// for(int i=0;i<TexasCities.size();i++){
-//     int id = GJ.AddGeoPoint(TexasCities[i]->lon,TexasCities[i]->lat);
-//     string description = "Pop: " + to_string(TexasCities[i]->population) + " Growth: " + to_string(TexasCities[i]->growth);
-//     GJ.AddProperties(id,{
-//         {"title",TexasCities[i]->name},
-//         {"description",description},
-//         {"marker-name","city"},
-//         {"marker-color",Colors.GetRandomColor()},
-//         {"marker-size","small"},
-//     });
-// }

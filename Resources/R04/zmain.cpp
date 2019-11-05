@@ -1,3 +1,8 @@
+/**
+ * Collection of code snippets not really necessary...
+ * 
+ */
+
 #include "Graph.hpp"
 #include "Heap.hpp"
 #include "GeoJson.hpp"
@@ -47,7 +52,7 @@ int main(int argc, char **argv) {
 
     Graph G;
 
-    GeoJson geoJsonCities;
+    GeoJson GJ;
 
     if (argc > 1) {
         numEdges = stoi(argv[1]);
@@ -58,11 +63,9 @@ int main(int argc, char **argv) {
     // load all vertices (cities) into graph
     for (int i = 0; i < NumCities; i++) {
         G.AddVertex(Cities[i]);
-        int markerID = geoJsonCities.AddGeoPoint(Cities[i]->lon,Cities[i]->lat);
-        geoJsonCities.AddProperties(markerID,{{"name",Cities[i]->name},{"marker-color",Colors.GetRandomColor()}});
+        int markerID = GJ.AddGeoPoint(Cities[i]->lon,Cities[i]->lat);
+        GJ.AddProperties(markerID,{{"name",Cities[i]->name},{"marker-color",Colors.GetRandomColor()}});
     }
-
-    geoJsonCities.PrintJson("pretty99.json");
 
     // Generate edges
     for (int i = 0; i < NumCities; i++) {
@@ -81,7 +84,6 @@ int main(int argc, char **argv) {
         }
         H.Clear();
     }
-    //G.PrintGraph();
 
     std::vector<std::pair<double, double>> path2;
 
@@ -127,46 +129,6 @@ int main(int argc, char **argv) {
 
     GJ4.PrintJson("pretty55.json");
 
-    // for(int j=0;j<300;j++){
-    //     path.pop();
-    // }
 
-    // GeoJson GJ;
-
-    // cutoff = 0;
-    // while(path.size() > 0){
-    //     City* temp = path.front();
-    //     path.pop();
-    //     //linearray.push_back({});
-    //     int cid = GJ.AddGeoPoint(temp->lon,temp->lat);
-    //     GJ.AddProperty(cid,"marker-color",Colors.GetRandomColor());
-        
-    //     cutoff++;
-    //     if(cutoff > 10){
-    //         break;
-    //     }
-    // }
-    
-
-    
-    // int line1 = GJ.AddLineString(path2);
-    // int line2 = GJ.AddLineString(linearray);
-
-    // json obj2 = json::object();
-
-    // obj2["stroke"] = Colors.GetRandomColor();
-    // obj2["stroke-width"] = "2";
-    // obj2["stroke-opacity"] = "0.8";
-
-    // GJ.AddProperty(line1,"stroke","#0000FF");
-    // GJ.AddProperty(line1,"stroke-width","2");
-    // GJ.AddProperty(line1,"stroke-opacity","0.8");
-
-    // obj2["stroke"] = "#00FFFF";
-
-    // GJ.AddProperties(line2,obj2);
-
-
-    // GJ.PrintJson("pretty5.json");
 
 }
