@@ -86,9 +86,9 @@ Strings to hash:
 
 ## Q
 
-**Given:** A hash table that uses linear probing to handle collisions.
-**Problem:** Describe a situation in which searching for a value in this hash table you might not find the value, even though it is in the table.
-**Solution:** Describe a solution for this problem.
+- **Given:** A hash table that uses linear probing to handle collisions.
+- **Problem:** Describe a situation in which searching for a value in this hash table you might not find the value, even though it is in the table.
+- **Solution:** Describe a solution for this problem.
 
 -----
 
