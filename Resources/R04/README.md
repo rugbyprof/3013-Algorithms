@@ -1,6 +1,2 @@
-## Spatial Classes - Kinda
+## Spatial Helper Classes
 
-
-### Files
-
-- 
