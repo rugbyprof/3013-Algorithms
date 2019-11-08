@@ -235,9 +235,9 @@ public:
     }
 
     Heap(bool max = true){
-        Array = new T*[10];
+        Array = new T*[100];
         Next = 1;
-        MaxSize = 10;
+        MaxSize = 100;
         HeapSize = 0;
         isMax = max;
     }
