@@ -17,6 +17,7 @@
 #include "JsonFacade.hpp"
 #include "json.hpp"
 #include "GeoJson.hpp"
+#include "HexColors.hpp"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -25,10 +26,13 @@ struct Cluster {
     vector<City *> points;
     int size;
     double eps;
+    bool merged;
+
     //center ??
     Cluster(double e) {
         size = 0;
         eps = e;
+        merged = false;
     }
 
     void AddPoint(City *c) {
@@ -36,8 +40,22 @@ struct Cluster {
         points.push_back(c);
     }
 
+    City* RemovePoint(){
+
+        City* temp = points.back();
+        points.pop_back();
+        size--;
+        return temp;
+    }
+
     int Size() {
         return points.size();
+    }
+
+    void Merge(Cluster* c){
+        for(int i=0;i<c->points.size();i++){
+            AddPoint(c->points[i]);
+        }
     }
 
     bool InNeighborhood(City *p) {
@@ -65,8 +83,10 @@ private:
     int minPoints;
     double eps;
     vector<Cluster *> Clusters;
+    vector<Cluster *> Combined;
     Heap<City> *H;
     string objectId; // its a number but a string for json reasons
+
 
     /**
      * Description:
@@ -126,6 +146,24 @@ public:
         return -1;
     }
 
+    bool checkCombine(Cluster* s,Cluster* t){
+        double lat;
+        double lon;
+        double distance;
+        for (int i = 0; i < s->points.size(); i++) {
+            lat = s->points[i]->lat;
+            lon = s->points[i]->lon;
+            for (int j = 0; j < t->points.size(); j++) {
+                distance = t->points[j]->Distance(lat, lon);
+                if(distance <= eps){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+
     void findClusters() {
         int processedCities = 0;
         int cityId = rand() % Cities.size();
@@ -134,6 +172,8 @@ public:
         int index;
         bool added;
         Cluster *c;
+
+        
 
         // new empty cluster
         c = new Cluster(eps);
@@ -156,10 +196,49 @@ public:
                 cout << Clusters.size() << endl;
             }
         }
-        cout<<endl;
-        for (int c = 0; c < Clusters.size(); c++) {
-            cout << Clusters[c]->points.size() << endl;
+
+        while(Clusters.size()) {
+            c = Clusters.back();
+            Clusters.pop_back();
+            if(c->merged){
+                continue;
+            }
+            Combined.push_back(c);
+            for (int i = 0; i < Clusters.size(); i++) {
+                if(!Clusters[i]->merged && checkCombine(c,Clusters[i])){
+                    c->Merge(Clusters[i]);
+                    Clusters[i]->merged = true;
+                }
+            }
         }
+
+        while(Combined.size()){
+            Clusters.push_back(Combined.back());
+            Combined.pop_back();
+        }
+
+        while(Clusters.size()) {
+            c = Clusters.back();
+            Clusters.pop_back();
+            if(c->merged){
+                continue;
+            }
+            Combined.push_back(c);
+            for (int i = 0; i < Clusters.size(); i++) {
+                if(!Clusters[i]->merged && checkCombine(c,Clusters[i])){
+                    c->Merge(Clusters[i]);
+                    Clusters[i]->merged = true;
+                }
+            }
+        }
+        
+        cout<<endl;
+        cout<<Clusters.size()<<endl;
+        cout<<Combined.size()<<endl;
+
+        // for (int c = 0; c < Clusters.size(); c++) {
+        //     cout << Clusters[c]->points.size() << endl;
+        // }
     }
 
     void MakeGeoJson(){
@@ -167,24 +246,32 @@ public:
         json obj = json::array();
         City* c;
         double lat,lon;
+        int id;
+        string color;
+        HexColors Colors;
 
-        for (int i = 0; i < Clusters.size(); i++) {
-            if(Clusters[i]->points.size() >= minPoints){
+        for (int i = 0; i < Combined.size(); i++) {
+            if(Combined[i]->points.size() >= minPoints){
                 obj = json::array();
-                c = Clusters[i]->points[0];
-                for(int j=0;j<Clusters[i]->points.size();j++){
-                    c = Clusters[i]->points[j];
+                c = Combined[i]->points[0];
+                color  = Colors.GetRandomColor();
+                for(int j=0;j<Combined[i]->points.size();j++){
+                    c = Combined[i]->points[j];
                     lat = c->lat;
                     lon = c->lon;
                     obj.push_back({lon,lat});
-                    
+                    id = GJ.AddGeoPoint(lon,lat);
+                    GJ.AddProperty(id,"marker-size","small");
+                    GJ.AddProperty(id,"marker-color",color);
+                    GJ.AddProperty(id,"marker-label",to_string(i));
+                    GJ.AddProperty(id,"description",to_string(lat)+","+to_string(lon));
                 }
-                c = Clusters[i]->points[0];
+                c = Combined[i]->points[0];
                 lat = c->lat;
                 lon = c->lon;
                 obj.push_back({lon,lat});
                 //GJ.AddPolygon(obj);
-                GJ.AddGeoPoint()
+                
             }
         }
         GJ.PrintJson("clusters.geojson");

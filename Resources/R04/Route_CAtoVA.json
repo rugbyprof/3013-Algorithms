@@ -1,0 +1,941 @@
+{
+    "route": {
+        "hasTollRoad": true,
+        "hasBridge": true,
+        "boundingBox": {
+            "lr": {
+                "lng": -77.066879,
+                "lat": 38.582088
+            },
+            "ul": {
+                "lng": -121.514091,
+                "lat": 41.603584
+            }
+        },
+        "distance": 2736.8606,
+        "hasTimedRestriction": false,
+        "hasTunnel": true,
+        "hasHighway": true,
+        "computedWaypoints": [],
+        "routeError": {
+            "errorCode": -400,
+            "message": ""
+        },
+        "formattedTime": "38:59:36",
+        "sessionId": "5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+        "hasAccessRestriction": false,
+        "realTime": 141962,
+        "hasSeasonalClosure": false,
+        "hasCountryCross": false,
+        "fuelUsed": 140.12,
+        "legs": [
+            {
+                "hasTollRoad": true,
+                "hasBridge": true,
+                "destNarrative": "Proceed to ARLINGTON, VA.",
+                "distance": 2736.8606,
+                "hasTimedRestriction": false,
+                "hasTunnel": true,
+                "hasHighway": true,
+                "index": 0,
+                "formattedTime": "38:59:36",
+                "origIndex": 3,
+                "hasAccessRestriction": false,
+                "hasSeasonalClosure": false,
+                "hasCountryCross": false,
+                "roadGradeStrategy": [
+                    []
+                ],
+                "destIndex": 20,
+                "time": 140376,
+                "hasUnpaved": false,
+                "origNarrative": "Go north on I-5 N/CA-99 N/CA-16 W.",
+                "maneuvers": [
+                    {
+                        "distance": 0.079,
+                        "streets": [
+                            "5th St"
+                        ],
+                        "narrative": "Start out going north on 5th St toward I St.",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -121.500122,
+                            "lat": 38.582088
+                        },
+                        "index": 0,
+                        "formattedTime": "00:00:14",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=38.582088470458984,-121.5001220703125|marker-1||38.58316421508789,-121.49962615966797|marker-2||&center=38.58262634277344,-121.49987411499023&defaultMarker=none&zoom=13&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 14,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 0.027,
+                        "streets": [
+                            "I St"
+                        ],
+                        "narrative": "Turn left onto I St.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -121.499626,
+                            "lat": 38.583164
+                        },
+                        "index": 1,
+                        "formattedTime": "00:00:04",
+                        "directionName": "Northwest",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=38.58316421508789,-121.49962615966797|marker-2||38.583316802978516,-121.50008392333984|marker-3||&center=38.5832405090332,-121.4998550415039&defaultMarker=none&zoom=15&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 4,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 2
+                    },
+                    {
+                        "distance": 0.05,
+                        "streets": [],
+                        "narrative": "Take the CA-16 W/I-5 N/CA-99 N ramp toward Yuba City/Redding.",
+                        "turnType": 12,
+                        "startPoint": {
+                            "lng": -121.500084,
+                            "lat": 38.583317
+                        },
+                        "index": 2,
+                        "formattedTime": "00:00:06",
+                        "directionName": "Northwest",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=38.583316802978516,-121.50008392333984|marker-3||38.583675384521484,-121.50089263916016|marker-4||&center=38.58349609375,-121.50048828125&defaultMarker=none&zoom=15&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 6,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_ramp_sm.gif",
+                        "direction": 2
+                    },
+                    {
+                        "distance": 2.567,
+                        "streets": [
+                            "I-5 N",
+                            "CA-99 N",
+                            "CA-16 W"
+                        ],
+                        "narrative": "Merge onto I-5 N/CA-99 N/CA-16 W.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -121.500893,
+                            "lat": 38.583675
+                        },
+                        "index": 3,
+                        "formattedTime": "00:02:47",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "5",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=5&d=NORTH",
+                                "direction": 1
+                            },
+                            {
+                                "extraText": "",
+                                "text": "99",
+                                "type": 504,
+                                "url": "http://icons.mqcdn.com/icons/rs504.png?n=99&d=NORTH",
+                                "direction": 1
+                            },
+                            {
+                                "extraText": "",
+                                "text": "16",
+                                "type": 504,
+                                "url": "http://icons.mqcdn.com/icons/rs504.png?n=16&d=WEST",
+                                "direction": 7
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=38.583675384521484,-121.50089263916016|marker-4||38.618534088134766,-121.51409149169922|marker-5||&center=38.601104736328125,-121.50749206542969&defaultMarker=none&zoom=8&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 167,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 650.5551,
+                        "streets": [
+                            "I-80 E"
+                        ],
+                        "narrative": "Merge onto I-80 E via EXIT 522 toward Reno (Passing through Nevada, then crossing into Utah).",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -121.514091,
+                            "lat": 38.618534
+                        },
+                        "index": 4,
+                        "formattedTime": "08:53:29",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "80",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=80&d=EAST",
+                                "direction": 8
+                            },
+                            {
+                                "extraText": "",
+                                "text": "522",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=522&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=38.618534088134766,-121.51409149169922|marker-5||40.72694396972656,-111.90465545654297|marker-6||&center=39.672739028930664,-116.7093734741211&defaultMarker=none&zoom=2&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 3200,
+                        "time": 32009,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 1222.239,
+                        "streets": [
+                            "I-80 E"
+                        ],
+                        "narrative": "Merge onto I-80 E via EXIT 304 toward Cheyenne (Passing through Wyoming and Nebraska, then crossing into Iowa).",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -111.904655,
+                            "lat": 40.726944
+                        },
+                        "index": 5,
+                        "formattedTime": "16:58:37",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "80",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=80&d=EAST",
+                                "direction": 8
+                            },
+                            {
+                                "extraText": "",
+                                "text": "304",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=304&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=40.72694396972656,-111.90465545654297|marker-6||41.60358428955078,-90.68379211425781|marker-7||&center=41.16526412963867,-101.29422378540039&defaultMarker=none&zoom=1&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 61117,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 27.363,
+                        "streets": [
+                            "I-280 E"
+                        ],
+                        "narrative": "Merge onto I-280 E via EXIT 290 toward Rock Island/Moline/US-61 S (Crossing into Illinois).",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -90.683792,
+                            "lat": 41.603584
+                        },
+                        "index": 6,
+                        "formattedTime": "00:24:32",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "280",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=280&d=EAST",
+                                "direction": 8
+                            },
+                            {
+                                "extraText": "",
+                                "text": "290",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=290&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=41.60358428955078,-90.68379211425781|marker-7||41.44021224975586,-90.33035278320312|marker-8||&center=41.52189826965332,-90.50707244873047&defaultMarker=none&zoom=6&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 1472,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 168.606,
+                        "streets": [
+                            "I-80 E"
+                        ],
+                        "narrative": "I-280 E becomes I-80 E (Portions toll) (Crossing into Indiana).",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -90.330353,
+                            "lat": 41.440212
+                        },
+                        "index": 7,
+                        "formattedTime": "02:36:33",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "80",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=80&d=EAST",
+                                "direction": 8
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=41.44021224975586,-90.33035278320312|marker-8||41.58456802368164,-87.2350845336914|marker-9||&center=41.51239013671875,-88.78271865844727&defaultMarker=none&zoom=3&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 1153,
+                        "time": 9393,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 355.197,
+                        "streets": [
+                            "I-80 E"
+                        ],
+                        "narrative": "Merge onto I-80 E via EXIT 16 toward Ohio (Portions toll) (Crossing into Ohio).",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -87.235085,
+                            "lat": 41.584568
+                        },
+                        "index": 8,
+                        "formattedTime": "05:12:20",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "80",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=80&d=EAST",
+                                "direction": 8
+                            },
+                            {
+                                "extraText": "",
+                                "text": "16",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=16&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=41.58456802368164,-87.2350845336914|marker-9||41.11982345581055,-80.84590911865234|marker-10||&center=41.352195739746094,-84.04049682617188&defaultMarker=none&zoom=2&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 1153,
+                        "time": 18740,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 184.621,
+                        "streets": [
+                            "I-76 E"
+                        ],
+                        "narrative": "Merge onto I-76 E via the exit on the left toward Pittsburgh/Pa Turnpike/I-76 E (Portions toll) (Crossing into Pennsylvania).",
+                        "turnType": 11,
+                        "startPoint": {
+                            "lng": -80.845909,
+                            "lat": 41.119823
+                        },
+                        "index": 9,
+                        "formattedTime": "02:42:25",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "76",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=76&d=EAST",
+                                "direction": 8
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=41.11982345581055,-80.84590911865234|marker-10||39.98653030395508,-78.26168060302734|marker-11||&center=40.55317687988281,-79.55379486083984&defaultMarker=none&zoom=3&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 3201,
+                        "time": 9745,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_left_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 2.56,
+                        "streets": [
+                            "I-70 E"
+                        ],
+                        "narrative": "Merge onto I-70 E via EXIT 161 toward US-30/Breezewood/Baltimore (Portions toll).",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -78.261681,
+                            "lat": 39.98653
+                        },
+                        "index": 10,
+                        "formattedTime": "00:03:50",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "70",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=70&d=EAST",
+                                "direction": 8
+                            },
+                            {
+                                "extraText": "",
+                                "text": "161",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=161&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=39.98653030395508,-78.26168060302734|marker-11||39.99951934814453,-78.23882293701172|marker-12||&center=39.993024826049805,-78.25025177001953&defaultMarker=none&zoom=9&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 1153,
+                        "time": 230,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 75.965,
+                        "streets": [
+                            "I-70 E"
+                        ],
+                        "narrative": "Take I-70 E toward Baltimore/Washington D.C (Crossing into Maryland).",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -78.238823,
+                            "lat": 39.999519
+                        },
+                        "index": 11,
+                        "formattedTime": "01:11:19",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "70",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=70&d=EAST",
+                                "direction": 8
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=39.99951934814453,-78.23882293701172|marker-12||39.39793395996094,-77.42840576171875|marker-13||&center=39.698726654052734,-77.83361434936523&defaultMarker=none&zoom=4&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 4279,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 23.326,
+                        "streets": [
+                            "I-270 S"
+                        ],
+                        "narrative": "Merge onto I-270 S via EXIT 53 toward Washington.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -77.428406,
+                            "lat": 39.397934
+                        },
+                        "index": 12,
+                        "formattedTime": "00:23:58",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "270",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=270&d=SOUTH",
+                                "direction": 4
+                            },
+                            {
+                                "extraText": "",
+                                "text": "53",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=53&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=39.39793395996094,-77.42840576171875|marker-13||39.120845794677734,-77.19807434082031|marker-14||&center=39.259389877319336,-77.31324005126953&defaultMarker=none&zoom=5&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 1438,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 5.716,
+                        "streets": [
+                            "I-270 (EXPRESS) S"
+                        ],
+                        "narrative": "Stay straight to go onto I-270 (EXPRESS) S.",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -77.198074,
+                            "lat": 39.120846
+                        },
+                        "index": 13,
+                        "formattedTime": "00:06:18",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "270",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=270&d=SOUTH",
+                                "direction": 4
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=39.120845794677734,-77.19807434082031|marker-14||39.04817199707031,-77.15109252929688|marker-15||&center=39.08450889587402,-77.1745834350586&defaultMarker=none&zoom=7&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 128,
+                        "time": 378,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0.924,
+                        "streets": [
+                            "I-270 S"
+                        ],
+                        "narrative": "I-270 (EXPRESS) S becomes I-270 S.",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -77.151093,
+                            "lat": 39.048172
+                        },
+                        "index": 14,
+                        "formattedTime": "00:01:03",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "270",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=270&d=SOUTH",
+                                "direction": 4
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=39.04817199707031,-77.15109252929688|marker-15||39.0357551574707,-77.14463806152344|marker-16||&center=39.04196357727051,-77.14786529541016&defaultMarker=none&zoom=9&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 128,
+                        "time": 63,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 2.076,
+                        "streets": [
+                            "I-270 Spur S"
+                        ],
+                        "narrative": "Merge onto I-270 Spur S toward Washington/Northern Virginia/I-495 S.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -77.144638,
+                            "lat": 39.035755
+                        },
+                        "index": 15,
+                        "formattedTime": "00:02:24",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "270",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=270&d=SOUTH",
+                                "direction": 4
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=39.0357551574707,-77.14463806152344|marker-16||39.008331298828125,-77.15254974365234|marker-17||&center=39.022043228149414,-77.14859390258789&defaultMarker=none&zoom=8&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 128,
+                        "time": 144,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 3.782,
+                        "streets": [
+                            "Capital Beltway",
+                            "I-495 S"
+                        ],
+                        "narrative": "I-270 Spur S becomes Capital Beltway/I-495 S (Crossing into Virginia).",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -77.15255,
+                            "lat": 39.008331
+                        },
+                        "index": 16,
+                        "formattedTime": "00:04:12",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "495",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=495&d=SOUTH",
+                                "direction": 4
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=39.008331298828125,-77.15254974365234|marker-17||38.965213775634766,-77.18115234375|marker-18||&center=38.986772537231445,-77.16685104370117&defaultMarker=none&zoom=8&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 252,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 1.04,
+                        "streets": [],
+                        "narrative": "Take the Geo Wash Mem Pkwy exit, EXIT 43, toward Washington.",
+                        "turnType": 14,
+                        "startPoint": {
+                            "lng": -77.181152,
+                            "lat": 38.965214
+                        },
+                        "index": 17,
+                        "formattedTime": "00:01:30",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "43",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=43&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=38.965213775634766,-77.18115234375|marker-18||38.96410369873047,-77.17578887939453|marker-19||&center=38.96465873718262,-77.17847061157227&defaultMarker=none&zoom=12&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 90,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_gr_exitright_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 8.478,
+                        "streets": [
+                            "George Washington Memorial Parkway",
+                            "George Washington Memorial Pkwy"
+                        ],
+                        "narrative": "Merge onto George Washington Memorial Parkway/George Washington Memorial Pkwy.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -77.175789,
+                            "lat": 38.964104
+                        },
+                        "index": 18,
+                        "formattedTime": "00:10:47",
+                        "directionName": "Southeast",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=38.96410369873047,-77.17578887939453|marker-19||38.8953742980957,-77.06690979003906|marker-20||&center=38.929738998413086,-77.1213493347168&defaultMarker=none&zoom=7&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 647,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 5
+                    },
+                    {
+                        "distance": 0.226,
+                        "streets": [],
+                        "narrative": "Take the I-66 E exit toward US-50/Rosslyn/Roosevelt Bridge/Washington.",
+                        "turnType": 14,
+                        "startPoint": {
+                            "lng": -77.06691,
+                            "lat": 38.895374
+                        },
+                        "index": 19,
+                        "formattedTime": "00:00:24",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=38.8953742980957,-77.06690979003906|marker-20||38.892311096191406,-77.06687927246094|marker-21||&center=38.893842697143555,-77.06689453125&defaultMarker=none&zoom=11&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 24,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_gr_exitright_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0.98,
+                        "streets": [
+                            "Arlington Blvd",
+                            "US-50 W"
+                        ],
+                        "narrative": "Merge onto Arlington Blvd/US-50 W toward Rosslyn.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -77.066879,
+                            "lat": 38.892311
+                        },
+                        "index": 20,
+                        "formattedTime": "00:01:29",
+                        "directionName": "Southwest",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "50",
+                                "type": 2,
+                                "url": "http://icons.mqcdn.com/icons/rs2.png?n=50&d=WEST",
+                                "direction": 7
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=38.892311096191406,-77.06687927246094|marker-21||38.88760757446289,-77.08045196533203|marker-22||&center=38.88995933532715,-77.07366561889648&defaultMarker=none&zoom=11&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 89,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 6
+                    },
+                    {
+                        "distance": 0.121,
+                        "streets": [],
+                        "narrative": "Take the 10th St N/N Courthouse Rd ramp.",
+                        "turnType": 12,
+                        "startPoint": {
+                            "lng": -77.080452,
+                            "lat": 38.887608
+                        },
+                        "index": 21,
+                        "formattedTime": "00:00:14",
+                        "directionName": "West",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=38.88760757446289,-77.08045196533203|marker-22||38.88697814941406,-77.08253479003906|marker-23||&center=38.88729286193848,-77.08149337768555&defaultMarker=none&zoom=14&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 14,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_ramp_sm.gif",
+                        "direction": 7
+                    },
+                    {
+                        "distance": 0.311,
+                        "streets": [
+                            "N Courthouse Rd"
+                        ],
+                        "narrative": "Stay straight to go onto N Courthouse Rd.",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -77.082535,
+                            "lat": 38.886978
+                        },
+                        "index": 22,
+                        "formattedTime": "00:00:53",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=38.88697814941406,-77.08253479003906|marker-23||38.89085006713867,-77.08381652832031|marker-24||&center=38.88891410827637,-77.08317565917969&defaultMarker=none&zoom=11&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 53,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 0.051,
+                        "streets": [
+                            "15th St"
+                        ],
+                        "narrative": "Turn left onto 15th St.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -77.083817,
+                            "lat": 38.89085
+                        },
+                        "index": 23,
+                        "formattedTime": "00:00:08",
+                        "directionName": "West",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=mRvferKGQT9UsNg0rTSje0VG8HcIdKgJ&size=225,160&locations=38.89085006713867,-77.08381652832031|marker-24||38.89076232910156,-77.08475494384766|marker-25||&center=38.89080619812012,-77.08428573608398&defaultMarker=none&zoom=15&rand=-1263647108&session=5dc5d382-025e-6750-02b4-16e6-0a7b8cefe7c1",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 8,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 7
+                    },
+                    {
+                        "distance": 0,
+                        "streets": [],
+                        "narrative": "Welcome to ARLINGTON, VA.",
+                        "turnType": -1,
+                        "startPoint": {
+                            "lng": -77.084755,
+                            "lat": 38.890762
+                        },
+                        "index": 24,
+                        "formattedTime": "00:00:00",
+                        "directionName": "",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 0,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+                        "direction": 0
+                    }
+                ],
+                "hasFerry": false
+            }
+        ],
+        "options": {
+            "arteryWeights": [],
+            "cyclingRoadFactor": 1,
+            "timeType": 0,
+            "useTraffic": false,
+            "returnLinkDirections": false,
+            "countryBoundaryDisplay": true,
+            "enhancedNarrative": false,
+            "locale": "en_US",
+            "tryAvoidLinkIds": [],
+            "drivingStyle": 2,
+            "doReverseGeocode": true,
+            "generalize": -1,
+            "mustAvoidLinkIds": [],
+            "sideOfStreetDisplay": true,
+            "routeType": "FASTEST",
+            "avoidTimedConditions": false,
+            "routeNumber": 0,
+            "shapeFormat": "raw",
+            "maxWalkingDistance": -1,
+            "destinationManeuverDisplay": true,
+            "transferPenalty": -1,
+            "narrativeType": "text",
+            "walkingSpeed": -1,
+            "urbanAvoidFactor": -1,
+            "stateBoundaryDisplay": true,
+            "unit": "M",
+            "highwayEfficiency": 22,
+            "maxLinkId": 0,
+            "maneuverPenalty": -1,
+            "avoidTripIds": [],
+            "filterZoneFactor": -1,
+            "manmaps": "true"
+        },
+        "locations": [
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -121.500122,
+                    "lat": 38.582088
+                },
+                "adminArea4": "Sacramento County",
+                "adminArea5": "Sacramento",
+                "postalCode": "",
+                "adminArea1": "US",
+                "adminArea3": "CA",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "A5XAX",
+                "adminArea4Type": "County",
+                "linkId": 34954258,
+                "street": "",
+                "adminArea5Type": "City",
+                "geocodeQuality": "CITY",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -121.50012,
+                    "lat": 38.582087
+                }
+            },
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -77.084755,
+                    "lat": 38.890762
+                },
+                "adminArea4": "Arlington County",
+                "adminArea5": "Arlington",
+                "postalCode": "",
+                "adminArea1": "US",
+                "adminArea3": "VA",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "A5XAX",
+                "adminArea4Type": "County",
+                "linkId": 25733050,
+                "street": "",
+                "adminArea5Type": "City",
+                "geocodeQuality": "CITY",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -77.084755,
+                    "lat": 38.890763
+                }
+            }
+        ],
+        "time": 140376,
+        "hasUnpaved": false,
+        "locationSequence": [
+            0,
+            1
+        ],
+        "hasFerry": false
+    },
+    "info": {
+        "statuscode": 0,
+        "copyright": {
+            "imageAltText": "© 2019 MapQuest, Inc.",
+            "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+            "text": "© 2019 MapQuest, Inc."
+        },
+        "messages": []
+    }
+}

@@ -272,10 +272,13 @@ public:
         }
     }
 
-    void PrintJson(string filename){
+    void PrintJson(string filename=""){
+        if(filename == ""){
+            cout << std::setw(4) << Collection << std::endl;
+            return;
+        }
         ofstream fout(filename);
         fout << std::setw(4) << Collection << std::endl;
-        cout << std::setw(4) << Collection << std::endl;
     }
 
 
