@@ -13,4 +13,4 @@
  | [L10](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L10) | [ Lectures L10 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L10) | [ No Description](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L10) | [N/A](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L10) |
  | [N/A](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/N/A) |
 
-<sup>Last Updated: 2019-11-06 (Wed @ 14:53)</sup>
+<sup>Last Updated: 2019-11-18 (Mon @ 10:21)</sup>
