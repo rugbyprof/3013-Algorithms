@@ -20,7 +20,7 @@ using namespace std;
  * other unicode characters could be added.
  */
 struct shapes {
-   map<string, map<string, string>> arrows;
+   map<string, map<string, string> > arrows;
    shapes() {
       // BS = Big Solid Arrow
       arrows["BS"]["N"] = "\u25B2";
@@ -268,7 +268,7 @@ class Maze {
             move_stack.pop_back();
          }
          if (print_maze) {
-            usleep(100000);
+            usleep(10000);
             printMaze();
          }
       }
