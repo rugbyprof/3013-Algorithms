@@ -1,2 +1,1 @@
-## Maze Files
-
+## Maze Code

@@ -21,7 +21,8 @@ using namespace std;
  * other unicode characters could be added. 
  */
 struct shapes {
-    map< string, map<string, string> > arrows;
+    map<string, map<string, string>> arrows;
+    map<string, string> characters;
     shapes() {
         // BS = Big Solid Arrow
         arrows["BS"]["N"] = "\u25B2";
@@ -40,6 +41,9 @@ struct shapes {
         arrows["TA"]["S"] = "\u2193";
         arrows["TA"]["E"] = "\u2192";
         arrows["TA"]["W"] = "\u2190";
+
+        characters["trex"] = "🦖";
+        characters["swordsman"] = "🤺";
     }
 };
 
@@ -53,10 +57,6 @@ struct Cell {
     int row;          // what row cell is in
     int col;          // column of cell
     bool visited;     // has cell been visited
-    bool north;
-    bool south;
-    bool east;
-    bool west;
     string top;       // ceiling
     string left;      // left wall
     string character; // what (if anything) is in cell
@@ -69,10 +69,6 @@ struct Cell {
         left = EWBARRIER; // Left wall type
         character = " ";  // Unicode character to print if occupied (in a path)
         color = "green";
-        north=false;
-        south=false;
-        east=false;
-        west=false;
     }
 
     /**
@@ -96,13 +92,15 @@ struct Cell {
  * 
  */
 class Maze {
-protected:
+private:
     int height;                // height in rows
     int width;                 // width in columns
     Cell ***maze;              // 2D array of cell pointers
     vector<Cell *> move_stack; // Vector of cell pointers
     Cell *startCell;           // Entrance of maze
     Cell *exitCell;            // Exit of maze
+    Cell *monsterCell;
+    Cell *playerCell;
     shapes S;                  // Shapes instance (arrows and such)
 
 public:
@@ -112,7 +110,7 @@ public:
      *     int rows : height of maze
      *     int cols : width of maze
      */
-    Maze(int rows = 16, int cols = 16, bool show_build = false) {
+    Maze(int rows = 16, int cols = 16,bool show_build=true) {
         height = rows; // num rows in maze
         width = cols;  // num cols in maze
 
@@ -123,14 +121,25 @@ public:
             maze[i] = new Cell *[width];
         }
 
-        __init_maze();            // Creates new cells in our 2D array
+        __init_maze();      // Creates new cells in our 2D array
         __build_maze(show_build); // Uses stack to randomly visit cells and knockdown walls
-        __reset_maze();           // Mark all cells as not visited
+        __reset_maze();     // Mark all cells as not visited
 
         startCell = maze[0][0];                 // Mark entrance to maze
         exitCell = maze[height - 1][width - 1]; // Mark exit to maze
     }
 
+    void addCharacter(int row,int col,string id){
+        if(id=="trex"){
+            monsterCell = maze[row][col];
+            
+        }else if(id=="swordsman"){
+            playerCell = maze[row][col];
+        }
+
+        maze[row][col]->character = S.characters[id];
+        
+    }
     /**
      * Function: printMaze 
      *      Prints maze to screen
@@ -170,7 +179,95 @@ public:
              << endl;
     }
 
-protected:
+    void mark_visited_path(){
+        for(int i=0;i<height;i++){
+            for(int j=0;j<width;j++){
+                if(maze[i][j]->visited){
+                    maze[i][j]->character = ".";
+                }
+                
+            }   
+        }
+    }
+    
+
+    void traverseMaze(bool pm = true) {
+        bool print_maze = pm; // print the maze being built?
+        Cell *current;        // current cell (top of stack)a
+        Cell *neighbor;       // neighbor of current (next move)
+        vector<Cell *> moves; // vector of cell pointers holds possible moves
+        int neighbor_row;     // row of neighboring cell being looked at
+        int neighbor_col;     // column of neighboring cell
+        int rand_index;       // random num to pick random direction
+        string d;             // direction
+        bool found = false;
+        int best_index = 0;
+
+        __reset_maze();
+
+        // Prime the move stack with the "first" move.
+        move_stack.push_back(monsterCell);
+
+        // While there are still cells to be visited:
+        while (move_stack.size() > 0 && found == false) {
+            
+            //Set current to top of stack (end of list)
+            current = move_stack.back();
+            
+
+            if(!current->visited){
+                current->visited = 1;
+                current->character = ".";
+            }
+
+            if (current == playerCell) {
+                int col = rand() % width;
+                int row = rand() % height;
+                playerCell = maze[row][col];
+
+                maze[row][col]->character = S.characters["swordsman"];
+                maze[row][col]->visited = 0;
+                __reset_maze();
+            }
+
+            // Get an array of possible moves from our current location.
+            // Will hold from 0 - 4 neighbors
+            moves = __available_moves(current->row, current->col);
+
+            // If there are any moves in our array:
+            if (moves.size()) {
+                // randomly choose a neighboring cell from moves array.
+                rand_index = rand() % moves.size();
+
+                best_index = __best_choice(moves,playerCell);
+
+                neighbor_row = moves[rand_index]->row;
+                neighbor_col = moves[rand_index]->col;
+
+                //pull cell pointer out of array
+                //neighbor = moves[rand_index];
+                neighbor = moves[best_index];
+
+                // Put neighber cell on top of stack
+                move_stack.push_back(neighbor);
+
+            } else {
+                // No moves ... we need to backtrack!
+                move_stack.pop_back();
+            }
+            if (print_maze) {
+                usleep(100000);
+                mark_visited_path();
+                move_stack.back()->character = S.characters["trex"];
+                printMaze();
+            }
+            if (found) {
+                cout << "Done!!";
+            }
+        }
+    }
+
+private:
     /**
      * Function: __get_direction 
      *      Determines direction moved going from cell (r1,c1) => (r2,c2). Used to determine
@@ -195,12 +292,8 @@ protected:
 
     /**
      * Private Function: __build_maze 
-     * 
-     * Params: 
-     * 
-     *     bool pm : true = show building of maze
      *      
-     * Returns: void 
+     * Returns: string 
      */
     void __build_maze(bool pm = false) {
         bool print_maze = pm;     // print the maze being built?
@@ -254,26 +347,22 @@ protected:
                 // We moved North so open up our ceiling
                 if (d == "North") {
                     current->top = NSOPEN;
-                    current->north = true;
-                    current->character = S.arrows["TA"]["N"];
+                    current->character = S.arrows["BH"]["N"];
 
                     // We moved East so knock down neighbors left wall
                 } else if (d == "East") {
                     neighbor->left = EWOPEN;
-                    current->east = true;
-                    current->character = S.arrows["TA"]["E"];
+                    current->character = S.arrows["BH"]["E"];
 
                     // We moved South so open up the neighbors ceiling
                 } else if (d == "South") {
                     neighbor->top = NSOPEN;
-                    current->character = S.arrows["TA"]["S"];
-                    current->south = true;
+                    current->character = S.arrows["BH"]["S"];
 
                     // We moved West so knock down our own left wall
                 } else if (d == "West") {
                     current->left = EWOPEN;
-                    current->character = S.arrows["TA"]["W"];
-                    current->west = true;
+                    current->character = S.arrows["BH"]["W"];
                 }
 
                 // Put neighber cell on top of stack
@@ -283,7 +372,7 @@ protected:
                 move_stack.pop_back();
             }
             if (print_maze) {
-                usleep(30000);
+                usleep(300);
                 printMaze();
             }
         }
@@ -312,6 +401,35 @@ protected:
             moves.push_back(maze[row + 1][col]);
         }
         if (__in_bounds(row, col - 1) && !maze[row][col - 1]->visited) {
+            moves.push_back(maze[row][col - 1]);
+        }
+
+        return moves;
+    }
+
+    /**
+     * __available_moves:
+     * 
+     *       Creates a Vector of Cells that holds references to unvisited neighbors
+     * Params:
+     *     int row : target cell row 
+     *     int col : target cell col
+     * Returns:
+     *     vector<Cell *> moves: vector of cell pointers (possible moves)
+     */
+    vector<Cell *> __available_moves(int row, int col) {
+        vector<Cell *> moves; // vector to put possible moves in
+
+        if (__in_bounds(row - 1, col) && !maze[row - 1][col]->visited && maze[row][col]->top == NSOPEN) {
+            moves.push_back(maze[row - 1][col]);
+        }
+        if (__in_bounds(row, col + 1) && !maze[row][col + 1]->visited && maze[row][col + 1]->left == EWOPEN) {
+            moves.push_back(maze[row][col + 1]);
+        }
+        if (__in_bounds(row + 1, col) && !maze[row + 1][col]->visited && maze[row + 1][col]->top == NSOPEN) {
+            moves.push_back(maze[row + 1][col]);
+        }
+        if (__in_bounds(row, col - 1) && !maze[row][col - 1]->visited && maze[row][col]->left == EWOPEN) {
             moves.push_back(maze[row][col - 1]);
         }
 
@@ -362,139 +480,37 @@ protected:
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
                 maze[i][j]->visited = 0;
-                maze[i][j]->character = " ";
+                if(maze[i][j]->character.size()<3)
+                    maze[i][j]->character = " ";
             }
         }
+    }
+
+    int __best_choice(vector<Cell *> moves,Cell* target) {
+        int min = 99999;
+        int d = 0;
+        int i = 0;
+        for (int j = 0; j < moves.size(); j++) {
+            d = __taxicab_distance(moves[j], target);
+            if (d < min) {
+                min = d;
+                i = j;
+            }
+        }
+        return i;
+    }
+
+    int __taxicab_distance(Cell *cell1, Cell *cell2) {
+        return abs(cell2->col - cell1->col + abs(cell2->row - cell1->row));
     }
 };
 
-class RandomSolver : public Maze {
-private:
-    /**
-     * __unvisited_neighbors:
-     * 
-     *       Creates a Vector of Cells that holds references to unvisited neighbors
-     * Params:
-     *     int row : target cell row 
-     *     int col : target cell col
-     * Returns:
-     *     vector<Cell *> moves: vector of cell pointers (possible moves)
-     */
-    vector<Cell *> __possible_moves(int row, int col) {
-        vector<Cell *> moves; // vector to put possible moves in
+int main() {
+    srand(time(0));
+    Maze M(10, 30,false);
 
-        cout<<maze[row][col]->north<<" "<<maze[row][col]->south<<" "<<maze[row][col]->east<<" "<<maze[row][col]->west<<endl;
-        
-        if (maze[row][col]->north && __in_bounds(row - 1, col) && !maze[row - 1][col]->visited) {
-            moves.push_back(maze[row - 1][col]);
-            cout<<"up"<<endl;
-        }
-
-        if (maze[row][col]->west && __in_bounds(row, col - 1) && !maze[row][col - 1]->visited) {
-            moves.push_back(maze[row][col - 1]);
-            cout<<"left"<<endl;
-        }
-
-        if (maze[row][col]->south  && __in_bounds(row + 1, col)   && !maze[row + 1][col]->visited) {
-            moves.push_back(maze[row + 1][col]);
-            cout<<"down"<<endl;
-        }
-
-        if (maze[row][col]->east && __in_bounds(row, col + 1) && !maze[row][col + 1]->visited) {
-            moves.push_back(maze[row][col + 1]);
-            cout<<"up"<<endl;
-        }
-
-        return moves;
-    }
-public:
-    RandomSolver(int rows = 16, int cols = 16, bool show = false) : Maze(rows, cols, show) {
-    }
-
-
-
-    void SolveIt() {
-        Cell *current;            // current cell (top of stack)
-        Cell *neighbor;           // neighbor of current (next move)
-        vector<Cell *> moves;     // vector of cell pointers holds possible moves
-        int neighbor_row;         // row of neighboring cell being looked at
-        int neighbor_col;         // column of neighboring cell
-        int rand_index;           // random num to pick random direction
-        string d;                 // direction
-        ofstream fout("log.txt"); // debugging file
-
-        // Prime the move stack with the "first" move.
-        move_stack.push_back(startCell);
-
-
-        // While there are still cells to be visited:
-        while (move_stack.size() > 0) {
-            //Set current to top of stack (end of list)
-            current = move_stack.back();
-
-            //Mark current as visited
-            current->visited = 1;
-            current->character = '.';
-
-            // Get an array of possible moves from our current location.
-            // Will hold from 0 - 4 neighbors
-            moves = __possible_moves(current->row, current->col);
-
-            for(int i=0;i<moves.size();i++){
-                cout<<moves[i]->row<<" "<<moves[i]->col<<endl;
-            }
-
-            exit(0);
-
-            // If there are any moves in our array:
-            if (moves.size()) {
-                // randomly choose a neighboring cell from moves array.
-                rand_index = rand() % moves.size();
-                neighbor_row = moves[rand_index]->row;
-                neighbor_col = moves[rand_index]->col;
-
-                //pull cell pointer out of array
-                neighbor = moves[rand_index];
-
-                // Set the cell to visited and change its color
-                neighbor->visited = 1;
-                neighbor->color = "red";
-                neighbor->character = '.';
-
-                // Determine what direction we moved to get from current => neighbor
-                d = __get_direction(current->row, current->col, neighbor_row, neighbor_col);
-
-                // We moved North so open up our ceiling
-                if (d == "North") {
-                    current->top = NSOPEN;
-                    current->character = S.arrows["TA"]["N"];
-
-                    // We moved East so knock down neighbors left wall
-                } else if (d == "East") {
-                    neighbor->left = EWOPEN;
-                    current->character = S.arrows["TA"]["E"];
-
-                    // We moved South so open up the neighbors ceiling
-                } else if (d == "South") {
-                    neighbor->top = NSOPEN;
-                    current->character = S.arrows["TA"]["S"];
-
-                    // We moved West so knock down our own left wall
-                } else if (d == "West") {
-                    current->left = EWOPEN;
-                    current->character = S.arrows["TA"]["W"];
-                }
-
-                // Put neighber cell on top of stack
-                move_stack.push_back(neighbor);
-            } else {
-                // No moves ... we need to backtrack!
-                move_stack.pop_back();
-            }
-
-            usleep(30000);
-            printMaze();
-
-        }
-    }
-};
+    M.printMaze();
+    M.addCharacter(2,2,"trex");
+    M.addCharacter(2,28,"swordsman");
+    M.traverseMaze();
+}

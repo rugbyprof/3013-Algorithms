@@ -8,6 +8,19 @@ namespace TP = TermPrint;
 int rows = 30;
 int cols = 50;
 
+struct Point {
+    int x;
+    int y;
+    Point(){
+        x=0;
+        y=0;
+    }
+    Point(int _x, int _y) {
+        x = _x;
+        y = _y;
+    }
+};
+
 struct Player {
     string ch;
     unsigned short foreground;
@@ -82,7 +95,7 @@ struct Cell {
         pl = p;
     }
 
-    void MakeWall(){
+    void MakeWall() {
         wall = true;
         ch = "🔳";
     }
@@ -113,55 +126,98 @@ Cell ***BuildBoard(int rows, int cols) {
     return GameBoard;
 }
 
-bool OnBoard(int x, int y) {
-    return x >= 0 && x < cols && y >= 0 && y < rows;
+bool OnBoard(Point p) {
+    return p.x >= 0 && p.x < cols && p.y >= 0 && p.y < rows;
+}
+
+
+void Move(Point &p) {
+    if (rand() % 2 == 0) {
+        if (rand() % 2 == 0) {
+            ++p.x;
+        } else {
+            --p.x;
+        }
+
+    } else {
+        if (rand() % 2 == 1) {
+            ++p.y;
+        } else {
+            --p.y;
+        }
+    }
+
+    if (!OnBoard(p)) {
+        p.y = rand() % rows;
+        p.x = rand() % cols;
+    }
+
+}
+
+double Distance(Point p1, Point p2) {
+    int dx{p1.x - p2.x};
+    int dy{p1.y - p2.y};
+    return dx * dx + dy * dy;
 }
 
 //🧞 🧞‍♀️ 🧞‍♂️🔥
 
 int main() {
 
-    int r = rand() % rows;
-    int c = rand() % cols;
-    Player *temp;
+    int r1 = rand() % rows;
+    int c1 = rand() % cols;
+    int r2 = rand() % rows;
+    int c2 = rand() % cols;
+
+    Point p1(rand()%cols,rand()%rows);
+    Point p2(rand()%cols,rand()%rows);
+    Point tp;
+
+    Player *temp1;
+    Player *temp2;
+
+    double dist_prev = 0.0;
+    double dist_next = 0.0;
 
     Cell ***GameBoard = BuildBoard(rows, cols);
 
-    for(int i=5;i<15;i++){
+    for (int i = 5; i < 15; i++) {
         GameBoard[10][i]->MakeWall();
     }
 
+    GameBoard[p1.y][p1.x]->SetPlayer(new Player("🤺", 2, 1));
 
-    GameBoard[r][c]->SetPlayer(new Player("🤺", 2, 1));
+    GameBoard[p2.y][p2.x]->SetPlayer(new Player("🦖", 2, 1));
 
-    GameBoard[rand()%rows][rand()%cols]->SetPlayer(new Player("🦖", 2, 1));
-    
+    dist_prev = Distance(p1,p2);
 
     while (true) {
         TP::clear();
 
-        temp = GameBoard[r][c]->GetPlayer();
+        temp1 = GameBoard[p1.y][p1.x]->GetPlayer();
 
-        if (rand() % 2 == 0) {
-            if (rand() % 2 == 0) {
-                ++c;
-            } else {
-                --c;
-            }
-
-        } else {
-            if (rand() % 2 == 1) {
-                ++r;
-            } else {
-                --r;
-            }
+        dist_next = Distance(p1,p2);
+        while(dist_next >= dist_prev){
+            Move(p1);
+            dist_next = Distance(p1,p2);
         }
-        if(!OnBoard(c,r)){
-            r=rand()%rows;
-            c=rand()%cols;
+        dist_prev = dist_next;
+
+
+
+        GameBoard[p1.y][p1.x]->SetPlayer(temp1);
+
+
+        if(p1.x==p2.x && p1.y==p2.y){
+            temp2 = GameBoard[p2.y][p2.x]->GetPlayer();
+            temp2->ch = "🦖";
+            p2.x = rand()%cols;
+            p2.y = rand()%rows;
+            GameBoard[p2.y][p2.x]->SetPlayer(temp2);
+            temp1->ch = "🤺";
+            dist_next = dist_prev =0;
         }
 
-        GameBoard[r][c]->SetPlayer(temp);
         printBoard(GameBoard, rows, cols);
         TG::sleep(100);
     }
