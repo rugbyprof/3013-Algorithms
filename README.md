@@ -47,18 +47,18 @@ We will be extending your knowledge of basic data structures by learning, implem
 
 #### Algorithms + Datastructures
 
-- [Array Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html):
+- [Array Based Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html):
   - Stack
   - Queue
   - Deque
   - Heap (Priority-Queue)
-- Linked Lists
+- List Based Implementations (Linked Lists)
   - [Singly Linked List](https://opendatastructures.org/ods-cpp/3_1_Singly_Linked_List.html)
   - [Doubly Linked List](https://opendatastructures.org/ods-cpp/3_2_Doubly_Linked_List.html)
   - Stack
   - Queue
 - Balanced Trees
-  - Avl
+  - Avl or
   - Red Black Trees
 - [Hash Tables](https://opendatastructures.org/ods-cpp/5_Hash_Tables.html)
 - [Basic Graph Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/book/05-graphs.pdf):
@@ -67,10 +67,9 @@ We will be extending your knowledge of basic data structures by learning, implem
 - [Minimum Spanning Trees](http://jeffe.cs.illinois.edu/teaching/algorithms/book/07-mst.pdf  
   - Prim's Algorithm (Minimum Spanning Tree)
   - Kruskal's Algorithm (Minimum Spanning Tree)
-- [Shortest Paths](http://jeffe.cs.illinois.edu/teaching/algorithms/book/08-sssp.pdf)
+- [Shortest Path](http://jeffe.cs.illinois.edu/teaching/algorithms/book/08-sssp.pdf)
   - Dijkstra's Algorithm (One Way Shortest Path)
-
-
+  - A-Star Algorithm
 
 - Sorting:
   - Merge Sort
