@@ -203,8 +203,6 @@ int main() {
         }
         dist_prev = dist_next;
 
-
-
         GameBoard[p1.y][p1.x]->SetPlayer(temp1);
 
 

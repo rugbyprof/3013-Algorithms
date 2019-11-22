@@ -1,3 +1,8 @@
+/**
+ * Needs lots of work ....
+ * 
+ */ 
+
 #include "termcolor.h" // color header file
 #include <fstream>     // file output
 #include <iostream>    // standard output
@@ -17,33 +22,37 @@ using namespace std;
 #define EWOPEN "   "    // east west opening
 
 /**
+ * Craphics (aka crappy graphics) 
+ * 
  * A data type (struct) that only has arrows right now but 
- * other unicode characters could be added. 
+ * other unicode players could be added. 
  */
-struct shapes {
-    map<string, map<string, string>> arrows;
-    map<string, string> characters;
-    shapes() {
+struct craphics {
+    map<string, map<string, string> > graphics;
+
+    craphics() {
         // BS = Big Solid Arrow
-        arrows["BS"]["N"] = "\u25B2";
-        arrows["BS"]["S"] = "\u25BC";
-        arrows["BS"]["E"] = "\u25B6";
-        arrows["BS"]["W"] = "\u25C0";
+        graphics["arrows"]["BSN"] = "\u25B2";   // North
+        graphics["arrows"]["BSS"] = "\u25BC";   // South
+        graphics["arrows"]["BSE"] = "\u25B6";   // East
+        graphics["arrows"]["BSW"] = "\u25C0";   // West
 
         // BH = Big Hollow Arrow
-        arrows["BH"]["N"] = "\u21E7";
-        arrows["BH"]["S"] = "\u21E9";
-        arrows["BH"]["E"] = "\u21E8";
-        arrows["BH"]["W"] = "\u21E6";
+        graphics["arrows"]["BHN"] = "\u21E7";   // North
+        graphics["arrows"]["BHS"] = "\u21E9";   // South
+        graphics["arrows"]["BHE"] = "\u21E8";   // East
+        graphics["arrows"]["BHW"] = "\u21E6";   // West
 
         // TA = Thin Arrow
-        arrows["TA"]["N"] = "\u2191";
-        arrows["TA"]["S"] = "\u2193";
-        arrows["TA"]["E"] = "\u2192";
-        arrows["TA"]["W"] = "\u2190";
+        graphics["arrows"]["TAN"] = "\u2191";   // North
+        graphics["arrows"]["TAS"] = "\u2193";   // South
+        graphics["arrows"]["TAE"] = "\u2192";   // East
+        graphics["arrows"]["TAW"] = "\u2190";   // West
 
-        characters["trex"] = "🦖";
-        characters["swordsman"] = "🤺";
+        // graphics["players"]["trex"] = "🦖";
+        // graphics["players"]["swordsman"] = "🤺";
+        graphics["players"]["trex"] = "*";
+        graphics["players"]["swordsman"] = "@";
     }
 };
 
@@ -99,9 +108,9 @@ private:
     vector<Cell *> move_stack; // Vector of cell pointers
     Cell *startCell;           // Entrance of maze
     Cell *exitCell;            // Exit of maze
-    Cell *monsterCell;
-    Cell *playerCell;
-    shapes S;                  // Shapes instance (arrows and such)
+    Cell *monsterCell;         // Location of monster cell (should be a class)
+    Cell *playerCell;          // Location of player cell (should be a class)
+    craphics S;                // craphics instance (arrows and such)
 
 public:
     /**
@@ -110,36 +119,42 @@ public:
      *     int rows : height of maze
      *     int cols : width of maze
      */
-    Maze(int rows = 16, int cols = 16,bool show_build=true) {
+    Maze(int rows = 16, int cols = 16, bool show_build = true) {
         height = rows; // num rows in maze
         width = cols;  // num cols in maze
 
         maze = new Cell **[rows]; // 2D list maze container
 
-        // build 2D array to hold Cell pointers
-        for (int i = 0; i < rows; i++) {
+        for (int i = 0; i < rows; i++) { // build 2D array to hold Cell pointers
             maze[i] = new Cell *[width];
         }
 
-        __init_maze();      // Creates new cells in our 2D array
+        __init_maze();            // Creates new cells in our 2D array
         __build_maze(show_build); // Uses stack to randomly visit cells and knockdown walls
-        __reset_maze();     // Mark all cells as not visited
+        __reset_maze();           // Mark all cells as not visited
 
         startCell = maze[0][0];                 // Mark entrance to maze
         exitCell = maze[height - 1][width - 1]; // Mark exit to maze
     }
 
-    void addCharacter(int row,int col,string id){
-        if(id=="trex"){
+    /**
+     * Public: addCharacter
+     * Params:
+     *     int    row : cell row to add to
+     *     int    col : cell col to add to
+     *     string id  : id of character (unique )
+     */
+    void addCharacter(int row, int col, string id) {
+        if (id == "trex") {
             monsterCell = maze[row][col];
-            
-        }else if(id=="swordsman"){
+
+        } else if (id == "swordsman") {
             playerCell = maze[row][col];
         }
 
-        maze[row][col]->character = S.characters[id];
-        
+        maze[row][col]->character = S.graphics["players"][id];
     }
+
     /**
      * Function: printMaze 
      *      Prints maze to screen
@@ -179,17 +194,22 @@ public:
              << endl;
     }
 
-    void mark_visited_path(){
-        for(int i=0;i<height;i++){
-            for(int j=0;j<width;j++){
-                if(maze[i][j]->visited){
+    /**
+     * Private: markVisitedPath
+     * 
+     * Description:
+     *     Loops through entire maze redrawing visited cells with 
+     *     specified character. Should     
+     */ 
+    void markVisitedPath() {
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                if (maze[i][j]->visited) {
                     maze[i][j]->character = ".";
                 }
-                
-            }   
+            }
         }
     }
-    
 
     void traverseMaze(bool pm = true) {
         bool print_maze = pm; // print the maze being built?
@@ -202,6 +222,7 @@ public:
         string d;             // direction
         bool found = false;
         int best_index = 0;
+        bool flag = false;
 
         __reset_maze();
 
@@ -210,36 +231,48 @@ public:
 
         // While there are still cells to be visited:
         while (move_stack.size() > 0 && found == false) {
-            
+
+            flag = false;
+           
             //Set current to top of stack (end of list)
             current = move_stack.back();
             
-
-            if(!current->visited){
+            
+            if (!current->visited) {
                 current->visited = 1;
                 current->character = ".";
             }
-
+            
+            
             if (current == playerCell) {
                 int col = rand() % width;
                 int row = rand() % height;
                 playerCell = maze[row][col];
 
-                maze[row][col]->character = S.characters["swordsman"];
+                maze[row][col]->character = S.graphics["players"]["swordsman"];
                 maze[row][col]->visited = 0;
-                __reset_maze();
-            }
 
+                __reset_maze();
+                //rebuildMaze();
+                //move_stack.clear();
+                //move_stack.push_back(monsterCell);
+                //flag = true;
+                
+            }
+            
             // Get an array of possible moves from our current location.
             // Will hold from 0 - 4 neighbors
             moves = __available_moves(current->row, current->col);
-
+            
+            
             // If there are any moves in our array:
             if (moves.size()) {
+
+                
                 // randomly choose a neighboring cell from moves array.
                 rand_index = rand() % moves.size();
 
-                best_index = __best_choice(moves,playerCell);
+                best_index = __best_choice(moves, playerCell);
 
                 neighbor_row = moves[rand_index]->row;
                 neighbor_col = moves[rand_index]->col;
@@ -252,18 +285,22 @@ public:
                 move_stack.push_back(neighbor);
 
             } else {
+                
                 // No moves ... we need to backtrack!
+
                 move_stack.pop_back();
+
+                
             }
-            if (print_maze) {
+
+            
+            if (print_maze && !flag) {
                 usleep(100000);
-                mark_visited_path();
-                move_stack.back()->character = S.characters["trex"];
+                markVisitedPath();
+                move_stack.back()->character = S.graphics["players"]["trex"];
                 printMaze();
             }
-            if (found) {
-                cout << "Done!!";
-            }
+            
         }
     }
 
@@ -347,22 +384,22 @@ private:
                 // We moved North so open up our ceiling
                 if (d == "North") {
                     current->top = NSOPEN;
-                    current->character = S.arrows["BH"]["N"];
+                    current->character = S.graphics["arrows"]["BHN"];
 
                     // We moved East so knock down neighbors left wall
                 } else if (d == "East") {
                     neighbor->left = EWOPEN;
-                    current->character = S.arrows["BH"]["E"];
+                    current->character = S.graphics["arrows"]["BHE"];
 
                     // We moved South so open up the neighbors ceiling
                 } else if (d == "South") {
                     neighbor->top = NSOPEN;
-                    current->character = S.arrows["BH"]["S"];
+                    current->character = S.graphics["arrows"]["BHS"];
 
                     // We moved West so knock down our own left wall
                 } else if (d == "West") {
                     current->left = EWOPEN;
-                    current->character = S.arrows["BH"]["W"];
+                    current->character = S.graphics["arrows"]["BHW"];
                 }
 
                 // Put neighber cell on top of stack
@@ -370,12 +407,28 @@ private:
             } else {
                 // No moves ... we need to backtrack!
                 move_stack.pop_back();
+
             }
             if (print_maze) {
                 usleep(300);
                 printMaze();
             }
         }
+    }
+
+    void rebuildMaze(bool draw=false){
+        
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                maze[i][j]->top = NSBARRIER;  // Top wall type
+                maze[i][j]->left = EWBARRIER; // Left wall type
+                maze[i][j]->visited = 0;
+                if (maze[i][j]->character.size() < 3)
+                    maze[i][j]->character = " ";
+            }
+        }
+        
+        __build_maze(draw);
     }
 
     /**
@@ -469,7 +522,7 @@ private:
 
     /**
      * __reset_maze
-     *     Sets all characters to " " and visited to 0.
+     *     Sets all players to " " and visited to 0.
      * 
      * Params:
      *    void
@@ -480,13 +533,13 @@ private:
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
                 maze[i][j]->visited = 0;
-                if(maze[i][j]->character.size()<3)
+                if (maze[i][j]->character.size() < 3)
                     maze[i][j]->character = " ";
             }
         }
     }
 
-    int __best_choice(vector<Cell *> moves,Cell* target) {
+    int __best_choice(vector<Cell *> moves, Cell *target) {
         int min = 99999;
         int d = 0;
         int i = 0;
@@ -507,10 +560,10 @@ private:
 
 int main() {
     srand(time(0));
-    Maze M(10, 30,false);
+    Maze M(10, 30, false);
 
     M.printMaze();
-    M.addCharacter(2,2,"trex");
-    M.addCharacter(2,28,"swordsman");
+    M.addCharacter(2, 2, "trex");
+    M.addCharacter(2, 28, "swordsman");
     M.traverseMaze();
 }
