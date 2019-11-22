@@ -2,6 +2,9 @@
 
 Simple:
 
+Read the following materials:
+
 - [Prims](../../Lectures/L08/README.md)
 - [Kruskels](../../Lectures/L08/README.md)
 - [Dijkstra's](../../Lectures/L10/demo-dijkstra.ppt)
+
