@@ -16,7 +16,7 @@
 | Warning |
 |:--------|
 | This is a takehome, so make sure you explain or justify every answer (when appropriate). |
-| For example Q1 has an answer of .1, but you may want to add the definition of (&lambda;) to bolster your answer. | 
+| For example Q1 has an answer of .1, but you may want to add the definition of (&lambda;) to bolster your answer. |
 
 
 |  M Number     | Signature  |
@@ -132,6 +132,25 @@ Draw 3 separate hash tables that results from using a given hash function (below
 Strings to hash:
 
 **Epd, DcS, Fcf, Gco, Qzj, Wvc, RUC, ejJ, iwR, zyz**
+
+>Answer:
+>
+>- Pre calculated values:
+``` 
+{'DcS': ('250', 3),
+ 'Epd': ('281', 8),
+ 'Fcf': ('271', 11),
+ 'Gco': ('281', 8),
+ 'Qzj': ('309', 10),
+ 'RUC': ('234', 0),
+ 'Wvc': ('304', 5),
+ 'ejJ': ('281', 8),
+ 'iwR': ('306', 7),
+ 'zyz': ('365', 1)}
+ ```
+> - 10 Values to store, so I will choose a hash table of 13 which is prime and gets me close to a .75 load factor
+> 
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/3013.test.3.q9.png">
 
 -----
 

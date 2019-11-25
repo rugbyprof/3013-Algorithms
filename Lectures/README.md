@@ -14,4 +14,4 @@
  | [L11](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L11) | [ Huffman Code](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L11) | [N/A](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L11) |
  | [L12](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L12) | [ Backtracking ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L12) | [ Get stuck](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L12) | [N/A](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L12) |
 
-<sup>Last Updated: 2019-11-22 (Fri @ 14:38)</sup>
+<sup>Last Updated: 2019-11-22 (Fri @ 15:53)</sup>

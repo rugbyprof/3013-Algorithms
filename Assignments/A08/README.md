@@ -13,3 +13,11 @@ A **heuristic** is any approach to problem solving or self-discovery that employ
 - [A-Star](https://www.redblobgames.com/pathfinding/a-star/introduction.html) 
   - In this article just concentrate on the algorithms and heuristics they employ. 
 
+
+
+## Q1 
+
+Is there any distance in the run times for Prims and Kruskels?
+
+## Q2
+
