@@ -17,7 +17,7 @@ A **heuristic** is any approach to problem solving or self-discovery that employ
 
 ## Q1 
 
-Is there any distance in the run times for Prims and Kruskels?
+Is there any difference in the run times for Prims and Kruskels?
 
 ## Q2
 
