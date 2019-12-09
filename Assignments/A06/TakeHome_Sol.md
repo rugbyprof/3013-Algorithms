@@ -94,7 +94,7 @@ Draw a hash table with open addressing and a size of 9. Use the hash function `k
 
 >**Answer:**
 >
-><img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/test2.1.png">
+><img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/test.3.7.png">
 
 -----
 
