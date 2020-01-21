@@ -37,6 +37,11 @@ using namespace std;
  *      void                Analyze()
  *      map<char, string>   GetCodes()
  * 
+ * Private Methods:
+ *      void                _BuildLookupTable
+ *      void                _BuildTree
+ *      int                 _maxDepth
+ * 
  * Usage: 
  * 
  *      Huffman H(filename):                        // Create Instance of Huffman
@@ -88,7 +93,7 @@ private:
     }
 
     /**
-     * Private : BuildTree
+     * Private : _BuildTree
      * 
      * Description:
      *      Uses the frequency table, and a priority heap to build the huffman tree.
@@ -99,7 +104,7 @@ private:
      * Returns:
      *      Void  : stores results in class var
      */
-    void BuildTree() {
+    void _BuildTree() {
         Node *Temp; // Temp node used to combine two letters
         Node *Sub1; // Huffman says pop top 2 nodes to combine
         Node *Sub2; //     these vars represent those 2 popped nodes
@@ -161,7 +166,7 @@ private:
     }
 
     /**
-     * Public : LookupCode
+     * Private : _maxDepth
      * Source : https://www.geeksforgeeks.org/write-a-c-program-to-find-the-maximum-depth-or-height-of-a-tree/
      * Description:
      *      Get depth of a binary tree
@@ -172,15 +177,15 @@ private:
      * Returns:
      *      int : max depth
      */
-    int maxDepth(Node* node)  
+    int _maxDepth(Node* node)  
     {  
         if (node == NULL)  
             return 0;  
         else
         {  
             /* compute the depth of each subtree */
-            int lDepth = maxDepth(node->Left);  
-            int rDepth = maxDepth(node->Right);  
+            int lDepth = _maxDepth(node->Left);  
+            int rDepth = _maxDepth(node->Right);  
         
             /* use the larger one */
             if (lDepth > rDepth)  
@@ -276,7 +281,7 @@ public:
         // we need to travers and "build" each letters code.
         // Remember left = 0
         //          right = 1
-        BuildTree();
+        _BuildTree();
 
         // Generate the actual "codes" => "010101" for each
         // letter. By traversing and using left / right to
@@ -384,9 +389,9 @@ public:
         cout << "Average Huffman code size:       " << (avgCodeLength/(double)count) <<endl;
         cout << "Longest Huffman code size:       " << max <<endl;
         cout << "Smallest Huffman code size:      " << min <<endl;
-        cout << "Depth of the Huffman tree:       " << maxDepth(Tree)<<endl;  
-        cout << "Depth of the Left Subtree:       " << maxDepth(Tree->Left)+1<<endl;  
-        cout << "Depth of the Right Subtree:      " << maxDepth(Tree->Right)+1<<endl;  
+        cout << "Depth of the Huffman tree:       " << _maxDepth(Tree)<<endl;  
+        cout << "Depth of the Left Subtree:       " << _maxDepth(Tree->Left)+1<<endl;  
+        cout << "Depth of the Right Subtree:      " << _maxDepth(Tree->Right)+1<<endl;  
         if (filesize_in_bytes > 0) {
             ratio = (double)(numbits / 8.0)/(double)filesize_in_bytes;
             cout << "Space saved given input size:    " <<(ratio*100) <<"%"<< endl;
