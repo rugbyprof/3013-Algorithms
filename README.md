@@ -1,7 +1,8 @@
 # 3013-Algorithms
 
 ### Roster
-<a href="https://docs.google.com/spreadsheets/d/1ShN0rIHHMi8mdyPhNDfehTJcw3GRApJPUboiSi2mBxA/edit?usp=sharing"><img source="https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421">Class Roster</a>
+![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1ShN0rIHHMi8mdyPhNDfehTJcw3GRApJPUboiSi2mBxA/edit?usp=sharing)
+
 
 ### General Course Info
 - __Days:__ MW 3:30 p.m. - 4:50 p.m. 
