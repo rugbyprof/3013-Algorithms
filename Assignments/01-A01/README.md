@@ -93,7 +93,7 @@ I use github as a homebase for all assignments, lectures, and resources. It's ba
 - When you create a Github account, you must choose a `username`.
 - This is very important to remember, because you will update the class roster with this username so I know where to find all your assignments.
 - Create a repository named:
-    - `3013-Algorithms-yourlastname`
+    - `3013-ALG-yourlastname`
     - replace the `yourlastname` with your last name to make it unique.
 - Check the box that says: "Add a README.md file"
 
@@ -133,7 +133,7 @@ If you're not familiar with `markdown` you can go [here](https://guides.github.c
 
 #### Update the Class Roster:
 
-- Here is a link to our class roster on google docs: ![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/18bmuAJBjV5Yw5tzzXht_Dz1gcwoYvydZgtCaR_nECOw/edit?usp=sharing)
+- Here is a link to our class roster on google docs: ![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1ShN0rIHHMi8mdyPhNDfehTJcw3GRApJPUboiSi2mBxA/edit?usp=sharing)
 
 - Update the roster by adding your information to it. 
 
@@ -142,7 +142,7 @@ Add:
 1. If your first and last name are not present, add them along with an email address.
 2. If your email on my roster is incorrect, or you use a different one, then change it.
 3. Add your github username<sup>*</sup>
-4. Add a link to your 3013 Algorithms repository<sup>*</sup>
+4. Add a link to your 3013-ALG repository<sup>*</sup>
 
 *Your repository name and your github username are NOT the same thing.
 *I should be able to click your repo link, and your github repository (along with your README file ... images and all ... should proudly be displayed).

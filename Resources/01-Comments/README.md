@@ -14,6 +14,26 @@ Every program will have a comment block nearly IDENTICAL in structure to the one
 This is the comment that will go into your main driver program. It is also the top page when turning in a 
 printed program (unless we create a banner page).
 
+#### Acceptable 
+
+```cpp
+///////////////////////////////////////////////////////////////////////////////
+// 
+//
+//
+///////////////////////////////////////////////////////////////////////////////
+```
+
+#### OR
+
+```cpp
+/*****************************************************************************
+*
+* 
+*
+*****************************************************************************/
+```
+
 #### Program Comment Template:
 
 ```cpp
@@ -31,7 +51,7 @@ printed program (unless we create a banner page).
 //       describe program here thoroughly 
 //
 // Usage:
-//       how to use program if necessary
+//       how to use the program if necessary
 //
 // Files:            (list of all source files used in this program)
 /////////////////////////////////////////////////////////////////////////////////
@@ -69,4 +89,109 @@ printed program (unless we create a banner page).
 /////////////////////////////////////////////////////////////////////////////////
 ```
 
+### Class Comment
 
+#### Class Comment Template:
+
+```cpp
+/**
+ * Class Name
+ * 
+ * Description:
+ *      Description of your class and what it does
+ * 
+ * Public Methods:
+ *      - A list of 
+ *      - each public method
+ *      - with return types
+ * 
+ * Private Methods:
+ *      - A list of 
+ *      - each private method
+ *      - with return types
+ * 
+ * Usage: 
+ * 
+ *      - examples of how
+ *      - to use your class 
+ *      
+ */
+```
+#### Class Comment Example:
+
+```cpp
+/**
+ * Huffman
+ * 
+ * Description:
+ *      This class implements a compressions algorithm called Huffman Coding.
+ *      Huffman coding assigns codes to characters such that the length of the 
+ *      code depends on the relative frequency or weight of the corresponding 
+ *      character. Huffman codes are of variable-length, and prefix-free
+ * 
+ * Public Methods:
+ *                          Huffman()                               
+ *      void                BuildFrequencyTable(string filename)
+ *      string              LookupCode(char key)
+ *      void                Analyze()
+ *      map<char, string>   GetCodes()
+ * 
+ * Private Methods:
+ *      void                _BuildLookupTable
+ *      void                _BuildTree
+ *      int                 _maxDepth
+ * 
+ * Usage: 
+ * 
+ *      Huffman H(filename):                        // Create Instance of Huffman
+ *                                                  // and build freq table. 
+ *      H.GetCodes();                               // get map <char,string> of codes
+ * 
+ *                                                  // or
+ *      
+ *      Huffman H;                                  // do seperately
+ *      H.BuildFrequencyTable(filename);            // or use to re-build another file
+ *      H.LookupCode('s')                           // get code for 's' 
+ *      
+ */
+```
+
+### Function Comment
+
+```cpp
+
+    /**
+     * Public/Private/Protected : function_name
+     * 
+     * Description:
+     *      Describe the functions purpose
+     * 
+     * Params:
+     *      - list params
+     *      - one per line
+     *      - with return type
+     *      - and one line description
+     * 
+     * Returns:
+     *      - what does this function return (including the type)?
+     */
+```
+
+#### Function Comment Example:
+
+```cpp
+
+    /**
+     * Public : LoadList
+     * 
+     * Description:
+     *      Loads an array of integerts into a linked list.
+     * 
+     * Params:
+     *      int*    :  array of integers
+     *      int     :  array size
+     * 
+     * Returns:
+     *      List*   : a pointer to a linked list of integers.
+     */
+```

@@ -1,1 +1,10 @@
 ## Assignments
+| Folder | Assignment | Description | Due|
+ | ------------|------------|------------|------------|
+ | [01-A01](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/01-A01) | [ Assignment 1 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/01-A01) | [ Getting Started](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/01-A01) | [01-23-2020 (Thursday @ 11:00 a.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/01-A01) |
+ | [A03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [ Assignments A03 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [ No Description](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) | [N/A](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A03) |
+ | [A05](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A05) | [ Assignments A05 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A05) | [ No Description](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A05) | [N/A](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A05) |
+ | [A07](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A07) | [ Assignments A07 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A07) | [ No Description](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A07) | [N/A](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A07) |
+ | [A09](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) | [ Assignments A09 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) | [ No Description](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) | [N/A](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/A09) |
+
+<sup>Last Updated: 2020-01-21 (Tue @ 12:19)</sup>
