@@ -14,7 +14,6 @@
 
 using namespace std;
 
-
 /**
  * Class Heap:
  * 
@@ -27,15 +26,15 @@ using namespace std;
  *    bool Empty()
  *    void Heapify(int*,int)
  */
-template <typename T> 
+template <typename T>
 class Heap {
 private:
-    T **Array;       // Pointer to allocate dynamic array
-    T **SwapSpace;   // 
-    int Next;     // Next available location
-    int MaxSize;  // Max size since were using array
-    int HeapSize; // Actual number of items in the array.
-    bool isMax;     // true = max heap false = min
+    T **Array;     // Pointer to allocate dynamic array
+    T **SwapSpace; //
+    int Next;      // Next available location
+    int MaxSize;   // Max size since were using array
+    int HeapSize;  // Actual number of items in the array.
+    bool isMax;    // true = max heap false = min
 
     /**
      * Function IncreaseKey:
@@ -48,20 +47,19 @@ private:
      */
     void BubbleUp(int i) {
         int p = Parent(i);
-        if(isMax){
+        if (isMax) {
             while (p > 0 && Array[i]->priority > Array[p]->priority) {
                 Swap(i, p);
                 i = p;
                 p = Parent(i);
             }
-        }else{
+        } else {
             while (p > 0 && Array[i]->priority < Array[p]->priority) {
                 Swap(i, p);
                 i = p;
                 p = Parent(i);
             }
         }
-
     }
 
     /**
@@ -77,7 +75,7 @@ private:
         int c = PickChild(i);
 
         while (c > 0) {
-            if(isMax){
+            if (isMax) {
                 if (Array[i]->priority < Array[c]->priority) {
                     Swap(i, c);
                     i = c;
@@ -85,7 +83,7 @@ private:
                 } else {
                     c = -1;
                 }
-            }else{
+            } else {
                 if (Array[i]->priority > Array[c]->priority) {
                     Swap(i, c);
                     i = c;
@@ -94,7 +92,6 @@ private:
                     c = -1;
                 }
             }
-
         }
     }
 
@@ -109,7 +106,7 @@ private:
      *      void
      */
     void Swap(int p, int i) {
-        T* temp = Array[p];
+        T *temp = Array[p];
         Array[p] = Array[i];
         Array[i] = temp;
     }
@@ -165,28 +162,27 @@ private:
     int PickChild(int i) {
         if (RightChild(i) >= Next) {    // No right child
             if (LeftChild(i) >= Next) { // No left child
-                return -1;              
+                return -1;
             } else { // you know there is only a left child
                 return LeftChild(i);
             }
         } else {
-            //right child exists 
-            if(isMax){ //This is a "maxheap"
+            //right child exists
+            if (isMax) { //This is a "maxheap"
                 // return child with "greater" value
                 if (Array[RightChild(i)]->priority > Array[LeftChild(i)]->priority) {
                     return RightChild(i);
                 } else {
                     return LeftChild(i);
                 }
-            }else{
+            } else {
                 // return child with "smaller" value
                 if (Array[RightChild(i)]->priority < Array[LeftChild(i)]->priority) {
                     return RightChild(i);
                 } else {
                     return LeftChild(i);
-                }   
+                }
             }
-
         }
     }
 
@@ -202,17 +198,17 @@ private:
      * 
      *     Shrink is not implemented!
      */
-    void ResizeHeap(bool grow = true){
-        if(grow){
+    void ResizeHeap(bool grow = true) {
+        if (grow) {
             int newSize = MaxSize * 2;
-            SwapSpace = new T*[newSize];
-            for(int i=1;i<=Next;i++){
-                SwapSpace[i] = Array[i]; 
+            SwapSpace = new T *[newSize];
+            for (int i = 1; i <= Next; i++) {
+                SwapSpace[i] = Array[i];
             }
             MaxSize = newSize;
-            delete [] Array;
+            delete[] Array;
             Array = SwapSpace;
-        }else{
+        } else {
             // not implemented!
         }
     }
@@ -228,23 +224,21 @@ public:
      * Returns
      *      void
      */
-    Heap(int size,bool max = true) {
-        Array = new T*[size];
+    Heap(int size, bool max = true) {
+        Array = new T *[size];
         Next = 1;
         MaxSize = size;
         HeapSize = 0;
         isMax = max;
     }
 
-    Heap(bool max = true){
-        Array = new T*[100];
+    Heap(bool max = true) {
+        Array = new T *[100];
         Next = 1;
         MaxSize = 100;
         HeapSize = 0;
         isMax = max;
     }
-
-
 
     /**
      * Function Insert:
@@ -255,8 +249,8 @@ public:
      * Returns
      *      void
      */
-    void Insert(T* x) {
-        if(Next + 1 == MaxSize){
+    void Insert(T *x) {
+        if (Next + 1 == MaxSize) {
             ResizeHeap();
         }
         Array[Next] = x;
@@ -274,13 +268,13 @@ public:
      * Returns
      *      [T] top_value - top value in the heap (min or max)
      */
-    T* Extract() {
+    T *Extract() {
 
         if (Empty()) {
             return NULL;
         }
 
-        T* retval = Array[1];
+        T *retval = Array[1];
         Array[1] = Array[--Next];
         HeapSize--;
 
@@ -334,9 +328,9 @@ public:
         return Next == 1;
     }
 
-    void Clear(){
-        delete [] Array;
-        Array = new T*[MaxSize];
+    void Clear() {
+        delete[] Array;
+        Array = new T *[MaxSize];
         HeapSize = 0;
         Next = 1;
     }
@@ -362,4 +356,3 @@ public:
         }
     }
 };
-

@@ -255,9 +255,9 @@ printed program (unless we create a banner page).
 **Good:**
 ```c++
   int num1, num2, num3;     // user entered numbers
-  double average;			// calculated average of the numbers
-  int score1,				// score on exam 1
-      score2;				// score on exam 2
+  double average;           // calculated average of the numbers
+  int score1;               // score on exam 1
+  int score2;               // score on exam 2
 ```
 **Bad:**
 ```c++

@@ -4,55 +4,45 @@ using namespace std;
 
 int A[100];
 
-struct Node
-{
+struct Node {
     int x;
     Node *next;
-    Node()
-    {
+    Node() {
         x = -1;
         next = NULL;
     }
-    Node(int n)
-    {
+    Node(int n) {
         x = n;
         next = NULL;
     }
 };
 
-class List
-{
-  private:
+class List {
+private:
     Node *Head;
     Node *Tail;
     int Size;
 
-  public:
-    List()
-    {
+public:
+    List() {
         Head = Tail = NULL;
         Size = 0;
     }
 
-    void Push(int val)
-    {
+    void Push(int val) {
         // allocate new memory and init node
         Node *Temp = new Node(val);
 
-        if (!Head && !Tail)
-        {
+        if (!Head && !Tail) {
             Head = Tail = Temp;
-        }
-        else
-        {
+        } else {
             Tail->next = Temp;
             Tail = Temp;
         }
         Size++;
     }
 
-    void Insert(int val)
-    {
+    void Insert(int val) {
         // allocate new memory and init node
         Node *Temp = new Node(val);
 
@@ -60,25 +50,21 @@ class List
 
         Temp->next = Head;
         Head = Temp;
-        if (!Tail)
-        {
+        if (!Tail) {
             Tail = Head;
         }
         Size++;
     }
 
-    void PrintTail()
-    {
+    void PrintTail() {
         cout << Tail->x << endl;
     }
 
-    string Print()
-    {
+    string Print() {
         Node *Temp = Head;
         string list;
 
-        while (Temp != NULL)
-        {
+        while (Temp != NULL) {
             list += to_string(Temp->x) + "->";
             Temp = Temp->next;
         }
@@ -86,15 +72,13 @@ class List
         return list;
     }
 
-    // not implemented 
-    int Pop()
-    {
+    // not implemented
+    int Pop() {
         Size--;
         return 0; //
     }
 
-    List operator+(const List &Rhs)
-    {
+    List operator+(const List &Rhs) {
         // Create a new list that will contain both when done
         List NewList;
 
@@ -102,8 +86,7 @@ class List
         Node *Temp = Head;
 
         // Loop through local list and Push values onto new list
-        while (Temp != NULL)
-        {
+        while (Temp != NULL) {
             NewList.Push(Temp->x);
             Temp = Temp->next;
         }
@@ -112,8 +95,7 @@ class List
         Temp = Rhs.Head;
 
         // Same as above, loop and push
-        while (Temp != NULL)
-        {
+        while (Temp != NULL) {
             NewList.Push(Temp->x);
             Temp = Temp->next;
         }
@@ -124,45 +106,36 @@ class List
 
     // Implementation of [] operator.  This function returns an
     // int value as if the list were an array.
-    int operator[](int index)
-    {
+    int operator[](int index) {
         Node *Temp = Head;
 
-        if (index >= Size)
-        {
+        if (index >= Size) {
             cout << "Index out of bounds, exiting";
             exit(0);
-        }
-        else
-        {
+        } else {
 
-            for (int i = 0; i < index; i++)
-            {
+            for (int i = 0; i < index; i++) {
                 Temp = Temp->next;
             }
             return Temp->x;
         }
     }
 
-    friend ostream &operator<<(ostream &os, List L)
-    {
+    friend ostream &operator<<(ostream &os, List L) {
         os << L.Print();
         return os;
     }
 };
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
     List L1;
     List L2;
 
-    for (int i = 0; i < 25; i++)
-    {
+    for (int i = 0; i < 25; i++) {
         L1.Push(i);
     }
 
-    for (int i = 50; i < 100; i++)
-    {
+    for (int i = 50; i < 100; i++) {
         L2.Push(i);
     }
 
