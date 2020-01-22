@@ -163,21 +163,23 @@ private:
      *      [int] index - index to swap with or -1 to not swap
      */
     int PickChild(int i) {
-        if (RightChild(i) >= Next) {    //No right child
-            if (LeftChild(i) >= Next) { //No left child
-                return -1;
-            } else { //you have a left no right
+        if (RightChild(i) >= Next) {    // No right child
+            if (LeftChild(i) >= Next) { // No left child
+                return -1;              
+            } else { // you know there is only a left child
                 return LeftChild(i);
             }
         } else {
-            //right child exists
-            if(isMax){
+            //right child exists 
+            if(isMax){ //This is a "maxheap"
+                // return child with "greater" value
                 if (Array[RightChild(i)]->priority > Array[LeftChild(i)]->priority) {
                     return RightChild(i);
                 } else {
                     return LeftChild(i);
                 }
             }else{
+                // return child with "smaller" value
                 if (Array[RightChild(i)]->priority < Array[LeftChild(i)]->priority) {
                     return RightChild(i);
                 } else {
