@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-#include "json.hpp"
+#include "../json.hpp"
 
 using namespace std;
 using json = nlohmann::json;
@@ -15,7 +15,7 @@ int main(){
     string FileName;
 
     // read a JSON file
-    ifstream input("super_heros.json");
+    ifstream input("../data/super_heros.json");
     input >> Data;
     input.close();
 
@@ -28,6 +28,8 @@ int main(){
         // print out member name
         std::cout << el["name"] << '\n';
 
+        el["powers"].push_back("new super power");
+
         // loop through the members powers and print them out
         for (auto& power : el["powers"]) {
             std::cout <<"\t"<< power << '\n';
@@ -36,6 +38,6 @@ int main(){
 
     // write entire json object out to a new file
     // could be useful if we changed any of the data
-    std::ofstream ofs("pretty.json");
+    std::ofstream ofs("../data/pretty.json");
     ofs << std::setw(4) << Data << std::endl;
 }

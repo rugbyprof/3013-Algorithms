@@ -1,5 +1,5 @@
-#include "json.hpp"
-#include "JsonFacade.hpp"
+#include "../json.hpp"
+#include "../JsonFacade.hpp"
 #include <iostream>
 
 using namespace std;
@@ -55,7 +55,7 @@ int main(){
     json obj;
     int size;
 
-    J = new JsonFacade("animals.json");
+    J = new JsonFacade("../data/animals.json");
     size = J->getSize();
     Animals = new Animal *[size];
     for (int i = 0; i < size; i++) {
