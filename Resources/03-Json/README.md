@@ -5,10 +5,11 @@
 - JSON is a lightweight data-interchange format.
 - JSON stands for `JavaScript Object Notation`.
 - Started out in JavaScript.
-- It is a lightweight and text-based data-interchange format.
-- Supported by **many** programming environments!
-- It is language and platform independent.
-- It is a lightweight alternative to XML.
+- It is: 
+  - text-based and easily readable.
+  - supported by **many** programming environments!
+  - language and platform independent.
+  - a lightweight alternative to XML.
 - It was invented by Douglas Crockford.
 - JSON is mainly used for storing and exchanging data. 
 - The file extension for JSON is `.json`. 
