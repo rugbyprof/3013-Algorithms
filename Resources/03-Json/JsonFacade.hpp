@@ -9,6 +9,32 @@
  * For our purposes it assumes an array of objects. I might expand on it later but doubt
  * it. If you are interested, learn how to use the original in many much more powerful ways.
  */
+///////////////////////////////////////////////////////////////////////////////
+//                   
+// Author:           Tery Griffin
+// Email:            terry.griffin@msutexas.edu
+// Title:            JsonFacade
+//
+// Description:
+//          This class is a facade pattern that simplifies the use of a very nicely written
+//          hpp file from here: https://github.com/nlohmann/json 
+//          
+//          There is a lot of functionality that the header file includes, that we don't need.
+//          This class lets a student treat a json array objects as an array. 
+//
+// Usage:
+//
+//      J = new JsonFacade("file_to_read");
+//      size = J->getSize();                    // get array size
+//
+//      for (int i = 0; i < size; i++) {
+//          obj = J->getNext();                 // read next object in json array
+//          // do something with your json object
+//      }
+//
+// Files:           
+//      json.hpp
+/////////////////////////////////////////////////////////////////////////////////
 #include <iomanip>
 #include <fstream>
 #include <iostream>
