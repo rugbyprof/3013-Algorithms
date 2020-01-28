@@ -1,0 +1,69 @@
+{
+    "cpp main comment": {
+        "prefix": "cppMainComment",
+        "body": [
+            "///////////////////////////////////////////////////////////////////////////////",
+            "//",
+            "// Author:           Terry Griffin ",
+            "// Email:            terry.griffin@msutexas.edu ",
+            "// Label:            L01 ",
+            "// Title:            Lecture 01 - Array Based Stack ",
+            "// Course:           3013 ",
+            "// Semester:         Spring 2020 ",
+            "//",
+            "// Description:",
+            "//       describe program here thoroughly ",
+            "//",
+            "// Usage:",
+            "//       how to use the program if necessary",
+            "//",
+            "// Files:            (list of all source files used in this program)",
+            "/////////////////////////////////////////////////////////////////////////////////"
+        ],
+        "description": "Main program comment"
+    },
+    "cpp class comment": {
+        "prefix": "cppClassComment",
+        "body": [
+            "/**",
+            " * Class Name",
+            " * ",
+            " * Description:",
+            " *      Description of your class and what it does",
+            " * ",
+            " * Public Methods:",
+            " *      - ",
+            " * ",
+            " * Private Methods:",
+            " *      -  ",
+            " * ",
+            " * Usage: ",
+            " * ",
+            " *      - examples of how to use your class ",
+            " *      ",
+            " */"
+        ],
+        "description": "Class comment"
+    },
+    "cpp function comment": {
+        "prefix": "cppFuncComment",
+        "body": [
+            "/**",
+            " * Public/Private/Protected RetType: function_name",
+            " * ",
+            " * Description:",
+            " *      Describe the functions purpose",
+            " * ",
+            " * Params:",
+            " *      - list params",
+            " *      - one per line",
+            " *      - with return type",
+            " *      - and one line description",
+            " * ",
+            " * Returns:",
+            " *      - what does this function return (including the type)?",
+            " */"
+        ],
+        "description": "Function comment"
+    }
+}

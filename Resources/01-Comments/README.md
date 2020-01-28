@@ -188,11 +188,11 @@ printed program (unless we create a banner page).
      *      Loads an array of integerts into a linked list.
      * 
      * Params:
-     *      int*    :  array of integers
-     *      int     :  array size
+     *      [int*]    :  array of integers
+     *      [int]     :  array size
      * 
      * Returns:
-     *      List*   : a pointer to a linked list of integers.
+     *      [type] List*   : a pointer to a linked list of integers.
      */
 ```
 
@@ -213,11 +213,12 @@ printed program (unless we create a banner page).
 - The following is taken from a "heap" class. Knowing in general how a heap works, and by having access to the other code in the file, the comments below are enough to give the reviewer an idea of what this function is doing. 
 ```cpp
     /**
-     * Function PickChild:
+     * public : PickChild:
      *      Return index of child to swap with or -1 to not swap.
      * 
      * Params:
      *      [int] index - index of parent element
+     * 
      * Returns
      *      [int] index - index to swap with or -1 to not swap
      */
@@ -266,3 +267,4 @@ printed program (unless we create a banner page).
   int score1,    // score on exam 1
       score2;			    // score on exam 2
 ```
+
