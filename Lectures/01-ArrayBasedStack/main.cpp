@@ -120,7 +120,8 @@ public:
       return A[top];
     }
     
-    return -99;
+    return -99; // some sentinel value
+                // not a good solution
   }
 
  /**
@@ -140,7 +141,8 @@ public:
       return A[top--];
     }
 
-    return -99;
+    return -99; // some sentinel value
+                // not a good solution
   }
 
  /**
@@ -201,18 +203,18 @@ public:
   *      NULL
   */
   void Resize(){
-    int newSize = size*2;
-    int *B = new int[newSize];
+    int newSize = size*2;       // double size of original
+    int *B = new int[newSize];  // allocate new memory
 
-    for(int i=0;i<size;i++){
+    for(int i=0;i<size;i++){    // copy values to new array
       B[i] = A[i];
     }
 
-    delete [] A;
+    delete [] A;                // delete old array
 
-    size = newSize;
+    size = newSize;             // save new size
 
-    A = B;
+    A = B;                      // reset array pointer
 
   }
 
