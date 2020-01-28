@@ -63,3 +63,13 @@ INTO:
                                           
  
 ```
+
+- Create your own header:
+
+```txt
+H01
+3013
+YOURLASTMNAME
+```
+
+- Print it out and turn it in beginning of class Wednesday!
