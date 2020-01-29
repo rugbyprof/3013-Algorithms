@@ -22,8 +22,10 @@ If both items above are YES, continue on. Otherwise program score = 0;
 | ***3*** | ***Specifics***                                       |      30 |        |
 |   3.1   | Added specified code                                  |         |        |
 |   3.2   | Stack resized correctly                               |         |        |
+|   3.3   | Code was readable and well written                    |         |        |
 | ***4*** | ***Output***                                          |      20 |        |
-|   4.1   | Output easily understood                              |         |        |
+|   4.1   | Output matched example closely                        |         |        |
 |   4.2   | Output was printed out and handed in with code.       |         |        |
+|   4.3   | Correct values were output to screen.                 |         |        |
 | Totals: |                                                       | **100** |        |
 
