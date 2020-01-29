@@ -7,8 +7,8 @@ The stack implementation [here:](../../Lectures/01-ArrayBasedStack/main.cpp) has
 
 ### Requirements
 
-- Create a folder in your `Assignments` folder called `03-H01` 
-- Place your re-written `main.cpp` file into this `03-h01` folder.
+- Create a folder in your `Assignments` folder called `04-H02` 
+- Place your re-written `main.cpp` file into this `04-H02` folder.
 - In `main.cpp` rename the `Resize` method to be `ContainerGrow` and comment it.
 - Also in `main.cpp` add a method called `ContainerShrink` that performs the following:
   - When the size of the stack is half full (or less)
@@ -17,6 +17,17 @@ The stack implementation [here:](../../Lectures/01-ArrayBasedStack/main.cpp) has
   - insert 10000 items, then write out the stack size. 
   - delete 9999 items, then write out the stack size. 
 
+- Banner info will be:
+
+```
+H02
+3013
+LASTNAME
+```
+
 ### Deliverables
 
-- NOT DONE!!
+- Bring a printed copy of your code (with your banner) to class on Monday.
+- Comment your code according to the style [here](../../Resources/01-Comments/README.md)
+- Late to class = late program
+- Checklist for program is [here](./checklist.md)
