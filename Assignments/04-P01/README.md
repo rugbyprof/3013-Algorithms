@@ -17,7 +17,7 @@
   - Resize when ratio goes below .50 
 - Rename `Resize` method to be `ContainerGrow`.
 - Add a `ContainerShrink` method.
-- Make sure both methods grow and shrink correctly.
+- A third method: `CheckResize` could be a good addition. This method would calculate the ratios then call appropriated resize method if necessary. 
 - Make sure you comment your code.
 
 #### Testing Your Code
