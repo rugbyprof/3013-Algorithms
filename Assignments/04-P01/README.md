@@ -9,8 +9,12 @@
 
 #### Stack Resizing
 
-- Increses stack size by **1.75** times when stack is full.
+- Full and Empty are determined by number of items in stack vs current stack size.
+- Increase stack size by **1.75** times when stack is full.
+  - Full = `No More Array Locations` 
+  - Resize should be when a value is pushed onto a FULL stack.
 - Decrease stack by **.5** when stack becomes half empty. 
+  - Resize when ratio goes below .50 
 - Rename `Resize` method to be `ContainerGrow`.
 - Add a `ContainerShrink` method.
 - Make sure both methods grow and shrink correctly.
