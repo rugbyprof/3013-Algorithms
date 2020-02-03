@@ -52,6 +52,9 @@ private:
     int Size;
     int Index;
     string FileName;
+    vector<string> Keys;
+    vector<string> Values;
+    
 
 public:
     /**
@@ -70,9 +73,49 @@ public:
         input.close();
 
         Size = Data.size();
+
+        for (auto& [key, value] : Data.items()) {
+            Keys.push_back(key);
+            Values.push_back(value);
+        }
+        
         Index = 0;
     }
 
+    /**
+     * getKeys: gets a vector of keys
+     * 
+     * 
+     */
+    vector<string> getKeys(){
+        return Keys;
+    }
+
+    /**
+     * getKey: gets a key at position i
+     * 
+     * 
+     */
+    string getKey(int i){
+        return Keys[i];
+    }
+    
+    /**
+     * getValue: gets a value at array[key]
+     * 
+     * 
+     */
+    string getValue(string key){
+        return Data[key];
+    }
+
+
+    /**
+     * getNext: gets the "next" value in the array. Used to
+     *          traverse the array with directly accessing it.
+     * 
+     * 
+     */
     json getNext() {
         if (Index < Size) {
             return Data[Index++];
