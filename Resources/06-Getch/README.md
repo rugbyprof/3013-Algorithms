@@ -1,1 +1,1 @@
-## Resources 06-Getch - No Description
+## Getch - Read chars from console
