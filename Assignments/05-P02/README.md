@@ -13,6 +13,10 @@
 - You need to track the run time of your code. 
 - Check [this](../../Resources/05-Timing/README.md) out.
 
+### Getching :)
+
+
+
 ### Overview
 
 - Write a program that will read in a dictionary file from [here](dict_w_defs.json) and store it in a simple data structure like a vector or array. 

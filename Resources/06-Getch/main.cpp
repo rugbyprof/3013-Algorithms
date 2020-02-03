@@ -1,23 +1,19 @@
+#include "mygetch.hpp"
 #include <iostream>
-#include "input.hpp"
 
-
+#if defined(WIN32) || defined(_WIN32) || defined(__WIN32) && !defined(__CYGWIN__)
+#define OS "WINDOWS"
+#else
+#define OS "LINUX"
+#endif
 
 using namespace std;
 
+int main() {
+    char k;
 
-int main(){
-
-    char letter;
-
-    std::cout << "enter a letter -->\n\n";
-    while(letter != 'x'){
-
-    
-      letter = getch();
-    
-      std::cout << letter;
+    while ((k = getch()) != 'Z') {
+        cout << "Key: " << k << " = " << (int)k << endl;
     }
-    cout<<"done!"<<endl;
     return 0;
 }
