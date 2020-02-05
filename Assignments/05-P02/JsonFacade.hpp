@@ -74,7 +74,8 @@ public:
     /**
      * getKeys: gets a vector of keys
      * 
-     * 
+     * returns:
+     *      
      */
     vector<string> getKeys(){
         return Keys;
@@ -128,9 +129,9 @@ public:
      * pushBack: converts a string to json and pushes on end of array
      * 
      * Params:
-     *     string obj  : a string json object which whould be in the following format:
+     *     string obj  : a string json object which would be in the following format:
      * 
-     *                           "{\"key0\":"value0",\"key1\":1,\"keyn\":\"valuen"\}"
+     *                "{\"key0\":"value0",\"key1\":1,\"keyn\":\"valuen"\}"
      * Returns:
      *     void
      *                
