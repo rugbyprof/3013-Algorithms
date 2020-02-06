@@ -1,14 +1,3 @@
-/**
- * This file is a kind of a facade that interfaces with a more complex json
- * class. The file `json.hpp` is needed for this helper to work. This facade
- * strips away 99.9% of the power the original file does.
- * 
- * The `json.hpp` source code was obtained from https://github.com/nlohmann/json and was
- * authored by: Niels Lohmann
- * 
- * For our purposes it assumes an array of objects. I might expand on it later but doubt
- * it. If you are interested, learn how to use the original in many much more powerful ways.
- */
 ///////////////////////////////////////////////////////////////////////////////
 //                   
 // Author:           Tery Griffin
@@ -85,7 +74,8 @@ public:
     /**
      * getKeys: gets a vector of keys
      * 
-     * 
+     * returns:
+     *      
      */
     vector<string> getKeys(){
         return Keys;
@@ -139,9 +129,9 @@ public:
      * pushBack: converts a string to json and pushes on end of array
      * 
      * Params:
-     *     string obj  : a string json object which whould be in the following format:
+     *     string obj  : a string json object which would be in the following format:
      * 
-     *                           "{\"key0\":"value0",\"key1\":1,\"keyn\":\"valuen"\}"
+     *                "{\"key0\":"value0",\"key1\":1,\"keyn\":\"valuen"\}"
      * Returns:
      *     void
      *                

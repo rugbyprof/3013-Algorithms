@@ -1,8 +1,8 @@
 #include <iostream>
-#include "JsonFacade.hpp"
+#include "JsonFacade.hpp"       // need to grab a copy from resources folder
 #include <time.h>
 #include <chrono> 
-#include "Timer.hpp"
+#include "Timer.hpp"            // need to grab a copy from resources folder
 
 using namespace std;
 

@@ -7,6 +7,8 @@ int main() {
     char k;             // holder for character being typed
     string word = "";   // var to concatenate letters to
 
+    cout<<"Type keys and watch what happens. Type capital Z to quit."<<endl;
+
     // While capital Z is not typed keep looping
     while ((k = getch()) != 'Z') {
         word += k;          // append char to word
@@ -18,6 +20,7 @@ int main() {
 
         // hitting enter sets word back to empty
         if((int)k == 10 ){
+            cout<<"Enter pressed ... Word is empty\nWord: "<<endl;
             word = "";
         }
     }
