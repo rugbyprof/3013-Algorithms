@@ -37,16 +37,66 @@
 
 ## Assignment
 
-#### Requirements Part 1
-- Write a program that will read in a dictionary file from [dict_w_defs.json](../../Resources/04-Data/dictionary_files/dict_w_defs.json) and store it in a linked list.
-- The linked list should hold the word 
+### Requirements
+- Write a program that will read in a dictionary file from [dict_w_defs.json](../../Resources/04-Data/dictionary_files/dict_w_defs.json) and store it in a **linked list**.
+- The linked list should hold the word and the definition.
 - Time how long it takes to load the data into your linked. 
-- Your vector needs to 
-
-- After your dictionary is loaded, we are going to perform "autosuggestions" when a user types characters at the console.
+- After your dictionary (linked list) is loaded, we are going to perform "autosuggestions" when a user types characters at the console.
 - Suggestions will not start until `X` number of characters are typed, and at most `N` possible suggestions will be displayed.
 - The time it takes to find each suggestion will be displayed in milliseconds (somewhere).
 - In addition, [Jeremey Glebe](https://github.com/jeremyglebe/) has a library called [TermIO](https://github.com/jeremyglebe/TermIO) which gives us a decent amount of control over the standard console.
-- I highly recommend you use this to make your program work to its fullest. I will get him to give us an overview. 
 
-# NOT DONE
+
+#### Output Example
+
+- User types the word `ste` 
+- Below the word the number of words found and the amount of time in seconds will be printed
+- Only print out the first 10 words of the matching words
+
+
+```
+ste
+
+62 words found in 0.013 seconds
+
+stead steadfast steadfastly steadfastness steadied steadier steadies steadiest steadily steadiness
+
+```
+
+
+- User types the word `steel` 
+
+```
+steel
+
+18 words found in 0.003 seconds
+
+steel steele steeled steelers steeles steelhead steelie steelier steelies steeliness 
+
+```
+
+### Deliverables
+
+- Create a folder called **P02** in your assignments folder. 
+- **ALL** files used in this project should be in that folder.
+- The only documents you need to print and turn in are:
+  - Banner
+  - Any source code YOU wrote (commented as directed [here](../../Resources/01-Comments/README.md))
+  - 4 screen shots (fitted to one page)
+
+
+
+#### Banner
+
+```
+P02
+3013
+LASTNAME
+```
+
+#### Example Screen Shot
+
+- Of course your screens will differ slightly, however they should fit on one page
+- Be readable and have four examples
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/screen.png" width="500">
