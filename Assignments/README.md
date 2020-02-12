@@ -5,7 +5,9 @@
  | [02-A02](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/02-A02) | [ Assignment 2 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/02-A02) | [ Commenting C++ Code](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/02-A02) | [01-27-2020 (Monday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/02-A02) |
  | [03-H01](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/03-H01) | [ Assignment 3 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/03-H01) | [ Banner Page](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/03-H01) | [01-29-2020 (Wednesday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/03-H01) |
  | [04-P01](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-P01) | [ Assignment 4 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-P01) | [ Resizing the Stack](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-P01) | [02-05-2020 (Wednesday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-P01) |
- | [05-P02](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/05-P02) | [ Assignment 5 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/05-P02) | [ Processing in Linear Time](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/05-P02) | [02-12-2020 (Wednesday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/05-P02) |
+ | [05-P02](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/05-P02) | [ Assignment 5 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/05-P02) | [ Processing in Linear Time](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/05-P02) | [02-19-2020 (Wednesday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/05-P02) |
+ | [06-P03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P03) | [ Assignment 6 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P03) | [ Processing in Log time (or are we?)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P03) | [02-26-2020 (Wednesday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P03) |
+ | [07-H02](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/07-H02) | [ Assignment 7 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/07-H02) | [ Heapify Debacle](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/07-H02) | [02-17-2020 (Monday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/07-H02) |
 
     
 ## File Legend
@@ -18,4 +20,4 @@
 |xx-**T**xx | This is a ***Test***. Usually when on github, it will start out as a study guide, then get accompanied with a solution after the exam. |
 
     
-<sup>Last Updated: 2020-02-11 (Tue @ 17:31)</sup>
+<sup>Last Updated: 2020-02-12 (Wed @ 17:25)</sup>
