@@ -1,7 +1,6 @@
 ## H02 Assessment
 
-1. :black_square_button: Does program run?
-2. :black_square_button: Does generate output?
+:black_square_button: Does program run? :black_square_button: Does generate output?
 
 If both items above are YES, continue on. Otherwise program score = 0;
 
@@ -29,3 +28,15 @@ If both items above are YES, continue on. Otherwise program score = 0;
 |   4.3   | Correct values were output to screen.                 |         |        |
 | Totals: |                                                       | **100** |        |
 
+```
+######################################################################
+    Assignment 4 - Resizing the Stack
+    CMPS 3013
+    Your Name
+
+    Max Stack Size: xxxxxx
+    End Stack Size: xxxxxx
+    Stack Resized: xxxxx times
+
+######################################################################
+```
