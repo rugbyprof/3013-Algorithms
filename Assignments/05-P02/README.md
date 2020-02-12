@@ -98,5 +98,6 @@ LASTNAME
 
 - Of course your screens will differ slightly, however they should fit on one page
 - Be readable and have four examples
+- Also the text in my screenshots is small, try and make yours larger even if the words wrap
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/screen.png" width="500">
