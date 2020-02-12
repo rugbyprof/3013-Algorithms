@@ -1,5 +1,5 @@
 ## Assignment 6 - Processing in Log time (or are we?)
-#### Due: 02-24-2020 (Monday @ 3:30 p.m.)
+#### Due: 02-26-2020 (Wednesday @ 3:30 p.m.)
 
 ### Necessary Files
 
