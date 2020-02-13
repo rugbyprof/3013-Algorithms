@@ -39,6 +39,7 @@
 - The methods you need to fix are below in the code snippet:
 - https://xlinux.nist.gov/dads/HTML/heapify.html
 
+
 ```cpp
     /**
      * 
@@ -75,5 +76,7 @@
         return 0; // temporary suppress of warning
     }
 ```
+
+
 
 # Still not done ...
