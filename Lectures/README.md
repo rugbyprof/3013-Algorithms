@@ -2,6 +2,8 @@
 | Folder | Lecture | Description|
  | ------------|------------|------------|
  | [01-ArrayBasedStack](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/01-ArrayBasedStack) | [ Stack ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/01-ArrayBasedStack) | [ Array Based](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/01-ArrayBasedStack) | [01-ArrayBasedStack](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/01-ArrayBasedStack) | [ Files](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/01-ArrayBasedStack) | [01-ArrayBasedStack](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/01-ArrayBasedStack) | [ Methods](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/01-ArrayBasedStack) | [N/A](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/01-ArrayBasedStack) |
+ | [02-ListBasedPriortyQueue](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/02-ListBasedPriortyQueue) | [ Lectures 02](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/02-ListBasedPriortyQueue) | [ListBasedPriortyQueue ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/02-ListBasedPriortyQueue) | [ No Description](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/02-ListBasedPriortyQueue) | [N/A](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/02-ListBasedPriortyQueue) |
+ | [03-ArrayBasedBinaryHeap](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/03-ArrayBasedBinaryHeap) | [ Lectures 03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/03-ArrayBasedBinaryHeap) | [ArrayBasedBinaryHeap ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/03-ArrayBasedBinaryHeap) | [ No Description](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/03-ArrayBasedBinaryHeap) | [N/A](https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/03-ArrayBasedBinaryHeap) |
 
     
 ## File Legend
@@ -14,4 +16,4 @@
 |xx-**T**xx | This is a ***Test***. Usually when on github, it will start out as a study guide, then get accompanied with a solution after the exam. |
 
     
-<sup>Last Updated: 2020-01-27 (Mon @ 18:00)</sup>
+<sup>Last Updated: 2020-01-31 (Fri @ 11:59)</sup>
