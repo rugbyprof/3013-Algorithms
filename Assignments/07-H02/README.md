@@ -74,6 +74,6 @@
     int PickChild(int index) {
         return 0; // temporary suppress of warning
     }
-    ```
+```
 
 # Still not done ...
