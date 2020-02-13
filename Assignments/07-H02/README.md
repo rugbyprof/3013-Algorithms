@@ -91,4 +91,17 @@
 
 
 
-# Still not done ...
+### Deliverables
+
+- Create a folder called `H02` in your assignments folder.
+- Put your code files in the folder.
+- Upload to github sometime close to the due date.
+- Print out your banner ON ITS OWN PAGE
+
+```
+H02
+3013
+LASTNAME
+```
+- Print out your version of the entire heap class and bring it to class.
+- Make sure you put comments in the code, especially the main program comment block with your name etc.
