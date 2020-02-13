@@ -31,13 +31,25 @@
 
 #### End Scene 3
 
+### Heap Operations
+
+- https://en.wikipedia.org/wiki/Binary_heap which talks about methods in exactly the same terms as we did in class. 
+- For example looking at extracting a value:
+
+>The procedure for deleting the root from the heap (effectively extracting the maximum element in a max-heap or the minimum element in a min-heap) and restoring the properties is called down-heap (also known as *bubble-down, percolate-down, sift-down, sink-down, trickle down, heapify-down, cascade-down, and extract-min/max*).
+- Sound familiar? Even Wikipedia can't give a single operation a definitive name! Basically, all of you should be focusing on not what "we call a method" but more so "what needs to happen". 
+- For example: if I insert a value into a "heap", what operations must I perform to keep this structure in "heap" order.
+- [Wikipedia](https://en.wikipedia.org/wiki/Binary_heap) and [NIST-Heap](https://xlinux.nist.gov/dads/HTML/heap.html) and [NIST-Heapify](https://xlinux.nist.gov/dads/HTML/heapify.html) do a good job in describing our problem.
+- One caveat is that [wikipedias](https://en.wikipedia.org/wiki/Binary_heap) solution to a `Max-Heapify` solution is **recursive**! We discussed it as an iterative solution. Both are viable. Recursion is always cool, but not always efficient. 
+
+
 ### What 2 Fix:
 
 - A working set of code is here: [heap_working.cpp](heap_working.cpp).
 - The code we stopped with is here : [heap_from_class.cpp](heap_from_class.cpp)
 - I commented the code from [heap_working.cpp](heap_working.cpp).
 - The methods you need to fix are below in the code snippet:
-- https://xlinux.nist.gov/dads/HTML/heapify.html
+- 
 
 
 ```cpp
