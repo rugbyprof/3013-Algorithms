@@ -22,9 +22,10 @@
 
 #### Testing Your Code
 
-- You will read numbers from the file [nums.dat](./nums.dat).
+- You will read numbers from the file [nums_test.dat](./nums_test.dat).
 - If a number is even, push it onto the stack. 
 - If a number is odd, perform a pop operation removing the last even value from the stack. 
+- Don't let your stack get smaller than **10** (our starting stack size).
 - You need to keep track of the following:
   - the **max size** the stack ever reached
   - **how many times** the stack was resized (grown or reduced)
@@ -63,5 +64,6 @@ LASTNAME
 
 - Bring a printed copy of your code (with your banner) to class on Monday.
 - Comment your code according to the style [here](../../Resources/01-Comments/README.md)
+- Banner for your assignment [here](../../Resources/02-Banner/README.md)
 - Late to class = late program
 - Checklist for program is [here](./checklist.md)

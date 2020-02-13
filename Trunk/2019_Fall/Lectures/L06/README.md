@@ -5,7 +5,7 @@
 
 ### Rotations: How they work
 
-A tree rotation can be an imtimidating concept at first. You end up in a situation where you're
+A tree rotation can be an intimating concept at first. You end up in a situation where you're
 juggling nodes, and these nodes have trees attached to them, and it can all become confusing
 very fast. I find it helps to block out what's going on with any of the subtrees which are attached
 to the nodes you're fumbling with, but that can be hard.

@@ -1,4 +1,4 @@
-## Json Overview
+## JSON - Javascript Object Notation
 
 ### General 
 
@@ -21,6 +21,7 @@
 - An **object** is a collection of `key value pairs`.
 - `[]` square brackets imply **array**.
 - You can mix and match all of these constructs to create complex data structures.
+
 
 
 ### Examples:
@@ -145,4 +146,22 @@
         }   
     }
 
+// same as above but with a newer syntax
+
+    // loop trough each member in the members array (grabbing it straight from the original object)
+    for (auto& el : super["members"]) {
+
+        // print out member name
+        std::cout << el["name"] << '\n';
+
+        // add our own power
+        el["powers"].push_back("new super power");
+
+        // loop through the members powers and print them out
+        for (auto& power : el["powers"]) {
+            std::cout <<"\t"<< power << '\n';
+        }
+    }
+
 ```
+
