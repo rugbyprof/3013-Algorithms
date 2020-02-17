@@ -6,7 +6,7 @@
 #### Scene 1 - Griffin Crying Like a Baby
 
 - Fun times in class. 
-- It's a little daunting trying to incorporate everyones ideas, listen to comments , type code, not make mistakes, evaluate recommendations, laugh at jokes, filter good and / or bad ideas ... And not F*** up. (F*** = Mess).
+- It's a little daunting trying to incorporate everyone's ideas, listen to comments , type code, not make mistakes, evaluate recommendations, laugh at jokes, filter good and / or bad ideas ... And not F*** up. (F*** = Mess).
 - It's always easy to blame the professor when your sitting quietly in the audience where it is easy to gather your thoughts.
 - Having said that, **I'm stoked that so many individuals are contributing to lecture!**
 - Why are some of you NOT on the programming team (or in my research group)??
