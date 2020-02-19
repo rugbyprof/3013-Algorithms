@@ -1,18 +1,24 @@
 #include <iostream>
+#include <vector>
+#include <string>
 
 using namespace std;
 
-int rec(int n){
-    if (n == 0){
-        return 1;
+
+class Card{
+protected:
+    string Rank;
+    int value;
+public:
+    Card(){
+
     }
-    
-    return 3 * rec(n-1);
+
+    bool operator==(Card& rhs){
+        
+    }
 }
 
-double avg(int A[][5],int r, int c){
-
-}
 
 int main(){
     int arr[2][5] =
