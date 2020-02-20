@@ -31,7 +31,7 @@
 
 #include "json.hpp"
 
-using namespace std;
+//using namespace std;
 
 using json = nlohmann::json;
 
@@ -40,44 +40,50 @@ private:
     json Data;
     int Size;
     int Index;
-    string FileName;
-    vector<string> Keys;
-    vector<string> Values;
+    std::string FileName;
+    std::vector<std::string> Keys;
+    std::vector<std::string> Values;
     
 
 public:
     /**
      * JsonFacade: constructor that reads a file containing json and subsequently creates
-     *             an aray of dictionaries. 
+     *             an array of dictionaries. 
      * 
      * Params:
-     *     string filename : the filename containing the json to be read
+     *     std::string filename : the filename containing the json to be read
      * 
      */
-    JsonFacade(string filename) {
+    JsonFacade(std::string filename) {
         FileName = filename;
 
-        ifstream input(FileName);
+        std::ifstream input(FileName);
         input >> Data;
         input.close();
 
         Size = Data.size();
 
-        for (auto& [key, value] : Data.items()) {
-            Keys.push_back(key);
-            Values.push_back(value);
-        }
+        // c++ 17 issues so commented out
+        // for (auto& [key, value] : Data.items()) {
+        //     Keys.push_back(key);
+        //     Values.push_back(value);
+        // }
         
+        // reverting to older implementation
+        for (json::iterator it = Data.begin(); it != Data.end(); ++it) {
+            Keys.push_back(it.key());
+            Values.push_back(it.value());
+        }
         Index = 0;
     }
 
     /**
-     * getKeys: gets a vector of keys
+     * getKeys: gets a std::vector of keys
      * 
      * returns:
      *      
      */
-    vector<string> getKeys(){
+    std::vector<std::string> getKeys(){
         return Keys;
     }
 
@@ -86,7 +92,7 @@ public:
      * 
      * 
      */
-    string getKey(int i){
+    std::string getKey(int i){
         return Keys[i];
     }
     
@@ -95,7 +101,7 @@ public:
      * 
      * 
      */
-    string getValue(string key){
+    std::string getValue(std::string key){
         return Data[key];
     }
 
@@ -126,21 +132,21 @@ public:
     }
 
     /**
-     * pushBack: converts a string to json and pushes on end of array
+     * pushBack: converts a std::string to json and pushes on end of array
      * 
      * Params:
-     *     string obj  : a string json object which would be in the following format:
+     *     std::string obj  : a std::string json object which would be in the following format:
      * 
      *                "{\"key0\":"value0",\"key1\":1,\"keyn\":\"valuen"\}"
      * Returns:
      *     void
      *                
      */ 
-    void pushBack(string obj){
+    void pushBack(std::string obj){
         
         json j = json::parse(obj);
         Data.push_back(j);
-        cout << Data.dump(4) << endl;
+        std::cout << Data.dump(4) << std::endl;
     }
 
     /** 
@@ -156,19 +162,19 @@ public:
      * 
      * Params:
      * 
-     *     string filename : a filename to save object to. Defaults to 
+     *     std::string filename : a filename to save object to. Defaults to 
      *                       name passed into constructor, meaning it will
      *                       overwrite the original file!
      *  Returns:
      *     NULL
      */
-    void saveFile(string filename = ""){
+    void saveFile(std::string filename = ""){
         if(filename == ""){
             filename = FileName;
         }
         
-        ofstream out(filename);
-        out << std::setw(4) << Data << endl;
+        std::ofstream out(filename);
+        out << std::setw(4) << Data << std::endl;
         out.close();
     }
 };
