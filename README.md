@@ -88,8 +88,8 @@ We will be extending your knowledge of basic data structures by learning, implem
 | Categories                     |     |  Grade   |          | 
 |:------------------------------ |:---:|:--------:|:--------:|
 | Exams (3)<sup>**1**</sup>	     | 40% |  A       | 89-100   |
-| Programs (5-8)<sup>**2**</sup> | 25% |  B       |  79-88   |
-| Final<sup>**4**</sup>	         | 25% |  C       | 69-78    |
+| Programs (5-8) & Assignments <sup>**2**</sup> | 30% |  B       |  79-88   |
+| Final<sup>**4**</sup>	         | 20% |  C       | 69-78    |
 | Github Portfolio	             | 10% |  D       | 59-68    |
 |                                |     |  F       | below 59 |
 
