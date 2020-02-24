@@ -17,3 +17,5 @@
 |:---------:|:---------------:|
 | [<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2020_thumb.png">](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2020.png) | [<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2_2020_thumb.png">](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2_2020.png)
 
+
+### Binary Trees
