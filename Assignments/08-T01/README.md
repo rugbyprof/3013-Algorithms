@@ -3,13 +3,13 @@
 
 ### List VS Array
 
-[Overview](../../Resources/07-ListVArray/README.md)
+[Overview](../../Resources/07-ListVsArray/README.md)
 
 ---
 
 ### Heap VS Stack
 
-[Overview](../../Resources/08-StackVHeap/README.md)
+[Overview](../../Resources/08-StackVsHeap/README.md)
 
 --- 
 
