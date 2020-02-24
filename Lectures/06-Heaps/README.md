@@ -1,4 +1,4 @@
-## Binary Heap Implementation
+## Binary Heap Implementation - Array Based Implementation
 
 ### NEEDS SOME TWEEKING 
 

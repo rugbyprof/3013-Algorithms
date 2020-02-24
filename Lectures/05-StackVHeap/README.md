@@ -1,4 +1,4 @@
-## Stack vs Heap
+## Stack vs Heap - A comparison
 
 Typically when we declare variables, whatever type they are, they end up on the **Stack**, because most of the variables
 we declare are **statically declared** (meaning they do NOT use the `new` operator). When variables are declared during

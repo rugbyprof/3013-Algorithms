@@ -1,4 +1,4 @@
-## Graphs - Introduction
+## Graphs - An Introduction
 
 <sup>Source: https://www.cs.cmu.edu/~adamchik/21-127/lectures/graphs_1_print.pdf</sup>
 
