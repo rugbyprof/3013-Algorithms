@@ -85,13 +85,13 @@ We will be extending your knowledge of basic data structures by learning, implem
 
 ## Grading
 
-| Categories                     |     |  Grade   |          | 
-|:------------------------------ |:---:|:--------:|:--------:|
-| Exams (3)<sup>**1**</sup>	     | 40% |  A       | 89-100   |
-| Programs (5-8) & Assignments <sup>**2**</sup> | 30% |  B       |  79-88   |
-| Final<sup>**4**</sup>	         | 20% |  C       | 69-78    |
-| Github Portfolio	             | 10% |  D       | 59-68    |
-|                                |     |  F       | below 59 |
+| Categories                                   |       | Grade |          |
+| :------------------------------------------- | :---: | :---: | :------: |
+| Exams (3)<sup>**1**</sup>                    |  40%  |   A   |  89-100  |
+| Programs (3-5)<sup>**2**</sup> & Assignments |  30%  |   B   |  79-88   |
+| Final<sup>**4**</sup>                        |  20%  |   C   |  69-78   |
+| Github Portfolio                             |  10%  |   D   |  59-68   |
+|                                              |       |   F   | below 59 |
 
 >**1**. Lowest exam grade replaced by Final Exam grade (Not a "right" but a privilege based on effort and attendance).
 >
