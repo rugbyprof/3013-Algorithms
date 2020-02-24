@@ -5,17 +5,26 @@
 
 [Overview](../../Resources/07-ListVArray/README.md)
 
+---
+
 ### Heap VS Stack
 
 [Overview](../../Resources/08-StackVHeap/README.md)
 
+--- 
+
+### Binary Trees
+
+    - Tree components
+    - Array implementation
+
 ### Run Time Complexities
-
-
 
 |  Cheat Sheet 1 | Cheat Sheet 2 |
 |:---------:|:---------------:|
 | [<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2020_thumb.png">](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2020.png) | [<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2_2020_thumb.png">](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2_2020.png)
 
 
-### Binary Trees
+
+
+
