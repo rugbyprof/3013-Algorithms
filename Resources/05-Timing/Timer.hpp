@@ -32,11 +32,12 @@
 #include <chrono> 
 #include <thread>
 
-using namespace std;
 
 typedef std::chrono::high_resolution_clock Time;
 typedef std::chrono::milliseconds Msec;
 typedef std::chrono::duration<float> Fsec;
+using std::chrono::duration_cast;
+using std::this_thread::sleep_for;
 
 
 class Timer{
@@ -62,18 +63,18 @@ public:
 
     double Seconds(){
         auto dur = end - start;
-        auto secs = std::chrono::duration_cast<Fsec>(dur);
+        auto secs = duration_cast<Fsec>(dur);
         return secs.count();
     }
 
     long MilliSeconds(){
         auto dur = end - start;
-        auto millis = std::chrono::duration_cast<Msec>(dur);
+        auto millis = duration_cast<Msec>(dur);
         return millis.count();
     }
 
     void Sleep(long x){
-        std::this_thread::sleep_for(std::chrono::milliseconds(x));
+        sleep_for(Msec(x));
     }
 
 };
