@@ -8,24 +8,23 @@ are **dynamically declared** and are treated differently. So, lets look at **Sta
 ## The Stack
 
 What is the *stack*? It’s a special region of your computer’s memory that stores temporary variables
-created by each function (including the `main()` function). The *stack* is a “**LIFO**” (last in,
+created by each function (including the `main()` function). The *stack* is a **LIFO** (last in,
 first out) data structure, that is managed and optimized by the CPU quite closely. Every time a
-function declares a new variable, it is “pushed” onto the *stack*. Then every time a function exits,
+function declares a new variable, it is "pushed" onto the *stack*. Then every time a function exits,
 **all** of the variables pushed onto the *stack* by that function, are freed (that is to say, they
 are deleted). Once a *stack* variable is freed, that region of memory becomes available for other
 *stack* variables.
 
 The advantage of using the *stack* to store variables, is that memory is managed for you. You don’t
 have to allocate memory by hand, or free it once you don’t need it any more. What’s more, because
-the CPU organizes *stack* memory so efficiently, *reading from and writing to *stack\* variables is
-very fast\*.
+the CPU organizes *stack* memory so efficiently, **reading from and writing to *stack* variables is very fast**.
 
 A key to understanding the *stack* is the notion that **when a function exits**, all of its
 variables are popped off of the *stack* (and hence lost forever). Thus *stack* variables are
 **local** in nature. This is related to a concept we saw earlier known as `variable scope`, or
 `local vs global variables`. One possible issue when dealing with *stack* variables is attempting to
 access a variable created in a function from a place in your program outside of that function
-(i.e. after that function has exited).
+(i.e. after that function has exited).
 
 Another feature of the *stack* to keep in mind, is that there is a limit (varies with the OS) on the
 size of variables that can be stored on the *stack*. This is not the case for variables allocated on
