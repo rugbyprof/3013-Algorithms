@@ -6,33 +6,35 @@
 
 
 - Complexities : **O(1), O(n log n), O(n), O(n<sup>2</sup>), O(log n), O(n!) , O(h)**
-- Finding the max element in an unordered stack would require _____________ operations?
-- Finding the min element in an unordered queue would require _____________ operations?
-- Finding some element in some Binary Search Tree would require _____________ operations?
-- Finding some element in a balanced Binary Search Tree would require _____________ operations?
-- Finding some element in an ordered linked list would require _____________ operations (worst case)?
-- Finding some element in an ordered linked list would require _____________ operations (average case)?
-- Finding some element in an unordered linked list would require _____________ operations (worst case)?
+1.Finding the max element in an unordered stack would require _____________ operations?
+2. Finding the min element in an unordered queue would require _____________ operations?
+3. Finding some element in some Binary Search Tree would require _____________ operations?
+4. Finding some element in a balanced Binary Search Tree would require _____________ operations?
+5. Finding some element in an ordered linked list would require _____________ operations (worst case)?
+6. Finding some element in an ordered linked list would require _____________ operations (average case)?
+7. Finding some element in an unordered linked list would require _____________ operations (worst case)?
 
 
-For each of the following, count the number of operations where some_statement is executed based on the loops
+8. For each of the following, count the number of operations where some_statement is executed based on the loops
 
 ```cpp
+//A
 for (int I = 0; I < n; I +=2)
     for (int j = 1; j < n; j++)
         {some_statement;}
 ```
 
 ```cpp
+//B
 for (int j = 1 ; j < n ; j *= 2)
     for (int I = 1; i<n; i++)
         {some_statement;} 
 ```
 
-- At most, how many comparisons are required to search a sorted vector of 1023 elements using the binary
+At most, how many comparisons are required to search a sorted vector of 1023 elements using the binary
 search algorithm?
 
-- In each of the following examples, please choose the best data structure(s).
+In each of the following examples, please choose the best data structure(s).
 - Options are: **Array, Linked Lists, Stack, Queues, Trees, Graphs, Sets, Hash Tables**. 
 - Note that there may not be one clear answer.
 
