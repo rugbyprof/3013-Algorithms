@@ -1,4 +1,4 @@
-## Data Structures and Complexity Homework
+## Homework: Data Structures and Complexity
 #### Due: 03-13-2020 (Friday @ 3:30 p.m.)
 
 - Given a collection of algorithms that runs on **O(1), O(n log n), O(n), O(n2), O(log n), O(n!)**, order the algorithms from fastest to slowest.

@@ -9,7 +9,7 @@
  | [06-P03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P03) | [ ON HOLD](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P03) | [06-P03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P03) | [ Assignment 6 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P03) | [ Processing in Log time (or are we?)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P03) | [02-26-2020 (Wednesday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P03) |
  | [07-H02](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/07-H02) | [ Assignment 7 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/07-H02) | [ Heapify Debacle](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/07-H02) | [02-17-2020 (Monday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/07-H02) |
  | [08-T01](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-T01) | [ Test 1 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-T01) | [ Trees n Stuff](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-T01) | [03-02-2020 (Monday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-T01) |
- | [09-H03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/09-H03) | [ Data Structures and Complexity Homework](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/09-H03) | [03-13-2020 (Friday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/09-H03) |
+ | [09-H03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/09-H03) | [ Homework: Data Structures and Complexity](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/09-H03) | [03-13-2020 (Friday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/09-H03) |
 
     
 ## File Legend
@@ -22,4 +22,4 @@
 |xx-**T**xx | This is a ***Test***. Usually when on github, it will start out as a study guide, then get accompanied with a solution after the exam. |
 
     
-<sup>Last Updated: 2020-03-09 (Mon @ 15:26)</sup>
+<sup>Last Updated: 2020-03-09 (Mon @ 15:27)</sup>
