@@ -22,6 +22,9 @@
 for (int I = 0; I < n; I++)
     for (int j = 1; j < n; j++)
         {some_statement;}
+        {some_statement;}
+        {some_statement;}
+        {some_statement;}
 ```
 
 ```cpp
