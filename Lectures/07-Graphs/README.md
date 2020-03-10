@@ -85,7 +85,7 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |                                                                                            |
 | :----------------------------------------------------------------------------------------: |
-|           The degree of vertex **a** is 2, and the degree of vertex **c** is 4.            |
+|           The degree of vertex **a** is 3, and the degree of vertex **c** is 4.            |
 | <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.8.png" width="200"> |
 |                                       Weighted Graph                                       |
 

@@ -19,13 +19,20 @@
 
 ```cpp
 //A
-for (int I = 0; I < n; I +=2)
+for (int I = 0; I < n; I++)
     for (int j = 1; j < n; j++)
         {some_statement;}
 ```
 
 ```cpp
 //B
+for (int I = 0; I < n; I +=2)
+    for (int j = 1; j < n; j++)
+        {some_statement;}
+```
+
+```cpp
+//C
 for (int j = 1 ; j < n ; j *= 2)
     for (int I = 1; i<n; i++)
         {some_statement;} 
