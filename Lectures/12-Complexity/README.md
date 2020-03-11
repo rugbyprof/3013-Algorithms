@@ -1,12 +1,6 @@
 ## Scary Big O Notation
 
-You're a computer scientist. And when you're asked to solve a problem you want to do it correctly
-and efficiently. You want to pick the right algorithm for the job AND you want to run as fast as
-possible (some times). Speed isn't always the answer, sometimes space matters, and other times
-it really may just be understandability of your solution. Its all relative. What I do know is that
-you will have to understand (at least to some degree) how to evaluate your own code, and its cost.
-It's not something you will do everyday, but a working knowledge will help. SO! Evaluating your own 
-code and comparing different algorithms is essential for any computer scientist.
+You're a computer scientist. And when you're asked to solve a problem you want to do it correctly and efficiently. You want to pick the right algorithm for the job AND you want to run as fast as possible (some times). Speed isn't always the answer, sometimes space matters, and other times it really may just be understandability of your solution. Its all relative. What I do know is that you will have to understand (at least to some degree) how to evaluate your own code, and its cost. It's not something you will do everyday, but a working knowledge will help. SO! Evaluating your own  code and comparing different algorithms is essential for any computer scientist.
 
 How do we compare algorithms? Well we use Big Oh (scary big oh, and some others).
 
@@ -14,60 +8,48 @@ How do we compare algorithms? Well we use Big Oh (scary big oh, and some others)
 
 ### Related Asymptotic Notations
 
-Big O is the most commonly used asymptotic notation for comparing algorithms, but there are the two
-most often used notations aside from the big *O* notation.
+Big O is the most commonly used asymptotic notation for comparing algorithms, but there are others as well. 
 
 #### Big Omega Ω
 
 - Formal Definition: `f(n) is Ω(g(n)) iff for some constants c and N₀, f(N) ≥ cg(N) for all N > N₀`
 - It represents the **lower bound**. Therefore, It doesn’t help much.
 - `Ω(N)` means it takes at least `N` steps.
+- This is a "best case" situation.
 
 ### Big Theta Θ 
 
 - `f(n) is Θ(g(n)) iff f(n) is O(g(n)) and f(n) is Ω(g(n))`
 - It represents the **lower bound** and the **upper bound** of an algorithm. 
-- It’s hard to compute.
+- It’s harder to compute (but really good).
 - `Θ(N)` means it takes at least `N` and at most `N` steps.
+- This is not directly the "average case" but we can figure out the average knowing the upper and lower bound.
 
 ### Big Oh O 
 
 - `f(n) is O(g(n)) iff for some constants c and N₀, f(N) ≤ cg(N) for all N > N₀`
 - It represents the **upper bound** of an algorithm. 
-- Big-oh is the most useful because represents the worst-case behavior.
+- Big-oh is useful because represents the worst-case behavior, which is generally what we worry about.
 - So, it guarantees that the program will terminate within a certain time period, it may stop earlier, but never later.
 - `O(N)` means it takes at most `N` steps.
+- This is a "worst case" situation.
 
-## What is the relationship between Big O, Θ, Ω and best, worst, and average case of an algorithm? 
-
-|       |
+<!-- |       |
 |:-----:|
 | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/complexity_compared_2020.png" width="400"> |
-| Relationships between Big O, Little O, Omega & Theta | 
+| Relationships between Big O, Little O, Omega & Theta |  -->
 
-We need asymptotic notations to describe the **best**, **average**, or **worst case** (types of analysis) of an algorithm. So we use our little greek friends to do just that. In summary:
+In summary:
 - `big Ω` or the lower bound is used to analyze the **best** an algorithm performs.  
-- `big O` or the upper bound is used to analyze the **worst** an algorithm will perform.
-  - `little o` actually a nice overview of little o [here](https://stackoverflow.com/questions/1364444/difference-between-big-o-and-little-o-notation). 
+  <!-- - `little o` actually a nice overview of little o [here](https://stackoverflow.com/questions/1364444/difference-between-big-o-and-little-o-notation).  -->
 - `big Θ` is an upper AND lower bound and actually gives us the best overall analysis, but its harder (and not always necessary) to calculate.
+- `big O` or the upper bound is used to analyze the **worst** an algorithm will perform.
 
-As an example, worst case analysis gives the maximum number of operations assuming that the input is in the worst possible state, while the `big O` notation express the max number of operations done in the worst case.
+### Run Time Calculations 
 
-Although `big O` notation has nothing to do with the worst case analysis, we usually represent the worst case by `big O` notation. So, you can analyse just fine without `big O` notation.
+The best most accurate way of calculating run times (or number of comparisons, or number of instructions run, etc.) is to actually write the program and run the code. This is not always feasible. So we need to have a rudimentary understanding of how to analyze an algorithm. Analysis also helps us to design more efficient algorithms.
 
-> For example, the time complexity of `Mergesort` in the worst case is `Θ(n log n)`. This means in the worst case analysis, `Mergesort` will make roughly `n log n` operations.
-
-> Another example, In the average case analysis, we can use the big o notation to express the number of operations in the worst case. So, In binary search, the best case is `O(1)`, average and worst case is `O(log n)`.
-
-In short, there is no kind of relationship of the type *“big O is used for worst case, Theta for average case”*. All types of notation can be (and sometimes are) used when talking about best, average, or worst case of an algorithm.
-
-### Running Time Calculations 
-
-There are several algorithms we could use, and probably the best way to decide which is faster is to code them and run!. But, we would like to eliminate the bad ones early. So, analysis is usually required. - 
-
-Analysis also helps us to design efficient algorithms.
-
-#### A Simple Example 
+#### Starter Example
 
 ```cpp
   int sum (int n) {
@@ -77,22 +59,24 @@ Analysis also helps us to design efficient algorithms.
 4     return totalSum;
   }
 ```
-- The analysis for this piece of code is simple. 
-  - **Lines 1 and 4** count for one unit of time each.
-  - **Line 2** counts for one unit for initializing, `N + 1` for the tests, and `N` for the increments. 
+- The analysis for this piece of code is pretty straight forward:
+  - **Lines 1 and 4** count for one unit of time each (or a constant 2).
+  - **Line 2** 
+    - `i=0`  is a cost of `1`
     - The test is executed `N + 1` times, where the last time is when the condition is false.
-    - The increment is executed `N` times. So, the total cost is `2N + 2`.
+    - The increment is executed `N` times. 
+    - So, the total cost for line 2 is `2N + 2`.
   - **Line 3** counts for 2 units; one addition and one assignment, and it’s executed `N` times, for a total of `2N` units.
-  - Therefore, we have **2 + 2N + 2 + 2N = 4N + 4** (which is really `O(N)` see below).
+  - So currently we have **2 + 2N * 2N + 2** 
+  - We can rewrite this as **4N + 4** or **O(4N + 4)** (for now).
+- Since we are looking for big oh / worst case / upper bound we can start throwing terms out of our equation that have little impact on the cost. These are things like constants and low order terms.
+- We are going to drop the **+4** , because it’s a constant. 
+- We can also drop the **4** from the **4N** because even though its a multiplier, it has little impact on the resulting cost as N gets very large. 
+- So we now have a cost of **O(N)** 
 
-### Simplify The Analysis
-
-- To simplify the analysis, fortunately, since we are going to use the `Big O` notation, there are a lot of shortcuts we can make. We are going to throw away any constants, and also low-order terms.
-- The [terms](http://en.wikipedia.org/wiki/Term_%28mathematics%29#Elementary_mathematics) are basically the things separated by plus / minus symbols.
-- We are going to drop the **+4** , because it’s obviously lower than **4N** (that’s the low-order term), and also throw any constants. So, we will end up having a complexity of **O(N)** , instead of
-**O(4N + 4)** .
-
-> If the constant is large, (like `10⁵`) it is good practice to give this constant a name and to include it in the asymptotic notation. 
+>Note:<br>
+> I know we said that we can throw out constants. Because if "its not based on the data set size its trivial". This is true most of the time. 
+> However, if the constant is large, (like `10⁵`) it is good practice to give this constant a name and to include it in the asymptotic notation. 
 > So, a program counts for `10⁵ * N` units would have complexity of `O(K * N)`.
 > In the above example `4N` is not something big enough to earn its own constant.
 
@@ -104,6 +88,13 @@ This was a simple example to get up and running. But, there are some other gener
 
 The running time of the loop is at most the running time of the statements inside the loop (including the tests) multiplied by the number of iterations.
 
+The following program has complexity of O(10). (Does not depend on a data set, so its trivial).
+
+```cpp
+for( int i = 0; i < 10; i++)
+   k++;                      // This statement will run 10 times.
+```
+
 As an example, the following program has complexity of O(N).
 
 ```cpp
@@ -111,14 +102,12 @@ for( int i = 0; i < n; i++)
    k++;                      // This statement will run N times.
 ```
 
+
 ### 2. Nested Loops
 
-The total running time of the nested loops is the running time of the outer loop multiplied by the inner loop(s).
+The total running time of the nested loops is the running time of each loop multiplied together. 
 
-Let’s try the other way; Analyze Inside out.
-
-The total running time of a statement inside a group of nested loops is the running time of that
-statement multiplied by the product of the sizes of all the loops.
+The total running time of a statement inside a group of nested loops is the running time of that statement multiplied by the product of the sizes of all the loops.
 
 As an example, the following program has complexity of O(N²).
 
@@ -135,10 +124,30 @@ When there are consecutive statements, we count the statement with maximum compl
 As an example, the following program which has O(N), followed by O(N²), has complexity of O(N²).
 
 ```cpp
-for( int i = 0; i < n; i++)       // O(N)
-   k++;for( int i = 0; i < n; i++)       // O(N^2)
-    for( int j = 0; j < n; j++)
-        k++;                   
+for( int i = 0; i < n; i++){        // O(N)
+   k++;
+}
+for( int i = 0; i < n; i++){        // O(N^2)
+    for( int j = 0; j < n; j++){
+        k++;                  
+    }
+} 
+```
+
+Also:
+
+```cpp
+for( int i = 0; i < n; i++){        // O(N)
+    k++;
+}
+for( int i = 0; i < n; i++){        // O(N)
+    k++;
+} 
+for( int j = 0; j < n; j++){        // O(N)
+    k++;                  
+}
+
+// All together = O(3N) or simply O(N)
 ```
 
 **4. If-Else**
@@ -148,56 +157,68 @@ block with maximum complexity.
 
 ```cpp
 if (condition)
-   block 1
+    //block 1
+    for( int j = 0; j < n; j++){        // O(N)
+        k++;                  
+    }
 else if (condition)
-   block 2
+    //block 2
+    for( int i = 0; i < n; i++){        // O(N^2)
+        for( int j = 0; j < n; j++){
+            k++;                  
+        }
+    } 
 else
-   block 3
+    //block 3
+    for( int i = 0; i < n; i++){        // O(N^3)
+        for( int j = 0; j < n; j++){
+            for( int j = 0; j < n; j++){
+                k++;                  
+            }                  
+        }
+    } 
+
+    // OR: O(N^3) worst case
 ```
 
 **5. Simple Statements**
 
-Return statements, initialize a variable, increment , assigning, …etc. All of these operations
-counted in O(1).
+Return statements, initialize a variable, increment , assigning, …etc. All of these operations counted in **O(1)**.
 
 ## Big O Pitfalls
 
-Since Big O Notation tells us about the upper bound of an algorithm ignoring constants and low-order
-terms. An algorithm may have exact number of steps in the worst case more or less than the Big O
-notation.
+Since Big O Notation tells us about the upper bound of an algorithm ignoring constants and low-order terms. An algorithm may have exact number of steps in the worst case more or less than the Big O notation.
 
-### Exact Steps > Big O
+### Exact Cost > Big O
 
-An algorithm takes 5 * N steps has complexity of O(N) in the worst case, which is smaller than the
-exact number of steps.
+This algorithm has a *O(N)* upper bound. However we loop 5*N number of times, beyond the supposed upper bound.
 
 ```cpp
 for(i = 0; i < 5*n; i++ )
     k++;
 ```
 
-### Exact Steps < Big O
+### Exact Cost < Big O
 
-As an example, if we have a loop with `N = 10⁹` iterations, therefore it has complexity of `O(N)`, but, according to the nature of the data, the goal will always be found before `N` hits `10⁷`. 
+If we have a loop that executes `N = 10⁹` iterations, it gets a complexity of `O(N)`. However we KNOW that it almost never goes beyond `10⁷` number of iterations! Doesn't matter, its still `O(N)`.
 
 ```cpp
 for(i = 0; i < n; i++ )
     if(arr[i] == goal) break;
 ```
 
-Another example is, when the number of loops are decreasing by the time. So, first time it will loop `N, N-1, N-2, … , till 1`. The Big O notation for the following code is `O(N³)`, while the exact number of steps is much less than that.
+A more common example, when the number of loops are decreasing by the time. So, first time it will loop `N, N-1, N-2, … , till 1`. The Big O notation for the following code is still `O(N³)`, while the exact number of steps is much less than that.
 
 ```cpp
-for (int i = 0; i < n; ++i)
-    for (int j = i; j < n; ++j)
+for (int i = 0; i < n; ++i)    
+    for (int j = i; j < n; ++j) 
         for (int k = j; k < n; ++k)
-            cunt++;
+            count++;
 ```
 
 ## Common Time Complexities
 
-When speaking about the time/memory complexity of an algorithm, instead of using the formal
-notation, we may simply state the class of an algorithm.
+When speaking about the time/memory complexity of an algorithm, instead of using the formal notation, we may simply state the class of an algorithm.
 
 Here are some classes of the common time complexities.
 
@@ -212,7 +233,10 @@ The algorithm does a [constant](https://en.wikipedia.org/wiki/Time_complexity#Co
 
 ```cpp
 int start = 6;
-int end = 100;int mid = (end — start) / 2;if(mid%2 == 0) mid--;
+int end = 100;
+int mid = (end — start) / 2;
+if(mid%2 == 0) 
+    mid--;
 ```
 
 ## Linear— O(N)
@@ -224,7 +248,7 @@ for(i = 0; i < n; i++ )
     k++;
 ```
 
-## Logarithmic— O(LogN)
+## Logarithmic— O(Log N)
 
 The running time of the algorithm is decreased by some factor with each step. A very simple example of this type is an algorithm that keeps dividing the input by two. A [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm) algorithm follows the same rule.
 
@@ -234,20 +258,21 @@ while(n > 0){
 }
 ```
 
-> The logarithm is base 2, that is, Log2 N.
+> The logarithm is base 2, that is, Log<sub>2</sub> N.
 
 ## Linearithmic— O(N Log N)
 
-The running time of the algorithm is as a result of performing a logarithmic operation N times.
+The running time of the algorithm is as a result of performing a logarithmic operation *N* times.
 
-For example, inserting N number of nodes inside a binary search tree. Each insertion takes O(LogN)
-time, while the entire algorithm takes linearithmic time.
+For example, inserting *N* number of nodes inside a binary search tree. Each insertion takes O(Log N) time, while the entire algorithm takes linearithmic time.
 
-Also, the average case of [quick sort](https://en.wikipedia.org/wiki/Quicksort) ,[heap sort](https://en.wikipedia.org/wiki/Heapsort) , and [merge sort](https://en.wikipedia.org/wiki/Merge_sort) takes O(NLogN) time.
+Also, the average case of [quick sort](https://en.wikipedia.org/wiki/Quicksort) ,[heap sort](https://en.wikipedia.org/wiki/Heapsort) , and [merge sort](https://en.wikipedia.org/wiki/Merge_sort) takes O(N Log N) time.
 
 ```cpp
-int arr[n] = [1,6,3];for (int i = 0; i < n; ++i)
+int arr[n] = [1,6,3];
+for (int i = 0; i < n; ++i){
     binarySearchTree.insert(arr[i]);
+}
 ```
 
 ### Square Root — O(sqrt(N))
@@ -261,14 +286,14 @@ bool isPrime(int n) {
     if (n < 2)  
         return false;
     for (int i = 2; i <= sqrt(n); i ++)  
-        if (n%i == 0) return false;  
+        if (n % i == 0) return false;  
     return true;
 }
 ```
 
 ### Quadratic — O(N²)
 
-The running time of the algorithm is as a result of performing a linear operation N times; So, it’s N multiplied by N. A common sorting algorithms like [bubblesort](https://en.wikipedia.org/wiki/Bubble_sort) , [selectionsort](https://en.wikipedia.org/wiki/Selection_sort) and [insertionsort](https://en.wikipedia.org/wiki/Insertion_sort) takes `O(N²)`.
+The running time of the algorithm is as a result of performing a linear operation *N* times; So, it’s *N* multiplied by *N*. A common sorting algorithms like [bubblesort](https://en.wikipedia.org/wiki/Bubble_sort) , [selectionsort](https://en.wikipedia.org/wiki/Selection_sort) and [insertionsort](https://en.wikipedia.org/wiki/Insertion_sort) takes `O(N²)`.
 
 ```cpp
 for( int i = 0; i < n; i++)
@@ -278,8 +303,7 @@ for( int i = 0; i < n; i++)
 
 ## Cubic— O(N³)
 
-The running time of the algorithm is as a result of performing a linear operation N² times; So, it’s
-N multiplied by N, multiplied by N.
+The running time of the algorithm is as a result of performing a linear operation N² times; So, it’s N multiplied by N, multiplied by N.
 
 ```cpp
 for (int i = 0; i < n; ++i)
@@ -290,14 +314,11 @@ for (int i = 0; i < n; ++i)
 
 ### Polynomial — O(N<sup>c</sup>)
 
-The running time of the algorithm is as a result of performing a linear operation N<sup>(c-1)</sup> times, for some constant c, where `c > 1`.
+The running time of the algorithm is as a result of performing a linear operation N<sup>(c-1)</sup> times, for some constant `c`, where `c > 1`.
 
-In other words, The running time of the algorithm is a simple
-[polynomial](https://translate.google.com/#en/ar/polynomial%20time) function of the size of the
-input.
+In other words, The running time of the algorithm is a simple [polynomial](https://en.wikipedia.org/wiki/Polynomial) function of the size of the input.
 
-> Since polynomial has complexity of O(N^c), where c \> 1. Therefore, O(N²) is also a polynomial
-> time.
+> Since polynomial has complexity of O(N<sup>c</sup>), where c > 1. Therefore, O(N²) is also a polynomial time.
 
 ```cpp
 for( int i = 0; i < n; i++)
@@ -305,12 +326,9 @@ for( int i = 0; i < n; i++)
         k++;
 ```
 
-### Exponential— O(c^N)
+### Exponential — O(c<sup>N</sup>)
 
-The running time of the algorithm is a constant to the N power, where c \> 1. It’s common in
-situations when you traverse all the nodes in a [binary
-tree](https://en.wikipedia.org/wiki/Binary_tree) . The complexity would be exponential in depth;
-O(2^(d+1)), which is O(2^d).
+The running time of the algorithm is a constant to the `N` power, where `c > 1`. It’s common in situations when you traverse all the nodes in a [binary tree](https://en.wikipedia.org/wiki/Binary_tree). The complexity would be exponential in depth; O(2<sup>(d+1)</sup>), which is O(2<sup>d</sup>).
 
 ```cpp
 void traverse(Node node){
