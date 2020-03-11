@@ -328,24 +328,13 @@ for( int i = 0; i < n; i++)
 
 ### Exponential — O(c<sup>N</sup>)
 
-The running time of the algorithm is a constant to the `N` power, where `c > 1`. It’s common in situations when you traverse all the nodes in a [binary tree](https://en.wikipedia.org/wiki/Binary_tree). The complexity would be exponential in depth; O(2<sup>(d+1)</sup>), which is O(2<sup>d</sup>).
+Printing every possible combination of a numerical password of size N = O(10<sup>N</sup>). The key here is "numerical" (0-9) or 10 digits. Thats where the 10 in 10<sup>N</sup> comes from. That why passwords want you to mix digits , uppercase , lowercase, and special characters. 
 
-```cpp
-void traverse(Node node){
-    if (node == NULL){
-        return;
-    }
-    
-    print(node.value);    traverse(node.left);
-    traverse(node.right);
-}
-```
+Here is a decent article about the 8 queens problem which has a brute force O(N<sup>N</sup>) solution. There are other much faster solutions, but this is a decent example: [8 queens](https://medium.com/@jmohon1986/timeout-the-story-of-n-queens-time-complexity-c80636d92f8b). NOT mandatory reading.
 
 ### Factorial— O(N!)
 
-The running time of the algorithm is factorial of N. It’s common in generating permutations. The
-complexity would be the summation of N\!/K\!, where k = 0…N; O(N\!/0\! + N\!/1\! + …. + 1), which is
-O(N\!).
+The running time of the algorithm is factorial of N. It’s common in generating permutations. The complexity would be the summation of N\!/K\!, where k = 0…N; O(N\!/0\! + N\!/1\! + …. + 1), which is O(N\!).
 
 ```cpp
 const int n = 3;
@@ -368,3 +357,12 @@ bool vis[n];void permutation(int i) {
 }// This will print
 // {1,2,5}, {1,5,2}, {2,1,5}, {2,5,1}, {5,1,2}, {5,2,1}
 ```
+Or take a look at the [traveling salesman](https://en.wikipedia.org/wiki/Travelling_salesman_problem). That wikipedia article shows just how studied some of these algorithms can get. The brute force solution is O(N!), with LOTS of other approches with improvements. Not mandatory, but check it out.
+
+## P and NP
+
+So, prove P == NP and become famous and win money. What is P vs NP? The P = "Polynomial" and the NP = "Non Polynomial" which are two broad classification of algorithms. Most all of the algorithms we discuss in class are of the "P" or polynomial class of algorithm (N N<sup>2</sup>, even N<sup>3</sup>, ...). This means they can be solved in plynomial time. Non Polynomial or NP are algorithms that cannot be solved in polynomial time (N! or C<sup>N</sup>). This [article](https://en.wikipedia.org/wiki/P_versus_NP_problem) on wikipedia discusses P vs NP in detail. 
+
+Some food for thought: Contempary public key encryption is safe assuming that prime number factorization cannot be solved in polynomial time. If someone can show that a Non Polynomial time algorithm can be solved in Polynomial time (the factorization of large primes for example) ... then all of our encryption keys have just become worthless. So ... sometimes its ok for algorithms to be hard! 
+
+<sub>(Then comes quantum computers  ... and then the singularity ... were all doomed)</sub>
