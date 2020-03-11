@@ -117,7 +117,7 @@ for( int i = 0; i < n; i++)
         k++;                   // This statement will run N^2 times.
 ```
 
-**3. Consecutive Statements**
+### 3. Consecutive Statements
 
 When there are consecutive statements, we count the statement with maximum complexity.
 
@@ -150,7 +150,7 @@ for( int j = 0; j < n; j++){        // O(N)
 // All together = O(3N) or simply O(N)
 ```
 
-**4. If-Else**
+### 4. If-Else
 
 The running time is never more than the running time of the test(s) plus the running time of the
 block with maximum complexity.
@@ -181,7 +181,7 @@ else
     // OR: O(N^3) worst case
 ```
 
-**5. Simple Statements**
+### 5. Simple Statements
 
 Return statements, initialize a variable, increment , assigning, …etc. All of these operations counted in **O(1)**.
 
@@ -227,7 +227,7 @@ Here are some classes of the common time complexities.
 | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/comparison_between_complexities_2020.png" width="500"> |
 | Common Complexities | 
 
-## Constant — O(1)
+### Constant — O(1)
 
 The algorithm does a [constant](https://en.wikipedia.org/wiki/Time_complexity#Constant_time) number of operations independent on the input.
 
@@ -239,7 +239,7 @@ if(mid%2 == 0)
     mid--;
 ```
 
-## Linear— O(N)
+### Linear— O(N)
 
 The running time of the algorithm increases linearly with the size of the input.
 
@@ -248,7 +248,7 @@ for(i = 0; i < n; i++ )
     k++;
 ```
 
-## Logarithmic— O(Log N)
+### Logarithmic— O(Log N)
 
 The running time of the algorithm is decreased by some factor with each step. A very simple example of this type is an algorithm that keeps dividing the input by two. A [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm) algorithm follows the same rule.
 
@@ -260,7 +260,7 @@ while(n > 0){
 
 > The logarithm is base 2, that is, Log<sub>2</sub> N.
 
-## Linearithmic— O(N Log N)
+### Linearithmic— O(N Log N)
 
 The running time of the algorithm is as a result of performing a logarithmic operation *N* times.
 
@@ -301,7 +301,7 @@ for( int i = 0; i < n; i++)
         k++;
 ```
 
-## Cubic— O(N³)
+### Cubic— O(N³)
 
 The running time of the algorithm is as a result of performing a linear operation N² times; So, it’s N multiplied by N, multiplied by N.
 
@@ -368,5 +368,3 @@ bool vis[n];void permutation(int i) {
 }// This will print
 // {1,2,5}, {1,5,2}, {2,1,5}, {2,5,1}, {5,1,2}, {5,2,1}
 ```
-
-http://www.columbia.edu/~jxz2101/#1
