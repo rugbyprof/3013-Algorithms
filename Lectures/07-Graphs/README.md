@@ -1,7 +1,5 @@
 ## Graphs - An Introduction
 
-<sup>Source: https://www.cs.cmu.edu/\~adamchik/21-127/lectures/graphs\_1\_print.pdf</sup>
-
 ### Introduction
 
 The basic idea of graphs were introduced in 18th century by the Swiss mathematician Leonhard Euler.
@@ -43,7 +41,7 @@ Some Examples of what Graphs can represent (a tiny example):
 
   - Allow multiple edges between two vertices.
 
-#### Multi Graph
+#### Pseudo Graph
 
   - Allow edges connect a vertex to itself.
 
@@ -107,7 +105,7 @@ These are all **undirected** graphs and edges are **unordered**.
 
 |                                                                                             |
 | :-----------------------------------------------------------------------------------------: |
-| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs.2.11.png" width="300"> |
+| <img src="http://cs.msutexas.edu/~griffin/zcloud/zcloud-files/graphs211a.png" width="300"> |
 |                                       Directed Graph                                        |
 
 #### Number of Edges
@@ -203,3 +201,5 @@ These are all **undirected** graphs and edges are **unordered**.
 |                                            Graph                                            |                                       Spanning Tree 1                                       |                                       Spanning Tree 2                                       |                                       Spanning Tree 3                                       |
 
   - Can you find another one??
+
+<sup>Source: https://www.cs.cmu.edu/\~adamchik/21-127/lectures/graphs\_1\_print.pdf</sup>
