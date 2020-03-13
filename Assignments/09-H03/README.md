@@ -44,21 +44,21 @@ At most, how many comparisons are required to search a sorted vector of 1023 ele
 search algorithm?
 
 In each of the following examples, please choose the best data structure(s).
-- 9) Options are: **Array, Linked Lists, Stack, Queues, Trees, Graphs, Sets, Hash Tables**. 
-- 10) Note that there may not be one clear answer.
+- 9 ) Options are: **Array, Linked Lists, Stack, Queues, Trees, Graphs, Sets, Hash Tables**. 
+- 10 ) Note that there may not be one clear answer.
 
-- 10) You have to store social network “feeds”. You do not know the size, and things may need to be dynamically added.
-- 11) You need to store undo/redo operations in a word processor.
-- 12) You need to evaluate an expression (i.e., parse).
-- 13) You need to store the friendship information on a social networking site. I.e., who is friends with who.
-- 14) You need to store an image (1000 by 1000 pixels) as a bitmap.
-- 15) To implement printer spooler so that jobs can be printed in the order of their arrival.
-- 16) To implement back functionality in the internet browser.
-- 17) To store the possible moves in a chess game.
-- 18) To store a set of fixed key words which are referenced very frequently.
-- 19) To store the customer order information in a drive-in burger place. (Customers keep on coming and they have to get their correct food at the payment/food collection window.)
-- 20) To store the genealogy information of biological species.
-- 21) To store an alphabetized list of names in order to look up quickly.
+- 10 ) You have to store social network “feeds”. You do not know the size, and things may need to be dynamically added.
+- 11 ) You need to store undo/redo operations in a word processor.
+- 12 ) You need to evaluate an expression (i.e., parse).
+- 13 ) You need to store the friendship information on a social networking site. I.e., who is friends with who.
+- 14 ) You need to store an image (1000 by 1000 pixels) as a bitmap.
+- 15 ) To implement printer spooler so that jobs can be printed in the order of their arrival.
+- 16 ) To implement back functionality in the internet browser.
+- 17 ) To store the possible moves in a chess game.
+- 18 ) To store a set of fixed key words which are referenced very frequently.
+- 19 ) To store the customer order information in a drive-in burger place. (Customers keep on coming and they have to get their correct food at the payment/food collection window.)
+- 20 ) To store the genealogy information of biological species.
+- 21 ) To store an alphabetized list of names in order to look up quickly.
 
 
 ## Deliverables
