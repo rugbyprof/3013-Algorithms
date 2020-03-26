@@ -34,7 +34,7 @@ believe it or not, people actually solve these for fun! I would recommend you so
 
 As you click folders, they drill down into other folders and finally lists of problems. If you drill down into any of the folders you will end up seeing something similar to below:
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/problem_difficulty_sp_2020.png" width="500">
+<a href="https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=6"><img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/problem_difficulty_sp_2020.png" width="500"></a>
 
 We can see in a brief glance that lots of "red" = hard, and lots of "green" = easy (generally).  The left column shows how many total submissions vs how many solved. In other words, lots of red means it takes many submissions before someone gets it correct. The right column is percentage of people that attempted the problem actually solved it. So, if you want an easy problem, find one that has a left column with 90+ solution percentage.
 
