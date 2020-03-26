@@ -185,8 +185,6 @@ If you use any of the c++11 or later code constructs you will need to set the co
   - `g++ -std=c++17 main.cpp -o main`
   - or replace c++17 with c++11 if thats what you need
   
-
-
 ### Repl.it 
 
 Repl.it is kinda awesome. Yes I said it. They give us a pretty nice virtual linux environment to run our programs in. Basically, they give us a virtual machine / command line solution ... in the browser.  I have the example from above here: https://repl.it/@rugbyprof/stdinexample. Even if you don't have an account it will let you run and edit that code. I would recommend creating an account. Here is a tutorial on creating and using repl.it: https://cs.msutexas.edu/replit_tutorial/
@@ -194,12 +192,14 @@ Repl.it is kinda awesome. Yes I said it. They give us a pretty nice virtual linu
 #### Start
 - Click run so that it "compiles" first time.
 - You will have to stop it (see next pic)
+  
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/replit_stdin_1.png" width="600"><br>
 
 #### Stop
 - It will not finish, since its waiting for input:) 
 - `cin` is still defined to read keyboard input, so hit the stop button. 
 - You should see `exited, terminated` in the terminal.
+  
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/replit_stdin_2.png" width="600"><br>
 
 #### Test Run
@@ -219,7 +219,6 @@ Repl.it is kinda awesome. Yes I said it. They give us a pretty nice virtual linu
   - Compile: `g++ main.cpp -o main`
   - Run: `./main < input`
   
-  
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/replit_stdin_5.png" width="300"><br>
 
 ### Testing Your Solution
@@ -236,9 +235,11 @@ The problem is, you really do not know if your solution is correct. You can uplo
 If you go to the problems page where you got the pdf from, you will see a lady bug at the top right above the problem statement. Click on it. It will take you from [uHunt](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2113) to [uDebug](https://www.udebug.com/UVa/11172) where you have some options for testing your solution more thoroughly using data sets uploaded by other users. They go way beyond the example data given in the problem, and will help you determine if you really did thing about all the "edge cases" that might appear in the data.
 
 #### Go Debug
+
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/replit_debug_sp_2020.png" width="600"><br>
 
 #### Getting Data
+
 - When you go to the debug site for your problem, you will see multiple data sets to choose from as I enclosed in a box.
 - Above the blue box, you will see a link to the most popular input data. But all of them should help you debug. 
 - If your code can process all of the data sets, you should be good (but not always :) I have one solution that passed ALL data sets but fails online. )
@@ -276,23 +277,31 @@ If you go to the problems page where you got the pdf from, you will see a lady b
 ### Uploading Solution
 
 #### Start Submission
+
 - Go back to the problem page and click on submit.
+  
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/uhunt_choose_submit.png" width="600"><br> 
 
 #### Do Submission
+
 - On the next page:
   - Choose your version of c++ 
   - Paste your code into the submission text field or Upload a file. 
   - Press "submit"
+  
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/uhunt_paste_code_submit.png" width="600"><br> 
 
 #### Confirm Submission
+
 - You Get redirected back to the problem page with a confirmation.
+  
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/uhunt_confirm_submit.png" width="600"><br> 
 
 #### Submission Results
+
 - You will get an email telling you what happened, but I like to view the stats on the website.
 - On the main onlinejudge site.
 - Click on last 50 submissions (under site statistics).
 - You should see your results (if you don't wait too long).
+  
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/uhunt_see_results.png" width="600"><br> 
