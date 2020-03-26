@@ -4,8 +4,8 @@
 
 ## Overview
 There is a little different angle we must take when writing code to be uploaded to https://onlinejudge.org/. Just like I have stressed in class (oh remember the days when we had class ...) having a base knowledge of the use of the command line can be beneficial. This tutorial will discuss a couple of those skills and prepare you for uploading code to UVA Online judge.
-   
-These are the skills that are used at programming competitions, but even better ... at some interviews!
+
+Keep in mind that solving these types of problems isn't just for competition, its relevant for school and especially as a prep for interviewing.
 
 ### Registration and Overview
 
