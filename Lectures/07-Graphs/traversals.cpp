@@ -25,6 +25,10 @@ vector<vii> AdjList;        // AdjList stores our edge lists
  * 
  */
 void dfs(int u) {
+    // In DFS we use a stack structure to keep track of who to visit next.
+    // Recursive acts just like a stack so we dont need to declare any 
+    // structure to keep track for us, we let the recursive calls do it for us
+
     been_visited[u] = VISITED;  // mark u as visited
     cout << u << " ";           // write u to stdout
 
@@ -37,28 +41,46 @@ void dfs(int u) {
 
         cout<<u<<"->"<<v.first<<" with weight "<<v.second<<endl;
 
-        // check to see if 
+        // check to see if our neighbor was visited
         if (been_visited[v.first] == UNVISITED) {
             dfs(v.first);
         }
     }
 }
 
+/**
+ * Breadth First Search
+ * 
+ * Params:
+ *     int u - starting node id
+ */
 void bfs(int u) {
+    // This is an iterative solution, so we declare a 
+    // queue to keep track of who gets visited next
     queue<int> q;
 
+    // Add u to our q
     q.push(u);
 
+    // While q has nodes in it
     while (!q.empty()) {
-        int s = q.front();
-        been_visited[s] = VISITED;
-        q.pop();
+        
+        int s = q.front();          // remove front node 
+        
+        been_visited[s] = VISITED;  // visit front node
+        q.pop();                    // remove from queue
 
-        cout << s << " ";
+        cout << s << " ";           // output
 
+        // look for any unvisited neighbors of u
         for (int t = 0; t < (int)AdjList[s].size(); t++) {
+
+            // v is a pair representing a neighbor and the 
+            // weight of the edge from s->v
             ii v = AdjList[s][t];
 
+            // if neighbor hasn't been visited, add to queue
+            // and mark as visited
             if (been_visited[v.first] == UNVISITED) {
                 q.push(v.first);
                 been_visited[v.first] = VISITED;
