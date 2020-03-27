@@ -152,8 +152,7 @@ We can read `infile` using `cin` by doing:
 ```
 ./main.exe < infile 
 ```
-
-We simply changed `stdin` to be a file, instead of the keyboard. 
+The command above says to take `infile` and send it into `main.exe` as if we opened it, except we can use `cin` to read from it. Basically, we changed `stdin` to be a file, instead of the keyboard. 
 
 If you refer back to the code snippet, and infile, 
 - line 9 reads in the 3, telling us how many "pairs" of values we need to read.
