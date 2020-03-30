@@ -10,6 +10,7 @@
  | [07-H02](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/07-H02) | [ Assignment 7 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/07-H02) | [ Heapify Debacle](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/07-H02) | [02-17-2020 (Monday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/07-H02) |
  | [08-T01](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-T01) | [ Test 1 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-T01) | [ Trees n Stuff](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-T01) | [03-02-2020 (Monday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-T01) |
  | [09-H03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/09-H03) | [ Homework ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/09-H03) | [ Data Structures and Complexity](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/09-H03) | [03-13-2020 (Friday @ 3:30 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/09-H03) |
+ | [10-P04](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/10-P04) | [ Program 04 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/10-P04) | [ Graph Connectivity](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/10-P04) | [04-05-2020 (Sunday @ 11:59 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/10-P04) |
 
     
 ## File Legend
@@ -22,4 +23,4 @@
 |xx-**T**xx | This is a ***Test***. Usually when on github, it will start out as a study guide, then get accompanied with a solution after the exam. |
 
     
-<sup>Last Updated: 2020-03-26 (Thu @ 02:00)</sup>
+<sup>Last Updated: 2020-03-30 (Mon @ 12:21)</sup>
