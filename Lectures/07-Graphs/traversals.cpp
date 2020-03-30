@@ -91,6 +91,14 @@ void bfs(int u) {
     cout << endl;
 }
 
+/**
+ * greedy - A greedy traversal needs some value to choose
+ *          if its going to be a "greedy" choice. So un-weighted 
+ *          graphs will not work.
+ * 
+ * 
+ * 
+ */
 void greedy() {
 }
 
