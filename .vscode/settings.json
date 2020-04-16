@@ -85,5 +85,6 @@
         "variant": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "cSpell.enabled": false
 }
