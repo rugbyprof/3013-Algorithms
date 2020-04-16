@@ -5,3 +5,5 @@
 
 - I've given a matrix implementatoin of dijkstras shortest path in this folder. 
 - This should help solve the problem.
+- Chapter 4 in https://cs.msutexas.edu/~griffin/cp3.pdf
+
