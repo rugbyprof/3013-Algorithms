@@ -15,6 +15,7 @@
  | [11-P05](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-P05) | [ Program 05 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-P05) | [ STL Maps](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-P05) | [04-05-2020 (Sunday @ 11:59 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-P05) |
  | [12-P06](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/12-P06) | [ Program 06 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/12-P06) | [ Spanning Trees](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/12-P06) | [04-17-2020 (Friday @ 11:59 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/12-P06) |
  | [13-P07](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/13-P07) | [ Program 07 ](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/13-P07) | [ Shortest Path](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/13-P07) | [04-19-2020 (Sunday @ 11:59 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/13-P07) |
+ | [14-P08](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/14-P08) | [ Ferry Loading 1](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/14-P08) | [3](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/14-P08) | [04-27-2020 (Monday @ 11:59 p.m.)](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/14-P08) |
 
     
 ## File Legend
@@ -27,4 +28,4 @@
 |xx-**T**xx | This is a ***Test***. Usually when on github, it will start out as a study guide, then get accompanied with a solution after the exam. |
 
     
-<sup>Last Updated: 2020-04-15 (Wed @ 22:05)</sup>
+<sup>Last Updated: 2020-04-21 (Tue @ 23:55)</sup>
