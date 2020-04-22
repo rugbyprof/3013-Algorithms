@@ -1,4 +1,4 @@
-## Ferry Loading - Problems 1-3
+## Ferry Loading - Problems 1,2,3
 #### Due: 04-27-2020 (Monday @ 11:59 p.m.)
 
 - This is a set of problems that all have the same basic idea, but solved using different methods. 
