@@ -15,6 +15,7 @@
 | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/11-ChoosingADataStructure">11-ChoosingADataStructure</a> | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/11-ChoosingADataStructure">None</a> | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/11-ChoosingADataStructure">None</a> | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/11-ChoosingADataStructure">N/A</a> |
 | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/12-Complexity">12-Complexity</a> | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/12-Complexity">None</a> | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/12-Complexity">None</a> | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/12-Complexity">N/A</a> |
 
+Items without a due date or if the due date is ~~lined through~~, consider it not assigned.
 ### File Legend
 
 | Folder Name | Description |
@@ -24,4 +25,4 @@
 |xx-**P**xx | This is a ***Program***. Where it must be compiled, run error free, commented, and correct. |
 |xx-**T**xx | This is a ***Test***. Usually when on github, it will start out as a study guide, then get accompanied with a solution after the exam. |
 
-<sup>Last Updated: 2021-01-12 (Tue @ 13:11)</sup>
+<sup>Last Updated: 2021-01-12 (Tue @ 13:22)</sup>

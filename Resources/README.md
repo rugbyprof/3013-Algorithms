@@ -9,6 +9,7 @@
 | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/05-Timing">05-Timing</a> | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/05-Timing"> Timer.hpp </a> | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/05-Timing"> A timer class</a> | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/05-Timing">N/A</a> |
 | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/06-Getch">06-Getch</a> | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/06-Getch"> Getch </a> | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/06-Getch"> Read chars from console</a> | <a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/06-Getch">N/A</a> |
 
+Items without a due date or if the due date is ~~lined through~~, consider it not assigned.
 ### File Legend
 
 | Folder Name | Description |
@@ -18,4 +19,4 @@
 |xx-**P**xx | This is a ***Program***. Where it must be compiled, run error free, commented, and correct. |
 |xx-**T**xx | This is a ***Test***. Usually when on github, it will start out as a study guide, then get accompanied with a solution after the exam. |
 
-<sup>Last Updated: 2021-01-12 (Tue @ 13:11)</sup>
+<sup>Last Updated: 2021-01-12 (Tue @ 13:22)</sup>
