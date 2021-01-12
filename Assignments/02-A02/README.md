@@ -5,7 +5,7 @@ The 1 way communication is you communicating with me and others with the descrip
 
 ## Github
 
-<img src="http://cs.mwsu.edu/~griffin/zcloud/zcloud-files/Github.svg" width="150">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/github_2020.png" width="150">
 
 If you have had me before, and this seems **TL;DR** make sure you:
 
