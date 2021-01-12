@@ -1,1 +1,0 @@
-## Powerpoints - Lectures and such

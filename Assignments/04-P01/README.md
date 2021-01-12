@@ -1,5 +1,5 @@
-## Assignment 4 - Resizing the Stack
-#### Due: 02-05-2020 (Wednesday @ 3:30 p.m.)
+## Program 1 - Resizing the Stack
+#### Due: ~~01-23-2020 (Thursday @ 12:30 p.m.)~~
 
 ### Overview
 

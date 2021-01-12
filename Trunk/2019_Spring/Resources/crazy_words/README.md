@@ -1,1 +1,0 @@
-## Resources sol - No Description

@@ -1,6 +1,5 @@
-*
-!*/
-!*.*
+.*
+!.gitignore
+
 Private/
-.DS_Store
 \.vscode/

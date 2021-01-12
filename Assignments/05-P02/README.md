@@ -1,5 +1,5 @@
-## Assignment 5 - Processing in Linear Time
-#### Due: 02-19-2020 (Wednesday @ 3:30 p.m.)
+## Program 2 - Processing in Linear Time
+#### Due: ~~02-19-2020 (Wednesday @ 3:30 p.m.)~~
 
 ### Necessary Files
 

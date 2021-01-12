@@ -1,3 +1,0 @@
-## Ferry Loading
-
-Knapsack Problem

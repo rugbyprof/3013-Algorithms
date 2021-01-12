@@ -1,2 +1,0 @@
-## Spatial Helper Classes
-
