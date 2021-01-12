@@ -1,20 +1,19 @@
 # 3013-Algorithms
 
 ### Roster
-![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1ShN0rIHHMi8mdyPhNDfehTJcw3GRApJPUboiSi2mBxA/edit?usp=sharing)
+![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1pljpeLsxiFMn4G_oHD-0Ix5b7lTIT_O5P_XSL7ZiQbQ/edit?usp=sharing)
 
 
 ### General Course Info
-- __Days:__ MW 3:30 p.m. - 4:50 p.m. 
+- __Days:__ TTh 12:30 a.m. - 1:50 p.m. 
 - __Location:__ BO 320
-- [__Semester:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal1920.pdf)Tue Jan 21<sup>st</sup> - Wed May 8<sup>th</sup>
-- [__Holidays:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal1920.pdf)
-  - __Martin Luther King's Birthday__ Mon Jan 20<sup>th</sup>
-  - __Spring Break:__ Mon Mar 16<sup>th</sup> - Fri Mar 21<sup>st</sup> 
-  - __Easter Break:__ Wed Apr 8<sup>th</sup> - Fri Apr 10<sup>th</sup>
-- [__Last Day for “W”:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal1920.pdf) Mon Mar 30<sup>th</sup>
-- [__Last Day of Class:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal1920.pdf) Fri May 8<sup>th</sup>
-- [__Final Exam:__](https://msutexas.edu/registrar/_assets/files/pdfs/spring20finals.pdf) Monday May 11<sup>th</sup>, 5:45 p.m. - 7:45 p.m.
+- [__Semester:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2021.pdf) Monday January 11<sup>th</sup> - Friday April 23<sup>rd</sup>
+- [__Holidays:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2021.pdf)
+  - __Martin Luther King Jr. Day__ Monday January 18<sup>th</sup>
+  - __"Holiday Break" (lol):__ Wednesday March 31<sup>st</sup> - Monday April 5<sup>th</sup> 
+- [__Last Day for “W”:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2021.pdf)  Friday April 23<sup>rd</sup>
+- [__Last Day of Class:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2021.pdf) Friday April 23<sup>rd</sup>
+- [__Final Exam:__](https://msutexas.edu/registrar/_assets/files/pdfs/spring20finals.pdf) Thursday April 29<sup>th</sup> @ 10:30am
 
 ### Resources
 
