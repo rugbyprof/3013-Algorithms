@@ -1,30 +1,78 @@
-## Assignment 3 - Commenting C++ Code 
-#### Due: ~~01-27-2020 (Monday @ 3:30 p.m.)~~
+## Assignment 3 - Banner Page
+#### Due: 01-19-2020 (Tuesday @ 12:30 p.m.)
 
 ### Overview
 
-This assignment is more about breaking the ice with github, with a little to do with programming. You will NOT be allowed to attend class after the due date until this is done. 
+- We need a way to print out our program banner cover pages to put on assignments. I found a VSCode Extension called  `Banner Comments +` that will let us do it right in the editor. 
 
-### Comment A Program
+- Install `Banner Comments +` by clicking on the extensions icon on the left:
+  
+- Open VSCode Extenstions:
+<p><img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/vscode_extension_sp_2020.png" height="300"></p>
 
-- Using the [main.cpp](./main.cpp) file in this folder, 
-- Apply the proper comments using the guidelines from here: [comments](../../Resources/01-Comments/README.md).
+- Search then install the Banner Comments+ extension:
+<p><img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/vscode_banner2_ext_sp_2020.png" height="300"></p>
 
-### Upload Your Commented Program
+- After it's installed, set the default font by pressing `shift + ctrl + p` 
+- Then type `banner` which gives you all the banner commands.
+- Then choose set default font.
+<p><img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/vscode_banner_set_font_sp_2020.png" height="300"></p>
 
-- Create a folder in your `Assignments` folder called `02-CommentedCode` 
-- Place your commented `main.cpp` file into this `02-CommentedCode` folder.
-
-
-### Your Assignments Folder
-
-- Everytime you upload a new assignment to your github repo, it should be in a folder with the name given to it by the assignment. 
-- Each folder should begin with its assignment number. This will keep the folders in order after creation and upload.
-- Your folder will also have a `README.md` file in its root. This `README.md` will contain a table that is basically a "directory" for every assignment in the assignments folder. Below is an example (link will not work since the Assignments folder is not in my repo):
-
-| Number | Folder                              | Description                            |
-| :----: | ----------------------------------- | -------------------------------------- |
-| 02     | [02-CommentedCode](./CommentedCode) | Assignment to ensure proper commenting |
+- Set the default font as any of the `big money` fonts
+- We can change it, if someone finds a better one.
+<p><img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/vscode_banner_choose_font_sp_2020.png" height="300"></p>
 
 
-- Upload your assignment to github BEFORE the due date. 
+- Then in any file you can type some text, **highlight it**.
+- Type `shift + ctrl + p` 
+- Choose `BannerComments: Apply` 
+- It will change (for example ) the text below into a banner!
+
+INTO: 
+
+```txt
+ 
+  /$$   /$$  /$$$$$$    /$$                                
+ | $$  | $$ /$$$_  $$ /$$$$                                
+ | $$  | $$| $$$$\ $$|_  $$                                
+ | $$$$$$$$| $$ $$ $$  | $$                                
+ | $$__  $$| $$\ $$$$  | $$                                
+ | $$  | $$| $$ \ $$$  | $$                                
+ | $$  | $$|  $$$$$$/ /$$$$$$                              
+ |__/  |__/ \______/ |______/                              
+                                                           
+                                                           
+                                                           
+   /$$$$$$   /$$$$$$    /$$    /$$$$$$                     
+  /$$__  $$ /$$$_  $$ /$$$$   /$$__  $$                    
+ |__/  \ $$| $$$$\ $$|_  $$  |__/  \ $$                    
+    /$$$$$/| $$ $$ $$  | $$     /$$$$$/                    
+   |___  $$| $$\ $$$$  | $$    |___  $$                    
+  /$$  \ $$| $$ \ $$$  | $$   /$$  \ $$                    
+ |  $$$$$$/|  $$$$$$/ /$$$$$$|  $$$$$$/                    
+  \______/  \______/ |______/ \______/                     
+                                                           
+                                                           
+                                                           
+   /$$$$$$            /$$  /$$$$$$   /$$$$$$  /$$          
+  /$$__  $$          |__/ /$$__  $$ /$$__  $$|__/          
+ | $$  \__/  /$$$$$$  /$$| $$  \__/| $$  \__/ /$$ /$$$$$$$ 
+ | $$ /$$$$ /$$__  $$| $$| $$$$    | $$$$    | $$| $$__  $$
+ | $$|_  $$| $$  \__/| $$| $$_/    | $$_/    | $$| $$  \ $$
+ | $$  \ $$| $$      | $$| $$      | $$      | $$| $$  | $$
+ |  $$$$$$/| $$      | $$| $$      | $$      | $$| $$  | $$
+  \______/ |__/      |__/|__/      |__/      |__/|__/  |__/
+                                                           
+
+```
+
+
+- Create your own header:
+
+```txt
+H01
+3013
+YOURLASTMNAME
+```
+
+- Print it out and turn it in beginning of class Tuesday with your commented code!
