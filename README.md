@@ -50,40 +50,40 @@ I will try to go over the list of topics in the order they are listed. However, 
 around is a necessary evil. There are always multiple ways to implement every data structure. For example there is a data structure called a **priority queue**. It can be implemented by storing a representation of a binary tree in an array, called a **binary heap**. Another way of implementing a priority queue is by using an ordered **singly linked list**. And lets not stop there! There is a third way of implementing a priority queue that uses a doubly circular linked list. Its known as a **Fibonacci Heap**! So please understand that there is no real single simple path through all of these data structures. All I can promise is that we will try to stay on the path, but we probably won't.... 
 
 - [ ] Array Based vs List Based Structures
-- [ ][Array Based Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html)
-- [ ]Complexity 
-  - [ ]Introduction 
-  - [ ]Will be discussed with each data structure
-- [ ]Linked List Types
-  - [ ][Singly Linked List](https://opendatastructures.org/ods-cpp/3_1_Singly_Linked_List.html)
-  - [ ][Doubly Linked List](https://opendatastructures.org/ods-cpp/3_2_Doubly_Linked_List.html)
-  - [ ][Circular List](https://www.geeksforgeeks.org/circular-linked-list/)
-- [ ]Stack, Queue, Priority Queue, Deque
-- [ ]Array Based Binary Search
-- [ ]Binary Tree's
-  - [ ]Components
-  - [ ]Array Based
-- [ ]Binary Heap (Array Based)
-- [ ]Fibonacci Heap (**Possibly**)
-- [ ]Binary Tree Implementation (List Based)
-- [ ]Balanced Tree's
-  - [ ]AVL
-  - [ ]Red Black (**Possibly**)
-- [ ][Hash Tables](https://opendatastructures.org/ods-cpp/5_Hash_Tables.html)
-- [ ]Graphs 
-  - [ ]Array Based and List Based Implementations
-  - [ ][Basic Graph Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/book/05-graphs.pdf)
-  - [ ][DFS (Depth-First Search)](http://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf)
-  - [ ][BFS (Breadth-First Search)](https://opendatastructures.org/ods-cpp/12_3_Graph_Traversal.html)
-  - [ ][Minimum Spanning Trees](http://jeffe.cs.illinois.edu/teaching/algorithms/book/07-mst.pdf) 
-    - [ ]Prim's Algorithm (Minimum Spanning Tree)
-    - [ ]Kruskal's Algorithm (Minimum Spanning Tree)
-  - [ ][Shortest Path](http://jeffe.cs.illinois.edu/teaching/algorithms/book/08-sssp.pdf)
-    - [ ]Dijkstra's Algorithm (One Way Shortest Path)
-    - [ ]A-Star Algorithm (**Possibly**)
-- [ ]Sorting:
-  - [ ]Merge Sort
-  - [ ]Quick Sort
+- [ ] [Array Based Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html)
+- [ ] Complexity 
+  - [ ] Introduction 
+  - [ ] Will be discussed with each data structure
+- [ ] Linked List Types
+  - [ ] [Singly Linked List](https://opendatastructures.org/ods-cpp/3_1_Singly_Linked_List.html)
+  - [ ] [Doubly Linked List](https://opendatastructures.org/ods-cpp/3_2_Doubly_Linked_List.html)
+  - [ ] [Circular List](https://www.geeksforgeeks.org/circular-linked-list/)
+- [ ] Stack, Queue, Priority Queue, Deque
+- [ ] Array Based Binary Search
+- [ ] Binary Tree's
+  - [ ] Components
+  - [ ] Array Based
+- [ ] Binary Heap (Array Based)
+- [ ] Fibonacci Heap (**Possibly**)
+- [ ] Binary Tree Implementation (List Based)
+- [ ] Balanced Tree's
+  - [ ] AVL
+  - [ ] Red Black (**Possibly**)
+- [ ] [Hash Tables](https://opendatastructures.org/ods-cpp/5_Hash_Tables.html)
+- [ ] Graphs 
+  - [ ] Array Based and List Based Implementations
+  - [ ] [Basic Graph Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/book/05-graphs.pdf)
+  - [ ] [DFS (Depth-First Search)](http://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf)
+  - [ ] [BFS (Breadth-First Search)](https://opendatastructures.org/ods-cpp/12_3_Graph_Traversal.html)
+  - [ ] [Minimum Spanning Trees](http://jeffe.cs.illinois.edu/teaching/algorithms/book/07-mst.pdf) 
+    - [ ] Prim's Algorithm (Minimum Spanning Tree)
+    - [ ] Kruskal's Algorithm (Minimum Spanning Tree)
+  - [ ] [Shortest Path](http://jeffe.cs.illinois.edu/teaching/algorithms/book/08-sssp.pdf)
+    - [ ] Dijkstra's Algorithm (One Way Shortest Path)
+    - [ ] A-Star Algorithm (**Possibly**)
+- [ ] Sorting:
+  - [ ] Merge Sort
+  - [ ] Quick Sort
 
 
 
