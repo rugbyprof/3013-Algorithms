@@ -49,7 +49,7 @@ Here are some open source books for the course. I hope you guys appreciate the a
 I will try to go over the list of topics in the order they are listed. However, jumping
 around is a necessary evil. There are always multiple ways to implement every data structure. For example there is a data structure called a **priority queue**. It can be implemented by storing a representation of a binary tree in an array, called a **binary heap**. Another way of implementing a priority queue is by using an ordered **singly linked list**. And lets not stop there! There is a third way of implementing a priority queue that uses a doubly circular linked list. Its known as a **Fibonacci Heap**! So please understand that there is no real single simple path through all of these data structures. All I can promise is that we will try to stay on the path, but we probably won't.... 
 
-- [ ] Array Based vs List Based Structures
+- [x] Array Based vs List Based Structures
 - [ ] [Array Based Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html)
 - [ ] Complexity 
   - [ ] Introduction 
