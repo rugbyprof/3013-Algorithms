@@ -14,6 +14,6 @@
 
 |   #   | File                                                  |    Size |
 | :---: | :---------------------------------------------------- | ------: |
-|   1   | [dict.json](dictionary_files/dict.json                |  1.6 Mb |
+|   1   | [dict.json](dictionary_files/dict.json)                |  1.6 Mb |
 |   2   | [dict_w_defs.json](dictionary_files/dict_w_defs.json) | 23.0 Mb |
 |   3   | [dict.txt](dictionary_files/dict.txt)                 |  1.5 Mb |

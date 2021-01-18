@@ -15,7 +15,7 @@
 
 ### Json
 
-- We are going to use `Javascript Object Notation` or JSON as our input data format.
+- For this project,  we are going to use `Javascript Object Notation` or **JSON** as our input data format.
 - JSON is probably an expected line on your resume, and used everywhere in industry as a platform independent data exchange format.  
 - For a quick intro look [here](../../Resources/03-Json/README.md)
 - I will also provide some example code that reads in a json file with this assignment.

@@ -9,11 +9,11 @@
 //          hpp file from here: https://github.com/nlohmann/json 
 //          
 //          There is a lot of functionality that the header file includes, that we don't need.
-//          This class lets a student treat a json array objects as an array. 
+//          This class lets a student treat a json array of objects as an array. 
 //
 // Usage:
 //
-//      J = new JsonFacade("file_to_read");
+//      J = new JsonFacade("file_to_read.json");
 //      size = J->getSize();                    // get array size
 //
 //      for (int i = 0; i < size; i++) {

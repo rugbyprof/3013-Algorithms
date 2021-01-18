@@ -1,3 +1,12 @@
+/**
+ * Make sure before running, you copy necessary .hpp files
+ * into your project folder so they can be found.
+ * 
+ * Trying to run this code as is will fail since the .hpp
+ * files our in the resources folder. 
+ * 
+ */
+
 #include <iostream>
 #include "JsonFacade.hpp"       // need to grab a copy from resources folder
 #include <time.h>

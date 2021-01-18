@@ -19,12 +19,12 @@
   - Enlarging = Double the size of the stack.
   - Shrinking - Cut the size of the stack in half. 
 - When you do use command line params, your program should expect 0 (which implies use defaults) or 4 params (in this order):
-  - Too Full : a real number like .85, .77,  or 1.0  (threshold to grow)
-  - Too Empty: a real number like .15, .20, or 0.0  (threshhold to shrink)
-  - Enlarging: a real number like 2.0 (double size), or 1.5 or 1.75 (how much to grow)
-  - Shrinking: a real number like .5 or .75 or .25  (how much to shrink)
+  - Too Full Threshold : a real number like .85, .77,  or 1.0  (threshold to grow)
+  - Too Empty Threshold: a real number like .15, .20, or 0.0  (threshold to shrink)
+  - Enlarging Threshold: a real number like 2.0 (double size), or 1.5 or 1.75 (how much to grow)
+  - Shrinking Threshold: a real number like .5 or .75 or .25  (how much to shrink)
 - If you want to handle a param count of other than 0 or 4, that would be a nice touch. 
-- One hard rule: Never let your stack get below size 10.
+- One hard rule: Never let your stack get below **size 10**.
 - Rename `Resize` method to be `ContainerGrow`.
 - Add a `ContainerShrink` method.
 - A third method: `CheckResize` could be a good addition. This method would calculate the ratios then call appropriated resize method if necessary. 
