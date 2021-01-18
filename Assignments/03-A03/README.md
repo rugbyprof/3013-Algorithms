@@ -75,4 +75,4 @@ H01
 YOURLASTMNAME
 ```
 
-- Print it out and turn it in beginning of class Tuesday with your commented code!
+- Print it out and turn it in beginning of class Thursday with your commented code!
