@@ -1,5 +1,5 @@
 ## Program 1 - Resizing the Stack
-#### Due: 01-26-2020 (Thursday @ 12:30 p.m.)
+#### Due: 01-26-2020 (Tuesday @ 12:30 p.m.)
 
 ### Overview
 
