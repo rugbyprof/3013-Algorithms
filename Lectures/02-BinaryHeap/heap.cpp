@@ -3,6 +3,11 @@
 using namespace std;
 
 /**
+ * Not a complete implementation of a min heap yet!
+ * We still need to implement BubbleDown and Heapify!
+ */
+
+/**
  * MinHeap
  * 
  * Private Methods:
