@@ -73,7 +73,21 @@ LASTNAME
 ### Deliverables
 
 - Bring a printed copy of your code (with your banner) to class on Tuesday.
+- You should print the example output out as well. Probably writing it to a file would be the best way.
 - Comment your code according to the style [here](../../Resources/01-Comments/README.md)
 - Banner for your assignment [here](../../Resources/02-Banner/README.md)
 - Late to class = late program
 - Checklist for program is [here](./checklist.md)
+
+
+#### What to bring to class:
+
+A stapled stack in the order below:
+```
++----------------+
+| Banner         |
+| Output         |
+| Commented Code |
++----------------+
+```
+
