@@ -1,5 +1,5 @@
 ## Test 1 - Various Topics
-#### Due: 02-04-2021 (Thursday @ 12:30 p.m.)
+#### Due: 02-09-2021 (Tuesday @ 12:30 p.m.)
 
 ### Topics
 
