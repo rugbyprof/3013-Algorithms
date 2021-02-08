@@ -1,5 +1,10 @@
 ## Program 2 - Processing in Linear Time
-#### Due: ~~02-19-2020 (Wednesday @ 3:30 p.m.)~~
+#### Due: 02-19-2020 (Wednesday @ 3:30 p.m.)
+
+
+### Linear Time Lookup
+
+This project is about loading a singly linked list with dictionary words, then timing how it takes to look them up. We are doing this with the knowledge that this is slow, and we plan on applying our "lookup" code to other backend data structures with better performance. So, keep this in mind when designing your program. 
 
 ### Necessary Files
 
@@ -40,7 +45,7 @@
 ### Requirements
 - Write a program that will read in a dictionary file from [dict_w_defs.json](../../Resources/04-Data/dictionary_files/dict_w_defs.json) and store it in a **linked list**.
 - Define a `wordNode` to be a struct or a class to hold a `word` and `definition`.
-- The linked list should hold `wordNodes` .
+- The linked list should hold `wordNodes`.
 - Time how long it takes to load the data into your linked list (we will use that later as well).
 - After your dictionary (linked list) is loaded, we are going to perform "autosuggestions" when a user types characters at the console.
 - Suggestions will start after 1 character is typed, however only the top 10 suggestions will be printed along with the total number of matching words (example output below).
