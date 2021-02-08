@@ -8,13 +8,7 @@ This project is about loading a Binary Search Tree with dictionary words, then t
 
 ### Necessary Files
 
-| File               | Description                                                        | Location            |
-| :----------------- | :----------------------------------------------------------------- | :------------------ |
-| `dict_w_defs.json` | Json input file                                                    | Resources/04-Data   |
-| `json.hpp`         | Json class written by [nlohmann](https://github.com/nlohmann/json) | Resources/03-Json   |
-| `JsonFacade.hpp`   | Json helper class I wrote to assist with the `json.hpp` class      | Resources/03-Json   |
-| `Timer.hpp`        | Timer helper class                                                 | Resources/05-Timing |
-| `read_dict.cpp`    | Example json reader with some timing.                              | This folder         |
+- Same as [P02](../06-P02/README.md).
 
 ## Background
 
