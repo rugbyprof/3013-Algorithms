@@ -45,8 +45,8 @@
 
 ### Example Questions
 
-- For everything you do on this test, know it complexity.
-- Be able to write a basic sorting routing like a bubble sort or selection sort and know the difference between them.
+- For everything you do on this test, know its complexity.
+- Be able to write a basic sorting routine like a bubble sort or selection sort and know the difference between them.
 - Given an array, perform a binary search to find a specific key.
 - Describe the difference between searching:
   - a list
