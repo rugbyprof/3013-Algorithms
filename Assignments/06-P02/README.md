@@ -1,5 +1,5 @@
 ## Program 2 - Processing in Linear Time
-#### Due: 02-19-2020 (Wednesday @ 3:30 p.m.)
+#### Due: 02-19-2020 (Friday @ 12:30 p.m.)
 
 
 ### Linear Time Lookup
@@ -89,7 +89,7 @@ steel steele steeled steelers steeles steelhead steelie steelier steelies steeli
   - Banner
   - Any source code YOU wrote (commented as directed [here](../../Resources/01-Comments/README.md))
   - 4 screen shots (fitted to one page)
-
+  - If your banner is wrong: -1 letter grade. The banner is to keep your programs organized. Or I can stop taking late work ...
 
 
 #### Banner
