@@ -7,6 +7,7 @@
 - Count = _____________________
   
 - Complexity = ________________
+  
 ```cpp
 int count = 0;
 int n = 1024;
@@ -23,6 +24,7 @@ cout<<count<<endl;
 - Count = _____________________
   
 - Complexity = ________________
+  
 ```cpp
 int count = 0;
 int n = 1024;
@@ -39,6 +41,7 @@ cout<<count<<endl;
 - Count = _____________________
   
 - Complexity = ________________
+  
 ```cpp
 int count = 0;
 int n = 1024;
@@ -57,6 +60,7 @@ cout<<count<<endl;
 - Count = _____________________
   
 - Complexity = ________________
+  
 ```cpp
 int count=0;
 int n = 1024;
@@ -71,6 +75,7 @@ cout<<count<<endl;
 - Count = _____________________
   
 - Complexity = ________________
+  
 ```cpp
 int count=0;
 int n = 1024;
@@ -87,6 +92,7 @@ cout<<count<<endl;
 - Count = _____________________
   
 - Complexity = ________________
+  
 ```cpp
 int count=0;
 int n = 1024;
@@ -106,6 +112,7 @@ cout<<count<<endl;
 - Count = _____________________
   
 - Complexity = ________________
+  
 ```cpp
 int count = 0;
 int n = 1024;
@@ -126,6 +133,7 @@ cout<<count<<endl;
 - Comparisons = _______________
   
 - Complexity = ________________
+  
 ```cpp
 bool found = 0;
 int n = 1024;
@@ -140,4 +148,24 @@ int *A = new int[n];
 found = BinarySearch(A,n);
 
 ```
+
+-----
+
+- Count = _____________________
+  
+- Complexity = ________________
+  
+```cpp
+int count = 0;
+int n = 1024;
+
+int i = n;
+while(i>0){
+    cout<<i<<endl;
+    i /= 2;  
+}
+cout<<count<<endl;
+```
+
+-----
 
