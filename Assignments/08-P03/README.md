@@ -1,9 +1,10 @@
-## Program 3 - Processing in Trie Tree Time
-#### Due: 03-03-2020 (Wednesday @ 3:30 p.m.)
-
-### Trie Time Lookup
+## Program 2 - Processing in Log Time
+#### Due: 03-02-2020 (Tuesday @ 12:30 p.m.)
 
 
+### Log Time Lookup
+
+This project is about loading a Binary Search Tree with dictionary words, then timing how it takes to look them up. We want to compare this with how long it took to look items up in the linked list from last program. For now we will keep the same interface for the previous program. But again, keep in mind that eventually we will need each of your working backends to write a program that compares all the lookup times. But this installment will use a Binary Search Tree.
 
 ### Necessary Files
 
@@ -16,7 +17,7 @@
 ## Assignment
 
 ### Requirements
-- Write a program that will read in a dictionary file from [dict_w_defs.json](../../Resources/04-Data/dictionary_files/dict_w_defs.json) and store it in a **Trie Tree**.
+- Write a program that will read in a dictionary file from [dict_w_defs.json](../../Resources/04-Data/dictionary_files/dict_w_defs.json) and store it in a **Binary Search Tree**.
 - Define a `wordNode` to be a struct or a class to hold a `word` and `definition`.
 - The binary tree should hold `wordNodes`.
 - Time how long it takes to load the data into your binary search tree (we will use that later as well).

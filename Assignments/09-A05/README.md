@@ -1,5 +1,5 @@
 ## Assignment 5 - Run Times
-#### Due: 02-18-2021 (Thursday @ 12:30 p.m.)
+#### Due: 02-23-2021 (Tuesday @ 12:30 p.m.)
 
 
 -----
