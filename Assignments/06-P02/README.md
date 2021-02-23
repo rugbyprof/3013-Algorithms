@@ -1,5 +1,5 @@
 ## Program 2 - Processing in Linear Time
-#### Due: 02-19-2020 (Friday @ 12:30 p.m.)
+#### Due: 03-01-2020 (Monday @ 12:30 p.m.)
 
 
 ### Linear Time Lookup
