@@ -82,7 +82,8 @@
         "memory_resource": "cpp",
         "csignal": "cpp",
         "typeindex": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "filesystem": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "python.formatting.provider": "black",

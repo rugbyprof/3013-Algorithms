@@ -1,4 +1,4 @@
-## Program 2 - Processing in Log Time
+## Program 3 - Processing in Log Time
 #### Due: 03-02-2020 (Tuesday @ 12:30 p.m.)
 
 
