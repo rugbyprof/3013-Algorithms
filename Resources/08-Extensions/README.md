@@ -1,4 +1,4 @@
-## Important Extensions
+## VSCode Extensions - Important to Notsomuch
 
 #### C/C++
 
