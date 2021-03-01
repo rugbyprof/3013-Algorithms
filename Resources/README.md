@@ -1,7 +1,7 @@
 ## Resources
 
 | Folder | Title | Description | Due | Past Due | Still Available |
-|:------|:------|:------|:------|:-----:|-----|
+|:------|:------|:------|:------|:------|:-----:|
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/00-CompilerSetup">00-CompilerSetup</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/00-CompilerSetup"> VsCode Setup </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/00-CompilerSetup"> Helper Tutorials</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/00-CompilerSetup">N/A</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/00-CompilerSetup">False</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_green_side.png" width="40"> |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/01-Comments">01-Comments</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/01-Comments">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/01-Comments">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/01-Comments">N/A</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/01-Comments">False</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_green_side.png" width="40"> |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/02-Banner">02-Banner</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/02-Banner"> Assignment Banner </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/02-Banner"> Requirements</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/02-Banner">N/A</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/02-Banner">False</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_green_side.png" width="40"> |
@@ -21,4 +21,4 @@
 |xx-**P**xx | This is a ***Program***. Where it must be compiled, run error free, commented, and correct. |
 |xx-**T**xx | This is a ***Test***. Usually when on github, it will start out as a study guide, then get accompanied with a solution after the exam. |
 
-<sup>Last Updated: 2021-03-01 (Mon @ 10:46)</sup>
+<sup>Last Updated: 2021-03-01 (Mon @ 10:48)</sup>

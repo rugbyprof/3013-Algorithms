@@ -1,7 +1,7 @@
 ## Assignments
 
 | Folder | Title | Description | Due | Past Due | Still Available |
-|:------|:------|:------|:------|:-----:|-----|
+|:------|:------|:------|:------|:------|:-----:|
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/10-P04">10-P04</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/10-P04"> Program 4 </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/10-P04"> Processing in Trie Tree Time</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/10-P04"> 03-23-2021 (Tuesday @ 12:30 p.m.)</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/10-P04">False</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_green_side.png" width="40"> |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-P03">08-P03</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-P03"> Program 3 </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-P03"> Processing in Log Time</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-P03"> 03-11-2021 (Thursday @ 12:30 p.m.)</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-P03">False</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_green_side.png" width="40"> |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P02">06-P02</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P02"> Program 2 </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P02"> Processing in Linear Time</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P02"> 03-04-2021 (Thursday @ 12:30 p.m.)</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P02">False</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_green_side.png" width="40"> |
@@ -22,4 +22,4 @@
 |xx-**P**xx | This is a ***Program***. Where it must be compiled, run error free, commented, and correct. |
 |xx-**T**xx | This is a ***Test***. Usually when on github, it will start out as a study guide, then get accompanied with a solution after the exam. |
 
-<sup>Last Updated: 2021-03-01 (Mon @ 10:46)</sup>
+<sup>Last Updated: 2021-03-01 (Mon @ 10:48)</sup>
