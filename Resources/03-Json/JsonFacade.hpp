@@ -63,6 +63,8 @@ public:
 
         Size = Data.size();
 
+        std::cout<<Data.type_name()<<std::endl;
+
         // c++ 17 issues so commented out
         // for (auto& [key, value] : Data.items()) {
         //     Keys.push_back(key);
@@ -71,7 +73,11 @@ public:
         
         // reverting to older implementation
         for (json::iterator it = Data.begin(); it != Data.end(); ++it) {
-            Keys.push_back(it.key());
+            
+            if(strncmp (Data.type_name(),"object",6) == 0){
+                Keys.push_back(it.key());
+            }
+            
             Values.push_back(it.value());
         }
         Index = 0;
@@ -93,7 +99,9 @@ public:
      * 
      */
     std::string getKey(int i){
-        return Keys[i];
+        if(i < Keys.size())
+            return Keys[i];
+        return NULL;
     }
     
     /**
@@ -102,7 +110,10 @@ public:
      * 
      */
     std::string getValue(std::string key){
-        return Data[key];
+        if(strncmp (Data.type_name(),"object",6) == 0){
+            return Data[key];
+        }
+        return NULL;
     }
 
 
