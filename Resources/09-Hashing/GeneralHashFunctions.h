@@ -37,6 +37,8 @@ unsigned int DEKHash (string str);
 unsigned int BPHash  (string str);
 unsigned int FNVHash (string str);
 unsigned int APHash  (string str);
+uint32_t JOAATHash(const uint8_t* key, size_t length); //jenkins_one_at_a_time_hash
+unsigned int JOAATHash(srting key); 
 
 
 #endif

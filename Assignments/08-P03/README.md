@@ -1,5 +1,5 @@
-## Program 3 - Processing in Log Time
-#### Due: 03-11-2021 (Thursday @ 12:30 p.m.)
+## Program 3 - Processing in Log Time (or are we?)
+#### Due: 03-18-2021 (Thursday @ 12:30 p.m.)
 
 
 ### Log Time Lookup
@@ -22,7 +22,7 @@ This project is about loading a Binary Search Tree with dictionary words, then t
 - The binary tree should hold `wordNodes`.
 - Time how long it takes to load the data into your binary search tree (we will use that later as well).
 - After your dictionary (tree) is loaded, we are going to perform "autosuggestions" when a user types characters at the console.
-- Suggestions will start after 1 character is typed, however only the top 10 suggestions will be printed along with the total number of matching words (example output below).
+- Suggestions will start after 3 characters are typed, however only the top 10 suggestions will be printed along with the total number of matching words (example output below).
 - The time it takes to find each suggestion will be displayed in seconds.
 
 
