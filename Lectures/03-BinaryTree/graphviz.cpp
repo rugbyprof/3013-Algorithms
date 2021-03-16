@@ -95,7 +95,7 @@ bool GraphViz::_nodeExists(string id) {
 
         string dd = (*it)["id"].get<std::string>();
         if (dd == id) {
-            cout << "Node exists!!" << endl;
+            //cout << "Node exists!!" << endl;
             return true;
         }
     }
@@ -107,7 +107,7 @@ bool GraphViz::_edgeExists(string id) {
 
         string dd = (*it)["id"].get<std::string>();
         if (dd == id) {
-            cout << "Node exists!!" << endl;
+            //cout << "Node exists!!" << endl;
             return true;
         }
     }

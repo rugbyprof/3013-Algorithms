@@ -3,9 +3,11 @@
  * Date: 28 January 2021
  * 
  */
-#include "Bst.h" // Bring in our BST
+#include "Bst.hpp" // Bring in our BST
 #include <iostream>
 #include <vector>
+#include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -17,8 +19,8 @@ using namespace std;
  * @param  shuffles: 
  * @retval None
  */
-void Shuffle(int *A, int size, int shuffles = 1) {
-    int temp;
+void Shuffle(string *A, int size, int shuffles = 1) {
+    string temp;
     int i, j;
     for (int s = 0; s < shuffles; s++) {
         for (int k = 0; k < size; k++) {
@@ -33,33 +35,46 @@ void Shuffle(int *A, int size, int shuffles = 1) {
 int myrandom (int i) { return std::rand()%i;}
 
 int main() {
-    Bst Tree;
+    Bst<string> Tree;
+    ifstream fin("dictionary_balanced.txt");
 
-    std::vector<int> myvector;
+    std::vector<string> myvector;
+    string word;
 
-    // set some values:
-    for (int i = 0; i <= 1000; i+= 10){
-        if(i==500){
-            continue;
+    // // set some values:
+    // for (int i = 0; i <= 1000; i+= 10){
+    //     if(i==500){
+    //         continue;
+    //     }
+    //     myvector.push_back(i); 
+    // }
+
+    double i = 0.0;
+    while(!fin.eof()){
+        fin>>word;
+        //cout<<word<<" ";
+        Tree.Insert(word);
+        if((int)i%1000 == 0){
+            cout<<(i/128325.0)<<endl;
         }
-        myvector.push_back(i); 
+        i += 1.0;
     }
 
     // using built-in random generator:
-    std::random_shuffle(myvector.begin(), myvector.end());
+    // std::random_shuffle(myvector.begin(), myvector.end());
 
-    std::random_shuffle ( myvector.begin(), myvector.end(), myrandom);
+    // std::random_shuffle ( myvector.begin(), myvector.end(), myrandom);
 
-    Tree.Insert(500);
+    //Tree.Insert(500);
 
-    for (std::vector<int>::iterator it=myvector.begin(); it!=myvector.end(); ++it){
-        Tree.Insert(*it);
-    }
+    // for (std::vector<string>::iterator it=myvector.begin(); it!=myvector.end(); ++it){
+    //     Tree.Insert(*it);
+    // }
     
-    Tree.Print();
+    // Tree.Print();
 
-    cout << Tree.Find(81) << endl;
-    cout << endl;
+    // cout << Tree.Find("duck") << endl;
+    // cout << endl;
     Tree.BuildGraphViz();
     Tree.PrintGraphViz();
 }
