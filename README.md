@@ -43,6 +43,7 @@ Here are some open source books for the course. I hope you guys appreciate the a
 - Greedy Algorithms
 - Backtracking
 - Dynamic Programming
+- Brute Force 
 
 #### Topics List
 
@@ -51,39 +52,47 @@ around is a necessary evil. There are always multiple ways to implement every da
 
 - [x] Array Based vs List Based Structures
 - [x] [Array Based Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html)
-- [ ] Complexity 
-  - [ ] Introduction 
-  - [ ] Will be discussed with each data structure
-- [ ] Linked List Types
+- [x] Complexity 
+  - [x] Introduction 
+  - [x] Will be discussed with each data structure
+- [x] Linked List Types
   - [x] [Singly Linked List](https://opendatastructures.org/ods-cpp/3_1_Singly_Linked_List.html)
-  - [ ] [Doubly Linked List](https://opendatastructures.org/ods-cpp/3_2_Doubly_Linked_List.html)
-  - [ ] [Circular List](https://www.geeksforgeeks.org/circular-linked-list/)
-- [ ] Stack, Queue, Priority Queue, Deque
+  - [x] [Doubly Linked List](https://opendatastructures.org/ods-cpp/3_2_Doubly_Linked_List.html)
+  - [x] [Circular List](https://www.geeksforgeeks.org/circular-linked-list/)
+- [x] Stack, Queue, Priority Queue, Deque
 - [x] Array Based Binary Search
 - [x] Binary Tree's
   - [x] Components
   - [x] Array Based
-- [ ] Binary Heap (Array Based)
+- [x] Binary Heap (Array Based)
 - [ ] Fibonacci Heap (**Possibly**)
-- [ ] Binary Tree Implementation (List Based)
-- [ ] Balanced Tree's
-  - [ ] AVL
+- [x] Binary Tree Implementation (List Based)
+- [x] Balanced Tree's
+  - [x] AVL
   - [ ] Red Black (**Possibly**)
-- [ ] [Hash Tables](https://opendatastructures.org/ods-cpp/5_Hash_Tables.html)
-- [ ] Graphs 
-  - [ ] Array Based and List Based Implementations
-  - [ ] [Basic Graph Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/book/05-graphs.pdf)
-  - [ ] [DFS (Depth-First Search)](http://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf)
-  - [ ] [BFS (Breadth-First Search)](https://opendatastructures.org/ods-cpp/12_3_Graph_Traversal.html)
+- [x] [Hash Tables](https://opendatastructures.org/ods-cpp/5_Hash_Tables.html)
+- [x] Graphs 
+  - [x] Array Based and List Based Implementations
+  - [x] [Basic Graph Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/book/05-graphs.pdf)
+  - [x] [DFS (Depth-First Search)](http://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf)
+  - [x] [BFS (Breadth-First Search)](https://opendatastructures.org/ods-cpp/12_3_Graph_Traversal.html)
   - [ ] [Minimum Spanning Trees](http://jeffe.cs.illinois.edu/teaching/algorithms/book/07-mst.pdf) 
     - [ ] Prim's Algorithm (Minimum Spanning Tree)
     - [ ] Kruskal's Algorithm (Minimum Spanning Tree)
   - [ ] [Shortest Path](http://jeffe.cs.illinois.edu/teaching/algorithms/book/08-sssp.pdf)
     - [ ] Dijkstra's Algorithm (One Way Shortest Path)
     - [ ] A-Star Algorithm (**Possibly**)
-- [ ] Sorting:
-  - [ ] Merge Sort
-  - [ ] Quick Sort
+- [x] Sorting:
+  - [x] O(n^2)
+    - [x] Bubble Sort
+    - [x] Selection Sort
+    - [x] Insertion Sort
+  - [x] O(n lg n)
+    - [x] Merge Sort
+    - [x] Quick Sort
+  - [x] Other
+    - [x] Counting Sort
+    - [x] Radix Sort
 
 
 
