@@ -11,6 +11,7 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/06-Getch">06-Getch</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/06-Getch"> Getch </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/06-Getch"> Read chars from console</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/06-Getch">N/A</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_blank_side.png" width="40"> |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/07-Graphviz">07-Graphviz</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/07-Graphviz"> Graphviz </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/07-Graphviz"> Data Structures to Viewable Image</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/07-Graphviz">N/A</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_blank_side.png" width="40"> |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/08-Extensions">08-Extensions</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/08-Extensions"> VSCode Extensions </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/08-Extensions"> Some Good ... Some Maybe Not</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/08-Extensions">N/A</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_blank_side.png" width="40"> |
+| ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/09-Hashing">09-Hashing</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/09-Hashing"> Placeholder Readme </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/09-Hashing"> No Description</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/09-Hashing">N/A</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_blank_side.png" width="40"> |
 
 ### File Legend
 
@@ -21,4 +22,4 @@
 |xx-**P**xx | This is a ***Program***. Where it must be compiled, run error free, commented, and correct. |
 |xx-**T**xx | This is a ***Test***. Usually when on github, it will start out as a study guide, then get accompanied with a solution after the exam. |
 
-<sup>Last Updated: 2021-03-01 (Mon @ 11:13)</sup>
+<sup>Last Updated: 2021-03-30 (Tue @ 02:43)</sup>
