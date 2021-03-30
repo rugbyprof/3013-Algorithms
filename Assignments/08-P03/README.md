@@ -1,5 +1,5 @@
 ## Program 3 - Processing in Log Time (or are we?)
-#### Due: 03-18-2021 (Thursday @ 12:30 p.m.)
+#### Due: Removed
 
 
 ### Log Time Lookup
