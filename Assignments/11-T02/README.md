@@ -1,7 +1,7 @@
 ## Test 2 - Study Guide
 #### Due: 04-06-2021 (Tuesday @ 12:30 p.m.)
 
-First go look at the [README](../../README.md) file for the course which lists topics to be covered. I'm pretty happy with how far we have gotten. And yes I will release the course notes covering all these topics .... soon. If you want to help me edit and fix the course notes, let me know :) 
+First go look at the [README](../../README.md) file for the course which lists topics to be covered. I'm pretty happy with how far we have gotten.  
 
 Otherwise, here is the study guide for our second test. I welcome any and all feedback / questions!! Bring it! 
 
