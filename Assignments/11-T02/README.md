@@ -13,7 +13,7 @@ Be able to distinguish the differences between: bubble sort, insertion sort, sel
 
 -------
 
-- ~~Learn how to write a Recursive Bubble Sort:~~
+- ~~Learn how to write a Recursive Bubble Sort:~~ (maybe final exam 😏)
   - https://www.ritambhara.in/recursive-bubble-sort/
 
 -------
