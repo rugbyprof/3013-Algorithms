@@ -11,6 +11,7 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/07-Hashing">07-Hashing</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/07-Hashing"> Hashing </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/07-Hashing"> Introduction to Hash Tables</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/07-Hashing">N/A</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_blank_side.png" width="40"> |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/08-AvlTrees">08-AvlTrees</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/08-AvlTrees"> Avl Trees </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/08-AvlTrees"> Overview</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/08-AvlTrees">N/A</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_blank_side.png" width="40"> |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/09-Tries">09-Tries</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/09-Tries"> Placeholder Readme </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/09-Tries"> No Description</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/09-Tries">N/A</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_blank_side.png" width="40"> |
+| ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/10-Sorting">10-Sorting</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/10-Sorting"> Lecture 10 </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/10-Sorting"> Sorting</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/10-Sorting">N/A</a>*** | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/traffic_light_blank_side.png" width="40"> |
 
 ### File Legend
 
@@ -21,4 +22,4 @@
 |xx-**P**xx | This is a ***Program***. Where it must be compiled, run error free, commented, and correct. |
 |xx-**T**xx | This is a ***Test***. Usually when on github, it will start out as a study guide, then get accompanied with a solution after the exam. |
 
-<sup>Last Updated: 2021-04-06 (Tue @ 17:00)</sup>
+<sup>Last Updated: 2021-04-06 (Tue @ 18:35)</sup>
