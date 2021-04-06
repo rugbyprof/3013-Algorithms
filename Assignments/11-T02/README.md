@@ -13,12 +13,12 @@ Be able to distinguish the differences between: bubble sort, insertion sort, sel
 
 -------
 
-- Learn how to write a Recursive Bubble Sort:
+- ~~Learn how to write a Recursive Bubble Sort:~~
   - https://www.ritambhara.in/recursive-bubble-sort/
 
 -------
 
-- What are the 2 major categories of sorting algorithms, and which sorting algorithms (duscussed in class) fit into each. 
+- What are the 2 major categories of sorting algorithms, and which sorting algorithms (discussed in class) fit into each. 
 - What is a stable sorting algorithm?
 - Which sorting algorithms use divide and conquer techniques? Why or why is this not a good strategy?
 - Hint1: [Nice Summary of Sorting Algorithms](https://www.happycoders.eu/algorithms/sorting-algorithms/)
@@ -26,7 +26,7 @@ Be able to distinguish the differences between: bubble sort, insertion sort, sel
 
 -------
 
-- How do counting sort and radix sort relate, and what makes them a great pair?
+- How do counting sort and radix sort relate, and what makes them a great pair? This doesn't mean that you need to understand how to implement counting or radix sort. In fact, can counting sort run on it's own?
 
 -------
 
@@ -114,40 +114,7 @@ Epd, DcS, Fcf, Gco, Qzj, Wvc, RUC, ejJ, iwR, zyz
 
 - Choose an appropriate table size as well. 
 
--------
 
-## AVL Tree's
-
-- Label the balancing factor for each node in any given binary tree.
-- Describe the AVL Tree’s insert method and explain why its insertion time complexity is still of the same order as a Binary Tree.
-- What are the differences between an AVL Tree and a Binary Tree?  
-- Lets say I'm inserting data into a Binary Search Tree and the data is randomly ordered. This usually implies that your BST will be somewhat balanced. So, let me ask: 
-  - When would you need to use an AVL Tree? 
-  - And when would you not necessarily need to use an AVL Tree? 
-
--------
-
-- Consider the following binary search tree.
-- Assuming it is an AVL tree, 
-  - show the state of the tree after inserting 10 
-  - show the state after deleting 28.
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/avl_tree_example_3013_spring_2021.png" width="300">
-
--------
-
-- Given an empty AVL tree of integers, show the structure of the tree after each of the values 5, 2, 4, 6, 7, 1, 8 is inserted and then show the change to the resulting tree when 4 is deleted. Indicate where rotations are done to rebalance the tree.
-
--------
-
-Consider the following AVL Tree:
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/avl_tree_example_3013_spring_2021_ex2.png" width="300">
-
-- What value could you insert into this tree to cause no rotations? Show the tree after inserting this value.
-- What value could you insert into this tree to cause a single rotation? Show the tree after inserting this value.
-- What value could you insert into this tree to cause a double rotation? Show the tree after inserting this value.
-- Draw the resulting tree after inserting the following values into the original tree: 0, 8, 51, 19. Make sure to label your final answer if you choose to draw intermediate trees.
 
 -------
 
@@ -179,6 +146,31 @@ Which of the following are reasonable?
 -------
 Think about this: There is a general property in a BST where the in-order successor of a node whose right child is always null. Where might this be?
 
+------
+
+Algorithm to find in-order successor and predecessor
+```txt
+Input: root node, key
+output: predecessor node, successor node
+
+1. If root is NULL
+      then return
+2. if key is found then
+    a. If its left subtree is not null
+        Then predecessor will be the right most 
+        child of left subtree or left child itself.
+    b. If its right subtree is not null
+        The successor will be the left most child 
+        of right subtree or right child itself.
+    return
+3. If key is smaller then root node
+        set the successor as root
+        search recursively into left subtree
+    else
+        set the predecessor as root
+        search recursively into right subtree
+```
+
 -------
 
 Suppose `deleteMe` is the root node in a BST with both a left child and a right child. Will the in-order successor of `deleteMe`, always have a null left child?
@@ -188,18 +180,5 @@ Suppose `deleteMe` is the root node in a BST with both a left child and a right 
 3. No, never
 
 
--------
 
-## Algorithm Categories
-
-Below are a list of common algorithm categories. Can you go back and look at the [list of algorithms](../../../../_Courses/3013-Algorithms/README.md) we have discussed and assign a category to each? 
-
->Hint: Three of them have not been discussed yet :scream:
-
-- Algorithm Categories
-  - Recursion
-  - Greedy Algorithms
-  - Backtracking
-  - Dynamic Programming
-  - Brute Force
 
