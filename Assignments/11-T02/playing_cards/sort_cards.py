@@ -100,20 +100,6 @@ if __name__=='__main__':
         wanted_tuples.append(get_tuple(rank=rank,suit=suit))
         hand.append(deck[c])
 
-    # print("")
-    # print(hand)
-    # print("")
-    # cmd = magick_me(hand=hand,outname="sorted_not_1.png")
-    # print(cmd)
-
-    # print("")
-    # hand = sorted(hand)
-    # print(hand)
-    # print("")
-    # cmd = magick_me(hand=hand,outname="sorted_1.png")
-    # print(cmd)
-
-    # print("")
 
     hand = []
     print(wanted_tuples)
