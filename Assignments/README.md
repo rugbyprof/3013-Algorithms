@@ -1,6 +1,6 @@
 ## Assignments
 
-| Folder | Title | Description | Due | Days Left |
+| Folder | Title | Description | Due | Days Left<sup>*</sup> |
 |:------|:------|:------|:------|:-----:|
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-P03">08-P03</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-P03"> Program 3 </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-P03"> Processing in Log Time (or are we?)</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-P03"> Removed</a>*** |  |
 | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/01-A01">01-A01</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/01-A01"> Assignment 1 </a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/01-A01"> Establishing 2 Way Communication</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/01-A01"> 01-13-2021 (Thursday @ 9:30 a.m.)</a>~ | ---- |
@@ -15,4 +15,6 @@
 | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-T02">11-T02</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-T02"> Test 2 </a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-T02"> Study Guide</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-T02"> 04-08-2021 (Thursday @ 12:30 p.m.)</a>~ | ---- |
 | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/12-F01">12-F01</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/12-F01"> Final Exam </a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/12-F01"> Oh Boy</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/12-F01"> 04-29-2021 (Thursday @ 10:30 a.m.)</a>~ | ---- |
 
-<sup>Last Updated: 2021-08-31 (Tue @ 00:47)</sup>
+<sup>Last Updated: 2021-09-08 (Wed @ 10:55)</sup> 
+
+<sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 
