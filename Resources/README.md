@@ -13,6 +13,6 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/08-Extensions">08-Extensions</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/08-Extensions"> VSCode Extensions </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/08-Extensions"> Some Good ... Some Maybe Not</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/08-Extensions">N/A</a>*** |  |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/09-Hashing">09-Hashing</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/09-Hashing"> Placeholder Readme </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/09-Hashing"> No Description</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/09-Hashing">N/A</a>*** |  |
 
-<sup>Last Updated: 2021-09-30 (Thu @ 12:36)</sup> 
+<sup>Last Updated: 2021-11-01 (Mon @ 11:08)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 
