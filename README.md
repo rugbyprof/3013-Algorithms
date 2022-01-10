@@ -6,7 +6,7 @@
 
 
 ### General Course Info
-- __Days:__ TTh 12:30 a.m. - 1:50 p.m. 
+- __Days:__ TTh 12:30 p.m. - 1:50 p.m. 
 - __Location:__ BO 320
 - [__Semester:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2022.pdf) Monday January 10<sup>th</sup> - Friday April 29<sup>rd</sup>
 - [__Holidays:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2022.pdf)
