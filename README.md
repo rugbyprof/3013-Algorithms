@@ -63,8 +63,8 @@ There are always multiple ways to implement every data structure. For example th
 So ultimately based on class input and questions that come up in discussion, I may jump around a bit so an explanation will make sense. Remember though ... *I make study guides for each test*!!
 
 
-- [ ] Array Based vs List Based Structures
-- [ ] [Array Based Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html)
+- [x] Array Based vs List Based Structures
+- [x] [Array Based Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html)
 - [ ] Complexity 
   - [ ] Introduction 
   - [ ] Will be discussed with each data structure
