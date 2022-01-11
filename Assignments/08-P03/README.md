@@ -1,5 +1,5 @@
 ## Program 3 - Processing in Trie Tree Time
-#### Due: TBD
+#### Due: 03-03-2022 (Thursday @ 12:30 p.m.)
 
 ### Trie Time Lookup
 
