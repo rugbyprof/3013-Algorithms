@@ -117,20 +117,18 @@ So ultimately based on class input and questions that come up in discussion, I m
 
 | Categories                                              |       | Grade |          |
 | :------------------------------------------------------ | :---: | :---: | :------: |
-| Exams (3)<sup>**1**</sup>                               |  40%  |   A   |  89-100  |
-| Programs (3-5)<sup>**2**</sup> & Assignments            |  30%  |   B   |  79-88   |
-| Final<sup>**3**</sup>                                   |  20%  |   C   |  69-78   |
+| Exams (3)                               |  40%  |   A   |  89-100  |
+| Programs (3-5)<sup>**1**</sup> & Assignments            |  30%  |   B   |  79-88   |
+| Final<sup>**2**</sup>                                   |  20%  |   C   |  69-78   |
 | Github Portfolio                                        |  10%  |   D   |  59-68   |
-| Project Presentations (time permitting)<sup>**4**</sup> |  10%  |   F   | below 59 |
+| Project Presentations (time permitting)<sup>**3**</sup> |  10%  |   F   | below 59 |
 |                                                         |       |       |          |
 
->**1**. Lowest exam grade replaced by Final Exam grade (Not a "right" but a privilege based on effort and attendance).
+>**1**. Despite the low overall value of the programming portion of the course, ALL programs must be turned in running to pass the course.  They don't have to be necessarily correct, but they must run and they need to at least approach the solution (a "Hello World" program will not work). 
 >
->**2**. Despite the low overall value of the programming portion of the course, ALL programs must be turned in running to pass the course.  They don't have to be necessarily correct, but they must run and they need to at least approach the solution (a "Hello World" program will not work). 
+>**2**. Plane ticket prices, events like weddings, or trips out of the country are not valid excuses for missing the final exam at its scheduled time. I will not make accommodations for anything other than an issue vetted by the dean of students. 
 >
->**3**. Plane ticket prices, events like weddings, or trips out of the country are not valid excuses for missing the final exam at its scheduled time. I will not make accommodations for anything other than an issue vetted by the dean of students. 
->
->**4**. The 10% for project presentations will be taken from Programs & Assignments if we have time to do presentations. 
+>**3**. The 10% for project presentations will be taken from Programs & Assignments if we have time to do presentations. 
 
 ## Academic Misconduct Policy & Procedures
 
@@ -145,19 +143,3 @@ Note: Letting a student look at your work is collusion and is academic misconduc
 See Also:   MSU Student Handbook: Appendix E: Academic Misconduct Policy & Procedures
 https://msutexas.edu/student-life/_assets/files/handbook.pdf.
 
-## Misc
-
-- Online Coding Platform: https://repl.it
-- Vscode Download: https://code.visualstudio.com/download
-
-- Attending class is one of the primary keys to doing well in this class. Students *may* be dropped for excessive absences. There is no distinction made between excused and unexcused. 
-
-- Make-up exams are not given. If you do miss an exam without prior approval, a letter from the dean of students will be needed as an excuse or I may assign a grade of zero to that exam. 
-
-- A number of programming assignments will be made to code and execute. I do not have a preference on which platform you use. However, I mainly use Repl.it and VS Code in class when coding examples, and will assume you can perform similar tasks (e.g. read in command line parameters) as I do with your platform. 
-
-- Programs containing syntax errors are unacceptable and will be returned without grading (your programs must work). 
-  
-- Each program's source code and or assignments need to be placed in your Github repository within 12 hours of the due date and time. This is to allow your code or assignment to stay private until after the due date and time.
-
-- Periodically homework assignments will be taken up and graded. It is the student's responsibility to keep up with assignments and to ask questions over the assigned work, even if absent. All homework assignments are due at the specified time that may or may not be in conjunction with a class day. 

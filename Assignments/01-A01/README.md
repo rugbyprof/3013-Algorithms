@@ -1,5 +1,5 @@
-## Assignment 1 - Establishing 2 Way Communication
-#### Due: 01-13-2021 (Thursday @ 9:30 a.m.)
+## Assignment 1 - Getting Setup
+#### Due: 01-13-2022 (Thursday @ 9:30 a.m.)
 
 ## Getting Setup
 
@@ -16,7 +16,7 @@ If you have had me before, and this seems **TL;DR** make sure you:
 
 ---
 
-<img src="http://cs.mwsu.edu/~griffin/zcloud/zcloud-files/slack_icon.png" width="120">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/slack_icon.png" width="100">
 
 
 The first step in doing well in any of my courses is establishing a base of communication. Why? Not everything can be done while we are in class.
@@ -47,21 +47,6 @@ Now that we have our communication client set up, we probably need to start gett
 
 
 - Invite to Griffin's Slack Channel <a href="https://join.slack.com/t/griffin-courses/shared_invite/zt-cw6fonr5-_CTN1kbgP3UaL9kRAzUICw" target="_blank">**HERE**</a>
-### Discord
----
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/discord_icon.png" width="120">
-
-Discord specializes in text, image, video and audio communication between users in a chat channel. We will be using it as a place for us to communicate with voice chat and screen sharing. Discord can run in a browser, however that version does not work well at all for screen sharing. So I recommend you download the actual version and install it on your computer. Also, below I have provided a link to invite you to my server.
-
-- Download discord <a href="https://discord.com/new/download" target="_blank">**HERE**</a>
-- Invite to Griffin's server <a href="https://discord.gg/WZ2AjzNmNz" target="_blank">**HERE**</a>
-
-
-|                                                                                                     |                                                                                       |
-| :-------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
-| <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/youtube_summer_2020.png" width="50"> | <a href="https://www.youtube.com/watch?v=le_CE--Mnvs">Discord Overview / Tutorial</a> |
-
 
 
 ### Class Roster

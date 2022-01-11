@@ -1,7 +1,9 @@
 ## Assignment 3 - Banner Page
-#### Due: 01-21-2021 (Thursday @ 12:30 p.m.)
+#### Due: 01-18-2022 (Tuesday @ 12:30 p.m.)
 
 ### Overview
+
+**FYI: This banner gets turned in with your next assignment (A04)**
 
 - We need a way to print out our program banner cover pages to put on assignments. I found a VSCode Extension called  `Banner Comments +` that will let us do it right in the editor. 
 
@@ -76,3 +78,4 @@ YOURLASTMNAME
 ```
 
 - Print it out and turn it in beginning of class Thursday with your commented code!
+

@@ -111,7 +111,7 @@ their own line? Or do you put curly braces on the same line?
 
  |                                            Same Line                                            |                                            Own Line                                             |
  | :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
- | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/curly_braces_2.png" width="150"> | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/curly_braces_2.png" width="150"> |
+ | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/braces_same_line.png" width="200"> | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/braces_own_line.png" width="200"> |
 
 
 And what about how to format variable names and function names:

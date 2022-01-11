@@ -1,5 +1,5 @@
 ## Program 1 - Resizing the Stack
-#### Due: 01-26-2021 (Tuesday @ 12:30 p.m.)
+#### Due: 01-27-2022 (Thursday @ 12:30 p.m.)
 
 ### Overview
 

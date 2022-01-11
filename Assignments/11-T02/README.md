@@ -1,5 +1,5 @@
 ## Test 2 - Study Guide
-#### Due: 04-08-2021 (Thursday @ 12:30 p.m.)
+#### Due: TBD
 
 First go look at the [README](../../README.md) file for the course which lists topics to be covered. I'm pretty happy with how far we have gotten.  
 

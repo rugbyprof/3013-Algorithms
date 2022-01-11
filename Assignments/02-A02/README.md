@@ -1,11 +1,11 @@
-## Assignment 2 - 1 Way Communication (you to me)
-#### Due: 01-13-2021 (Thursday @ 12:30 a.m.)
+## Assignment 2 - Github Setup
+#### Due: 01-13-2022 (Thursday @ 12:30 p.m.)
 
 The 1 way communication is you communicating with me and others with the descriptions and instructions you push to your Github repo. This file provides the instructions that will help you format each assignments README file so they are consistent and informative. I discuss README's below.  Remember this file as a reference for turning in all of your assignments.
 
 ## Github
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/github_2020.png" width="150">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/github_icon_2022.png" width="100">
 
 If you have had me before, and this seems **TL;DR** make sure you:
 
@@ -69,18 +69,22 @@ If you're not familiar with `markdown` you can go [here](https://guides.Github.c
 
 ```md
 ## Albert Einstein
-#### Repo: 2143 Object Oriented Repo
-#### Email: albert.einstein@yahoo.com
+#### Repo: 3013 Advanced Structures & Algorithms Repo
+#### Email: albert.einstein@relativity.travel
 #### Website: https://en.wikipedia.org/wiki/Albert_Einstein
 #### Image:
-![Albert Einstein](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/einstein.png)
+![Albert Einstein](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/einstein_200px.png)
 #### Avatar:
 ![Avatar](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/einstein_avatar.png)
 ```
+***will result in***
 
-***will result in*** (avatar not included in example)
+-----
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/einstein_out.png" width="300">
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/repo_readme_example_3013.png" width="600">
+
+-----
+
 
 ## Organizing Your Repo
 

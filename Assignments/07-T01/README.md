@@ -1,5 +1,5 @@
 ## Test 1 - Various Topics
-#### Due: 02-09-2021 (Tuesday @ 12:30 p.m.)
+#### Due: 02-08-2022 (Tuesday @ 12:30 p.m.)
 
 ### Topics
 
@@ -9,9 +9,6 @@
 - Binary Search (Array Based)
 - Array Based Binary Tree
 - Binary Heap
-
-
-### Study Guide Coming
 
 
 #### List VS Array
