@@ -12,6 +12,6 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-T02">11-T02</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-T02"> Test 2 </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-T02"> Study Guide</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-T02"> TBD</a>*** |  |
 | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P02">06-P02</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P02"> Program 2 </a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P02"> Processing in Linear Time</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/06-P02"> 03-04-2021 (Thursday @ 12:30 p.m.)</a>~ | ---- |
 
-<sup>Last Updated: 2022-01-11 (Tue @ 01:08)</sup> 
+<sup>Last Updated: 2022-01-11 (Tue @ 01:09)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 
