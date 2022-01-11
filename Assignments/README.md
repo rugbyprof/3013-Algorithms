@@ -12,6 +12,6 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-P03">08-P03</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-P03"> Program 3 </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-P03"> Processing in Trie Tree Time</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/08-P03"> 03-03-2022 (Thursday @ 12:30 p.m.)</a>*** | 51 |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-T02">11-T02</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-T02"> Test 2 </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-T02"> Study Guide</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/11-T02"> TBD</a>*** |  |
 
-<sup>Last Updated: 2022-01-11 (Tue @ 01:12)</sup> 
+<sup>Last Updated: 2022-01-11 (Tue @ 12:17)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 

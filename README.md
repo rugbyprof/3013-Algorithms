@@ -80,6 +80,7 @@ So ultimately based on class input and questions that come up in discussion, I m
 - [ ] Binary Heap (Array Based)
 - [ ] Fibonacci Heap (**Possibly**)
 - [ ] Binary Tree Implementation (List Based)
+- [ ] Trie
 - [ ] Balanced Tree's
   - [ ] AVL
   - [ ] Red Black (**Possibly**)
