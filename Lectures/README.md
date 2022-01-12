@@ -14,6 +14,6 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/10-Sorting">10-Sorting</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/10-Sorting"> Lecture 10 </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/10-Sorting"> Sorting</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/10-Sorting">N/A</a>*** |  |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/11-Huffman">11-Huffman</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/11-Huffman">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/11-Huffman">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/11-Huffman">N/A</a>*** |  |
 
-<sup>Last Updated: 2022-01-11 (Tue @ 20:12)</sup> 
+<sup>Last Updated: 2022-01-11 (Tue @ 20:13)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 

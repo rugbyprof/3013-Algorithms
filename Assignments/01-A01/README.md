@@ -10,7 +10,7 @@ If you have had me before, and this seems **TL;DR** make sure you:
 1. Are on my slack channel: https://griffin-courses.slack.com
 2. ~~Are on my discord server: https://discord.gg/4Un4Ya~~
 3. Add yourself to the class roster
-4. Make sure you add an image or avatar in your slack and discord profiles. (These will also be placed into the class roster).
+4. Make sure you add an image and optional avatar in your slack ~~and discord~~ profiles. (These will also be placed into the class roster).
 
 ### Team Chat
 
