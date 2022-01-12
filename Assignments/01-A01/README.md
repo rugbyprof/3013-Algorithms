@@ -67,7 +67,7 @@ Add:
 3. Add a photo of yourself. This is not optional. I guess I can put in your student ID photo :)<sup>**1**</sup>
 4. If you use an avatar anywhere, put it here as well.<sup>**1**</sup>
 5. Add your Github username<sup>**2**</sup>
-6. After the next assignment, add a link to your 2143-OOP-YourName Repo onto the sheet also<sup>**3**</sup>
+6. After the next assignment, add a link to your 3013-Algorithms-YourName Repo onto the sheet also<sup>**3**</sup>
 
 - <sup> **1**. These really help me keep track of who's who. Its really hard when you guys have something like sponge bob as an avatar to know who you really are. Especially with a username like `playboi2real` or `skullcrusherXYZ88osOU812`</sup>
 - <sup> **2**. Your repository name and your Github username are NOT the same thing.</sup>
