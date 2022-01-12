@@ -120,7 +120,7 @@ But then it will improve as you add rows to the table which link to each project
 ### Example Repo Directory Structure
 ```
 .
-└── 2143-OOP-YourName               (main repo folder)
+└── 3013-Algorithms-YourName               (main repo folder)
     ├── Assignments                 (assignments folder)
     │   ├── A01                     (single assignment folder)
     │   │   ├── README.md           (assignment readme)
