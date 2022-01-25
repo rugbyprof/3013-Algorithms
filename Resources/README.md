@@ -14,6 +14,6 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/09-Hashing">09-Hashing</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/09-Hashing"> Placeholder Readme </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/09-Hashing"> No Description</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/09-Hashing">N/A</a>*** |  |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/10-Recursion">10-Recursion</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/10-Recursion">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/10-Recursion">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/10-Recursion">N/A</a>*** |  |
 
-<sup>Last Updated: 2022-01-19 (Wed @ 15:54)</sup> 
+<sup>Last Updated: 2022-01-25 (Tue @ 12:14)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 

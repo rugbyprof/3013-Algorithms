@@ -1,20 +1,25 @@
-#!/usr/local/bin/python3 
+#!/usr/local/bin/python3
 """I used this python code to generate the input files for your programs. 
 
 """
 import random
 from random import randint
 
+
 def randchoice(p):
     if p == "Push":
-        return (random.randint(0,100000000)) * 2
+        return (random.randint(0, 100000000)) * 2
     else:
-        return (random.randint(0,100000000)) * 2 + 1
+        return (random.randint(0, 100000000)) * 2 + 1
 
-f = open('nums_test.dat','w')
+
+f = open(
+    "/Users/griffin/Dropbox/_Courses/3013-Algorithms/.trunk/ArrayBasedStackCode/nums_test3.dat",
+    "w",
+)
 
 # Generate a list with 50000 "Push" and 50000 "Pop" values in it.
-choices= ['Push'] * 50000 + ['Pop'] * 50000
+choices = ["Push"] * 50000 + ["Pop"] * 60000
 
 
 # Shuffle does what it says. It shuffles the items in a list

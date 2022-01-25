@@ -30,14 +30,21 @@ using namespace std;
  *      - See main program
  *      
  */
-class ArrayStack{
+class ArrayStack {
 private:
-  int *A;           // pointer to array of int's
-  int size;         // current max stack size
-  int top;          // top of stack 
+    int *A;   // pointer to array of int's
+    int size; // current max stack size
+    int top;  // top of stack
+    double threshHold = .85;
+
+    // top = number of items in the stack + 1
+    // size = array size
+
+    // size = 100
+    // (top + 1) / size
 
 public:
- /**
+    /**
   * ArrayStack
   * 
   * Description:
@@ -49,13 +56,13 @@ public:
   * Returns:
   *     - NULL
   */
-  ArrayStack(){
-    size = 10;
-    A = new int[size];
-    top = -1;
-  }
+    ArrayStack() {
+        size = 10;
+        A = new int[size];
+        top = -1;
+    }
 
- /**
+    /**
   * ArrayStack
   * 
   * Description:
@@ -67,13 +74,13 @@ public:
   * Returns:
   *     - NULL
   */
-  ArrayStack(int s){
-    size = s;
-    A = new int[s];
-    top = -1;
-  }
+    ArrayStack(int s) {
+        size = s;
+        A = new int[s];
+        top = -1;
+    }
 
- /**
+    /**
   * Public bool: Empty
   * 
   * Description:
@@ -85,11 +92,11 @@ public:
   * Returns:
   *      [bool] true = empty
   */
-  bool Empty(){
-    return (top <= -1);
-  }
-  
- /**
+    bool Empty() {
+        return (top <= -1);
+    }
+
+    /**
   * Public bool: Full
   * 
   * Description:
@@ -101,11 +108,11 @@ public:
   * Returns:
   *      [bool] true = full
   */
-  bool Full(){
-    return (top >= size-1);
-  }
+    bool Full() {
+        return (top >= size - 1);
+    }
 
- /**
+    /**
   * Public int: Peek
   * 
   * Description:
@@ -117,16 +124,16 @@ public:
   * Returns:
   *      [int] top value if any
   */
-  int Peek(){
-    if(!Empty()){
-      return A[top];
-    }
-    
-    return -99; // some sentinel value
-                // not a good solution
-  }
+    int Peek() {
+        if (!Empty()) {
+            return A[top];
+        }
 
- /**
+        return -99; // some sentinel value
+                    // not a good solution
+    }
+
+    /**
   * Public int: Pop
   * 
   * Description:
@@ -138,16 +145,16 @@ public:
   * Returns:
   *      [int] top value if any
   */
-  int Pop(){
-    if(!Empty()){
-      return A[top--];
+    int Pop() {
+        if (!Empty()) {
+            return A[top--];
+        }
+
+        return -99; // some sentinel value
+                    // not a good solution
     }
 
-    return -99; // some sentinel value
-                // not a good solution
-  }
-
- /**
+    /**
   * Public void: Print
   * 
   * Description:
@@ -159,14 +166,14 @@ public:
   * Returns:
   *      NULL
   */
-  void Print(){
-    for(int i=0;i<=top;i++){
-      cout<<A[i]<<" ";
+    void Print() {
+        for (int i = 0; i <= top; i++) {
+            cout << A[i] << " ";
+        }
+        cout << endl;
     }
-    cout<<endl;
-  } 
 
- /**
+    /**
   * Public bool: Push
   * 
   * Description:
@@ -178,20 +185,21 @@ public:
   * Returns:
   *      [bool] ; success = true
   */
-  bool Push(int x){
-    if(Full()){
-      Resize();
-    }
-    if(!Full()){
-      A[++top] = x;
-      return true;
-    }
-    
-    return false;
-    
-  }
+    bool Push(int x) {
+        if (Full()) {
+            Resize();
+        }
+        if (!Full()) {
+            A[++top] = x;
 
- /**
+            //checkResize();
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
   * Public void: Resize
   * 
   * Description:
@@ -204,43 +212,39 @@ public:
   * Returns:
   *      NULL
   */
-  void Resize(){
-    int newSize = size*2;       // double size of original
-    int *B = new int[newSize];  // allocate new memory
+    void Resize() {
+        int newSize = size * 2;    // double size of original
+        int *B = new int[newSize]; // allocate new memory
 
-    for(int i=0;i<size;i++){    // copy values to new array
-      B[i] = A[i];
+        for (int i = 0; i < top; i++) { // copy values to new array
+            B[i] = A[i];
+        }
+
+        delete[] A; // delete old array
+
+        size = newSize; // save new size
+
+        A = B; // reset array pointer
     }
-
-    delete [] A;                // delete old array
-
-    size = newSize;             // save new size
-
-    A = B;                      // reset array pointer
-
-  }
-
 };
-
-
 
 // MAIN DRIVER
 // Simple Array Based Stack Usage:
 int main() {
-  ArrayStack stack;
-  int r = 0;
+    ArrayStack stack;
+    int r = 0;
 
-  for(int i=0;i<20;i++){
-    r = rand() % 100;
-    r = i+1;
-    if(!stack.Push(r)){
-      cout<<"Push failed"<<endl;
+    for (int i = 0; i < 20; i++) {
+        r = rand() % 100;
+        r = i + 1;
+        if (!stack.Push(r)) {
+            cout << "Push failed" << endl;
+        }
     }
-  }
 
-  for(int i=0;i<7;i++){
-    stack.Pop();
-  }
+    for (int i = 0; i < 7; i++) {
+        stack.Pop();
+    }
 
-  stack.Print();
+    stack.Print();
 }

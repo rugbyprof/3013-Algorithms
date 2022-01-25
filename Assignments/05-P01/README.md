@@ -40,6 +40,11 @@
   - the **max size** the stack ever reached
   - **how many times** the stack was resized (grown or reduced)
   - **final size** of stack when program completed
+  - number of **commands processed** (how many values read from the input file) 
+  - fullThreshold : ratio you go over to grow the stack (e.g. .85)
+  - shrinkThreshold to shrink : ratio to go under to shrink the stack (e.g. .15) but not below size 10!
+  - growRatio : how much to grow the stack (e.g. 2.0 = double the size) 
+  - shrinkRatio : how much to shrink the stack (e.g. .5 = half its size)
 
 
 #### Example Output
@@ -49,6 +54,14 @@
     Assignment 4 - Resizing the Stack
     CMPS 3013
     Your Name
+
+    Config Params:
+      Full Threshold: xx.x
+      Shrink Threshold: xx.x
+      Grow Ratio: xx.x
+      Shrink Ratio: xx.x
+
+    Processed xxxxxxx commands.
 
     Max Stack Size: xxxxxx
     End Stack Size: xxxxxx
