@@ -72,12 +72,12 @@ So ultimately based on class input and questions that come up in discussion, I m
   - [ ] [Singly Linked List](https://opendatastructures.org/ods-cpp/3_1_Singly_Linked_List.html)
   - [ ] [Doubly Linked List](https://opendatastructures.org/ods-cpp/3_2_Doubly_Linked_List.html)
   - [ ] [Circular List](https://www.geeksforgeeks.org/circular-linked-list/)
-- [ ] Stack, Queue, Priority Queue, Deque
-- [ ] Array Based Binary Search
-- [ ] Binary Tree's
-  - [ ] Components
-  - [ ] Array Based
-- [ ] Binary Heap (Array Based)
+- [x] Stack, Queue, Priority Queue, Deque
+- [x] Array Based Binary Search
+- [x] Binary Tree's
+  - [x] Components
+  - [x] Array Based
+- [x] Binary Heap (Array Based)
 - [ ] Fibonacci Heap (**Possibly**)
 - [ ] Binary Tree Implementation (List Based)
 - [ ] Trie

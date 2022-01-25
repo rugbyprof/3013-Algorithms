@@ -12,6 +12,6 @@
 | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/03-A03a">03-A03a</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/03-A03a"> Assignment 3 </a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/03-A03a"> Banner Page</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/03-A03a"> 01-18-2022 (Tuesday @ 12:30 p.m.)</a>~ | ---- |
 | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-A03b">04-A03b</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-A03b"> Assignment 3 </a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-A03b"> Commenting C++ Code</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-A03b"> 01-18-2022 (Tuesday @ 12:30 p.m.)</a>~ | ---- |
 
-<sup>Last Updated: 2022-01-25 (Tue @ 12:14)</sup> 
+<sup>Last Updated: 2022-01-25 (Tue @ 12:17)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 
