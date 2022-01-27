@@ -5,12 +5,14 @@
 #include <map>
 #include <string>
 #include <vector>
+#include "json.hpp"
 
 // https://graphviz.readthedocs.io/en/stable/manual.html
 // https://dreampuf.github.io/GraphvizOnline/
 
 using namespace std;
 
+using json = nlohmann::json;
 
 const string NIL = "";
 const string SHAPES[] = {"box", "circle", "diamond", "doublecircle", "doubleoctagon",

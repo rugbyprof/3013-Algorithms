@@ -1,0 +1,9 @@
+rabbit 4
+walrus 3
+lion 7
+tiger 2
+elephant 10
+bear 9
+mongoose 4
+giraffe 7
+manatee 2
