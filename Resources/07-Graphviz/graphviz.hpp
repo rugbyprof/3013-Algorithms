@@ -143,7 +143,7 @@ protected:
 
             string dd = (*it)["id"].get<std::string>();
             if (dd == id) {
-                cout << "Node exists!!" << endl;
+                cout << "Edge exists!!" << endl;
                 return true;
             }
         }

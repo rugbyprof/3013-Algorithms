@@ -32,7 +32,7 @@ int main() {
     G.addEdgeStyle("C.A","style","dashed");
     G.printNodes();
 
-    //G.setFillNodes(true);
+    G.setFillNodes(true);
 
     cout<<G.getNeighbors("B")<<endl;
     cout<<G<<endl;

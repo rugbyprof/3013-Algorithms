@@ -27,11 +27,14 @@
 #include "mygetch.hpp"
 #include "termcolor.hpp"
 #include "timer.hpp"
+#include <algorithm>
 #include <fstream>
 #include <iostream>
 #include <vector>
 
 using namespace std;
+
+#define RED termcolor::red
 
 /**
  * Description:
@@ -109,6 +112,7 @@ int main() {
     string word = "";       // var to concatenate letters to
     vector<string> animals; // array of animal names
     vector<string> matches; // any matches found in vector of animals
+    int loc;                // location of substring to change its color
 
     ofstream fout("temp.txt");
 
@@ -122,12 +126,13 @@ int main() {
     // print out how long it took to load the animals file
     cout << T.Seconds() << " seconds to read in and print json" << endl;
     cout << T.MilliSeconds() << " milli to read in and print json" << endl;
+    cout << T.NanoSeconds() << " nano to read in and print json" << endl;
 
     cout << "Type keys and watch what happens. Type capital Z to quit." << endl;
 
     // While capital Z is not typed keep looping
     while ((k = getch()) != 'Z') {
-
+        T.Start(); // start it
         // Tests for a backspace and if pressed deletes
         // last letter from "word".
         if ((int)k == 127) {
@@ -155,13 +160,32 @@ int main() {
         matches = FindAnimals(animals, word);
 
         if ((int)k != 32) { // if k is not a space print it
+            T.End();
+            cout << T.NanoSeconds() << " nano" << endl;
             cout << "Keypressed: " << termcolor::blue << k << " = " << (int)k << termcolor::reset << endl;
             cout << "Current Substr: " << termcolor::red << word << termcolor::reset << endl;
             cout << "Animals Found: ";
             cout << termcolor::green;
             // This prints out all found matches
             for (int i = 0; i < matches.size(); i++) {
-                cout << matches[i] << " ";
+                // find the substring in the word
+                loc = matches[i].find(word);
+                // if its found
+                if (loc != string::npos) {
+                    //print one letter at a time turning on red or green
+                    // depending on if the matching subtring is being printed
+                    for (int j = 0; j < matches[i].size(); j++) {
+                        // if we are printing the substring turn it red
+                        if (j >= loc && j <= loc + word.size() - 1) {
+                            cout << termcolor::red;
+                        } else {
+                            cout << termcolor::green;
+                        }
+                        cout << matches[i][j];
+                    }
+                    cout << termcolor::green;
+                }
+                cout << " ";
             }
             cout << termcolor::reset << endl
                  << endl;

@@ -1,5 +1,5 @@
 ## Test 1 - Various Topics
-#### Due: 02-08-2022 (Tuesday @ 12:30 p.m.)
+#### Due: 02-15-2022 (Tuesday @ 12:30 p.m.)
 
 ### Topics
 
@@ -13,13 +13,13 @@
 
 #### List VS Array
 
-[Overview](../../Lectures/04-ListVsArray/README.md)
+[Overview](../../Resources/L03-ListVsArray/README.md)
 
 ---
 
-#### Heap VS Stack
+#### Heap Memory VS Stack Memory
 
-[Overview](../../Lectures/05-StackVsHeap/README.md)
+[Overview](../../Resources/L02-StackVsHeap/README.md)
 
 --- 
 
@@ -30,7 +30,7 @@
 
 #### Heaps
 
-[Overview](../../Lectures/06-Heaps/README.md)
+[Overview](../../Resources/L01-Heaps/README.md)
 
 #### Run Time Complexities
 
