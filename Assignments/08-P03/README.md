@@ -56,7 +56,7 @@ steel steele steeled steelers steeles steelhead steelie steelier steelies steeli
 
 ### Deliverables
 
-- Create a folder called **P04** in your assignments folder. 
+- Create a folder called **P03** in your assignments folder. 
 - **ALL** files used in this project should be in that folder.
 - The only documents you need to print and turn in are:
   - Banner
