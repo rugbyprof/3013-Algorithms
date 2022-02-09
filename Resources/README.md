@@ -18,6 +18,6 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L02-StackVsHeap">L02-StackVsHeap</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L02-StackVsHeap"> Stack vs Heap </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L02-StackVsHeap"> A comparison</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L02-StackVsHeap">N/A</a>*** |  |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray">L03-ListVsArray</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray"> Array vs Linked List </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray"> A comparison</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray"> None</a>*** |  |
 
-<sup>Last Updated: 2022-02-09 (Wed @ 16:54)</sup> 
+<sup>Last Updated: 2022-02-09 (Wed @ 17:02)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 

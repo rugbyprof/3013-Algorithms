@@ -4,7 +4,7 @@
 ### Trie Time Lookup
 
 - https://www.techiedelight.com/cpp-implementation-trie-data-structure/
-- 
+  
 
 ### Necessary Files
 
@@ -16,12 +16,13 @@
 
 ## Assignment
 
+Using a Trie (implementation of one is given [here](https://www.techiedelight.com/cpp-implementation-trie-data-structure/)) perform the same "auto suggestions" we did with the linked list data structure in P02. The goal of this project is to show the speed up that should be gained by choosing a proper data structure to solve the problem.  We used a linked list for the previous implementation, and now we are choosing to use a Trie which is designed for just the type of searching we are performing. 
+
 ### Requirements
 - Write a program that will read in a dictionary file from [dict_w_defs.json](../../Resources/04-Data/dictionary_files/dict_w_defs.json) and store it in a **Trie Tree**.
-- Define a `wordNode` to be a struct or a class to hold a `word` and `definition`.
-- The binary tree should hold `wordNodes`.
-- Time how long it takes to load the data into your binary search tree (we will use that later as well).
-- After your dictionary (tree) is loaded, we are going to perform "autosuggestions" when a user types characters at the console.
+- Trie's are implemented somewhat differently than our previous data structures. 
+- Time how long it takes to load the data into your Trie tree.
+- After your dictionary (Trie) is loaded, we are going to perform "autosuggestions" when a user types characters at the console.
 - Suggestions will start after 1 character is typed, however only the top 10 suggestions will be printed along with the total number of matching words (example output below).
 - The time it takes to find each suggestion will be displayed in seconds.
 
