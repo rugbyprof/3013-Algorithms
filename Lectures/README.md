@@ -9,6 +9,6 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L05-ArrayBasedBinaryHeap">L05-ArrayBasedBinaryHeap</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L05-ArrayBasedBinaryHeap"> Placeholder Readme </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L05-ArrayBasedBinaryHeap"> No Description</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L05-ArrayBasedBinaryHeap">N/A</a>*** |  |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials">LectureMaterials</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials"> Placeholder Readme </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials"> No Description</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials">N/A</a>*** |  |
 
-<sup>Last Updated: 2022-02-09 (Wed @ 17:02)</sup> 
+<sup>Last Updated: 2022-02-16 (Wed @ 21:14)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 
