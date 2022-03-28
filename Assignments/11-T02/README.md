@@ -1,5 +1,5 @@
 ## Test 2 - Study Guide
-#### Due: TBD
+#### Due: 03-31-2022 (Thursday @ 12:30 p.m.)
 
 
 #### List VS Array
