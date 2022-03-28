@@ -1,0 +1,35 @@
+Red-Black Trees
+
+A Red-Black tree is a Binary Search Tree with the following properties:
+
+1. Every node is either red or black.
+2. The root is black.
+3. Every leaf (nil) is black (black nil leaves are not generally shown).
+4. If a node is red, then both its children are black.
+5. For each node, all paths from the node to descendant leaves contain the same number of black nodes.
+
+Insertion Rules on Node x:
+
+Each inserted node is initially colored Red
+
+1) x is the root node, i.e., first node of red-black tree
+
+	The current node is the root of the tree. In this case, it is repainted black to satisfy property 2.
+
+2) x's parent (P) is black
+
+	No RB Tree properties are invalidated. In this case, the tree is still valid and no changes are necessary.
+
+3) x's parent (P) and uncle (U) are both red
+
+Parent and uncle can be repainted black and the grandparent becomes red. However, the grandparent may now violate properties 2 (The root is black) or 4 (Both children of every red node are black).  To fix this, the entire procedure is recursively performed on grandparent. 
+
+4) P is red and U is black:  x is added to right of left child, or x is added to left of right child 
+
+A left rotation on the parent switches the roles of the current node and its parent; then, the former parent node is dealt with using case 5 (next case).  In the symmetric case (x is added to left of right child), a right rotation on the parent switches the roles of the current node and its parent.
+
+5) P is red and U is black:   x is added to left of left child, or x is added to right of right child 
+
+	A right rotation on the grandparent; colors of parent and grandparent are switched.
+(or in symmetric case:  a left rotation on grandparent�)
+
