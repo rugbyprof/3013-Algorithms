@@ -10,6 +10,6 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L06-Red_Black_Trees">L06-Red_Black_Trees</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L06-Red_Black_Trees">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L06-Red_Black_Trees">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/L06-Red_Black_Trees">N/A</a>*** |  |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials">LectureMaterials</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials"> Placeholder Readme </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials"> No Description</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials">N/A</a>*** |  |
 
-<sup>Last Updated: 2022-03-25 (Fri @ 14:28)</sup> 
+<sup>Last Updated: 2022-03-28 (Mon @ 16:40)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 

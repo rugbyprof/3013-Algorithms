@@ -1,122 +1,32 @@
 ## Test 2 - Study Guide
 #### Due: TBD
 
-First go look at the [README](../../README.md) file for the course which lists topics to be covered. I'm pretty happy with how far we have gotten.  
 
-Otherwise, here is the study guide for our second test. I welcome any and all feedback / questions!! Bring it! 
+#### List VS Array
 
-## Sorting
+[Overview](../../Resources/L03-ListVsArray/README.md)
 
--------
+#### Heap Memory VS Stack Memory
 
-Be able to distinguish the differences between: bubble sort, insertion sort, selection sort. 
+[Overview](../../Resources/L02-StackVsHeap/README.md)
 
--------
+### Binary Search
+- Given a set of values determine if, and then perform a binary search if possible.
 
-- ~~Learn how to write a Recursive Bubble Sort:~~ (maybe final exam 😏)
-  - https://www.ritambhara.in/recursive-bubble-sort/
+### Priority Queue
 
--------
+- Discuss multiple ways of implementing a priority queue
+- What data structure (container) and why. 
+- Which run faster?
+- Which are easier to implement?
 
-- What are the 2 major categories of sorting algorithms, and which sorting algorithms (discussed in class) fit into each. 
-- What is a stable sorting algorithm?
-- Which sorting algorithms use divide and conquer techniques? Why or why is this not a good strategy?
-- Hint1: [Nice Summary of Sorting Algorithms](https://www.happycoders.eu/algorithms/sorting-algorithms/)
-- Hint2: [Nice Summary of Sorting Algorithms 2](https://medium.com/@tssovi/comparison-of-sorting-algorithms-298fdf037c8f)
+#### Run Time Complexities
 
--------
-
-- How do counting sort and radix sort relate, and what makes them a great pair? This doesn't mean that you need to understand how to implement counting or radix sort. In fact, can counting sort run on it's own?
-
--------
-
-- Quicksort and Merge-sort have the same complexity. Briefly explain why, despite similar complexity, Quicksort is the more popular sorting algorithm?
-
--------
-
-- Given the following array [10, 5, 3, 9, 22, 24, 28, 27, ?] and assuming that Quicksort will be used to sort this array in ascending order, select a value for the last element of the array (indicated by “?”) such that the partitioning performed by Quicksort is most balanced. Explain why this makes Quicksort perform efficiently.
-
--------
-Give your answers in big O notation.
-
-- What is the complexity of dividing and merging an array of length n? 
-- What is the complexity of dividing arrays in Merge-sort? 
-- What is the overall complexity of Merge-sort? 
-
-## Tries
-
-Given a set of words, be able to build a Trie data structure. For example add the following words to a Trie data structure: 
-
-- peter
-- piper 
-- picked
-- peck
-- pickled
-- peppers
-
--------
-
-- What is the complexity of creating a Trie?
-- What is the complexity of searching for a specific word in a Trie?
-- What is the complexity of searching for all words with a given prefix in a Trie?
-- A Trie is better for searching certain situations, where a BST is better for other situations. Explain what situations call for a Trie vs a Binary Search Tree. 
-- To take this question a little further, would a Trie be a replacement for a hash table?!?
+|  Cheat Sheet 1 | Cheat Sheet 2 |
+|:---------:|:---------------:|
+| [<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2020_thumb.png">](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2020.png) | [<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2_2020_thumb.png">](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2_2020.png)
 
 
-## Hashing
-
-### Basics 
-
-- When to choose which type of collision resolution:
-  - Read this: https://stackoverflow.com/questions/2556142/chained-hash-tables-vs-open-addressed-hash-tables
-  - Read this: https://www.geeksforgeeks.org/hashing-set-3-open-addressing/#:~:text=Open%20addressing%20requires%20extra%20care,number%20of%20keys%20is%20known.
-   
-- General Questions
-  - Does the data being hashed have an impact on the hash function being chosen?
-  - What is the `load factor`, and give a general overview of how certain load factors are chosen.
-  - Table size is important when implementing a hash table. Explain how we should choose a certain table size and why after you learn how many items you will be hashing. 
-  - Explain what `Collision resolution` is. Describe as many collision resolution schemes as you can find :) 
-  - What does the term `avalanche` mean when discussing hash functions?
-    - https://simple.wikipedia.org/wiki/Avalanche_effect
-  - How does a hash table allow for O(1) searching? 
-  - What is the worst case efficiency of a look up in a hash table using separate chaining?
-  - The bigger the ratio between the size of the hash table and the number of data elements, the less chance there is for collision. What is a drawback to making the hash table big enough so the chances of collision is ignorable?
-  - How could a hash table be used to implement a spell checker? 
-  - How long would a deletion operation take from hash table implemented using separate chaining? 
-
--------
-
-**Ascii Values:**
-
-Here are some quick lookup tables to help with your hashing application question: 
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/ascii_values_letters.png" width="600">
-
-
--------
-
-### Application Hashing
-
-- Using the hash function below: 
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/hash_function_one_29_mar_2021.gif" width="200">
-
-- Hash the following values:
-```
-Epd, DcS, Fcf, Gco, Qzj, Wvc, RUC, ejJ, iwR, zyz
-```
-
-- Placing them in 3 separate hash tables using the following collision resolution techniques:
-
-1. Linear Probing 
-2. Quadratic Probing 
-3. Chaining
-
-- Choose an appropriate table size as well. 
-
-
-
--------
 
 ## Binary Search Tree Deletion
 
@@ -178,6 +88,54 @@ Suppose `deleteMe` is the root node in a BST with both a left child and a right 
 1. Yes, always
 2. No, only sometimes
 3. No, never
+
+## Balanced Trees
+
+### Avl Trees
+
+1. Given a list of values, insert them into an AVL tree keeping track of balance factors and doing proper rotations when necessary.
+
+2. 
+| Insert 37 |
+|:---:|
+| <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/avl_rotate.png" width="200"> |
+
+3. 
+| Insert 13 |
+|:---:|
+| <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/avl_rotate.png" width="200"> |
+
+
+## Tries
+
+Given a set of words, be able to build a Trie data structure. For example add the following words to a Trie data structure: 
+
+- peter
+- piper 
+- picked
+- peck
+- pickled
+- peppers
+
+-------
+
+- What is the complexity of creating a Trie?
+- What is the complexity of searching for a specific word in a Trie?
+- What is the complexity of searching for all words with a given prefix in a Trie?
+- A Trie is better for searching certain situations, where a BST is better for other situations. Explain what situations call for a Trie vs a Binary Search Tree. 
+- To take this question a little further, would a Trie be a replacement for a hash table?!?
+
+
+
+-------
+
+## Next Exam
+
+- Red Black Trees
+- Graphs
+- Spanning Trees
+- Hashing
+
 
 
 
