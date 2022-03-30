@@ -41,9 +41,9 @@ Follow the path around the example below. To do a specific traversal, you would 
 
 |   Order   |      Solution       |
 | :-------: | :-----------------: |
-| Preorder  | [F,B,A,D,C,E,G,I,H] |
-|  Inorder  | [A,B,C,D,E,F,G,H,I] |
-| Postorder | [A,C,E,D,B,H,I,G,F] |
+| Preorder  | **F,B,A,D,C,E,G,I,H** |
+|  Inorder  | **A,B,C,D,E,F,G,H,I** |
+| Postorder | **A,C,E,D,B,H,I,G,F** |
 
 Another way to remember is to look at the recursive method that does the actual traversals. If you print before you recursively call left, then its a pre order. If you print in between your recursive calls, its a in order. If you print after you go left and then right, its a post order.
 
