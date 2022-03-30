@@ -157,7 +157,9 @@ Suppose `deleteMe` is the root node in a BST with both a left child and a right 
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/trie_example.png" width="600">
 
-Given a set of words, be able to build a Trie data structure. For example add the following words to a Trie data structure: 
+Given a set of words, be able to build a Trie data structure. For example add the following words to a Trie data structure. Don't just assume
+each of the words you see below, `pickled` contains the word `pickle` and so on. 
+
 
 - peter
 - piper 
