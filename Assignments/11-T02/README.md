@@ -22,10 +22,47 @@
 
 #### Run Time Complexities
 
-|  Cheat Sheet 1 | Cheat Sheet 2 |
-|:---------:|:---------------:|
-| [<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2020_thumb.png">](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2020.png) | [<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2_2020_thumb.png">](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2_2020.png)
+|                                                                                    Cheat Sheet 1                                                                                     |                                                                                      Cheat Sheet 2                                                                                       |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| [<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2020_thumb.png">](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2020.png) | [<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2_2020_thumb.png">](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/bigoh_cheet_sheet_2_2020.png) |
 
+
+## Tree Traversals:
+
+Follow the path around the example below. To do a specific traversal, you would print the values at each node when you cross the specific color. For example, pre order traversal prints the node data at the red dot. In order at the green dot, and post order at the blue dot.
+
+- Preorder (red dot) 
+- Inorder (blue dot) 
+- Postorder (green dot) 
+
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/tree_traversal.png" width="300">
+
+
+|   Order   |      Solution       |
+| :-------: | :-----------------: |
+| Preorder  | [F,B,A,D,C,E,G,I,H] |
+|  Inorder  | [A,B,C,D,E,F,G,H,I] |
+| Postorder | [A,C,E,D,B,H,I,G,F] |
+
+Another way to remember is to look at the recursive method that does the actual traversals. If you print before you recursively call left, then its a pre order. If you print in between your recursive calls, its a in order. If you print after you go left and then right, its a post order.
+
+- PreOrder = Print GoLeft GoRight (or print left right)
+- InOrder = GoLeft Print GoRight (or left print right)
+- PostOrder = GoLeft GoRight Print (or left right print)
+
+```cpp
+void Traversal(Node* root){
+  if(!root){
+    return;
+  }
+  // preorder would cout node data here 
+  Traversal(root->left);
+  // inorder would cout node data here 
+  Traversal(root->right);
+  // postorder would cout node data here 
+}
+```
 
 
 ## Binary Search Tree Deletion
@@ -96,13 +133,13 @@ Suppose `deleteMe` is the root node in a BST with both a left child and a right 
 1. Given a list of values, insert them into an AVL tree keeping track of balance factors and doing proper rotations when necessary.
 
 2. 
-| Insert 37 |
-|:---:|
+|                                          Insert 37                                          |
+| :-----------------------------------------------------------------------------------------: |
 | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/avl_rotate.png" width="200"> |
 
 3. 
-| Insert 13 |
-|:---:|
+|                                          Insert 13                                          |
+| :-----------------------------------------------------------------------------------------: |
 | <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/avl_rotate.png" width="200"> |
 
 
@@ -124,6 +161,8 @@ Given a set of words, be able to build a Trie data structure. For example add th
 - What is the complexity of searching for all words with a given prefix in a Trie?
 - A Trie is better for searching certain situations, where a BST is better for other situations. Explain what situations call for a Trie vs a Binary Search Tree. 
 - To take this question a little further, would a Trie be a replacement for a hash table?!?
+
+
 
 
 
