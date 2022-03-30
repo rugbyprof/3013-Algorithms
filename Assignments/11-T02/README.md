@@ -39,7 +39,7 @@ Follow the path around the example below. To do a specific traversal, you would 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/tree_traversal.png" width="300">
 
 
-|   Order   |      Solution       |
+|   Order   |      Solution       | 
 | :-------: | :-----------------: |
 | Preorder  | **F,B,A,D,C,E,G,I,H** |
 |  Inorder  | **A,B,C,D,E,F,G,H,I** |
@@ -75,8 +75,18 @@ Which of the following are reasonable?
 
 <img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/reasonable_answers_bst_deletion_3013.png" width="500">
 
+You should know the 4 cases when deleting a node, and how to handle them:
+
+1. Leaf
+2. Left Child 
+3. Right Child
+4. Both Chilren
+
+I won't list here how to handle them, they are easily found. You won't have to write code to do a deletion, but you will have to re-draw a tree after you delete a value. 
 
 -------
+
+### Necessary for Tree Node Deletion
 
 - Label the in-order predecessor and in-order successor of the root of this tree:
 
@@ -144,6 +154,8 @@ Suppose `deleteMe` is the root node in a BST with both a left child and a right 
 
 
 ## Tries
+
+<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/trie_example.png" width="300">
 
 Given a set of words, be able to build a Trie data structure. For example add the following words to a Trie data structure: 
 
