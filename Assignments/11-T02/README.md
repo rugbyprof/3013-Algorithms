@@ -63,7 +63,9 @@ void Traversal(Node* root){
   // postorder would cout node data here 
 }
 ```
+## Binary Search Tree
 
+Be able to load values into a binary search tree. I shouldn't have to say this at this point.... but just know.
 
 ## Binary Search Tree Deletion
 
