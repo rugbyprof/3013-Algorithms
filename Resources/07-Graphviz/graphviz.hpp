@@ -10,6 +10,23 @@
 // https://graphviz.readthedocs.io/en/stable/manual.html
 // https://dreampuf.github.io/GraphvizOnline/
 
+
+// dotSrc = `
+//   digraph {
+//     graph [pad="0.212,0.055" bgcolor=lightgray]
+//     node [style=filled]
+    // a [fillcolor="#d62728" pos="2,4!"]
+    // b [fillcolor="#1f77b4" pos="1,3!"]
+    // f [fillcolor="#007f0e" pos="0,2!"]
+    // g [fillcolor="#fffffe" pos="1,2!"]
+    // c [fillcolor="#2ca02c" pos="3,3!"]
+    // d [fillcolor="#f0000e" pos="3,2!"]
+    // e [fillcolor="#f07ffe" pos="4,2!"]
+//     a -> b
+//     a -> c
+//     a -> d
+//   }
+
 using namespace std;
 
 using json = nlohmann::json;
@@ -131,7 +148,7 @@ protected:
 
             string dd = (*it)["id"].get<std::string>();
             if (dd == id) {
-                cout << "Node exists!!" << endl;
+                //cout << "Node exists!!" << endl;
                 return true;
             }
         }
