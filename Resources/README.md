@@ -15,6 +15,6 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L01-Heaps">L01-Heaps</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L01-Heaps"> Binary Heap Implementation </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L01-Heaps"> Array Based Implementation</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L01-Heaps">N/A</a>*** |  |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray">L03-ListVsArray</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray"> Array vs Linked List </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray"> A comparison</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray"> None</a>*** |  |
 
-<sup>Last Updated: 2022-04-26 (Tue @ 12:28)</sup> 
+<sup>Last Updated: 2022-04-27 (Wed @ 10:36)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 
