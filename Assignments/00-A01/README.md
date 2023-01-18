@@ -1,5 +1,6 @@
-## Assignment 1 - Getting Setup
-#### Due: 01-13-2022 (Thursday @ 9:30 a.m.)
+## Assignment 1 - Establishing Comms
+#### Due: 01-20-2023 (Friday @ 10:00 a.m.) 
+
 
 ## Getting Setup
 
@@ -8,15 +9,14 @@ All of these are important! So do them with expedience.
 If you have had me before, and this seems **TL;DR** make sure you:
 
 1. Are on my slack channel: https://griffin-courses.slack.com
-2. ~~Are on my discord server: https://discord.gg/4Un4Ya~~
-3. Add yourself to the class roster
-4. Make sure you add an image and optional avatar in your slack ~~and discord~~ profiles. (These will also be placed into the class roster).
+2. Add yourself to the class roster
+3. Make sure you add an image or avatar to your slack profile. (These will also be placed into the class roster).
 
 ### Team Chat
 
 ---
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/slack_icon.png" width="100">
+<img src="http://cs.mwsu.edu/~griffin/zcloud/zcloud-files/slack_icon.png" width="120">
 
 
 The first step in doing well in any of my courses is establishing a base of communication. Why? Not everything can be done while we are in class.
@@ -56,7 +56,7 @@ Now that we have our communication client set up, we probably need to start gett
 
 #### Update the Class Roster:
 
-- Here is a link to our class roster on google docs: ![](https://docs.google.com/spreadsheets/d/1gjKKgoW3O5DBNkbXMAleqO67SkNbdkOt4fNdQ6VvjKo/edit?usp=sharing) [Class Roster](https://docs.google.com/spreadsheets/d/1SvxY7V82s1o-MfIch2vWafe0FpAWLEObwlbyb2lK7yk/edit?usp=sharing)
+- Here is a link to our class roster on google docs: <a href="https://docs.google.com/spreadsheets/d/12dUUQj2-3riXf7xAVFyMtyYhcLfQaVsr1nF8UrzOrcM/edit#gid=1094049050"><img src="https://www.gstatic.com/images/branding/product/2x/sheets_2020q4_48dp.png" width="30">Class Roster</a>
 
 - Update the roster by adding your information to it.
 
@@ -67,7 +67,7 @@ Add:
 3. Add a photo of yourself. This is not optional. I guess I can put in your student ID photo :)<sup>**1**</sup>
 4. If you use an avatar anywhere, put it here as well.<sup>**1**</sup>
 5. Add your Github username<sup>**2**</sup>
-6. After the next assignment, add a link to your 3013-Algorithms-YourName Repo onto the sheet also<sup>**3**</sup>
+6. After the next assignment, add a link to your 2143-OOP-YourName Repo onto the sheet also<sup>**3**</sup>
 
 - <sup> **1**. These really help me keep track of who's who. Its really hard when you guys have something like sponge bob as an avatar to know who you really are. Especially with a username like `playboi2real` or `skullcrusherXYZ88osOU812`</sup>
 - <sup> **2**. Your repository name and your Github username are NOT the same thing.</sup>
@@ -75,6 +75,8 @@ Add:
 
 ### Rules for emailing me:
 ---
+
+**TL;DR** I won't get back to you on email in any reasonable time. Thats why I have a chat client for coursework only.
 
 1) Open your email client.
 2) Create a new email.
