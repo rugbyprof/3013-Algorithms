@@ -9,7 +9,7 @@ All of these are important! So do them with expedience.
 If you have had me before, and this seems **TL;DR** make sure you:
 
 1. Are on my slack channel: https://griffin-courses.slack.com
-2. Add yourself to the class roster
+2. Add yourself to the class roster (I'll post link in slack).
 3. Make sure you add an image or avatar to your slack profile. (These will also be placed into the class roster).
 
 ### Team Chat

@@ -2,20 +2,20 @@
 
 ### Roster
 
-![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1SvxY7V82s1o-MfIch2vWafe0FpAWLEObwlbyb2lK7yk/edit?usp=sharing)
+<!-- ![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1SvxY7V82s1o-MfIch2vWafe0FpAWLEObwlbyb2lK7yk/edit?usp=sharing) -->
 
 
 ### General Course Info
-- __Days:__ TTh 12:30 p.m. - 1:50 p.m. 
+- __Days:__ MWF 10:00 a.m. - 10:50 a.m. 
 - __Location:__ BO 320
-- [__Semester:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2022.pdf) Monday January 10<sup>th</sup> - Friday April 29<sup>rd</sup>
-- [__Holidays:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2022.pdf)
-  - __Martin Luther King Jr. Day__ Monday January 17<sup>th</sup>
-  - __Spring Break :__ Monday March 14<sup>st</sup> - Friday March 19<sup>th</sup> 
-- [__Last Day for “W”:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2022.pdf)  Friday March 21<sup>st</sup>
-- [__Last Day of Class:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2022.pdf) Friday April 29<sup>th</sup>
-- [__Final Exam:__](https://msutexas.edu/registrar/_assets/files/pdfs/spring22finals.pdf) Thursday May 5<sup>th</sup> @ 10:30am in BO 320
-
+- [__Semester:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2023.pdf) Monday January 18<sup>th</sup> - Friday May 5<sup>th</sup>
+- [__Holidays:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2223.pdf)
+  - __Spring Break__ Monday March 13<sup>th</sup> - Friday March 18<sup>th</sup>
+  - __Easter__ Wednesday April 5<sup>th</sup> - Friday April 7<sup>th</sup>
+- [__Last Day for “W”:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2223.pdf)  Monday March 27<sup>th</sup>
+- [__Last Day of Class:__](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2223.pdf) Friday May 5<sup>th</sup>
+- [__Final Exam:__](https://msutexas.edu/registrar/_assets/files/pdfs/spring23finals.pdf) Wednesday May 10<sup>th</sup> from 10:30 am - 12:30 am
+- 
 ### Resources
 
 Here are some open source books for the course. I hope you guys appreciate the amount of effort it takes to put material together and then put it on the internet for free.
