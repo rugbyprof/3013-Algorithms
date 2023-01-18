@@ -1,6 +1,6 @@
 # 3013-Algorithms
 
-### Roster
+<!-- ### Roster -->
 
 <!-- ![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1SvxY7V82s1o-MfIch2vWafe0FpAWLEObwlbyb2lK7yk/edit?usp=sharing) -->
 
