@@ -63,8 +63,8 @@ There are always multiple ways to implement every data structure. For example th
 So ultimately based on class input and questions that come up in discussion, I may jump around a bit so an explanation will make sense. Remember though ... *I make study guides for each test*!!
 
 
-- [x] Array Based vs List Based Structures
-- [x] [Array Based Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html)
+- [ ] Array Based vs List Based Structures
+- [ ] [Array Based Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html)
 - [ ] Complexity 
   - [ ] Introduction 
   - [ ] Will be discussed with each data structure
@@ -72,12 +72,12 @@ So ultimately based on class input and questions that come up in discussion, I m
   - [ ] [Singly Linked List](https://opendatastructures.org/ods-cpp/3_1_Singly_Linked_List.html)
   - [ ] [Doubly Linked List](https://opendatastructures.org/ods-cpp/3_2_Doubly_Linked_List.html)
   - [ ] [Circular List](https://www.geeksforgeeks.org/circular-linked-list/)
-- [x] Stack, Queue, Priority Queue, Deque
-- [x] Array Based Binary Search
-- [x] Binary Tree's
-  - [x] Components
-  - [x] Array Based
-- [x] Binary Heap (Array Based)
+- [ ] Stack, Queue, Priority Queue, Deque
+- [ ] Array Based Binary Search
+- [ ] Binary Tree's
+  - [ ] Components
+  - [ ] Array Based
+- [ ] Binary Heap (Array Based)
 - [ ] Fibonacci Heap (**Possibly**)
 - [ ] Binary Tree Implementation (List Based)
 - [ ] Trie
