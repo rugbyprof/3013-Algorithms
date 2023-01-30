@@ -1,3 +1,0 @@
-## Avl Trees - Overview
-
-- 
