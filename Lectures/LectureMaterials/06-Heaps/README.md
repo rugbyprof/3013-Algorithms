@@ -14,7 +14,7 @@ below shows an example of a complete binary tree.
 
 |                                 A Complete Binary Tree                                  |
 | :-------------------------------------------------------------------------------------: |
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/compTree_3013_2020.png"> |
+| <img src="./images/compTree_3013_2020.png"> |
 
 - Another interesting property of a complete tree is that we can represent it using a single list. We do not need to use nodes and references or even lists of lists. 
 - Because the tree is complete, the left child of a parent (at position *P*) is the node that is found in position ***2P*** in the list.
@@ -26,7 +26,7 @@ below shows an example of a complete binary tree.
 
 |                 A Complete Binary Tree w/ List Representation                  |
 | :--------------------------------------------------------------------------------------: |
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/heapOrder_3013_2020.png"> |
+| <img src="./images/heapOrder_3013_2020.png"> |
 
 
 ## The Heap Order Property
@@ -53,9 +53,9 @@ binary tree entity when stored in an array.
 |                                       Heap Container                                        |
 | :-----------------------------------------------------------------------------------------: |
 |                          **Empty Container - We don’t use slot zero.**                       |
-|  <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013.heap_array_2020.png">  |
+|  <img src="./images/3013.heap_array_2020.png">  |
 |  ***Parent Vs Left and Right Child***                                                        |
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_array_2c_2020.png"> |
+| <img src="./images/3013_heap_array_2c_2020.png"> |
 
 ### Insert
 
@@ -72,9 +72,9 @@ its proper position in the tree.
 
 |      Binary Tree (What we picture)                                 |   Array (Whats really happening)           |
 | :-----------------------------------------------------------------------------------------: | :---------------: |
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_percup_1.png" width="300">| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_insert_1_2020.png" width="75%"> |
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_percup_2.png" width="300"> | <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_insert_2_2020.png" width="75%">|
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_percup_3.png" width="300"> | <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_insert_3_2020.png" width="75%"> |
+| <img src="./images/3013_heap_percup_1.png" width="300">| <img src="./images/3013_heap_insert_1_2020.png" width="75%"> |
+| <img src="./images/3013_heap_percup_2.png" width="300"> | <img src="./images/3013_heap_insert_2_2020.png" width="75%">|
+| <img src="./images/3013_heap_percup_3.png" width="300"> | <img src="./images/3013_heap_insert_3_2020.png" width="75%"> |
 
 Notice that when we percolate an item up, we are restoring the heap property between the newly added
 item and the parent. We are also preserving the heap property for any siblings. Of course, if the
@@ -100,10 +100,10 @@ steps.
 
 |                         Binary Tree (What we picture)                           |    Array (Whats really happening) |
 | :-------------------------------------------------------------------------------------: | :---------------: |
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_percdown_1.png" width="300"> | <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_percdown_1_array.png" width="75%"> |
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_percdown_2.png" width="300"> | <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_percdown_2_array.png" width="75%"> |
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_percdown_3.png" width="300"> | <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_percdown_3_array.png" width="75%"> |
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_percdown_4.png" width="300"> | <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heap_percdown_4_array.png" width="75%"> |
+| <img src="./images/3013_heap_percdown_1.png" width="300"> | <img src="./images/3013_heap_percdown_1_array.png" width="75%"> |
+| <img src="./images/3013_heap_percdown_2.png" width="300"> | <img src="./images/3013_heap_percdown_2_array.png" width="75%"> |
+| <img src="./images/3013_heap_percdown_3.png" width="300"> | <img src="./images/3013_heap_percdown_3_array.png" width="75%"> |
+| <img src="./images/3013_heap_percdown_4.png" width="300"> | <img src="./images/3013_heap_percdown_4_array.png" width="75%"> |
 
 In order to maintain the heap order property, all we need to do is swap the root with its smallest
 child less than the root. After the initial swap, we may repeat the swapping process with a node and
@@ -124,10 +124,10 @@ build the whole heap in ***O(n)*** operations.
 
 |                       Heapify                        |      |
 | :--------------------------------------------------------------------------------------: | :-----:|
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heapify_tree_1.png"> |<img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heapify_array_1.png"> |
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heapify_tree_2.png"> |<img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heapify_array_2.png"> |
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heapify_tree_3.png"> |<img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heapify_array_3.png"> |
-| <img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heapify_tree_4.png"> |<img src="https://github.com/rugbyprof/3013-Algorithms/blob/master/Resources/L01-Heaps/images/3013_heapify_array_4.png"> |
+| <img src="./images/3013_heapify_tree_1.png"> |<img src="./images/3013_heapify_array_1.png"> |
+| <img src="./images/3013_heapify_tree_2.png"> |<img src="./images/3013_heapify_array_2.png"> |
+| <img src="./images/3013_heapify_tree_3.png"> |<img src="./images/3013_heapify_array_3.png"> |
+| <img src="./images/3013_heapify_tree_4.png"> |<img src="./images/3013_heapify_array_4.png"> |
 
 
 The figure above shows the swaps that the `Heapify` method makes as it moves the nodes in an
@@ -150,6 +150,5 @@ heap in ***O(n)*** is to remember that the ***O(lg n)*** factor is derived from 
 of the tree. For most of the work in `Heapify`, the tree is shorter than ***lg n***.
 
 Using the fact that you can build a heap from a list in ***O(n)*** time, you could easily construct a sorting algorithm that uses a heap and sorts a list in ***O(n lg n)*** cost.
-
 
 
