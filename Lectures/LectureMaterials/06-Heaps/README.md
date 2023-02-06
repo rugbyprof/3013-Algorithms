@@ -1,7 +1,5 @@
 ## Binary Heap Implementation - Array Based Implementation
 
-### NEEDS SOME TWEEKING 
-
 In this Heap overview, we assume **MIN** heap.
 
 ### Overview
