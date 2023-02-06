@@ -1,5 +1,7 @@
 ## Binary Heap Implementation - Array Based Implementation
 
+### NEEDS SOME TWEEKING 
+
 In this Heap overview, we assume **MIN** heap.
 
 ### Overview
@@ -150,5 +152,3 @@ heap in ***O(n)*** is to remember that the ***O(lg n)*** factor is derived from 
 of the tree. For most of the work in `Heapify`, the tree is shorter than ***lg n***.
 
 Using the fact that you can build a heap from a list in ***O(n)*** time, you could easily construct a sorting algorithm that uses a heap and sorts a list in ***O(n lg n)*** cost.
-
-
