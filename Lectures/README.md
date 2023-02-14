@@ -6,6 +6,6 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/02-BinaryHeap">02-BinaryHeap</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/02-BinaryHeap"> Placeholder Readme </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/02-BinaryHeap"> No Description</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/02-BinaryHeap">N/A</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/02-BinaryHeap">None</a>*** |  |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials">LectureMaterials</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials"> Placeholder Readme </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials"> No Description</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials">N/A</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials">None</a>*** |  |
 
-<sup>Last Updated: 2023-02-08 (Wed @ 09:59)</sup> 
+<sup>Last Updated: 2023-02-14 (Tue @ 00:46)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 
