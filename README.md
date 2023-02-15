@@ -118,11 +118,11 @@ So ultimately based on class input and questions that come up in discussion, I m
 
 | Categories                                              |       | Grade |          |
 | :------------------------------------------------------ | :---: | :---: | :------: |
-| Exams (3)                               |  40%  |   A   |  89-100  |
-| Programs (3-5)<sup>**1**</sup> & Assignments            |  30%  |   B   |  79-88   |
-| Final<sup>**2**</sup>                                   |  20%  |   C   |  69-78   |
-| Github Portfolio                                        |  10%  |   D   |  59-68   |
-| Project Presentations (time permitting)<sup>**3**</sup> |  10%  |   F   | below 59 |
+| Exams (3)                                               | ⇦40%  |  A ⇨  |  89-100  |
+| Programs (3-5)<sup>**1**</sup> & Assignments            | ⇦30%  |  B⇨   |  79-88   |
+| Final<sup>**2**</sup>                                   | ⇦20%  |  C⇨   |  69-78   |
+| Github Portfolio                                        | ⇦10%  |  D⇨   |  59-68   |
+| Project Presentations (time permitting)<sup>**3**</sup> | ⇦10%  |  F⇨   | below 59 |
 |                                                         |       |       |          |
 
 >**1**. Despite the low overall value of the programming portion of the course, ALL programs must be turned in running to pass the course.  They don't have to be necessarily correct, but they must run and they need to at least approach the solution (a "Hello World" program will not work). 
