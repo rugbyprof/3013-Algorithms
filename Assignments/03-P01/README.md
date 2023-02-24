@@ -24,3 +24,30 @@ string phone_number
 vector <string> stocks
 ```
 Most of these data elements are easily sorted and made searchable. The one pair of values that would give us trouble knowing what we know up to now are the two doubles representing latitude and longitude. Think for a minute how you would try to search using a pair of GPS coordinates :) I added a paper to this folder if your interested in reading about the [first data structure](R-Tree-Guttman.pdf) created for spatial values (points, lines, polygons)!
+
+
+### Example Run
+https://replit.com/@rugbyprof/3013P01Something#main.cpp
+```
+Searching for "Park" in BST by address ...
+Compared "Park" to 235 nodes ... 
+Found in 0.023 seconds
+
+Searching for "Park" in LL by address ...
+Compared "Park" to 566 nodes ... 
+Found in 2.023 seconds
+
+
+Plus at least one search per tree ....
+
+
+
+```
+
+## Deliverables
+
+- Make a folder called P01 in your assignments folder.
+- Add all of your source code to this folder. 
+- Output file or screen dump.
+- Don't forget your banner.
+- README.md with an explanation of your approach to the problem
