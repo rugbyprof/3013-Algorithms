@@ -44,6 +44,11 @@ Plus at least one search per tree ....
 
 ```
 
+## Data
+
+- https://cs.msutexas.edu/~griffin/data/3013_random_data/random_person_data_small.json 
+- https://cs.msutexas.edu/~griffin/data/3013_random_data/random_person_data_01.json 
+
 ## Deliverables
 
 - Make a folder called P01 in your assignments folder.
