@@ -1,4 +1,4 @@
-## Assignment 1 - Database Indexes ... What?!?
+## Assignment 1 - Database Indexes ... What?!? (not really)
 #### Due: 02-24-2023 (Friday @ 10:00 a.m.)
 
 ### Overview
