@@ -5,8 +5,9 @@
 
 - Using `random_person_data` we created using `Mockaroo`, build 1 or more data structure(s) that can be searched using specified keys in the random data. 
 - Your search should happen in `O(lg n)` time. 
-- Since we really only discussed binary trees, I'm providing you with an AVL implementation to help. 
+- Since we really only discussed binary trees, I'm providing you with an [AVL](avlTree.hpp) implementation to help. 
 - As we discussed, comparing the speed of each algorithm matters, so here is a linked list class that loads a `csv` file into the list. This should be helpful.
+- Since we want to time our querys, there is a timing lib in resources [here](../../Resources/05-Timing/Timer.hpp)
 - I took the data out of our repo as it got very big, but I have linked to all the data files at the bottom of this doc.  
   
 
@@ -76,7 +77,7 @@ Compared "Park" to 566 nodes ...
 Found in 2.023 seconds
 
 
-Plus at least one search per tree ....
+Plus at least one search per additional key in an Avl tree and Linked List...
 
 
 ```
