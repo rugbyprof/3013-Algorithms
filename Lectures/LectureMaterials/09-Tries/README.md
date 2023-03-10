@@ -1,4 +1,4 @@
-## Trie - Not A Tree
+## Trie - Not A Tree (but it is...)
 
 Thanks Chat Gpt (with many fixes):
 
