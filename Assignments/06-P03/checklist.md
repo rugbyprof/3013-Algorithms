@@ -20,7 +20,7 @@ If both items above are YES, continue on. Otherwise program score = 0;
 |   2.4   | Declared variables each have a comment                |         |        |
 | ***3*** | ***Specifics***                                       |      30 |        |
 |   3.1   | Added specified code                                  |         |        |
-|   3.2   | Word Search Worked matching beginning of word         |         |        |
+|   3.2   | Word Search Worked (in general)                       |         |        |
 |   3.2   | Search worked using getch (1 letter at a time)        |         |        |
 |   3.2   | Search counted words and results seemed within bounds |         |        |
 |   3.2   | Search was timed, and results seemed within bounds    |         |        |
