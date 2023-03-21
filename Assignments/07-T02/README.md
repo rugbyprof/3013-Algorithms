@@ -1,4 +1,4 @@
-## Test 2 Study Guide
+## Test 2 - Avl, Tree Traversals, Hashing
 #### Due: 03-24-2023 (Friday @ 10:00 a.m.)
 
 ## Avl Trees
