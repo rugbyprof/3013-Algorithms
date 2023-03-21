@@ -20,6 +20,8 @@ A `Trie` can be used for a variety of applications, such as:
 
 Both coding examples below serve nearly the same purpose, load some words then search using a partial string match. I have plenty of data for you to do much more even in this directory! Look [HERE](dictionary.txt)
 
+The Chat GPT code looks skimpy so if you want a full born implementation, go [HERE](https://replit.com/@rugbyprof/3013TrieSpring2021-1) and look at this code!!
+
 ```cpp
 
 #include <iostream>
