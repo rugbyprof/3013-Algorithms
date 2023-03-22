@@ -58,7 +58,7 @@ resulting
 
 Here are some quick lookup tables to help with your hashing application question: 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/ascii_values_letters.png" width="600">
+<img src="./images/ascii_values_letters.png" width="600">
 
 
 -------
@@ -67,7 +67,7 @@ Here are some quick lookup tables to help with your hashing application question
 
 - Using the hash function below: 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/hash_function.png" width="200">
+<img src="./images/hash_function.png" width="200">
 
 - Hash the following values:
 ```
@@ -92,18 +92,18 @@ Epd, DcS, Fcf, Gco, Qzj, Wvc, RUC, ejJ, iwR, zyz
 
 Delete the root from the following binary search tree:
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/binary_search_tree_deletion_3013_sp_2021.png" width="100">
+<img src="./images/binary_search_tree_deletion_3013_sp_2021.png" width="100">
 
 Which of the following are reasonable?
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/reasonable_answers_bst_deletion_3013.png" width="500">
+<img src="./images/reasonable_answers_bst_deletion_3013.png" width="500">
 
 
 -------
 
 - Label the in-order predecessor and in-order successor of the root of this tree:
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/avl_tree_again_sp_2021.png" width="200">
+<img src="./images/avl_tree_again_sp_2021.png" width="200">
 
 - For practice, 
   - delete the in-order predecessor then draw the tree
