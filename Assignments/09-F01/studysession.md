@@ -21,3 +21,13 @@ You are designing an application to manage a collection of customer orders. The 
 
 
 You are developing a traffic management application that should determine the quickest route for emergency vehicles between any two locations in a city. The travel time between locations can be represented as edge weights in a graph. Which type of algorithm would be more suitable to use for finding the quickest route between two locations?
+
+Is there ever a time when a O(n^2) sorting algorithm would be faster than a O(n log n) sorting algorithm?
+
+You are working on a small-scale project that involves sorting an array of integers. The array size will always be less than 50 elements, and the elements are mostly sorted already. In this specific scenario, which sorting algorithm is more likely to have better performance?
+
+You are building an application that requires sorting small sets of data (less than 100 elements) that have a high degree of repetition. Which sorting algorithm is more likely to have better performance in this case?
+
+You are implementing a sorting algorithm for a system that processes a large amount of data. The system often receives data that is already sorted or nearly sorted. Which sorting algorithm is more likely to have better performance for this specific case?
+
+A software company is developing a new application that will handle sorting tasks for various types of data. The application must be highly efficient in terms of sorting time for large datasets. In most cases, which sorting algorithm should the company choose to implement for best overall performance?
