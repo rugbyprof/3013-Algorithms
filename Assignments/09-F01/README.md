@@ -2,7 +2,6 @@
 
 #### Due: 05-10-2023 (Wednesday @ 10:30 a.m.)
 
-# NOT DONE NEEDS FIXING!! 
 
 Below is a list the topics with a few additional helper items.
 
