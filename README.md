@@ -1,21 +1,22 @@
 # 3013-Algorithms
 
-<!-- ### Roster -->
+### Roster
 
-<!-- ![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1SvxY7V82s1o-MfIch2vWafe0FpAWLEObwlbyb2lK7yk/edit?usp=sharing) -->
+<a href="https://docs.google.com/spreadsheets/d/1i2aETP-EXcS9My_l-fHbD_4uUTFwY_hNFVnCChDz0MQ/edit?usp=sharing"><img src="https://images2.imgbox.com/38/ed/t8796trL_o.png" alt="image host" width="20"/> &nbsp;&nbsp; 4443 - Class Roster</a> 
+
 
 ### General Course Info
 
-- **Days:** MWF 10:00 a.m. - 10:50 a.m.
-- **Location:** BO 320
-- [**Semester:**](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2023.pdf) Monday January 18<sup>th</sup> - Friday May 5<sup>th</sup>
-- [**Holidays:**](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2223.pdf)
-  - **Spring Break** Monday March 13<sup>th</sup> - Friday March 18<sup>th</sup>
-  - **Easter** Wednesday April 5<sup>th</sup> - Friday April 7<sup>th</sup>
-- [**Last Day for “W”:**](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2223.pdf) Monday March 27<sup>th</sup>
-- [**Last Day of Class:**](https://msutexas.edu/registrar/_assets/files/pdfs/acadcal2223.pdf) Friday May 5<sup>th</sup>
-- [**Final Exam:**](https://msutexas.edu/registrar/_assets/files/pdfs/spring23finals.pdf) Wednesday May 10<sup>th</sup> from 10:30 am - 12:30 am
--
+- __Days:__ MW 2:00 p.m. - 3:20 p.m.
+- __Location:__ BO 209
+- [__Semester:__](http://tinyurl.com/msucal2324) Tuesday January 16<sup>th</sup> - Friday May 3<sup>rd</sup>
+- [__Holidays:__](http://tinyurl.com/msucal2324)
+  - __Spring Break__ Monday March 11<sup>th</sup> - Friday March 15<sup>th</sup>
+  - __Easter__ Monday March 27<sup>th</sup> - Friday March 29<sup>th</sup>
+- [__Last Day for “W”:__](http://tinyurl.com/msucal2324)  Monday March 25<sup>th</sup>
+- [__Last Day of Class:__](http://tinyurl.com/msucal2324) Friday May 3<sup>rd</sup>
+- [__Final Exam:__](http://tinyurl.com/msufinals24) Wednesday, May 8<sup>th</sup> @ 5:45pm – 7:45pm (same room)
+
 
 ### Resources
 
@@ -114,15 +115,15 @@ So ultimately based on class input and questions that come up in discussion, I m
 
 ## Grading
 
-| Categories                                   |      | Grade |          |
-| :------------------------------------------- | :--: | :---: | :------: |
-| Exams (3)                                    | ⇦40% |  A ⇨  |  89-100  |
-| Programs (3-5)<sup>**1**</sup> & Assignments | ⇦25% |  B⇨   |  79-88   |
-| Final<sup>**2**</sup>                        | ⇦20% |  C⇨   |  69-78   |
-| Algorithm Presentations                      | ⇦05% |  D⇨   |  59-68   |
-| Github Portfolio                             | ⇦10% |  F⇨   | below 59 |
-|                                              |      |       |          |
-|                                              |      |       |          |
+| Categories                                   |       | Grade |          |
+| :------------------------------------------- | :---: | :---: | :------: |
+| Exams (3)                                    | ⇦50%  |  A ⇨  |  90-100  |
+| Programs (3-5)<sup>**1**</sup> & Assignments | ⇦10%  |  B⇨   |  80-89   |
+| Final<sup>**2**</sup>                        | ⇦15%  |  C⇨   |  70-79   |
+| Algorithm Presentations                      | ⇦10%  |  D⇨   |  60-69   |
+| Github Portfolio                             | ⇦15%  |  F⇨   | below 60 |
+|                                              |       |       |          |
+|                                              |       |       |          |
 
 > **1**. Despite the low overall value of the programming portion of the course, ALL programs must be turned in running to pass the course. They don't have to be necessarily correct, but they must run and they need to at least approach the solution (a "Hello World" program will not work).
 >

@@ -1,239 +1,88 @@
-## Assignment 2 - Code Repository
-#### Due: 01-23-2023 (Monday @ 10:00 a.m.)
+## Assignment 2 - Establishing Comms
+#### Due: 01-23-2024 (Tue @ 11 or 4)
 
-The 1 way communication is you communicating with me and others with the descriptions and instructions you push to your Github repo. This file provides the instructions that will help you format each assignments README file so they are consistent and informative. I discuss README's below.  Remember this file as a reference for turning in all of your assignments.
 
-## Github
+## Getting Setup
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/github_2020.png" width="150">
+All of these are important! So do them with expedience.
 
 If you have had me before, and this seems **TL;DR** make sure you:
 
-- Scroll past the Git intro and view:
-  - Make sure you create your repo correctly with the proper `README.md`
-  - Remember how to use [Markdown](https://guides.Github.com/features/mastering-markdown/)
-  - Rules for organizing your repo (pretty much the same)
-  - README files in general
-  - General expectations for all assignments turned in
+1. Are on my slack channel: https://griffin-courses.slack.com
+2. Add yourself to the class roster (I'll post link in slack).
+3. Make sure you add an image or avatar to your slack profile. (These will also be placed into the class roster).
+
+### Team Chat
 
 ---
 
-In addition to our team chat and code editor, we will be using `version control` software to organize all of our code. WHAT?!?! **Version Control**?? Please trust me when I say you will be better for using some kind of version control. In this case we will use `git` (the version control software) in conjunction with `Github` a web site that makes your programs publicly viewable. There is a bit of a learning curve, but you will thank me for it.
+<img src="https://images2.imgbox.com/d3/be/V4785lWc_o.png" width="120">
 
-#### What is Git?
+The first step in doing well in any of my courses is establishing a base of communication. Why? Not everything can be done while we are in class.
 
-Don't let the following definitions scare you. We will use `git` and `Github` at a very basic (simple) level.
+Assignments will (and should) be challenging. Therefore, you will need help from me and your classmates. Using [Slack](https://slack.com)<sup>2</sup> (a chat client) provides a communication portal after class and regardless of where you are. I realize that most work gets done in the evening and off campus. By using Slack,you don't have to wait until the lab is open, or until I have office hours.
 
-However lets define it:
+You can ask questions multiple ways on Slack. Either on our public class channel, or privately between users. If you post a question on the public channel, your fellow students can help with an answer. This is good, because most questions revolve around interpretation of an assignment: "What did Griffin mean when he asked __________?" These questions help everyone interpret an assignment correctly, and I can jump in to give a definitive answer. You can also privately ask me a question on a direct channel. I will do my best to answer in an expedient amount of time. Some days I may answer immediately, and some days I may not answer at all. I try my best, but I will also not be a slave to slack :) I mostly will answer quickly, even late at night.
 
->`Git` is a distributed revision control and source code management (SCM) system with an emphasis on speed,data integrity,and support for distributed, non-linear workflows. Git was initially designed and developed by Linus Torvalds for Linux kernel development in 2005, and has since become the most widely adopted version control system for software development.<br><br>
-As with most other distributed revision control systems, and unlike most client–server systems, every Git working directory is a full-fledged repository with complete history and full version-tracking capabilities, independent of network access or a central server. Like the Linux kernel, Git is free software distributed under the terms of the GNU General Public License  [[1]](http://en.wikipedia.org/wiki/Git_(software)).
+You should have gotten an invite already from me. Accept it. If you didn't, ask me for another invite. [Here](https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-users) is a getting started guide to help you use slack. Slack is an app. It can be installed OR viewed via a web browser using a URL.
 
-So, `Git` is **distributed revision control system** (version control). This is just a fancy way of letting us manage our code. In fact, I really only want to use git so you can `push` our code to a repository that I can access so I can download and run your code. `Github` is such a place.
+Add yourself to the `#3013-alg` channel.
 
->`Github` is a social site that allows programmers to share code with other programmers. It's also a great place to discover projects to work on, discover code to use in your own projects, and a great place to start a portfolio. Whereas `Git` is simply the revision control system that can be installed anywhere, and only used locally if that's the users choice.
+#### Slack provides
 
-Remember though: `Git != Github`, Git does version control, but has commands built in to `push` your code to a repository on another computer. This other computer that we will use is `Github`.
+- Team chat (class members and myself).
+- Code highlighting for snippets so we can share code and read it better.
+- File sharing simply by dragging and dropping.
+- Private channels so you can discuss things without everyone seeing (even I can't see).
+- Polls so we can vote on things (mainly for me).
 
-#### Why Github for this course?
+So, **NO email please!** Unless I specifically ask. Slack is your communication conduit for this class.
 
-I use Github as a home-base for all assignments, lectures, and resources. It's basically our courses homepage. That is why I use it. When you push your code to Github, you are placing your code in a central location irregardless of what computer your working on. If you do some work in the lab, you can `push` your changes to Github. If you go home, you can `pull` your changes to your home machine and continue working. If you only work on a single machine, like a laptop, then Github can be your "backup" copy.
+#### Slack Recommendation
 
-#### Create a Github account.
+1. I **highly** recommend installing slack on your mobile device as well as your own computer. I often upload help, or code suggestions on Slack in the evening or on weekends. Having slack on your mobile device will give you the best chance of getting the `alert` or notification that something was done.
+2. **The students that monitor our slack channel and participate in discussions almost alway do better. I've used slack since it was established almost 10 years ago and I can say with a high level of confidence that students who participate on Slack to better in the course.**
+3. **YOU WILL** update your profile so your avatar in chats shows either an image of you, or an avatar that ends up on your Github repo's main page.
 
-- You shouldn't need this tutorial, but just in case:
-   - https://www.wikihow.com/Create-an-Account-on-Github
-
-- When you create a Github account, you must choose a `username`.
-- This is very important to remember, because you will update the class roster with this username so I know where to find all your assignments.
-- Create a repository named:
-    - `3013-Algorithms-yourlastname` 
-    - replace the `yourlastname` with your last name to make it unique.
-- Check the box that says: "Add a README.md file"
-- The repo name is important! I have scripts that build a URL with your github username and the repo name above. If you don't follow naming conventions, it means your stuff will not be graded or counted late.
-
-#### Edit the README.md
-
-- A readme file is a file that gets displayed when you are viewing a folder on Github. So we place a README.md in the repo's folder so we can display information about the repo. Likewise, any README.md in a folder is used to display information about the folder it is in.
-- Edit the readme file on Github and place your contact information inside along with a picture of YOU. NOT an avatar. NOT a thumbnail. But an easily identifiable picture of you.
-- Your readme should include:
-    - Your first and last name
-    - Your email address
-    - Your website (if you have one)
-    - Your image
-    - Slack / Github avatar
+Now that we have our communication client set up, we probably need to start getting the actual programming environment ready! We will be doing many things from the command line this semester. Windows is not known for it's command line prowess, so we need to give it some assistance.
 
 
-## Example README.md
-
-If you're not familiar with `markdown` you can go [here](https://guides.Github.com/features/mastering-markdown/) to get an idea of what it can do for you. It's basically a simple syntax that you can use to format files. Use the template below to get your `README` started:
-
-```md
-## Albert Einstein
-#### Repo: 2143 Object Oriented Repo
-#### Email: albert.einstein@yahoo.com
-#### Website: https://en.wikipedia.org/wiki/Albert_Einstein
-#### Image:
-![Albert Einstein](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/einstein.png)
-#### Avatar:
-![Avatar](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/einstein_avatar.png)
-```
-
-***will result in*** (avatar not included in example)
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/einstein_out.png" width="300">
-
-## Organizing Your Repo
-
-- Create an `Assignments` folder inside your Github repository
-- In the `Assignments` folder, create a `README.md` file that has the following in it:
-
-```md
-##  Assignments Folder
-
-|   #   | Folder Link | Assignment Description |
-| :---: | ----------- | ---------------------- |
-|       |             |                        |
-```
-
-- This will be a table in the root of your folder that will eventually hold a link to each assignment uploaded to Github.
-- Your table will initially look very sad and empty like below:
+- Invite to Griffin's Slack Channel <a href="https://join.slack.com/t/griffin-courses/shared_invite/zt-cw6fonr5-_CTN1kbgP3UaL9kRAzUICw" target="_blank">**HERE**</a>
 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/assignments_table_1_4443_2020.png" width="300">
-
+### Class Roster
 ---
 
-But then it will improve as you add rows to the table which link to each project:
+<img src="https://images2.imgbox.com/38/ed/t8796trL_o.png" width="120">
+
+#### Update the Class Roster:
+
+- Here is a link to our class roster on google docs: LINK PROVIDED LATER VIA SLACK
+
+- Update the roster by adding your information to it.
+
+Add:
+
+1. If your first and last name are not present, add them along with an email address.
+2. If your email on my roster is incorrect, or you use a different one, then change it.
+3. Add a photo of yourself. This is not optional. I guess I can put in your student ID photo :)<sup>**1**</sup>
+4. If you use an avatar anywhere, put it here as well.<sup>**1**</sup>
+5. Add your Github username<sup>**2**</sup>
+6. After the next assignment, add a link to your 2143-OOP-YourName Repo onto the sheet also<sup>**3**</sup>
+
+- <sup> **1**. These really help me keep track of who's who. Its really hard when you guys have something like sponge bob as an avatar to know who you really are. Especially with a username like `playboi2real` or `skullcrusherXYZ88osOU812`</sup>
+- <sup> **2**. Your repository name and your Github username are NOT the same thing.</sup>
+- <sup> **3**. I should be able to click your repo link, and your Github repository (along with your README file ... images and all ... should proudly be displayed).</sup>
 
 
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/assignments_table_2_4443_2020.png" width="300">
+## Rules for emailing me:
 
+I don't like email, but here are the rules if you decide to do so: 
 ---
 
-- Eventually you will create a directory structure that should look structurally similar to the example below (names will be different).
-- But this is the structure that I expect your `Assignments` folder to follow. Any files outside of the `Assignments` folder are not any of my concern and you can organize as you see fit.
-
-### Example Repo Directory Structure
-```
-.
-└── 2143-OOP-YourName               (main repo folder)
-    ├── Assignments                 (assignments folder)
-    │   ├── A01                     (single assignment folder)
-    │   │   ├── README.md           (assignment readme)
-    │   │   ├── code_file_1.cpp     (assignment files)
-    │   │   ├── code_file_2.cpp
-    │   │   └── code_file_x.hpp
-    │   ├── A02
-    │   │   ├── README.md
-    │   │   ├── code_file_1.cpp
-    │   │   ├── code_file_2.h
-    │   │   └── code_file_x.cpp
-    │   ├── AXX
-    │   │   ├── README.md
-    │   │   ├── code_file_1.cpp
-    │   │   ├── code_file_2.hpp
-    │   │   └── code_file_x.cpp
-    │   ├── P01
-    │   │   ├── README.md
-    │   │   ├── code_file_1.cpp
-    │   │   ├── code_file_2.cpp
-    │   │   └── code_file_x.cpp
-    │   ├── P02
-    │   │   ├── README.md
-    │   │   ├── code_file_1.cpp
-    │   │   ├── code_file_2.cpp
-    │   │   └── code_file_x.cpp
-    │   ├── PXX
-    │   │   ├── README.md
-    │   │   ├── code_file_1.cpp
-    │   │   ├── code_file_2.cpp
-    │   │   └── code_file_x.cpp
-    |   └── README.md               (this is the assignments folder readme)
-    └── README.md                   (this is your main repo readme)
-
-
-
-```
-
-## README's In General
-
-Every single folder on your repo should contain a `README.md`. This is because when I or someone else looks at your repo, and clicks on a folder, they will see not just a directory listing, but an explanation and description of what that folder contains. I'm not making you create README's to be an ass ... I promise. It simply adds credibility to your repo, and makes you look like you know what your doing (and care and visitors to your site). I understand that a lot (if not most) probably don't want anyone looking at your repo, but you should still put your best foot forward. When I browse repos on Github, I not only rely on the README files for information, but find myself judging the software or library based on how organized and descriptive the README's are. And after talking to other developers, I found that I'm not the only one.
-
-## README's For Assignments
-
-More [HERE](../../Resources/02-Readmees/README.md)
-
-We will use the README's that you will create in every assignment folder to do the following:
-
-- Top of the README:
-  - Project Title
-  - Your name
-  - Project Description (It needs to be "descriptive". You can take text straight from the assignment / requirements with a little additions here and there.)
-- After description:
-  - List all the files and or folders in that current project in a tabular format with a small description of each file.
-  - The filename in that table should link to the actual code file or folder.
-- After table:
-  - Instructions
-    - Any and all information needed to run your code.
-    - These instructions will be used for others in the class to run your project on their machine. I PROMISE: you will learn very fast how not to assume things just work. Because they DON'T. When your code doesn't run on anyone else's system and you get a zero, I bet you start to let "assumptions" go out the window.
-
-### Common Errors
-
-- Common Errors / Reasons for projects not to run (we can grow a similar list as the class goes on to help everyone get past common pitfalls):
-  - Local libraries that you installed and not everyone else did the same.
-  - Accessing files or fonts using local paths that will not be the same on running on someone else's machine (this one is annoying).
-    - Example:
-      - Your path: `C:\my_documents\pythonProjects\PyCharm\P01\Helvetica.ttf`
-      - My Path: `/User/griffin/Projects/P01/Helvetica.ttf`
-      - We both have P01 folders looking for `Helvetica.ttf`, but the whole path is different. We will also discuss this in class (relative vs absolute paths).
-  - Hard-coding names of external resources that you do not provide:
-    - Example: You called your data file **"data.txt"** and use: `open("data.txt")` I called my file **"data.dat"** and now your program crashes.
-    - Solution: Read in the filename when the user runs your program, so you get the proper local name ( I will discuss in class argv or command line params)
-
-
-## Example Assignment README
-
-```
-## P02 - Bouncy Balls
-### Sally Smith
-### Description:
-
-Bacon ipsum dolor amet pork loin kielbasa pork, drumstick leberkas shankle strip steak fatback beef ribs ham hock.
-Pork short ribs doner andouille cupim pastrami picanha landjaeger pig. Salami swine capicola spare ribs boudin
-leberkas. Capicola ground round pork meatloaf, ham jowl swine prosciutto bacon alcatra pancetta burgdoggen pig
-spare ribs leberkas. Shankle fatback ground round, porchetta frankfurter cupim venison strip steak pig meatball
-biltong filet mignon. Shoulder chislic ground round pork burgdoggen hamburger.
-
-### Files
-
-|   #   | File            | Description                                        |
-| :---: | --------------- | -------------------------------------------------- |
-|   1   | Main.cpp         | Main driver of my project that launches game.      |
-|   2   | HelperClass.cpp  | Helper class that holds movement functions         |
-|   3   | TextureClass.cpp | Helper class that assists with textures and images |
-
-### Instructions
-
-- Make sure you install library `blahblah.cpp`
-- My program expects two parameters to be placed on the command line when you run the program.
-- Parameters `<input file> <number of players>`
-- The input file should be formatted with a players name and age on a seperate line:
-
-+------------+
-| name1 age1 |
-| name2 age2 |
-| etc...     |
-+------------+
-
-- Example Command:
-    - `python <code> <input file> <num players>`
-    - `python main.cpp input.txt 3`
-
-```
-
-The above markdown will produce a README that looks like:
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/assignmet_readme_example_2020.png" width="600">
-
-
+- No matter which class you are in, place the following at the beginning of your subject line of the email: `cmps:` (lower case)
+- Why? So I can use email rules to send student emails to a folder that I can keep an eye on and respond to in an expedient fashion.
+- Example: `cmps: Help with P2`
+- or `cmps: Discuss group assignment`
+- or `cmps: ...`
+- You get the idea. 
