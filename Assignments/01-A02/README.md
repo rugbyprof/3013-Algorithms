@@ -1,5 +1,5 @@
 ## Assignment 2 - Establishing Comms
-#### Due: 01-23-2024 (Tue @ 11 or 4)
+#### Due: 01-22-2024 (Tue @ 11 or 4)
 
 
 ## Getting Setup
@@ -26,8 +26,6 @@ You can ask questions multiple ways on Slack. Either on our public class channel
 
 You should have gotten an invite already from me. Accept it. If you didn't, ask me for another invite. [Here](https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-users) is a getting started guide to help you use slack. Slack is an app. It can be installed OR viewed via a web browser using a URL.
 
-Add yourself to the `#3013-alg` channel.
-
 #### Slack provides
 
 - Team chat (class members and myself).
@@ -48,6 +46,9 @@ Now that we have our communication client set up, we probably need to start gett
 
 
 - Invite to Griffin's Slack Channel <a href="https://join.slack.com/t/griffin-courses/shared_invite/zt-cw6fonr5-_CTN1kbgP3UaL9kRAzUICw" target="_blank">**HERE**</a>
+
+
+Add yourself to the `#3013-alg` channel.
 
 
 ### Class Roster
