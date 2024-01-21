@@ -1,5 +1,5 @@
 ## Assignment 1 - Code Repository
-#### Due: 01-22-2024 (Mon @ 11 or 4)
+#### Due: 01-22-2024 (Mon @ 2)
 
 
 ## Github
@@ -50,8 +50,7 @@ I use Github as a home-base for all assignments, lectures, and resources. It's b
 - When you create a Github account, you must choose a `username`.
 - This is very important to remember, because you will update the class roster with this username so I know where to find all your assignments.
 - Create a repository named:
-    - `4443-MobileApps`  or
-    - `5373-MobileApps`  depending on your section.
+    - `3013-Algorithms`
 - Check the box that says: "Add a README.md file"
 - The repo name is important! Copy it exactly. I have scripts that build a URL with your github username and the repo name above. If you don't follow naming conventions, it means your stuff will not be graded or counted late.
 
