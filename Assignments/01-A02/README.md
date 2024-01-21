@@ -1,5 +1,5 @@
 ## Assignment 2 - Establishing Comms
-#### Due: 01-22-2024 (Tue @ 11 or 4)
+#### Due: 01-22-2024 (Tue @ 2:00)
 
 
 ## Getting Setup

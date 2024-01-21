@@ -1,5 +1,5 @@
 ## Assignment 1 - Code Repository
-#### Due: 01-22-2024 (Mon @ 2)
+#### Due: 01-22-2024 (Mon @ 2:00)
 
 
 ## Github
