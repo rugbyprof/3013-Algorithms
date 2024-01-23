@@ -175,4 +175,6 @@ bool Bst<T>::Find(T key) {
 
 template <typename T>
 void Bst<T>::Delete() {
+    // needs implementing
+    
 }

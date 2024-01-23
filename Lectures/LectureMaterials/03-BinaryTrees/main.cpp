@@ -52,7 +52,7 @@ int main() {
     double i = 0.0;
     while(!fin.eof()){
         fin>>word;
-        //cout<<word<<" ";
+        cout<<word<<" ";
         Tree.Insert(word);
         if((int)i%1000 == 0){
             cout<<(i/128325.0)<<endl;

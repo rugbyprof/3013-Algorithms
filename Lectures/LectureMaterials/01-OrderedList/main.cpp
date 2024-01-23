@@ -93,8 +93,9 @@ public:
         Head = NULL;
     }
 
-
-
+    ~OrderedList(){
+        // needs implementing. Good practice of deleting a list via a traversal.
+    }
 
     void Insert(Person P){
         Node* Temp = new Node(P);   // allocate new memory
