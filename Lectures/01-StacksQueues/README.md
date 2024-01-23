@@ -1,5 +1,5 @@
 ## Review - Stacks & Queues
-#### Due: Never 
+#### Due: N/A 
 
 ### Topics
 - On day one we discussed:

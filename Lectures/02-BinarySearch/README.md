@@ -1,5 +1,5 @@
 ## Binary Search - Plus Other Stuff
-#### Due: Never 
+#### Due: N/A 
 
 In class on the 22<sup>nd</sup> of January I introduced a variety of concepts which included:
 
