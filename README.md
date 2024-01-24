@@ -1,5 +1,7 @@
 # 3013-Algorithms
 
+https://join.slack.com/t/griffin-courses/shared_invite/zt-cw6fonr5-_CTN1kbgP3UaL9kRAzUICw
+
 ### Roster
 
 <a href="https://docs.google.com/spreadsheets/d/1i2aETP-EXcS9My_l-fHbD_4uUTFwY_hNFVnCChDz0MQ/edit?usp=sharing"><img src="https://images2.imgbox.com/38/ed/t8796trL_o.png" alt="image host" width="20"/> &nbsp;&nbsp; 3013 - Class Roster</a> 
