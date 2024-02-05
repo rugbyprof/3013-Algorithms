@@ -1,5 +1,5 @@
 ## Program 1 - Vector Class
-#### Due: 02-05-2024 (Mon @ 2:00)
+#### Due: Extra Credit
 
 ## Overview
 
