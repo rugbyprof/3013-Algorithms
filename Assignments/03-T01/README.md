@@ -60,6 +60,8 @@
 - What is the time complexity of search in a balanced binary tree?
 - What is the time complexity of search in an unbalanced binary tree?
 
+-----
+
 **Website Browsing Session History**
    - **Situation**: A web browser needs to manage a user's browsing session history to support forward and backward navigation.
    - **Question**: How would you design the session history feature using only stacks and/or queues, and why?
@@ -84,6 +86,8 @@
   - **Situation**: You're tasked with designing a load balancer that evenly distributes incoming network requests to a set of servers. Upon receiving a request, the load balancer should forward it to the server with the least current load.
   - **Question**: Using only arrays/lists and basic operations, how would you implement a system to track and update the load on each server as requests are assigned and completed?
 
+-----
+
 - What is a primary advantage of using an array over a linked list?
 
 - What is a primary advantage of using a list over an array?
@@ -100,6 +104,8 @@ Both arrays and linked lists have their benefits, and hinderences. Know them. Fo
 
 Arrays and linked lists both have their upsides and downsides. So you should be able to list a few examples when you should or should not use an array or when you should or should not use a linked list.
 
+-----
+
 #### List or Array
 - Data structure with elements stored in contiguous memory locations.  
 - Efficient random access of elements by their index.  
@@ -112,7 +118,9 @@ Arrays and linked lists both have their upsides and downsides. So you should be 
 - Memory overhead due to storing pointers to the next (and possibly previous) elements.  
 - Elements are accessed sequentially starting from the head.
 
-#### Stacks Queues or Priority Queue
+-----
+
+#### Stack Queue or Priority Queue
 
 - Operates on a First In, First Out (FIFO) principle.  
 - Used for managing tasks in order of importance, not just arrival time.  
