@@ -7,8 +7,8 @@
 - [Stacks & Queues](../../Lectures/LectureMaterials/01-StacksQueues/README.md)
 - [Linked Lists](../../Lectures/LectureMaterials/00-LinkedList/README.md)
 - [Bubble Sort Vs Selection Sort](../../Lectures/LectureMaterials/00-BubbleVSelection/README.md)
-- Array Based Binary Search
-- Array Based Binary Tree
+- [Array Based Binary Search](../../Lectures/LectureMaterials/02-BinarySearch/README.md)
+- [Array Based Binary Tree](../../Lectures/LectureMaterials/00-ArrayBasedBinaryTree/)
 - [Heap Memory vs Stack Memory](../../Lectures/LectureMaterials/05-StackMemVsHeapMem/README.md)
 
 
@@ -53,3 +53,6 @@
 - ~~Delete a value from a given binary tree~~
 - ~~Write a recursive traversal of a binary search tree.~~ 
 - ~~Do an inorder, preorder, and postorder traversal of a tree.~~ 
+
+
+
