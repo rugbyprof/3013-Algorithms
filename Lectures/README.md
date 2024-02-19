@@ -1,14 +1,10 @@
 ## Lectures
 
-| Folder | Title | Description | Due | dueDate |  |
-|:------|:------|:------|:------|:-----:|-----|
-| ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/00-Replits">00-Replits</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/00-Replits">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/00-Replits">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/00-Replits">N/A</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/00-Replits">None</a>*** |  |
-| ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials">LectureMaterials</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials"> Placeholder Readme </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials"> No Description</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials">N/A</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials">None</a>*** |  |
+| Folder | Title | Description | Due Date | Due |  |
+|:------|:------|:------|:-----:|:-----:|-----|
+| ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/00-Replits">00-Replits</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/00-Replits">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/00-Replits">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/00-Replits">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/00-Replits">N/A</a>*** |  |
+| ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials">LectureMaterials</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials"> Placeholder Readme </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials"> No Description</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/LectureMaterials">N/A</a>*** |  |
 
-<<<<<<< HEAD
-<sup>Last Updated: 2024-02-14 (Wed @ 13:08)</sup> 
-=======
-<sup>Last Updated: 2024-02-19 (Mon @ 12:25)</sup> 
->>>>>>> db18337 (Pushed from Terrys-MacPro-15)
+<sup>Last Updated: 2024-02-19 (Mon @ 12:26)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 
