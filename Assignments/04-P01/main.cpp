@@ -3,7 +3,7 @@
  * However, getch does not print the character to the terminal, it
  * lets you decide what to do based on what character you are pressing.
  *
- * You can test which characters are being pressed using thier ascii values.
+ * You can test which characters are being pressed using their ascii values.
  *
  * An ascii table here should be helpful
  *      http://www.asciitable.com/
@@ -24,72 +24,87 @@
  * https://repl.it/@rugbyprof/getchexample#main.cpp
  */
 
+#include "./headers/ioctl.h"
 #include "./headers/json.hpp"
 #include "./headers/mygetch.hpp"
 #include "./headers/termcolor.hpp"
 #include "./headers/timer.hpp"
-#include "./headers/ioctl.h"
 #include <algorithm>
+#include <chrono>
 #include <fstream>
 #include <iostream>
-#include <vector>
-#include <time.h>
 #include <termios.h>
+#include <thread>
+#include <time.h>
+#include <vector>
 
 using namespace std;
 
-#define BLINK             termcolor::blink
-#define BLUE              termcolor::blue
-#define BOLD              termcolor::bold
-#define BRIGHT_BLUE       termcolor::bright_blue
-#define BRIGHT_CYAN       termcolor::bright_cyan
-#define BRIGHT_GREEN      termcolor::bright_green
-#define BRIGHT_GREY       termcolor::bright_grey
-#define BRIGHT_MAGENTA    termcolor::bright_magenta
-#define BRIGHT_RED        termcolor::bright_red
-#define BRIGHT_WHITE      termcolor::bright_white
-#define BRIGHT_YELLOW     termcolor::bright_yellow
-#define COLOR             termcolor::color
-#define COLOR             termcolor::color
-#define COLORIZE          termcolor::colorize
-#define CONCEALED         termcolor::concealed
-#define CROSSED           termcolor::crossed
-#define CYAN              termcolor::cyan
-#define DARK              termcolor::dark
-#define GREEN             termcolor::green
-#define GREY              termcolor::grey
-#define IS_ATTY           termcolor::is_atty
-#define IS_COLORIZED      termcolor::is_colorized
-#define ITALIC            termcolor::italic
-#define MAGENTA           termcolor::magenta
-#define NOCOLORIZE        termcolor::nocolorize
-#define ON_BLUE           termcolor::on_blue
-#define ON_BRIGHT_BLUE    termcolor::on_bright_blue
-#define ON_BRIGHT_CYAN    termcolor::on_bright_cyan
-#define ON_BRIGHT_GREEN   termcolor::on_bright_green
-#define ON_BRIGHT_GREY    termcolor::on_bright_grey
+#define BLINK termcolor::blink
+#define BLUE termcolor::blue
+#define BOLD termcolor::bold
+#define BRIGHT_BLUE termcolor::bright_blue
+#define BRIGHT_CYAN termcolor::bright_cyan
+#define BRIGHT_GREEN termcolor::bright_green
+#define BRIGHT_GREY termcolor::bright_grey
+#define BRIGHT_MAGENTA termcolor::bright_magenta
+#define BRIGHT_RED termcolor::bright_red
+#define BRIGHT_WHITE termcolor::bright_white
+#define BRIGHT_YELLOW termcolor::bright_yellow
+#define COLOR termcolor::color
+#define COLOR termcolor::color
+#define COLORIZE termcolor::colorize
+#define CONCEALED termcolor::concealed
+#define CROSSED termcolor::crossed
+#define CYAN termcolor::cyan
+#define DARK termcolor::dark
+#define GREEN termcolor::green
+#define GREY termcolor::grey
+#define IS_ATTY termcolor::is_atty
+#define IS_COLORIZED termcolor::is_colorized
+#define ITALIC termcolor::italic
+#define MAGENTA termcolor::magenta
+#define NOCOLORIZE termcolor::nocolorize
+#define ON_BLUE termcolor::on_blue
+#define ON_BRIGHT_BLUE termcolor::on_bright_blue
+#define ON_BRIGHT_CYAN termcolor::on_bright_cyan
+#define ON_BRIGHT_GREEN termcolor::on_bright_green
+#define ON_BRIGHT_GREY termcolor::on_bright_grey
 #define ON_BRIGHT_MAGENTA termcolor::on_bright_magenta
-#define ON_BRIGHT_RED     termcolor::on_bright_red
-#define ON_BRIGHT_WHITE   termcolor::on_bright_white
-#define ON_BRIGHT_YELLOW  termcolor::on_bright_yellow
-#define ON_COLOR          termcolor::on_color
-#define ON_COLOR          termcolor::on_color
-#define ON_CYAN           termcolor::on_cyan
-#define ON_GREEN          termcolor::on_green
-#define ON_GREY           termcolor::on_grey
-#define ON_MAGENTA        termcolor::on_magenta
-#define ON_RED            termcolor::on_red
-#define ON_WHITE          termcolor::on_white
-#define ON_YELLOW         termcolor::on_yellow
-#define RED               termcolor::red
-#define RESET             termcolor::reset
-#define REVERSE           termcolor::reverse
-#define UNDERLINE         termcolor::underline
-#define WHITE             termcolor::white
-#define YELLOW            termcolor::yellow
-#define IS_ATTY           termcolor::is_atty
-#define IS_COLORIZED      termcolor::is_colorized
+#define ON_BRIGHT_RED termcolor::on_bright_red
+#define ON_BRIGHT_WHITE termcolor::on_bright_white
+#define ON_BRIGHT_YELLOW termcolor::on_bright_yellow
+#define ON_COLOR termcolor::on_color
+#define ON_COLOR termcolor::on_color
+#define ON_CYAN termcolor::on_cyan
+#define ON_GREEN termcolor::on_green
+#define ON_GREY termcolor::on_grey
+#define ON_MAGENTA termcolor::on_magenta
+#define ON_RED termcolor::on_red
+#define ON_WHITE termcolor::on_white
+#define ON_YELLOW termcolor::on_yellow
+#define RED termcolor::red
+#define RESET termcolor::reset
+#define REVERSE termcolor::reverse
+#define UNDERLINE termcolor::underline
+#define WHITE termcolor::white
+#define YELLOW termcolor::yellow
+#define IS_ATTY termcolor::is_atty
+#define IS_COLORIZED termcolor::is_colorized
 
+void debug(string s = "", string end = "\n") {
+    static int call = 1;
+    cout << "Debug " << call << ":" << s << end;
+    call++;
+}
+
+void print(string s, string end = "\n") {
+    cout << s << end;
+}
+
+void sleep_for_milliseconds(int milliseconds) {
+    std::this_thread::sleep_for(std::chrono::milliseconds(milliseconds));
+}
 
 /**
  * screenWidth
@@ -102,38 +117,36 @@ using namespace std;
  * Returns:
  *      int - column count
  */
-int screenWidth(string subtract="") {
-  // Get the terminal size
-  struct winsize w;
-  ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
+int screenWidth(string subtract = "") {
+    // Get the terminal size
+    struct winsize w;
+    ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
 
-  if(subtract.size() > 0){
-      return w.ws_col-subtract.size();
-  }
+    if (subtract.size() > 0) {
+        return w.ws_col - subtract.size();
+    }
 
-  return w.ws_col;
+    return w.ws_col;
 }
 
-
-
-/**
- * countLines
- *
- * Description:
- *      Originally wrote this to count size of input file so
- *      I could allocate enough memory for an array of strings.
- *      Even though I went with a vector below, this isn't totally
- *      useless.
- * Params:
- *      string file_name - file to get the line count
- *
- * Returns:
- *      int - line count
- */
-int countLines(string file_name) {
-    ifstream inFile(file_name);
-    return count(istreambuf_iterator<char>(inFile), istreambuf_iterator<char>(), '\n');
-}
+// /**
+//  * countLines
+//  *
+//  * Description:
+//  *      Originally wrote this to count size of input file so
+//  *      I could allocate enough memory for an array of strings.
+//  *      Even though I went with a vector below, this isn't totally
+//  *      useless.
+//  * Params:
+//  *      string file_name - file to get the line count
+//  *
+//  * Returns:
+//  *      int - line count
+//  */
+// int countLines(string file_name) {
+//     ifstream inFile(file_name);
+//     return count(istreambuf_iterator<char>(inFile), istreambuf_iterator<char>(), '\n');
+// }
 
 /**
  * loadData
@@ -148,21 +161,22 @@ int countLines(string file_name) {
  *      int - line count
  */
 vector<string> loadData(string file_name) {
-    ifstream fin;                            // file to get animal names
-    int count = (countLines(file_name) + 1); // get size of input file
-    vector<string> array(count);             // allocate vector of correct size
+    debug("loadfile");
+    ifstream fin; // file to get animal names
+    // int count = (countLines(file_name) + 1); // get size of input file
+    // debug("cout: " + to_string(count));
+    vector<string> array; // allocate vector of correct size
+    string animal;
 
-    fin.open("./data/animal_names.txt"); // open file for reading
+    fin.open("./data/animals_small.txt"); // open file for reading
 
     // knowing the size of the file lets us treat
     // it like an array without using .push_back(value)
-    for (int i = 0; i < count; i++) {
-        fin >> array[i];  
-                 // read in animals
-        for (auto &c : array[i]) { // c++ 11 style loop
-            c = tolower(c);        // lowercase the animal name
-
-        }
+    while (fin >> animal) {
+        cout << animal << endl;
+        // animal = tolower(animal);
+        array.push_back(animal);
+        // read in animals
     }
 
     return array;
@@ -186,10 +200,9 @@ vector<string> partialMatch(vector<string> array, string substring) {
     size_t found;           // size_t is an integer position of
                             // found item. -1 if its not found.
 
-    if(substring.size() == 0){
+    if (substring.size() == 0) {
         return matches;
     }
-
 
     for (int i = 0; i < array.size(); i++) { // loop through array
         found = array[i].find(substring);    // check for substr match
@@ -201,13 +214,14 @@ vector<string> partialMatch(vector<string> array, string substring) {
     return matches;
 }
 
-void titleBar(string title, int length = 0){
-    string line = string(length,' ');
-    cout<<UNDERLINE<<BRIGHT_CYAN<<title<<RESET<<line<<endl;
+void titleBar(string title, int length = 0) {
+    string line = string(length, ' ');
+    cout << UNDERLINE << BRIGHT_CYAN << title << RESET << line << endl;
 }
 
 int main() {
-    char k;                 // holder for character being typed
+
+    char k; // holder for character being typed
     string key;
     string word = "";       // var to concatenate letters to
     vector<string> animals; // array of animal names
@@ -215,51 +229,50 @@ int main() {
     int loc;                // location of substring to change its color
     string title = "GETCH WORD LOOKUP";
     string resultsLabel = "RESULTS:";
-    string *line;
-    string *message;
+    string line;
+    string message;
     string pbp;
     bool deleting = false;
     string temp;
     int cols = screenWidth();
 
-
-
-
     Timer T;   // create a timer
     T.Start(); // start it
 
-    animals = loadData("./data/animal_names.txt");
+    debug();
 
+    animals = loadData("./data/animal_names.txt");
 
     T.End(); // end the current timer
 
     int nanoseconds = (int)T.NanoSeconds();
     int i;
-    for(i=0;nanoseconds != 0;i++){
-        cout<<nanoseconds<<endl;
+    for (i = 0; nanoseconds != 0; i++) {
+        cout << nanoseconds << endl;
         nanoseconds = nanoseconds / 10;
     }
+    debug();
 
-
-
-
-    system("clear");
+    // system("clear");
 
     // line = new string(screenWidth(title.size()),' ');
-    message = new string("These values are showing how long it took to load the data file in three different time granularities.\n");
-    cout<<termcolor::underline<<termcolor::bold<<termcolor::bright_cyan<<title<<*line<<termcolor::reset<<endl<<endl;
+    message = "These values are showing how long it took to load the data file in three different time granularity's.\n";
+    cout << termcolor::underline << termcolor::bold << termcolor::bright_cyan << title << line << termcolor::reset << endl
+         << endl;
+    debug();
     // print out how long it took to load the animals file
-    cout<<termcolor::bright_magenta<<*message<<termcolor::reset<<endl;
-    cout<<termcolor::underline<<termcolor::cyan<<"Load Times:"<< termcolor::reset<<endl;
-    cout << termcolor::bold<<termcolor::green <<"   Seconds:      "<< termcolor::yellow <<T.Seconds() << termcolor::reset<< endl;
-    cout << termcolor::bold<<termcolor::green <<"   Milliseconds: "<< termcolor::yellow <<T.MilliSeconds() << termcolor::reset<< endl;
-    cout << termcolor::bold<<termcolor::green <<"   NanoSeconds:  "<< termcolor::yellow <<T.NanoSeconds() << termcolor::reset<< endl;
-    line = new string(cols,' ');
-    cout<<termcolor::underline<<termcolor::bold<<termcolor::bright_cyan<<*line<<termcolor::reset<<endl<<endl;
+    cout << termcolor::bright_magenta << message << termcolor::reset << endl;
+    cout << termcolor::underline << termcolor::cyan << "Load Times:" << termcolor::reset << endl;
+    cout << termcolor::bold << termcolor::green << "   Seconds:      " << termcolor::yellow << T.Seconds() << termcolor::reset << endl;
+    cout << termcolor::bold << termcolor::green << "   Milliseconds: " << termcolor::yellow << T.MilliSeconds() << termcolor::reset << endl;
+    cout << termcolor::bold << termcolor::green << "   NanoSeconds:  " << termcolor::yellow << T.NanoSeconds() << termcolor::reset << endl;
 
+    cout << termcolor::underline << termcolor::bold << termcolor::bright_cyan << line << termcolor::reset << endl
+         << endl;
+    debug();
     // While capital Z is not typed keep looping
     while ((k = getch()) != 'Z') {
-        
+        debug();
         T.Start(); // start it
         // Tests for a backspace and if pressed deletes
         // last letter from "word".
@@ -272,7 +285,7 @@ int main() {
             deleting = false;
             // Make sure a letter was pressed and only letter
             if (!isalpha(k)) {
-                cout <<termcolor::on_bright_red<< termcolor::bright_white<<"Letters only!" <<termcolor::reset<< endl;
+                cout << termcolor::on_bright_red << termcolor::bright_white << "Letters only!" << termcolor::reset << endl;
                 sleep(1);
                 continue;
             }
@@ -297,34 +310,29 @@ int main() {
             // straight forward. Strings and precision output are convoluted
             // at best. And drive you crazy at worst
 
-
-
-
-
             system("clear");
+
             pbp = "Play By Play";
 
-            message = new string("User is typing keys, building a search string with every key stroke:" + word);
-            line = new string(screenWidth(pbp.size()),' ');
+            message = "User is typing keys, building a search string with every key stroke:" + word;
 
-
-            cout<<termcolor::underline<<termcolor::bold<<termcolor::bright_cyan<<pbp<<*line<<termcolor::reset<<endl<<endl;
-            cout<<termcolor::bright_magenta<<*message<<termcolor::reset<<endl;
+            cout << termcolor::underline << termcolor::bold << termcolor::bright_cyan << pbp << line << termcolor::reset << endl
+                 << endl;
+            cout << termcolor::bright_magenta << message << termcolor::reset << endl;
             // line = new string(screenWidth(),' ');
-            cout<<termcolor::underline<<termcolor::bold<<termcolor::bright_cyan<<title<<*line<<termcolor::reset<<endl;
-            cout << termcolor::green << termcolor::bold<<"   Seconds:\t\t"<<termcolor::reset<<termcolor::yellow << printf("%.17f", (double)T.NanoSeconds() / 1000000000)
-                 << termcolor::reset<< endl;
-            cout << termcolor::green<< termcolor::bold<< "   Keypressed: \t\t" << termcolor::yellow;
-            if(int(k)==127){
-                cout<<"del";
+            cout << termcolor::underline << termcolor::bold << termcolor::bright_cyan << title << line << termcolor::reset << endl;
+            cout << termcolor::green << termcolor::bold << "   Seconds:\t\t" << termcolor::reset << termcolor::yellow << printf("%.17f", (double)T.NanoSeconds() / 1000000000)
+                 << termcolor::reset << endl;
+            cout << termcolor::green << termcolor::bold << "   KeyPressed: \t\t" << termcolor::yellow;
+            if (int(k) == 127) {
+                cout << "del";
             } else {
                 cout << k;
             }
-            cout<< " = "<< (int)k << termcolor::reset << endl;
-            cout << termcolor::green<< termcolor::bold<<"   Current Substr: \t" << termcolor::reset<<termcolor::red << word << termcolor::reset << endl;
-            line = new string(getWidth(resultsLabel.size()),' ');
-            cout<<endl;
-            cout<<termcolor::underline<<termcolor::bold<<termcolor::bright_cyan<<resultsLabel<<*line<<termcolor::reset<<endl;
+            cout << " = " << (int)k << termcolor::reset << endl;
+            cout << termcolor::green << termcolor::bold << "   Current Substr: \t" << termcolor::reset << termcolor::red << word << termcolor::reset << endl;
+            cout << endl;
+            cout << termcolor::underline << termcolor::bold << termcolor::bright_cyan << resultsLabel << line << termcolor::reset << endl;
 
             cout << termcolor::green;
             // This prints out all found matches
@@ -335,17 +343,17 @@ int main() {
                 if (loc != string::npos) {
                     // print one letter at a time turning on red or green
                     //  depending on if the matching subtring is being printed
-                    cout<<termcolor::bold;
+                    cout << termcolor::bold;
                     for (int j = 0; j < matches[i].size(); j++) {
                         // if we are printing the substring turn it red
                         if (j >= loc && j <= loc + word.size() - 1) {
                             cout << termcolor::red;
                         } else {
-                            cout <<termcolor::blue;
+                            cout << termcolor::blue;
                         }
                         cout << matches[i][j];
                     }
-                    cout <<termcolor::blue;
+                    cout << termcolor::blue;
                 }
                 cout << " ";
             }
