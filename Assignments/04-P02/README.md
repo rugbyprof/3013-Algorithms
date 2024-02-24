@@ -1,5 +1,5 @@
-## Background - Using Json and Getch
-#### Due: NA
+## Linear Search - Using Json and Getch
+#### Due: March 6<sup>th</sup> @ 2:00
 
 ### Get Running
 
