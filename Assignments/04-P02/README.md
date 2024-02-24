@@ -1,17 +1,20 @@
-## Program 2 - AutoComplete in Linear Time
-#### Due: 02-19-2023 (Monday @ 11:00 a.m.)
+## Background - Using Json and Getch
+#### Due: NA
 
-### Waste Of Time Lookup
+### Get Running
 
-I used to start this project with a linear time lookup container like a linked list. This time we will use a Json object and simply search the keys (words) in a websters dictionary data file I found. This project is about 1) learning about Json, and what its good for, and what its bad for. We won't be using it correctly, but we will still use it. 2) Creating our own `Algorithm` to find words in the Json object based on keys typed by a user.
+Get a combination of [main.cpp](./main.cpp) running but with it using a json object that loads all the dictionary words from [dictionary.json](./data/dictionary.json). Currently [main.cpp](./main.cpp) loads [animals_small.txt](./data/animals_small.txt) as an example on how the program works. It will show suggested words after you type a character into the terminal. It matches to any location within the word: from, middle, end. 
 
-This project is about loading a vector (array) with dictionary words, then timing how long it takes to look them up. We are doing this with the knowledge that this can still be improved upon even though it is O(lg n) search. We will use your code again for a subsequent program, so keep this in mind when designing your project 
+The program [loadJsonEx.cpp](./loadJsonEx.cpp) does load the [dictionary.json](./data/dictionary.json) into a searchable data structure, and searches for the word `axal` by default. 
 
-### Necessary Files
+This assignment will be a simple example of doing a linear search in a json object, but when it finds partial matches of a substring in a word, it prints it out (with color!).
+
+
+### Files
 
 | File               | Description                                        | Location                                       |
 | :----------------- | :------------------------------------------------- | :--------------------------------------------- |
-| `animal)names.txt` | Small list of animals (good test file)             | [data/animals.txt](./data/animals.txt)         |
+| `animal_names.txt` | Small list of animals (good test file)             | [data/animals.txt](./data/animals.txt)         |
 | `dictionary.txt`   | Words only                                         | [data/dictionary.txt](./data/dictionary.txt)   |
 | `dictionary.json`  | Words + definitions                                | [data/dictionary.json](./data/dictionary.json) |
 | `main.cpp`         | Example driver that reads in words and uses getch. | [./main.cpp](./main.cpp)                       |
@@ -43,14 +46,11 @@ Read [this about json](../../Lectures/LectureMaterials/16-Json/README.md) from t
 ## Assignment
 
 ### Requirements
-- Write a program that will read in a dictionary file from [dictionary.json](./data/dictionary.json) and store it in a **json object** .
-- The loaded json object will work just like a dictionary.
-- The linked list should hold `wordNodes`.
-- Time how long it takes to load the data into your linked list (we will use that later as well).
-- After your dictionary (linked list) is loaded, we are going to perform "autosuggestions" when a user types characters at the console.
+- Write a program that will combine the two files: `main.cpp` and `loadJsonEx.cpp` so that `main.cpp` uses the dictionary to look for partial matches in. 
+- Time how long it takes to load the data into the json object initially. 
+- After your dictionary is loaded, we are going to perform "autosuggestions" when a user types characters at the console.
 - Suggestions will start after 1 character is typed, however only the top 10 suggestions will be printed along with the total number of matching words (example output below).
-- Matching suggestions will ONLY be words that match the substring starting from position zero. For example: `cat` would match `cat`, `caterpillar`, and `cattle`. But NOT `wildcat`.
-- My example on repl.it matches every word that matches the substring no matter the position.
+- Matching suggestions will ONLY be words that match the substring starting from position zero. For example: `cat` would match `cat`, `caterpillar`, and `cattle`. But **NOT** `wildcat`.
 - As typing, the time it takes to find suggestions will be displayed in seconds. Like: `0.0000554310000000019` seconds.
 - In addition I have included a file to help color text. Docs are here: https://termcolor.readthedocs.io/ but I included some examples in [main.cpp](main.cpp).
 
@@ -87,25 +87,5 @@ steel steele steeled steelers steeles steelhead steelie steelier steelies steeli
 
 - Create a folder called **P02** in your assignments folder. 
 - **ALL** files used in this project should be in that folder.
-- The only documents you need to print and turn in are:
-  - Banner
-  - Any source code YOU wrote (commented as directed [here](../../Resources/01-Comments/README.md))
-  - 4 screen shots (fitted to one page)
-  - If your banner is wrong: -1 letter grade. The banner is to keep your programs organized. Or I can stop taking late work ...
-
-
-#### Banner
-
-```
-P02
-3013
-LASTNAME
-```
-
-#### Example Screen Shot
-
-- Of course your screens will differ slightly, however they should fit on one page
-- Be readable and have four examples
-- Also the text in my screenshots is small, try and make yours larger even if the words wrap
-
-<img src="https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/screen.png" width="500">
+- Any source code YOU wrote (commented as directed [here](../../Resources/01-Comments/README.md))
+- 4 screen shots showing your program searching for words (example output above)

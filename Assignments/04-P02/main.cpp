@@ -241,7 +241,7 @@ int main() {
 
     debug();
 
-    animals = loadData("./data/animal_names.txt");
+    animals = loadData("./data/animals_small.txt");
 
     T.End(); // end the current timer
 
