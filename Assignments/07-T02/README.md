@@ -3,13 +3,13 @@
 
 ### Topics
 
-- Complexity
-- Binary Tree's
-- Balanced Trees (AVL)
-- Tree Traversals
-- Basic Recursion Concepts
-- Json
-- Getch
+- [Complexity](../../Lectures/LectureMaterials/00-Big-Oh/README.md)
+- [Binary Tree's](./bst.md)
+- [Balanced Trees (AVL)](./avl.md)
+- [Tree Traversals](./bst.md)
+- [Basic Recursion Concepts](./recursion.md)
+- [Json](./jsonVc++.md)
+- [Getch](./getch.md)
 
 
 Resources/03-Json/jsonVc++.md
