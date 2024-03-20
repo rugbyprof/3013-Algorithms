@@ -67,9 +67,13 @@ vector<string> partialMatch(vector<string> array, string substring) {
     }
 
     for (int i = 0; i < array.size(); i++) { // loop through array
-        found = array[i].find(substring);    // check for substr match
-        if (found != string::npos) {         // if found >= 0 (its found then)
-            matches.push_back(array[i]);     // add to matches
+        // found is the position of the first letter of the substr.
+        // string::npos is a null value meaning its not found
+        found = array[i].find(substring); // check for substr match
+
+        // if found is zero then the substring is at the beginning of the word
+        if (found != string::npos) {     // if found >= 0 (its found then)
+            matches.push_back(array[i]); // add to matches
         }
     }
 

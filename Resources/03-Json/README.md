@@ -17,8 +17,10 @@
 
 ### Some Simple Rules
 
-- `{}` curly braces imply **object**.
+- `{}` curly braces imply **object**. 
 - An **object** is a collection of `key value pairs`.
+- In C++ the closest data type would be an STL Map.
+- Int
 - `[]` square brackets imply **array**.
 - You can mix and match all of these constructs to create complex data structures.
 
@@ -165,3 +167,6 @@
 
 ```
 
+
+
+Can you explain the rules behind json's structure, and how objects and lists can be formatted or arranged in almost any manner in order to represent complex data structures? 

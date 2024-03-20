@@ -1,5 +1,5 @@
 ## Test 1 - Various Topics
-#### Due: 02-12-2024 (Friday @ 10:00 a.m.)
+#### Due: 02-12-2024 (Friday @ 2:00 p.m.)
 
 ### Topics
 

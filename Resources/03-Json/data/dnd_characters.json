@@ -1,0 +1,118 @@
+{
+    "Wizard": [
+        {
+            "character_name": "Aelar",
+            "special_ability": "Fireball",
+            "items": [
+                "Wand of Magic Missiles",
+                "Spellbook",
+                "Potion of Healing"
+            ]
+        },
+        {
+            "character_name": "Miriel",
+            "special_ability": "Teleportation",
+            "items": [
+                "Ring of Teleportation",
+                "Cloak of Invisibility",
+                "Amulet of Health"
+            ]
+        },
+        {
+            "character_name": "Baelin",
+            "special_ability": "Illusion Mastery",
+            "items": [
+                "Orb of Illusions",
+                "Mirror of Scrying",
+                "Robes of the Archmagi"
+            ]
+        }
+    ],
+    "Rogue": [
+        {
+            "character_name": "Keth",
+            "special_ability": "Stealth",
+            "items": [
+                "Boots of Elvenkind",
+                "Dagger of Venom",
+                "Thieves' Tools"
+            ]
+        },
+        {
+            "character_name": "Jenks",
+            "special_ability": "Lock Picking",
+            "items": [
+                "Masterwork Lock Picks",
+                "Potion of Invisibility",
+                "Grappling Hook"
+            ]
+        },
+        {
+            "character_name": "Fenthwick",
+            "special_ability": "Backstab",
+            "items": [
+                "Short Sword of Quickness",
+                "Cloak of Displacement",
+                "Bag of Holding"
+            ]
+        }
+    ],
+    "Paladin": [
+        {
+            "character_name": "Davram",
+            "special_ability": "Divine Smite",
+            "items": [
+                "Holy Avenger",
+                "Full Plate Armor of Resistance",
+                "Shield of Faith"
+            ]
+        },
+        {
+            "character_name": "Seraphine",
+            "special_ability": "Lay on Hands",
+            "items": [
+                "Gauntlets of Ogre Power",
+                "Ring of Protection",
+                "Banner of Command"
+            ]
+        },
+        {
+            "character_name": "Gorath",
+            "special_ability": "Aura of Protection",
+            "items": [
+                "Sword of Justice",
+                "Breastplate of Valor",
+                "Helm of Comprehension"
+            ]
+        }
+    ],
+    "Ranger": [
+        {
+            "character_name": "Thia",
+            "special_ability": "Animal Companion",
+            "items": [
+                "Longbow of Accuracy",
+                "Quiver of Ehlonna",
+                "Boots of the Winterlands"
+            ]
+        },
+        {
+            "character_name": "Arannis",
+            "special_ability": "Volley",
+            "items": [
+                "Composite Longbow",
+                "Cloak of the Bat",
+                "Potion of Eagle's Splendor"
+            ]
+        },
+        {
+            "character_name": "Biryn",
+            "special_ability": "Hide in Plain Sight",
+            "items": [
+                "Camouflage Cloak",
+                "Trapmaker's Tools",
+                "Stalker's Blade"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+## Test 2 - Various Topics
+#### Due: 03-25-2024 (Monday @ 2:00 p.m.)
+
+### Topics
+
+- Complexity
+- Binary Tree's
+- Balanced Trees (AVL)
+- Tree Traversals
+- Basic Recursion Concepts
+- Json
+- Getch
+
+
+Resources/03-Json/jsonVc++.md
+
+
+<!-- #### Heaps
+
+[Overview](../../Resources/L01-Heaps/README.md) -->
+
+#### Run Time Complexities
+
+|                                                 Cheat Sheet 1                                                  |                                                 Cheat Sheet 2                                                  |
+| :------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
+| [<img src="https://images2.imgbox.com/62/f0/eMsdwHxM_o.png">](https://images2.imgbox.com/a5/36/z6BvQv7x_o.png) | [<img src="https://images2.imgbox.com/64/37/2mFwTJ2K_o.png">](https://images2.imgbox.com/28/6d/JrAyZA2z_o.jpg) |
+
+
+
+### Example Random Questions
+
+- Given an algorithm or data structure (something we have covered in class from week one up till now) know its Big Oh complexity.
+- Given a list of values, insert them into a Binary Search Tree.
+- Given a list of values, insert them into an AVL Tree. 
+- What are the 3 conditions
+- Be able to write a Recursive Binary Tree Traversal.
+- For everything you do on this test, know its complexity.
+- Be able to write a basic sorting routine like a bubble sort or selection sort and know the difference between them.
+- Given an array, perform a binary search to find a specific key.
+- Describe the difference between searching:
+  - a list
+  - an array
+  - an ordered list
+  - an ordered array
+  - a binary search tree
+  - a balanced binary search tree
+
+
+
+

@@ -70,26 +70,26 @@ There are always multiple ways to implement every data structure. For example th
 
 So ultimately based on class input and questions that come up in discussion, I may jump around a bit so an explanation will make sense. Remember though ... _I make study guides for each test_!!
 
-- [ ] Array Based vs List Based Structures
-- [ ] [Array Based Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html)
-- [ ] Complexity
-  - [ ] Introduction
+- [x] Array Based vs List Based Structures
+- [x] [Array Based Implementations](https://opendatastructures.org/ods-cpp/2_Array_Based_Lists.html)
+- [x] Complexity
+  - [x] Introduction
   - [ ] Will be discussed with each data structure
-- [ ] Linked List Types
-  - [ ] [Singly Linked List](https://opendatastructures.org/ods-cpp/3_1_Singly_Linked_List.html)
-  - [ ] [Doubly Linked List](https://opendatastructures.org/ods-cpp/3_2_Doubly_Linked_List.html)
-  - [ ] [Circular List](https://www.geeksforgeeks.org/circular-linked-list/)
-- [ ] Stack, Queue, Priority Queue, Deque
-- [ ] Array Based Binary Search
-- [ ] Binary Tree's
-  - [ ] Components
-  - [ ] Array Based
-- [ ] Binary Heap (Array Based)
+- [x] Linked List Types
+  - [x] [Singly Linked List](https://opendatastructures.org/ods-cpp/3_1_Singly_Linked_List.html)
+  - [x] [Doubly Linked List](https://opendatastructures.org/ods-cpp/3_2_Doubly_Linked_List.html)
+  - [x] [Circular List](https://www.geeksforgeeks.org/circular-linked-list/)
+- [x] Stack, Queue, Priority Queue, Deque
+- [x] Array Based Binary Search
+- [x] Binary Tree's
+  - [x] Components
+  - [x] Array Based
+- [x] Binary Heap (Array Based)
 - [ ] Fibonacci Heap (**Possibly**)
-- [ ] Binary Tree Implementation (List Based)
+- [x] Binary Tree Implementation (List Based)
 - [ ] Trie
-- [ ] Balanced Tree's
-  - [ ] AVL
+- [x] Balanced Tree's
+  - [x] AVL
   - [ ] Red Black (**Possibly**)
 - [ ] [Hash Tables](https://opendatastructures.org/ods-cpp/5_Hash_Tables.html)
 - [ ] Graphs
