@@ -59,12 +59,12 @@ Look up (at the python version)
 - Be able to write a basic sorting routine like a bubble sort or selection sort and know the difference between them. [example code here](//Lectures/LectureMaterials/00-BubbleVSelection/README.md)
 - Given an array, perform a binary search to find a specific key. [example code](../../Lectures/LectureMaterials/02-BinarySearch/README.md)
 - Describe the difference between searching:
-  - a list (**`O(N)`** stuck looking at every node)
-  - an array (`O(N)` unless ordered then `O(lg N)` why?)
-  - an ordered list (`O(N)`)
-  - an ordered array (`O(lg N)`)
-  - a binary search tree (`O(N)`) (really kinda `O(lg N) `if its remotely balanced.)
-  - a balanced binary search tree (guaranteed `O(lg n)`)
+  - a list (****`O(N)`**** stuck looking at every node)
+  - an array (**`O(N)`** unless ordered then **`O(lg N)`** why?)
+  - an ordered list (**`O(N)`**)
+  - an ordered array (**`O(lg N)`**)
+  - a binary search tree (**`O(N)`**) (really kinda **`O(lg N) `**if its remotely balanced.)
+  - a balanced binary search tree (guaranteed **`O(lg n)`**)
 
 
 
