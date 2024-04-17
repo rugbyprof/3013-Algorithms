@@ -1,5 +1,5 @@
 ## BST - Balanced vs Unbalanced
-#### Due: May 3<sup>rd</sup> @ 2:00
+#### Due: 05-03-2024 (Fri @ 2:00 p.m.)
 
 **Problem:** Implement a binary tree data structure and compare the performance of an unbalanced tree versus a balanced tree for various operations.
 

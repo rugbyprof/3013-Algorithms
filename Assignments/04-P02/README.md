@@ -1,5 +1,5 @@
 ## Linear Search - Using Json and Getch
-#### Due: March 6<sup>th</sup> @ 2:00
+#### Due: 03-06-2024 (Wed @ 2:00 p.m.)
 
 ### Get Running
 

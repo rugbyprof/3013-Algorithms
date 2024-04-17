@@ -1,2 +1,2 @@
 ## Hashing - Mini Experiment
-#### Due: May 3<sup>rd</sup> @ 2:00
+#### Due: 05-03-2024 (Fri @ 2:00 p.m.)
