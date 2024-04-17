@@ -1,5 +1,5 @@
 ## Program 1 - Vector Class
-#### Due: Extra Credit
+#### Due: Optional Program
 
 ## Overview
 

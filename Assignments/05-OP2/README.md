@@ -1,5 +1,5 @@
 ## BST - Balanced vs Unbalanced
-#### Due: Extra Credit
+#### Due: Optional Program
 
 **Problem:** Implement a binary tree data structure and compare the performance of an unbalanced tree versus a balanced tree for various operations.
 

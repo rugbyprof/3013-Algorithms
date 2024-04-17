@@ -1,2 +1,2 @@
 ## Hashing - Mini Experiment
-#### Due: Extra Credit
+#### Due: Optional Program
