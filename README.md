@@ -15,7 +15,7 @@ https://join.slack.com/t/griffin-courses/shared_invite/zt-cw6fonr5-_CTN1kbgP3UaL
 - [__Holidays:__](http://tinyurl.com/msucal2324)
   - __Spring Break__ Monday March 11<sup>th</sup> - Friday March 15<sup>th</sup>
   - __Easter__ Monday March 27<sup>th</sup> - Friday March 29<sup>th</sup>
-- [__Last Day for “W”:__](http://tinyurl.com/msucal2324)  Monday March 25<sup>th</sup>
+- [__Last Day for “W”:__](http://tinyurl.com/msucal2324)  Wednesday April 24<sup>th</sup>
 - [__Last Day of Class:__](http://tinyurl.com/msucal2324) Friday May 3<sup>rd</sup>
 - [__Final Exam:__](http://tinyurl.com/msufinals24) Wednesday, May 8<sup>th</sup> @ 5:45pm – 7:45pm (same room)
 
