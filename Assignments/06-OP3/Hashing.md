@@ -1,4 +1,6 @@
-Designing a good hash function for string prefixes involves considering a few key properties: uniform distribution of hash values, minimal collision rate, and computational efficiency. A popular and effective approach for hashing strings, including prefixes, is to use a polynomial rolling hash function, often associated with the Rabin-Karp string search algorithm.
+## Polynomial Rolling Hash
+
+Designing a good hash function for string prefixes involves considering a few key properties: uniform distribution of hash values, minimal collision rate, and computational efficiency. A popular and effective approach for hashing strings, including prefixes, is to use a polynomial rolling hash function, often associated with the [Rabin-Karp](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm) string search algorithm.
 
 Here's a basic outline of a polynomial rolling hash function for string prefixes:
 
@@ -15,7 +17,7 @@ The idea is to treat each string as a large number in some base \( b \), similar
 
 The hash of a string \( s \) of length \( n \) can be calculated as:
 
-\[ hash(s) = (s[0] \times b^{n-1} + s[1] \times b^{n-2} + \cdots + s[n-1] \times b^0) \mod p \]
+<img src="https://quicklatex.com/cache3/f5/ql_40020844f0dc1918dab130a262ba0ff5_l3.png">
 
 where \( s[i] \) is the ASCII value of the \( i^{th} \) character in the string.
 
