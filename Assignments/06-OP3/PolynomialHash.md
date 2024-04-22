@@ -6,7 +6,7 @@ Here's a basic outline of a polynomial rolling hash function for string prefixes
 
 ### Polynomial Rolling Hash Function
 
-The idea is to treat each string as a large number in some base \( b \), similar to how a number is represented in base 10. Each character's ASCII (or Unicode) value contributes to the hash value, adjusted by its position in the string, and everything is computed modulo some large prime number \( p \) to ensure the hash value stays within a manageable range.
+The idea is to treat each string as a large number in some base ***b*** , similar to how a number is represented in base 10. Each character's ASCII (or Unicode) value contributes to the hash value, adjusted by its position in the string, and everything is computed modulo some large prime number ***p*** to ensure the hash value stays within a manageable range.
 
 #### Parameters:
 
@@ -15,11 +15,11 @@ The idea is to treat each string as a large number in some base \( b \), similar
 
 #### Hash Function:
 
-The hash of a string \( s \) of length \( n \) can be calculated as:
+The hash of a string ***s*** of length ***n*** can be calculated as:
 
-<img src="https://quicklatex.com/cache3/f5/ql_40020844f0dc1918dab130a262ba0ff5_l3.png">
+<img src="https://images2.imgbox.com/27/31/UTnd4e3U_o.png">
 
-where \( s[i] \) is the ASCII value of the \( i^{th} \) character in the string.
+where s<sub>i</sub> is the ASCII value of the i^<sup>th</sup> character in the string.
 
 #### C++ Implementation:
 
