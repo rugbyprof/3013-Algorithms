@@ -1,12 +1,13 @@
-## Why We Learn
+## Problem Statement:
 
-The more things you are instroduced to, especially in our field, that better choices you can make. When you hear about complex algorithms and kind of shut down and stop listening, or struggle with writing a linked list from scratch, you should at least try to remember the highlights. Kinda knowing lots tiny informational nuggets, is a way better than totally understanding a few big nuggets of info. 
+I want to write a program that assists with 
 
-### **The Teaching Moment**
+
+### 
 
 The JSON example can serve as a "naïve" approach to searching for partial matches among keys, showing students that while certain tools and data formats are powerful and convenient for their intended uses (like JSON for data interchange), they might not be optimal for all tasks, especially those involving complex searches or manipulations.
 
-### **Segue into Trie Trees**
+### Segue into Trie Trees
 
 After demonstrating the JSON partial key matching example, you can then segue into Trie trees by highlighting the following points:
 
@@ -15,7 +16,7 @@ After demonstrating the JSON partial key matching example, you can then segue in
 - **Autocomplete**: Tries are commonly used in scenarios like autocomplete features in search engines or text editors, where efficiency and speed are critical. This real-world application can help students appreciate the practical utility of the data structure.
 - **Space vs. Time Trade-off**: Discussing Tries provides an excellent opportunity to talk about the trade-offs between time and space complexity. While Tries can offer faster searches, they might use more memory than a flat structure like a JSON object, depending on the dataset.
 
-### **Practical Application**
+### Practical Application
 
 You could further solidify the lesson by providing a hands-on exercise where students implement a basic Trie tree and use it to perform the same partial key matching task. This will not only reinforce their understanding of the Trie data structure but also give them a practical sense of the performance and efficiency gains over the naive approach.
 
@@ -27,8 +28,7 @@ This approach not only teaches specific technical skills but also fosters critic
 
 
 -----
-
-Got it, Terry! We're looking for concrete examples to illustrate string matching concepts before diving into more complex solutions. Let's use `xyz` as a placeholder for any three-letter sequence and find words that start and end with that sequence to explore string "distance" and develop heuristics for scoring possible matches.
+We're looking for concrete examples to illustrate string matching concepts before diving into more complex solutions. Let's use `xyz` as a placeholder for any three-letter sequence and find words that start and end with that sequence to explore string "distance" and develop heuristics for scoring possible matches.
 
 ### Examples with `xyz` as `cat`
 
