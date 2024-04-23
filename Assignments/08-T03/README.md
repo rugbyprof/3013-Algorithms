@@ -134,7 +134,14 @@
   - At this site: https://cmps-people.ok.ubc.ca/ylucet/DS/Huffman.html to visualize tree creation
 
 #### Complexity
-    - https://en.wikipedia.org/wiki/Huffman_coding#Basic_technique
+    - [https://en.wikipedia.org/wiki/Huffman_coding#Basic_technique](https://en.wikipedia.org/wiki/Huffman_coding#Basic_technique)
+
+#### Question
+  1. Given a small sentence, 
+  2. calculate the frequencies of the letters, 
+  3. build a tree, 
+  4. get binary encoding for each letter
+  5. write out your binary encoded answer
 
   - [Trie Trees](prefix trees)
   - [Hashing]
