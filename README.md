@@ -19,7 +19,7 @@
 - [**Last Day for “W”:**](https://msutexas.edu/registrar/calendars.php) Wed Apr 30<sup>th</sup>
 - [**Last Day of Class:**](https://msutexas.edu/registrar/calendars.php) Fri May 9<sup>th</sup>
 - [**Final Exam:**](https://msutexas.edu/registrar/schedule/finalexamschedule.php)
-  - Wed May 14<sup>th</sup> from 1745 - 945
+  - Wed May 14<sup>th</sup> from 1745 - 1945
 
 ## Office Hours
 

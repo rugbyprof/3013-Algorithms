@@ -16,6 +16,6 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L01-Heaps">L01-Heaps</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L01-Heaps"> Binary Heap Implementation </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L01-Heaps"> Array Based Implementation</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L01-Heaps">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L01-Heaps"> NEEDS SOME TWEEKING</a>*** |  |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray">L03-ListVsArray</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray"> Array vs Linked List </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray"> A comparison</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray"> None</a>*** |  |
 
-<sup>Last Updated: 2025-01-22 (Wed @ 02:06)</sup> 
+<sup>Last Updated: 2025-01-22 (Wed @ 02:09)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 
