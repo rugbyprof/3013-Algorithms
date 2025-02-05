@@ -1,72 +1,144 @@
-## Simple Sorts
+# **Comparison of Bubble Sort vs Selection Sort**
 
-Both `Bubble Sort` and `Selection Sort` are simple sorting algorithms with a time complexity of **`O(n^2)`**, making them less efficient for large datasets. However, they are easy to understand and implement, which is why they're often taught in introductory computer science courses.
+## **1. Overview**
 
-### Bubble Sort
+Sorting algorithms play a crucial role in computer science. Two simple comparison-based sorting algorithms are **Bubble Sort** and **Selection Sort**. This document provides an in-depth comparison, including implementations in C++ and insights into performance, optimizations, and pitfalls.
 
-#### Basics:
+---
 
-- Bubble Sort is a comparison-based swapping algorithm that:
-  - Steps through the list up to **`O(n^2)`** times.
-  - It compares adjacent elements, and swaps them if they are in the wrong order.
-  - Using an inner and outer loop guarantees we traverse the list enough times to ensure total order.
-  - Notice only the `j` values is used to do swaps, since it must start from the beginning every time.
-  - There are speedups that can be added, but we will discuss those at a later date.
+## **2. Bubble Sort**
 
-#### C++ Example:
+### **How It Works**
+
+Bubble Sort repeatedly steps through the array, compares adjacent elements, and swaps them if they are in the wrong order. This process continues until the array is fully sorted.
+
+### **C++ Implementation**
+
 ```cpp
+#include <iostream>
+using namespace std;
+
 void bubbleSort(int arr[], int n) {
+    bool swapped;
     for (int i = 0; i < n - 1; i++) {
+        swapped = false;
         for (int j = 0; j < n - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
-                std::swap(arr[j], arr[j + 1]);
+                swap(arr[j], arr[j + 1]);
+                swapped = true;
             }
         }
+        if (!swapped) // If no swaps occurred, array is sorted
+            break;
     }
+}
+
+void printArray(int arr[], int size) {
+    for (int i = 0; i < size; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+}
+
+int main() {
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    bubbleSort(arr, n);
+    cout << "Sorted array: \n";
+    printArray(arr, n);
+    return 0;
 }
 ```
 
-### Selection Sort
+### **Complexity Analysis**
 
-#### Basics:
-- Selection Sort places on item into its proper location on every pass.
-  - Assuming ascending order, on the first pass, the smallest value in the array will get placed at location `0`
-  - On the next pass, since `i` starts at the next location, the next smallest item gets placed in its proper location.
-  - So on 2 iterations of the outer loop, 2 items will be in proper location, on 5 passes, 5 items. 
-  - Selection sort maintains two parts: a sorted part, and an unsorted part.
-  - It will terminate when there are no more values to move. 
+- **Best Case (Already Sorted):** O(n)
+- **Worst Case (Reverse Sorted):** O(n²)
+- **Average Case:** O(n²)
 
-#### C++ Example:
+### **Optimizations & Pitfalls**
+
+- Adding a `swapped` flag can improve performance if the array is nearly sorted.
+- Inefficient for large datasets due to O(n²) complexity.
+- Stable sort (preserves relative order of equal elements).
+
+---
+
+## **3. Selection Sort**
+
+### **How It Works**
+
+Selection Sort divides the array into a sorted and an unsorted region. It repeatedly finds the minimum element from the unsorted part and swaps it with the leftmost unsorted element.
+
+### **C++ Implementation**
+
 ```cpp
+#include <iostream>
+using namespace std;
+
 void selectionSort(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
         int minIndex = i;
         for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[minIndex]) {
+            if (arr[j] < arr[minIndex])
                 minIndex = j;
-            }
         }
-        std::swap(arr[i], arr[minIndex]);
+        swap(arr[minIndex], arr[i]);
     }
+}
+
+void printArray(int arr[], int size) {
+    for (int i = 0; i < size; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+}
+
+int main() {
+    int arr[] = {64, 25, 12, 22, 11};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    selectionSort(arr, n);
+    cout << "Sorted array: \n";
+    printArray(arr, n);
+    return 0;
 }
 ```
 
-### Differences between Bubble Sort and Selection Sort
+### **Complexity Analysis**
 
-1. **Sorting Process**:
-   - In Bubble Sort, neighbors continuously swap until no more swaps get made.
-   - In Selection Sort, places one item into its proper spot every iteration.
+- **Best Case:** O(n²)
+- **Worst Case:** O(n²)
+- **Average Case:** O(n²)
 
-2. **Number of Swaps**:
-   - Bubble Sort can have a higher number of swaps in each pass through the array since it swaps neighbors
-   - Selection Sort only swaps 1 item per iteration leading to n-1 swaps
+### **Optimizations & Pitfalls**
 
-3. **Adaptive Nature**:
-   - Bubble Sort has a few tricks to add that allows it to terminate early.
-   - Selection Sort makes the same number of comparisons regardless of the initial order of the elements.
+- Unlike Bubble Sort, Selection Sort always performs O(n²) comparisons, regardless of the input.
+- Generally performs fewer swaps than Bubble Sort (O(n) swaps compared to O(n²) swaps in Bubble Sort).
+- Not a stable sort (may change relative order of equal elements).
+- Slightly better performance than Bubble Sort in practice but still inefficient for large datasets.
 
-4. **Performance**:
-   - Bubble Sort generally performs worse than Selection Sort in terms of the number of comparisons and swaps, especially in the worst-case scenario.
-   - Selection Sort has better performance than Bubble Sort due to fewer swaps but is still not suitable for large lists.
+---
 
-Both algorithms have limited practical applications due to their quadratic time complexity. They are inefficient for large datasets but are useful for educational purposes to illustrate the basics of sorting algorithms.
+## **4. Comparison Table**
+
+| Feature                       | Bubble Sort                          | Selection Sort |
+| ----------------------------- | ------------------------------------ | -------------- |
+| Time Complexity (Best)        | O(n) (optimized)                     | O(n²)          |
+| Time Complexity (Worst)       | O(n²)                                | O(n²)          |
+| Time Complexity (Average)     | O(n²)                                | O(n²)          |
+| Number of Swaps               | High (O(n²))                         | Low (O(n))     |
+| Stable Sorting                | Yes                                  | No             |
+| Works Well For                | Small datasets or nearly sorted data | Small datasets |
+| Performance on Large Datasets | Poor                                 | Poor           |
+
+---
+
+## **5. Conclusion**
+
+- **Bubble Sort** can be optimized with a swap flag but is still slow for large datasets.
+- **Selection Sort** performs fewer swaps but always takes O(n²) comparisons.
+- Both are **inefficient for large datasets** and should be replaced by **Merge Sort, Quick Sort, or Heap Sort** for better performance.
+
+### **Recommendation**
+
+- If stability is required, use **Bubble Sort**.
+- If minimizing swaps is important, use **Selection Sort**.
+- For real-world applications, prefer **Merge Sort** or **Quick Sort** for significantly better performance.
