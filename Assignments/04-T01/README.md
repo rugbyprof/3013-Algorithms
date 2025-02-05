@@ -27,7 +27,12 @@
 - For everything you do on this test, know its complexity.
 - Be able to write a basic sorting routine like a bubble sort or selection sort and know the difference between them.
 - Given an array, perform a binary search to find a specific key.
-- Describe the difference between searching:
+
+### Study Materials
+
+- [Lectures](../../Lectures/LectureMaterials/)
+
+- **Describe the difference between searching:**
 
   - a list
   - an array
@@ -35,28 +40,44 @@
   - an ordered array
   - a bst (binary search)
 
-- Priority Queue
+- **Priority Queue:**
+
   - What is it?
   - What can it be used for?
-    <br>
-- Given a list of unordered numbers, load them into an array based binary search tree
-- Given a list of unordered numbers, load them into a binary search tree
-- Given a list of unordered numbers, load them into a priority queue.
 
-- Run time stack memory vs Heap memory.
+- **Given:**
+
+  - Given a list of unordered numbers, load them into an array based binary search tree
+  - Given a list of unordered numbers, load them into a binary search tree
+  - Given a list of unordered numbers, load them into a priority queue.
+
+- **[Run time stack memory vs Heap memory](../../Lectures/LectureMaterials/05-StackMemVsHeapMem/README.md):**
+
   - Know which is which.
   - Which memory lasts entire program, and which one goes away at a functions end?
   - What keyword allows someone to place a variable in heap memory?
-- Which scenarios or structures are more likely to cause a memory leak?
+  - Which scenarios or structures are more likely to cause a memory leak?
 
-- For now you should know these "tree" terms:
-  - Complete (fills in from left to right)
-  - Full (all slots are "taken", no gaps)
-  - Height (distance from the root to the furthest leaf node, and the left and right "subtrees" each can have their own height)
-  - Balanced (Height of left subtree differs by no more than 1 with the right subtree)
-- You may have to "draw" an example of 1 or more of the above trees.
-- What is the time complexity of search in a balanced binary tree?
-- What is the time complexity of search in an unbalanced binary tree?
+- **Binary Trees:**
+
+  - **Terms:**
+
+    - Complete Tree
+    - Full Tree
+    - Height
+    - Balanced
+    - Root
+    - Leaf
+    - Inner Node
+    - Sibling
+    - Ascendant
+    - Descendant
+    - Successor
+    - Predecessor
+
+  - You may have to "draw" an example of a tree and / or label a tree with the terms from above.
+  - What is the time complexity of search in a balanced binary tree?
+  - What is the time complexity of search in an unbalanced binary tree?
 
 ---
 
@@ -85,9 +106,60 @@
 - **Situation**: Tasks come into a system in a sequence where each task has a prerequisite task that must be completed first. Some tasks can only start once their specific predecessor is done.
 - **Question**: How would you manage the execution order of these tasks using the simple data structures discussed?
 
-- **Balancing Load in a Network**
-  - **Situation**: You're tasked with designing a load balancer that evenly distributes incoming network requests to a set of servers. Upon receiving a request, the load balancer should forward it to the server with the least current load.
-  - **Question**: Using only arrays/lists and basic operations, how would you implement a system to track and update the load on each server as requests are assigned and completed?
+**Balancing Load in a Network**
+
+- **Situation**: You're tasked with designing a load balancer that evenly distributes incoming network requests to a set of servers. Upon receiving a request, the load balancer should forward it to the server with the least current load.
+- **Question**: Using only arrays/lists and basic operations, how would you implement a system to track and update the load on each server as requests are assigned and completed?
+
+**Efficient Inventory Management**
+
+- **Situation:** You are developing an inventory system for a retail store. The system frequently adds and removes items from the middle of the inventory list, but random access to item details is also needed.
+
+- **Question:** Would you use an array or a linked list to store the inventory, and why?
+
+**Print Job Scheduling**
+
+- **Situation:** A shared office printer receives print jobs from multiple users. Some jobs must be printed in the order they were received, but there is also an option for users to cancel their most recently submitted job before it starts printing.
+
+- **Question:** Which data structure(s) (stack, queue, or both) would you use to manage print jobs efficiently, and how would you handle cancellations?
+
+**Emergency Room Triage**
+
+- **Situation:** In a hospital emergency room, patients arrive with different levels of urgency. Critical patients must be treated before those with minor conditions, even if they arrived later.
+
+- **Question:** Which data structure would you use to manage patient intake, ensuring that the most urgent cases are attended to first while still allowing new patients to arrive dynamically?
+
+**Efficient Contact Lookup**
+
+- **Situation:** A mobile phone contact list must allow users to quickly search for a contact’s phone number by typing part of their name. The list is sorted alphabetically.
+
+- **Question:** What algorithm would you use to efficiently retrieve a contact’s details, and why is it better than a linear search?
+
+<!-- **Dynamic Autocomplete System**
+
+**Situation:** You are designing an autocomplete feature for a search engine. The system must store words efficiently and allow users to type a prefix (e.g., “pro”) and retrieve all words that start with that prefix.
+
+**Question:** Would a binary search tree (BST) be a good choice for implementing this, and if so, how would it improve performance over other structures? -->
+
+<!-- Arrays vs. Linked Lists
+
+Answer: Linked list, because frequent insertions/removals in the middle are more efficient than in an array.
+
+Stacks and Queues
+
+Answer: Queue for FIFO printing, stack for canceling the most recent job.
+
+Heaps (Priority Queues)
+
+Answer: Heap (priority queue), since it allows efficient retrieval of the highest-priority patient.
+
+Binary Search
+
+Answer: Binary search, because the contact list is sorted, making searches ￼ instead of ￼.
+
+Binary Search Trees
+
+Answer: BST (or Trie), because it allows efficient prefix-based searches and dynamic updates. -->
 
 ---
 
