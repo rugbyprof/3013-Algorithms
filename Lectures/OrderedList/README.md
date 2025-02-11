@@ -1,4 +1,4 @@
-## Ordered List - Ipmlementation on Replit
+## Ordered List - Implementation on Replit
 
 #### Due: N/a
 
