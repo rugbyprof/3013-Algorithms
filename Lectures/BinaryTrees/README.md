@@ -1,8 +1,10 @@
 ## Binary Trees - Example Code
-#### None
+
+#### N/A
 
 # Warning
-This sample has some issues that I need to fix. I will get them fixed soon. 
+
+This sample has some issues that I need to fix. I will get them fixed soon.
 
 To create a Makefile for your C++ project with the files `main.cpp`, `graphviz.h`, `graphviz.cpp`, and `bst.hpp`, you need to define a set of rules that tell `make` how to compile and link your program. Here's a basic example of what your Makefile might look like:
 
@@ -11,7 +13,7 @@ To create a Makefile for your C++ project with the files `main.cpp`, `graphviz.h
 CC = g++
 CFLAGS = -Wall -g -std=c++17
 
-# Define the executable file 
+# Define the executable file
 TARGET = myprogram
 
 all: $(TARGET)
@@ -40,6 +42,6 @@ Here's a breakdown of this Makefile:
 - **graphviz.o**: Similarly, this is the rule for creating `graphviz.o` from `graphviz.cpp`.
 - **clean**: This is a conventional target that cleans up the directory. It deletes all object files and the `myprogram` executable.
 
-You can use this Makefile by running `make` to build your program, and `make clean` to clean up the build artifacts. 
+You can use this Makefile by running `make` to build your program, and `make clean` to clean up the build artifacts.
 
 Note that if your project becomes more complex, you might need to modify your Makefile accordingly, such as adding more source files or adjusting compiler flags.

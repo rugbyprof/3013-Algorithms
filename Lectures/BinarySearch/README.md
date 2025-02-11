@@ -1,20 +1,22 @@
-## Binary Search
-#### Due: N/A 
+## Binary Search - Overview
 
+#### Due: N/A
 
 <img src="https://images2.imgbox.com/e1/44/KxfIEB9m_o.gif">
 
-Again, `Big Oh` is the `worst case scenario` for an algorithm, but it doesn't mean that the worst case will always happen, it simply defines the cost when it does happen. For example, if I had an unordered array of integers, and I had to look for a value in said array, what is the worst case? 
-   1. Item is not in the array.
-   2. Item is in the last position in the array.
+Again, `Big Oh` is the `worst case scenario` for an algorithm, but it doesn't mean that the worst case will always happen, it simply defines the cost when it does happen. For example, if I had an unordered array of integers, and I had to look for a value in said array, what is the worst case?
 
-This means that I have to process (look at or loop over) every single item in said array. 
+1.  Item is not in the array.
+2.  Item is in the last position in the array.
 
-However, if the item I'm looking for is: 
-   1. The first item in the array.
-   2. Somewhere in the middle of the array.
+This means that I have to process (look at or loop over) every single item in said array.
 
-Then I don't have to process every item! However, `big oh` doesn't change for this algorithm since the `worst case scenario` is still the same. 
+However, if the item I'm looking for is:
+
+1.  The first item in the array.
+2.  Somewhere in the middle of the array.
+
+Then I don't have to process every item! However, `big oh` doesn't change for this algorithm since the `worst case scenario` is still the same.
 
 ## Unordered Search
 
@@ -31,6 +33,7 @@ Before I describe `Binary Search` let's discuss an unordered (or linear) search 
   **6.** If you reach the end of the array without finding `target`, the item is not in the array.
 
 #### Time Complexity
+
 - The time complexity of an unordered search is O(n), where n is the number of elements in the array. In the worst case, you may have to check every element.
 
 #### Simple Example
@@ -42,9 +45,9 @@ Let's say we have an array of numbers and we're searching for the number `5`.
 Here's the search process:
 
 ```
-Searching for the value 5 by looking at each item in sequence until you find said item, or reach the end of your container. 
+Searching for the value 5 by looking at each item in sequence until you find said item, or reach the end of your container.
 
-[8, 3, 5, 1, 9, 6]  
+[8, 3, 5, 1, 9, 6]
  ^
 
 [8, 3, 5, 1, 9, 6]
@@ -75,19 +78,22 @@ A binary search is an efficient algorithm for finding an item from a sorted list
   **6.** Repeat steps 2-5 on the new half-array until the target is found or the array cannot be split further.
 
 #### Time Complexity
-- The time complexity of binary search is ***O(log n)***, where ***n*** is the number of elements in the array.
+
+- The time complexity of binary search is **_O(log n)_**, where **_n_** is the number of elements in the array.
 
 #### Example
 
 Let's consider a sorted array of numbers:
-- `[1, 3, 5, 7, 9, 11, 13, 17, 23, 37]`
-- Key =  `23`.
 
-----
+- `[1, 3, 5, 7, 9, 11, 13, 17, 23, 37]`
+- Key = `23`.
+
+---
+
 - **Step 1**
-`l = 0`
-`r = 9`
-`m = 0+9//2 = 4`
+  `l = 0`
+  `r = 9`
+  `m = 0+9//2 = 4`
 
 ```
 Starting m
@@ -95,27 +101,28 @@ Starting m
 [0, 1, 2, 3, 4,  5 , 6 , 7,  8,  9]
  l           m                   r
 ```
+
 Key is not `l`, `r`, or `m`
 
-
 - **Step 2**
-`Key` > `m` so ...
-`l = m + 1 = 5`
-`r = 9`
-`m = (5 + 9 )// 2 = 7`
+  `Key` > `m` so ...
+  `l = m + 1 = 5`
+  `r = 9`
+  `m = (5 + 9 )// 2 = 7`
 
 ```
 [1, 3, 5, 7, 9, 11, 13, 17, 23, 37]
 [0, 1, 2, 3, 4,  5 , 6 , 7,  8,  9]
                  l       m       r
 ```
+
 Key is not `l`, `r`, or `m`
 
 - **Step 3**
-`Key` > `m` so ...
-`l = m + 1 = 8`
-`r = 9`
-`m = (8 + 9 )// 2 = 7`
+  `Key` > `m` so ...
+  `l = m + 1 = 8`
+  `r = 9`
+  `m = (8 + 9 )// 2 = 7`
 
 ```
 [1, 3, 5, 7, 9, 11, 13, 17, 23, 37]
@@ -123,19 +130,18 @@ Key is not `l`, `r`, or `m`
                              l   r
                              m
 ```
+
 Key is at `l` and `m` both at index `8` so return true or the location within the array (8).
 
------
+---
 
 In this example, the binary search found `23` in three steps, which is much more efficient than linear search for larger arrays.
 
 Binary search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing in half the portion of the list that could contain the item until you've narrowed the possible locations to just one. Here's an overview, along with considerations for its implementation, the overhead involved, its complexity, and why it's not suitable for list-based structures.
 
-
 ### Conditions Justifying Binary Search
 
 1. **Sorted Data**: Binary search only works on a sorted array. The array must be sorted beforehand, which incurs an additional cost if the data is not already sorted.
-   
 2. **Large Datasets**: The efficiency of binary search becomes significant with large datasets. For small datasets, the overhead of ensuring the data is sorted might not be worth the speedup in search time.
 
 3. **Frequent Searches**: If you're performing many searches, the cost of sorting the data (if it's not already sorted) can be amortized over these searches, making binary search more appealing.
@@ -149,7 +155,6 @@ Binary search is an efficient algorithm for finding an item from a sorted list o
 ### Complexity
 
 - **Worst-Case Complexity**: O(log n), where n is the number of elements in the array. This is because the algorithm splits the array in half with each iteration.
-  
 - **Average-Case Complexity**: Also O(log n) for the same reasons as the worst case.
 
 ### Binary Search in List-Based Structures
@@ -188,12 +193,13 @@ public:
 ```
 
 In this class stub:
+
 - The `data` member variable is a `std::vector<int>` that stores the sorted array on which binary search is performed. While this example uses `int`, you can template the class to allow for other data types.
 - The `search` method is the core of the binary search functionality, taking a `target` value to find in the array and returning its index if found, or `-1` if not found.
 - The `insert` and `remove` methods are optional and would require additional logic to maintain the sorted order of the array. These methods would be useful if the array needs to be dynamic, with elements added or removed over time.
 - The `display` method is a utility to print the contents of the array, helpful for debugging or demonstration purposes.
 
-This class provides a basic framework for implementing binary search on an array-based data structure, with optional features to manage dynamic data. 
+This class provides a basic framework for implementing binary search on an array-based data structure, with optional features to manage dynamic data.
 
 You're right that when implementing a binary search algorithm, you typically need to keep track of the left, right, and middle indices to determine the current search boundaries within the array. These variables are crucial for narrowing down the search space in each iteration of the algorithm.
 
@@ -238,8 +244,6 @@ However, there could be specific scenarios or advanced implementations where you
 3. **Complex Algorithms**: In more complex algorithms that extend basic binary search, such as certain types of search trees or algorithms that require backtracking, maintaining broader state information might be beneficial.
 
 For most use cases, especially educational and straightforward binary search implementations, keeping `left`, `right`, and `middle` within the local scope of the `search` method is sufficient and keeps the class design clean and focused.
-
-
 
 ### Conclusion
 

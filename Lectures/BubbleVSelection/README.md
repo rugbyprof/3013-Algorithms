@@ -1,4 +1,6 @@
-# **Comparison of Bubble Sort vs Selection Sort**
+## Bubble Sort vs Selection Sort - A comparison
+
+#### N/A
 
 ## **1. Overview**
 
