@@ -68,8 +68,13 @@
 - **Definition**: A queue where elements are dequeued based on priority rather than order of arrival.
 - **Uses**:
   - Task scheduling
-  - Dijkstra’s shortest path algorithm
+  - Dijkstra’s shortest path algorithm (used to choose next shortest path)(**not on test!**)
   - Event-driven simulations
+
+#### **Time Complexity:**
+
+- **Implemented as a Binary Heap**: O(log n)
+- **Implemented as an array or list**: O(n)
 
 ---
 
@@ -86,9 +91,9 @@
 
 ### **Efficient Storage and Retrieval**
 
-- **Efficient Contact Lookup**: Uses BST or hash table for fast retrieval.
-- **Autocomplete Suggestions**: Uses a trie or BST for efficient searching.
-- **Tracking Most Visited Websites**: Hash table or BST to keep frequently accessed entries.
+- **Efficient Contact Lookup**: ~Uses BST or hash table for fast retrieval.~ (**no hash tables on exam**)
+- **Autocomplete Suggestions**: Uses a trie or BST for efficient searching. (**no trie's on exam**)
+- **Tracking Most Visited Websites**: Hash table or BST to keep frequently accessed entries. (**no hash tables on exam**)
 - **Stock Price History**: BST or array to store and retrieve prices by date efficiently.
 
 ### **Resource Allocation and Scheduling**
@@ -100,8 +105,8 @@
 
 ### **Specialized Uses**
 
-- **Routing in GPS Navigation**: Uses a BST for location lookup and pathfinding algorithms.
-- **AI Decision-Making in Games**: Uses a tree structure to evaluate multiple decision branches.
+- **Routing in GPS Navigation**: ~~Uses a BST for location lookup and pathfinding algorithms.~~
+- **AI Decision-Making in Games**: ~~Uses a tree structure to evaluate multiple decision branches.~~
 - **Event Ticketing System**: Uses an array for seat reservations with direct access.
 - **Playlist Management**: Uses a linked list for dynamic reordering of tracks.
 
@@ -126,15 +131,15 @@
 
 1. Load them into an **array-based BST**.
 2. Load them into a **regular BST**.
-3. Load them into a **priority queue**.
+3. Load them into a **heap** (priority queue).
 
 **Discussion Questions:**
 
 1. Explain how a binary search tree can become unbalanced and its impact on performance.
 2. Describe a real-world situation where a queue is a better choice than a stack.
 3. What are the pros and cons of implementing an undo feature using a stack?
-4. Given a dataset of customer transactions, which data structure would you use to quickly retrieve a customer’s most recent purchase?
-5. How would you implement a file system using tree structures?
+4. Given a dataset of customer transactions, which data structure would you use to quickly retrieve a customer’s most recent purchases?
+5. ~~How would you implement a file system using tree structures?~~
 
 ---
 
@@ -142,118 +147,109 @@
 
 **Available choices: Array, Linked List, Stack, Queue, Priority Queue, Binary Search Tree (BST)**
 
-1. Real-Time Leaderboard in a Game
+Some of these questions are better answered with more than a single data structure, but on the exam, I won't ask such questions unless I specify in the question itself and give you some hints. Others may go beyond what we currently know, and I will try and cross those out (but not delete them as not to stifle your curious minds).
 
-- 📌 You need to efficiently insert new scores and keep them sorted to display the top players at any time.
+1. **Real-Time Leaderboard in a Game**
 
-2. Implementing an Undo/Redo Feature in a Text Editor
+   - ✅ You need to efficiently insert new scores and keep them sorted to display the top players at any time.
 
-- 📌 The application must support multiple undo and redo actions, where the most recent action is undone first.
+2. **Implementing an Undo/Redo Feature in a Text Editor**
 
-3. Task Scheduler with Varying Priorities
+   - ✅ Implementing an 'undo' feature in a text editor that allows users to revert their actions, one at a time, in the reverse order that they were made.
+   - 📌 Which simple data structure(s) would you use to implement the 'undo' functionality and how?
 
-- 📌 You need a system that processes incoming tasks, but some tasks need to be executed before others based on their priority.
+3. **Task Scheduler with Varying Priorities**
 
-4. Autocomplete Suggestions in a Search Bar
+   - ✅ You need a system that processes incoming tasks, but some tasks need to be executed before others based on their importance.
+   - 📌 What would you implement to keep the most important things at the front of the line?
 
-- 📌 You need to store words in a way that allows efficient searching for suggestions as the user types.
+4. **Autocomplete Suggestions in a Search Bar**
 
-5. Managing a Call Center’s Incoming Calls
+   - ✅ ~~You need to store words in a way that allows efficient searching for suggestions as the user types.~~ (trie trees)
 
-- 📌 Calls should be answered in the order they arrive, ensuring fairness in customer support.
+5. **Managing a Call Center’s Incoming Calls**
 
-6. Memory Management in an Operating System
+   - ✅ (1) Calls should be answered in the order they arrive, ensuring fairness in customer support.
+   - ✅ (2) A customer service call center receives calls that are categorized into 'regular' and 'VIP'. VIP calls must be answered before regular ones, regardless of the order they come in.
+   - 📌 How do you handle each scenario?
 
-- 📌 The system must dynamically allocate and free memory blocks of different sizes, with frequent insertions and deletions.
+6. **Memory Management in an Operating System**
 
-7. Web Browser Back and Forward Navigation
+   - ✅ The system must dynamically allocate and free memory blocks of different sizes, with frequent insertions and deletions.
+   - 📌 What dynamic structures might fit this bill?
 
-- 📌 The browser should allow users to navigate back to the previous page and forward again when needed.
+7. **Web Browser Back and Forward Navigation**
 
-8. Processing Requests to a Printer
+   - ✅ A web browser needs to manage a user's browsing session history to support forward and backward navigation.
+   - 📌 How would you design the session history feature using stacks and/or queues, and why?
+   - 📌 Could you use an array or a linked list?
 
-- 📌 The printer should handle requests in the order they arrive, but priority should be given to urgent documents.
+8. **Processing Requests to a Printer**
 
-9. Routing System for GPS Navigation
+   - ✅ The printer should handle requests by number of pages, where shortest jobs go first.
+   - 📌 Think of the least number of pages as more important.
 
-- 📌 You need to maintain an efficiently searchable set of locations to find the shortest path between two points.
+9. **Routing System for GPS Navigation**
 
-10. Stock Price History with Efficient Searching
+   - ✅ ~~You need to maintain an efficiently searchable set of locations to find the shortest path between two points.~~
 
-- 📌 You need to store stock prices over time and allow efficient retrieval of past values based on a given date.
+10. **Stock Price History with Efficient Searching**
 
-11. Organizing a Playlist with Custom Ordering
+    - ✅ You need to store stock prices over time and allow efficient retrieval of past values based on a given date.
+    - 📌 What structure is good at keeping things in order AND allows fast retreival?
 
-- 📌 Users should be able to reorder songs and insert/remove tracks frequently.
+11. **Organizing a Playlist with Custom Ordering**
 
-12. AI Decision-Making in a Game
+    - ✅ Users should be able to reorder songs and insert/remove tracks frequently.
+    - 📌 Based on your **current** knowledge of data structures, explain why this question is hard to answer. Reordering and frequent insertion or deletion go against each other, not only based on your current knowledge, but almost always! This is a frequent problem.
 
-- 📌 The AI must frequently make optimal decisions based on hierarchical conditions (e.g., enemy detection, health level).
+12. **AI Decision-Making in a Game**
 
-13. Efficient Contact Search in a Phonebook
+    - ✅ ~~The AI must frequently make optimal decisions based on hierarchical conditions (e.g., enemy detection, health level).~~
 
-- 📌 The system should allow rapid lookup of contacts based on names while allowing insertions and deletions.
+13. **Efficient Contact Search in a Phonebook**
 
-14. Tracking a Browser’s Most Visited Websites
+    - ✅ The system should allow rapid lookup of contacts based on names while allowing insertions and deletions.
+    - 📌 What structure allows fast lookups, but also keeps things in order quite inherently?
 
-- 📌 Frequently accessed sites should be stored and updated dynamically for fast lookup.
+14. **Tracking a Browser’s Most Visited Websites**
 
-15. Event Ticketing System with Seat Reservations
+    - ✅ Frequently accessed sites should be stored and updated dynamically for fast lookup.
+    - 📌 This is not straight forward, and doesn't have a single answer. Trick is to justify your answer.
+    - 📌 Think of a variation of a known data structure, with some extra methods to make it work.
 
-- 📌 Customers should be able to pick specific available seats from a predefined list.
+15. **Event Ticketing System with Seat Reservations**
 
----
+    - ✅ Customers should be able to pick specific available seats from a predefined list.
+    - 📌 What would allow you to remove random chosen seats from the available choices easily?
 
-**Website Browsing Session History**
+16. **Parentheses Matching**
 
-- **Situation**: A web browser needs to manage a user's browsing session history to support forward and backward navigation.
-- **Question**: How would you design the session history feature using only stacks and/or queues, and why?
+    - ✅ A code editor needs a feature to check if all opened parentheses, brackets, and braces are correctly matched and closed.
+    - 📌 Which simple data structure(s) would you use to implement this feature, and what's the logic behind it?
 
-**Undo Functionality in a Text Editor**
+17. **Sequential Task Processing**
 
-- **Situation**: Implementing an 'undo' feature in a text editor that allows users to revert their actions, one at a time, in the reverse order that they were made.
-- **Question**: Which simple data structure(s) would you use to implement the 'undo' functionality and how?
+    - ✅ Tasks come into a system in a sequence where each task has a prerequisite task that must be completed first. Some tasks can only start once their specific predecessor is done.
+    - 📌 How would you manage the execution order of these tasks using the simple data structures discussed?
 
-**Customer Service Call Center**
+18. **Balancing Load in a Network**
 
-- **Situation**: A customer service call center receives calls that are categorized into 'regular' and 'VIP'. VIP calls must be answered before regular ones, regardless of the order they come in.
-- **Question**: How would you organize the incoming calls using only queues and/or stacks such that VIP calls are prioritized?
+- ✅ You're tasked with designing a load balancer that evenly distributes incoming network requests to a set of servers. Upon receiving a request, the load balancer should forward it to the server with the least current load.
+- 📌 Using only arrays/lists and basic operations, how would you implement a system to track and update the load on each server as requests are assigned and completed?
 
-**Parentheses Matching in Code Editors**
+19. **Efficient Inventory Management**
 
-- **Situation**: A code editor needs a feature to check if all opened parentheses, brackets, and braces are correctly matched and closed.
-- **Question**: Which simple data structure would you use to implement this feature, and what's the logic behind it?
+- ✅ You are developing an inventory system for a retail store. The system frequently adds and removes items from the middle of the inventory list, but random access to item details is also needed.
+- 📌 Would you use an array or a linked list to store the inventory, and why?
+- 📌 Again, this is another question that contradicts itself. A classic problem of "random access" (array) vs frequent "adds and removes" (lists). You can only choose one, so what would your criteria be based on?
 
-**Sequential Task Processing**
+20. **Emergency Room Triage**
 
-- **Situation**: Tasks come into a system in a sequence where each task has a prerequisite task that must be completed first. Some tasks can only start once their specific predecessor is done.
-- **Question**: How would you manage the execution order of these tasks using the simple data structures discussed?
+- ✅ In a hospital emergency room, patients arrive with different levels of urgency (low, med, high, and critical) where low is the least worriesome and critical is extremely urgent. Patients with higher urgency must be treated before those with less problematic conditions, even if they arrived later. However, patients with the same conditions, must be treated in the order they arrived.
+- 📌 How would you handle this "two fold" ordering? It can be done in one of the data structures we discuessed, whith a little extra twist.
 
-**Balancing Load in a Network**
+21. **Efficient Contact Lookup**
 
-- **Situation**: You're tasked with designing a load balancer that evenly distributes incoming network requests to a set of servers. Upon receiving a request, the load balancer should forward it to the server with the least current load.
-- **Question**: Using only arrays/lists and basic operations, how would you implement a system to track and update the load on each server as requests are assigned and completed?
-
-**Efficient Inventory Management**
-
-- **Situation:** You are developing an inventory system for a retail store. The system frequently adds and removes items from the middle of the inventory list, but random access to item details is also needed.
-
-- **Question:** Would you use an array or a linked list to store the inventory, and why?
-
-**Print Job Scheduling**
-
-- **Situation:** A shared office printer receives print jobs from multiple users. Some jobs must be printed in the order they were received, but there is also an option for users to cancel their most recently submitted job before it starts printing.
-
-- **Question:** Which data structure(s) (stack, queue, or both) would you use to manage print jobs efficiently, and how would you handle cancellations?
-
-**Emergency Room Triage**
-
-- **Situation:** In a hospital emergency room, patients arrive with different levels of urgency. Critical patients must be treated before those with minor conditions, even if they arrived later.
-
-- **Question:** Which data structure would you use to manage patient intake, ensuring that the most urgent cases are attended to first while still allowing new patients to arrive dynamically?
-
-**Efficient Contact Lookup**
-
-- **Situation:** A mobile phone contact list must allow users to quickly search for a contact’s phone number by typing part of their name. The list is sorted alphabetically.
-
-- **Question:** What algorithm would you use to efficiently retrieve a contact’s details, and why is it better than a linear search?
+    - ✅ ~~A mobile phone contact list must allow users to quickly search for a contact’s phone number by typing part of their name. The list is sorted alphabetically.~~
+    - 📌 ~~What algorithm would you use to efficiently retrieve a contact’s details, and why is it better than a linear search?~~
