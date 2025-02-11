@@ -1,5 +1,7 @@
 ## Trie - Not A Tree (but it is...)
 
+#### Due: N/A
+
 Thanks Chat Gpt (with many fixes):
 
 ### First Explanation:

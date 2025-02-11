@@ -1,12 +1,11 @@
-## Lecture 01 - Ordered Linked List
+## Ordered List - Ipmlementation on Replit
+
+#### Due: N/a
 
 - Created on January 14th @ 1230
 - https://repl.it/@rugbyprof/3013singlylinkedspring2021
 
-
-### Files 
+### Files
 
 - [main.cpp](./main.cpp)
 - [data.txt](./data.txt)
-
-

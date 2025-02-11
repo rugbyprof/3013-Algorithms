@@ -1,36 +1,55 @@
-## Huffman Code
+## Huffman Code - Compression Algorithm
+
+#### Due: N/A
 
 1. Introduction
+
 - Brief overview of data compression
 - Importance of data compression in modern computing
 - Types of data compression: lossless and lossy
+
 2. Lossless Data Compression
+
 - Definition of lossless compression
 - Examples of lossless compression algorithms
 - Mention of Huffman coding as a popular lossless compression technique
+
 3. Huffman Coding: Background and Motivation
+
 - History of Huffman coding
 - Basic idea behind Huffman coding
 - How it achieves data compression
+
 4. Variable-Length Prefix Codes
+
 - Explain the concept of variable-length prefix codes
 - Why prefix codes are important in Huffman coding
+
 5. Constructing a Huffman Tree
+
 - Explain the algorithm for constructing a Huffman tree
 - Importance of character frequencies in building the tree
 - Walkthrough of an example
+
 6. Encoding and Decoding with Huffman Codes
+
 - How to generate Huffman codes from the Huffman tree
 - How to encode input data using Huffman codes
 - How to decode compressed data using the Huffman tree
+
 7. Huffman Coding Efficiency
+
 - Comparison of Huffman coding with other compression algorithms
 - Factors that affect the efficiency of Huffman coding
 - Applications and limitations of Huffman coding
+
 8. Real-World Applications of Huffman Coding
+
 - Use of Huffman coding in popular file formats (e.g., JPEG, PNG, and MP3)
 - Huffman coding in data transmission and storage
+
 9. Conclusion
+
 - Recap of key concepts
 - The impact of Huffman coding on data compression
 - Encouragement to explore further and experiment with implementing Huffman coding

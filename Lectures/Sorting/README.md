@@ -1,8 +1,10 @@
-## Lecture 10 - Sorting
+## Sorting - Slide Collection
+
+#### Due: N/A
 
 - Created on April 6th @ 12301
 
-### Files 
+### Files
 
 - [Linear_Sorting.ppt](./Linear_Sorting.ppt)
 - [Merge_Sort.ppt](./Merge_Sort.ppt)

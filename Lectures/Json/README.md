@@ -1,5 +1,6 @@
-## Json Intro
+## Json - Intro and Overview
 
+#### Due: N/A
 
 ### JSON (JavaScript Object Notation)
 
@@ -28,9 +29,9 @@ It is a lightweight data-interchange format that's easy for humans to read and w
 
 In summary, JSON shines for its simplicity, readability, and wide support across platforms and languages, making it an excellent choice for data interchange in most web-based applications and services. However, for specialized needs like handling binary data or very large datasets, other formats might be more suitable.
 
-Below is an example of using c++ to "create" a json object 
+Below is an example of using c++ to "create" a json object
 
-```cpp
+````cpp
 
 ## Json Intro
 
@@ -62,7 +63,8 @@ int main() {
 
     return 0;
 }
-```
+````
+
 #### OutPut
 
 (It's syntax highlighted in a terminal ... unless you implement it.)
@@ -81,7 +83,6 @@ Deserialized JSON: {
     ]
 }
 ```
-
 
 ## Json File Load
 
@@ -106,7 +107,7 @@ int main() {
 
     // Open the file stream
     std::ifstream fileStream(filePath);
-    
+
     if (!fileStream.is_open()) {
         std::cerr << "Failed to open file: " << filePath << std::endl;
         return 1;
@@ -138,7 +139,6 @@ This code opens the specified JSON file, parses its contents into a `json` objec
 Make sure the file path is correct and points to your JSON file. Also, handle any potential exceptions, especially `json::parse_error`, which can occur if the file content is not valid JSON.
 
 Using nlohmann's JSON library like this can greatly simplify the process of working with JSON in C++, making it accessible even for those who are relatively new to the language.
-
 
 ## Example Problem
 
@@ -177,7 +177,7 @@ int main() {
     // Iterate over all key-value pairs
     for (auto& element : myJson.items()) {
         std::string key = element.key();
-        
+
         // Check if the key contains the partialKey substring
         if (key.find(partialKey) != std::string::npos) {
             // Found a match, do something with it
@@ -192,4 +192,3 @@ int main() {
 In this example, `partialKey` is the substring you're looking for in the keys of your JSON object. The `find` method of `std::string` is used to check if the substring exists in the current key. If `find` returns `std::string::npos`, it means the substring was not found. Otherwise, it indicates a partial match, and you can then process the key-value pair as needed.
 
 Keep in mind that this approach might not be the most efficient for large JSON objects or complex matching logic since it requires scanning through all keys. If you find yourself frequently needing to perform such operations, it might be worth considering if a different data structure or storage format could better suit your needs.
-
