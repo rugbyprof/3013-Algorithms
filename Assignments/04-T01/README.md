@@ -4,13 +4,18 @@
 
 ### Topics
 
-- [List Based Structures vs Array Based Structures](../../Lectures/LectureMaterials/04-ListVsArray/README.md)
-- [Stacks & Queues](../../Lectures/LectureMaterials/01-StacksQueues/README.md)
-- [Linked Lists](../../Lectures/LectureMaterials/00-LinkedList/README.md)
-- [Bubble Sort Vs Selection Sort](../../Lectures/LectureMaterials/00-BubbleVSelection/README.md)
-- [Array Based Binary Search](../../Lectures/LectureMaterials/02-BinarySearch/README.md)
-- [Array Based Binary Tree](../../Lectures/LectureMaterials/00-ArrayBasedBinaryTree/)
-- [Heap Memory vs Stack Memory](../../Lectures/LectureMaterials/05-StackMemVsHeapMem/README.md)
+- [Algorithm vs Data Structure](../../Lectures/AlgorithmJourney/README.md)
+- [Array Based Binary Tree](../../Lectures/ArrayBasedBinaryTree/README.md)
+- [Big-Oh](../../Lectures/Big-Oh/README.md)
+- [Binary Heap](../../Lectures/BinaryHeap/README.md)
+- [Array Based Binary Search](../../Lectures/BinarySearch/README.md)
+- [Binary Search Trees](../../Lectures/BinaryTrees/README.md)
+- [Bubble Sort Vs Selection Sort](../../Lectures/BubbleVSelection/README.md)
+- [List Based Structures vs Array Based Structures](../../Lectures/ListVsArray/README.md)
+- [Ordered List (priority queue)](../../Lectures/OrderedList/README.md)
+- [Recursion](../../Lectures/Recursion/README.md)
+- [Heap Memory vs Stack Memory](../../Lectures/StackMemVsHeapMem/README.md)
+- [Stacks & Queues](../../Lectures/StacksQueues/README.md)
 
 <!-- #### Heaps
 
