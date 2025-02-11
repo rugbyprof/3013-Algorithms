@@ -1,5 +1,7 @@
 ## Algorithm Journey - Relationship Between Algorithms and Data Structures
 
+#### None
+
 ## **Introduction**
 
 The terms **algorithm** and **data structure** are often used together in computer science. While they are closely related, they serve distinct purposes. A **data structure** is a way of organizing and storing data, whereas an **algorithm** is a set of operations that manipulate data within a structure. The combination of both defines how efficiently problems can be solved.
