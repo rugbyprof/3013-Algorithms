@@ -1,4 +1,4 @@
-# **Understanding the Relationship Between Algorithms and Data Structures**
+## Algorithm Journey - Relationship Between Algorithms and Data Structures
 
 ## **Introduction**
 
