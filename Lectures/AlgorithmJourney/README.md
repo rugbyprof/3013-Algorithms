@@ -1,6 +1,6 @@
 ## Algorithm Journey - Relationship Between Algorithms and Data Structures
 
-#### None
+#### N/A
 
 ## **Introduction**
 

@@ -1,6 +1,8 @@
-## Big-O Notation Explained with Examples
-<sup>By Vineet Choudhary </sup>
+## Big-O - Notation Explained with Examples
 
+#### N/A
+
+<sup>By Vineet Choudhary </sup>
 
 Asymptotic notation is a set of languages which allow us to express the performance of our algorithms in relation to their input. Big O notation is used in Computer Science to describe the performance or complexity of an algorithm. Big O specifically describes the worst-case scenario, and can be used to describe the execution time required or the space used (e.g. in memory or on disk) by an algorithm.
 
@@ -10,14 +12,17 @@ Big O complexity can be visualized with this graph:
 As a programmer first and a mathematician second (or maybe third or last) here the best way to understand Big O thoroughly examples in code. So, below are some common orders of growth along with descriptions and examples where possible.
 
 ### 1. O(1)
+
 ```c++
 void printFirstElementOfArray(int arr*){
     printf("%d\n",arr[0]);
 }
 ```
-This function runs in `O(1)` time (or "constant time") relative to its input. The input array could be **`1`**  item or **`1000`**  items, but this function would still just require one step.
+
+This function runs in `O(1)` time (or "constant time") relative to its input. The input array could be **`1`** item or **`1000`** items, but this function would still just require one step.
 
 ### 2. O(n)
+
 ```c++
 void printAllElementOfArray(int arr*, int size){
     for (int i = 0; i < size; i++){
@@ -25,9 +30,11 @@ void printAllElementOfArray(int arr*, int size){
     }
 }
 ```
-This function runs in `O(n)` time (or "linear time"), where **`n`** is the number of items in the array. If the array has **`10`**  items, we have to print **`10`**  times. If it has **`1000`**  items, we have to print **`1000`**  times.
+
+This function runs in `O(n)` time (or "linear time"), where **`n`** is the number of items in the array. If the array has **`10`** items, we have to print **`10`** times. If it has **`1000`** items, we have to print **`1000`** times.
 
 ### 3. O(n<sup>2</sup>)
+
 ```c++
 void printAllPossibleOrderedPairs(int arr[], int size)
 {
@@ -41,9 +48,10 @@ void printAllPossibleOrderedPairs(int arr[], int size)
 }
 ```
 
-Here we're nesting two loops. If our array has **`n`** items, our outer loop runs **`n`**  times and our inner loop runs **`n`** times for each iteration of the outer loop, giving us **`n`<sup>`2`</sup>** total prints. Thus this function runs in **O(`n`<sup>`2`</sup>)** time (or "quadratic time"). If the array has **`10`**  items, we have to print **`100`** times. If it has **`1000`** items, we have to print **`1000000`** times.
+Here we're nesting two loops. If our array has **`n`** items, our outer loop runs **`n`** times and our inner loop runs **`n`** times for each iteration of the outer loop, giving us **`n`<sup>`2`</sup>** total prints. Thus this function runs in **O(`n`<sup>`2`</sup>)** time (or "quadratic time"). If the array has **`10`** items, we have to print **`100`** times. If it has **`1000`** items, we have to print **`1000000`** times.
 
 ### 4. O(2<sup>n</sup>)
+
 ```c++
 int fibonacci(int num){
     if (num <= 1){
@@ -65,18 +73,19 @@ void printAllItemsTwice(int arr*, int size)
     for (int i = 0; i < size; i++){
         printf("%d\n", arr[i]);
     }
-	
+
     for (int i = 0; i < size; i++){
         printf("%d\n", arr[i]);
     }
 }
 ```
+
 This is **O(`2n`)**, which is **O(`2 * n`)** which we just call **`O(n)`**.
 
 ```c++
 void printFirstItemThenFirstHalfThenSayHi100Times(int arr*, int size){
     printf("First element of array = %d\n",arr[0]);
-	
+
     for (int i = 0; i < size/2; i++){
         printf("%d\n", arr[i]);
     }
@@ -86,11 +95,13 @@ void printFirstItemThenFirstHalfThenSayHi100Times(int arr*, int size){
     }
 }
 ```
+
 This is **`O(1 + n/2 + 100)`**, which we just call **`O(n)`**.
 
 Why can we get away with this? Remember, for big O notation we're looking at what happens as **`n`** gets arbitrarily large. As **`n`** gets really big, adding **`100`** or dividing by **`2`** has a decreasingly significant effect.
 
 ### 6. Drop the less significant terms
+
 ```c++
 void printAllNumbersThenAllPairSums(int arr*, int size){
     for (int i = 0; i < size; i++){
@@ -104,6 +115,7 @@ void printAllNumbersThenAllPairSums(int arr*, int size){
     }
 }
 ```
+
 Here our runtime is **`O(n + n`<sup>2</sup>`)`**, which we just call **`O(n`<sup>`2`</sup>`)`**.
 
 Similarly:
@@ -112,10 +124,10 @@ Similarly:
 - or
 - **`O((n + 30) * (n + 5))`** is **`O(n`<sup>`2`</sup>`)`**
 
-
 Again, we can get away with this because the less significant terms quickly become, well, less significant as n gets big.
 
 ### 7. With Big-O, we're usually talking about the "worst case"
+
 ```c++
 bool arrayContainsElement(int arr*, int size, int element){
     for (int i = 0; i < size; i++){
@@ -124,16 +136,18 @@ bool arrayContainsElement(int arr*, int size, int element){
     return false;
 }
 ```
+
 Here we might have **100** items in our array, but the first item might be the that element, in this case we would return in just **1** iteration of our loop.
 
 In general we'd say this is **`O(n)`** runtime and the "worst case" part would be implied. But to be more specific we could say this is worst case **`O(n)`** and best case **`O(1)`** runtime. For some algorithms we can also make rigorous statements about the "average case" runtime.
 
 ### 8. Other Examples
+
 Let's take the following C example which contains a for loop, iterates from **`i = 0`** to **`i < 10000`** and prints each value of that **`i`**:
 
 ```c++
 #include<stdio.h>
-void print_values(int end) 
+void print_values(int end)
 {
     for (int i = 0; i < end; i++)
     {
@@ -152,7 +166,7 @@ We could put a timer at the beginning and the end of the line of code which call
 ```c++
 #include<stdio.h>
 #include<time.h>
-void print_values(int end) 
+void print_values(int end)
 {
     for (int i = 0; i < end; i++)
     {
@@ -182,7 +196,7 @@ We create this consistency by talking about operations our code has to perform. 
 If we were to annotate print_values with the amount of times each line within the function is executed for the input 10000, we would have something as follows:
 
 ```c++
-void print_values(int end) //end = 10000 
+void print_values(int end) //end = 10000
 {
     for (int i = 0; i < end; i++)  //Execution count: 10000
     {
@@ -202,7 +216,8 @@ In the grand scheme of things, the constant value **`1`** is pretty insignifican
 As our code prints each and every value from **`0`** to the input , as the loop is the most significant part of the code, we are able to say that our code is of running time **`O(n)`** where **`n`** is the variable length of the array! Simples!
 
 An algorithm of running time **`O(n)`** is said to be linear, which essentially means the algorithms running time will increase linearly with its input **`(n)`**.
-<!-- 
+
+<!--
 ### 9. Proving Big-O
 We can prove, mathematically, that print_values is in-fact **`O(n)`**, which brings us on to the formal definition for Big-O:
 
@@ -240,9 +255,9 @@ But where do our constants come from? Well they are just values, we typically st
 Lets take a new C function, which contains a for loop, iterates from i = 0 to i < 100 and an another nested for loop from j = 0 to j < 100 which prints each value of that i and j:
 
 ```c++
-void print_values_with_repeat(int end) //end = 100 
+void print_values_with_repeat(int end) //end = 100
 {
-    for (int i = 0; i < end; i++) 
+    for (int i = 0; i < end; i++)
     {
         for (int j = 0; j < end; j++)
         {
@@ -255,7 +270,7 @@ void print_values_with_repeat(int end) //end = 100
 If we were to annotate print_values_with_repeat with the amount of times each line within the function is executed for the input 100, we would have something as follows:
 
 ```c++
-void print_values_with_repeat(int end) //end = 100 
+void print_values_with_repeat(int end) //end = 100
 {
     for (int i = 0; i < end; i++)  //Execution count: 100
     {

@@ -1,4 +1,6 @@
-## Array Based Binary Trees
+## Array Based Binary Trees - BST's in an Array
+
+#### N/A
 
 Storing a binary tree in an array is a straightforward and efficient method when dealing with complete or almost complete binary trees, such as binary heaps. However, this method becomes less efficient for general binary search trees (BSTs) due to their potentially unbalanced nature.
 
@@ -10,7 +12,7 @@ When storing a binary tree in an array, each element of the array corresponds to
 - **Right Child**: Located at index `2 * i + 1`.
 - **Parent**: Located at index `i / 2` (assuming integer division).
 
-This storage method relies on the property that the tree is **complete** or almost complete, ensuring that there are no large gaps in the array. 
+This storage method relies on the property that the tree is **complete** or almost complete, ensuring that there are no large gaps in the array.
 
 ### Real-World Usage
 
