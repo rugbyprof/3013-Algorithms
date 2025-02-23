@@ -7,6 +7,6 @@
 | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/03-A03">03-A03</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/03-A03"> Assignment 3 </a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/03-A03"> BST Delete</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/03-A03">Feb 3rd</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/03-A03">Monday by 2:00pm</a>~ | ---- |
 | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-T01">04-T01</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-T01"> Test 1 </a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-T01"> Various Topics</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-T01">Feb 12th</a>~ | ~<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-T01">Wed @ 2:00</a>~ | ---- |
 
-<sup>Last Updated: 2025-02-19 (Wed @ 13:45)</sup> 
+<sup>Last Updated: 2025-02-22 (Sat @ 18:19)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 
