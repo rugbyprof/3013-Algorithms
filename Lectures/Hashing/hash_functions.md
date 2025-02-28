@@ -556,3 +556,207 @@ unsigned int hash_functions::my_hash (string val)
    return hash;
 }
 ~~~
+
+# 🎯 **Example Hash Functions - A Lecture on Hashing in C++**
+
+## 📝 **Introduction**
+A **hash function** is a mathematical function that **converts input data (keys) into an index** in a **hash table**. The goal of a good hash function is to distribute keys **evenly** and **efficiently** while minimizing **collisions**.
+
+- This lecture will cover:
+  - What makes a **good hash function**.
+  - **Common hash function techniques**.
+  - **Example implementations** in C++.
+
+---
+
+## 🚀 1. What Makes a Good Hash Function?
+
+- A **good hash function** should:
+  1. **Be deterministic** → The same input always produces the same output.
+  2. **Be fast** → The function should execute in **constant time O(1)**.
+  3. **Distribute keys uniformly** → Prevent clustering in a few spots.
+  4. **Minimize collisions** → Different inputs should hash to different values as much as possible.
+  5. **Use the entire range of the table** → Spread values evenly.
+
+---
+
+## 🔢 2. Example Hash Functions in C++
+
+### ✨ **1. Simple Modulo Hashing**
+A basic way to map integer keys to a hash table of size `N` is using **modulo division**.
+
+#### **Formula:**
+
+$\text{index} = (\text{key} \mod \text{table size})$
+
+
+#### **C++ Implementation:**
+```cpp
+#include <iostream>
+using namespace std;
+
+int hashFunction(int key, int tableSize) {
+    return key % tableSize;  // Modulo operation to get an index
+}
+
+int main() {
+    int tableSize = 10;
+    cout << "Hash of 25: " << hashFunction(25, tableSize) << endl;
+    cout << "Hash of 37: " << hashFunction(37, tableSize) << endl;
+    cout << "Hash of 49: " << hashFunction(49, tableSize) << endl;
+    return 0;
+}
+```
+
+**🛠️ Output Example:**
+
+```
+Hash of 25: 5
+Hash of 37: 7
+Hash of 49: 9
+```
+
+- ✅ Pros: Simple, fast, and efficient for integer keys.
+- ❌ Cons: Can cause collisions when numbers cluster around the same remainders.
+
+### ✨ 2. Multiplication Method
+
+This method is useful when the key space is large.
+
+**Formula:**
+
+
+$\text{index} = \lfloor N \times (K \times A \mod 1) \rfloor$
+
+Where:
+	•	K is the key.
+	•	A is a constant fractional number (commonly 0.6180339887).
+	•	N is the table size.
+	•	mod 1 extracts the decimal portion.
+
+C++ Implementation:
+
+#include <iostream>
+using namespace std;
+
+int hashFunction(int key, int tableSize) {
+    const double A = 0.6180339887;  // A fractional constant (commonly used)
+    double fractionalPart = key * A - int(key * A);
+    return int(tableSize * fractionalPart);
+}
+
+int main() {
+    int tableSize = 10;
+    cout << "Hash of 25: " << hashFunction(25, tableSize) << endl;
+    cout << "Hash of 37: " << hashFunction(37, tableSize) << endl;
+    cout << "Hash of 49: " << hashFunction(49, tableSize) << endl;
+    return 0;
+}
+
+✅ Pros: Works well for non-uniform data, spreads keys better than modulo.
+❌ Cons: Slightly more computation than modulo.
+
+✨ 3. String Hashing (Polynomial Rolling Hash)
+
+When hashing strings, each character contributes to the final value.
+
+Formula:
+
+[
+\text{hash} = (c_1 \times p^0 + c_2 \times p^1 + c_3 \times p^2 + \dots) \mod M
+]
+Where:
+	•	c_i = ASCII value of character at position i.
+	•	p = Small prime number (e.g., 31).
+	•	M = Large prime modulus to prevent overflow (e.g., 1e9 + 9).
+
+C++ Implementation:
+
+#include <iostream>
+using namespace std;
+
+const int P = 31;
+const int MOD = 1e9 + 9;
+
+int stringHash(string s, int tableSize) {
+    long long hashValue = 0;
+    long long pPower = 1;
+    
+    for (char c : s) {
+        hashValue = (hashValue + (c - 'a' + 1) * pPower) % MOD;
+        pPower = (pPower * P) % MOD;
+    }
+    return hashValue % tableSize;
+}
+
+int main() {
+    int tableSize = 10;
+    cout << "Hash of 'sword': " << stringHash("sword", tableSize) << endl;
+    cout << "Hash of 'shield': " << stringHash("shield", tableSize) << endl;
+    cout << "Hash of 'staff': " << stringHash("staff", tableSize) << endl;
+    return 0;
+}
+
+✅ Pros: Works well for variable-length strings, commonly used in text search & hashing algorithms.
+❌ Cons: Computationally heavier than integer hashing.
+
+✨ 4. Universal Hashing (Randomized)
+
+Universal hashing chooses a random hash function at runtime from a set of hash functions.
+
+Formula:
+
+[
+\text{hash} = ((a \times key + b) \mod p) \mod N
+]
+Where:
+	•	a, b are randomly chosen constants.
+	•	p is a prime number greater than N.
+	•	N is the table size.
+
+C++ Implementation:
+
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int universalHash(int key, int tableSize) {
+    const int p = 101;  // Large prime number
+    int a = rand() % p + 1;  // Random number in range [1, p-1]
+    int b = rand() % p;      // Random number in range [0, p-1]
+    return ((a * key + b) % p) % tableSize;
+}
+
+int main() {
+    int tableSize = 10;
+    cout << "Hash of 25: " << universalHash(25, tableSize) << endl;
+    cout << "Hash of 37: " << universalHash(37, tableSize) << endl;
+    cout << "Hash of 49: " << universalHash(49, tableSize) << endl;
+    return 0;
+}
+
+✅ Pros: Prevents worst-case attacks, great for cryptographic applications.
+❌ Cons: Requires randomization, slightly slower due to modular arithmetic.
+
+🎯 5. Comparing Hash Functions
+
+Hashing Method	Pros	Cons	Best Used For
+Modulo Hashing	Fast, simple	Prone to clustering	Small integers
+Multiplication Hashing	More uniform spread	Requires floating-point ops	Large key spaces
+Polynomial Hashing	Works well for strings	Requires prime modulus	Text search, dictionaries
+Universal Hashing	Prevents worst-case attacks	Needs randomness	Cryptographic applications
+
+🎯 6. Summary & Key Takeaways
+	•	A good hash function should be fast, uniform, and minimize collisions.
+	•	Modulo Hashing is simple but may cause clustering.
+	•	Multiplication Hashing helps with uniform distribution.
+	•	String Hashing (Polynomial Rolling) is great for text-based data.
+	•	Universal Hashing is best for cryptographic and security applications.
+
+📝 Homework & Exercises
+	1.	Modify the modulo hashing function to work with floating-point numbers.
+	2.	Implement a simple hash table using chaining with modulo hashing.
+	3.	Test different string hashing techniques using real-world data.
+
+🚀 Happy Hashing!
+

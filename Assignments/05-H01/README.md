@@ -13,7 +13,7 @@ In this assignment, you will insert a sequence of integers into an **AVL tree** 
 
 ---
 
-## **Set 1: Left-Right and Right-Left Rotations**
+## Set 1: Left-Right and Right-Left Rotations
 
 Insert the following values in order:
 
@@ -24,18 +24,18 @@ Insert the following values in order:
 
 ---
 
-## **Set 2: Multiple Rotations in Different Branches**
+## Set 2: Multiple Rotations in Different Branches
 
 Insert the following values in order:
 
-50, 40, 60, 55, 70, 45, 30, 35, 65, 75
+50, 40, 45, 60, 55, 70, 35, 30, 65, 75, 43
 
 - This set triggers rotations at different parts of the tree.
 - Identify **Left-Left (LL), Right-Right (RR), Left-Right (LR), and Right-Left (RL)** rotations.
 
 ---
 
-## **Set 3: Alternating Insertions Causing Frequent Rebalancing**
+## Set 3: Alternating Insertions Causing Frequent Rebalancing
 
 Insert the following values in order:
 
