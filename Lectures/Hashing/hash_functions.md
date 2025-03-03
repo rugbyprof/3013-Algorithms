@@ -40,22 +40,22 @@ The Multiplication Method computes a hash value by taking the key, multiplying i
 
 #### Process
 
-Given a key \(k\), the hash function \(h(k)\) is computed as follows:
+Given a key $(k)$, the hash function $(h(k))$ is computed as follows:
 
-1. **Multiply** the key \(k\) by a constant \(A\) (0 < \(A\) < 1), which is not necessarily related to the size of the hash table.
-2. **Extract** the fractional part of \(kA\).
-3. **Multiply** this value by the hash table size \(m\).
+1. **Multiply** the key $(k)$ by a constant $(A)$ (0 < $(A)$ < 1), which is not necessarily related to the size of the hash table.
+2. **Extract** the fractional part of $(kA)$.
+3. **Multiply** this value by the hash table size $(m)$.
 4. **Take the floor** of the result to get the final hash value.
 
 Mathematically, this can be expressed as:
 
 \[ h(k) = \lfloor m(kA \mod 1) \rfloor \]
 
-where \(\mod 1\) means to take the fractional part of \(kA\), and \(\lfloor \cdot \rfloor\) denotes the floor operation, which rounds the number down to the nearest integer.
+where $(\mod 1)$ means to take the fractional part of $(kA)$, and $(\lfloor \cdot \rfloor)$ denotes the floor operation, which rounds the number down to the nearest integer.
 
-#### Choice of \(A\)
+#### Choice of $(A)$
 
-The choice of the constant \(A\) significantly affects the hash function's ability to distribute keys evenly. Cormen et al. suggest that the golden ratio, either \(\phi\) or its conjugate, can serve as an effective choice for \(A\), due to its desirable mathematical properties. Specifically, \(A\) can be set to \( \frac{\sqrt{5} - 1}{2} \approx 0.6180339887...\), which is the fractional part of the golden ratio.
+The choice of the constant $(A)$ significantly affects the hash function's ability to distribute keys evenly. Cormen et al. suggest that the golden ratio, either $(\phi)$ or its conjugate, can serve as an effective choice for $(A)$, due to its desirable mathematical properties. Specifically, $(A)$ can be set to $( \frac{\sqrt{5} - 1}{2} \approx 0.6180339887...)$, which is the fractional part of the golden ratio.
 
 #### Advantages
 
@@ -70,37 +70,41 @@ The Multiplication Method is well-suited for situations where the distribution o
 This hashing method's effectiveness and its ability to be easily adapted to different scenarios make it a popular choice in various applications, from database indexing to in-memory data structures.
 
 ### Knuth Variant on Division
-- `h(k) = k(k+3) mod m`.
+
+- $h(k) = k(k+3)\ mod\ m$.
 - Supposedly works much better than the raw division method.
 
 ### Multiplication Method (Cormen)
+
 The Division Method for hashing is another approach described by Thomas H. Cormen and his co-authors in the textbook "Introduction to Algorithms." This method is a straightforward technique to map a universe of keys into the slots of a hash table. Here's a concise overview of how the Division Method works:
 
 #### Basic Concept
 
-The Division Method generates a hash index by dividing the key \(k\) by the size of the hash table \(m\) and then taking the remainder as the hash value. The essence of this method lies in its simplicity and the direct use of modular arithmetic to ensure that the hash values are evenly distributed across the hash table slots, given a suitably chosen table size.
+The Division Method generates a hash index by dividing the key $(k)$ by the size of the hash table $(m)$ and then taking the remainder as the hash value. The essence of this method lies in its simplicity and the direct use of modular arithmetic to ensure that the hash values are evenly distributed across the hash table slots, given a suitably chosen table size.
 
 #### Process
 
-Given a key \(k\), the hash function \(h(k)\) under the Division Method is calculated as:
+Given a key $(k)$, the hash function $(h(k))$ under the Division Method is calculated as:
 
-\[ h(k) = k \mod m \]
+$h(k) = k \mod m$
 
 where
-- \(k\) is the key to be hashed,
-- \(m\) is the size of the hash table,
-- and \(\mod\) denotes the modulo operation, which yields the remainder of the division of \(k\) by \(m\).
 
-#### Choice of \(m\)
+- $(k)$ is the key to be hashed,
+- $(m)$ is the size of the hash table,
+- and $(\mod)$ denotes the modulo operation, which yields the remainder of the division of $(k)$ by $(m)$.
 
-The effectiveness of the Division Method largely depends on the choice of \(m\), the hash table size. To achieve a uniform distribution of hash values:
-- \(m\) should not be a power of 2, because if \(m\) is \(2^n\), then \(h(k)\) would simply be the \(n\) least significant bits of \(k\), which might not be uniformly distributed for typical data.
-- \(m\) should ideally be a prime number that is not too close to a power of 2. Choosing \(m\) as a prime number helps in reducing the likelihood of collisions (i.e., different keys hashing to the same value) and thus leads to a more uniform distribution of keys across the hash table.
+#### Choice of $(m)$
+
+The effectiveness of the Division Method largely depends on the choice of $(m)$, the hash table size. To achieve a uniform distribution of hash values:
+
+- $(m)$ should not be a power of 2, because if $(m)$ is $(2^n)$, then $(h(k))$ would simply be the $(n)$ least significant bits of $(k)$, which might not be uniformly distributed for typical data.
+- $(m)$ should ideally be a prime number that is not too close to a power of 2. Choosing $(m)$ as a prime number helps in reducing the likelihood of collisions (i.e., different keys hashing to the same value) and thus leads to a more uniform distribution of keys across the hash table.
 
 #### Advantages
 
 - **Ease of Implementation**: The Division Method is straightforward and easy to implement, making it an attractive first option for hash function design.
-- **Uniform Distribution**: With a well-chosen table size \(m\), this method can provide a good distribution of hash values, especially when the keys are random.
+- **Uniform Distribution**: With a well-chosen table size $(m)$, this method can provide a good distribution of hash values, especially when the keys are random.
 - **Efficiency**: The computation of the hash value is efficient, requiring only a single division operation.
 
 #### Application
@@ -109,30 +113,30 @@ The Division Method is particularly useful for constructing hash functions when 
 
 #### Conclusion
 
-While the Division Method is celebrated for its simplicity, the choice of the hash table size \(m\) is crucial for its success in minimizing collisions and achieving an even distribution of keys. This method provides a solid foundation for hash function design, especially in applications where simplicity and efficiency are prioritized.
+While the Division Method is celebrated for its simplicity, the choice of the hash table size $(m)$ is crucial for its success in minimizing collisions and achieving an even distribution of keys. This method provides a solid foundation for hash function design, especially in applications where simplicity and efficiency are prioritized.
 
 ## Table Size
 
-Now let's illustrate the importance of uniform distribution in hash tables and the impact of table size selection with a simple example. We'll use a basic division-based hash function \(h(k) = k \mod m\), where \(k\) is the key and \(m\) is the table size.
+Now let's illustrate the importance of uniform distribution in hash tables and the impact of table size selection with a simple example. We'll use a basic division-based hash function $(h(k) = k\ mod\ m)$, where $(k)$ is the key and $(m)$ is the table size.
 
 ### Scenario: Poorly Chosen Table Size
 
-Let's say we have a hash table with a size \(m = 10\) (a poor choice because it's a round number, making it more prone to patterns in the data affecting distribution). Our keys will be simple integers, and we'll see how they distribute with such a table size.
+Let's say we have a hash table with a size $(m = 10)$ (a poor choice because it's a round number, making it more prone to patterns in the data affecting distribution). Our keys will be simple integers, and we'll see how they distribute with such a table size.
 
 ### Example Keys
 
-Consider we have a set of keys that are multiples of 5: \(5, 10, 15, 20, 25, 30, ...\). This is not an unusual scenario, as keys could represent calculated or measured values that happen to have a common factor, especially in specific domains or due to data characteristics.
+Consider we have a set of keys that are multiples of 5: ($5, 10, 15, 20, 25, 30, ...$). This is not an unusual scenario, as keys could represent calculated or measured values that happen to have a common factor, especially in specific domains or due to data characteristics.
 
 ### Hashing the Keys
 
-Using our hash function \(h(k) = k \mod 10\), let's see how these keys are distributed:
+Using our hash function $(h(k) = k\ mod\ 10)$, let's see how these keys are distributed:
 
-- \(h(5) = 5 \mod 10 = 5\)
-- \(h(10) = 10 \mod 10 = 0\)
-- \(h(15) = 15 \mod 10 = 5\)
-- \(h(20) = 20 \mod 10 = 0\)
-- \(h(25) = 25 \mod 10 = 5\)
-- \(h(30) = 30 \mod 10 = 0\)
+- $(h(5) = 5 \mod 10 = 5)$
+- $(h(10) = 10 \mod 10 = 0)$
+- $(h(15) = 15 \mod 10 = 5)$
+- $(h(20) = 20 \mod 10 = 0)$
+- $(h(25) = 25 \mod 10 = 5)$
+- $(h(30) = 30 \mod 10 = 0)$
 
 ### Observations
 
@@ -144,7 +148,7 @@ Imagine a hash table visualized as ten buckets in a row, labeled from 0 to 9. In
 
 ### Discussion
 
-This example demonstrates that choosing a table size \(m\) that is a simple round number (especially one that might commonly be a factor of keys) can lead to poor distribution of keys. It highlights the significance of selecting a prime number for \(m\), ideally one that does not closely follow the form \(2^n\) or \(2^n - 1\), to help ensure a more uniform distribution of keys across all available slots in the hash table, regardless of any patterns in the data.
+This example demonstrates that choosing a table size $(m)$ that is a simple round number (especially one that might commonly be a factor of keys) can lead to poor distribution of keys. It highlights the significance of selecting a prime number for $(m)$, ideally one that does not closely follow the form $(2^n)$ or $(2^n - 1)$, to help ensure a more uniform distribution of keys across all available slots in the hash table, regardless of any patterns in the data.
 
 ### Conclusion
 
@@ -156,42 +160,43 @@ A polynomial hash function is a method of generating a hash value from a string 
 
 ### Basic Concept
 
-The idea behind a polynomial hash function is to map a string \(s\) of length \(n\), composed of characters \(s_1, s_2, ..., s_n\), to a numerical value. The hash function typically looks like this:
+The idea behind a polynomial hash function is to map a string $(s)$ of length $(n)$, composed of characters $(s_1, s_2, ..., s_n)$, to a numerical value. The hash function typically looks like this:
 
-\[ h(s) = s_1a^{n-1} + s_2a^{n-2} + ... + s_{n-1}a + s_n \mod m \]
+$h(s) = s_1a^{n-1} + s_2a^{n-2} + ... + s_{n-1}a + s_n \mod m$
 
 where:
-- \(h(s)\) is the hash value of string \(s\).
-- \(s_i\) represents the numerical value of the \(i\)th character in the string.
-- \(a\) is a constant, and \(a > 1\). Often, \(a\) is chosen to be a prime number to ensure a good distribution of hash values.
-- \(m\) is a large prime number, used as the modulus to ensure the hash value fits into a fixed size and to reduce collisions. Taking the result modulo \(m\) also helps in keeping the hash value within a specific range, such as the size of a hash table.
-- The exponent \(n-i\) ensures that the position of each character influences the hash value.
+
+- $(h(s))$ is the hash value of string $(s)$.
+- $(s_i)$ represents the numerical value of the $(i)$th character in the string.
+- $(a)$ is a constant, and $(a > 1)$. Often, $(a)$ is chosen to be a prime number to ensure a good distribution of hash values.
+- $(m)$ is a large prime number, used as the modulus to ensure the hash value fits into a fixed size and to reduce collisions. Taking the result modulo $(m)$ also helps in keeping the hash value within a specific range, such as the size of a hash table.
+- The exponent $(n-i)$ ensures that the position of each character influences the hash value.
 
 ### Properties and Usage
 
 1. **Efficiency**: Polynomial hash functions are efficient to compute, especially when using Horner’s method to evaluate the polynomial. This method reduces the computational complexity by turning the polynomial into a nested form, allowing the hash to be computed iteratively in linear time relative to the string length.
 
-2. **Uniform Distribution**: If the constants \(a\) and \(m\) are chosen carefully, polynomial hash functions can achieve a uniform distribution of hash values over the output space, reducing the likelihood of collisions.
+2. **Uniform Distribution**: If the constants $(a)$ and $(m)$ are chosen carefully, polynomial hash functions can achieve a uniform distribution of hash values over the output space, reducing the likelihood of collisions.
 
-3. **Applicability**: Polynomial hashing is particularly useful in algorithms that require comparing substrings within a larger string, such as in the Rabin-Karp string search algorithm. The choice of the base \(a\) and modulus \(m\) is critical in minimizing collisions and ensuring efficient and reliable hashing.
+3. **Applicability**: Polynomial hashing is particularly useful in algorithms that require comparing substrings within a larger string, such as in the Rabin-Karp string search algorithm. The choice of the base $(a)$ and modulus $(m)$ is critical in minimizing collisions and ensuring efficient and reliable hashing.
 
 ### Example
 
-Consider a simple string "abc" with characters encoded in ASCII ('a' = 97, 'b' = 98, 'c' = 99), a base \(a = 101\), and a large modulus \(m\). The hash value \(h("abc")\) can be calculated as:
+Consider a simple string "abc" with characters encoded in ASCII ('a' = 97, 'b' = 98, 'c' = 99), a base $(a = 101)$, and a large modulus $(m)$. The hash value $(h("abc"))$ can be calculated as:
 
-\[ h("abc") = (97 \times 101^2 + 98 \times 101^1 + 99 \times 101^0) \mod m \]
+$h("abc") = (97 \times 101^2 + 98 \times 101^1 + 99 \times 101^0) \mod m$
 
-This method turns the string into a large numerical value based on the polynomial calculation, then takes it modulo \(m\) to produce the final hash value.
+This method turns the string into a large numerical value based on the polynomial calculation, then takes it modulo $(m)$ to produce the final hash value.
 
 ### Security Note
 
 While polynomial hash functions are widely used for non-cryptographic applications due to their efficiency and simplicity, they are generally not suitable for cryptographic purposes without additional security considerations, due to vulnerability to collision attacks if the adversary can control the input.
 
-----
+---
 
 ## Hashing sequences of characters
 
-The hash functions in this section take a sequence of integers k=k<sub>1</sub>,...,k<sub>n</sub> and produce a small integer bucket value **h(k)**. **m** is the size of the hash table (number of buckets), which should be a prime number. The sequence of integers might be a list of integers or it might be an array of characters (a string).
+The hash functions in this section take a sequence of integers $k=k_1,...,k_n$ and produce a small integer bucket value **h(k)**. **m** is the size of the hash table (number of buckets), which should be a prime number. The sequence of integers might be a list of integers or it might be an array of characters (a string).
 
 The specific tuning of the following algorithms assumes that the integers are all, in fact, character codes.
 
@@ -199,14 +204,15 @@ The specific tuning of the following algorithms assumes that the integers are al
 - ASCII uses only 7 of these 8 bits. Of those 7, the common characters (alphabetic and number) use only the low-order 6 bits. And the first of those 6 bits primarily indicates the case of characters, which is relatively insignificant.
 - So the following algorithms concentrate on preserving as much information as possible from the last 5 bits of each number, and make less use of the first 3 bits.
 
-When using the following algorithms, the inputs k<sub>i</sub> must be unsigned integers. Feeding them signed integers may result in odd behavior.
+When using the following algorithms, the inputs $k_i$ must be unsigned integers. Feeding them signed integers may result in odd behavior.
 
-For each of these algorithms, let h be the output value. Set h to 0. Walk down the sequence of integers, adding the integers one by one to h. The algorithms differ in exactly how to combine an integer ki with h. The final return value is h mod m.
+For each of these algorithms, let h be the output value. Set h to 0. Walk down the sequence of integers, adding the integers one by one to h. The algorithms differ in exactly how to combine an integer $k_i$ with h. The final return value is $h\ mod\ m$.
 
 #### CRC variant:
 
-Do a 5-bit left circular shift of h. Then XOR in k<sub>i</sub>. Specifically:
-~~~cpp
+Do a 5-bit left circular shift of h. Then XOR in $k_i$. Specifically:
+
+```cpp
      highorder = h & 0xf8000000    // extract high-order 5 bits from h
                                    // 0xf8000000 is the hexadecimal representation
                                    //   for the 32-bit number with the first five
@@ -215,12 +221,13 @@ Do a 5-bit left circular shift of h. Then XOR in k<sub>i</sub>. Specifically:
      h = h ^ (highorder >> 27)     // move the highorder 5 bits to the low-order
                                    //   end and XOR into h
      h = h ^ ki                    // XOR h and ki
-~~~
+```
 
 #### PJW hash:
 
-Left shift h by 4 bits. Add in k<sub>i</sub>. Move the top 4 bits of h to the bottom. Specifically:
-~~~cpp
+Left shift h by 4 bits. Add in $k_i$. Move the top 4 bits of h to the bottom. Specifically:
+
+```cpp
      // The top 4 bits of h are all zero
      h = (h << 4) + ki               // shift h 4 bits left, add in ki
      g = h & 0xf0000000              // get the top 4 bits of h
@@ -228,30 +235,31 @@ Left shift h by 4 bits. Add in k<sub>i</sub>. Move the top 4 bits of h to the bo
         h = h ^ (g >> 24)            //   move them to the low end of h
         h = h ^ g
      // The top 4 bits of h are again all zero
-~~~
+```
 
 PJW and the CRC variant both work well and there's not much difference between them. We believe that the CRC variant is probably slightly better because
+
 - It uses all 32 bits. PJW uses only 24 bits. This is probably not a major issue since the final value m will be much smaller than either.
 - 5 bits is probably a better shift value than 4. Shifts of 3, 4, and 5 bits are all supposed to work OK.
 - Combining values with XOR is probably slightly better than adding them. However, again, the difference is slight.
 
 #### BUZ hash:
 
-Set up a function ***R*** that takes 8-bit character values and returns random numbers. This function can be precomputed and stored in an array. Then, to add each character ***k<sub>i</sub>*** to ***h***, do a 1-bit left circular shift of ***h*** and then `XOR` in the random value for ***k<sub>i</sub>***. That is:
+Set up a function **_R_** that takes 8-bit character values and returns random numbers. This function can be precomputed and stored in an array. Then, to add each character $k_i$ to $h$, do a 1-bit left circular shift of $h$ and then `XOR` in the random value for $k_i$. That is:
 
-~~~cpp
+```cpp
      highorder = h & 0x80000000    // extract high-order bit from h
      h = h << 1                    // shift h left by 1 bit
      h = h ^ (highorder >> 31)     // move them to the low-order end and
                                    // XOR into h
      h = h ^ R[ki]                 // XOR h and the random value for ki
-~~~
+```
 
 Rumor has it that you may have to run a second hash function on the output to make it random enough. Experimentally, this function produces good results, but is a bit slower than the CRC variant and PJW.
 
 #### Additive Hash
 
-~~~cpp
+```cpp
 //-----------------------------------------------------------------
 // Additive Hash
 // Adds all of the characters together using ascii values.
@@ -267,11 +275,11 @@ unsigned int hash_functions::add_hash (string val)
 
   return h;
 }
-~~~
+```
 
 #### XOR hash
 
-~~~cpp
+```cpp
 //-----------------------------------------------------------------
 // XOR hash
 // Repeatedly folds the bytes together using the XOR operation to
@@ -288,11 +296,11 @@ unsigned int hash_functions::xor_hash (string val)
 
   return h;
 }
-~~~
+```
 
 #### Rotating hash
 
-~~~cpp
+```cpp
 //-----------------------------------------------------------------
 // Rotating hash
 // The rotating hash is identical to the XOR hash except instead of simply
@@ -311,11 +319,11 @@ unsigned int hash_functions::rot_hash (string val)
 
   return h;
 }
-~~~
+```
 
 #### Bernstein hash
 
-~~~cpp
+```cpp
 //-----------------------------------------------------------------
 // Bernstein hash
 // Dan Bernstein created this algorithm and posted it in a newsgroup.
@@ -337,11 +345,11 @@ unsigned int hash_functions::bernstein_hash (string val)
 
   return h;
 }
-~~~
+```
 
 #### Modified Bernstein hash
 
-~~~cpp
+```cpp
 //-----------------------------------------------------------------
 // Modified Bernstein hash
 // A minor update to Bernstein's hash replaces addition with XOR for
@@ -361,11 +369,11 @@ unsigned int hash_functions::mod_bernstein_hash (string val)
 
   return h;
 }
-~~~
+```
 
 #### Shift-Add-XOR hash
 
-~~~cpp
+```cpp
 //-----------------------------------------------------------------
 // Shift-Add-XOR hash
 // The shift-add-XOR hash was designed as a string hashing function,
@@ -388,11 +396,11 @@ unsigned int hash_functions::shift_add_xor_hash (string val)
 
   return h;
 }
-~~~
+```
 
 #### FNV hash
 
-~~~cpp
+```cpp
 //-----------------------------------------------------------------
 // FNV hash
 // The FNV hash, short for Fowler/Noll/Vo in honor of the creators,
@@ -415,11 +423,11 @@ unsigned int hash_functions::fnv_hash (string val)
 
   return h;
 }
-~~~
+```
 
 #### One-at-a-Time hash
 
-~~~cpp
+```cpp
 //-----------------------------------------------------------------
 // One-at-a-Time hash
 // @Param: string val - word to be hashed
@@ -441,11 +449,11 @@ unsigned int hash_functions::one_at_a_time_hash (string val)
 
   return h;
 }
-~~~
+```
 
 #### Jsw hash
 
-~~~cpp
+```cpp
 //-----------------------------------------------------------------
 // Jsw hash
 // This is a hash of my own devising that combines a rotating hash
@@ -469,11 +477,11 @@ unsigned int hash_functions::jsw_hash (string val)
 
   return h;
 }
-~~~
+```
 
 #### Elf Hash
 
-~~~cpp
+```cpp
 
 //-----------------------------------------------------------------
 // Elf hash
@@ -500,28 +508,30 @@ unsigned int hash_functions::elf_hash (string val)
 
   return h;
 }
-~~~
+```
 
 The ELF hash function is a good example of a hash algorithm that combines simple arithmetic and bitwise operations to distribute input (e.g., strings) across a wide range of hash values. Here's a step-by-step breakdown of how the ELF hash function works, using the implementation you've provided:
 
 ### Step-by-Step Algorithm of ELF Hash Function
 
-1. **Initialization**: 
+1. **Initialization**:
+
    - Start with a hash value `h` set to 0. This will accumulate the result.
 
-2. **Iteration Over Each Character**: 
+2. **Iteration Over Each Character**:
+
    - For each character `c` in the input string `val`, repeat the following steps:
      a. **Update Hash**: Multiply `h` by 16 (equivalent to left shifting by 4 bits, `h << 4`) and then add the ASCII value of the current character `c` to `h`. This step gradually builds up the hash value based on the entire string's characters.
      b. **Calculate High Order Bits**: Determine the high-order bits of `h` (those beyond the 28th bit) by performing a bitwise AND operation between `h` and `0xf0000000L`. This extracts the top four bits of `h`, stored in `g`.
-     c. **Conditional Mixing**: 
-        - If `g` is not zero (meaning there were significant high-order bits in `h`), mix these bits back into the hash by XORing `h` with `g` shifted right 24 places (`g >> 24`). This step disperses the influence of the high-order bits back into the rest of the hash value to ensure even distribution.
-     d. **Clear High Order Bits**: Clear the high-order bits in `h` that were stored in `g`. This is achieved by ANDing `h` with the negation of `g` (`h &= ~g`), effectively setting the top four bits to zero and preventing overflow in subsequent iterations.
+     c. **Conditional Mixing**:
+     - If `g` is not zero (meaning there were significant high-order bits in `h`), mix these bits back into the hash by XORing `h` with `g` shifted right 24 places (`g >> 24`). This step disperses the influence of the high-order bits back into the rest of the hash value to ensure even distribution.
+       d. **Clear High Order Bits**: Clear the high-order bits in `h` that were stored in `g`. This is achieved by ANDing `h` with the negation of `g` (`h &= ~g`), effectively setting the top four bits to zero and preventing overflow in subsequent iterations.
 
 3. **Return Hash**: After processing all characters in the string, return the accumulated hash value `h`.
 
 ### Explanation of Key Operations
 
-- **Bit Shifting (`<<` and `>>`)**: Bit shifting is used to efficiently multiply and divide by powers of two. Left shifting a value by `n` (`val << n`) multiplies it by \(2^n\), while right shifting (`val >> n`) divides it by \(2^n\), using integer division.
+- **Bit Shifting (`<<` and `>>`)**: Bit shifting is used to efficiently multiply and divide by powers of two. Left shifting a value by `n` (`val << n`) multiplies it by $(2^n)$, while right shifting (`val >> n`) divides it by $(2^n)$, using integer division.
 - **Bitwise AND (`&`)**: The AND operation is used to mask certain bits, i.e., to extract or clear specific bits within a value. In this case, it's used to extract the high-order bits (`h & 0xf0000000L`) and to clear them later (`h &= ~g`).
 - **Bitwise XOR (`^`)**: XOR is a bitwise operation that mixes bits. If `g` is not zero, XORing `h` with the right-shifted `g` disperses these high-order bits back into `h`, helping to improve the distribution of hash values.
 - **Negation (`~`)**: The negation operator flips all the bits of a value. It's used here to create a mask that clears the high-order bits in `h`.
@@ -534,7 +544,7 @@ This step-by-step breakdown abstracts away the specific bit-level operations to 
 
 #### My Hash
 
-~~~cpp
+```cpp
 //-----------------------------------------------------------------
 // My hash
 // I basically took ideas from above hash functions and others found
@@ -555,11 +565,12 @@ unsigned int hash_functions::my_hash (string val)
 
    return hash;
 }
-~~~
+```
 
 # 🎯 **Example Hash Functions - A Lecture on Hashing in C++**
 
 ## 📝 **Introduction**
+
 A **hash function** is a mathematical function that **converts input data (keys) into an index** in a **hash table**. The goal of a good hash function is to distribute keys **evenly** and **efficiently** while minimizing **collisions**.
 
 - This lecture will cover:
@@ -583,14 +594,15 @@ A **hash function** is a mathematical function that **converts input data (keys)
 ## 🔢 2. Example Hash Functions in C++
 
 ### ✨ **1. Simple Modulo Hashing**
+
 A basic way to map integer keys to a hash table of size `N` is using **modulo division**.
 
 #### **Formula:**
 
 $\text{index} = (\text{key} \mod \text{table size})$
 
-
 #### **C++ Implementation:**
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -625,53 +637,56 @@ This method is useful when the key space is large.
 
 **Formula:**
 
-
 $\text{index} = \lfloor N \times (K \times A \mod 1) \rfloor$
 
-Where:
-	•	K is the key.
-	•	A is a constant fractional number (commonly 0.6180339887).
-	•	N is the table size.
-	•	mod 1 extracts the decimal portion.
+**Where:**
 
-C++ Implementation:
+- K is the key.
+- A is a constant fractional number (commonly 0.6180339887).
+- N is the table size.
+- mod 1 extracts the decimal portion.
 
+**C++ Implementation:**
+
+```cpp
 #include <iostream>
 using namespace std;
 
 int hashFunction(int key, int tableSize) {
-    const double A = 0.6180339887;  // A fractional constant (commonly used)
-    double fractionalPart = key * A - int(key * A);
-    return int(tableSize * fractionalPart);
+  const double A = 0.6180339887; // A fractional constant (commonly used)
+  double fractionalPart = key _ A - int(key _ A);
+  return int(tableSize \* fractionalPart);
 }
 
 int main() {
-    int tableSize = 10;
-    cout << "Hash of 25: " << hashFunction(25, tableSize) << endl;
-    cout << "Hash of 37: " << hashFunction(37, tableSize) << endl;
-    cout << "Hash of 49: " << hashFunction(49, tableSize) << endl;
-    return 0;
+  int tableSize = 10;
+  cout << "Hash of 25: " << hashFunction(25, tableSize) << endl;
+  cout << "Hash of 37: " << hashFunction(37, tableSize) << endl;
+  cout << "Hash of 49: " << hashFunction(49, tableSize) << endl;
+  return 0;
 }
+```
 
 ✅ Pros: Works well for non-uniform data, spreads keys better than modulo.
 ❌ Cons: Slightly more computation than modulo.
 
-✨ 3. String Hashing (Polynomial Rolling Hash)
+## ✨ 3. String Hashing (Polynomial Rolling Hash)
 
 When hashing strings, each character contributes to the final value.
 
-Formula:
+**Formula:**
 
-[
-\text{hash} = (c_1 \times p^0 + c_2 \times p^1 + c_3 \times p^2 + \dots) \mod M
-]
-Where:
-	•	c_i = ASCII value of character at position i.
-	•	p = Small prime number (e.g., 31).
-	•	M = Large prime modulus to prevent overflow (e.g., 1e9 + 9).
+$text{hash} = (c_1 \times p^0 + c_2 \times p^1 + c_3 \times p^2 + \dots) \mod M$
 
-C++ Implementation:
+**Where:**
 
+- $c_i$ = ASCII value of character at position i.
+- $p$ = Small prime number (e.g., 31).
+- $M$ = Large prime modulus to prevent overflow (e.g., 1e9 + 9).
+
+**C++ Implementation:**
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -679,84 +694,87 @@ const int P = 31;
 const int MOD = 1e9 + 9;
 
 int stringHash(string s, int tableSize) {
-    long long hashValue = 0;
-    long long pPower = 1;
-    
-    for (char c : s) {
-        hashValue = (hashValue + (c - 'a' + 1) * pPower) % MOD;
-        pPower = (pPower * P) % MOD;
-    }
-    return hashValue % tableSize;
+  long long hashValue = 0;
+  long long pPower = 1;
+
+  for (char c : s) {
+      hashValue = (hashValue + (c - 'a' + 1) * pPower) % MOD;
+      pPower = (pPower * P) % MOD;
+  }
+  return hashValue % tableSize;
 }
 
 int main() {
-    int tableSize = 10;
-    cout << "Hash of 'sword': " << stringHash("sword", tableSize) << endl;
-    cout << "Hash of 'shield': " << stringHash("shield", tableSize) << endl;
-    cout << "Hash of 'staff': " << stringHash("staff", tableSize) << endl;
-    return 0;
+  int tableSize = 10;
+  cout << "Hash of 'sword': " << stringHash("sword", tableSize) << endl;
+  cout << "Hash of 'shield': " << stringHash("shield", tableSize) << endl;
+  cout << "Hash of 'staff': " << stringHash("staff", tableSize) << endl;
+  return 0;
 }
+```
 
-✅ Pros: Works well for variable-length strings, commonly used in text search & hashing algorithms.
-❌ Cons: Computationally heavier than integer hashing.
+- ✅ Pros: Works well for variable-length strings, commonly used in text search & hashing algorithms.
+- ❌ Cons: Computationally heavier than integer hashing.
 
-✨ 4. Universal Hashing (Randomized)
+## ✨ 4. Universal Hashing (Randomized)
 
 Universal hashing chooses a random hash function at runtime from a set of hash functions.
 
-Formula:
+**Formula:**
 
-[
-\text{hash} = ((a \times key + b) \mod p) \mod N
-]
-Where:
-	•	a, b are randomly chosen constants.
-	•	p is a prime number greater than N.
-	•	N is the table size.
+$text{hash} = ((a \times key + b) \mod p) \mod N$
 
-C++ Implementation:
+**Where:**
 
+- $a, b$ are randomly chosen constants.
+- $p$ is a prime number greater than N.
+- $N$ is the table size.
+
+**C++ Implementation:**
+
+```cpp
 #include <iostream>
 #include <cstdlib>
 using namespace std;
 
 int universalHash(int key, int tableSize) {
-    const int p = 101;  // Large prime number
-    int a = rand() % p + 1;  // Random number in range [1, p-1]
-    int b = rand() % p;      // Random number in range [0, p-1]
-    return ((a * key + b) % p) % tableSize;
+  const int p = 101; // Large prime number
+  int a = rand() % p + 1; // Random number in range [1, p-1]
+  int b = rand() % p; // Random number in range [0, p-1]
+  return ((a \* key + b) % p) % tableSize;
 }
 
 int main() {
-    int tableSize = 10;
-    cout << "Hash of 25: " << universalHash(25, tableSize) << endl;
-    cout << "Hash of 37: " << universalHash(37, tableSize) << endl;
-    cout << "Hash of 49: " << universalHash(49, tableSize) << endl;
-    return 0;
+  int tableSize = 10;
+  cout << "Hash of 25: " << universalHash(25, tableSize) << endl;
+  cout << "Hash of 37: " << universalHash(37, tableSize) << endl;
+  cout << "Hash of 49: " << universalHash(49, tableSize) << endl;
+  return 0;
 }
+```
 
-✅ Pros: Prevents worst-case attacks, great for cryptographic applications.
-❌ Cons: Requires randomization, slightly slower due to modular arithmetic.
+- ✅ Pros: Prevents worst-case attacks, great for cryptographic applications.
+- ❌ Cons: Requires randomization, slightly slower due to modular arithmetic.
 
-🎯 5. Comparing Hash Functions
+## 🎯 5. Comparing Hash Functions
 
-Hashing Method	Pros	Cons	Best Used For
-Modulo Hashing	Fast, simple	Prone to clustering	Small integers
-Multiplication Hashing	More uniform spread	Requires floating-point ops	Large key spaces
-Polynomial Hashing	Works well for strings	Requires prime modulus	Text search, dictionaries
-Universal Hashing	Prevents worst-case attacks	Needs randomness	Cryptographic applications
+| **Hashing Method**     | **Pros**                    | **Cons**                    | **Best Used For**          |
+| :--------------------- | :-------------------------- | :-------------------------- | :------------------------- |
+| Modulo Hashing         | Fast, simple                | Prone to clustering Small   | integers                   |
+| Multiplication Hashing | More uniform spread         | Requires floating-point ops | Large key spaces           |
+| Polynomial Hashing     | Works well for strings      | Requires prime modulus      | Text search, dictionaries  |
+| Universal Hashing      | Prevents worst-case attacks | Needs randomness            | Cryptographic applications |
 
-🎯 6. Summary & Key Takeaways
-	•	A good hash function should be fast, uniform, and minimize collisions.
-	•	Modulo Hashing is simple but may cause clustering.
-	•	Multiplication Hashing helps with uniform distribution.
-	•	String Hashing (Polynomial Rolling) is great for text-based data.
-	•	Universal Hashing is best for cryptographic and security applications.
+## 🎯 6. Summary & Key Takeaways
 
-📝 Homework & Exercises
-	1.	Modify the modulo hashing function to work with floating-point numbers.
-	2.	Implement a simple hash table using chaining with modulo hashing.
-	3.	Test different string hashing techniques using real-world data.
+- A good hash function should be fast, uniform, and minimize collisions.
+- Modulo Hashing is simple but may cause clustering.
+- Multiplication Hashing helps with uniform distribution.
+- String Hashing (Polynomial Rolling) is great for text-based data.
+- Universal Hashing is best for cryptographic and security applications.
 
-🚀 Happy Hashing!
+## 📝 Homework & Exercises
 
+1. Modify the modulo hashing function to work with floating-point numbers.
+2. Implement a simple hash table using chaining with modulo hashing.
+3. Test different string hashing techniques using real-world data.
