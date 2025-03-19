@@ -45,19 +45,26 @@ struct TrieNode {
 
 #### Explanation
 
-- children[26]:
-- Each index corresponds to a letter in the alphabet. For example, children[0] is for a, children[1] is for b, and so on. If your trie needs to handle uppercase letters or symbols, you could expand this array or use another data structure (like a map).
-- endOfWord:
-- A flag to mark the node as the end of a word. This way, words like "cat" and "car" can share a path for "ca", but differ at the final node where endOfWord is set to true.
-- Constructor:
-- Initializes endOfWord to false and sets all child pointers to nullptr (or NULL in older C++ code).
+- **children[26]**: 
+  - Each index corresponds to a letter in the alphabet. 
+  - For example, 
+    - children[0] is for a, 
+    - children[1] is for b, 
+    - and so on. 
+  - If your trie needs to handle uppercase letters or symbols, you could expand this array or use another data structure (like a map).
+- **endOfWord**:
+  - A flag to mark the node as the end of a word. 
+  - This way, words like "cat" and "car" can share a path for "ca", but differ at the final node where `endOfWord` is set to true.
+- **Constructor**:
+  - Initializes `endOfWord` to false and sets all child pointers to nullptr (or NULL in older C++ code).
 
 #### Variations
 
-- Using a map or unordered_map<char, TrieNode>\*
-- Instead of a fixed array of size 26, you can dynamically store children keyed by characters. This is more flexible if you have to handle punctuation, uppercase letters, or extended character sets.
+- Using a map or `unordered_map<char, TrieNode>`
+  - Instead of a fixed array of size 26, you can dynamically store children keyed by characters. 
+  - This is more flexible if you have to handle punctuation, uppercase letters, or extended character sets.
 - Storing Additional Data
-- You might include frequency counts, word definitions, or any other metadata needed for your application.
+  - You might include frequency counts, word definitions, or any other metadata needed for your application.
 
 This basic structure is enough to implement common trie operations such as inserting a word, searching for a word, and deleting a word.
 
@@ -220,17 +227,17 @@ When discussing the complexity of a trie, we typically focus on time and space c
 
 - Worst-case: $O(L)$ You traverse (or create) one node per character in the word.
 - At each step, you index into the child pointer (or map) that corresponds to the current character.
-- This operation takes $O(1)$ if using an array (e.g., children[26]) or $O(log k) /div O(1)$ if using some kind of map/hashtable, repeated $L$ times.
+- This operation takes $O(1)$ if using an array (e.g., children[26]) or $O(log\ k)\ /\ O(1)$ if using some kind of map/hashtable, repeated $L$ times.
 
 #### b. Search
 
 - Worst-case: $O(L)$
-  Similar to insertion: you traverse up to L nodes in the trie, once per character, to see if the path exists.
+  Similar to insertion: you traverse up to $L$ nodes in the trie, once per character, to see if the path exists.
 
 #### c. Deletion
 
 - Worst-case: $O(L)$
-  You must first find the last character of the word (as in search) and then remove or mark the end-of-word flag. If you need to fully remove unused nodes (i.e., if they are no longer needed by other words), you might walk back up and deallocate, which still remains proportional to L.
+  You must first find the last character of the word (as in search) and then remove or mark the end-of-word flag. If you need to fully remove unused nodes (i.e., if they are no longer needed by other words), you might walk back up and deallocate, which still remains proportional to $L$.
 
 #### Key takeaway:
 
@@ -257,6 +264,6 @@ Hence, the practical space complexity for storing $N$ words of average length $L
 
 - You only need to visit at most L nodes.
 
-2. Space Complexity: $O(N * L)$ for N words of average length L (assuming a fixed alphabet).
+2. Space Complexity: $O(N * L)$ for N words of average length $L$ (assuming a fixed alphabet).
 
 This makes a trie extremely efficient for prefix lookups, autocorrect-like features, or any application where quick searches and prefix manipulations are needed—at the cost of higher memory usage than more compact data structures (e.g., a hash-based approach) if many words do not share common prefixes.
