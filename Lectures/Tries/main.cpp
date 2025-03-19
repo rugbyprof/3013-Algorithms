@@ -1,15 +1,15 @@
 /**
-* Source: https://www.techiedelight.com/cpp-implementation-trie-data-structure/
-*
-* The time complexity of a Trie data structure for insertion, 
-* deletion, and search operation is O(n) where n is the key
-* length.
-*
-* The space complexity of a Trie data structure is O(N × M × C)
-* N = total number of strings
-* M = longest string length
-* C = alphabet size
-*/
+ * Source: https://www.techiedelight.com/cpp-implementation-trie-data-structure/
+ *
+ * The time complexity of a Trie data structure for insertion,
+ * deletion, and search operation is O(n) where n is the key
+ * length.
+ *
+ * The space complexity of a Trie data structure is O(N × M × C)
+ * N = total number of strings
+ * M = longest string length
+ * C = alphabet size
+ */
 
 #include <algorithm>
 #include <fstream>
@@ -19,7 +19,7 @@
 using namespace std;
 
 // Define the character size
-//#define CHAR_SIZE 128
+// #define CHAR_SIZE 128
 #define CHAR_SIZE 26
 
 bool isUpper(char letter) {
@@ -107,7 +107,7 @@ public:
 void Trie::insert(string key) {
     makeUpper(key);
 
-    //cout<<key<<endl;
+    // cout<<key<<endl;
 
     // start from the root node
     TrieNode *curr = root;
@@ -363,7 +363,7 @@ int main() {
     //     cout<<results[i]<<endl;
     // }
 
-    //runTests();
+    // runTests();
 
     vector<char> letters = countLetters("smaller_dict.txt");
 
