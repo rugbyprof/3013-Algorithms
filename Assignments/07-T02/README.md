@@ -55,8 +55,6 @@
 
 ## 📘 AVL Trees Study Guide
 
-⸻
-
 ### 🧠 1. Definition and Motivation
 
 #### What are balanced trees?
@@ -81,7 +79,7 @@
 
 #### Balance Factor (BF)
 
-- Defined as:
+- **Defined as:**
   $\text{BF} = \text{height(left subtree)} - \text{height(right subtree)}$
 - Valid balance factors for AVL nodes: $–1, 0, 1$
 - If the balance factor becomes $< –1 or > 1$, the tree needs to be rebalanced using rotations.
@@ -137,7 +135,7 @@
 
 #### Why O(log n)?
 
-- AVL trees are always balanced, which means the height is logarithmic in the number of nodes:
+- **AVL trees are always balanced, which means the height is logarithmic in the number of nodes:**
   $h(n) \leq 1.44 \cdot \log_2(n + 2) - 0.328$
 
 #### Compared to Other Trees:
@@ -152,7 +150,7 @@
 #### When should I use AVL trees?
 
 - When you need fast lookups and data is frequently read, not just inserted/deleted.
-- Ideal for:
+- **Ideal for:**
   - Databases where reads dominate.
   - Memory-constrained applications where predictable performance is critical.
   - Search engines, dictionary data, caches.
@@ -211,36 +209,89 @@ Below is some expanded info covering core concepts in graph theory.
 
 ⸻
 
-## 📘 AGraph Theory Study Guide
+# 📘 A Graph Theory Study Guide
 
-### 1. Fundamentals of Graph Theory
+## 1. Fundamentals of Graph Theory
 
-- Vertices and Edges
-  - Vertices (Nodes): Fundamental units representing entities (e.g., cities, network nodes).
-  - Edges (Links): Connections between vertices. They may represent roads, communication links, etc.
-- Weighted vs. Unweighted Graphs
-  - Weighted Graphs: Each edge carries a numerical value (weight) indicating cost, distance, or capacity.
-  - Unweighted Graphs: Edges are considered equal; the focus is on connectivity rather than cost.
-- Directed vs. Undirected Graphs
-  - Directed Graphs (Digraphs): Edges have direction, meaning the connection is one-way.
-  - Undirected Graphs: Edges imply a two-way, mutual relationship between vertices.
+- **Vertices and Edges**
+  - **Vertices (Nodes)**: Fundamental units representing entities (e.g., cities, network nodes).
+  - **Edges (Links)**: Connections between vertices. They may represent roads, communication links, etc.
+- **Weighted vs. Unweighted Graphs**
+  - **Weighted Graphs:** Each edge carries a numerical value (weight) indicating cost, distance, or capacity.
+  - **Unweighted Graphs:** Edges are considered equal; the focus is on connectivity rather than cost.
+- **Directed vs. Undirected Graphs**
+  - **Directed Graphs (Digraphs):** Edges have direction, meaning the connection is one-way.
+  - U**ndirected Graphs:** Edges imply a two-way, mutual relationship between vertices.
 
 ⸻
 
-### 2. Graph Representations
+## 2. Graph Representations
 
-- **Adjacency Matrix**
-  - A 2D array where the element at row i and column j indicates the presence (and possibly the weight) of an edge from vertex i to vertex j.
-  - Pros: O(1) edge look-up.
-  - Cons: Requires $O(V^2)$ space, which can be inefficient for sparse graphs.
+Adjacency matrices and lists are two common ways to represent graphs, with matrices using a 2D array to store connections, while lists use linked lists to store neighbors of each vertex, each with its own space and time complexity trade-offs.
+
+|   Graph    |            | Adjacency List |            | Adjacency Matrix |
+| :--------: | :--------: | :------------: | :--------: | :--------------: |
+| ![][graph] | ![][arrow] |   ![][list]    | ![][arrow] |   ![][matrix]    |
+
+### Adjacency Matrix
+
+- **Representation:** A 2D array where each cell $(i, j)$ indicates whether there's an edge between vertex $i$ and vertex $j$.
+- **Space Complexity:** $O(V^2)$, where V is the number of vertices, as it stores potential edges even if they don't exist.
+- **Time Complexity:**
+
+  - Checking for an edge between two vertices: $O(1)$.
+  - Finding all neighbors of a vertex: $O(V)$.
+
+- **Advantages:**
+
+  - Efficient for checking the existence of edges.
+  - Suitable for dense graphs (graphs with many edges).
+
+- **Disadvantages:**
+
+  - Space-inefficient for sparse graphs (graphs with few edges).
+  - Adding or deleting vertices can be costly.
+
 - **Adjacency List**
+
   - An array or list where each element (vertex) holds a list of its adjacent vertices (and edge weights, if applicable).
-  - Pros: Efficient for sparse graphs with O(V + E) space.
-  - Cons: Checking the existence of a specific edge may take O(degree).
+  - **Pros:** Efficient for sparse graphs with O(V + E) space.
+  - **Cons:** Checking the existence of a specific edge may take O(degree).
+
 - **Edge List**
   - A simple list of edges, where each edge is a pair (or triple, if weighted) representing the connection between vertices.
-  - Pros: Simple structure; good for algorithms that process all edges (like Kruskal’s).
-  - Cons: Less efficient for neighbor queries.
+  - **Pros:** Simple structure; good for algorithms that process all edges (like Kruskal’s).
+  - **Cons:** Less efficient for neighbor queries.
+
+### Adjacency List:
+
+- **Representation:** An array of linked lists, where each element represents a vertex and its linked list stores its neighbors.
+- **Space Complexity:** $O(V + E)$, where $V$ is the number of vertices and $E$ is the number of edges, making it more space-efficient for sparse graphs.
+- **Time Complexity:**
+
+  - Checking for an edge between two vertices: $O(E)$ in the worst case, where $E$ is the number of edges.
+  - Finding all neighbors of a vertex: $O(degree of the vertex)$.
+
+- **Advantages:**
+
+  - Space-efficient for sparse graphs.
+  - Efficient for finding neighbors of a vertex.
+
+- **Disadvantages:**
+  - Checking for the existence of edges can be slow.
+  - Less suitable for dense graphs.
+
+### When to use which:
+
+- **Adjacency Matrix:**
+
+  - When you need to frequently check for the existence of edges between vertices.
+  - When the graph is dense.
+
+- **Adjacency List:**
+  - When you need to iterate over the neighbors of a vertex frequently.
+  - When the graph is sparse.
+  - When memory is a concern.
 
 ⸻
 
@@ -282,7 +333,7 @@ Below is some expanded info covering core concepts in graph theory.
 - **Strongly Connected Components (SCC):**
   - In directed graphs, SCCs are subgraphs where every vertex is reachable from every other vertex.
   - Algorithms: Kosaraju’s, Tarjan’s, and Gabow’s algorithms are commonly used.
-- B**ipartite Graphs:**
+- **Bipartite Graphs:**
   - A graph whose vertices can be divided into two disjoint sets such that every edge connects a vertex from one set to the other.
   - Detection: BFS or DFS with a coloring method can check bipartiteness.
 
@@ -519,9 +570,9 @@ Below is some expanded info covering core concepts in graph theory.
 
 **Time Complexity**
 
-- Using a Binary Heap and Adjacency List:
-  - $O((V + E) \log V) or O(E \log V)$, where $V$ is the number of vertices and $E$ is the number of edges.
-- Using a Fibonacci Heap:
+- **Using a Binary Heap and Adjacency List:**
+  - $O((V + E) \log V)$ or $O(E \log V)$, where $V$ is the number of vertices and $E$ is the number of edges.
+- **Using a Fibonacci Heap:**
   - Can improve the time complexity to $O(E + V \log V)$.
 
 #### Graph Representations
@@ -529,7 +580,7 @@ Below is some expanded info covering core concepts in graph theory.
 - **Adjacency List:**
   - Efficient for sparse graphs since it only stores edges that exist.
 - **Adjacency Matrix:**
-  - Typically less efficient due to its O(V^2) space and time usage for dense graphs.
+  - Typically less efficient due to its $O(V^2)$ space and time usage for dense graphs.
 
 ### 4. Applications
 
@@ -592,6 +643,78 @@ Below is some expanded info covering core concepts in graph theory.
 - **Comparisons**
   - Trade-offs with Prim's algorithm for different types of graphs.
 
+### 1. Overview and Purpose
+
+- **Concept**:
+  - Kruskal’s Algorithm finds an MST by sorting all edges of the graph in ascending order of weight and adding them one by one to the growing forest, ensuring no cycles form.
+- **Purpose**:
+  - It is used to connect all vertices with the minimal total edge weight, ideal for designing cost-effective networks.
+
+### 2. Algorithm Details
+
+- **Step-by-Step Process:**
+
+1. Sort Edges:
+
+- Sort all the edges in non-decreasing order by their weight.
+
+2. **Initialize Forest:**
+
+- Start with each vertex as its own separate tree.
+
+3. **Edge Selection:**
+
+- **Iterate through the sorted edges, and for each edge:**
+  - Use a union-find data structure to check if the current edge connects two different trees.
+  - If it does, add the edge to the MST and merge the trees.
+
+4. **Termination:**
+
+- Stop once all vertices are connected (i.e., when the MST has V - 1 edges).
+- **Data Structures Used:**
+  - Union-Find (Disjoint Set): Efficiently tracks and merges trees while preventing cycles.
+- **Edge List:** Often used to store and sort the graph’s edges.
+
+⸻
+
+### 3. Complexity Analysis
+
+- **Time Complexity:**
+  - Sorting the edges: $O(E \log E)$ (or $O(E \log V)$, since $E \leq V^2$).
+  - Union-find operations: Nearly $O(1)$ on average per edge (with path compression and union by rank).
+- **Overall Complexity:**
+  - Typically $O(E \log E)$ or $O(E \log V)$, making it efficient for sparse graphs.
+
+### 4. Applications
+
+- **Network Design:**
+  Ideal for designing efficient networks (e.g., electrical grids, road networks) where cost minimization is critical.
+- **Clustering:**
+  Used in data mining to form clusters by removing the most expensive edges in the MST.
+- **Other Uses:**
+  Helps in problems where connecting disparate components at minimum cost is essential.
+
+### 5. Historical Notes
+
+- **Origins**:
+  - Developed by Joseph Kruskal in 1956.
+  - One of the foundational algorithms in combinatorial optimization and graph theory.
+- **Impact**:
+  - Has influenced numerous network design and clustering techniques, and remains a staple in algorithm courses.
+
+### 6. Comparisons
+
+- **Kruskal’s vs. Prim’s:**
+- **Approach:**
+  - **Kruskal’s:** Edge-based, builds the MST by choosing the smallest edges first.
+  - **Prim’s:** Vertex-based, grows the MST starting from an arbitrary vertex.
+- **Data Structures:**
+  - **Kruskal’s:** Relies heavily on union-find for cycle detection.
+  - **Prim’s:** Uses priority queues (min-heaps) to select the next vertex.
+- **Best Use Case:**
+  - **Kruskal’s:** Often better for sparse graphs.
+  - **Prim’s:** Typically performs well on dense graphs or when using an adjacency matrix.
+
 ---
 
 ## Dijkstra's Algorithm (Dijkstra’s)
@@ -611,3 +734,81 @@ Below is some expanded info covering core concepts in graph theory.
   - Variants like A\* (which adds heuristics).
 - **Historical Background**
   - The development of the algorithm and its impact on graph theory.
+
+### Overview and Purpose
+
+- **Definition:**
+  - Dijkstra’s Algorithm finds the shortest path from a given source vertex to all other vertices in a weighted graph with non-negative edge weights.
+- **Purpose:**
+  - It is designed to determine the minimum cost (or distance) paths, making it fundamental for routing, navigation, and network optimization tasks.
+
+### Algorithm Details
+
+#### Initialization:
+
+- Set the distance to the source vertex as 0 and to all other vertices as infinity.
+- Use a priority queue (min-heap) to manage vertices by their current distance estimates.
+
+#### Main Loop (Relaxation Process):
+
+1. **Extract Minimum:**
+   - Remove the vertex with the smallest distance from the priority queue.
+2. **Relaxation:**
+   - For each neighbor of this vertex, compute the tentative distance as the sum of the current vertex’s distance and the weight of the connecting edge.
+3. **Update:**
+   - If the computed distance is smaller than the currently recorded distance for the neighbor, update its distance and reinsert it into the queue.
+
+- **Termination:**
+  - The process repeats until all vertices have been processed (or until the target vertex’s shortest path is found, if only one destination is needed).
+
+## Complexity Analysis
+
+- **Time Complexity:**
+  - With a binary min-heap: $O((V + E) \log V)$, where $V$ is the number of vertices and $E$ is the number of edges.
+  - With a Fibonacci heap (less common in practice): $O(E + V \log V)$.
+- **Space Complexity:**
+  - $O(V)$ for storing distances and the priority queue.
+
+## Applications
+
+- **Routing and Navigation:**
+  - GPS systems use it to find the shortest driving routes.
+- **Network Routing:**
+  - Internet protocols use Dijkstra’s Algorithm for path selection in networks.
+- **Urban Planning:**
+  - It assists in designing efficient transportation and infrastructure networks.
+- **Telecommunications:**
+  - Optimizes communication paths to minimize latency and cost.
+
+## Historical Notes
+
+- **Development:**
+  - Introduced by Edsger W. Dijkstra in 1956 and published in 1959.
+- **Impact:**
+  - It was one of the first algorithms to use a greedy strategy for path optimization and has since become a fundamental tool in computer science.
+- **Legacy:**
+  - Its concepts have inspired numerous other algorithms, such as A\* for heuristic pathfinding.
+
+## Comparisons
+
+- **Bellman-Ford Algorithm:**
+  - Use Case: Handles negative edge weights, but runs slower ($O(VE)$).
+  - Dijkstra’s Edge: More efficient when all edge weights are non-negative.
+- **A\* Search:**
+  - Enhances Dijkstra’s by incorporating heuristics for faster pathfinding in spatial graphs.
+- **Prim’s Algorithm:**
+  - Although similar in structure, Prim’s focuses on constructing a Minimum Spanning Tree (MST) rather than shortest paths.
+
+<!--
+#################################################################################################################################
+#################################################################################################################################
+#################################################################################################################################
+
+Images Used Above
+Shorthand Syntax
+-->
+
+[graph]: ./images/graph_image.png
+[list]: ./images/adjacency_list.png
+[matrix]: ./images/adjacency_matrix.png
+[arrow]: ./images/represented_as.png
