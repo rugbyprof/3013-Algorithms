@@ -470,6 +470,118 @@ Below is some expanded info covering core concepts in graph theory.
 - **Comparisons**
   - Comparison with Kruskal's algorithm.
 
+## 📘 MST Study Guide
+
+### 1. Overview and Purpose
+
+#### Concept of Minimum Spanning Trees (MST)
+
+- **Definition:**
+  - An MST is a spanning tree of a connected, undirected graph that connects all vertices with the smallest possible total edge weight.
+- **Purpose:**
+  - It ensures that all nodes are connected at minimum cost, which is crucial in network design, road networks, and many optimization problems.
+
+#### How Prim’s Algorithm Constructs an MST
+
+- **Starting Point:**
+  - The algorithm begins with an arbitrary vertex.
+- **Growth Strategy:**
+  - At each step, it selects the minimum-weight edge that connects a vertex in the growing MST to a vertex outside it.
+- **Iteration:**
+  - This process repeats until all vertices are included, thus ensuring the resulting tree has the minimum total edge weight.
+
+### 2. Algorithm Details
+
+#### Data Structures Typically Used
+
+- **Priority Queue / Min-Heap:**
+  - Used to efficiently select the edge with the smallest weight at each step.
+- **Arrays/Lists:**
+  - Often employed to track which vertices are included in the MST and to store key values (the minimum weight to connect each vertex).
+
+#### Step-by-Step Process of Prim’s Algorithm
+
+1. **Initialization:**
+
+   - Start with an arbitrary vertex and mark it as part of the MST.
+   - Initialize a min-heap with all edges from this vertex.
+
+2. **Selection:**
+
+   - Extract the edge with the minimum weight from the min-heap.
+
+3. **Inclusion:**
+
+   - If the edge connects to a vertex not already in the MST, add that vertex (and edge) to the MST.
+
+4. **Update:**
+
+   - Update the min-heap with the new edges from the recently added vertex.
+
+5. **Iteration:**
+
+   - Continue until all vertices are included in the MST.
+
+⸻
+
+### 3. Complexity Analysis
+
+**Time Complexity**
+
+- Using a Binary Heap and Adjacency List:
+  - $O((V + E) \log V) or O(E \log V)$, where $V$ is the number of vertices and $E$ is the number of edges.
+- Using a Fibonacci Heap:
+  - Can improve the time complexity to $O(E + V \log V)$.
+
+#### Graph Representations
+
+- **Adjacency List:**
+  - Efficient for sparse graphs since it only stores edges that exist.
+- **Adjacency Matrix:**
+  - Typically less efficient due to its O(V^2) space and time usage for dense graphs.
+
+### 4. Applications
+
+- **Network Design**
+
+  - **Usage:**
+    - MSTs help design cost-efficient networks by minimizing the total length or cost of cables, pipes, or roads connecting all nodes.
+  - **Examples:**
+    - Computer network layouts, electrical grid planning, and road networks.
+
+- **Clustering in Data Mining**
+
+  - **Usage:**
+    - MSTs can be used to perform clustering by cutting the most expensive edges, thereby partitioning the graph into clusters.
+  - **Applications:**
+    - Image segmentation, gene expression analysis, and other unsupervised learning problems.
+
+### 5. Historical Notes
+
+- **Origins and Development of MST Algorithms**
+
+- **Early Concepts:**
+  - The concept of spanning trees emerged as researchers sought to connect networks at minimal cost.
+- **Key Milestones:**
+  - Prim’s Algorithm: Developed in the 1950s as an efficient method for constructing an MST.
+  - Kruskal’s Algorithm: Introduced in 1956, using a different approach based on sorting and union-find data structures.
+- **Impact:**
+  - These algorithms have had significant influence in combinatorial optimization and network design, paving the way for further research in graph theory.
+
+### 6. Comparisons
+
+- **Prim’s vs. Kruskal’s Algorithm**
+
+- **Prim’s Algorithm:**
+  - **Method**: Greedy expansion from a starting vertex, growing a single tree.
+  - **Data Structures**: Typically uses a min-heap (or priority queue) for edge selection.
+  - **Best Use**: Generally performs better on dense graphs (especially with an adjacency matrix) and when the graph is connected.
+- **Kruskal’s Algorithm:**
+  - **Method**: Sorts all edges by weight and adds them one by one, using a union-find structure to avoid cycles.
+  - **Best Use**: Often preferred for sparse graphs because it processes edges directly.
+- **Summary:**
+  - Both algorithms yield an MST, but the choice between them depends on graph density, implementation complexity, and the nature of the problem.
+
 ---
 
 ## Kruskal's Algorithm (Kruskal’s)
