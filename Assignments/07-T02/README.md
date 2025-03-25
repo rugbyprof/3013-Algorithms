@@ -53,15 +53,6 @@
   - Overhead of rebalancing
   - Memory usage compared to simpler trees.
 
-title: "AVL Tree Study Guide"
-description: "Expanded notes and explanations to support students learning about AVL trees, including their definition, mechanics, and trade-offs."
-author: "ChatGPT"
-audience: "Students preparing for exams on data structures and algorithms"
-
-Hey Terry, below is an expanded AVL Tree study guide your students can use. It covers core concepts, rotation mechanics, time complexities, and trade-offs—basically most of what they need to tackle your exams confidently without buying a $200 doorstop.
-
-⸻
-
 ## 📘 AVL Trees Study Guide
 
 ⸻
