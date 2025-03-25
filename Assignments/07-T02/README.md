@@ -620,7 +620,3 @@ Below is some expanded info covering core concepts in graph theory.
   - Variants like A\* (which adds heuristics).
 - **Historical Background**
   - The development of the algorithm and its impact on graph theory.
-
----
-
-These subtopics should provide a thorough roadmap for students to explore each major topic in depth, understanding both the theoretical and practical implications of each algorithm and data structure. Feel free to adjust or expand these subtopics based on the level and focus of your course.
