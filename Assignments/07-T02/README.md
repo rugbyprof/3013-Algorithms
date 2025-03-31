@@ -229,11 +229,25 @@ Below is some expanded info covering core concepts in graph theory.
 
 Adjacency matrices and lists are two common ways to represent graphs, with matrices using a 2D array to store connections, while lists use linked lists to store neighbors of each vertex, each with its own space and time complexity trade-offs.
 
+### Graphic One
+
 |   Graph    |            | Adjacency List |            | Adjacency Matrix |
 | :--------: | :--------: | :------------: | :--------: | :--------------: |
 | ![][graph] | ![][arrow] |   ![][list]    | ![][arrow] |   ![][matrix]    |
 
+### Graphic Two
+
+| Adjency Matrix | Pros | Cons |
+| :------------- | :--- | :--- |
+| ![][matrix2]   |      |      |
+| Adjacency List |      |      |
+| ![][list2]     |      |      |
+| Edge List      |      |      |
+| ![][edge2]     |      |      |
+
 ### Adjacency Matrix
+
+![][matrix2]
 
 - **Representation:** A 2D array where each cell $(i, j)$ indicates whether there's an edge between vertex $i$ and vertex $j$.
 - **Space Complexity:** $O(V^2)$, where V is the number of vertices, as it stores potential edges even if they don't exist.
@@ -265,6 +279,8 @@ Adjacency matrices and lists are two common ways to represent graphs, with matri
 
 ### Adjacency List:
 
+![][list2]
+
 - **Representation:** An array of linked lists, where each element represents a vertex and its linked list stores its neighbors.
 - **Space Complexity:** $O(V + E)$, where $V$ is the number of vertices and $E$ is the number of edges, making it more space-efficient for sparse graphs.
 - **Time Complexity:**
@@ -293,6 +309,7 @@ Adjacency matrices and lists are two common ways to represent graphs, with matri
   - When the graph is sparse.
   - When memory is a concern.
 
+![][edge2]
 ⸻
 
 ### 3. Traversal Techniques
@@ -812,3 +829,6 @@ Shorthand Syntax
 [list]: ./images/adjacency_list.png
 [matrix]: ./images/adjacency_matrix.png
 [arrow]: ./images/represented_as.png
+[list2]: ./images/00_adjacency_list.png
+[matrix2]: ./images/00_adjacency_matrix.png
+[edge2]: ./images/00_edge_list.png
