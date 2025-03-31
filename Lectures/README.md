@@ -27,6 +27,6 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/Trees">Trees</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/Trees">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/Trees">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/Trees">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/Trees"> N/A</a>*** |  |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/Tries">Tries</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/Tries"> Trie </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/Tries"> Not A Tree (but it is...)</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/Tries">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Lectures/Tries"> N/A</a>*** |  |
 
-<sup>Last Updated: 2025-03-31 (Mon @ 13:25)</sup> 
+<sup>Last Updated: 2025-03-31 (Mon @ 14:02)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 
