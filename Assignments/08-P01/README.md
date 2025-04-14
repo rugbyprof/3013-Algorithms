@@ -167,15 +167,6 @@ You have 10–15 minutes, so use your time wisely:
 - If I would have practiced for 10 minutes before class, I would have been golden.
 - Your practice time will be longer, done in front of roomates, friends, in the car, and bathroom mirror. If you don't speak outloud when you prepare, your're not really preparing. The more you prepare, the more enjoyable it is.
 
-## ✅ Evaluation Criteria
-
-| Category                 | Weight | Description                                                                 |
-| ------------------------ | ------ | --------------------------------------------------------------------------- |
-| Conceptual Understanding | 40%    | Do you understand how and why the algorithm works?                          |
-| Communication Clarity    | 30%    | Can you explain the ideas clearly to your peers without jargon overload?    |
-| Organization             | 20%    | Is your talk well-paced, with logical structure and transitions?            |
-| Engagement               | 10%    | Did you involve the audience or make the topic feel interesting and lively? |
-
 ## 💡 Tips for Success
 
 - Practice your talk once or twice aloud—it’ll boost your timing and confidence.
@@ -183,8 +174,43 @@ You have 10–15 minutes, so use your time wisely:
 - Use real-world analogies or fun examples where it makes sense.
 - If you hit a wall, ask for help—we’re here to help you prep. Or turn it back to the class if you get stuck.
 
+## Presentation Readme
+
+- An important part of doing a presentation is generating the materials from which you gleen your information.
+- I don't mind the use of any LLVM (Chat GPT) since you need to know your topic when speaking about it.
+- I encourage the use of an LLVM to help you create a readme file for your assignment that is full of facts, organized, and written in markdown.
+
+## Exam questions and a Handout
+
+- Provide the following questions dealing with your chosen topic:
+
+  - 3 multiple choice questions
+  - 2 fill in the blank questions
+
+- Creating a handout would be nice for the students. You don't have to print it, just create it and make it available within your repo. I can show you how Chat GPT can do this for you.
+
 ---
 
 **Goal:** Show us that you understand a cool algorithm or data structure well enough to explain it. You don't need to be flashy—just clear, accurate, and interesting.
 
 **Final note:** Teaching something to others is the final phase of learning in which it really resonates in your gray matter. So get up there and strut your algorithmic stuff!
+
+# ✅ Deliverables
+
+- Create a folder called P01 in your assignments folder.
+
+  - Place a README in your P01 folder that will be the basis for your presentation material.
+  - Make you cite any sources. If you give credit, you aren't plagiarizing.
+  - If you do make presentation materials or handouts, place these here as well.
+
+- **80%**
+  | Category | Weight | Description |
+  | ------------------------ | ------ | --------------------------------------------------------------------------- |
+  | Conceptual Understanding | 40% | Do you understand how and why the algorithm works? |
+  | Communication Clarity | 30% | Can you explain the ideas clearly to your peers without jargon overload? |
+  | Organization | 20% | Is your talk well-paced, with logical structure and transitions? |
+  | Engagement | 10% | Did you involve the audience or make the topic feel interesting and lively? |
+- **20%**
+  | Category | Description |
+  | --------- | -------------------------------------------------- |
+  | Materials | Readme, handouts, slides, etc. All uploaded items. |
