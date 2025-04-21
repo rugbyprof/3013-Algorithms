@@ -17,6 +17,6 @@
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray">L03-ListVsArray</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray"> Array vs Linked List </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray"> A comparison</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/L03-ListVsArray"> None</a>*** |  |
 | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/Worksheets">Worksheets</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/Worksheets"> Placeholder Readme </a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/Worksheets"> No Description</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/Worksheets">None</a>*** | ***<a href="https://github.com/rugbyprof/3013-Algorithms/tree/master/Resources/Worksheets">N/A</a>*** |  |
 
-<sup>Last Updated: 2025-04-21 (Mon @ 12:47)</sup> 
+<sup>Last Updated: 2025-04-21 (Mon @ 14:48)</sup> 
 
 <sup>***Days Left is only accurate if the `Last Updated` date is the same as todays date. Otherwise, use the due date!***</sup> 
