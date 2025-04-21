@@ -165,9 +165,7 @@ $
 
 If \(|r| < 1\), the infinite sum converges:
 
-$
-\sum\_{k=0}^{\infty} ar^{k} \;=\; \frac{a}{1 - r}.
-$
+$\sum\_{k=0}^{\infty} ar^{k} \;=\; \frac{a}{1 - r}.$
 
 ---
 
@@ -185,9 +183,7 @@ For every new element we flip a coin until we get tails:
 
 The probability that a node reaches **at least** level *k* is:
 
-$
-\Pr(\text{level}\ge k) \;=\; (1/2)^{k},
-$
+$\Pr(\text{level}\ge k) \;=\; (1/2)^{k},$
 
 because we must get _k_ heads in a row.
 
@@ -198,33 +194,23 @@ because we must get _k_ heads in a row.
 Assume we’ve inserted **n = 16** keys.  
 Expected nodes in level 0:
 
-$
-E_0 = n = 16
-$
+$E_0 = n = 16$
 
 Expected nodes in level 1:
 
-$
-E_1 = n \cdot (1/2) = 8
-$
+$E_1 = n \cdot (1/2) = 8$
 
 Level 2:
 
-$
-E_2 = n \cdot (1/2)^2 = 4
-$
+$E_2 = n \cdot (1/2)^2 = 4$
 
 …and so on. In general
 
-$
-E_k = n\,(1/2)^k
-$
+$E_k = n\,(1/2)^k$
 
 Those expectations form the geometric series
 
-$
-16 + 8 + 4 + 2 + 1 + \dots \;=\; 32 \;=\; n\left(\frac{1}{1 - 1/2}\right)
-$
+$16 + 8 + 4 + 2 + 1 + \dots \;=\; 32 \;=\; n\left(\frac{1}{1 - 1/2}\right)$
 
 so **total forward‑pointer slots ≈ 2 n**. That’s why skip lists need only _Θ(n)_ space even though some nodes build tall “towers”.
 
