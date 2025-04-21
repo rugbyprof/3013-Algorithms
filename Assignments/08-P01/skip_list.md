@@ -159,9 +159,7 @@ format: markdown
 
 A **geometric series** adds terms that each get multiplied by a constant ratio *r* compared to the previous term:
 
-$
-S = a + ar + ar^{2} + ar^{3} + \dots
-$
+$S = a + ar + ar^{2} + ar^{3} + \dots$
 
 If \(|r| < 1\), the infinite sum converges:
 
@@ -219,14 +217,10 @@ so **total forward‑pointer slots ≈ 2 n**. That’s why skip lists need onl
 ## 4 ️⃣ Search height and geometric tail
 
 The tallest tower height **hₘₐₓ** behaves like  
-$
-h*{\text{max}} \approx \log*{1/p} n=\log\_{2} n
-$  
+$h*{\text{max}} \approx \log*{1/p} n=\log\_{2} n$  
 because the chance that **any** of the *n* elements rises above level *k* is:
 
-$
-n \cdot (1/2)^{k+1}.
-$
+$n \cdot (1/2)^{k+1}.$
 
 Setting that probability ≈ 1 gives \(k ≈ \log\_{2} n\).  
 Thus the **expected search path** length is _O(log n)_—again thanks to the geometric decay of tall nodes.
@@ -258,8 +252,8 @@ So every time you cite “skip lists are \(O(\log n)\) and \(2n\) pointers,” y
 
 | Property                    | Formula (≈)                     | With **p = 1/2**                  | With **p = 1/4**                                    | Intuition                                         |
 | --------------------------- | ------------------------------- | --------------------------------- | --------------------------------------------------- | ------------------------------------------------- |
-| Expected nodes at level *k* | \(n\,p^{\,k}\)                  | halves each level ( n, ½n, ¼n, …) | quarters each level ( n, ¼n, ¹⁄₁₆n, …)              | Lower _p_ thins out the upper lanes faster.       |
-| Expected tallest height     | \(\log\_{1/p} n\)               | \(\log\_{2} n\)                   | \(\log*{4} n = \tfrac12\log*{2} n\)                 | Smaller _p_ ⇒ fewer levels.                       |
+| Expected nodes at level *k* | $\(n\,p^{\,k}\)$                | halves each level ( n, ½n, ¼n, …) | quarters each level ( n, ¼n, ¹⁄₁₆n, …)              | Lower _p_ thins out the upper lanes faster.       |
+| Expected tallest height     | $\(\log\_{1/p} n\)$             | \(\log\_{2} n\)                   | \(\log*{4} n = \tfrac12\log*{2} n\)                 | Smaller _p_ ⇒ fewer levels.                       |
 | Pointer overhead            | \(\dfrac{n}{1-p}\)              | \(\approx 2n\)                    | \(\approx 1.33n\)                                   | Fewer promotions ⇒ less space.                    |
 | Expected search cost        | \(\tfrac{1}{p}\,\log\_{1/p} n\) | \(\approx 2\log\_{2} n\)          | \(\approx 4\cdot \tfrac12\log*{2} n = 2\log*{2} n\) | Constant‑factor trade‑off tends to equalise.      |
 | Cache friendliness          | —                               | More pointers, more levels        | Fewer pointers, shallower                           | Depends on hardware; lower *p* can be friendlier. |
