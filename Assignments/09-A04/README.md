@@ -21,7 +21,7 @@ This code:
 <center>
 |                        <center>Creepy Baby</center>                        |
 | :------------------------------------------------------------------------: |
-|  <img src="https://images2.imgbox.com/f2/2c/PjYZue39_o.png" width="500">   |
+|  <img src="https://images2.imgbox.com/e3/06/ipB9HqTU_o.png" width="500">   |
 | This is a creepy baby that was left in my front yard one night. Not lying. |
 </center>
 ```
@@ -31,7 +31,7 @@ Makes this:
 <center>
 | <center>Creepy Baby</center> |
 | :------------------------------------------------------------------------: |
-| <img src="https://images2.imgbox.com/f2/2c/PjYZue39_o.png" width="500"> |
+| <img src="https://images2.imgbox.com/e3/06/ipB9HqTU_o.png" width="500"> |
 | This is a creepy baby that was left in my front yard one night. Not lying. |
 </center>
 
