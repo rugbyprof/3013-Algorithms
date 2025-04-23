@@ -18,21 +18,17 @@ Go over to COS and watch at least one talk today or tomorrow. Take a picture of 
 This code:
 
 ```md
-<center>
-|                        <center>Creepy Baby</center>                        |
+|                                Creepy Baby                                 |
 | :------------------------------------------------------------------------: |
 |  <img src="https://images2.imgbox.com/e3/06/ipB9HqTU_o.png" width="500">   |
 | This is a creepy baby that was left in my front yard one night. Not lying. |
-</center>
 ```
 
 Makes this:
 
-<center>
-| <center>Creepy Baby</center> |
+|                                Creepy Baby                                 |
 | :------------------------------------------------------------------------: |
-| <img src="https://images2.imgbox.com/e3/06/ipB9HqTU_o.png" width="500"> |
+|  <img src="https://images2.imgbox.com/e3/06/ipB9HqTU_o.png" width="500">   |
 | This is a creepy baby that was left in my front yard one night. Not lying. |
-</center>
 
 It's not on topic, but it shows you how you can display an image in a table with a title and description.
