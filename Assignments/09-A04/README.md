@@ -20,7 +20,7 @@ This code:
 ```md
 |                                Creepy Baby                                 |
 | :------------------------------------------------------------------------: |
-|  <img src="https://images2.imgbox.com/e3/06/ipB9HqTU_o.png" width="500">   |
+|  <img src="https://images2.imgbox.com/e3/06/ipB9HqTU_o.png" width="400">   |
 | This is a creepy baby that was left in my front yard one night. Not lying. |
 ```
 
@@ -28,7 +28,7 @@ Makes this:
 
 |                                Creepy Baby                                 |
 | :------------------------------------------------------------------------: |
-|  <img src="https://images2.imgbox.com/e3/06/ipB9HqTU_o.png" width="500">   |
+|  <img src="https://images2.imgbox.com/e3/06/ipB9HqTU_o.png" width="400">   |
 | This is a creepy baby that was left in my front yard one night. Not lying. |
 
 It's not on topic, but it shows you how you can display an image in a table with a title and description.
