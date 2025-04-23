@@ -304,3 +304,148 @@ So with the biased coin you use **~33 % less space** and max out at level 3 in
 **Rule of thumb:**  
 `pointer_overhead ≈ n / (1‑p)` & `tallest_level ≈ log_{1/p} n`  
 Pick the _p_ that balances memory budget and constant‑factor speed for your workload.
+
+# Me Explaining Back to GPT
+
+## Q:
+
+> So for a skip list, if I start inserting values, there will be at least one linked list of values that is ordered with every value inserted. Additionally, for every insert we flip a coin until tails is the value, and if there are x heads or y heads or z heads in a row, we generate x,y,z new lists with that value inserted into each of them. In subsequent entries, if the number of heads flips, h, is less than the max number of lists, we simply copy that value up to h lists. When we search, we start at the topmost list, and when the current list value is greater than the search key, we back up one and drop down a list. Do I have the gist of skip lists?
+
+## A:
+
+```yaml
+short_answer: yes—your mental model is 90 % there
+but_tweak:
+  - “extra lists” → “extra *levels* of forward‑pointers attached to *one* physical node”
+  - search rule: “move right while next < key; otherwise drop down”
+bonus: quick ASCII diagram + two clarifying bullets
+```
+
+Hey Terry!  
+You’ve basically nailed the spirit of a skip list. A couple of small adjustments will make your picture pixel‑perfect:
+
+---
+
+## 1. One physical node, many **levels**
+
+_When you get `k` heads in a row you don’t create `k` separate linked lists._  
+Instead, you build one node with `k + 1` forward‑pointers that live in the **existing** tower of lists:
+
+```
+level 3:  ──▶ ──▶
+level 2:  ──▶ ──▶ ──▶
+level 1:  ──▶ ──▶ ──▶ ──▶
+level 0:  10▶ 20▶ 30▶ 40▶ 50▶ NIL
+            ↑          ↑
+           node      node with
+         height 1   height 3
+```
+
+So the “extra lists” are really **express lanes** inside the same data structure.
+
+---
+
+## 2. Insertion recap
+
+1. **Flip coins** until tails ⇒ height `h`.
+2. **Search** (top‑down, right‑then‑down) to find the _update array_—the last node visited at each level.
+3. **Splice** your new node’s `h + 1` pointers into levels `h … 0`.
+4. Done—no global rebalancing.
+
+If `h` is smaller than the current max height, you _don’t_ copy higher levels; the towers above simply skip over the new key.
+
+---
+
+## 3. Search rule mantra
+
+> “Move right **while next < key**; when you can’t, drop down one level.”
+
+That “while next < key” bit keeps you from overshooting.  
+When you hit level 0, either you’re on the key or it’s absent.
+
+---
+
+## 4. Why this works (geometric intuition)
+
+- Each level keeps roughly a `p`‑fraction of the nodes (classic `p = ½`).
+- Pointer count forms the geometric series `n + np + np² + … ≈ n/(1‑p)` → **O(n)** space.
+- Tallest tower is about `log₁/p n` ⇒ **O(log n)** expected search/insert.
+
+---
+
+### TL;DR
+
+Yes—you’ve got the gist!  
+Just remember **towers (pointers)** rather than **duplicate lists**, and the right‑then‑down search pattern.
+
+Now you’re ready to wow the class with those express‑lane coin flips. 🥳
+
+# Questioning Part of GPT's solution
+
+## Q:
+
+"If h is smaller than the current max height, you don’t copy higher levels; the towers above simply skip over the new key."
+
+How do values get copied to additional lists? Do they only get promoted up when "h" is larger than the max number of lists?
+
+## A:
+
+You’ve got the **big picture**—a skip‑list is an ordered base list plus a stack of ever‑sparser “express lanes.”  
+Two clarifications will make the mental model exact:
+
+---
+
+## 1 ️⃣ One node ⇢ many forward pointers, **not** multiple physical copies
+
+```
+level 3:      ──►        ──►  ∅
+level 2:  ──►  ──►  ──►        ∅
+level 1:  ──►  ──►  ──►  ──►   ∅
+level 0:  10 ► 20 ► 30 ► 40 ► 50 ► ∅
+            ▲         ▲
+         height 1   height 3
+```
+
+- Insertion flips a coin until tails; the number of consecutive heads = **node height h**.
+- A **single node** stores `h + 1` forward‑pointers (one for each level 0…h).
+- Higher levels are not separate linked lists but _views_ on the same nodes.
+
+So we **don’t copy** the key into extra lists—its one node simply participates in more levels.
+
+---
+
+## 2 ️⃣ How tall can a tower get?
+
+| Term                     | Meaning                                                  |
+| ------------------------ | -------------------------------------------------------- |
+| **current max height H** | tallest level that already exists in the whole structure |
+| **new node’s height h**  | result of this node’s coin‑flips                         |
+
+- **If h ≤ H**  
+   → just hook the node into levels 0…h.
+- **If h > H**  
+   → create the missing top levels in the **header tower** (often called the “sentinel”) and link the node there.  
+   Now the global max height is `H := h`.
+
+Hence a node is _never_ “copied upward later.”  
+Its levels are fixed the moment it’s inserted, and global `H` only grows when someone’s random height breaks the previous record. (Over many inserts, `H ≈ log ₁/p n`.)
+
+---
+
+## 3 ️⃣ Search algorithm recap
+
+1. Start at the **header** on the top level `H`.
+2. **While (next value < key) → move right.**
+3. Otherwise, **drop down one level** and repeat.
+4. When you reach level 0 you’re either at the key or know it’s absent.
+
+_(Your description— “when current value > key, back up one and drop down” —is the same idea but the usual code watches the **next node’s** key rather than ‘backing up.’)_
+
+---
+
+### TL;DR
+
+_Nodes don’t get promoted after the fact; their height is baked in at insertion.  
+If that height exceeds the structure’s current max level, the header grows; otherwise the upper lanes simply skip over the newcomer._
+
+With that tweak, your understanding of skip‑lists is spot‑on!
